@@ -58,7 +58,7 @@ if(date('d')=='01'|| date('d')==11 || date('d')==22){
 	echo $chukuheji;
 	fwrite(fopen("ajax/write_data/chukutongji.html", "w"), $chukuheji);
 	echo "出库统计完成<br>";
-	
+	}
 
 	
 }else{
