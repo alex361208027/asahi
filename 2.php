@@ -166,7 +166,7 @@ td:hover{
 	<td></td>
 	<td align="center">状態</td>
 	<td>取引先</td>
-	<td>取引PO</td>
+	<td>注文PO</td>
 	<td>品番</td>
 	<td align="right">数量</td>
 	<td align="left"></td>

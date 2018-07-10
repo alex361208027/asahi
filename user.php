@@ -22,6 +22,14 @@ if($theuser=$_COOKIE['asahiuser']){
   border-radius: 3px;
 	}
 	</style>
+	<script>
+	function touxiang_upload(){
+		document.getElementById('user_name').innerHTML="正在上传头像";
+		setTimeout("document.getElementById('submit').style.display='block';",8000);
+		//setTimeout("window.location.reload();",13000);
+		
+	}
+	</script>
 	<br><br>
 	<table width="700px" align="center" cellspacing="0" cellpadding="0">
 		<tr>
@@ -33,10 +41,10 @@ if($theuser=$_COOKIE['asahiuser']){
 						<label for="file"><div style="overflow:hidden;cursor:pointer;display:inline-block;width:66px;height:66px;background:white;-webkit-border-radius: 33px 33px 33px 33px;-moz-border-radius: 33px 33px 33px 33px;border-radius: 33px 33px 33px 33px;" align="center">
 							<?php if(file_exists("upload/user_touxiang/".$theuser.".png")){echo "<img src='upload/user_touxiang/".$theuser.".png' width='66px'>";} ?>
 						</div></label><br>
-						<input type="file" name="file" id="file" style="display:none" onchange="document.getElementById('submit').click();setTimeout('window.location.reload();',3000)">
-						<input type="submit" name="submit" id="submit" value="提交头像图片" style="display:none;"/>
+						<input type="file" name="file" id="file" style="display:none" onchange="touxiang_upload()">
+						<input type="submit" name="submit" id="submit" value="确认提交头像图片" style="display:none;" onclick="window.location.reload();" />
 						</form>
-					<?php echo $_COOKIE['loged']; ?><br>
+					<div id="user_name"><?php echo $_COOKIE['loged']; ?></div>
 					<br>
 					<div class="mulu" onclick="user_xinxi('click=<?php echo $theuser; ?>',1)">用户信息</div><br>
 					<div class="mulu" onclick="user_mima('click=<?php echo $theuser; ?>',1)">密码更改</div><br>
