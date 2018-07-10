@@ -1,0 +1,313 @@
+a:link{
+	text-decoration:none; 
+	color:inherit; 
+}
+a:visited{
+	text-decoration:none; 
+	color:inherit; 
+}
+a:hover{
+	text-decoration:none;
+	color:inherit; 
+	}
+a:active{
+	text-decoration:none;
+	color:inherit; 
+}
+hr{
+	height:0px;border:none;border-top:1px ridge #EEEEEE;
+	
+}
+
+
+
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,img,div,dl,dt,dd,input{
+margin: 0;
+padding: 0;
+font-family: Arial;
+}
+
+textarea{
+	border:0px;
+	
+	background-color:#F7F7F7;
+	padding:10px;
+	color:#5E5E5E;
+}
+
+marquee{
+	max-width:80px;font-size:12px;color:red;
+}
+
+
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;}
+a{text-decoration:none;}
+
+
+.tiao{
+	padding:3px 8px 3px 8px;background-color:#666666;color:white;
+}
+
+.classcp1{
+	padding:2px 5px 2px 5px;color:white;display:inline-block;background-color:red;margin-right:8px;
+	-webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;margin:5px;
+}
+
+input[type="date"],
+input[type="text"],
+input[type="button"],
+input[type="password"],
+input[type="email"],
+input[type="submit"],
+input[type="tel"],
+.inputlist{
+	width: 140px;
+    height: 26px;
+    line-height: 16px;
+    margin: 0 0 10px;
+    padding: 0 10px;
+    border: none;
+    color:#000066 ;
+    cursor: pointer;
+    resize: none;
+    /**border-bottom:1px solid #AAAAAA;**/
+    background:#FFCCCC;
+	text-align:left;
+	margin-top:8px;
+	margin-left:8px;
+	font-family: Arial;
+	font-size:13px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-overflow:ellipsis;
+}
+
+input[type="submit"],
+input[type="button"]{
+	width:auto;
+	border: none;color:black;
+   background-color:#DDDDDD;
+   padding:5px 15px 5px 15px;
+   -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border-bottom:2px solid #6F6F6F;
+}
+input[type="submit"]:hover,input[type="button"]:hover{
+	background-color:#666666;color:white;
+}
+
+
+
+
+
+button{
+	cursor:pointer;
+	width:auto;
+	border: none;color:black;
+   background-color:#DDDDDD;
+   padding:4px 6px 4px 6px;
+   -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border-bottom:2px solid #6F6F6F;
+}
+button:hover{
+	background-color:#666666;color:white;
+}
+
+
+
+@media print {
+ .printclass{ display:none;}
+}
+
+.plist{
+	position:relative;
+	border-top:4px solid #BBAAFF;
+  /**-webkit-box-shadow: 0px 1px 3px #BBBBBB;
+  -moz-box-shadow: 0px 1px 3px #BBBBBB;
+  box-shadow: 0px 1px 3px #BBBBBB;**/
+  width:120px;
+  display:inline-block;
+  
+  padding:15px;
+  background-color:#F7F7F7;
+  font-size:16px;
+  color:#F14164;
+  margin:20px;
+}
+
+.message{
+	position:absolute;top:5px;left:5px;color:#202057;font-size:15px;
+}
+
+.mybutton{
+	width:80px;height:22px;color:white;display:inline-block;padding:3px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.cplb{
+	overflow:hidden;max-height:15px;
+	transition:max-height 1.0s;
+-moz-transition:max-height 1.0s; 
+-webkit-transition:max-height 1.0s; 
+-o-transition:max-height 1.0s; 
+}
+
+
+.php1{
+	text-align:left;
+	position:relative;
+	width:400px;
+	height:auto;
+	/**-webkit-box-shadow: 0px 1px 8px #BBBBBB;
+    -moz-box-shadow: 0px 1px 8px #BBBBBB;
+    box-shadow: 0px 1px 8px #BBBBBB;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;**/
+	padding:20px;
+	
+}
+
+
+.php1campany{
+	position:relative;
+	font-size:25px;
+	color:;
+	padding:10px 0px;
+}
+.php1word1{
+	font-size:12px;	
+	margin-left:;
+	color:#666666;
+	display:inline-block;
+	min-width:80px;
+	padding:4px;
+}
+.php1word2{
+	font-size:12px;	
+	margin-left:;
+	color:#666666;
+	display:inline-block;
+}
+
+.lotruku .php1word{
+	display:inline-block;
+}
+
+.sure{
+	position:fixed;top:20%;left:40%;width:160px;min-height:100px;background-color:#EEFFFF;color:;display:none;overflow:hidden;padding:20px;padding-bottom:50px;font-size:16px;
+-webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 10px 13px #BBBBBB;
+  -moz-box-shadow: 0px 10px 13px #BBBBBB;
+  box-shadow: 0px 10px 13px #BBBBBB;
+}
+.sure1{
+	position:absolute;bottom:0px;width:100px;height:35px;font-size:20px;text-align:center;padding-top:10px;
+}
+
+.xiaokuan{
+	-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;background:#FFFFCC;display:inline-block;padding:5px
+}
+
+
+
+///////////////////////ajaxdiv
+.ajasdivout{
+	position:fixed;right:0px;top:18px;min-height:400px;width:350px;background-color:white;
+	-webkit-box-shadow: -8px 4px 18px #BBBBBB;
+  -moz-box-shadow: -8px 4px 18px #BBBBBB;
+  box-shadow: -8px 4px 18px #BBBBBB;
+	transition: all 1s;
+-moz-transition: all 1s;	/* Firefox 4 */
+-webkit-transition: all 1s;	/* Safari 和 Chrome */
+-o-transition: all 1s;
+}
+.ajasdivout2{
+	position:fixed;right:0px;top:18px;min-height:400px;max-height:500px;overflow-x:hidden;overflow-y:scroll;width:400px;background-color:white;
+	-webkit-box-shadow: -8px 4px 18px #BBBBBB;
+  -moz-box-shadow: -8px 4px 18px #BBBBBB;
+  box-shadow: -8px 4px 18px #BBBBBB;
+	transition: all 1s;
+-moz-transition: all 1s;	/* Firefox 4 */
+-webkit-transition: all 1s;	/* Safari 和 Chrome */
+-o-transition: all 1s;
+}
+.ajasdivx{
+	position:absolute;right:0px;top:0px;background-color:;font-size:20px
+}
+
+
+.banngobutton{
+	background-color:#FFAAAA;display:inline-block;color:white;padding:1px 2px;
+	-webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+
+
+.nopo{
+	position:absolute;top:1px;right:20px;font-size:12px;color:#555555;z-index:-10;
+	animation:onpo 3s;
+
+}
+
+
+
+
+.nopox{
+	display:inline-block;color:black;background-color:none;padding:3px 4px;margin-right:5px;border:1px solid #FF5577;font-size:12px;
+	-webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+
+
+.tishi{
+	position:fixed;bottom:40px;right:-500px;
+	font-size:40px;padding:10px 25px;background-color:white;color:white;
+	
+	
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	
+		
+	
+	
+animation:mytishi 5s;
+-moz-animation:mytishi 5s; /* Firefox */
+-webkit-animation:mytishi 5s; /* Safari and Chrome */
+-o-animation:mytishi 5s; /* Opera */
+}
+@keyframes mytishi
+{
+0%   {right:-100px;}
+20%  {right:20px;color:#46309D;background-color:#99FFEB;}
+70%  {right:20px;color:#46309D;background-color:#99FFEB;}
+100% {right:-300px;}
+}
+@-webkit-keyframes mytishi /* Safari and Chrome */
+{
+0%   {right:-100px;}
+20%  {right:20px;color:#46309D;background-color:#99FFEB;}
+70%  {right:20px;color:#46309D;background-color:#99FFEB;}
+100% {right:-300px;}
+}
+
+
+
+
+

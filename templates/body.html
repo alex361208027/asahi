@@ -1,0 +1,97 @@
+
+
+<div align="center" align="center" style=" background-color:#F7F7F7; width:100%;">
+<table width="60%"  cellpadding="0" cellspacing="0" height="250px">
+<tr>
+<td>
+<div class="myicon" align="center">
+<div class="mybutton"  onclick="jq(1)" style="background-color:#BBAAFF;color:white;"><div class="mybuttonin">NEW</div></div>  
+<div class="mybuttonword">新建订单</div>
+</div>
+</td>
+<td>
+<div class="myicon" align="center">
+<div class="mybutton"  onclick="jq(21)" style="background-color:#FF5555;color:white;"><div class="mybuttonin">客户</div></div>  
+<div class="mybuttonword">订单搜索</div> 
+</div>
+</td>
+<td>
+<div class="myicon" align="center">
+<div class="mybutton"  onclick="jq(31)" style="background-color:#64D718;color:white;"><div class="mybuttonin">订单</div></div>  
+<div class="mybuttonword">编号搜索</div>  
+</div>
+</td>
+<td>
+<div class="myicon" align="center">
+<div class="mybutton"  onclick="jq(41)" style="background-color:#9BA89B;color:white;"><div class="mybuttonin">朝日订单</div></div>  
+<div class="mybuttonword">产品搜索</div>  
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="position:fixed;top:51%;left:36%;font-size:30px;color:#777777">
+- 朝日科技(上海)有限公司 -</div>
+<div>
+<div class="mybody" align="center" id="dingdanshuru" style="display:none">
+<div class="mycontent">
+<div class="my3jiao" style="margin-left:27%"></div>
+  <form action="1.php" method="post">
+  客户名称:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="t1" size="10" maxlength="" onclick="jq(2)"/><br>
+  <div class="myoption" id="myoption" style="display:none" onclick="jq(3)">
+  <input type="button" onclick="myoption('huade')" value="华德">
+  <input type="button" onclick="myoption('shuangri')" value="双日">
+  <input type="button" onclick="myoption('yilan')" value="宜兰">
+  <input type="button" onclick="myoption('dexiao')" value="德晓">
+  <input type="button" onclick="myoption('xigesi')" value="希革斯">
+  </div>
+  订单编号:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="t2" size="10" maxlength="" /><br>
+  订单日期:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="t3" size="10" maxlength="" value="javascript:date('y-m-d')"/><br><br>
+  <input type="submit" value="新 建 订 单"/>
+  </form>
+  </div>
+ </div> 
+
+<div class="mybody" align="center" id="sousuo" style="display:none"> 
+<div class="mycontent">
+<div class="my3jiao" style="margin-left:42%"></div>
+<form action="4.php" method="post">
+  客户名称:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="t1" size="10" maxlength="" onclick="jq(22)" /><br>
+  <div class="myoption" id="myoption2" style="display:none" onclick="jq(23)">
+  <input type="button" onclick="myoption2('huade')" value="华德">
+  <input type="button" onclick="myoption2('shuangri')" value="双日">
+  <input type="button" onclick="myoption2('yilan')" value="宜兰">
+  <input type="button" onclick="myoption2('dexiao')" value="德晓">
+  <input type="button" onclick="myoption2('xigesi')" value="希革斯">
+  </div>
+  订单日期:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="t3" size="10" maxlength="" value="2017/1/1"/><br>
+  日期范围:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="t4" size="10" maxlength="" value="2018/1/1" /><br><br>
+  <input type="submit" value="搜索" />
+  </form>
+  </div>
+ </div> 
+
+ <div class="mybody" align="center" id="ddsousuo" style="display:none">
+<div class="mycontent">
+<div class="my3jiao" style="margin-left:57%"></div>
+<form action="4.php" method="post">
+  订单编号:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="ddt2" size="10" maxlength="" /><br>
+  订单日期:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="t3" size="10" maxlength="" value="2017/1/1"/><br>
+  日期范围:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="t4" size="10" maxlength="" value="2018/1/1" /><br><br>
+  <input type="submit" value="搜索" />
+  </form>
+  </div>
+ </div> 
+
+ <div class="mybody" align="center" id="asahisousuo" style="display:none">
+<div class="mycontent">
+<div class="my3jiao" style="margin-left:72%"></div>
+<form action="2-2.php" method="post">
+  订单编号:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="asahit2" size="10" maxlength="" /><br>
+  订单日期:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="tt3" size="10" maxlength="" value="2017/1/1"/><br>
+  日期范围:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="tt4" size="10" maxlength="" value="2018/1/1" /><br><br>
+  <input type="submit" value="搜索" />
+  </form>
+  </div>
+ </div> 
+
