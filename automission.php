@@ -52,13 +52,13 @@ if(date('d')=='01'|| date('d')==11 || date('d')==22){
 	$finaltotal=$rowsum1[0]+$rowsum2[0];
 
 	$chukuheji[]=$finaltotal;
-
+	}
 
 	$chukuheji=implode(",",$chukuheji);
 	echo $chukuheji;
 	fwrite(fopen("ajax/write_data/chukutongji.html", "w"), $chukuheji);
 	echo "出库统计完成<br>";
-	}
+
 
 	
 }else{
