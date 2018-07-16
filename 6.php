@@ -165,7 +165,7 @@ td:hover{
 	<td></td>
 	<td>(客)希望納期</td>
 	<td>日本出荷日</td>
-	<td align="center">取引PO</td>
+	<td align="center">(客)注文PO</td>
 	<td>備考</td>
 </tr>
 
