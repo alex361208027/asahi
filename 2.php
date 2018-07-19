@@ -170,7 +170,7 @@ td:hover{
 	<td>品番</td>
 	<td align="right">数量</td>
 	<td align="left"></td>
-	<td>希望納期</td>
+	<td>订单納期</td>
 	<td>朝日PO</td>
 	<td>日本出荷日</td>
 	<td>上海出荷日</td>
