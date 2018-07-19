@@ -1,3 +1,4 @@
+
 <head>
 <script src="../JS/jquery-3.2.1.min.js"></script>
 <title>小标签-1页4面打印</title>
@@ -17,7 +18,56 @@ body{
 
 </style>
 <script>
+function GetQueryString(name)
+{
+     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+     var r = window.location.search.substr(1).match(reg);
+     if(r!=null)return  unescape(r[2]); return null;
+}
+
 $(document).ready(function(){
+	$("#href").click(function(){
+		for(i=0;i<$("input").length;i++){
+			if(i==5){
+		//$("input").eq(i).val(GetQueryString("w"+i));		
+			}else{
+		$("input").eq(i).val(GetQueryString("w"+i));
+			}
+		}
+	});
+	
+	$("#heihei").change(function(){
+		for(i=0;i<$("input").length;i++){
+			if($("input").eq(i).val()){
+				$("input").eq(i).attr("value",$("input").eq(i).val());
+				if(i==2||i==6){}else{
+				txt="<br><img src='http://b.wwei.cn/html/image.php?filetype=PNG&dpi=72&scale=1&rotation=0&font_family=0&font_size=8&text="+$("input").eq(i).val()+"&thickness=25&start=B&code=BCGcode128'/>";
+				$("input").eq(i).nextAll().remove();
+				$("input").eq(i).after(txt);
+				}
+			}
+		}
+		
+		bigqr="";
+		for(i=0;i<$("input").length;i++){
+		bigqr=bigqr+$("input").eq(i).val().replace("+","%2B");;
+			if((i+1)<$("input").length){
+				bigqr=bigqr+",";
+			}
+		}
+		//alert(bigqr);
+		$("#bigqr").after("<img src='http://qr.liantu.com/api.php?text="+bigqr+"' width='150px'/><br>朝日科技");
+		
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	$("#banngo").change(function(){
 <?php
@@ -93,7 +143,7 @@ echo file_get_contents("wuliaohao.html");
 <datalist id="pinfan">
 <option value='NHSB046A+CAP'>
 </datalist>
-<button>copy</button>
+<button>copy</button><a id="href" onclick="this.style.display='none';">自动填充>>>></a>
 <div id="main" style="display:inline-block">
 <div style="display:inline-block;margin:40px 0 0 30px" >
 <table border="1" cellspacing="0" cellpadding="4">
@@ -116,7 +166,7 @@ echo file_get_contents("wuliaohao.html");
 <td>lot No:</td><td align="center"><input class="qrcode" type="text" value=""></td>
 </tr>
 <tr>
-<td>Qty:</td><td align="center"><input class="qrcode" type="text" value=""></td>
+<td>Qty:</td><td align="center"><input id="heihei" class="qrcode" type="text" value=""></td>
 </tr>
 <tr>
 <td>PO:</td><td align="center"><input id="haha" type="text" value=""></td>

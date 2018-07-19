@@ -69,7 +69,16 @@ echo file_get_contents("wuliaohao.html");
 	//alert("二维码信息:【"+bigqr+"】");
 		document.getElementById('bigqr').innerHTML="<img src='http://qr.liantu.com/api.php?text="+bigqr+"' width='150px'/><br>朝日科技";
 	});
-	
+	$("#qrcode-s").click(function(){
+		href="qrcode-s.php?ok=ok";
+		for(i=0;i<$("input").length;i++){
+		href=href+"&w"+i+"="+$("input").eq(i).val();		
+			
+		}
+		//alert(href);
+		$("#href").attr("href",href);
+		document.getElementById('href').click();
+	});
 	
 });
 
@@ -105,5 +114,5 @@ echo file_get_contents("wuliaohao.html");
 <td>PO:</td><td align="center" colspan="2"><input id="haha" type="text" value=""><td>MFG</td><td align="center" width="90px"></td>
 </tr>
 </table>
-<a class="memo" href="wuliaohao.php">>>查询物料号</a> <a class="memo" href="qrcode-s.php">>>外标签链接</a>
+<a class="memo" href="wuliaohao.php">>>查询物料号</a> <a class="memo" id="href" href=""></a><a href="###" id="qrcode-s">>>外标签链接</a>
 </body>
