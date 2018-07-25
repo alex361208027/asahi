@@ -164,7 +164,7 @@ if(day<10){
 }
 d1=year+'-'+month+'-'+day;
 </script>
-<input type="checkbox" name="t9" value="checked" onclick="if(this.checked){document.getElementsByName('t7')[0].value=d1;}else{document.getElementsByName('t7')[0].value='';}">含完成 &nbsp; <input type="checkbox" name="t10" value="checked">未分配 &nbsp; <input type="checkbox" name="t11" value="checked">納期待つ除き &nbsp; 
+<input type="checkbox" name="t9" value="checked" onclick="if(this.checked && document.getElementsByName('t7')[0].value==''){document.getElementsByName('t7')[0].value=d1;}else if(this.checked==false && document.getElementsByName('t7')[0].value==d1){document.getElementsByName('t7')[0].value='';}">含完成 &nbsp; <input type="checkbox" name="t10" value="checked">未分配 &nbsp; <input type="checkbox" name="t11" value="checked">納期待つ除き &nbsp; 
 
 <br>上海出荷日:
 <input type="date" name="t7" value=""/> ~
@@ -246,7 +246,7 @@ d1=year+'-'+month+'-'+day;
 
 <a name="findme_chanpin5" ></a>
 <div class="indexother">
-<table cellpadding="0" cellspacing="0" width="100%" height="100%"><tr><td>
+<table cellpadding="0" cellspacing="0" width="100%" height="100%"><tr><td align="right">
 <form action="6.php" method="post" target="xiabu">
 <input type="text" name="t6" value="" placeholder="朝日PO"/>
 <input list="kehulist" class="inputlist" name="t1" value="" placeholder="取引先"/>
@@ -257,12 +257,12 @@ d1=year+'-'+month+'-'+day;
 
 <input type="checkbox" name="t9" value="checked" onclick="document.getElementsByName('t7')[1].value=d1">含入荷済み &nbsp; <input type="checkbox" name="t10" value="checked">未分配 &nbsp; <input type="checkbox" name="t11" value="checked">納期待つ除き &nbsp; 
 
-<br>日本出荷日:
+<br>
+<input type="submit" style="background-color:#FF7792" value="(朝日PO) 検索"/><input type="button" value="Reset" onclick="location.reload();"/>
+
+日本出荷日:
 <input type="date" name="t7" value=""/> ~
 <input type="date" name="t77" value=""/>
-<!--<input type="date" name="t8" value="" placeholder="xx"/>
-<input type="date" name="t88" value="" placeholder="xx"/>-->
-<input type="submit" style="background-color:#FF7792" value="(朝日PO) 検索"/><input type="button" value="Reset" onclick="location.reload();"/>
 </form>
 </td></tr></table>
 </div>
