@@ -18,23 +18,23 @@ body{
 
 </style>
 <script>
-function GetQueryString(name)
-{
-     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
-     var r = window.location.search.substr(1).match(reg);
-     if(r!=null)return  unescape(r[2]); return null;
-}
+//function GetQueryString(name)
+//{
+//     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+//     var r = window.location.search.substr(1).match(reg);
+//     if(r!=null)return  unescape(r[2]); return null;
+//}
 
 $(document).ready(function(){
-	$("#href").click(function(){
-		for(i=0;i<$("input").length;i++){
-			if(i==5){
-		//$("input").eq(i).val(GetQueryString("w"+i));		
-			}else{
-		$("input").eq(i).val(GetQueryString("w"+i));
-			}
-		}
-	});
+//	$("#href").click(function(){
+//		for(i=0;i<$("input").length;i++){
+//			if(i==5){
+	
+//			}else{
+//		$("input").eq(i).val(GetQueryString("w"+i));
+//			}
+//		}
+//	});
 	
 	$("#heihei").change(function(){
 		for(i=0;i<$("input").length;i++){
@@ -143,7 +143,7 @@ echo file_get_contents("wuliaohao.html");
 <datalist id="pinfan">
 <option value='NHSB046A+CAP'>
 </datalist>
-<button>copy</button><a id="href" onclick="this.style.display='none';">自动填充>>>></a>
+<button>copy</button><!--<a id="href" onclick="this.style.display='none';">自动填充>>>></a>-->
 <div id="main" style="display:inline-block">
 <div style="display:inline-block;margin:40px 0 0 30px" >
 <table border="1" cellspacing="0" cellpadding="4">
@@ -151,25 +151,25 @@ echo file_get_contents("wuliaohao.html");
 <td colspan="2" align="center"><img src="hyteralogo.gif" width="70px">海能达通信股份有限公司</td><td rowspan="4" align="center"><div id="bigqr"></div></td>
 </tr>
 <tr>
-<td>PN:</td><td align="center"><input id="wuliaohao" class="qrcode" type="text" value=""></td>
+<td>PN:</td><td align="center"><input id="wuliaohao" class="qrcode" type="text" value="<?php echo $_GET['w0']; ?>"></td>
 </tr>
 <tr>
-<td>供应商料号:</td><td align="center"><input id="banngo" class="qrcode" type="text" value=""></td>
+<td>供应商料号:</td><td align="center"><input id="banngo" class="qrcode" type="text" value="<?php echo $_GET['w1']; ?>"></td>
 </tr>
 <tr>
-<td>规格型号:</td><td><input type="text" list="pinfan" value=""></td>
+<td>规格型号:</td><td><input type="text" list="pinfan" value="<?php echo $_GET['w2']; ?>"></td>
 </tr>
 <tr>
-<td>Datecode:</td><td align="center"><input class="qrcode" type="text" value=""></td><td rowspan="4" align="center"><img src="hyteralogo.gif" width="100px"></td>
+<td>Datecode:</td><td align="center"><input class="qrcode" type="text" value="<?php echo $_GET['w3']; ?>"></td><td rowspan="4" align="center"><img src="hyteralogo.gif" width="100px"></td>
 </tr>
 <tr>
-<td>lot No:</td><td align="center"><input class="qrcode" type="text" value=""></td>
+<td>lot No:</td><td align="center"><input class="qrcode" type="text" value="<?php echo $_GET['w4']; ?>"></td>
 </tr>
 <tr>
 <td>Qty:</td><td align="center"><input id="heihei" class="qrcode" type="text" value=""></td>
 </tr>
 <tr>
-<td>PO:</td><td align="center"><input id="haha" type="text" value=""></td>
+<td>PO:</td><td align="center"><input id="haha" type="text" value="<?php echo $_GET['w6']; ?>"></td>
 </tr>
 </table>
 </div>

@@ -913,19 +913,29 @@ function po_ruku_complete(str){
 					if(xmlhttp.responseText==0){
 					alert("数量不正确 或者 输入有误");
 					}else{
-					document.getElementById("ajasdiv2").innerHTML=xmlhttp.responseText;
+						document.getElementById("ajasdiv").innerHTML="";
+						document.getElementById("ajasdiv2").innerHTML=xmlhttp.responseText;
 						if(xmlhttp.responseText==404){
 							
 							alert('该批次号已经存在！');
 						
 						}else{
-							
+						
+						
+						if(document.getElementById('cells')){				
 						document.getElementById('po_complete').checked=true;
 						cells=document.getElementById('cells').value;
-						document.getElementById('tableExcel').rows[cells].cells[2].innerHTML="<div class='classcp1' style='background-color:blue'>入荷済み</div>";
 						document.getElementById('checked1').color='black';
+						}else{
+						cells=document.getElementById('cellss').value;	
 						}
-					setTimeout("document.getElementById('ajasdivout2').style.right='-450'",2000);
+						
+						
+						document.getElementById('tableExcel').rows[cells].cells[2].innerHTML="<div class='classcp1' style='background-color:blue'>入荷済み</div>";
+						
+						}
+						
+						setTimeout("document.getElementById('ajasdivout2').style.right='-450'",2000);
 						
 					}
 					
