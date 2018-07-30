@@ -268,7 +268,7 @@ function thousandBitSeparator(num) {
 			}
 			 ?>
 			<?php for($iiii=$iii;$iiii<=10;$iiii++){ ?>
-				<tr align="center" bgcolor="<?php if($iii%2==0){echo "#EEEEEE";} ?>"">
+				<tr align="center" bgcolor="<?php if($iii%2==0){echo "#EEEEEE";} ?>">
 					<td width="20px"><input type="text" value="<?php echo $iii;$iii++; ?>"/></td>
 					<td width="130px"><input type="text" value=""/></td>
 					<td width="30px" class="quantity"><input type="text" value=""/></td>
@@ -352,7 +352,7 @@ function thousandBitSeparator(num) {
 				
 		</table>
 	</div>
-	<div style="position:absolute;bottom:60px;left:20px;font-size:;width:330px">
+	<div style="position:absolute;bottom:<?php if($iii>11){echo "00";}else{echo "60";} ?>px;left:20px;font-size:;width:330px">
 		<table cellpadding="2" cellspacing="0" width="100%" border="0" >
 				<tr valign="top">
 				<td>Vender Confirmation</td>
@@ -366,7 +366,7 @@ function thousandBitSeparator(num) {
 				
 		</table>
 	</div>
-	<div style="position:absolute;bottom:60px;left:480px;font-size:;width:330px">
+	<div style="position:absolute;bottom:<?php if($iii>11){echo "00";$rand60=60;}else{echo "60";$rand60=0;} ?>px;left:480px;font-size:;width:330px">
 		<table cellpadding="2" cellspacing="0" width="100%" border="0" >
 				<tr valign="top">
 				<td>ASAHI TECHNOLOGY(SHANGHAI)CO.,LTD</td>
@@ -380,7 +380,7 @@ function thousandBitSeparator(num) {
 				
 		</table>
 	</div>
-	<div style="position:absolute;bottom:<?php echo rand(80,120) ?>px;left:<?php echo rand(530,560) ?>px;">
+	<div style="position:absolute;bottom:<?php echo rand(80-$rand60,120-$rand60) ?>px;left:<?php echo rand(530,560) ?>px;">
 	<img src="img/gaizhang.png" width="175px" height="175px">
 	</div>
 </div>
