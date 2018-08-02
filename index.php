@@ -53,7 +53,7 @@ if($logintime){
 <table cellpadding="0" cellspacing="0" width="100%" height="100%"><!--主表格框-->
 <tr><!--最外的表格框-->
 <td width="120px;"><!--菜单栏-->
-	<div style="width:100%;height:100%;background-color:#000022;">
+	<div style="width:100%;height:100%;background-color:#000000;">
 		<style>
 		#shangbutr{
 			transition:all 0.5s;
