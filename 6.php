@@ -194,7 +194,7 @@ td:hover{
 	<td align="center"><div class="classcp1" style="background-color:<?php echo $bgimg; ?>"><?php echo $states; ?></div></td>
 	<td><a href="4-1.php?asahit1=<?php echo $row[0]; ?>" ><?php echo $row[0]; ?></a></td>
 	<td><?php echo $row[5]; ?></td>
-<td><a href="###" onclick="po_banngo('_id=<?php echo $row[9] ?>&cells=<?php echo $jjj+1 ?>')"><u><?php echo $row[1]; ?></u></a><?php if(!$row[8] && $row[3]<date('Y-m-d')){ ?><a href="###" onclick="document.getElementById('cellss').value='<?php echo $jjj+1; ?>';eee=1;po_ru_quantity=<?php echo $row[2]; ?>;po_ruku('t2=<?php echo $row[1] ?>&t3=<?php echo $row[2] ?>&t6=<?php echo $row[5] ?>&customer_id=<?php echo $row[10] ?>&_id=<?php echo $row[9] ?>&asahipo=<?php echo $row[0] ?>')">[入库]</a><?php } ?></td>
+<td><a href="###" onclick="po_banngo('_id=<?php echo $row[9] ?>&cells=<?php echo $jjj+1 ?>')"><u><?php echo $row[1]; ?></u></a><?php if($row[3]!="0000-00-00" &&!$row[8] && $row[3]<date('Y-m-d')){ ?><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='<?php echo $jjj+1; ?>';eee=1;po_ru_quantity=<?php echo $row[2]; ?>;po_ruku('t2=<?php echo $row[1] ?>&t3=<?php echo $row[2] ?>&t6=<?php echo $row[5] ?>&customer_id=<?php echo $row[10] ?>&_id=<?php echo $row[9] ?>&asahipo=<?php echo $row[0] ?>')">[入库]</a><?php } ?></td>
 	<td align="right"><?php echo $row[2]; ?></td>
 	<td align="left">pcs</td>
 	<td><?php if($row[4]==0){ echo ""; }elseif($row[4]<=$row[3]){ echo "<font color='red'>".$row[4]."</font>"; }else{ echo $row[4]; } ?></td>

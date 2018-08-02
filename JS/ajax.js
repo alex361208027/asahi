@@ -913,7 +913,7 @@ function po_ruku_complete(str){
 					if(xmlhttp.responseText==0){
 					alert("数量不正确 或者 输入有误");
 					}else{
-						document.getElementById("ajasdiv").innerHTML="";
+						
 						document.getElementById("ajasdiv2").innerHTML=xmlhttp.responseText;
 						if(xmlhttp.responseText==404){
 							
@@ -926,7 +926,9 @@ function po_ruku_complete(str){
 						document.getElementById('po_complete').checked=true;
 						cells=document.getElementById('cells').value;
 						document.getElementById('checked1').color='black';
+						
 						}else{
+						
 						cells=document.getElementById('cellss').value;	
 						}
 						
