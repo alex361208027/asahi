@@ -1214,6 +1214,7 @@ function po_pipei_cancel_complete(str){
 /////		
 function findbanngo(str){
 			var xmlhttp;
+			str=str.replace("+","%2B");
 			if (str.length==0)
 			  { 
 			 
