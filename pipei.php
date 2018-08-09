@@ -147,15 +147,23 @@ if($customerradio){echo "【".$echo."】";}
 				<td><?php if($rowpo[6]){echo $rowpo[6];}elseif($rowpo[8]){echo "到货完成<br>请查看是否在库";} ?></td>
 			</tr>
 			<?php } ?>
-			<?php if($po2){
-				while($rowzaiku=$resultzaiku->fetch_row()){ ?>
+			<?php if($po2){ ?>
+				<tr>
+				<td>在库信息:</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				</tr>
+			<?php while($rowzaiku=$resultzaiku->fetch_row()){ ?>
 			<tr align="center" style="background-color:black;color:white">
 				<td></td>
 				<td><?php echo $rowzaiku[0] ?><br>&nbsp;</a></td>
 				<td><?php echo $rowzaiku[1] ?></td>
 				<td><?php echo $rowzaiku[2] ?></td>
 				<td><?php echo $rowzaiku[3] ?></td>
-				<td><?php if($rowzaiku[6]){echo "(已匹配)";} ?>在库中</td>
+				<td>在库中</td>
 			</tr>
 			<?php } } ?>
 		</table>

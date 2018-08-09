@@ -49,7 +49,7 @@ $year=$year-1;
 function total(str){
 			
 			str="campany="+document.getElementById('kehu').value+"&banngo="+document.getElementById('pinfan').value+"&year="+document.getElementById('year').value+"&month="+document.getElementById('month').value;
-		
+			str=str.replace("+","%2B");
 			
 			var xmlhttp;
 			if (str.length==0)
