@@ -1,4 +1,6 @@
 <?php
+echo file_get_contents("templates/header.html");
+
 $servername = "localhost";
 $username = "root";
 $password = "root";
@@ -15,7 +17,7 @@ if($resultlogin->num_rows > 0){
 $campany=$_GET['campany'];
 $banngo=$_GET['banngo'];
 $price=$_GET['price'];$sellprice=$_GET['sellprice'];$reel=$_GET['reel'];
-$search=$_GET['search'];
+$search=$_GET['search'];$han=$_GET['han'];
 
 if($banngo&&$price){
 	if(mysqli_query($conn,"SELECT * FROM `t_poprice` WHERE banngo = '$banngo' AND campany = '$campany'")-> num_rows > 0){
@@ -25,13 +27,18 @@ if($banngo&&$price){
 		echo $banngo." &nbsp  <-添加成功,<a href='poprice.php'>回到首页</a>";
 	}
 }else{
-	if($search){
-$sql = "SELECT * FROM `t_poprice` WHERE banngo like '%$search%' OR campany like '%$search%' OR description like '%$search%' order by banngo asc";		
+	if($han){
+		$han="";
 	}else{
-$sql = "SELECT * FROM `t_poprice` WHERE 1 order by banngo asc";
+		$han="and state=0";
 	}
-$result=mysqli_query($conn,$sql);
-$i=1;
+	if($search){
+	$sql = "SELECT * FROM `t_poprice` WHERE banngo like '%$search%' OR campany like '%$search%' OR description like '%$search%' order by banngo asc";		
+	}else{
+	$sql = "SELECT * FROM `t_poprice` WHERE banngo is not null $han order by banngo asc";
+	}
+	$result=mysqli_query($conn,$sql);
+	$i=1;
 ?>
 <style>	
 input[type="text"], .inputlist{
@@ -48,46 +55,56 @@ input[type="text"], .inputlist{
 	text-align:center;
 margin-right: 3px;
 }
-.banngo{
-	position:relative;
+
+
+.beizhu{
+	min-width:150px;
 }
 
-.description input{
-background:none;color:#FFFF11;width:95%
-}
-.description{
-	display:;
-	color:white; z-index:10;
-	position:absolute;top:0px;right:0px;background:#777777;padding:0px 0px;width:100%;max-height:0px;overflow:hidden;
--webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-box-shadow: 0px 1px 8px #BBBBBB;
-  -moz-box-shadow: 0px 1px 8px #BBBBBB;
-  box-shadow: 0px 1px 8px #BBBBBB;
-  
-transition:all 1.3s;
--moz-transition:all 1.3s; /* Firefox 4 */
--webkit-transition:all 1.3s; /* Safari and Chrome */
--o-transition:all 1.3s; /* Opera */
-
-transition-delay: 1s;
--moz-transition-delay: 1s; /* Firefox 4 */
--webkit-transition-delay: 1s; /* Safari 和 Chrome */
--o-transition-delay: 1s; /* Opera */
-  
+.buchangyong:hover{
+	color:blue;cursor: pointer;
 }
 
-.banngo:hover > .description{
-	display:;padding:4px 0px;
-	max-height:300px;
+.sb{
+	position:relative;display:inline;
+}
+.state{
+	display:none;position:absolute;top:-10px;left:25px;
+}
+.statebutton{
+	
+}
+ul, li{
+	min-width:100px;
+}
+ul{
+	padding:2px;
+}
+li{
+	font-size:12px;margin-top:5px;
 }
 
-.description hr{
-	width:95%
-}
 
-</style>	
+cc{
+	color:#B6ADB8;
+}
+</style>
+<script>
+$(document).ready(function(){
+	$(".statebutton").click(function(){
+	if($(this).next().css("display")=='none'){
+		$('.statebutton').css("background","");
+		$(this).css("background","#777777");
+		$('.state').fadeOut();
+	    $(this).next().fadeIn();
+	}else{
+		$(this).next().fadeOut();
+		$(this).css("background","");
+	}
+	});
+	
+});
+</script>	
 <form action="poprice.php" method="GET">
 <input list="kehulist" class="inputlist" name="campany" style="width:150px" value="" placeholder="客户名" /><input type="text" name="banngo" style="width:200px" value="" placeholder="新番号"><input type="text" name="price" value="" placeholder="进价"><input type="text" name="sellprice" value="" placeholder="卖价"><input type="text" name="reel" value="" placeholder="pcs/reel"><input type="submit" value="添加">
 </form>
@@ -98,7 +115,7 @@ echo file_get_contents("ajax/write_data/campany.html");
 </datalist>
 <hr>
 <form action="poprice.php" method="GET">
-<input type="text" name="search" list="kehulist" style="width:200px" value="<?php echo $search ?>" placeholder="搜索番号"><input type="submit" value="搜索">
+<input type="text" name="search" list="kehulist" style="width:200px" value="<?php echo $search ?>" placeholder="搜索番号"><input type="submit" value="搜索"> <input type="checkbox" name="han" value="1" <?php if($search){echo "checked";} ?>>含不常用品番
 </form>
 <table cellpadding="2" cellspacing="0" align="center">
 <tr style="background-color:#FF6685;color:white;height:;" align="center">
@@ -115,17 +132,24 @@ echo file_get_contents("ajax/write_data/campany.html");
 	<tr>
 	<td><i><?php echo $i ?>.</i></td>
 	<td align="center"><input type="text" id="campany<?php echo $row[0] ?>" value="<?php echo $row[4] ?>"></td>
-	<td align="center" class="banngo"><?php echo $row[1] ?><div class="description"><?php echo $row[1] ?><hr>
-	<input type="text" value="<?php echo $row[7]; ?>" id="description<?php echo $row[0] ?>" onchange="description(<?php echo $row[0] ?>,1)" placeholder="点击输入备注"/><br>
-	mcd:<input type="text" value="<?php echo $row[8]; ?>" id="mcd<?php echo $row[0] ?>" style="width:50px" onchange="description(<?php echo $row[0] ?>,2)" placeholder="mcd"/>
-	X:<input type="text" value="<?php echo $row[9]; ?>" id="color_x<?php echo $row[0] ?>" style="width:50px" onchange="description(<?php echo $row[0] ?>,3)" placeholder="x"/>
-	Y:<input type="text" value="<?php echo $row[10]; ?>" id="color_y<?php echo $row[0] ?>" style="width:50px" onchange="description(<?php echo $row[0] ?>,4)" placeholder="y"/>
-	</div></td>
+	<td align="center"><?php if($row[11]==0){echo $row[1];}elseif($row[11]==1){echo "<cc>".$row[1]."</cc>";} ?></td>
 	<td><input type="text" id="price<?php echo $row[0] ?>" value="<?php echo $row[2] ?>"></td>
 	<td><input type="text" id="sellprice<?php echo $row[0] ?>" value="<?php echo $row[5] ?>"></td>
 	<td><input type="text" id="reel<?php echo $row[0] ?>" value="<?php echo $row[3] ?>"></td>
 	<td><input type="text" id="other<?php echo $row[0] ?>" value="<?php echo $row[6] ?>"></td>
-	<td><button id="button<?php echo $row[0] ?>" onclick="po_price(<?php echo $row[0] ?>)">确认编辑</button></td>
+	<td><button id="button<?php echo $row[0] ?>" onclick="po_price(<?php echo $row[0] ?>)">确认编辑</button> 
+	<div class="sb"><button class="statebutton" onclick="po_state(<?php echo $row[0] ?>)">></button>
+	<div class="state">
+	<ul>
+	<li>【<?php echo $row[1] ?>】</li>
+	<li><input type="text" class="beizhu" value="<?php echo $row[7]; ?>" id="description<?php echo $row[0] ?>" onchange="description(<?php echo $row[0] ?>,1)" placeholder="点击输入备注"/></li>
+	<li>mcd:<input type="text" value="<?php echo $row[8]; ?>" id="mcd<?php echo $row[0] ?>" style="width:50px" onchange="description(<?php echo $row[0] ?>,2)" placeholder="mcd"/></li>
+	<li>X:<input type="text" value="<?php echo $row[9]; ?>" id="color_x<?php echo $row[0] ?>" style="width:50px" onchange="description(<?php echo $row[0] ?>,3)" placeholder="x"/></li>
+	<li>Y:<input type="text" value="<?php echo $row[10]; ?>" id="color_y<?php echo $row[0] ?>" style="width:50px" onchange="description(<?php echo $row[0] ?>,4)" placeholder="y"/></li>
+	<li class="buchangyong" onclick="buchangyong(<?php echo $row[0]; ?>,<?php echo $row[11]; ?>,this)"><?php if($row[11]==0){echo "设置为不常用";}elseif($row[11]==1){echo "设置为常用";} ?></li>
+	</ul>
+	</div>
+	</div></td>
 	</tr>
 <?php	
 $i++;
@@ -240,6 +264,34 @@ function description(id,num){
 				}
 			  }
 			xmlhttp.open("GET","ajax/pricechange_description.php?"+str,true);
+			xmlhttp.send();
+}
+
+function buchangyong(str,state,thiss){
+			str="_id="+str+"&state="+state;
+			
+			var xmlhttp;
+			if (str.length==0)
+			  { 
+			  
+			  return;
+			  }
+			if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
+			  xmlhttp=new XMLHttpRequest();
+			  }else{// code for IE6, IE5
+			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+			  
+			xmlhttp.onreadystatechange=function()
+			  {
+			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+				{	
+					//xmlhttp.responseText
+					//setTimeout("location.reload()",500);
+					thiss.innerHTML="设置成功！";
+				}
+			  }
+			xmlhttp.open("GET","ajax/po_price_buchangyong.php?"+str,true);
 			xmlhttp.send();
 }
 </script>
