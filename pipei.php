@@ -158,12 +158,12 @@ if($customerradio){echo "【".$echo."】";}
 				</tr>
 			<?php while($rowzaiku=$resultzaiku->fetch_row()){ ?>
 			<tr align="center" style="background-color:black;color:white">
-				<td></td>
+				<td>在库中</td>
 				<td><?php echo $rowzaiku[0] ?><br>&nbsp;</a></td>
 				<td><?php echo $rowzaiku[1] ?></td>
 				<td><?php echo $rowzaiku[2] ?></td>
 				<td><?php echo $rowzaiku[3] ?></td>
-				<td>在库中</td>
+				<td></td>
 			</tr>
 			<?php } } ?>
 		</table>
