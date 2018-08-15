@@ -114,5 +114,5 @@ echo file_get_contents("wuliaohao.html");
 <td>PO:</td><td align="center" colspan="2"><input id="haha" type="text" value=""><td>MFG</td><td align="center" width="90px"></td>
 </tr>
 </table>
-<a class="memo" href="wuliaohao.php">>>查询物料号</a> <a class="memo" id="href" href=""></a><a href="###" id="qrcode-s">>>外标签链接</a>
+<a class="memo" href="wuliaohao.php">>>查询物料号</a> <a class="memo" id="href" href=""></a><a class="memo" href="###" id="qrcode-s">>>外标签链接</a>
 </body>

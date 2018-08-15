@@ -275,7 +275,7 @@ d1=year+'-'+month+'-'+day;
 		客户编号<input type="text" id="c1" name="c1" value="">番号<input type="text" name="c2" value="" onchange="document.getElementsByName('po2')[0].value=this.value">
 	</td>
 	<td width="20%" align="center">
-		<input type="submit" value="匹配搜索"><br><input type="button" value="reset" onclick="location.reload();"/>
+		<input type="submit" value="匹配搜索"><input type="button" value="reset" onclick="location.reload();"/>
 	</td>
 	<td width="40%" align="center">
 		朝日编号<input type="text" name="po1" value="">番号<input type="text" name="po2" value="" onchange="document.getElementsByName('c2')[0].value=this.value">
