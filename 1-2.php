@@ -60,7 +60,7 @@ mysqli_query($conn,"INSERT INTO `t_teacher`(`campany`, `ordernum`, `banngo`, `qu
 	  <hr>
 	  <div class="php1word">产品番号<input list="banngolist" class="inputlist" name="t5" value="" onchange="findbanngo(this.value+'&banngoname=5&campany='+document.getElementsByName('t1')[0].value)"/></div>
 	  <div id="findbanngo" style="display:none;font-size:12px;color:#FFAABB;padding-left:20px;">加载中</div>
-	  <div class="php1word">产品数量<input list="quantitylist" class="inputlist" name="t6" onchange="quantitycheck(this.value)"/></div>
+	  <div class="php1word">产品数量<input list="quantitylist" class="inputlist" name="t6" onchange="quantitychecktest(this.value)"/></div>
 	  <div class="php1word">希望交期<input type="date" name="t7" value="<?php echo $t7 ?>" /></div>
 	  <input type="submit" value="添加产品" onclick="buttons(this)" /><br>
 	  朝日订单<input type="text" name="asahiorder" value="<?php echo $asahiorder ?>"/ placeholder="同时创建朝日订单">
@@ -89,7 +89,6 @@ while($row2=$result2->fetch_row()){
 </td></tr>
 </table>
 <?php $result=mysqli_query($conn,"SELECT banngo FROM `t_poprice` WHERE campany='$t1' order by banngo asc"); ?>
-<input type='hidden' id='quantitycheck' value=''/>
 <datalist id="banngolist">
 <?php
 while($row=$result->fetch_row()){

@@ -48,6 +48,8 @@ $(document).ready(function(){
 			}
 		}
 		
+		$("title").prepend($("input").eq(1).val());
+		
 		bigqr="";
 		for(i=0;i<$("input").length;i++){
 		bigqr=bigqr+$("input").eq(i).val().replace("+","%2B");;
