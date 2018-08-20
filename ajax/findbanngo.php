@@ -43,8 +43,8 @@ if($result->num_rows == 0){
 		echo "<input type='hidden' id='quantitycheck' value='2000'/>";
 	}
 	
-	
-	$sql="SELECT * FROM `t_poteacher` WHERE banngo = '$banngo' AND customer_id = ''";
+	$today25=date('Y-m-d',strtotime('-6 months'));
+	$sql="SELECT * FROM `t_poteacher` WHERE banngo = '$banngo' AND customer_id = '' AND (JPdate = 0 OR JPdate >= '$today25')";
 	$result = mysqli_query($conn,$sql);
 	if($result->num_rows == 0){
 		
