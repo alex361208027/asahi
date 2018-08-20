@@ -1230,51 +1230,62 @@ function findbanngo(str){
 			  {
 			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
 				{	
-					if(xmlhttp.responseText=="f3000"){
-						document.getElementById("findbanngo").style.display= "none";
-						document.getElementById("quantitylist").innerHTML="";
-						for(i=1;i<18;i++){
-						document.getElementById("quantitylist").innerHTML+="<option value='"+3000*i+"'>";
-						}
-						document.getElementById("quantitycheck").value=3000;
+					//if(xmlhttp.responseText=="f3000"){
+					//	document.getElementById("findbanngo").style.display= "block";
+					//	document.getElementById("findbanngo").innerHTML= "<input type='hidden' id='quantitycheck' value='3000'/>";
+					//	document.getElementById("quantitylist").innerHTML="";
+					//	for(i=1;i<18;i++){
+					//	document.getElementById("quantitylist").innerHTML+="<option value='"+3000*i+"'>";
+					//	}
+						
 							
-					}else if(xmlhttp.responseText=="f6000"){
-						document.getElementById("findbanngo").style.display= "none";
-						document.getElementById("quantitylist").innerHTML="";
-						for(i=1;i<18;i++){
-						document.getElementById("quantitylist").innerHTML+="<option value='"+6000*i+"'>";
-						}
-						document.getElementById("quantitycheck").value=6000;
-					}else if(xmlhttp.responseText=="f2000"){
-						document.getElementById("findbanngo").style.display= "none";
-						document.getElementById("quantitylist").innerHTML="";
-						for(i=1;i<18;i++){
-						document.getElementById("quantitylist").innerHTML+="<option value='"+2000*i+"'>";
-						}
-						document.getElementById("quantitycheck").value=2000;
-					}else{
-						document.getElementById("findbanngo").style.display= "block";
-						document.getElementById("findbanngo").innerHTML= xmlhttp.responseText;
-					}
+					//}else if(xmlhttp.responseText=="f6000"){
+					//	document.getElementById("findbanngo").style.display= "block";
+					//	document.getElementById("findbanngo").innerHTML= "<input type='hidden' id='quantitycheck' value='6000'/>";
+					//	document.getElementById("quantitylist").innerHTML="";
+					//	for(i=1;i<18;i++){
+					//	document.getElementById("quantitylist").innerHTML+="<option value='"+6000*i+"'>";
+					//	}
+					//	
+					//}else if(xmlhttp.responseText=="f2000"){
+					//	document.getElementById("findbanngo").style.display= "block";
+					//	document.getElementById("findbanngo").innerHTML= "<input type='hidden' id='quantitycheck' value='2000'/>";
+					//	document.getElementById("quantitylist").innerHTML="";
+					//	for(i=1;i<18;i++){
+					//	document.getElementById("quantitylist").innerHTML+="<option value='"+2000*i+"'>";
+					//	}
+						
+					//}else{
+					//	document.getElementById("findbanngo").style.display= "block";
+					//	document.getElementById("findbanngo").innerHTML= "<input type='hidden' id='quantitycheck' value=''/>";
+					//	document.getElementById("findbanngo").innerHTML= xmlhttp.responseText;
+					//}
+					
+					document.getElementById("findbanngo").style.display= "block";
+					document.getElementById("findbanngo").innerHTML= xmlhttp.responseText;
 					
 				}
 			  }
 			xmlhttp.open("GET","./ajax/findbanngo.php?banngo="+str,true);
 			xmlhttp.send();
 
-}		
+}
+
 function thispinfan(str, banngoname){
 	document.getElementsByName('t'+banngoname)[0].value=str;
 }
+
 function findbanngo_display(){
 	document.getElementById("findbanngo").style.display= "none";
 }
 
-function quantitycheck(str){
-	check=document.getElementById("quantitycheck").value;
+function quantitychecktest(str){
+	
+	check=document.getElementById('quantitycheck').value;
 	if((str % check)==0){
 		
 	}else{
 		alert("请检查数量是否符合最小订单量");
 	}
 }
+
