@@ -30,6 +30,7 @@ foreach($quantity as $quantity){
 }
 
 ?>
+<div style="height:600px;OVERFLOW-Y:auto;">
 <table width="600px">
 
 <tr>
@@ -61,7 +62,7 @@ foreach($quantity as $quantity){
 </td>
 </tr>
 </table>
-
+</div>
 <?php
 $conn->close();
 

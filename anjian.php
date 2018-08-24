@@ -53,7 +53,7 @@ marquee{
 	font-size:25px;padding-top:20px;
 }
 .name{
-	border:2px solid black;display:inline-block;padding:2px 4px;color:black;margin:3px;
+	border:2px solid black;display:inline-block;padding:2px 4px;color:black;margin:3px;max-width:160px;height:auto;
 	-webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -135,9 +135,9 @@ while($row=$result->fetch_row()){ ?>
 <div class="waikuan">
 <div class="customer"><?php echo $row[4]; ?></div>
 <div class="name"><?php echo $row[1]; ?></div>
-<marquee><?php echo $row[2].$row[5]; ?></marquee>
-
-<div class="other"><?php echo $row[7]; ?></div>
+<marquee><?php echo $row[2]." 【".$row[5]."】"; ?></marquee>
+<br><br>
+<div class="other"><?php if($row[7]){echo $row[7];}else{echo $row[5];} ?></div>
 </div> 
 
 </div>
