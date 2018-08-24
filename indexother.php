@@ -202,17 +202,17 @@ d1=year+'-'+month+'-'+day;
 </style>
 	<div class="zaiku">
 		<a href="in.php?in=in" target="xiabu">
-			<input type="image" src="img/in.png" onclick="submit()"/> &nbsp; 当前在库数
+			<img src="img/in.png" /> &nbsp; 当前在库数
 		</a>
 	</div>
 	<div class="zaiku">
 		<a href="in.php" target="xiabu">
-			<input type="image" src="img/out.png" onclick="submit()"/> &nbsp; 出库记录
+			<img src="img/out.png" /> &nbsp; 出库记录
 		</a>
 	</div>
 	<div class="zaiku">
 		<a href="putin.php" target="xiabu">
-			<input type="image" src="img/putin.png" onclick="submit()"/> &nbsp; 手动入库
+			<img src="img/putin.png" /> &nbsp; 手动入库
 		</a>
 	</div>
 </td></tr></table>	

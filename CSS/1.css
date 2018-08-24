@@ -96,7 +96,24 @@ input[type="submit"]:hover,input[type="button"]:hover{
 	background-color:#666666;color:white;
 }
 
+input[type="checkbox"],input[type="number"],input[type="radio"]{
+	width: auto;
+    height: auto;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color:none;
+    
+    background:none;
+	text-align:left;
+	margin-top:0;
+	margin-left:0;
+	font-family: Arial;
+	
 
+	text-overflow:ellipsis;
+}
 
 
 
