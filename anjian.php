@@ -18,7 +18,7 @@ if(!$page){
 }
 
 if($search){
-	$sql="SELECT * FROM `t_anjian` WHERE (customer like '%$search%' OR name like '%$search%' OR parts like '%$search%' OR led like '%$search%' OR other like '%$search%') order by time desc limit $page,6";
+	$sql="SELECT * FROM `t_anjian` WHERE (customer like '%$search%' OR name like '%$search%' OR parts like '%$search%' OR car like '%$search%' OR led like '%$search%' OR other like '%$search%') order by time desc limit $page,6";
 }else{
 $sql="SELECT * FROM `t_anjian` WHERE 1 order by time desc limit $page,6";
 }
@@ -29,7 +29,7 @@ $page=$page+6
 ?>
 <style>
 marquee{
-	max-width:200px;font-size:14px;color:black;
+	max-width:200px;font-size:16px;color:black;
 }
 .anjian{
 	display:inline-block;margin:20px;position:relative
@@ -50,13 +50,16 @@ marquee{
   background:#EEEEEE
 }
 .customer{
-	font-size:30px;padding-top:20px;
+	font-size:25px;padding-top:20px;
 }
 .name{
-	
+	border:2px solid black;display:inline-block;padding:2px 4px;color:black;margin:3px;
+	-webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
 .other{
-	color:#999999;
+	color:#999999;font-size:12px;
 	transition: all 1s;
 -moz-transition: all 1s;	/* Firefox 4 */
 -webkit-transition: all 1s;	/* Safari 和 Chrome */
@@ -132,7 +135,8 @@ while($row=$result->fetch_row()){ ?>
 <div class="waikuan">
 <div class="customer"><?php echo $row[4]; ?></div>
 <div class="name"><?php echo $row[1]; ?></div>
-<marquee><?php echo $row[2]; ?></marquee>
+<marquee><?php echo $row[2].$row[5]; ?></marquee>
+
 <div class="other"><?php echo $row[7]; ?></div>
 </div> 
 
