@@ -233,10 +233,10 @@ d1=year+'-'+month+'-'+day;
 <div class="indexother">
 <table cellpadding="0" cellspacing="0" width="100%" height="100%"><tr><td>
   <div style="display:inline-block;"><form action="project.php" method="post" target="xiabu">
-项目:<input type="text" name="search" value=""/><input type="submit" value="搜索"/>
+名字搜索:<input type="text" name="search" value=""/><input type="submit" value="搜索"/>
 </form></div>
 <div style="display:inline-block;"><form action="projectx.php" method="post" target="xiabu">
-/内容:<input type="text" name="search" value=""/><input type="submit" value="搜索"/>
+/内容搜索:<input type="text" name="search" value=""/><input type="submit" value="搜索"/>
 </form></div>
 <div style="display:inline-block;margin-left:10%;"><a href="projectplus.php" target="xiabu">+++添加新项目</a></div>
 </td></tr></table>
