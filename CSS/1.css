@@ -57,13 +57,7 @@ a{text-decoration:none;}
   border-radius: 3px;margin:5px;
 }
 
-input[type="date"],
-input[type="text"],
-input[type="button"],
-input[type="password"],
-input[type="email"],
-input[type="submit"],
-input[type="tel"],
+input,
 .inputlist{
 	width: 140px;
     height: 26px;

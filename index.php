@@ -153,9 +153,9 @@ transition-delay: 0.8s;
 				<li><a href="putin.php" target="xiabu" onclick="document.getElementById('zaiku').click()">手动入库</a></li>
 			</ul></div></a>
 		<a href="#" onclick="document.getElementById('namecard2').click();document.getElementById('namecard1').click();"><div class="caidanxuanxiao" name="caidanxuanxiao" onclick="caidancolor(5)"><img src="img/namecard.png" /> &nbsp; 名 &nbsp; 片<a id="namecard1" href="indexother.php#findme_namecard" target="shangbu"></a><a id="namecard2" href="namecard.php" target="xiabu"></a></div></a>
-		<a href="#" onclick="document.getElementById('project2').click();document.getElementById('project1').click();"><div class="caidanxuanxiao" name="caidanxuanxiao" onclick="caidancolor(6)"><img src="img/project.png" /> &nbsp; 项 &nbsp; 目<a id="project1" href="indexother.php#findme_project" target="shangbu"></a><a id="project2" href="project.php" target="xiabu"></a></div></a>
+		<a href="#" onclick="document.getElementById('project2').click();document.getElementById('project1').click();"><div class="caidanxuanxiao" name="caidanxuanxiao" onclick="caidancolor(6)"><img src="img/project.png" /> &nbsp; 日 &nbsp; 志<a id="project1" href="indexother.php#findme_project" target="shangbu"></a><a id="project2" href="project.php" target="xiabu"></a></div></a>
 		
-		<a href="indexother.php#hometop" target="shangbu"><div class="caidanxuanxiao"><img src="img/total.png"/> &nbsp; 统计(测试) >
+		<a href="indexother.php#hometop" target="shangbu"><div class="caidanxuanxiao"><img src="img/total.png"/> &nbsp; 统 &nbsp; 计 >
 		<ul>
 				<li><a href="total.php" target="xiabu">统计</a></li>
 				<!--<li><a href="total2.php" target="xiabu">> 统计(过去)</a></li>-->
