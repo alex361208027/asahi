@@ -18,9 +18,9 @@ if(!$page){
 }
 
 if($search){
-	$sql="SELECT * FROM `t_anjian` WHERE (customer like '%$search%' OR name like '%$search%' OR parts like '%$search%' OR led like '%$search%' OR other like '%$search%') limit $page,6";
+	$sql="SELECT * FROM `t_anjian` WHERE (customer like '%$search%' OR name like '%$search%' OR parts like '%$search%' OR led like '%$search%' OR other like '%$search%') order by time desc limit $page,6";
 }else{
-$sql="SELECT * FROM `t_anjian` WHERE 1 limit $page,6";
+$sql="SELECT * FROM `t_anjian` WHERE 1 order by time desc limit $page,6";
 }
 $result=mysqli_query($conn,$sql);
 
@@ -50,7 +50,7 @@ marquee{
   background:#EEEEEE
 }
 .customer{
-	font-size:30px;padding-top:10px;
+	font-size:30px;padding-top:20px;
 }
 .name{
 	

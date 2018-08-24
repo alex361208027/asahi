@@ -165,6 +165,7 @@ transition-delay: 0.8s;
 		<ul>
 				<li><a href="poprice.php" target="_blank">产品列表</a></li>
 				<li><a href="campany.php" target="_blank">客户列表</a></li>
+				<li><a href="anjian.php" target="_blank">案件列表</a></li>
 			</ul></div></a>	
 			
 		<a href="###" target=""><div class="caidanxuanxiao"><img src="img/other.png"/> &nbsp; 功 &nbsp; 能 >
