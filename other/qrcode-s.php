@@ -91,7 +91,8 @@ echo file_get_contents("wuliaohao.html");
 		$("#wuliaohao").after(txt);
 		$("#wuliaohao").attr("value",$("#wuliaohao").val());
 		
-		$("title").prepend($(this).val());
+		$("title").empty();
+		$("title").prepend($(this).val()+"小标签-1页4面打印");
 		
 	}else{
 		alert("未找到该物料号")
