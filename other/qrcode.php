@@ -38,8 +38,8 @@ echo file_get_contents("wuliaohao.html");
 		txt="<br><img src='http://b.wwei.cn/html/image.php?filetype=PNG&dpi=72&scale=1&rotation=0&font_family=0&font_size=8&text="+$("#wuliaohao").val()+"&thickness=25&start=B&code=BCGcode128'/>";
 		$("#wuliaohao").nextAll().remove();
 		$("#wuliaohao").after(txt);
-		
-		$("title").prepend($(this).val());
+		$("title").empty();
+		$("title").prepend($(this).val()+"外标签-缩放80%打印");
 		
 	}else{
 		alert("未找到该物料号")

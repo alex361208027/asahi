@@ -158,7 +158,7 @@ transition-delay: 0.8s;
 		<a href="indexother.php#hometop" target="shangbu"><div class="caidanxuanxiao"><img src="img/total.png"/> &nbsp; 统 &nbsp; 计 >
 		<ul>
 				<li><a href="total.php" target="xiabu">统计</a></li>
-				<!--<li><a href="total2.php" target="xiabu">> 统计(过去)</a></li>-->
+				<li><a href="total_highcharts.php" target="xiabu">统计BETA</a></li>
 			</ul></div></a>
 			
 		<a href="###" target=""><div class="caidanxuanxiao"><img src="img/other.png"/> &nbsp; 其 &nbsp; 他 >
