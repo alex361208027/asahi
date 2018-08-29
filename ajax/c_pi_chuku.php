@@ -36,7 +36,7 @@ foreach($checkbox as $checkboxid => $_id){
 	}else{
 		echo "其中一个错误 请尝试手动出库 error-2";
 	}
-	echo "/r";
+	echo "\r";
 }
 
 function findtotal($all,$q,$id){

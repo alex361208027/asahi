@@ -374,7 +374,7 @@ shdate=document.getElementById('SHdate').value;
 expressnum=document.getElementById('expressnum').value;
 if(shdate&&expressnum){
 	
-	if(confirm("确认是否执行出库")){
+	if(confirm("确认是否执行出库? 日期："+shdate+"，运单号："+expressnum)){
 	
 			str="";
 			var checkbox=document.getElementsByName('checkboxsum');
