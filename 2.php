@@ -35,7 +35,7 @@ if($_GET['t11']){
 }else{
 $t11 = $_POST['t11'];
 }
-
+$t12 = $_POST['t12'];
 $eee=0;
 
 
@@ -125,7 +125,14 @@ if($t7||$t77){
 }else{
 	$tt7="";
 }
-//$select=$tt3.$tt1.$tt5.$tt4.$tt7.$tt9.$tt10.$tt6;
+
+if($t12){
+	$tt12="AND asahiorder2 <> ''";
+	$nopox=$nopox."<div class='nopox'>在库のみ</div>";
+}else{
+	$tt12="";
+}
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 mysqli_set_charset ($conn,utf8);
 
@@ -136,7 +143,7 @@ $nowpage=0;
 $nowpagestart=$nowpage+1;
 $nowpageend=$nowpage+100;
 
-$sql="SELECT *,IF(SHdate='0000-00-00',hopedate,SHdate) as thedate FROM `t_teacher` WHERE $tt3 $tt1 $tt5 $tt4 $tt7 $tt9 $tt10 $tt11 $tt6 order by thedate,campany,ordernum,hopedate,banngo asc limit $nowpage,100";
+$sql="SELECT *,IF(SHdate='0000-00-00',hopedate,SHdate) as thedate FROM `t_teacher` WHERE $tt3 $tt1 $tt5 $tt4 $tt7 $tt9 $tt10 $tt11 $tt6 $tt12 order by thedate,campany,ordernum,hopedate,banngo asc limit $nowpage,100";
 //$sql="SELECT * FROM `t_teacher` WHERE $tt3 $tt1 $tt5 $tt4 $tt7 $tt9 $tt10 $tt11 $tt6 order by SHdate,campany,ordernum,hopedate,banngo asc limit $nowpage,100";
 $result=mysqli_query($conn,$sql);
 
@@ -245,9 +252,7 @@ td:hover{
 <?php } ?>
 </table></div>
 <div class="message">
-<?php 
-//if($shuzigengxin){mysqli_query($conn,"UPDATE `t_note` SET `note`='{$eee}',`time`='{$todaytime}' WHERE user='getchuli' AND remark='4'");}
-?>
+
 <script>
 function mycheckbox(str){
 	var button=document.getElementById('button3');
@@ -273,12 +278,13 @@ function mycheckbox(str){
 </div>
 <form action="2.php" method="post">
 <?php $nowpage=$nowpage+100; ?>
+<?php if($jjj>=100){ ?><input type="submit" value=" &nbsp; " style="background:url('img/next.png') no-repeat; width:46px; height:32px;">
 <input type="hidden" name="nowpage" value="<?php echo $nowpage ?>"/>
 <input type="hidden" name="t6" value="<?php echo $t6 ?>"/><input type="hidden" name="t1" value="<?php echo $t1 ?>"/><input type="hidden" name="t3" value="<?php echo $t3 ?>"/>
 <input type="hidden" name="t5" value="<?php echo $t5 ?>"/><input type="hidden" name="t4" value="<?php echo $t4 ?>"/>
 <input type="hidden" name="t7" value="<?php echo $t7 ?>"/><input type="hidden" name="t77" value="<?php echo $t77 ?>"/><input type="hidden" name="t9" value="<?php echo $t9 ?>"/>
-<input type="hidden" name="t10" value="<?php echo $t10 ?>"/><input type="hidden" name="t11" value="<?php echo $t11 ?>"/>
-<?php if($jjj>=100){ ?><input type="submit" value=" &nbsp; " style="background:url('img/next.png') no-repeat; width:46px; height:32px;"><?php } ?>
+<input type="hidden" name="t10" value="<?php echo $t10 ?>"/><input type="hidden" name="t11" value="<?php echo $t11 ?>"/><input type="hidden" name="t12" value="<?php echo $t12 ?>"/>
+<?php }elseif($jjj<1){echo "无内容：请尝试更改检索";} ?>
 </form>
 <br><br>
 <div class="xiaokuan">
