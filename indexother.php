@@ -164,7 +164,7 @@ if(day<10){
 }
 d1=year+'-'+month+'-'+day;
 </script>
-<input type="checkbox" name="t9" value="checked" onclick="if(this.checked && document.getElementsByName('t7')[0].value==''){document.getElementsByName('t7')[0].value=d1;}else if(this.checked==false && document.getElementsByName('t7')[0].value==d1){document.getElementsByName('t7')[0].value='';}">含完成 &nbsp; <input type="checkbox" name="t10" value="checked">未分配 &nbsp; <input type="checkbox" name="t11" value="checked">納期待つ除き &nbsp; 
+<input type="checkbox" name="t9" value="checked" onclick="if(this.checked && document.getElementsByName('t7')[0].value==''){document.getElementsByName('t7')[0].value=d1;}else if(this.checked==false && document.getElementsByName('t7')[0].value==d1){document.getElementsByName('t7')[0].value='';}">含完成 &nbsp; <input type="checkbox" name="t10" value="checked">未分配 &nbsp; <input type="checkbox" name="t11" value="checked">納期待つ除き &nbsp; <input type="checkbox" name="t12" value="checked">在库のみ &nbsp; 
 
 <br>上海出荷日:
 <input type="date" name="t7" value=""/> ~

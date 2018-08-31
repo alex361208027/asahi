@@ -241,12 +241,13 @@ function mycheckbox(str){
 </div>
 <form action="6.php" method="post">
 <?php $nowpage=$nowpage+100; ?>
+<?php if($jjj>=100){ ?><input type="submit" value=" &nbsp; " style="background:url('img/next.png') no-repeat; width:46px; height:32px;">
 <input type="hidden" name="nowpage" value="<?php echo $nowpage ?>"/>
 <input type="hidden" name="t6" value="<?php echo $t6 ?>"/><input type="hidden" name="t1" value="<?php echo $t1 ?>"/><input type="hidden" name="t3" value="<?php echo $t3 ?>"/>
 <input type="hidden" name="t5" value="<?php echo $t5 ?>"/><input type="hidden" name="t55" value="<?php echo $t55 ?>"/><input type="hidden" name="t4" value="<?php echo $t4 ?>"/>
 <input type="hidden" name="t7" value="<?php echo $t7 ?>"/><input type="hidden" name="t77" value="<?php echo $t77 ?>"/><input type="hidden" name="t9" value="<?php echo $t9 ?>"/>
 <input type="hidden" name="t10" value="<?php echo $t10 ?>"/><input type="hidden" name="t11" value="<?php echo $t11 ?>"/>
-<?php if($jjj>=100){ ?><input type="submit" value=" &nbsp; " style="background:url('img/next.png') no-repeat; width:46px; height:32px;"><?php } ?>
+<?php }elseif($jjj<1){echo "无内容：请尝试更改检索";}?>
 </form>
 <br><br>
 <div class="xiaokuan">
