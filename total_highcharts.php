@@ -17,11 +17,13 @@ while($row=$result->fetch_row()){
 	$campany[]=$row[0];
 }
 $ok=$_GET['ok'];$total=$_GET['total'];$campanynum=$_GET['campanynum'];
-$year=$_GET['year'];
+$year=$_GET['year'];$month=$_GET['month'];$qian=$_GET['qian'];$hou=$_GET['hou'];
 if(!$year){
 	$year=date('Y');
 }
-
+if(!$month){
+	$month=date('m');
+}
 
 ?>
 
@@ -32,7 +34,7 @@ if(!$year){
 </head>
 <script>
 function year(shit){
-	shit.href="total_highcharts.php?year="+document.getElementById('year').value+"&ok=1";
+	shit.href="total_highcharts.php?year="+document.getElementById('year').value+"&month="+document.getElementById('month').value+"&qian="+document.getElementById('qian').value+"&hou="+document.getElementById('hou').value+"&ok=1";
 	if(document.getElementById('total').checked){
 			shit.href+="&total="+document.getElementById('total').value;
 		}
@@ -47,8 +49,16 @@ function year(shit){
 	//shit.href="##";
 }
 </script>
+<style>
+input{
+	width:70px;background:none;border:1px solid black;
+}
+</style>
 <body>
-年度<input type="text" value="<?php echo $year; ?>" id="year" style="width:80px;background:none;border:1px solid black;"> <a href="" onclick="year(this)">Go</a>&nbsp;
+年度<input type="text" value="<?php echo $year; ?>" id="year"/>
+月份<input type="text" value="<?php echo $month; ?>" id="month"/> <a href="" onclick="year(this)"><button>Go</button></a>
+（包含前<input type="text" value="<?php if($qian){echo $qian;}else{echo 9;} ?>" id="qian" style="width:40px" />个月，
+后<input type="text" value="<?php if($hou){echo $hou;}else{echo 2;} ?>" id="hou" style="width:40px"/>个月的数据）<br>
 &nbsp;<label><input type="checkbox" <?php if(!$ok){echo "checked";}elseif($total){echo "checked";} ?> id="total" value="1" />【月总数】</label>
 
 <?php
@@ -64,20 +74,27 @@ $checkboxnum++;
 
 
 <?php if($ok){ 
-$date[]=$year."-01";$date[]=$year."-02";$date[]=$year."-03";$date[]=$year."-04";$date[]=$year."-05";$date[]=$year."-06";$date[]=$year."-07";$date[]=$year."-08";$date[]=$year."-09";$date[]=$year."-10";$date[]=$year."-11";$date[]=$year."-12";
+for($i=-$qian;$i<($hou+1);$i++){
+$date[]=date('Y-m',(strtotime($i.' months',strtotime($year."-".$month))));
+}
 ?>
 <div id="container" style="width:auto;height:auto;min-width: 800px; min-height: 500px; margin:auto"></div>
 <script language="JavaScript">
 $(document).ready(function() {
    var title = {
-       text: '<?php echo $year; ?>年度月订单量'   
+       text: '月订单量'   
    };
    var subtitle = {
         text: '日期统计来源订单的希望交期'
    };
    var xAxis = {
-       categories: ['1月', '2月', '3月', '4月', '5月', '6月'
-              ,'7月', '8月', '9月', '10月', '11月', '12月']
+       categories: [
+	   '<?php echo $date[0]; ?>'<?php
+	   for($i=1;$i<(count($date));$i++){
+		   echo ",'".$date[$i]."'";
+	   }
+	   ?>
+	   ]
    };
    var yAxis = {
       title: {
@@ -114,7 +131,7 @@ $(document).ready(function() {
 				  if($row[0]==0){ echo 0; }else{ echo $row[0]; }
 				  $quantitytotal=$quantitytotal+$row[0];
 		  }
-		  echo "],name:'各月总数 (年计".$quantitytotal.")'},";
+		  echo "],name:'各月总数 (合计".$quantitytotal.")'},";
 	  }
 	  
 	  
@@ -130,7 +147,7 @@ $(document).ready(function() {
 				  if($row[0]==0){ echo 0; }else{ echo $row[0]; }
 				  $quantitytotal=$quantitytotal+$row[0];
 		  }
-		  echo "],name:'".$campany[$c]." (年计".$quantitytotal.")'},";
+		  echo "],name:'".$campany[$c]." (合计".$quantitytotal.")'},";
 		  }
 	  }
 	  ?>
