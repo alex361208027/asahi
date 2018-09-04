@@ -104,31 +104,33 @@ $(document).ready(function() {
    var series =  [
       <?php	
 	  if($total){
-		echo "{name:'【月总数】',";
-		  echo "data:[";
+		  $quantitytotal=0;
+		  echo "{data:[";
 		  for($d=0;$d<(count($date));$d++){
 				  if($d!=0){ echo ","; }
 				  $sql="SELECT SUM(quantity) FROM `t_teacher` WHERE hopedate like '$date[$d]%'";
 				  $result=mysqli_query($conn,$sql);
 				  $row=$result->fetch_row();
 				  if($row[0]==0){ echo 0; }else{ echo $row[0]; }
+				  $quantitytotal=$quantitytotal+$row[0];
 		  }
-		  echo "]},";
+		  echo "],name:'各月总数 (年计".$quantitytotal.")'},";
 	  }
-  
+	  
+	  
 	  for($c=0;$c<(count($campany));$c++){
-		  
+		  $quantitytotal=0;
 		  if(in_array($c,$campanynum)){
-		  echo "{name:'".$campany[$c]."',";
-		  echo "data:[";
+		  echo "{data:[";
 		  for($d=0;$d<(count($date));$d++){
 				  if($d!=0){ echo ","; }
 				  $sql="SELECT SUM(quantity) FROM `t_teacher` WHERE campany = '$campany[$c]' AND hopedate like '$date[$d]%' GROUP BY campany";
 				  $result=mysqli_query($conn,$sql);
 				  $row=$result->fetch_row();
 				  if($row[0]==0){ echo 0; }else{ echo $row[0]; }
+				  $quantitytotal=$quantitytotal+$row[0];
 		  }
-		  echo "]},";
+		  echo "],name:'".$campany[$c]." (年计".$quantitytotal.")'},";
 		  }
 	  }
 	  ?>
