@@ -10,10 +10,24 @@ $dbname = "asahi";
 $conn = new mysqli($servername, $username, $password, $dbname);
 mysqli_set_charset ($conn,utf8);
 $end=$_GET['end'];
+
+echo file_get_contents("templates/header.html");
 ?>
+<script>
+$(document).ready(function(){
+	$("input").click(function(){
+		if($(this).is(':checked')){
+			$(this).parents("tr").attr("bgcolor","#EEEEEE");
+		}else{
+			$(this).parents("tr").attr("bgcolor","");
+		}
+	});
+});
+</script>
 <div id="myDiv" align="center"> 
 <table id="tableExcel" cellpadding="8" cellspacing="0" style="font-size:12px;">
 <tr style="background-color:#8888FF;color:white;height:30px;">
+	<td ></td>
 	<td align="right">Part No</td>
 	<td align="">Quantity</td>
 	<td align="">PO</td>
@@ -109,7 +123,7 @@ $checkbox=$_GET['checkbox'];
 										break;
 									}
 								}
-								echo "<tr><td align='right'>".$banngo[$go]."</td><td>".$quantitytotel."</td><td>".$pos."</td></tr>";
+								echo "<tr><td><input type='checkbox'/></td><td align='right'>".$banngo[$go]."</td><td>".$quantitytotel."</td><td>".$pos."</td></tr>";
 								///////////////////////////
 					}
 					

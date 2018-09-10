@@ -271,6 +271,16 @@ function mycheckbox(str){
 	button.click();
 }
 
+$(document).ready(function(){
+	$("input").click(function(){
+		if($(this).is(':checked')){
+			$(this).parents("tr").attr("bgcolor","#FFFFDD");
+		}else{
+			$(this).parents("tr").attr("bgcolor","");
+		}
+	});
+});
+
 </script>
 <button type="button" onclick="method5('tableExcel')">导出Excel</button>  
 <button type="button" style="background-color:#CCCCFF" onclick="checkboxsum()">选中项合计</button> &nbsp; <input type="number" style="width:40px" id="checkall1" value="1" onchange="checkall12()"/>~<input type="number" style="width:40px" id="checkall2" value="99" onchange="checkall12()"/>

@@ -50,15 +50,15 @@ function year(shit){
 }
 </script>
 <style>
-input{
-	width:70px;background:none;border:1px solid black;
+input[type='number']{
+	width:40px;background:none;border:1px solid black;padding:3px 0px
 }
 </style>
 <body>
-年度<input type="text" value="<?php echo $year; ?>" id="year"/>
-月份<input type="text" value="<?php echo $month; ?>" id="month"/> <a href="" onclick="year(this)"><button>Go</button></a>
-（包含前<input type="text" value="<?php if($qian){echo $qian;}else{echo 9;} ?>" id="qian" style="width:40px" />个月，
-后<input type="text" value="<?php if($hou){echo $hou;}else{echo 2;} ?>" id="hou" style="width:40px"/>个月的数据）<br>
+年度<input type="number" value="<?php echo $year; ?>" id="year" style="width:50px"/>
+月份<input type="number" value="<?php echo $month; ?>" id="month"/> <a href="" onclick="year(this)"><button>Go</button></a>
+（包含前<input type="number" value="<?php if($qian){echo $qian;}else{echo 9;} ?>" id="qian" />个月，
+后<input type="number" value="<?php if($hou){echo $hou;}else{echo 2;} ?>" id="hou" />个月的数据）<br>
 &nbsp;<label><input type="checkbox" <?php if(!$ok){echo "checked";}elseif($total){echo "checked";} ?> id="total" value="1" />【月总数】</label>
 
 <?php
