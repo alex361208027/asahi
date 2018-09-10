@@ -2,6 +2,20 @@
 
 
 $countnum=count($_GET['w0']);
+if($countnum>1){
+	for($i=0;$i<($countnum-1);$i++){
+	if($_GET['w6'][$i]==$_GET['w6'][($i+1)]){
+		$ok=1;
+	}else{
+		$ok="";
+	}
+	}
+}else{
+	$ok=1;
+}
+
+
+if($ok){
 ?>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -126,5 +140,13 @@ $(document).ready(function(){
 </div>	
 </body>
 <head>
-<title>Hytera送货单(订单<?php echo $_GET['w6']; ?>)</title>
+<title>Hytera送货单(订单<?php echo $_GET['w6'][0]; ?>)</title>
 </head>
+<?php 
+}else{
+	for($i=0;$i<$countnum;$i++){
+		echo $_GET['w1'][$i]."【".$_GET['w6'][$i]."】<br>";
+	}
+	echo "订单号码不一致";
+}
+?>

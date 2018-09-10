@@ -17,7 +17,8 @@ body{
 
 </style>
 <script>
-plus=0;
+var plus=0;
+var click=0;
 $(document).ready(function(){
 	
 	$("#banngo").change(function(){
@@ -82,33 +83,37 @@ echo file_get_contents("wuliaohao.html");
 	
 	$("#songhuodan").click(function(){
 		//alert(plus);
-		if(plus=="0"){
-		href="songhuodan.php?ok=ok";
+		if(click=="0"){
+			if(plus=="0"){
+			href="songhuodan.php?ok=ok";
+			}
+			for(i=0;i<$("input").length;i++){
+			href=href+"&w"+i+"[]="+$("input").eq(i).val();		
+				
+			}
+			//alert(href);
+			$("#songhuodanhref").attr("href",href);
 		}
-		for(i=0;i<$("input").length;i++){
-		href=href+"&w"+i+"[]="+$("input").eq(i).val();		
-			
-		}
-		//alert(href);
-		$("#songhuodanhref").attr("href",href);
 		document.getElementById('songhuodanhref').click();
+		click=1;
 	});
 	
 	$("#plus").click(function(){
-		if(plus=="0"){
-		href="songhuodan.php?ok=ok";
+		if(click!="1"){
+			if(plus=="0"){
+			href="songhuodan.php?ok=ok";
+			}
+			for(i=0;i<$("input").length;i++){
+			href=href+"&w"+i+"[]="+$("input").eq(i).val();		
+			}
+			$("#songhuodanhref").attr("href",href);
+			
 		}
-		for(i=0;i<$("input").length;i++){
-		href=href+"&w"+i+"[]="+$("input").eq(i).val();		
-		}
-		$("#songhuodanhref").attr("href",href);
-		//alert(href);
-		//alert(plus);
-		plus=plus+1;
+		plus=plus+1;click=0;
 		$("input").val("");
 		
 		$("#songhuodan").empty();
-		$("#songhuodan").append(">>送货单(已收录"+plus+"条信息)");
+		$("#songhuodan").append(">>送货单(共计"+(plus+1)+"条信息)");
 	});
 	
 });
@@ -146,5 +151,5 @@ echo file_get_contents("wuliaohao.html");
 <td>PO:</td><td align="center" colspan="2"><input id="haha" type="text" value=""><td>MFG</td><td align="center" width="90px"></td>
 </tr>
 </table>
-<a class="memo" href="wuliaohao.php" target="_BLANK">>>查询物料号</a> <a class="memo" id="href" href="" target="_BLANK"></a><a class="memo" href="###" id="qrcode-s">>>外标签链接</a><a class="memo" id="songhuodanhref" href="" target="songhuodan"></a><a class="memo" href="###" id="songhuodan">>>送货单</a>
+<a class="memo" href="wuliaohao.php" target="_BLANK">>>查询物料号</a> <a class="memo" id="href" href="" target="_BLANK"></a><a class="memo" href="###" id="qrcode-s">>>外标签链接</a> <a class="memo" id="songhuodanhref" href="" target="songhuodan"></a><a class="memo" href="###" id="songhuodan">>>送货单(共计1条信息)</a>
 </body>
