@@ -71,13 +71,13 @@ echo file_get_contents("wuliaohao.html");
 		document.getElementById('bigqr').innerHTML="<img src='http://qr.liantu.com/api.php?text="+bigqr+"' width='150px'/><br>朝日科技";
 	});
 	$("#qrcode-s").click(function(){
-		href="qrcode-s.php?ok=ok";
+		hrefs="qrcode-s.php?ok=ok";
 		for(i=0;i<$("input").length;i++){
-		href=href+"&w"+i+"="+$("input").eq(i).val();		
+		hrefs=hrefs+"&w"+i+"="+$("input").eq(i).val();		
 			
 		}
 		//alert(href);
-		$("#href").attr("href",href);
+		$("#href").attr("href",hrefs);
 		document.getElementById('href').click();
 	});
 	
