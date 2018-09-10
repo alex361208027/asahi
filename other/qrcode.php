@@ -17,13 +17,13 @@ body{
 
 </style>
 <script>
+plus=0;
 $(document).ready(function(){
 	
 	$("#banngo").change(function(){
 <?php
 echo file_get_contents("wuliaohao.html");
 ?>
-
 	for(b=0;b<banngo.length;b++){
 		if($(this).val()==banngo[b]){
 			f=b;
@@ -80,6 +80,37 @@ echo file_get_contents("wuliaohao.html");
 		document.getElementById('href').click();
 	});
 	
+	$("#songhuodan").click(function(){
+		//alert(plus);
+		if(plus=="0"){
+		href="songhuodan.php?ok=ok";
+		}
+		for(i=0;i<$("input").length;i++){
+		href=href+"&w"+i+"[]="+$("input").eq(i).val();		
+			
+		}
+		//alert(href);
+		$("#songhuodanhref").attr("href",href);
+		document.getElementById('songhuodanhref').click();
+	});
+	
+	$("#plus").click(function(){
+		if(plus=="0"){
+		href="songhuodan.php?ok=ok";
+		}
+		for(i=0;i<$("input").length;i++){
+		href=href+"&w"+i+"[]="+$("input").eq(i).val();		
+		}
+		$("#songhuodanhref").attr("href",href);
+		//alert(href);
+		//alert(plus);
+		plus=plus+1;
+		$("input").val("");
+		
+		$("#songhuodan").empty();
+		$("#songhuodan").append(">>送货单(已收录"+plus+"条信息)");
+	});
+	
 });
 
 
@@ -88,6 +119,7 @@ echo file_get_contents("wuliaohao.html");
 <datalist id="pinfan">
 <option value='NHSB046A+CAP'>
 </datalist>
+<button class="memo" onclick="location.reload();">new</button><button class="memo" id="plus">+plus</button>
 <table border="1" cellspacing="0" cellpadding="4">
 <tr>
 <td colspan="6" align="center"><img src="hyteralogo.gif" width="70px">海能达通信股份有限公司</td>
@@ -114,5 +146,5 @@ echo file_get_contents("wuliaohao.html");
 <td>PO:</td><td align="center" colspan="2"><input id="haha" type="text" value=""><td>MFG</td><td align="center" width="90px"></td>
 </tr>
 </table>
-<a class="memo" href="wuliaohao.php">>>查询物料号</a> <a class="memo" id="href" href=""></a><a class="memo" href="###" id="qrcode-s">>>外标签链接</a>
+<a class="memo" href="wuliaohao.php" target="_BLANK">>>查询物料号</a> <a class="memo" id="href" href="" target="_BLANK"></a><a class="memo" href="###" id="qrcode-s">>>外标签链接</a><a class="memo" id="songhuodanhref" href="" target="songhuodan"></a><a class="memo" href="###" id="songhuodan">>>送货单</a>
 </body>

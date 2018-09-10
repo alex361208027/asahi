@@ -227,6 +227,16 @@ function mycheckbox(str){
 	button.href+="end=6";
 	button.click();
 }
+
+$(document).ready(function(){
+	$("input").click(function(){
+		if($(this).is(':checked')){
+			$(this).parents("tr").attr("bgcolor","#FFFFDD");
+		}else{
+			$(this).parents("tr").attr("bgcolor","");
+		}
+	});
+});
 //function orderbyhopedate(str){
 //	document.getElementById('href').href="6.php?"+str;
 //	document.getElementById('href').click();
