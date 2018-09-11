@@ -24,7 +24,16 @@ if(!$year){
 if(!$month){
 	$month=date('m');
 }
-
+$banngo=$_GET['banngo'];
+if($banngo){
+	$banngook=1;
+	if($campanynum){
+	$banngocampany=$campany[$campanynum[0]];
+	$select_banngocampany="campany = '$banngocampany' AND";
+	}
+}else{
+	$banngook="";
+}
 ?>
 
 <html>
@@ -32,22 +41,85 @@ if(!$month){
    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
    <script src="https://code.highcharts.com/highcharts.js"></script>
 </head>
-<script>
-function year(shit){
-	shit.href="total_highcharts.php?year="+document.getElementById('year').value+"&month="+document.getElementById('month').value+"&qian="+document.getElementById('qian').value+"&hou="+document.getElementById('hou').value+"&ok=1";
-	if(document.getElementById('total').checked){
-			shit.href+="&total="+document.getElementById('total').value;
-		}
-		
-	campanynum=document.getElementsByName('campanynum');
-	for(i=0;i<campanynum.length;i++){
-		if(campanynum[i].checked){
-			shit.href+="&campanynum[]="+campanynum[i].value;
-		}
-	}
-	//alert(shit.href);
-	//shit.href="##";
+<style>
+#campanybanngo{
+	background:#EEEEEE;
+	padding:4px;
 }
+</style>
+<script>
+$(document).ready(function(){
+	$(".campanybanngo").click(function(){
+		$("input[type='checkbox']").attr("checked",false);
+		
+		$(this).prev().attr('checked',true);
+	});
+	//$("input[type='checkbox']").click(function(){
+	//	document.getElementById("campanybanngo").innerHTML="...";
+	//});
+	
+});
+
+
+function year(shit){
+	banngo=document.getElementsByName("banngo[]");
+	shit.href="total_highcharts.php?year="+document.getElementById('year').value+"&month="+document.getElementById('month').value+"&qian="+document.getElementById('qian').value+"&hou="+document.getElementById('hou').value+"&ok=1";
+	if(banngo.length>0){
+		for(i=0;i<banngo.length;i++){
+			if(banngo[i].checked){				
+				shit.href+="&banngo[]="+banngo[i].value;
+			}
+		}
+	
+	}
+		//shit.href="total_highcharts.php?year="+document.getElementById('year').value+"&month="+document.getElementById('month').value+"&qian="+document.getElementById('qian').value+"&hou="+document.getElementById('hou').value+"&ok=1";
+		if(document.getElementById('total').checked){
+				shit.href+="&total="+document.getElementById('total').value;
+			}
+			
+		campanynum=document.getElementsByName('campanynum');
+		for(i=0;i<campanynum.length;i++){
+			if(campanynum[i].checked){
+				shit.href+="&campanynum[]="+campanynum[i].value;
+			}
+		}
+	
+	//alert(shit.href);
+}
+
+
+
+function campanybanngo(str){
+			document.getElementById("campanybanngo").innerHTML="正在加载...";
+			var xmlhttp;
+			//str=str.replace("+","%2B");
+			if (str.length==0)
+			  { 
+			 
+			  return;
+			  }
+			if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
+			  xmlhttp=new XMLHttpRequest();
+			  }else{// code for IE6, IE5
+			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+			  
+			xmlhttp.onreadystatechange=function()
+			  {
+			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+				{	
+
+					
+					document.getElementById('campanybanngo').innerHTML=xmlhttp.responseText;
+					
+				}
+			  }
+			xmlhttp.open("GET","./ajax/total_campanybanngo.php?campany="+str,true);
+			xmlhttp.send();
+
+}
+
+
 </script>
 <style>
 input[type='number']{
@@ -66,12 +138,22 @@ input[type='number']{
 $checkboxnum=0;
 foreach($campany as $checkboxcampany){ ?>
 	
-&nbsp;<label><input type="checkbox" <?php if(in_array($checkboxnum,$campanynum)){ echo "checked";} ?> name="campanynum" value="<?php echo $checkboxnum; ?>" /><?php echo $checkboxcampany; ?></label>
+&nbsp;<input type="checkbox" <?php if(in_array($checkboxnum,$campanynum)){ echo "checked";} ?> name="campanynum" value="<?php echo $checkboxnum; ?>" /><a class="campanybanngo" href="#" onclick="campanybanngo('<?php echo $checkboxcampany; ?>')"><?php echo $checkboxcampany; ?></a>
 	
 <?php
 $checkboxnum++;
 } ?>
-
+<div id="campanybanngo"><?php 
+if($banngook){
+	echo $banngocampany.":";
+	foreach($banngo as $banngos){
+		echo $banngos.";";
+	}
+	
+}else{
+	echo "...";
+}
+?></div>
 
 <?php if($ok){ 
 for($i=-$qian;$i<($hou+1);$i++){
@@ -120,36 +202,52 @@ $(document).ready(function() {
 
    var series =  [
       <?php	
-	  if($total){
-		  $quantitytotal=0;
-		  echo "{data:[";
-		  for($d=0;$d<(count($date));$d++){
-				  if($d!=0){ echo ","; }
-				  $sql="SELECT SUM(quantity) FROM `t_teacher` WHERE hopedate like '$date[$d]%'";
-				  $result=mysqli_query($conn,$sql);
-				  $row=$result->fetch_row();
-				  if($row[0]==0){ echo 0; }else{ echo $row[0]; }
-				  $quantitytotal=$quantitytotal+$row[0];
+	  if($banngook){
+		for($c=0;$c<(count($banngo));$c++){
+			  $quantitytotal=0;
+			  echo "{data:[";
+			  for($d=0;$d<(count($date));$d++){
+					  if($d!=0){ echo ","; }
+					  $sql="SELECT SUM(quantity) FROM `t_teacher` WHERE $select_banngocampany banngo = '$banngo[$c]' AND hopedate like '$date[$d]%' GROUP BY banngo";
+					  $result=mysqli_query($conn,$sql);
+					  $row=$result->fetch_row();
+					  if($row[0]==0){ echo 0; }else{ echo $row[0]; }
+					  $quantitytotal=$quantitytotal+$row[0];
+			  }
+			  echo "],name:'".$banngo[$c]." (合计".$quantitytotal.")'},";
 		  }
-		  echo "],name:'各月总数 (合计".$quantitytotal.")'},";
-	  }
-	  
-	  
-	  for($c=0;$c<(count($campany));$c++){
-		  $quantitytotal=0;
-		  if(in_array($c,$campanynum)){
-		  echo "{data:[";
-		  for($d=0;$d<(count($date));$d++){
-				  if($d!=0){ echo ","; }
-				  $sql="SELECT SUM(quantity) FROM `t_teacher` WHERE campany = '$campany[$c]' AND hopedate like '$date[$d]%' GROUP BY campany";
-				  $result=mysqli_query($conn,$sql);
-				  $row=$result->fetch_row();
-				  if($row[0]==0){ echo 0; }else{ echo $row[0]; }
-				  $quantitytotal=$quantitytotal+$row[0];
+	  }else{
+		  if($total){
+			  $quantitytotal=0;
+			  echo "{data:[";
+			  for($d=0;$d<(count($date));$d++){
+					  if($d!=0){ echo ","; }
+					  $sql="SELECT SUM(quantity) FROM `t_teacher` WHERE hopedate like '$date[$d]%'";
+					  $result=mysqli_query($conn,$sql);
+					  $row=$result->fetch_row();
+					  if($row[0]==0){ echo 0; }else{ echo $row[0]; }
+					  $quantitytotal=$quantitytotal+$row[0];
+			  }
+			  echo "],name:'各月总数 (合计".$quantitytotal.")'},";
 		  }
-		  echo "],name:'".$campany[$c]." (合计".$quantitytotal.")'},";
+		  
+		  
+		  for($c=0;$c<(count($campany));$c++){
+			  $quantitytotal=0;
+			  if(in_array($c,$campanynum)){
+			  echo "{data:[";
+			  for($d=0;$d<(count($date));$d++){
+					  if($d!=0){ echo ","; }
+					  $sql="SELECT SUM(quantity) FROM `t_teacher` WHERE campany = '$campany[$c]' AND hopedate like '$date[$d]%' GROUP BY campany";
+					  $result=mysqli_query($conn,$sql);
+					  $row=$result->fetch_row();
+					  if($row[0]==0){ echo 0; }else{ echo $row[0]; }
+					  $quantitytotal=$quantitytotal+$row[0];
+			  }
+			  echo "],name:'".$campany[$c]." (合计".$quantitytotal.")'},";
+			  }
 		  }
-	  }
+	  } 
 	  ?>
 	  
    ];
