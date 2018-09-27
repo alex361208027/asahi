@@ -13,9 +13,9 @@ $customer_id=$_GET['customer_id'];
 
 ?>
 <div class="php1"> 
+<form action="" onsubmit="return false;">
 <div style="display:block">
 <hr>
-
 <div class="php1word">番号 &nbsp; <input type="text" name="banngo" size="10" value="<?php echo $t2 ?>" readonly="readonly"></div>
 <div class="php1word">入库时间 &nbsp; <input type="date" name="intime" size="10" value="<?php if($intime){echo $intime;}else{if($_COOKIE['rukudate']){echo $_COOKIE['rukudate'];}else{echo date('Y-m-d');}} ?>"></div>
 <div class="php1word">客户 &nbsp; <input type="text" name="campany" size="10" value="<?php if(!empty($campany)){echo $campany;}elseif(!empty($t6)){echo $t6;} ?>"></div><br>
@@ -74,7 +74,9 @@ $customer_id=$_GET['customer_id'];
 
 </div>
 <a href="###" onclick="eee++;po_ruku_plus(eee);" >+</a>
-<br><br><a href="###" onclick="po_ruku_complete('t3=<?php echo $t3 ?>&t6=<?php echo $t6 ?>&_id=<?php echo $_id ?>&customer_id=<?php echo $customer_id ?>')"><button onclick="buttons(this)">入库确认</button></a>
+<br><br><input type="submit" value="(回车)入库确认" onclick="if(confirm('是否确定入库？')){po_ruku_complete('t3=<?php echo $t3 ?>&t6=<?php echo $t6 ?>&_id=<?php echo $_id ?>&customer_id=<?php echo $customer_id ?>')}"/>
+<!--<a href="###" onclick="po_ruku_complete('t3=<?php //echo $t3 ?>&t6=<?php //echo $t6 ?>&_id=<?php //echo $_id ?>&customer_id=<?php //echo $customer_id ?>')"/><button onclick="buttons(this)">入库确认</button></a>-->
+</form>
 </div>
 
 <?php
