@@ -77,7 +77,7 @@ td:hover{
 	background-color:#FF7777;
 	color:white;
 }
-.message > input{
+.message input{
 	max-width:150px;
 }
 </style>
@@ -137,9 +137,11 @@ td:hover{
 <button type="button" onclick="method5('tableExcel')">导出Excel</button>  
 <button type="button" onclick="checkboxsum()">选中项合计</button>
  &nbsp; <input type="number" style="width:40px" id="checkall1" value="1" onchange="checkall12()"/>~<input type="number" style="width:40px" id="checkall2" value="100" onchange="checkall12()"/>
-<input type="text" id="search_lotnum" value="<?php echo $search_lotnum ?>" placeholder="检索lotnum"/><input type="text" id="search_banngo" value="<?php echo $search_banngo ?>" placeholder="检索番号"/><input type="text" id="search_campany" list="kehulist" value="<?php echo $search_campany ?>" placeholder="检索客户"/>
+<form onsubmit="return false;" style="display:inline-block;">
+<input type="submit" value=" 【検索】 " onclick="saerch_lotnum()"><a id="href" href=""></a>
+ <input type="text" id="search_lotnum" value="<?php echo $search_lotnum ?>" placeholder="检索lotnum"/><input type="text" id="search_banngo" value="<?php echo $search_banngo ?>" placeholder="检索番号"/><input type="text" id="search_campany" list="kehulist" value="<?php echo $search_campany ?>" placeholder="检索客户"/>
 &nbsp; <?php if(!$in){ ?>出货<?php } ?>日期<input type="date" id="datestart" value="<?php echo $datestart ?>" onchange="if(document.getElementById('dateend').value==''){document.getElementById('dateend').value=this.value;}"/>~<input type="date" id="dateend" value="<?php echo $dateend ?>"/>
-<button onclick="saerch_lotnum()">検索</button><a id="href" href=""></a>
+</form>
 </div>
 <datalist id="kehulist">
 <?php
