@@ -76,7 +76,8 @@ echo file_get_contents("wuliaohao.html");
 		hrefs=hrefs+"&w"+i+"="+$("input").eq(i).val();		
 			
 		}
-		//alert(href);
+		hrefs=hrefs.replace("+","%2B");
+		alert(hrefs);
 		$("#href").attr("href",hrefs);
 		document.getElementById('href').click();
 	});
@@ -122,7 +123,7 @@ echo file_get_contents("wuliaohao.html");
 </script>
 <body>
 <datalist id="pinfan">
-<option value='NHSB046A+CAP'>
+<option value='NHSB046A+CAP'><option value='NSSB064+CAP'>
 </datalist>
 <button class="memo" onclick="location.reload();">new</button><button class="memo" id="plus">+plus</button>
 <table border="1" cellspacing="0" cellpadding="4">
