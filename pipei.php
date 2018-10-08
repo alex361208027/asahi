@@ -4,6 +4,7 @@ echo file_get_contents("templates/header.html");
 date_default_timezone_set('PRC');
 $todaytime=date('Y-m-d H:i:s');
 $today25=date('Y-m-d',strtotime('-6 months'));
+$today35=date('Y-m-d',strtotime('-11 months'));
 
 $servername = "localhost";
 $username = "root";
@@ -87,7 +88,7 @@ if($po2){
 	$resultzaiku=mysqli_query($conn,"SELECT * FROM `t_inout` WHERE (outquantity = 0 OR outquantity is null) AND banngo like '%$po2%'");
 }else{
 	if($po1){
-	$select_po2="banngo <> ''";
+	$select_po2="banngo <> '' AND (JPdate = 0 OR JPdate >= '$today35')";
 	}else{
 	$select_po2="(JPdate = 0 OR JPdate >= '$today25')";
 	}
