@@ -77,7 +77,7 @@ echo file_get_contents("wuliaohao.html");
 			
 		}
 		hrefs=hrefs.replace("+","%2B");
-		alert(hrefs);
+		//alert(hrefs);
 		$("#href").attr("href",hrefs);
 		document.getElementById('href').click();
 	});

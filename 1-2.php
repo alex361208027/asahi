@@ -76,16 +76,27 @@ mysqli_query($conn,"INSERT INTO `t_teacher`(`campany`, `ordernum`, `banngo`, `qu
 </td>
 <td>
  <div>已录入的产品:<?php if(!empty($asahiorder)){echo "<br>(同时录入朝日订单".$asahiorder.")"; } ?></div>
+ <table cellspacing="2" cellpadding="4">
+	<tr bgcolor="black" style="color:white;">
+	<td>#</td>
+	<td>番号</td>
+	<td>数量</td>
+	<td>交期</td>
+	</tr>	
 <?php
+
 $sql2 =  "SELECT * FROM `t_teacher` WHERE campany='$t1' AND ordernum = '$t2'";
 $result2 = mysqli_query($conn,$sql2);
 while($row2=$result2->fetch_row()){
 	?>
-	
-	<div class="plist" align="center">
-	<?php echo $row2[2]."<br><br><img src='img/LED.png' width='80px'/><br><br>".$row2[3]."<font size='3' color='black'>pcs</font><br><font size='3' color='black'>".$row2[4]."</front>"; ?>
-	</div>	
+	<tr bgcolor="#EEEEEE">
+	<td><?php $ggg++;echo $ggg; ?></td>
+	<td><?php echo $row2[2]; ?></td>
+	<td><?php echo $row2[3]; ?></td>
+	<td><?php echo $row2[4]; ?></td>
+	</tr>	
 <?php } ?>	
+</table>
 </td></tr>
 </table>
 <?php $result=mysqli_query($conn,"SELECT banngo FROM `t_poprice` WHERE campany='$t1' order by banngo asc"); ?>
