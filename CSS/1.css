@@ -138,21 +138,7 @@ button:hover{
  .printclass{ display:none;}
 }
 
-.plist{
-	position:relative;
-	border-top:4px solid #BBAAFF;
-  /**-webkit-box-shadow: 0px 1px 3px #BBBBBB;
-  -moz-box-shadow: 0px 1px 3px #BBBBBB;
-  box-shadow: 0px 1px 3px #BBBBBB;**/
-  width:120px;
-  display:inline-block;
-  
-  padding:15px;
-  background-color:#F7F7F7;
-  font-size:16px;
-  color:#F14164;
-  margin:20px;
-}
+
 
 .message{
 	position:absolute;top:5px;left:5px;color:#202057;font-size:15px;

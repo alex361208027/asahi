@@ -57,16 +57,24 @@ mysqli_query($conn,"INSERT INTO `t_poteacher`(`asahiorder`, `banngo`, `quantity`
 <td>
 </div>
   <div>已录入的产品:</div>
+    <table cellspacing="2" cellpadding="4">
+		<tr bgcolor="black" style="color:white;">
+		<td>#</td>
+		<td>番号</td>
+		<td>数量</td>
+		</tr>	
 <?php
 $sql2 =  "SELECT * FROM `t_poteacher` WHERE asahiorder = '{$t1}'";
 $result2 = mysqli_query($conn,$sql2);
 while($row2=$result2->fetch_row()){
 	?>
-	
-	<div class="plist" align="center">
-	<?php echo $row2[1]."<br><br><img src='img/LED.png' width='80px'/><br><br>".$row2[2]."<font size='3' color='black'>pcs</font>"; ?>
-	</div>	
+	<tr bgcolor="#EEEEEE">
+	<td><?php $ggg++;echo $ggg; ?></td>
+	<td><?php echo $row2[1]; ?></td>
+	<td><?php echo $row2[2]; ?></td>
+	</tr>	
 <?php } ?>	
+	</table>
 </td></tr>
 </table>
 </body>

@@ -145,17 +145,12 @@ if($customerradio){echo "【".$echo."】";}
 				<td><a href="###" onclick="po_banngo('_id=<?php echo $rowpo[9] ?>')"><?php echo $rowpo[1] ?></a></td>
 				<td><?php echo $rowpo[2] ?></td>
 				<td><?php echo $rowpo[3] ?></td>
-				<td><?php if($rowpo[6]){echo $rowpo[6];}elseif($rowpo[8]){echo "到货完成<br>请查看是否在库";} ?></td>
+				<td><?php if($rowpo[6]){echo $rowpo[6];}elseif($rowpo[8]){echo "【在库确认】";} ?></td>
 			</tr>
 			<?php } ?>
 			<?php if($po2){ ?>
 				<tr>
-				<td>在库信息:</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<td colspan="6">在库信息:</td>
 				</tr>
 			<?php while($rowzaiku=$resultzaiku->fetch_row()){ ?>
 			<tr align="center" style="background-color:black;color:white">
@@ -166,7 +161,11 @@ if($customerradio){echo "【".$echo."】";}
 				<td><?php echo $rowzaiku[3] ?></td>
 				<td></td>
 			</tr>
-			<?php } } ?>
+			<?php } ?>
+			<tr>
+				<td colspan="6">*【在库确认】：确认是否已经在库，<br>如若次选项已到库，<br>则匹配后还需将在库的拆分。</td>
+			</tr>
+				<?php } ?>
 		</table>
 	</td>
 </tr>

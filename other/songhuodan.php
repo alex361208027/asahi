@@ -105,11 +105,11 @@ $(document).ready(function(){
 				<td>PCS</td>
 				<td><input type="text" value="<?php echo date('Y-m-d',(strtotime('+2 days', strtotime(date('Y-m-d'))))); ?>" style="width:75px;"/></td>
 				<td></td>
-				<td><input type="text" value="<?php echo $_GET['w4'][$i]; ?>" style="width:65px;"/></td>
+				<td><input type="text" value="<?php echo $_GET['w4'][$i]; ?>" style="width:88px;"/></td>
 				<td><input type="text" value="1" style="width:25px;"/></td>
 				<td><input type="text" value="<?php echo $_GET['w5'][$i]; ?>" style="width:55px;"/></td>
 				<td><input type="text" value="<?php echo $_GET['w3'][$i]; ?>" style="width:75px;"/></td>
-				<td><input type="text" value="<?php echo $_GET['w4'][$i]; ?>" style="width:65px;"/></td>
+				<td><input type="text" value="<?php echo $_GET['w4'][$i]; ?>" style="width:88px;"/></td>
 			</tr>
 			<?php } ?>
 			<tr>
