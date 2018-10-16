@@ -75,13 +75,15 @@ mysqli_query($conn,"INSERT INTO `t_teacher`(`campany`, `ordernum`, `banngo`, `qu
 </div> 
 </td>
 <td>
- <div>已录入的产品:<?php if(!empty($asahiorder)){echo "<br>(同时录入朝日订单".$asahiorder.")"; } ?></div>
+<div style="-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;padding:8px;border:1px solid black;">
+ <div><img src="upload/campanylogo/<?php echo $t1;?>.png" width="60px"><?php echo $t2;?></div>
  <table cellspacing="2" cellpadding="4">
 	<tr bgcolor="black" style="color:white;">
 	<td>#</td>
 	<td>番号</td>
-	<td>数量</td>
+	<td align="right">数量</td>
 	<td>交期</td>
+	<td>朝日订单</td>
 	</tr>	
 <?php
 
@@ -92,11 +94,29 @@ while($row2=$result2->fetch_row()){
 	<tr bgcolor="#EEEEEE">
 	<td><?php $ggg++;echo $ggg; ?></td>
 	<td><?php echo $row2[2]; ?></td>
-	<td><?php echo $row2[3]; ?></td>
+	<td align="right"><?php echo $row2[3];$ttt=$ttt+$row2[3]; ?></td>
 	<td><?php echo $row2[4]; ?></td>
+	<td><a href="4-1.php?asahit22=<?php echo $row2[5]; ?>"><?php echo $row2[5]; ?></a></td>
 	</tr>	
 <?php } ?>	
+<?php for($i=$ggg;$i<5;$i++){ ?>
+	<tr bgcolor="#EEEEEE">
+	<td><?php echo ($i+1); ?></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	</tr>	
+<?php } ?>
+	<tr bgcolor="#DDDDDD">
+	<td></td>
+	<td align="right">Total:</td>
+	<td align="right"><b><?php echo $ttt; ?></b></td>
+	<td></td>
+	<td></td>
+	</tr>	
 </table>
+</div>
 </td></tr>
 </table>
 <?php $result=mysqli_query($conn,"SELECT banngo FROM `t_poprice` WHERE campany='$t1' order by banngo asc"); ?>
