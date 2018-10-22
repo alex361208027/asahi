@@ -2,19 +2,19 @@
 date_default_timezone_set('PRC');
 $todaytime=date('Y-m-d H:i:s');
 ?>
+<script type="text/javascript" src="JS/jquery-3.2.1.min.js"></script>
 
 <style>
 input[type="text"],
 input[type="button"],
 input[type="password"],
 input[type="email"],
-input[type="submit"],
 input[type="tel"]{
     width: 120px;
     height: 26px;
     line-height: 16px;
     margin: 0 0 10px;
-    padding: 0 10px;
+    padding: 2px 0px;
     border: none;
     color:white ;
     cursor: pointer;
@@ -22,8 +22,9 @@ input[type="tel"]{
     font-size: 16px;
     border-bottom:2px solid #CCCCFF;
     background:none ;
-	text-align:center;
+	text-align:left;
 	margin-top:6px;
+	z-index:10;
 }
 input[type="submit"],
 input[type="button"]{
@@ -48,13 +49,13 @@ body{
 -o-transition: all 1s;
 }
 .kk:hover{
-	webkit-box-shadow: 0px 15px 18px #808080;
-  -moz-box-shadow: 0px 15px 18px #808080;
-  box-shadow: 0px 15px 18px #808080;
+	webkit-box-shadow: 0px 5px 13px black;
+  -moz-box-shadow: 0px 5px 13px black;
+  box-shadow: 0px 5px 13px black;
 }
 
 .bb{
-	cursor:pointer;color:#180077;font-size:16px;margin-left:30px;background-color:#AAFFFF;padding:3px 10px 3px 10px;display:inline;
+	font-size:16px;margin-left:30px;padding:3px 10px 3px 10px;display:inline;text-align:center;
 	-webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -66,17 +67,24 @@ body{
 .bb:hover{
 	background-color:#FF6685;
 }
+
+.t1{
+	position:relative;
+}
+.t2{
+	position:absolute;top:26px;font-size:12px;transition: all 0.6s;color:#FFAAAA;
+}
 </style>
 <body>
 <div width="100%" align="center">
 
 	<div class="kk">
 				  <div style="position:absolute;right:20px;top:50px;font-size:14px;color:white" align="left">
-					<form action="index.php" method="post" id='login'>
-					USER  <br><input type="text" name="user" size="10" maxlength="" /><br><br>
-					PassWord <br><input type="password" name="userpw" size="10" maxlength="" /><br><br>
+					<form action="index.php" method="post" id='login' onsubmit="return false;">
+					<div class="t1"><div class="t2" id="wuser">USER</div>&nbsp;</div><input type="text" name="user" size="10" maxlength="" /><br><br>
+					<div class="t1"><div class="t2" id="wpw">PassWord</div>&nbsp;</div><input type="password" name="userpw" size="10" maxlength="" /><br><br>
 					<input type="hidden" name="logintime" value="<?php echo $todaytime; ?>"/>
-					<div id="loging" class="bb" onclick="if(document.getElementsByName('user')[0].value==''||document.getElementsByName('userpw')[0].value==''){document.getElementById('error').style.display='block';setTimeout('document.getElementById(\'error\').style.display=\'none\'',2000)}else{document.getElementById('login').submit();document.getElementById('...').innerHTML='Loading.';}">Log In</div>
+					<input type="submit" id="loging" class="bb" onclick="if(document.getElementsByName('user')[0].value==''||document.getElementsByName('userpw')[0].value==''){document.getElementById('error').style.display='block';setTimeout('document.getElementById(\'error\').style.display=\'none\'',2000)}else{document.getElementById('login').submit();document.getElementById('...').innerHTML='Loading.';}" value="Log In"/>
 					</form>
 					</div>
 					<div id="error" style="position:absolute;right:0px;top:0px;width:480px;height:280px;background-color:#FF88A0;color:white;display:none;padding-top:18%;font-size:20px;filter:alpha(Opacity=90);-moz-opacity:0.9;opacity: 0.9;">ERROR!<br><br>账号或密码未输入</div>
@@ -97,6 +105,45 @@ function beta(){
 	document.getElementsByName('userpw')[0].value="beta";
 	document.getElementById('loging').onclick=function(){document.getElementById('href').click()};
 }
+
+$(document).ready(function(){
+     $("#wuser").click(function(){
+		 $(this).css({"top":"0px","font-size":"14px","color":"white"});
+		 $(":text").focus();
+	 });
+	 $("#wpw").click(function(){
+		 $(this).css({"top":"0px","font-size":"14px","color":"white"});
+		 $(":password").focus();
+	 });
+	 
+	$(":text").focus(function(){
+		$("#wuser").css({"top":"0px","font-size":"14px","color":"white"});
+	 });
+	 $(":password").focus(function(){
+		$("#wpw").css({"top":"0px","font-size":"14px","color":"white"});
+	 });
+	 
+	 
+     $(":text").click(function(){
+		$("#wuser").css({"top":"0px","font-size":"14px","color":"white"});
+	 });
+	 $(":password").click(function(){
+		$("#wpw").css({"top":"0px","font-size":"14px","color":"white"});
+	 });
+	 
+	 $(":text").focusout(function(){
+		 if(!$(this).val()){
+		$("#wuser").css({"top":"26px","font-size":"12px","color":"#FFAAAA"});
+		 }
+	 });
+	 $(":password").focusout(function(){
+		 if(!$(this).val()){
+		$("#wpw").css({"top":"26px","font-size":"12px","color":"#FFAAAA"});
+		 }
+	 });
+});
+
+
 </script>
 
 </body>
