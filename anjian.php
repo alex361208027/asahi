@@ -125,7 +125,7 @@ function searchbutton(){
 <table width="100%" height="100%" cellspacing="0" cellpadding="0"><tr>
 <td width="500px" valign="top">
 <a id="href" href=""></a>
-<input type="text" id="search" value="<?php echo $search; ?>"/> <button onclick="searchbutton()">Search</button> <a href="anjian_new.php" target="_BLANK"><button>New</button></a>
+<form onsubmit="return false;" style="display:inline-block;"><input type="text" id="search" value="<?php echo $search; ?>"/> <input type="submit" onclick="searchbutton()" value="Search" /></form> <a href="anjian_new.php" target="_BLANK"><button>New</button></a>
 <br>
 
 

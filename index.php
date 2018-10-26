@@ -111,8 +111,8 @@ transition-delay: 0.8s;
 			$(".caidanxuanxiao").click(function(){
 				$(".caidanxuanxiao").attr("style","");
 				$(this).attr("style","background-color:#FF6685;border-right:5px solid #DD0000")
-				$("#shangbutr").attr("style","background-color:#FF6685");
-				setTimeout('$("#shangbutr").attr("style","background-color:#F7F7F7");',800);
+				$("#shangbutr").css({"background-color":"#FF6685"});
+				setTimeout('$("#shangbutr").css({"background-color":"#F7F7F7"});',800);
 			});	
 		});
 		
@@ -161,42 +161,35 @@ transition-delay: 0.8s;
 				<li><a href="total_highcharts.php" target="xiabu">统 计</a></li>
 			</ul></div></a>
 			
-		<a href="###" target=""><div class="caidanxuanxiao"><img src="img/other.png"/> &nbsp; 其 &nbsp; 他 >
+		<div class="caidanxuanxiao"><img src="img/other.png"/> &nbsp; 其 &nbsp; 他 >
 		<ul>
 				<li><a href="poprice.php" target="_blank">产品列表</a></li>
 				<li><a href="campany.php" target="_blank">客户列表</a></li>
 				<li><a href="anjian.php" target="_blank">案件列表</a></li>
-			</ul></div></a>	
+			</ul></div>
 			
-		<a href="###" target=""><div class="caidanxuanxiao"><img src="img/other.png"/> &nbsp; 功 &nbsp; 能 >
+		<div class="caidanxuanxiao"><img src="img/other.png"/> &nbsp; 功 &nbsp; 能 >
 		<ul>
 				<li><a href="other/qrcode.php" target="_blank">海能达标签打印</a></li>
-			</ul></div></a>		
+			</ul></div>	
+		<div class="caidanxuanxiao"><img src="img/other.png"/> &nbsp; 页面设置 >
+		<ul>
+				<li><a href="###" onclick="document.getElementById('shangbutr').style.height='160px';document.getElementById('tabletop').style.height='160px';">手机页面</a></li>
+				<li><a href="###" onclick="document.getElementById('shangbutr').style.height='80px';document.getElementById('tabletop').style.height='80px';">电脑页面</a></li>
+			</ul></div>
 	</div>
 </td>
 <td><!--右边主体-->
 	<table cellpadding="0" cellspacing="0" width="100%" height="100%"><!--副表格框-->
-	<style>
-	.shangbutr{
-		height:80px;overflow:hidden;width:100%;background-color:#F7F7F7;
-		transition:background-color 0.5;
-		-moz-transition:background-color 0.5;
-		-webkit-transition:background-color 0.5;
-		-o-transition:background-color 0.5;
-	}
-	.xiabutr{
-		width:100%;max-height:100%;background-color:;
-	}
-	</style>
-	<tr height="80px"><td><!--副表格上部-->
-		<div class="shangbutr" id="shangbutr">
+	<tr style="height:80px;" id="tabletop"><td><!--副表格上部-->
+		<div class="shangbutr" id="shangbutr" style="height:80px;overflow:hidden;width:100%;background-color:#F7F7F7;transition:background-color 0.5;-moz-transition:background-color 0.5;-webkit-transition:background-color 0.5;-o-transition:background-color 0.5;">
 			<iframe frameborder="0" height="100%" width="100%" scrolling="no" id="shangbu" name="shangbu" src="indexother.php" >
 				
 			</iframe>
 		</div>
 	</td></tr>
 	<tr><td><!--副表格下部-->
-		<div class="xiabutr">
+		<div class="xiabutr" style="width:100%;max-height:100%;background-color:;">
 			<iframe frameborder="0" height="100%" width="100%" name="xiabu" id="xiabu" scrolling="yes" src="indexxiabu.php#findme">
 				
 			</iframe>
