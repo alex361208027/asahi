@@ -14,7 +14,7 @@ date_default_timezone_set('PRC');
 ?>
 <style>
 .indexother{
-	height:80px;overflow:hidden;padding-left:10px;
+	overflow:hidden;padding-left:10px;height:auto;
 }
 </style>
 <body height="100%">

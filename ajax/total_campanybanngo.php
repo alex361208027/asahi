@@ -15,7 +15,7 @@ $result = mysqli_query($conn,$sql);
 
 while($row=$result->fetch_row()){
 		?>
-		<label><input type="checkbox" value="<?php echo $row[0] ?>" name="banngo[]"/><?php echo $row[0] ?></label>
+		<label onclick="checkcampany('<?php echo $campany; ?>')"><input type="checkbox" value="<?php echo $row[0] ?>" name="banngo[]"/><?php echo $row[0] ?></label>
 <?php	}
 
 $conn->close();

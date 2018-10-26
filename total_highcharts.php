@@ -49,14 +49,20 @@ if($banngo){
 </style>
 <script>
 $(document).ready(function(){
+	
+	
+	
 	$(".campanybanngo").click(function(){
-		$("input[type='checkbox']").attr("checked",false);
-		
-		$(this).prev().attr('checked',true);
+		$("input[type='checkbox']").attr("checked",false);			
+		//$(this).prev().attr('checked',"checked");
+
+
 	});
+	
 	//$("input[type='checkbox']").click(function(){
 	//	document.getElementById("campanybanngo").innerHTML="...";
 	//});
+	
 	
 });
 
@@ -72,7 +78,6 @@ function year(shit){
 		}
 	
 	}
-		//shit.href="total_highcharts.php?year="+document.getElementById('year').value+"&month="+document.getElementById('month').value+"&qian="+document.getElementById('qian').value+"&hou="+document.getElementById('hou').value+"&ok=1";
 		if(document.getElementById('total').checked){
 				shit.href+="&total="+document.getElementById('total').value;
 			}
@@ -84,6 +89,7 @@ function year(shit){
 			}
 		}
 	
+	shit.href=shit.href.replace("+","%2B");
 	//alert(shit.href);
 }
 
@@ -92,7 +98,8 @@ function year(shit){
 function campanybanngo(str){
 			document.getElementById("campanybanngo").innerHTML="正在加载...";
 			var xmlhttp;
-			//str=str.replace("+","%2B");
+			
+			
 			if (str.length==0)
 			  { 
 			 
@@ -119,6 +126,14 @@ function campanybanngo(str){
 
 }
 
+function checkcampany(str){
+	//alert()
+	for(i=0;i<document.getElementsByName('campanynum').length;i++){
+		if(document.getElementsByName('campanynum')[i].getAttribute("value2")==str){
+			document.getElementsByName('campanynum')[i].checked=true;
+		}
+	}
+}
 
 </script>
 <style>
@@ -128,7 +143,7 @@ input[type='number']{
 </style>
 <body>
 年度<input type="number" value="<?php echo $year; ?>" id="year" style="width:50px"/>
-月份<input type="number" value="<?php echo $month; ?>" id="month"/> <a href="" onclick="year(this)"><button>Go</button></a>
+月份<input type="number" value="<?php echo $month; ?>" id="month"/> <a href="" onclick="year(this)"><button>【检索】</button></a>
 （包含前<input type="number" value="<?php if($qian){echo $qian;}else{echo 9;} ?>" id="qian" />个月，
 后<input type="number" value="<?php if($hou){echo $hou;}else{echo 2;} ?>" id="hou" />个月的数据）<br>
 &nbsp;<label><input type="checkbox" <?php if(!$ok){echo "checked";}elseif($total){echo "checked";} ?> id="total" value="1" />【月总数】</label>
@@ -138,7 +153,7 @@ input[type='number']{
 $checkboxnum=0;
 foreach($campany as $checkboxcampany){ ?>
 	
-&nbsp;<input type="checkbox" <?php if(in_array($checkboxnum,$campanynum)){ echo "checked";} ?> name="campanynum" value="<?php echo $checkboxnum; ?>" /><a class="campanybanngo" href="#" onclick="campanybanngo('<?php echo $checkboxcampany; ?>')"><?php echo $checkboxcampany; ?></a>
+&nbsp;<input type="checkbox" <?php if(in_array($checkboxnum,$campanynum)){ echo "checked";} ?> name="campanynum" value="<?php echo $checkboxnum; ?>" value2="<?php echo $checkboxcampany; ?>"/><a class="campanybanngo" href="#" onclick="campanybanngo('<?php echo $checkboxcampany; ?>');"><?php echo $checkboxcampany; ?></a>
 	
 <?php
 $checkboxnum++;
