@@ -146,24 +146,28 @@ function newponum(str){
 <input type="text" name="t3" value="" placeholder="品番"/>
 <input type="text" name="t4" value="" placeholder="数量"/>
 <input type="checkbox" name="t5" value="checked" onclick="document.getElementsByName('t11')[0].checked=false;document.getElementsByName('t9')[0].checked=true;">未发票 &nbsp; 
+
+<input type="hidden" id="newdate" value="<?php echo date('Y-m-d',strtotime('-1 month')) ?>"/>
 <script>
-var d=new Date();
-var month=d.getMonth()-2; 
-if(month>0){
-var year=d.getFullYear(); 
-}else{
-var year=d.getFullYear()-1; 
-month=month+12;
-}
-if(month<10){
-	month='0'+month;
-}
-var day=d.getDate(); 
-if(day<10){
-	day='0'+day;
-}
-d1=year+'-'+month+'-'+day;
+//var d=new Date();
+//var month=d.getMonth()-2; 
+//if(month>0){
+//var year=d.getFullYear(); 
+//}else{
+//var year=d.getFullYear()-1; 
+//month=month+12;
+//}
+//if(month<10){
+//	month='0'+month;
+//}
+//var day=d.getDate(); 
+//if(day<10){
+//	day='0'+day;
+//}
+//d1=year+'-'+month+'-'+day;
+d1=document.getElementById('newdate').value;
 </script>
+
 <input type="checkbox" name="t9" value="checked" onclick="if(this.checked && document.getElementsByName('t7')[0].value==''){document.getElementsByName('t7')[0].value=d1;}else if(this.checked==false && document.getElementsByName('t7')[0].value==d1){document.getElementsByName('t7')[0].value='';}">含完成 &nbsp; <input type="checkbox" name="t10" value="checked">未分配 &nbsp; <input type="checkbox" name="t11" value="checked">納期待つ除き &nbsp; <input type="checkbox" name="t12" value="checked">在库のみ &nbsp; 
 
 <br>上海出荷日:

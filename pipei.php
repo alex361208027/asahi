@@ -72,7 +72,7 @@ if($c1){
 	$select_c1="po_id='' AND state= '' ";
 }
 if($c2){
-	$select_c2="AND banngo like '%$c2%' ";
+	$select_c2="AND banngo like '%$c2%'";
 }else{
 	$select_c2="";
 }
@@ -84,11 +84,11 @@ if($po1){
 	$select_po1="customer_id='' AND ";
 }
 if($po2){
-	$select_po2="banngo like '%$po2%'";
+	$select_po2="banngo like '%$po2%' AND JPdate >= '$today35'";
 	$resultzaiku=mysqli_query($conn,"SELECT * FROM `t_inout` WHERE (outquantity = 0 OR outquantity is null) AND banngo like '%$po2%'");
 }else{
 	if($po1){
-	$select_po2="banngo <> '' AND (JPdate = 0 OR JPdate >= '$today35')";
+	$select_po2="banngo <> ''";
 	}else{
 	$select_po2="(JPdate = 0 OR JPdate >= '$today25')";
 	}
