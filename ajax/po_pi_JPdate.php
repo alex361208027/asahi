@@ -25,7 +25,7 @@ if($JPdate){
 		$SHdate = $hopedate5;
 		}
 		
-		mysqli_query($conn,"UPDATE `t_teacher` SET JPdate='$JPdate', SHdate='$SHdate' WHERE _id='$row[10]' AND po_id='$_id'");
+		mysqli_query($conn,"UPDATE `t_teacher` SET JPdate='$JPdate', SHdate=IF(SHdate,IF(JPdate>=SHdate,'$hopedate5',SHdate),'$SHdate') WHERE _id='$row[10]' AND po_id='$_id'");
 	}
 }
 }else{

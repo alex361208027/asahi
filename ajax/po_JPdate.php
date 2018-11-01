@@ -23,7 +23,7 @@ if($customer_id){
 		}else{
 		$SHdate= $hopedate5;if($JPdate==0){$SHdate=0;}
 		}
-	mysqli_query($conn,"UPDATE `t_teacher` SET JPdate='$JPdate', SHdate='$SHdate' WHERE _id='$customer_id' AND po_id='$_id'");
+	mysqli_query($conn,"UPDATE `t_teacher` SET JPdate='$JPdate', SHdate=IF(SHdate,IF(JPdate>=SHdate,'$hopedate5',SHdate),'$SHdate') WHERE _id='$customer_id' AND po_id='$_id'");
 	}
 echo $JPdate;
 

@@ -25,7 +25,7 @@ if($quantity){
 			$result_get_po_state=mysqli_query($conn,"SELECT * FROM `t_poteacher` WHERE _id= '$row[13]'");
 			$row_get_po_state=$result_get_po_state->fetch_row();
 			//创建新的c
-			mysqli_query($conn,"INSERT INTO `t_teacher`(`campany`, `ordernum`, `banngo`, `quantity`, `hopedate`, `JPdate`, `SHdate`,`asahiorder`,`state`, `remark`) VALUES ('$row[0]','$row[1]','$row[2]','$quantity','$row[4]','$row[6]','$row[7]','$row[5]','$row[9]','$row[8]')");	
+			mysqli_query($conn,"INSERT INTO `t_teacher`(`campany`, `ordernum`, `banngo`, `quantity`, `hopedate`, `JPdate`, `SHdate`,`asahiorder`,`asahiorder2`,`state`, `remark`, `invoice`) VALUES ('$row[0]','$row[1]','$row[2]','$quantity','$row[4]','$row[6]','$row[7]','$row[5]','$row[11]','$row[9]','$row[8]','$row[10]')");	
 			//创建新的c对应的新po
 			$result_c_id = mysqli_query($conn,"SELECT * FROM `t_teacher` WHERE campany='$row[0]' AND ordernum = '$row[1]' AND banngo='$row[2]' AND quantity='$quantity' order by _id desc");
 			$row_c_id=$result_c_id->fetch_row();	$this_id=$row_c_id[12];
