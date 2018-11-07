@@ -279,6 +279,10 @@ $(document).ready(function(){
 			$(this).parents("tr").attr("bgcolor","");
 		}
 	});
+	
+	
+	
+	
 });
 
 </script>
