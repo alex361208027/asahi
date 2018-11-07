@@ -84,7 +84,7 @@ if($po1){
 	$select_po1="customer_id='' AND ";
 }
 if($po2){
-	$select_po2="banngo like '%$po2%' AND JPdate >= '$today35'";
+	$select_po2="banngo like '%$po2%' AND (JPdate = 0 OR JPdate >= '$today35')";
 	$resultzaiku=mysqli_query($conn,"SELECT * FROM `t_inout` WHERE (outquantity = 0 OR outquantity is null) AND banngo like '%$po2%'");
 }else{
 	if($po1){
