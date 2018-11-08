@@ -14,10 +14,10 @@ date_default_timezone_set('PRC');
 ?>
 <style>
 .indexother{
-	overflow:hidden;padding-left:10px;height:auto;
+	overflow:hidden;padding-left:10px;height:auto;color:#3C2F41;
 }
 </style>
-<body height="100%">
+<body height="100%" >
 
 <datalist id="kehulist">
 <?php
@@ -117,25 +117,20 @@ function newponum(str){
   </td></tr></table>
  </div> 
 
-<a name="findme_chanpin1">
-<div class="indexother">
-<table cellpadding="0" cellspacing="0" width="100%" height="100%"><tr><td>
-<a name="findme1"></a>
-<form action="2.php" method="post" target="xiabu">
-  <input type="submit" value="待处理产品 / 朝日订单号搜索" />
-  朝日订单<input type="text" name="asahit2" size="10" maxlength="" />&nbsp;
-  客户名<input list="kehulist" class="inputlist" name="campany" size="10" maxlength="" />&nbsp;
-  <input type="checkbox" name="pipei" value="pipei">只显示未匹配的
-  </form>
-  </td></tr></table>
- </div> 
  
  
- <style>
-#kehujiansuo input[type="text"],#kehujiansuo .inputlist,#kehujiansuo input[type="date"]{
-	 background-color:white;
- }
- </style>
+<style>
+.checkedboxword{
+	display:inline-block;color:white;font-size:14px;background-color:#81C7D4;padding:5px 8px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	transition: all 0.4s;
+-moz-transition: all 0.4s;	/* Firefox 4 */
+-webkit-transition: all 0.4s;	/* Safari 和 Chrome */
+-o-transition: all 0.4s;
+}
+</style>
  
 <a name="findme_chanpin2"></a>
 <div class="indexother">
@@ -145,30 +140,21 @@ function newponum(str){
 <input type="text" name="t6" value="" placeholder="取引PO"/>
 <input type="text" name="t3" value="" placeholder="品番"/>
 <input type="text" name="t4" value="" placeholder="数量"/>
-<input type="checkbox" name="t5" value="checked" onclick="document.getElementsByName('t11')[0].checked=false;document.getElementsByName('t9')[0].checked=true;">未发票 &nbsp; 
-
 <input type="hidden" id="newdate" value="<?php echo date('Y-m-d',strtotime('-1 month')) ?>"/>
 <script>
-//var d=new Date();
-//var month=d.getMonth()-2; 
-//if(month>0){
-//var year=d.getFullYear(); 
-//}else{
-//var year=d.getFullYear()-1; 
-//month=month+12;
-//}
-//if(month<10){
-//	month='0'+month;
-//}
-//var day=d.getDate(); 
-//if(day<10){
-//	day='0'+day;
-//}
-//d1=year+'-'+month+'-'+day;
+$(document).ready(function(){
+	$(".checkedboxword").click(function(){
+		$(":checkbox").next().css({"background-color":"#81C7D4"});
+		setTimeout(()=>{$(":checked").next().css({"background-color":"#562E37"});},100);
+	});
+});
 d1=document.getElementById('newdate').value;
 </script>
-
-<input type="checkbox" name="t9" value="checked" onclick="if(this.checked && document.getElementsByName('t7')[0].value==''){document.getElementsByName('t7')[0].value=d1;}else if(this.checked==false && document.getElementsByName('t7')[0].value==d1){document.getElementsByName('t7')[0].value='';}">含完成 &nbsp; <input type="checkbox" name="t10" value="checked">未分配 &nbsp; <input type="checkbox" name="t11" value="checked">納期待つ除き &nbsp; <input type="checkbox" name="t12" value="checked">在库のみ &nbsp; 
+<label><input type="checkbox" name="t5" value="checked" style="display:none" onclick="document.getElementsByName('t11')[0].checked=false;document.getElementsByName('t9')[0].checked=true;"/><div class="checkedboxword">未发票</div></label>
+<label><input type="checkbox" name="t9" value="checked" style="display:none" onclick="if(this.checked && document.getElementsByName('t7')[0].value==''){document.getElementsByName('t7')[0].value=d1;}else if(this.checked==false && document.getElementsByName('t7')[0].value==d1){document.getElementsByName('t7')[0].value='';}"/><div class="checkedboxword">含完成</div></label>
+<label><input type="checkbox" name="t10" value="checked" style="display:none"/><div class="checkedboxword">未分配</div></label>
+<label><input type="checkbox" name="t11" value="checked" style="display:none"/><div class="checkedboxword">納期待つ除き</div></label>
+<label><input type="checkbox" name="t12" value="checked" style="display:none"/><div class="checkedboxword">在库のみ</div></label>
 
 <br>上海出荷日:
 <input type="date" name="t7" value=""/> ~
@@ -177,6 +163,8 @@ d1=document.getElementById('newdate').value;
 </form>
 </td></tr></table>
 </div>
+
+
 
   <a name="findme_chanpin3"></a>
 <div class="indexother">
@@ -259,7 +247,9 @@ d1=document.getElementById('newdate').value;
 <input type="text" name="t55" value="" placeholder="Due Date(end)"/>-->
 <input type="text" name="t4" value="" placeholder="数量"/>
 
-<input type="checkbox" name="t9" value="checked" onclick="document.getElementsByName('t7')[1].value=d1">含入荷済み &nbsp; <input type="checkbox" name="t10" value="checked">未分配 &nbsp; <input type="checkbox" name="t11" value="checked">納期待つ除き &nbsp; 
+<label><input type="checkbox" name="t9" value="checked" style="display:none" onclick="document.getElementsByName('t7')[1].value=d1"><div class="checkedboxword">含入荷済み</div></label>
+<label><input type="checkbox" name="t10" value="checked" style="display:none"><div class="checkedboxword">未分配</div></label>
+<label><input type="checkbox" name="t11" value="checked" style="display:none"><div class="checkedboxword">納期待つ除き</div></label>
 
 <br>
 <input type="submit" style="background-color:#FF7792" value="(朝日PO) 検索"/><input type="button" value="Reset" onclick="location.reload();"/>

@@ -35,7 +35,7 @@ $row=$result->fetch_row();
 			</div><br>
 		<div class="php1word1">日本发货日</div><div class="php1word1"><?php echo $row[6]; ?><font color='#D5D5D5' size='1'>日期更新来自朝日订单</font></div><br>
 		<div class="php1word1"><a onclick="datecount(8)">上海发货日</a></div><div class="php1word1"><input type="date" onchange="c_shdate('shdate='+this.value+'&_id=<?php echo $row[12] ?>')" value="<?php echo $row[7]; ?>"/></div><br>
-		<div class="php1word1">备注</div><div class="php1word1"><input type="text" onchange="c_remark('remark='+this.value+'&_id=<?php echo $row[12] ?>')" value="<?php echo $row[8]; ?>"/></div><br>
+		<div class="php1word1">备注</div><div class="php1word1"><input type="text" onchange="c_remark('remark='+this.value+'&_id=<?php echo $row[12] ?>&po_id=<?php echo $row[13] ?>')" value="<?php echo $row[8]; ?>"/></div><br>
 		<hr>
 		<div class="php1word1">是否在库</div><div class="php1word1"> &nbsp; <input type="checkbox" name="t12" value="已入库" <?php if($row[11]=='已入库'){echo 'checked';} ?> onclick="c_yiruku('_id=<?php echo $row[12] ?>');if(document.getElementById('checked0').color=='#E6E6E6'){document.getElementById('checked0').color='';}else{document.getElementById('checked0').color='#E6E6E6';}" style="display:none">&nbsp;<font id="checked0" color="<?php if($row[11]!='已入库'){echo '#E6E6E6';} ?>" onclick="document.getElementsByName('t12')[0].style.display='inline-block';">已入库,可以出货</font></div><br>
 						<a href="###"><div class="banngobutton" onclick="c_chuku('banngo=<?php echo $row[2] ?>&_id=<?php echo $row[12] ?>')">出库->完成</div></a><br>

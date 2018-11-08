@@ -9,8 +9,11 @@ $dbname = "asahi";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 mysqli_set_charset ($conn,utf8);
-$_id=$_GET['_id'];
+$_id=$_GET['_id'];$po_id=$_GET['po_id'];
 $remark=$_GET['remark'];
 mysqli_query($conn,"UPDATE `t_teacher` SET remark='$remark' WHERE _id = '$_id'");
+if($po_id){
+	mysqli_query($conn,"UPDATE `t_poteacher` SET remark='$remark' WHERE _id='$po_id' AND customer_id='$_id'");
+		}
 echo "<marquee scrolldelay='200'>".$remark."</marquee>";
 ?>

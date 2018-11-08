@@ -61,36 +61,36 @@ input,
 .inputlist{
 	width: 140px;
     height: 26px;
-    line-height: 16px;
-    margin: 0 0 10px;
-    padding: 0 10px;
+		
+    margin: 0 5px 0 0;
+    padding: 4px 2px;
     border: none;
     color:#000066 ;
     cursor: pointer;
     resize: none;
-    /**border-bottom:1px solid #AAAAAA;**/
-    background:#FFCCCC;
+    border:1px solid #D5D5D5;
+    background:#F7F7F7;
 	text-align:left;
 	margin-top:8px;
 	margin-left:8px;
 	font-family: Arial;
 	font-size:13px;
-	-webkit-border-radius: 3px;
+	/**-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
-	border-radius: 3px;
+	border-radius: 3px;**/
 	text-overflow:ellipsis;
 }
 
 input[type="submit"],
 input[type="button"]{
 	width:auto;
-	border: none;color:black;
+	border: none;color:#3C2F41;
    background-color:#DDDDDD;
-   padding:5px 15px 5px 15px;
+   padding:5px 10px;
    -webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	border-bottom:2px solid #6F6F6F;
+	/**border-bottom:2px solid #6F6F6F;**/
 }
 input[type="submit"]:hover,input[type="button"]:hover{
 	background-color:#666666;color:white;
@@ -120,13 +120,12 @@ input[type="checkbox"],input[type="number"],input[type="radio"]{
 button{
 	cursor:pointer;
 	width:auto;
-	border: none;color:black;
+	border: none;color:#3C2F41;
    background-color:#DDDDDD;
-   padding:4px 6px 4px 6px;
+   padding:5px 10px;
    -webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	border-bottom:2px solid #6F6F6F;
 }
 button:hover{
 	background-color:#666666;color:white;

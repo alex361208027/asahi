@@ -166,9 +166,11 @@ td:hover{
 </style>
 <br><br><br>
 <div class="nopo"><?php echo $nopo; ?></div>
-<div id="myDiv"> 
+<div id="myDiv" style="padding:0px;margin:0 5px;-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;overflow:hidden;"> 
 <table id="tableExcel" cellpadding="1" cellspacing="0" width="100%" style="font-size:12px;">
-<tr style="background-color:#8888FF;color:white;height:30px;">
+<tr style="background-color:#8F77B5;color:white;height:33px;">
 	<td><?php?></td>
 	<td></td>
 	<td align="center">状態</td>

@@ -33,7 +33,7 @@ $row=$result->fetch_row();
 		<div class="php1word1"><a href="./4.php?ddt2=<?php echo $row[6] ?>" target="_blank">客户订单号</div><div class="php1word1"></a><?php echo $row[6]; ?>
 		<a href="./pipei.php?po2=<?php echo $row[1] ?>&c2=<?php echo $row[1] ?>"><div class="banngobutton">匹配客户</div></a>
 			</div><br>
-		<div class="php1word1">备注</div><div class="php1word1"><input type="text" onchange="po_remark('remark='+this.value+'&_id=<?php echo $row[9] ?>')" value="<?php echo $row[7]; ?>"/></div><br>
+		<div class="php1word1">备注</div><div class="php1word1"><input type="text" onchange="po_remark('remark='+this.value+'&_id=<?php echo $row[9] ?>&customer_id=<?php echo $row[10] ?>')" value="<?php echo $row[7]; ?>"/></div><br>
 		<hr>
 		<div class="php1word1">状态</div><div class="php1word1"><input type="checkbox" id="po_complete" value="已入库" <?php if($row[8]=='已入库'){echo 'checked';} ?> onclick="po_complete('_id=<?php echo $row[9] ?>');if(document.getElementById('checked1').color=='#E6E6E6'){document.getElementById('checked1').color='';}else{document.getElementById('checked1').color='#E6E6E6';}" style="display:none">&nbsp;<font id="checked1" color="<?php if($row[8]!='已入库'){echo '#E6E6E6';} ?>" onclick="document.getElementById('po_complete').style.display='inline-block';">已入库</font></div><br>
 		<a href="###"><div class="banngobutton" onclick="eee=1;po_ru_quantity=<?php echo $row[2]; ?>;po_ruku('t2=<?php echo $row[1] ?>&t3=<?php echo $row[2] ?>&t6=<?php echo $row[5] ?>&customer_id=<?php echo $row[10] ?>&_id=<?php echo $row[9] ?>&asahipo=<?php echo $row[0] ?>')">入库->完成</div></a><br>
