@@ -247,7 +247,7 @@ function c_remark(str){
 
 function c_chuku(str){
 			document.getElementById("ajasdivout2").style.right="345";
-			
+			str=str.replace("+","%2B");
 			var xmlhttp;
 			if (str.length==0)
 			  { 
@@ -283,6 +283,7 @@ function c_chuku_checkbox(){
 		str+="&checkbox[]="+ss[i].value;
 		}
 	}
+	str=str.replace("+","%2B");
 	var xmlhttp;
 			if (str.length==0)
 			  { 
@@ -847,7 +848,7 @@ function po_complete(str){
 
 function po_ruku(str){
 			document.getElementById("ajasdivout2").style.right="345";
-			
+			str=str.replace("+","%2B");
 			var xmlhttp;
 			if (str.length==0)
 			  { 
@@ -893,7 +894,7 @@ function po_ruku_complete(str){
 		}
 	}
 	//alert(str);
-	
+	str=str.replace("+","%2B");
 	var xmlhttp;
 			if (str.length==0)
 			  { 

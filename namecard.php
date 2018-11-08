@@ -57,6 +57,10 @@ $result = $conn->query($sql);
 	-webkit-box-shadow: 0px 8px 8px #BBBBBB;
   -moz-box-shadow: 0px 8px 8px #BBBBBB;
   box-shadow: 0px 8px 8px #BBBBBB;
+  transition-delay: 0.5s;
+-moz-transition-delay: 0.5s; /* Firefox 4 */
+-webkit-transition-delay: 0.5s; /* Safari 和 Chrome */
+-o-transition-delay: 0.5s; /* Opera */
 }
 
 .namecardright{
@@ -96,13 +100,14 @@ transition-delay: 0.5s;
 </style>
 
 <?php while($row=$result->fetch_row()){ 
+$numbercount++;
 $bg=RAND(1,4);
 if($bg==1){
-	$bgcolor="white";
+	$bgcolor="#FFEEF1";
 }elseif($bg==2){
-	$bgcolor="white";
+	$bgcolor="#EEF1FF";
 }elseif($bg==3){
-	$bgcolor="white";
+	$bgcolor="#FFFFEE";
 }elseif($bg==4){
 	$bgcolor="white";
 }
@@ -140,7 +145,8 @@ if($bg==1){
 ?>
 <?php $page+=20; ?>
 <input type="hidden" id="search" value="<?php if($search){echo $search;}else{echo '随机换一批';} ?>"><input type="hidden" id="page" value="<?php echo $page ?>">
-<button onclick="nextpage()">Next</button><a id="href" href="###"></a>
+<?php if($numbercount>19){ ?><button onclick="nextpage()">Next</button><?php } ?>
+<a id="href" href="###"></a>
 <script>
 function nextpage(){
 	document.getElementById('href').href="namecard.php?search="+document.getElementById('search').value+"&page="+document.getElementById('page').value;
