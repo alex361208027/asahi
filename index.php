@@ -53,7 +53,7 @@ if($logintime){
 <table cellpadding="0" cellspacing="0" width="100%" height="100%"><!--主表格框-->
 <tr><!--最外的表格框-->
 <td width="120px;"><!--菜单栏-->
-	<div style="width:100%;height:100%;background-color:#000000;">
+	<div style="width:100%;height:100%;background-color:#0C4842;">
 		<style>
 		#shangbutr{
 			transition:all 0.5s;
@@ -72,10 +72,10 @@ if($logintime){
 			-o-transition:all 0.5s;
 		}
 		.caidanxuanxiao:hover{
-			background-color:#DD0000;
+			background-color:#233342;
 		}
 		ul{
-			position:absolute;left:120px;top:0px;z-index:10;background-color:#888888;max-width:0px;overflow:hidden;
+			position:absolute;left:115px;top:0px;z-index:10;background-color:#34495e;max-width:0px;overflow:hidden;
 		
 		}
 		li{
@@ -98,7 +98,7 @@ transition-delay: 0.8s;
 			max-width:100px;
 		}
 		li:hover{
-			background-color:#DD0000;
+			background-color:#233342;
 			transition-delay: 0.1s;
 -moz-transition-delay: 0.1s; /* Firefox 4 */
 -webkit-transition-delay: 0.1s; /* Safari 和 Chrome */
@@ -110,16 +110,16 @@ transition-delay: 0.8s;
 		$(document).ready(function(){
 			$(".caidanxuanxiao").click(function(){
 				$(".caidanxuanxiao").attr("style","");
-				$(this).attr("style","background-color:#FF6685;border-right:5px solid #DD0000")
+				$(this).attr("style","background-color:#8E354A;")
 				$("#shangbutr").css({"background-color":"#FF6685"});
-				setTimeout('$("#shangbutr").css({"background-color":"#F7F7F7"});',800);
+				setTimeout('$("#shangbutr").css({"background-color":"white"});',800);
 			});	
 		});
 		
 		</script>
 		<div style="padding:12px 0 0 25px;color:white;font-size:20px;"><img src="img/LOGO2.png"/></div>
 		<br><br>
-		<a href="index.php"><div class="caidanxuanxiao" style="background-color:#FF6685;border-right:5px solid #DD0000;"><img src="img/home.png"/> &nbsp; HOME >
+		<a href="index.php"><div class="caidanxuanxiao" style="background-color:#8E354A;"><img src="img/home.png"/> &nbsp; HOME >
 		<ul>
 				<li><a href="index.php" >回到首页</a></li>
 				<li><a href="index.php" target="_blank">新建页面</a></li>
@@ -130,7 +130,7 @@ transition-delay: 0.8s;
 				<li><a href="indexother.php#findme_xinjian1" target="shangbu">客户订单</a></li>
 				<li><a href="indexother.php#findme_xinjian2" target="shangbu">朝日订单</a></li>
 			</ul></div></a>
-<hr>
+
 		<a href="indexother.php#findme_chanpin5" target="shangbu"><div class="caidanxuanxiao"><img src="img/order.png" /> &nbsp; 搜索朝日 >
 			<ul>
 	
@@ -145,7 +145,7 @@ transition-delay: 0.8s;
 				<li><a href="indexother.php#findme_pipei" target="shangbu">订单匹配</a></li>
 				<li><a href="indexother.php#findme_chanpin2" target="shangbu">検 &nbsp; 索</a></li>
 			</ul></div></a>
-	<hr>	
+
 		<a href="indexother.php#findme_zaiku" id="zaiku" target="shangbu"><div class="caidanxuanxiao"><img src="img/zaiku.png" /> &nbsp; 在 &nbsp; 库 >
 			<ul>
 				<li><form action="in.php" id="zaiku1" method="post" target="xiabu"><input type="hidden" name="in" value="in"/></form><a href="###" onclick="document.getElementById('zaiku1').submit();document.getElementById('zaiku').click()">目前在库</a></li>
@@ -182,7 +182,7 @@ transition-delay: 0.8s;
 <td><!--右边主体-->
 	<table cellpadding="0" cellspacing="0" width="100%" height="100%"><!--副表格框-->
 	<tr style="height:80px;" id="tabletop"><td><!--副表格上部-->
-		<div class="shangbutr" id="shangbutr" style="height:80px;overflow:hidden;width:100%;background-color:#F7F7F7;transition:background-color 0.5;-moz-transition:background-color 0.5;-webkit-transition:background-color 0.5;-o-transition:background-color 0.5;">
+		<div class="shangbutr" id="shangbutr" style="height:80px;overflow:hidden;width:100%;background-color:white;transition:background-color 0.5;-moz-transition:background-color 0.5;-webkit-transition:background-color 0.5;-o-transition:background-color 0.5;">
 			<iframe frameborder="0" height="100%" width="100%" scrolling="no" id="shangbu" name="shangbu" src="indexother.php" >
 				
 			</iframe>

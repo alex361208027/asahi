@@ -26,13 +26,14 @@ function buttons(obj){
 
 function checkboxsum(){
 	var ss=document.getElementsByName('checkboxsum');
-	sum=0;
+	sum=0;chencednumber=0;
 	for(i=0;i<ss.length;i++){
 		if(ss[i].checked){
+			chencednumber++;
 			sum=sum+Number(ss[i].value);
 		}
 	}
-alert ("选中项合计：【"+sum+"】");
+alert ("共选中"+chencednumber+"个，合计：【"+sum+"】");
 }
 function checkall12(){
 	var ss=document.getElementsByName('checkboxsum');
