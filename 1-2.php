@@ -58,7 +58,7 @@ mysqli_query($conn,"INSERT INTO `t_teacher`(`campany`, `ordernum`, `banngo`, `qu
 		<input type="hidden" name="t2" value="<?php echo $t2 ?>"/>
 	  <div class="php1campany"><?php echo $t2 ?></div>
 	  <hr>
-	  <div class="php1word">产品番号<input list="banngolist" class="inputlist" name="t5" value="" onchange="findbanngo(this.value+'&banngoname=5&campany='+document.getElementsByName('t1')[0].value)"/></div>
+	  <div class="php1word">产品番号<input list="banngolist" class="inputlist" name="t5" value="" onfocusout="findbanngo(this.value+'&banngoname=5&campany='+document.getElementsByName('t1')[0].value)"/></div>
 	  <div id="findbanngo" style="display:none;font-size:12px;color:#FFAABB;padding-left:20px;">加载中</div>
 	  <div class="php1word">产品数量<input list="quantitylist" class="inputlist" name="t6" onchange="quantitychecktest(this.value)"/></div>
 	  <div class="php1word">希望交期<input type="date" name="t7" value="<?php echo $t7 ?>" /></div>

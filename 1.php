@@ -103,7 +103,7 @@ animation:myfirst 2s infinite;
 		<input type="hidden" name="t2" value="<?php echo $t2 ?>"/>
 	  <div class="php1campany"><?php echo $t2 ?></div>
 	  <hr>
-	  <div class="php1word">产品番号<input list="banngolist" class="inputlist" name="t5" value="" onchange="findbanngo(this.value+'&banngoname=5&campany='+document.getElementsByName('t1')[0].value)"/></div>
+	  <div class="php1word">产品番号<input list="banngolist" class="inputlist" name="t5" value="" onfocusout="findbanngo(this.value+'&banngoname=5&campany='+document.getElementsByName('t1')[0].value)"/></div>
 	  <div id="findbanngo" style="display:none;font-size:12px;color:red;padding-left:15px;">加载中</div>
 	  <div class="php1word">产品数量<input list="quantitylist" class="inputlist" name="t6" onchange="quantitychecktest(this.value)"/></div>
 	  <div class="php1word">希望交期<input type="date" class="hopedate" name="t7" value="<?php echo date('Y-m-d',strtotime('+2 month')); ?>" /></div>
