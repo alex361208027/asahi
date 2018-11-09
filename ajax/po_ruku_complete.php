@@ -9,6 +9,9 @@ $today=date('Y-m-d');
 
 
 $t3=$_GET['t3'];//quantity
+$t6=$_GET['t6'];//campany
+$t7=$_GET['t7'];//campanyorder
+
 $asahipo=$_GET['asahipo'];
 $_id=$_GET['_id'];
 $customer_id=$_GET['customer_id'];
@@ -19,7 +22,7 @@ $lotnum=$_GET['lotnum'];
 $banngo=$_GET['banngo'];
 $quantity=$_GET['quantity'];
 $intime=$_GET['intime'];
-$campany=$_GET['campany'];
+$campany=$t6."<br>".$t7;;
 
 $lotnum2=$_GET['lotnum2'];
 //$banngo2=$_GET['banngo2'];

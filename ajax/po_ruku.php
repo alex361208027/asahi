@@ -6,6 +6,7 @@ $today=date('Y-m-d');
 $t2=$_GET['t2'];//banngo
 $t3=$_GET['t3'];//quantity
 $t6=$_GET['t6'];//campany
+$t7=$_GET['t7'];//campany
 $asahipo=$_GET['asahipo'];
 $_id=$_GET['_id'];
 $customer_id=$_GET['customer_id'];
@@ -21,7 +22,7 @@ $customer_id=$_GET['customer_id'];
 <div class="php1word">客户 &nbsp; <input type="text" name="campany" size="10" value="<?php if(!empty($campany)){echo $campany;}elseif(!empty($t6)){echo $t6;} ?>"></div><br>
 <div class="php1word"><input type="checkbox" name="checkboxdiejia" value="checked">叠加录入(当①Lot No已经存在时勾选)</div>
 <div class="lotruku"><div class="php1word">①Lot No. &nbsp; <input type="text" name="lotnum" size="10" value="" placeholder="填写批次号"/></div><div class="php1word">数量 &nbsp; <input type="text" name="quantity" size="10" value="<?php echo $t3 ?>" onchange="po_ruku_quantity(this,0);"></div><!--<div class="php1word">备注 &nbsp; <input type="text" name="remark" size="10" value=""></div>--></div>
-<input type="hidden" name="_id" value="<?php echo $_id ?>"/><input type="hidden" name="customer_id" value="<?php echo $customer_id ?>"/><input type="hidden" name="t3" value="<?php echo $t3; ?>"/>
+<input type="hidden" name="_id" value="<?php echo $_id ?>"/><input type="hidden" name="customer_id" value="<?php echo $customer_id ?>"/><input type="hidden" name="t3" value="<?php echo $t3; ?>"/><input type="hidden" name="t7" value="<?php echo $t7; ?>"/>
 <input type="hidden" id="asahipo" value="<?php echo $asahipo ?>"/>
 </div>
 <div style="display:none" id="ruku2" class="lotruku">
@@ -74,7 +75,7 @@ $customer_id=$_GET['customer_id'];
 
 </div>
 <a href="###" onclick="eee++;po_ruku_plus(eee);" >+</a>
-<br><br><input type="submit" value="(回车)入库确认" onclick="if(confirm('是否确定入库？')){po_ruku_complete('t3=<?php echo $t3 ?>&t6=<?php echo $t6 ?>&_id=<?php echo $_id ?>&customer_id=<?php echo $customer_id ?>')}"/>
+<br><br><input type="submit" value="(回车)入库确认" onclick="if(confirm('是否确定入库？')){po_ruku_complete('t3=<?php echo $t3 ?>&t6=<?php echo $t6 ?>&t7=<?php echo $t7 ?>&_id=<?php echo $_id ?>&customer_id=<?php echo $customer_id ?>')}"/>
 <!--<a href="###" onclick="po_ruku_complete('t3=<?php //echo $t3 ?>&t6=<?php //echo $t6 ?>&_id=<?php //echo $_id ?>&customer_id=<?php //echo $customer_id ?>')"/><button onclick="buttons(this)">入库确认</button></a>-->
 </form>
 </div>

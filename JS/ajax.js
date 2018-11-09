@@ -884,7 +884,7 @@ function po_ruku_complete(str){
 		document.getElementsByName('checkboxdiejia')[0].value="";
 	}
 	
-	str+="&lotnum="+document.getElementsByName('lotnum')[0].value+"&banngo="+document.getElementsByName('banngo')[0].value+"&quantity="+document.getElementsByName('quantity')[0].value+"&intime="+document.getElementsByName('intime')[0].value+"&campany="+document.getElementsByName('campany')[0].value+"&checkbox="+document.getElementsByName('checkboxdiejia')[0].value+"&asahipo="+document.getElementById('asahipo').value;
+	str+="&lotnum="+document.getElementsByName('lotnum')[0].value+"&banngo="+document.getElementsByName('banngo')[0].value+"&quantity="+document.getElementsByName('quantity')[0].value+"&intime="+document.getElementsByName('intime')[0].value+"&checkbox="+document.getElementsByName('checkboxdiejia')[0].value+"&asahipo="+document.getElementById('asahipo').value;
 	
 	for(i=0;i<8;i++){
 		if(document.getElementsByName('lotnum2')[i].value){
@@ -1265,6 +1265,7 @@ function findbanngo(str){
 					document.getElementById("findbanngo").style.display= "block";
 					document.getElementById("findbanngo").innerHTML= xmlhttp.responseText;
 					
+					
 				}
 			  }
 			xmlhttp.open("GET","./ajax/findbanngo.php?banngo="+str,true);
@@ -1274,6 +1275,7 @@ function findbanngo(str){
 
 function thispinfan(str, banngoname){
 	document.getElementsByName('t'+banngoname)[0].value=str;
+	document.getElementsByName('t5')[0].focus();
 }
 
 function findbanngo_display(){

@@ -159,12 +159,10 @@ if($customerradio){echo "【".$echo."】";}
 				<td><?php echo $rowzaiku[1] ?></td>
 				<td><?php echo $rowzaiku[2] ?></td>
 				<td><?php echo $rowzaiku[3] ?></td>
-				<td></td>
+				<td><?php echo $rowzaiku[6] ?></td>
 			</tr>
 			<?php } ?>
-			<tr>
-				<td colspan="6">*【在库确认】：确认是否已经在库，<br>如若次选项已到库，<br>则匹配后还需将在库的拆分。</td>
-			</tr>
+		
 				<?php } ?>
 		</table>
 	</td>
