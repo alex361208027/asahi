@@ -847,7 +847,8 @@ function po_complete(str){
 }
 
 function po_ruku(str){
-			document.getElementById("ajasdivout2").style.right="345";
+			document.getElementById("ajasdivout2").style.right="200";
+			swing=1;
 			str=str.replace("+","%2B");
 			var xmlhttp;
 			if (str.length==0)
@@ -869,6 +870,7 @@ function po_ruku(str){
 					
 					document.getElementById("ajasdiv2").innerHTML=xmlhttp.responseText;
 					setTimeout("document.getElementsByName('lotnum')[0].focus();",800);
+					
 				}
 			  }
 			xmlhttp.open("GET","./ajax/po_ruku.php?"+str,true);
@@ -936,9 +938,14 @@ function po_ruku_complete(str){
 						
 						document.getElementById('tableExcel').rows[cells].cells[2].innerHTML="<div class='classcp1' style='background-color:blue'>入荷済み</div>";
 						
+						
+						parent.document.getElementById("shangbu").contentWindow.document.getElementsByName("t3")[3].select();
+						
+						swing=0;
 						}
 						
-						setTimeout("document.getElementById('ajasdivout2').style.right='-450'",2000);
+						
+						setTimeout(()=>{if(swing==0){document.getElementById('ajasdivout2').style.right='-450';}},3000);
 						
 					}
 					

@@ -1,4 +1,8 @@
-
+$(document).ready(function(){
+	$("[list='kehulist']").click(function(){
+		$(this).val("");
+	});
+});
 
 function datecount(kkk){
 		kk=kkk-3;
