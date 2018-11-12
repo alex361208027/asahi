@@ -247,9 +247,7 @@ $(document).ready(function(){
 <button type="button" onclick="method5('tableExcel')">导出Excel</button>  
 <button type="button" style="background-color:#FF7792" onclick="checkboxsum()">选中项合计</button> &nbsp; <input type="number" style="width:40px" id="checkall1" value="1" onchange="checkall12()"/>~<input type="number" style="width:40px" id="checkall2" value="99" onchange="checkall12()"/>
 <a href="" id="button3" target="_blank"></a><button onclick="mycheckbox(1)">选中项生成朝日订单</button>|||<button onclick="mycheckbox(2)">选中项合并统计</button></a>
-<?php //if($php41ordernum){ ?>
-<!--<button onclick="orderbyhopedate('orderbyhopedate=<?php //echo $php41ordernum ?>')">希望交期顺序排列</button><a id="href" href="###"></a>-->
-<?php //} ?>
+
 </div>
 <form action="6.php" method="post">
 <?php $nowpage=$nowpage+100; ?>

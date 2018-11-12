@@ -16,14 +16,14 @@ $_id=$_GET['_id'];
 $conn = new mysqli($servername, $username, $password, $dbname);
 mysqli_set_charset ($conn,utf8);
 
-$sql =  "SELECT * FROM `t_inout` WHERE (outquantity is null OR outquantity = 0 OR quantity-outquantity>0) AND banngo like '%$banngo%'";
+$sql =  "SELECT * FROM `t_inout` WHERE (outquantity is null OR outquantity = 0) AND banngo like '%$banngo%'";
 $result = mysqli_query($conn,$sql);
 if($result->num_rows == 0){
 	$tt=20;
 	while($tt>0){
 	$banngo=substr($banngo,0,$tt);
 	
-	$sql =  "SELECT * FROM `t_inout` WHERE (outquantity is null OR outquantity = 0 OR quantity-outquantity>0) AND banngo like '%$banngo%'";
+	$sql =  "SELECT * FROM `t_inout` WHERE (outquantity is null OR outquantity = 0) AND banngo like '%$banngo%'";
 	$result = mysqli_query($conn,$sql);
 		if($result->num_rows > 0){
 			break;

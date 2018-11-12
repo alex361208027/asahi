@@ -148,7 +148,17 @@ $(document).ready(function(){
 		setTimeout(()=>{$(":checked").next().css({"background-color":"#562E37"});},100);
 	});
 });
+
+
+
+
+
+
 d1=document.getElementById('newdate').value;
+
+
+
+
 </script>
 <label><input type="checkbox" name="t5" value="checked" style="display:none" onclick="document.getElementsByName('t11')[0].checked=false;document.getElementsByName('t9')[0].checked=true;"/><div class="checkedboxword">未发票</div></label>
 <label><input type="checkbox" name="t9" value="checked" style="display:none" onclick="if(this.checked && document.getElementsByName('t7')[0].value==''){document.getElementsByName('t7')[0].value=d1;}else if(this.checked==false && document.getElementsByName('t7')[0].value==d1){document.getElementsByName('t7')[0].value='';}"/><div class="checkedboxword">含完成</div></label>
@@ -247,7 +257,7 @@ d1=document.getElementById('newdate').value;
 <input type="text" name="t55" value="" placeholder="Due Date(end)"/>-->
 <input type="text" name="t4" value="" placeholder="数量"/>
 
-<label><input type="checkbox" name="t9" value="checked" style="display:none" onclick="document.getElementsByName('t7')[1].value=d1"><div class="checkedboxword">含入荷済み</div></label>
+<label><input type="checkbox" name="t9" value="checked" style="display:none" onclick="if(this.checked && document.getElementsByName('t7')[1].value==''){document.getElementsByName('t7')[1].value=d1;}else if(this.checked==false && document.getElementsByName('t7')[1].value==d1){document.getElementsByName('t7')[1].value='';}"><div class="checkedboxword">含入荷済み</div></label>
 <label><input type="checkbox" name="t10" value="checked" style="display:none"><div class="checkedboxword">未分配</div></label>
 <label><input type="checkbox" name="t11" value="checked" style="display:none"><div class="checkedboxword">納期待つ除き</div></label>
 

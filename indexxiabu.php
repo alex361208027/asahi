@@ -57,6 +57,21 @@ $xxx=1;
 	color:black;
 }
 </style>
+<script>
+$(document).ready(function(){
+			$("#fabuxinxi").click(function(){
+				$(".fabu").css({"margin-top":"0px"});
+				$(this).css({"display":"none"});
+				$(this).next().css({"display":"block"});
+			});
+			
+			$("#fasong").click(function(){
+				$(this).prev().css({"display":"block"});
+				$(this).css({"display":"none"});
+				$(".fabu").css({"margin-top":"-81px"});
+			});
+});
+</script>
 <form action="in.php" id="zaiku1" method="post"><input type="hidden" name="in" value="in"/></form>
 <body height="100%" style="min-width:800px">
 <table cellpadding="0" cellspacing="0" width="100%" height="100%">
@@ -71,13 +86,6 @@ $xxx=1;
 			-moz-transition:all 0.6s; 
 			-webkit-transition:all 0.6s; 
 			-o-transition:all 0.6s; 
-			transition-delay: 0.6s;
-			-moz-transition-delay: 0.6s; /* Firefox 4 */
-			-webkit-transition-delay: 0.6s; /* Safari 和 Chrome */
-			-o-transition-delay: 0.6s; /* Opera */
-		}
-		.fabu:hover{
-			margin-top:0px;
 		}
 		</style>
 		<script>
@@ -119,7 +127,7 @@ $xxx=1;
 		</script>
 		<div id="fabu" class="fabu">
 		<textarea name="publicnote" style="width:300px;height:80px;"></textarea><br>
-		<input type="button" onclick="pn();buttons(this)" value="发布信息"/>
+		<input type="button" id="fabuxinxi" value="发布信息"/><input type="button" style="display:none;background-color:#AAAAFF" id="fasong" onclick="pn()" value="发送"/>
 		</div>
 		<xx id="noteplus"></xx>
 		<?php 
@@ -269,19 +277,26 @@ $xxx=1;
 					
 					<td width="50%" align="center" valign="top">
 						<?php $weichuli=file_get_contents("ajax/write_data/poweichuli.html"); $weichuli = explode(',',$weichuli); ?>
+						
 						<div class="chuli">
+						<div style="color:#FF6685">朝日PO</div>
 						<div class="chuli1"><a id="jijiang" href="indexother.php#findme_chanpin5" target="shangbu"></a><a id="jijiang1" href="6.php?" onclick="document.getElementById('jijiang').click();"><?php echo $weichuli[0]; ?></a></div>
-						<div class="chuli2">入荷する... &nbsp; <font color="#FF6685">朝日PO</font> 一覧<br><font size="1" color="#CCCCCC">数据更新于<br><?php echo $weichuli[1]; ?></font></div>
+						<div class="chuli2">数据更新于<br><?php echo $weichuli[1]; ?></div>
 						</div>
+						</a>
 						<?php $weichuli=file_get_contents("ajax/write_data/cweichuli.html"); $weichuli = explode(',',$weichuli); ?>
+						
+						
 						<div class="chuli">
+						<div style="color:#6464E0">客様PO</div>
 						<div class="chuli1"><a id="dengdai" href="indexother.php#findme_chanpin2" target="shangbu"></a><a href="2.php" onclick="document.getElementById('dengdai').click();"><?php echo $weichuli[0]; ?></a></div>
-						<div class="chuli2">出荷する... &nbsp; <font color="#6464E0">客様PO</font> 一覧<br><font size="1" color="#CCCCCC">数据更新于<br><?php echo $weichuli[1]; ?></font></div>
+						<div class="chuli2">数据更新于<br><?php echo $weichuli[1]; ?></div>
 						</div>
+						
 						<style>
 						.chuli{
-							padding:5px;margin-top:10px;margin-bottom:10px;
-							width:85%;overflow:hidden;
+							padding:2%;margin-top:10px;margin-bottom:10px;
+							width:45%;overflow:hidden;display:inline-block;
 							background-color:#F7F7F7;
 							-webkit-border-radius: 5px;
 							-moz-border-radius: 5px;
@@ -302,8 +317,8 @@ $xxx=1;
 						}
 						
 						.chuli1{
-							width:38%;
-							display:inline-block;
+							width:100%;
+							display:block;
 							text-align:center;font-weight:bold;color:#FF6685;font-size:55px;font-style:italic;
 							transition: all 1s;
 							-moz-transition: all 1s;	/* Firefox 4 */
@@ -314,9 +329,10 @@ $xxx=1;
 							color:red;
 						}
 						.chuli2{
-							width:;
+							width:100%;color:#CCCCCC;
+							font-size:12px;
 							display:inline-block;
-							text-align:left;
+							text-align:right;
 						}
 						</style>
 					</td>

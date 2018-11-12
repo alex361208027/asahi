@@ -63,7 +63,7 @@ $nowpage=0;
 
 
 if($in){
-	$sql="SELECT * FROM `t_inout` WHERE $select_banngo $select_lotnum $select_campany $select_date (outquantity is null OR outquantity = 0 OR quantity-outquantity>0) order by intime desc";
+	$sql="SELECT * FROM `t_inout` WHERE $select_banngo $select_lotnum $select_campany $select_date (outquantity is null OR outquantity = 0) order by intime desc";
 }else{
 	$sql="SELECT * FROM `t_inout` WHERE $select_banngo $select_lotnum $select_campany $select_date outquantity > 0 order by outtime desc limit $nowpage,50";
 }
@@ -100,16 +100,13 @@ td:hover{
 				<!--<td></td>-->
             </tr>
 <?php while($row=$result->fetch_row()){ 
-	$restquantity=$row[2]-$row[5];
-	if($restquantity==0){
+
+	if($row[5]){
 		$state="已出库";
 		$bgcolor="#F7F7F7";
-	}elseif($row[5]==0){
+	}else{
 		$state="在库中";
 		$bgcolor="#FF99AD";
-	}else{
-		$state="部分在库";
-		$bgcolor="#FFCCD6";
 	}
 
 ?>
@@ -202,6 +199,7 @@ function in_lotnum(str){
 }
 function in_lotnum_complete(){
 			str="";
+			if(document.getElementsByName('in_quantity')[0].value==document.getElementsByName('in_outquantity')[0].value || document.getElementsByName('in_outquantity')[0].value==""){
 			str="_id="+document.getElementsByName('in_id')[0].value+"&lotnum="+document.getElementsByName('in_lotnum')[0].value+"&banngo="+document.getElementsByName('in_banngo')[0].value+"&quantity="+document.getElementsByName('in_quantity')[0].value+"&intime="+document.getElementsByName('in_intime')[0].value+"&outtime="+document.getElementsByName('in_outtime')[0].value+"&outquantity="+document.getElementsByName('in_outquantity')[0].value+"&asahipo="+document.getElementsByName('in_asahipo')[0].value+"&campany="+document.getElementsByName('in_campany')[0].value+"&expressnum="+document.getElementsByName('in_expressnum')[0].value+"&remark="+document.getElementsByName('in_remark')[0].value;
 			
 			var xmlhttp;
@@ -226,7 +224,9 @@ function in_lotnum_complete(){
 			  }
 			xmlhttp.open("GET","./ajax/in_lotnum_complete.php?"+str,true);
 			xmlhttp.send();
-			
+			}else{
+				alert("出库数量不正确");
+			}
 }
 function in_lotnum_delete(str){
 			document.getElementById("ajasdiv2").innerHTML="正在加载...";

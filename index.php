@@ -183,16 +183,12 @@ transition-delay: 0.8s;
 	<table cellpadding="0" cellspacing="0" width="100%" height="100%"><!--副表格框-->
 	<tr style="height:80px;" id="tabletop"><td><!--副表格上部-->
 		<div class="shangbutr" id="shangbutr" style="height:80px;overflow:hidden;width:100%;background-color:white;transition:background-color 0.5;-moz-transition:background-color 0.5;-webkit-transition:background-color 0.5;-o-transition:background-color 0.5;">
-			<iframe frameborder="0" height="100%" width="100%" scrolling="no" id="shangbu" name="shangbu" src="indexother.php" >
-				
-			</iframe>
+			<iframe frameborder="0" height="100%" width="100%" scrolling="no" id="shangbu" name="shangbu" src="indexother.php" ></iframe>
 		</div>
 	</td></tr>
 	<tr><td><!--副表格下部-->
 		<div class="xiabutr" style="width:100%;max-height:100%;background-color:;">
-			<iframe frameborder="0" height="100%" width="100%" name="xiabu" id="xiabu" scrolling="yes" src="indexxiabu.php#findme">
-				
-			</iframe>
+			<iframe frameborder="0" height="100%" width="100%" name="xiabu" id="xiabu" scrolling="yes" src="indexxiabu.php#findme"></iframe>
 		</div>
 	</td></tr>
 	</table>

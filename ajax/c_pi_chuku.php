@@ -13,7 +13,7 @@ foreach($checkbox as $checkboxid => $_id){
 	unset($zaiku_quantity);
 	unset($zaiku_id);
 	$row=mysqli_query($conn,"SELECT quantity,banngo,asahiorder,campany,ordernum FROM `t_teacher` WHERE _id='$_id'")->fetch_row();
-	$resultzaiku=mysqli_query($conn,"SELECT quantity,_id FROM `t_inout` WHERE (outquantity is null OR outquantity = 0 OR quantity-outquantity>0) AND banngo='$row[1]' AND asahipo='$row[2]' AND campany like '%$row[4]%' order by quantity desc");
+	$resultzaiku=mysqli_query($conn,"SELECT quantity,_id FROM `t_inout` WHERE (outquantity is null OR outquantity = 0) AND banngo='$row[1]' AND asahipo='$row[2]' AND campany like '%$row[4]%' order by quantity desc");
 	while($rowzaiku=$resultzaiku->fetch_row()){
 		$zaiku_quantity[]=$rowzaiku[0];
 		$zaiku_id[]=$rowzaiku[1];
