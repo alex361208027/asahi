@@ -150,7 +150,7 @@ if($customerradio){echo "【".$echo."】";}
 			<?php } ?>
 			<?php if($po2){ ?>
 				<tr>
-				<td colspan="6">在库信息:</td>
+				<td colspan="6"><br><br>在库信息参考:</td>
 				</tr>
 			<?php while($rowzaiku=$resultzaiku->fetch_row()){ ?>
 			<tr align="center" style="background-color:black;color:white">
