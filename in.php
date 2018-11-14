@@ -199,7 +199,7 @@ function in_lotnum(str){
 }
 function in_lotnum_complete(){
 			str="";
-			if(document.getElementsByName('in_quantity')[0].value==document.getElementsByName('in_outquantity')[0].value || document.getElementsByName('in_outquantity')[0].value==""){
+			if(document.getElementsByName('in_quantity')[0].value==document.getElementsByName('in_outquantity')[0].value || document.getElementsByName('in_outquantity')[0].value==0 || document.getElementsByName('in_outquantity')[0].value==""){
 			str="_id="+document.getElementsByName('in_id')[0].value+"&lotnum="+document.getElementsByName('in_lotnum')[0].value+"&banngo="+document.getElementsByName('in_banngo')[0].value+"&quantity="+document.getElementsByName('in_quantity')[0].value+"&intime="+document.getElementsByName('in_intime')[0].value+"&outtime="+document.getElementsByName('in_outtime')[0].value+"&outquantity="+document.getElementsByName('in_outquantity')[0].value+"&asahipo="+document.getElementsByName('in_asahipo')[0].value+"&campany="+document.getElementsByName('in_campany')[0].value+"&expressnum="+document.getElementsByName('in_expressnum')[0].value+"&remark="+document.getElementsByName('in_remark')[0].value;
 			
 			var xmlhttp;
