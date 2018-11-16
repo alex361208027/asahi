@@ -17,7 +17,8 @@ while($row=$result->fetch_row()){
 	$campany[]=$row[0];
 }
 $ok=$_GET['ok'];$total=$_GET['total'];$campanynum=$_GET['campanynum'];
-$year=$_GET['year'];$month=$_GET['month'];$qian=$_GET['qian'];$hou=$_GET['hou'];
+$year=$_GET['year'];$month=$_GET['month'];$qian=$_GET['qian'];$hou=$_GET['hou'];$selectdate=$_GET['selectdate'];
+
 if(!$year){
 	$year=date('Y');
 }
@@ -34,6 +35,7 @@ if($banngo){
 }else{
 	$banngook="";
 }
+
 ?>
 
 <html>
@@ -69,7 +71,7 @@ $(document).ready(function(){
 
 function year(shit){
 	banngo=document.getElementsByName("banngo[]");
-	shit.href="total_highcharts.php?year="+document.getElementById('year').value+"&month="+document.getElementById('month').value+"&qian="+document.getElementById('qian').value+"&hou="+document.getElementById('hou').value+"&ok=1";
+	shit.href="total_highcharts.php?year="+document.getElementById('year').value+"&month="+document.getElementById('month').value+"&qian="+document.getElementById('qian').value+"&hou="+document.getElementById('hou').value+"&selectdate="+document.getElementById('selectdate').value+"&ok=1";
 	if(banngo.length>0){
 		for(i=0;i<banngo.length;i++){
 			if(banngo[i].checked){				
@@ -143,7 +145,13 @@ input[type='number']{
 </style>
 <body>
 年度<input type="number" value="<?php echo $year; ?>" id="year" style="width:50px"/>
-月份<input type="number" value="<?php echo $month; ?>" id="month"/> <a href="" onclick="year(this)"><button>【检索】</button></a>
+月份<input type="number" value="<?php echo $month; ?>" id="month"/>
+<select id="selectdate">
+<option value="hopedate">@客户订单纳日期</option>
+<option value="SHdate">@上海发货日期</option>
+<option value="invoice">@开票日期</option>
+</select>
+<a href="" onclick="year(this)"><button>【检索】</button></a>
 （包含前<input type="number" value="<?php if($qian){echo $qian;}else{echo 9;} ?>" id="qian" />个月，
 后<input type="number" value="<?php if($hou){echo $hou;}else{echo 2;} ?>" id="hou" />个月的数据）<br>
 &nbsp;<label><input type="checkbox" <?php if(!$ok){echo "checked";}elseif($total){echo "checked";} ?> id="total" value="1" />【月总数】</label>
@@ -223,7 +231,7 @@ $(document).ready(function() {
 			  echo "{data:[";
 			  for($d=0;$d<(count($date));$d++){
 					  if($d!=0){ echo ","; }
-					  $sql="SELECT SUM(quantity) FROM `t_teacher` WHERE $select_banngocampany banngo = '$banngo[$c]' AND hopedate like '$date[$d]%' GROUP BY banngo";
+					  $sql="SELECT SUM(quantity) FROM `t_teacher` WHERE $select_banngocampany banngo = '$banngo[$c]' AND $selectdate like '$date[$d]%' GROUP BY banngo";
 					  $result=mysqli_query($conn,$sql);
 					  $row=$result->fetch_row();
 					  if($row[0]==0){ echo 0; }else{ echo $row[0]; }
@@ -237,7 +245,7 @@ $(document).ready(function() {
 			  echo "{data:[";
 			  for($d=0;$d<(count($date));$d++){
 					  if($d!=0){ echo ","; }
-					  $sql="SELECT SUM(quantity) FROM `t_teacher` WHERE hopedate like '$date[$d]%'";
+					  $sql="SELECT SUM(quantity) FROM `t_teacher` WHERE $selectdate like '$date[$d]%'";
 					  $result=mysqli_query($conn,$sql);
 					  $row=$result->fetch_row();
 					  if($row[0]==0){ echo 0; }else{ echo $row[0]; }
@@ -253,7 +261,7 @@ $(document).ready(function() {
 			  echo "{data:[";
 			  for($d=0;$d<(count($date));$d++){
 					  if($d!=0){ echo ","; }
-					  $sql="SELECT SUM(quantity) FROM `t_teacher` WHERE campany = '$campany[$c]' AND hopedate like '$date[$d]%' GROUP BY campany";
+					  $sql="SELECT SUM(quantity) FROM `t_teacher` WHERE campany = '$campany[$c]' AND $selectdate like '$date[$d]%' GROUP BY campany";
 					  $result=mysqli_query($conn,$sql);
 					  $row=$result->fetch_row();
 					  if($row[0]==0){ echo 0; }else{ echo $row[0]; }

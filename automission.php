@@ -1,6 +1,7 @@
 <?php
 date_default_timezone_set('PRC');
 $todaytime=date('Y-m-d H:i:s');
+$hour=date('H');
 $date=date('Y-m-d');
 $servername = "localhost";
 $username = "root";
@@ -29,6 +30,7 @@ $txt=$row[0].",".$todaytime;
 fwrite(fopen("ajax/write_data/poweichuli.html", "w"), $txt);
 
 
+if($hour<10){
 if(date('d')=='01'|| date('d')==11 || date('d')==22){
 	////////////////////////////每月出货统计数(预测)
 	$iii=-2;
@@ -58,13 +60,8 @@ if(date('d')=='01'|| date('d')==11 || date('d')==22){
 	echo $chukuheji;
 	fwrite(fopen("ajax/write_data/chukutongji.html", "w"), $chukuheji);
 	echo "出库统计完成<br>";
-
-
-	
-}else{
-	echo "未统计".date('d')."<br>";
 }
-
+}
 
 $conn->close();
 ?>
