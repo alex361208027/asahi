@@ -147,9 +147,9 @@ input[type='number']{
 年度<input type="number" value="<?php echo $year; ?>" id="year" style="width:50px"/>
 月份<input type="number" value="<?php echo $month; ?>" id="month"/>
 <select id="selectdate">
-<option value="hopedate">@客户订单纳日期</option>
-<option value="SHdate">@上海发货日期</option>
-<option value="invoice">@开票日期</option>
+<option value="hopedate" <?php if($selectdate=="hopedate"){echo "selected";} ?> >@客户订单纳日期</option>
+<option value="SHdate" <?php if($selectdate=="SHdate"){echo "selected";} ?> >@上海发货日期</option>
+<option value="invoice" <?php if($selectdate=="invoice"){echo "selected";} ?> >@开票日期</option>
 </select>
 <a href="" onclick="year(this)"><button>【检索】</button></a>
 （包含前<input type="number" value="<?php if($qian){echo $qian;}else{echo 9;} ?>" id="qian" />个月，
