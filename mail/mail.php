@@ -103,7 +103,7 @@ $dbname = "asahi";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 mysqli_set_charset ($conn,utf8);
-$sql="SELECT * FROM `t_teacher` WHERE state = '' AND SHdate <> '0000-00-00' AND SHdate <= '$today' order by SHdate,campany,ordernum,hopedate,banngo asc";
+$sql="SELECT * FROM `t_teacher` WHERE state = '' AND SHdate <> '0000-00-00' AND SHdate <= '$today' AND asahiorder2 <> '' order by SHdate,campany,ordernum,hopedate,banngo asc";
 $result=mysqli_query($conn,$sql);
 $table="<tr style='background:black;color:#fff;height:30px;'><td>客户名</td><td>订单号</td><td>品番</td><td>数量</td><td>订单纳期</td></tr>";
 
