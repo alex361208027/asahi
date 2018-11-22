@@ -29,6 +29,9 @@ if (empty($t1) || empty($t2)) {
 	$sql3 = "SELECT * FROM `t_postudent` WHERE asahiorder = '$asahiorder'";
 	$result3 = mysqli_query($conn,$sql3);
 	$rows3=$result3->num_rows;
+	
+	//fwrite(fopen("templates/new_asahi_po.html","w"),$asahiorder);
+	
 	}
 	
 	if($rows2 > 0){

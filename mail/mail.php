@@ -93,8 +93,17 @@ function sendMail($tobcc,$title,$content){
 $post_to=file_get_contents("post_to.html");
 //$post_tocc=$_POST['tocc'];
 date_default_timezone_set('PRC');
-$today=date('Y-m-d');
-$post_title="【朝日科技】发货提醒".$today;
+$ddd=0;
+if(date("w")==6 || date("w")==0){
+	
+}else{
+	
+if(date("w")==5){
+	$ddd=2;
+}
+
+$today=date('Y-m-d',strtotime('+'.$ddd.' day'));
+$post_title="【朝日科技】发货提醒".date('Y-m-d');
 
 $servername = "localhost";
 $username = "root";
@@ -108,7 +117,7 @@ $result=mysqli_query($conn,$sql);
 $table="<tr style='background:black;color:#fff;height:30px;'><td>客户名</td><td>订单号</td><td>品番</td><td>数量</td><td>订单纳期</td></tr>";
 
 while($row=$result->fetch_row()){
-	if($row[0]){$key=1;}else{$key=0;}
+	if($row[1]){$key=1;}else{$key=0;}
 	$table=$table."<tr><td>".$row[0]."</td><td>".$row[1]."</td><td>".$row[2]."</td><td>".$row[3]."</td><td>".$row[4]."</td>"."</tr>";
 }
 
@@ -121,6 +130,8 @@ echo $key;
 
 if($key){
 $flag = sendMail($post_to,$post_title,$post_content);
+}
+
 }
 
 if($flag){

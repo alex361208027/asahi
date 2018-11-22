@@ -32,7 +32,7 @@ if (!$t1 || !$t2) {
 	mysqli_query($conn,"INSERT INTO `t_note`(`user`, `note`, `time`, `remark`) VALUES ('{$_COOKIE['asahiuser']}','$t1','$todaytime',7)");
 	mysqli_query($conn,"DELETE FROM `t_note` WHERE remark = 7 order by time asc LIMIT 1");	
 	
-	
+	//fwrite(fopen("templates/new_asahi_po.html","w"),$t1);
 
 ?>
 <body style="padding:2%">

@@ -54,8 +54,9 @@ echo file_get_contents("ajax/write_data/campany.html");
   客户名称:<input list="kehulist" class="inputlist" name="t1" size="10" maxlength="" />
   订单编号:<input type="text" name="t2" size="10" maxlength="" />
   订单日期:<input type="date" name="t3" size="10" maxlength="" value="<?php echo date('Y-m-d'); ?>"/>
-  <input type="submit" style="background-color:#FF4469" value="新 建 订 单" onclick="buttons(this)"/>
+  <input type="submit" style="background-color:#FF4469" value="新 建 订 单" onclick="buttons(this);"/>
   <input type="text" name="asahiorder" size="10" value="" placeholder="同时创建朝日订单" /><input type="button" value="生成朝日单号" onclick="newponum(1);buttons(this);"/><input type="button" value="Reset" onclick="location.reload();"/>
+ 
   </form>
 </td></tr></table>
 </div>
@@ -147,15 +148,28 @@ $(document).ready(function(){
 		$(":checkbox").next().css({"background-color":"#81C7D4"});
 		setTimeout(()=>{$(":checked").next().css({"background-color":"#562E37"});},100);
 	});
+	
+	
 });
 
-
+function changedate(str){
+	if(!str){
+		str=0;
+	}
+	t7=document.getElementsByName('t7')[str].value;
+	t77=document.getElementsByName('t77')[str].value;
+	
+	if(t7 && t77 && t7>t77){
+		document.getElementsByName('t7')[str].value=t77;
+		document.getElementsByName('t77')[str].value=t7;
+	}
+}
 
 
 
 
 d1=document.getElementById('newdate').value;
-
+//asahi_po=document.getElementById('new_asahi_po').value;
 
 
 
@@ -167,8 +181,8 @@ d1=document.getElementById('newdate').value;
 <label><input type="checkbox" name="t12" value="checked" style="display:none"/><div class="checkedboxword">在库のみ</div></label>
 
 <br>上海出荷日:
-<input type="date" name="t7" value=""/> ~
-<input type="date" name="t77" value=""/>
+<input type="date" name="t7" value="" onchange="changedate(0)"/>
+<input type="date" name="t77" value="" onchange="changedate(0)"/>~
 <input type="submit" style="background-color:#CCCCFF" value="(お客PO) 検索"/><input type="button" value="Reset" onclick="location.reload();"/>
 </form>
 </td></tr></table>
@@ -265,8 +279,8 @@ d1=document.getElementById('newdate').value;
 <input type="submit" style="background-color:#FF7792" value="(朝日PO) 検索"/><input type="button" value="Reset" onclick="location.reload();"/>
 
 日本出荷日:
-<input type="date" name="t7" value=""/> ~
-<input type="date" name="t77" value=""/>
+<input type="date" name="t7" value="" onchange="changedate(1)"/> ~
+<input type="date" name="t77" value="" onchange="changedate(1)"/>
 </form>
 </td></tr></table>
 </div>
