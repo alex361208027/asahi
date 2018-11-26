@@ -3,8 +3,8 @@ echo file_get_contents("templates/header.html");
 
 date_default_timezone_set('PRC');
 $todaytime=date('Y-m-d H:i:s');
-$today25=date('Y-m-d',strtotime('-6 months'));
-$today35=date('Y-m-d',strtotime('-11 months'));
+$today25=date('Y-m-d',strtotime('-15 months'));
+$today35=date('Y-m-d',strtotime('-30 months'));
 
 $servername = "localhost";
 $username = "root";
@@ -90,7 +90,7 @@ if($po2){
 	if($po1){
 	$select_po2="banngo <> ''";
 	}else{
-	$select_po2="(JPdate = 0 OR JPdate >= '$today25')";
+	$select_po2="(JPdate = 0 OR JPdate >= '$today25') AND banngo in (SELECT banngo FROM t_inout WHERE outquantity = 0 OR outquantity is null GROUP BY banngo) AND asahiorder in (SELECT asahipo FROM t_inout where outquantity = 0 OR outquantity is null GROUP BY asahipo)";
 	}
 }
 
