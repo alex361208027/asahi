@@ -114,17 +114,20 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 mysqli_set_charset ($conn,utf8);
 $sql="SELECT * FROM `t_teacher` WHERE state = '' AND SHdate <> '0000-00-00' AND SHdate <= '$today' AND asahiorder2 <> '' order by SHdate,campany,ordernum,hopedate,banngo asc";
 $result=mysqli_query($conn,$sql);
-$table="<tr style='background:black;color:#fff;height:30px;'><td>客户名</td><td>订单号</td><td>品番</td><td>数量</td><td>订单纳期</td></tr>";
+
+$table="<tr style='background:black;color:#fff;height:30px;'><td>客户名</td><td>订单号</td><td>品番</td><td>数量</td><td>订单纳期</td><td>备注</td></tr>";
 
 while($row=$result->fetch_row()){
 	if($row[1]){$key=1;}else{$key=0;}
-	$table=$table."<tr><td>".$row[0]."</td><td>".$row[1]."</td><td>".$row[2]."</td><td>".$row[3]."</td><td>".$row[4]."</td>"."</tr>";
+	$table=$table."<tr><td>".$row[0]."</td><td>".$row[1]."</td><td>".$row[2]."</td><td>".$row[3]."</td><td>".$row[4]."</td><td>".$row[8]."</td></tr>";
 }
 
 $post_content="【朝日科技】今日发货提醒：<br><br>"."<table>".$table."</table>"."<br>详情请进入<a href='http://www.asahi-rubber.cn' target='_BLANK'>系统</a><br><br>";
 
 echo $post_to."<br>".$post_title."<br>".$post_content;
-echo $key;
+
+
+$conn->close();
 //////////////////BBBBBB//////////////////////
 
 
@@ -139,7 +142,6 @@ if($flag){
 }else{
     echo "发送失败！";
 }
-$conn->close();
 ?>
 <script type="text/javascript" src="../JS/jquery-3.2.1.min.js"></script>
 <script>

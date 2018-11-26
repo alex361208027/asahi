@@ -181,8 +181,8 @@ d1=document.getElementById('newdate').value;
 <label><input type="checkbox" name="t12" value="checked" style="display:none"/><div class="checkedboxword">在库のみ</div></label>
 
 <br>上海出荷日:
-<input type="date" name="t7" value="" onchange="changedate(0)"/>
-<input type="date" name="t77" value="" onchange="changedate(0)"/>~
+<input type="date" name="t7" value="" onchange="changedate(0)"/>~
+<input type="date" name="t77" value="" onchange="changedate(0)"/>
 <input type="submit" style="background-color:#CCCCFF" value="(お客PO) 検索"/><input type="button" value="Reset" onclick="location.reload();"/>
 </form>
 </td></tr></table>
@@ -279,7 +279,7 @@ d1=document.getElementById('newdate').value;
 <input type="submit" style="background-color:#FF7792" value="(朝日PO) 検索"/><input type="button" value="Reset" onclick="location.reload();"/>
 
 日本出荷日:
-<input type="date" name="t7" value="" onchange="changedate(1)"/> ~
+<input type="date" name="t7" value="" onchange="changedate(1)"/>~
 <input type="date" name="t77" value="" onchange="changedate(1)"/>
 </form>
 </td></tr></table>
