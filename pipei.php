@@ -3,6 +3,7 @@ echo file_get_contents("templates/header.html");
 
 date_default_timezone_set('PRC');
 $todaytime=date('Y-m-d H:i:s');
+$today15=date('Y-m-d',strtotime('-5 months'));
 $today25=date('Y-m-d',strtotime('-15 months'));
 $today35=date('Y-m-d',strtotime('-30 months'));
 
@@ -90,14 +91,14 @@ if($po2){
 	if($po1){
 	$select_po2="banngo <> ''";
 	}else{
-	$select_po2="(JPdate = 0 OR JPdate >= '$today25') AND banngo in (SELECT banngo FROM t_inout WHERE outquantity = 0 OR outquantity is null GROUP BY banngo) AND asahiorder in (SELECT asahipo FROM t_inout where outquantity = 0 OR outquantity is null GROUP BY asahipo)";
+	$select_po2="((JPdate = 0 OR JPdate >= '$today25') AND (banngo in (SELECT banngo FROM t_inout WHERE outquantity = 0 OR outquantity is null GROUP BY banngo) AND asahiorder in (SELECT asahipo FROM t_inout where outquantity = 0 OR outquantity is null GROUP BY asahipo)) OR (JPdate >= '$today15'))";
 	}
 }
 
 
 
-$resultc=mysqli_query($conn,"SELECT * FROM `t_teacher` WHERE $select_c1 $select_c2 order by hopedate asc");
-$resultpo=mysqli_query($conn,"SELECT * FROM `t_poteacher` WHERE $select_po1 $select_po2 order by JPdate asc");
+$resultc=mysqli_query($conn,"SELECT * FROM `t_teacher` WHERE $select_c1 $select_c2 order by hopedate desc");
+$resultpo=mysqli_query($conn,"SELECT * FROM `t_poteacher` WHERE $select_po1 $select_po2 order by JPdate desc");
 if($customerradio){echo "【".$echo."】";}
 ?>
 <body onload="document.getElementById('findme').click()">
