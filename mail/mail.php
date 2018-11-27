@@ -132,7 +132,7 @@ if(date("w")==6 || date("w")==0){
 
 
 	if($key){
-	$flag = sendMail($post_to,$post_title,$post_content);
+	//$flag = sendMail($post_to,$post_title,$post_content);
 	}
 
 }
