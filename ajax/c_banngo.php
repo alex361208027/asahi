@@ -43,7 +43,7 @@ $row=$result->fetch_row();
 		<div class="php1word1">状态</div><div class="php1word1"> &nbsp; <input type="checkbox" id="c_complete" value="完成" <?php if($row[9]=='完成'){echo 'checked';} ?> onclick="c_complete('_id=<?php echo $row[12] ?>');if(document.getElementById('checked1').color=='#E6E6E6'){document.getElementById('checked1').color='';}else{document.getElementById('checked1').color='#E6E6E6';}" style="display:none">&nbsp;<font id="checked1" color="<?php if($row[9]!='完成'){echo '#E6E6E6';} ?>" onclick="document.getElementById('c_complete').style.display='inline-block';">订单完成</font></div><br>
 		<div class="php1word1">发票</div><div class="php1word1"> &nbsp; <input type="checkbox"  id="c_invouce" value="已开具" <?php if($row[10]=='已开具'){echo 'checked';} ?> onclick="c_invoice('_id=<?php echo $row[12] ?>');if(document.getElementById('checked2').color=='#E6E6E6'){document.getElementById('checked2').color='';}else{document.getElementById('checked2').color='#E6E6E6';}" style="display:none">&nbsp;<font id="checked2" color="<?php if($row[10]!='已开具'){echo '#E6E6E6';} ?>" onclick="document.getElementById('c_invouce').style.display='inline-block';">已开发票</font></div><br>
 		<br>
-		<a href="###" onclick="c_delete('_id=<?php echo $row[12] ?>')"><div class="banngobutton">删除</div></a>
+		<a href="###" onclick="c_delete('_id=<?php echo $row[12]; ?>')"><div class="banngobutton">删除</div></a>
 		<a href="###" onclick="c_pipei_cancel('_id=<?php echo $row[12] ?>')"><div class="banngobutton">取消匹配</div></a>
 	</div>
 <?php 

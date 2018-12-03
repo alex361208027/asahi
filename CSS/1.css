@@ -19,17 +19,20 @@ hr{
 	
 }
 
-
+@font-face{
+            font-family:myFont;
+            src:url('STHeiti-Light.ttc');
+        }
 
 body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,img,div,dl,dt,dd,input{
 margin: 0;
 padding: 0;
-font-family: Arial;
+font-family: myFont;
+
 }
 
 textarea{
 	border:0px;
-	
 	background-color:#F7F7F7;
 	padding:10px;
 	color:#5E5E5E;
@@ -61,7 +64,7 @@ input,
 .inputlist{
 	width: 140px;
     height: 26px;
-		
+		font-family: myFont;
     margin: 0 5px 0 0;
     padding: 4px 2px;
     border: none;
@@ -73,7 +76,6 @@ input,
 	text-align:left;
 	margin-top:8px;
 	margin-right:8px;
-	font-family: Arial;
 	font-size:13px;
 	/**-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;

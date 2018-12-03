@@ -519,11 +519,11 @@ function c_chaifen_complete(str){
 function c_delete(str){
 			document.getElementById("ajasdiv2").innerHTML="正在加载...";
 			document.getElementById("ajasdivout2").style.right="345";
-			document.getElementById("ajasdiv2").innerHTML="<button onclick=\"c_delete_complete('"+str+"')\">确认删除</button>";
+			document.getElementById("ajasdiv2").innerHTML="<button onclick=\"c_delete_complete('"+str+"')\">仅删除</button><br>"+"<button onclick=\"c_delete_complete('"+str+"&po_delete=1"+"')\">同时删除已匹配的PO订单</button>";
+
 			
 }
 function c_delete_complete(str){
-			
 			var xmlhttp;
 			if (str.length==0)
 			  { 
@@ -1047,7 +1047,7 @@ function po_chaifen_complete(str){
 function po_delete(str){
 			document.getElementById("ajasdiv2").innerHTML="正在加载...";
 			document.getElementById("ajasdivout2").style.right="345";
-			document.getElementById("ajasdiv2").innerHTML="<button onclick=\"po_delete_complete('"+str+"')\">确认删除</button>";
+			document.getElementById("ajasdiv2").innerHTML="<button onclick=\"po_delete_complete('"+str+"')\">仅删除</button><br>"+"<button onclick=\"po_delete_complete('"+str+"&c_delete=1"+"')\">同时删除已匹配的客户订单</button>";
 			
 }
 function po_delete_complete(str){

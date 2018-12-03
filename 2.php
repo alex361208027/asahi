@@ -143,8 +143,9 @@ $nowpage=0;
 $nowpagestart=$nowpage+1;
 $nowpageend=$nowpage+100;
 
-$sql="SELECT *,IF(SHdate='0000-00-00',hopedate,SHdate) as thedate FROM `t_teacher` WHERE $tt3 $tt1 $tt5 $tt4 $tt7 $tt9 $tt10 $tt11 $tt6 $tt12 order by thedate,campany,ordernum,hopedate,banngo asc limit $nowpage,100";
-//$sql="SELECT * FROM `t_teacher` WHERE $tt3 $tt1 $tt5 $tt4 $tt7 $tt9 $tt10 $tt11 $tt6 order by SHdate,campany,ordernum,hopedate,banngo asc limit $nowpage,100";
+//$sql="SELECT *,IF(SHdate='0000-00-00',hopedate,SHdate) as thedate FROM `t_teacher` WHERE $tt3 $tt1 $tt5 $tt4 $tt7 $tt9 $tt10 $tt11 $tt6 $tt12 order by thedate,campany,ordernum,hopedate,banngo asc limit $nowpage,100";
+$sql="SELECT *,IF(SHdate='0000-00-00',hopedate,SHdate) as thedate FROM `t_teacher` WHERE $tt3 $tt1 $tt5 $tt4 $tt7 $tt9 $tt10 $tt11 $tt6 $tt12 order by thedate,campany,ordernum,banngo asc limit $nowpage,100";
+
 $result=mysqli_query($conn,$sql);
 
 
@@ -233,12 +234,19 @@ td:hover{
 							}
 ?>
 <tr <?php  if($colordate!=$row[7]){if($bgcolor==""){$bgcolor="#F7F7F7";}else{$bgcolor="";} echo "bgcolor='".$bgcolor."'"; }else{echo "bgcolor='".$bgcolor."'";}$colordate=$row[7]; ?>>
-	
+	<? 
+	if($same_po==$row[1]&&$same_banngo==$row[2]&&$same_date==$row[7]){
+		$same=1;
+	}else{
+		$same=0;
+	}
+	$same_po=$row[1];$same_banngo=$row[2];$same_date=$row[7]; 
+	?>
 	<td align="right"><input type="checkbox" name="checkboxsum" value="<?php echo $row[3]; ?>" _id="<?php echo $row[12] ?>" cells="<?php echo $jjj+1; ?>"/></td>
 	<td align="center"><?php echo $jjj+1; ?></td>
 	<td align="center"><div class="classcp1" style="background-color:<?php echo $bgimg; ?>"><?php echo $states; ?></div></td>
-	<td><?php echo $row[0] ?></td>
-	<td><a href="4.php?ddt2=<?php echo $row[1] ?>"><?php echo $row[1] ?></a></td>
+	<td><?php if(!$same){echo $row[0];} ?></td>
+	<td><a href="4.php?ddt2=<?php echo $row[1] ?>"><?php if(!$same){echo $row[1];} ?></a></td>
 	<td style="max-width:120px;"><a href="###" onclick="c_banngo('_id=<?php echo $row[12] ?>&cells=<?php echo $jjj+1 ?>')" ><u><?php echo $row[2] ?></u></a></td>
 	<td align="right"><?php echo $row[3] ?></td>
 	<td>pcs</td>
@@ -247,7 +255,7 @@ td:hover{
 	<td><?php echo $row[6] ?></td>
 	<td><b><?php echo $row[7] ?></b></td>
 	<td><marquee scrolldelay="200"><?php echo $row[8] ?></marquee></td>
-	<td><?php echo $row[10] ?></td>
+	<td><?php echo $row[10]; ?></td>
 	<?php $jjj=$jjj+1 ?>
 	
 </tr>
