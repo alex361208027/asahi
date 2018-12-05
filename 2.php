@@ -235,12 +235,12 @@ td:hover{
 ?>
 <tr <?php  if($colordate!=$row[7]){if($bgcolor==""){$bgcolor="#F7F7F7";}else{$bgcolor="";} echo "bgcolor='".$bgcolor."'"; }else{echo "bgcolor='".$bgcolor."'";}$colordate=$row[7]; ?>>
 	<? 
-	if($same_po==$row[1]&&$same_banngo==$row[2]&&$same_date==$row[7]){
+	if($same_po==$row[1]&&$same_banngo==$row[2]){
 		$same=1;
 	}else{
 		$same=0;
 	}
-	$same_po=$row[1];$same_banngo=$row[2];$same_date=$row[7]; 
+	$same_po=$row[1];$same_banngo=$row[2]; 
 	?>
 	<td align="right"><input type="checkbox" name="checkboxsum" value="<?php echo $row[3]; ?>" _id="<?php echo $row[12] ?>" cells="<?php echo $jjj+1; ?>"/></td>
 	<td align="center"><?php echo $jjj+1; ?></td>
