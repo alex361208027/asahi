@@ -91,7 +91,7 @@ if($po2){
 	if($po1){
 	$select_po2="banngo <> ''";
 	}else{
-	$select_po2="((JPdate = 0 OR JPdate >= '$today25') AND (banngo in (SELECT banngo FROM t_inout WHERE outquantity = 0 OR outquantity is null GROUP BY banngo) AND asahiorder in (SELECT asahipo FROM t_inout where outquantity = 0 OR outquantity is null GROUP BY asahipo)) OR (JPdate >= '$today15'))";
+	$select_po2="(((JPdate = 0 OR JPdate >= '$today25') AND (banngo in (SELECT banngo FROM t_inout WHERE outquantity = 0 OR outquantity is null GROUP BY banngo) AND asahiorder in (SELECT asahipo FROM t_inout where outquantity = 0 OR outquantity is null GROUP BY asahipo))) OR (JPdate >= '$today15'))";
 	}
 }
 
