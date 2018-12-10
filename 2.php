@@ -199,10 +199,6 @@ td:hover{
 								}
 							}elseif($row[11]=="已入库"&&$row[7] <= date('Y-m-d')){
 								$bgimg='#FF0033';$states='要出荷';
-								if(date('Y-m-d',(strtotime('+10 days',strtotime($row[4])))) < $row[7] &&  date('Y-m-d',(strtotime('+10 days',strtotime($row[6])))) < $row[7]){
-									$zaowan='<div class="classcp1" style="background-color:black;color:white;">遅</div>';
-								}
-								
 							}elseif($row[11]=="已入库"){
 								$bgimg='#FF0033';$states='出荷待つ';
 							}elseif($row[6] > date('Y-m-d')){
@@ -216,7 +212,19 @@ td:hover{
 								$bgimg='#999999';$states='入荷待つ';
 							}
 							
+							if( $states!='完成' && date('Y-m-d',(strtotime('+7 days',strtotime($row[4])))) < $row[7] &&  date('Y-m-d',(strtotime('+11 days',strtotime($row[6])))) < $row[7] ){
+								$tuichi='<div class="classcp1" style="background-color:black;color:white;">遅</div>';
+							}elseif( $states!='完成'&& $row[7]!='0000-00-00' && date('Y-m-d',(strtotime('-7 days',strtotime($row[4])))) > $row[7] ){
+								$tuichi='<div class="classcp1" style="background-color:#000077;color:white;">早</div>';
+							}else{
+								$tuichi="";
+							}
+							
+							
+							
 							if($states!='完成' && $row[8]){
+								
+								
 								if(mb_strlen($row[8])>4){
 									$diandian="..";
 								}else{
@@ -254,8 +262,8 @@ td:hover{
 	<td><?php if($row[4]<=$row[6]){ echo "<font color='red'>".$row[4]."</font>"; }else{ echo $row[4]; } ?></td>
 	<td><a href="4-1.php?asahit22=<?php echo $row[5] ?>"><?php echo $row[5] ?></a></td>
 	<td><?php echo $row[6] ?></td>
-	<td><b><?php echo $row[7] ?></b><? echo $zaowan;$zaowan=""; ?></td>
-	<td><marquee scrolldelay="200"><?php echo $row[8] ?></marquee></td>
+	<td><b><?php echo $row[7] ?></b></td>
+	<td><? echo $tuichi; ?><marquee scrolldelay="200"><?php echo $row[8] ?></marquee></td>
 	<td><?php echo $row[10]; ?></td>
 	<?php $jjj=$jjj+1 ?>
 	
