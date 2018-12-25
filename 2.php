@@ -216,8 +216,10 @@ td:hover{
 								$tuichi='<div class="classcp1" style="background-color:black;color:white;">遅</div>';
 							}elseif( $states!='完成'&& $row[7]!='0000-00-00' && date('Y-m-d',(strtotime('-7 days',strtotime($row[4])))) > $row[7] ){
 								$tuichi='<div class="classcp1" style="background-color:#000077;color:white;">早</div>';
+							}elseif($states!='完成'&& $row[7]<$row[6] ){
+								$tuichi='<div class="classcp1" style="background-color:#FF6685;color:white;">調</div>';
 							}else{
-								$tuichi="";
+								$tuichi='';
 							}
 							
 							
