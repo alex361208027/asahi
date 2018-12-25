@@ -1220,32 +1220,36 @@ function po_pipei_cancel_complete(str){
 
 //1.php 1-2.php
 /////		
-function findbanngo(str){
+function findbanngo(str,str2){
 			var xmlhttp;
+			str=str.replace("+","%2B");
 			
-			if (str.length==0 || str=""){ 
-			  
+			if (str.length<30)
+			  { 
+			 
+			  return;
 			  }else{
-					str=str.replace("+","%2B");
-					if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
-					  xmlhttp=new XMLHttpRequest();
-					  }else{// code for IE6, IE5
-					  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-					  }
-					  
-					xmlhttp.onreadystatechange=function()
-					  {
-					  if (xmlhttp.readyState==4 && xmlhttp.status==200)
-						{	
-							
-							document.getElementById("findbanngo").style.display= "block";
-							document.getElementById("findbanngo").innerHTML= xmlhttp.responseText;
-							
-							
-						}
-					  }
-					xmlhttp.open("GET","./ajax/findbanngo.php?banngo="+str,true);
-					xmlhttp.send();
+				  
+			if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
+			  xmlhttp=new XMLHttpRequest();
+			  }else{// code for IE6, IE5
+			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+			  
+			xmlhttp.onreadystatechange=function()
+			  {
+			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+				{	
+					
+					
+					document.getElementById("findbanngo").style.display= "block";
+					document.getElementById("findbanngo").innerHTML= xmlhttp.responseText;
+					
+					
+				}
+			  }
+			xmlhttp.open("GET","./ajax/findbanngo.php?banngo="+str,true);
+			xmlhttp.send();
 			  }
 }
 
