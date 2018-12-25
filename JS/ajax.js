@@ -1222,62 +1222,31 @@ function po_pipei_cancel_complete(str){
 /////		
 function findbanngo(str){
 			var xmlhttp;
-			str=str.replace("+","%2B");
-			if (str.length==0)
-			  { 
-			 
-			  return;
-			  }
-			if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
-			  xmlhttp=new XMLHttpRequest();
-			  }else{// code for IE6, IE5
-			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-			  }
+			
+			if (str.length==0 || str=""){ 
 			  
-			xmlhttp.onreadystatechange=function()
-			  {
-			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
-				{	
-					//if(xmlhttp.responseText=="f3000"){
-					//	document.getElementById("findbanngo").style.display= "block";
-					//	document.getElementById("findbanngo").innerHTML= "<input type='hidden' id='quantitycheck' value='3000'/>";
-					//	document.getElementById("quantitylist").innerHTML="";
-					//	for(i=1;i<18;i++){
-					//	document.getElementById("quantitylist").innerHTML+="<option value='"+3000*i+"'>";
-					//	}
-						
+			  }else{
+					str=str.replace("+","%2B");
+					if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
+					  xmlhttp=new XMLHttpRequest();
+					  }else{// code for IE6, IE5
+					  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+					  }
+					  
+					xmlhttp.onreadystatechange=function()
+					  {
+					  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+						{	
 							
-					//}else if(xmlhttp.responseText=="f6000"){
-					//	document.getElementById("findbanngo").style.display= "block";
-					//	document.getElementById("findbanngo").innerHTML= "<input type='hidden' id='quantitycheck' value='6000'/>";
-					//	document.getElementById("quantitylist").innerHTML="";
-					//	for(i=1;i<18;i++){
-					//	document.getElementById("quantitylist").innerHTML+="<option value='"+6000*i+"'>";
-					//	}
-					//	
-					//}else if(xmlhttp.responseText=="f2000"){
-					//	document.getElementById("findbanngo").style.display= "block";
-					//	document.getElementById("findbanngo").innerHTML= "<input type='hidden' id='quantitycheck' value='2000'/>";
-					//	document.getElementById("quantitylist").innerHTML="";
-					//	for(i=1;i<18;i++){
-					//	document.getElementById("quantitylist").innerHTML+="<option value='"+2000*i+"'>";
-					//	}
-						
-					//}else{
-					//	document.getElementById("findbanngo").style.display= "block";
-					//	document.getElementById("findbanngo").innerHTML= "<input type='hidden' id='quantitycheck' value=''/>";
-					//	document.getElementById("findbanngo").innerHTML= xmlhttp.responseText;
-					//}
-					
-					document.getElementById("findbanngo").style.display= "block";
-					document.getElementById("findbanngo").innerHTML= xmlhttp.responseText;
-					
-					
-				}
+							document.getElementById("findbanngo").style.display= "block";
+							document.getElementById("findbanngo").innerHTML= xmlhttp.responseText;
+							
+							
+						}
+					  }
+					xmlhttp.open("GET","./ajax/findbanngo.php?banngo="+str,true);
+					xmlhttp.send();
 			  }
-			xmlhttp.open("GET","./ajax/findbanngo.php?banngo="+str,true);
-			xmlhttp.send();
-
 }
 
 function thispinfan(str, banngoname){
