@@ -33,7 +33,7 @@ if($banngo&&$price){
 		$han="and state=0";
 	}
 	if($search){
-	$sql = "SELECT * FROM `t_poprice` WHERE banngo like '%$search%' OR campany like '%$search%' OR description like '%$search%' order by banngo asc";		
+	$sql = "SELECT * FROM `t_poprice` WHERE (banngo like '%$search%' OR campany like '%$search%' OR description like '%$search%') $han order by banngo asc";		
 	}else{
 	$sql = "SELECT * FROM `t_poprice` WHERE banngo is not null $han order by banngo asc";
 	}
@@ -99,6 +99,17 @@ cc{
 .oldnewprice:hover > .oldprice{
 	display:inline-block;left:-100%;
 }
+
+.oldsellprice{
+	border:1px solid black;position:absolute;top:0px;left:0px;background:white;padding:1px;
+	display:none;
+}
+.oldnewsellprice{
+	position:relative;
+}
+.oldnewsellprice:hover > .oldsellprice{
+	display:inline-block;left:100%;
+}
 </style>
 <script>
 $(document).ready(function(){
@@ -126,7 +137,7 @@ echo file_get_contents("ajax/write_data/campany.html");
 </datalist>
 <hr>
 <form action="poprice.php" method="GET">
-<input type="text" name="search" list="kehulist" style="width:200px" value="<?php echo $search ?>" placeholder="搜索番号"><input type="submit" value="搜索"> <input type="checkbox" name="han" value="1" <?php if($search){echo "checked";} ?>>含不常用品番
+<input type="text" name="search" list="kehulist" style="width:200px" value="<?php echo $search ?>" placeholder="搜索番号"><input type="submit" value="搜索"> <input type="checkbox" name="han" value="1" <? if(!$han){echo 'checked';} ?>/>含不常用品番
 </form>
 <table cellpadding="2" cellspacing="0" align="center">
 <tr style="background-color:#FF6685;color:white;height:;" align="center">
@@ -145,7 +156,7 @@ echo file_get_contents("ajax/write_data/campany.html");
 	<td align="center"><input type="text" id="campany<?php echo $row[0] ?>" value="<?php echo $row[4] ?>"></td>
 	<td align="center"><?php if($row[11]==0){echo $row[1];}elseif($row[11]==1){echo "<cc>".$row[1]."</cc>";} ?></td>
 	<td><div class="oldnewprice"><div class="oldprice">前:<? echo $row[12] ?></div><input type="text" id="price<?php echo $row[0] ?>" value="<?php echo $row[2] ?>"></div></td>
-	<td><input type="text" id="sellprice<?php echo $row[0] ?>" value="<?php echo $row[5] ?>"></td>
+	<td><div class="oldnewsellprice"><div class="oldsellprice">前:<? echo $row[13] ?></div><input type="text" id="sellprice<?php echo $row[0] ?>" value="<?php echo $row[5] ?>"></div></td>
 	<td><input type="text" id="reel<?php echo $row[0] ?>" value="<?php echo $row[3] ?>"></td>
 	<td><input type="text" id="other<?php echo $row[0] ?>" value="<?php echo $row[6] ?>"></td>
 	<td><button id="button<?php echo $row[0] ?>" onclick="po_price(<?php echo $row[0] ?>)">确认编辑</button> 

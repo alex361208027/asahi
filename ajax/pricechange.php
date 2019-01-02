@@ -10,10 +10,12 @@ $price1=$_GET['price1'];$price2=$_GET['price2'];
 
 if($select==1){
 	$selectprice="price";
+	$selectoldprice="oldprice";
 }elseif($select==2){
 	$selectprice="sellprice";
+	$selectoldprice="oldsellprice";
 }
-mysqli_query($conn,"UPDATE `t_poprice` SET oldprice='$price1', $selectprice='$price2' WHERE $selectprice='$price1'");
+mysqli_query($conn,"UPDATE `t_poprice` SET $selectoldprice='$price1', $selectprice='$price2' WHERE $selectprice='$price1'");
 
 
 $conn->close();

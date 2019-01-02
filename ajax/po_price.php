@@ -10,7 +10,7 @@ $campany=$_GET['campany'];
 $price=$_GET['price'];$sellprice=$_GET['sellprice'];
 $reel=$_GET['reel'];$other=$_GET['other'];
 if($price){
-mysqli_query($conn,"UPDATE `t_poprice` SET oldprice=price, campany='$campany', price='$price', sellprice='$sellprice', reel='$reel', other='$other' WHERE _id='$_id'");
+mysqli_query($conn,"UPDATE `t_poprice` SET oldprice=IF(price='$price',oldprice,price), oldsellprice=IF(sellprice='$sellprice',oldsellprice,sellprice), campany='$campany', price='$price', sellprice='$sellprice', reel='$reel', other='$other' WHERE _id='$_id'");
 echo "ok";
 }else{
 mysqli_query($conn,"DELETE FROM `t_poprice` WHERE _id='$_id'");	
