@@ -88,6 +88,17 @@ li{
 cc{
 	color:#B6ADB8;
 }
+
+.oldprice{
+	border:1px solid black;position:absolute;top:0px;left:0px;background:white;padding:1px;
+	display:none;
+}
+.oldnewprice{
+	position:relative;
+}
+.oldnewprice:hover > .oldprice{
+	display:inline-block;left:-100%;
+}
 </style>
 <script>
 $(document).ready(function(){
@@ -133,7 +144,7 @@ echo file_get_contents("ajax/write_data/campany.html");
 	<td><i><?php echo $i ?>.</i></td>
 	<td align="center"><input type="text" id="campany<?php echo $row[0] ?>" value="<?php echo $row[4] ?>"></td>
 	<td align="center"><?php if($row[11]==0){echo $row[1];}elseif($row[11]==1){echo "<cc>".$row[1]."</cc>";} ?></td>
-	<td><input type="text" id="price<?php echo $row[0] ?>" value="<?php echo $row[2] ?>"></td>
+	<td><div class="oldnewprice"><div class="oldprice">前:<? echo $row[12] ?></div><input type="text" id="price<?php echo $row[0] ?>" value="<?php echo $row[2] ?>"></div></td>
 	<td><input type="text" id="sellprice<?php echo $row[0] ?>" value="<?php echo $row[5] ?>"></td>
 	<td><input type="text" id="reel<?php echo $row[0] ?>" value="<?php echo $row[3] ?>"></td>
 	<td><input type="text" id="other<?php echo $row[0] ?>" value="<?php echo $row[6] ?>"></td>
