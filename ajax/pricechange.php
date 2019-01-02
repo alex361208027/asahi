@@ -13,7 +13,7 @@ if($select==1){
 }elseif($select==2){
 	$selectprice="sellprice";
 }
-mysqli_query($conn,"UPDATE `t_poprice` SET $selectprice='$price2' WHERE $selectprice='$price1'");
+mysqli_query($conn,"UPDATE `t_poprice` SET oldprice='$price1', $selectprice='$price2' WHERE $selectprice='$price1'");
 
 
 $conn->close();
