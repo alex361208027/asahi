@@ -10,7 +10,8 @@ $username = "root";
 $password = "root";
 $dbname = "asahi";
 
-
+$conn = new mysqli($servername, $username, $password, $dbname);
+mysqli_set_charset ($conn,utf8);
 
 date_default_timezone_set('PRC');
 $todaytime=date('Y-m-d H:i:s');
@@ -115,8 +116,6 @@ if($t7||$t77){
 }
 $select=$tt3.$tt1.$tt5.$tt4.$tt7.$tt9.$tt10.$tt11.$tt6;
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-mysqli_set_charset ($conn,utf8);
 
 $nowpage=$_POST['nowpage'];
 if(empty($nowpage)){
@@ -219,6 +218,8 @@ function mycheckbox(str){
 		button.href="asahiorder.php?";
 	}else if(str==2){
 		button.href="hebing.php?";
+	}else if(str==4){
+		button.href="upload_lotnum.php?";
 	}
 	var ss=document.getElementsByName('checkboxsum');
 	for(i=0;i<ss.length;i++){
@@ -243,6 +244,48 @@ $(document).ready(function(){
 //	document.getElementById('href').href="6.php?"+str;
 //	document.getElementById('href').click();
 //}
+
+function po_pi_lotnum(str){
+	
+	
+			str="";
+			var checkbox=document.getElementsByName('checkboxsum');
+			str+="JPdate="+document.getElementById('JPdate').value;
+			for(i=0;i<checkbox.length;i++){
+				if(checkbox[i].checked){
+				str+="&checkbox[]="+checkbox[i].getAttribute('_id');
+				}
+			}
+			
+			
+			var xmlhttp;
+			if (str.length==0)
+			  { 
+			  //document.getElementById("ajasdiv").innerHTML="";
+			  return;
+			  }
+			if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
+			  xmlhttp=new XMLHttpRequest();
+			  }else{// code for IE6, IE5
+			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+			  
+			xmlhttp.onreadystatechange=function()
+			  {
+			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+				{	
+					
+				
+				}
+			  }
+			xmlhttp.open("GET","upload_lotnum.php?"+str,true);
+			xmlhttp.send();
+			
+		
+	
+}
+
+
 </script>
 <button type="button" onclick="method5('tableExcel')">导出Excel</button>  
 <button type="button" style="background-color:#FF7792" onclick="checkboxsum()">选中项合计</button> &nbsp; <input type="number" style="width:40px" id="checkall1" value="1" onchange="checkall12()"/>~<input type="number" style="width:40px" id="checkall2" value="99" onchange="checkall12()"/>
@@ -262,6 +305,7 @@ $(document).ready(function(){
 <br><br>
 <div class="xiaokuan">
 批量日本发货日：<input type="date" id="JPdate" value=""><button onclick="po_pi_JPdate()">【批量】选中项日本发货日</button>
+<button onclick="mycheckbox(4)">【批量】lotnum</button>
 </div>
 <div class="tishi">朝日检索页面</div>
 <br><br>

@@ -426,6 +426,45 @@ alert("日期或运单号未输入");
 }
 
 
+function c_pi_zaikuduizhao(str){
+	
+			str="";
+			var checkbox=document.getElementsByName('checkboxsum');
+			str+="data=1";
+			for(i=0;i<checkbox.length;i++){
+				if(checkbox[i].checked){
+				str+="&checkbox[]="+checkbox[i].getAttribute('_id');
+				}
+			}
+			//alert(str);
+			
+			var xmlhttp;
+			if (str.length==0)
+			  { 
+			  //document.getElementById("ajasdiv").innerHTML="";
+			  return;
+			  }
+			if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
+			  xmlhttp=new XMLHttpRequest();
+			  }else{// code for IE6, IE5
+			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+			  
+			xmlhttp.onreadystatechange=function()
+			  {
+			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+				{	
+					alert(xmlhttp.responseText);
+					
+				}
+			  }
+			xmlhttp.open("GET","./ajax/c_pi_zaikuduizhao.php?"+str,true);
+			xmlhttp.send();
+			
+
+}
+
+
 function c_pi_shdate(str){
 	shdate=document.getElementById('SHdate').value
 	if(shdate){
@@ -1005,6 +1044,8 @@ function po_pi_JPdate(str){
 	}		
 	
 }
+
+
 
 function po_chaifen(str){
 			document.getElementById("ajasdiv2").innerHTML="正在加载...";

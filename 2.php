@@ -184,6 +184,7 @@ td:hover{
 	<td>日本出荷日</td>
 	<td>上海出荷日</td>
 	<td>備考</td>
+	<td></td>
 	<td>发票</td>
 	
 </tr>
@@ -265,7 +266,8 @@ td:hover{
 	<td><a href="4-1.php?asahit22=<?php echo $row[5] ?>"><?php echo $row[5] ?></a></td>
 	<td><?php echo $row[6] ?></td>
 	<td><b><?php echo $row[7] ?></b></td>
-	<td><? echo $tuichi; ?><marquee scrolldelay="200"><?php echo $row[8] ?></marquee></td>
+	<td><marquee scrolldelay="200"><?php echo $row[8] ?></marquee></td>
+	<td><? echo $tuichi; ?></td>
 	<td><?php echo $row[10]; ?></td>
 	<?php $jjj=$jjj+1 ?>
 	
@@ -282,6 +284,7 @@ function mycheckbox(str){
 	}else if(str==2){
 		button.href="hebing.php?";
 	}
+	
 	var ss=document.getElementsByName('checkboxsum');
 	for(i=0;i<ss.length;i++){
 		if(ss[i].checked){
@@ -309,7 +312,7 @@ $(document).ready(function(){
 </script>
 <button type="button" onclick="method5('tableExcel')">导出Excel</button>  
 <button type="button" style="background-color:#CCCCFF" onclick="checkboxsum()">选中项合计</button> &nbsp; <input type="number" style="width:40px" id="checkall1" value="1" onchange="checkall12()"/>~<input type="number" style="width:40px" id="checkall2" value="99" onchange="checkall12()"/>
-<a href="" id="button3" target="_blank"></a><button onclick="mycheckbox(2)">选中项合并统计</button> &nbsp; <button onclick="mycheckbox(1)">选中项生成送货单</button>
+<a href="" id="button3" target="_blank"></a><button onclick="mycheckbox(2)">选中项合并统计</button> &nbsp; <button onclick="mycheckbox(1)">选中项生成送货单</button> &nbsp; <button onclick="c_pi_zaikuduizhao()">其他</button>
 </div>
 <form action="2.php" method="post">
 <?php $nowpage=$nowpage+100; ?>
@@ -324,7 +327,7 @@ $(document).ready(function(){
 <br><br>
 <div class="xiaokuan">
 <button onclick="c_pi_shdate()">【批量】选中项上海发货日</button> &nbsp; 【批量】日期：<input type="date" id="SHdate" value="<?php echo date('Y-m-d') ?>">
-<button onclick="c_pi_chuku()">【批量】选中项出库(测试)</button> &nbsp; <input type="text" id="expressnum" value="" placeholder="运单号后三位">||
+<button onclick="c_pi_chuku()">【批量】选中项出库</button> &nbsp; <input type="text" id="expressnum" value="" placeholder="运单号后三位">||
 <button onclick="c_pi_invoice()">【批量】选中项开具发票</button>
 </div>
 <div class="tishi">客户检索页面</div>
