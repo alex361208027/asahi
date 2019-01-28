@@ -39,7 +39,7 @@ textarea{
 }
 
 marquee{
-	max-width:80px;font-size:12px;color:red;
+	max-width:80px;font-size:12px;color:red;display:inline-block;
 }
 
 

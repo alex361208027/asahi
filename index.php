@@ -117,7 +117,7 @@ transition-delay: 0.8s;
 		});
 		
 		</script>
-		<div style="padding:12px 0 0 25px;color:white;font-size:20px;"><img src="img/LOGO2.png"/></div>
+		<div style="padding:12px 0 0 25px;color:white;font-size:20px;"><a href="index.php" target="_blank"><img src="img/LOGO2.png"/></a></div>
 		<br><br>
 		<a href="index.php"><div class="caidanxuanxiao" style="background-color:#8E354A;"><img src="img/home.png"/> &nbsp; HOME >
 		<ul>
