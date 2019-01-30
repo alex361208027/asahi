@@ -9,7 +9,7 @@ $dbname = "asahi";
 $conn = new mysqli($servername, $username, $password, $dbname);
 mysqli_set_charset ($conn,utf8);
 $customer_id=$_GET['_id'];
-$sql =  "SELECT * FROM `t_teacher` WHERE _id = '$customer_id'";
+$sql =  "SELECT * FROM `t_teacher` WHERE _id = '$customer_id' limit 1";
 $result = mysqli_query($conn,$sql);
 $customer_row=$result->fetch_row();
 mysqli_query($conn,"UPDATE `t_teacher` SET asahiorder='', JPdate='',SHdate='',po_id='' WHERE _id = '$customer_row[12]'");

@@ -10,7 +10,7 @@
 
 if($_GET['click']){ 
 $user=$_GET['click'];
-$row=mysqli_query($conn,"SELECT * FROM `t_user` WHERE user='$user'")->fetch_row();
+$row=mysqli_query($conn,"SELECT * FROM `t_user` WHERE user='$user' limit 1")->fetch_row();
 ?>
 <input type="text" id="name" value="<?php echo $row[3] ?>" placeholder="可填写新名字"/><br><br>
 <br>

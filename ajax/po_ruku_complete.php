@@ -22,7 +22,7 @@ $lotnum=$_GET['lotnum'];
 $banngo=$_GET['banngo'];
 $quantity=$_GET['quantity'];
 $intime=$_GET['intime'];
-$campany=$t6."<br>".$t7;;
+$campany=$t6.$t7;
 
 $lotnum2=$_GET['lotnum2'];
 //$banngo2=$_GET['banngo2'];
@@ -55,7 +55,7 @@ if($lotnum){
 			if($checkbox){
 				$rows2=0;
 			}else{
-				$sql2="SELECT * FROM `t_inout` WHERE lotnum='$lotnum'";
+				$sql2="SELECT * FROM `t_inout` WHERE lotnum='$lotnum' limit 1";
 				$result2=mysqli_query($conn,$sql2);
 				$rows2=$result2->num_rows;
 			}
@@ -81,8 +81,8 @@ if($lotnum){
 						}
 					}
 				
-			mysqli_query($conn,"UPDATE `t_poteacher` SET state='已入库' WHERE _id='$_id'");
-			mysqli_query($conn,"UPDATE `t_teacher` SET asahiorder2='已入库' WHERE _id='$customer_id' AND po_id='$_id'");
+			mysqli_query($conn,"UPDATE `t_poteacher` SET state='已入库' WHERE _id='$_id' limit 1");
+			mysqli_query($conn,"UPDATE `t_teacher` SET asahiorder2='已入库' WHERE _id='$customer_id' AND po_id='$_id' limit 1");
 			
 			
 				

@@ -161,7 +161,7 @@ transition-delay: 0.8s;
 				<li><a href="total_highcharts.php" target="xiabu">统 计</a></li>
 			</ul></div></a>
 			
-		<div class="caidanxuanxiao"><img src="img/other.png"/> &nbsp; 其 &nbsp; 他 >
+		<div class="caidanxuanxiao"><img src="img/other.png"/> &nbsp; 列 &nbsp; 表 >
 		<ul>
 				<li><a href="poprice.php" target="_blank">产品列表</a></li>
 				<li><a href="campany.php" target="_blank">客户列表</a></li>

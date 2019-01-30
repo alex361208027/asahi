@@ -11,7 +11,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 mysqli_set_charset ($conn,utf8);
 $_id=$_GET['_id'];
 $cells=$_GET['cells'];
-$sql =  "SELECT * FROM `t_poteacher` WHERE _id = '$_id'";
+$sql =  "SELECT * FROM `t_poteacher` WHERE _id = '$_id' limit 1";
 $result = mysqli_query($conn,$sql);
 $row=$result->fetch_row();
 ?>

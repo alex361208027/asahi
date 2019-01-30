@@ -14,7 +14,7 @@ $_id=$_GET['_id'];
 $quantity=$_GET['quantity'];
 
 if($quantity){
-	$sql =  "SELECT * FROM `t_poteacher` WHERE _id= '$_id'";
+	$sql =  "SELECT * FROM `t_poteacher` WHERE _id= '$_id' limit 1";
 	$result = mysqli_query($conn,$sql);
 	$row=$result->fetch_row();
 	$restquantity=$row[2]-$quantity;
