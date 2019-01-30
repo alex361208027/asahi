@@ -16,7 +16,7 @@ if($_GET['click']){ ?>
 	$conn = new mysqli($servername, $username, $password, $dbname);
 	mysqli_set_charset ($conn,utf8);
 	
-	if(mysqli_query($conn,"SELECT * FROM `t_user` WHERE user='$user' AND userpw='$pw1'")->num_rows > 0){
+	if(mysqli_query($conn,"SELECT * FROM `t_user` WHERE user='$user' AND userpw='$pw1' limit 1")->num_rows > 0){
 	mysqli_query($conn,"UPDATE t_user SET userpw = '$pw3' WHERE user='$user' AND userpw='$pw1'");
 	echo "修改成功！";
 	}else{

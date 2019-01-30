@@ -14,7 +14,7 @@ if($JPdate){
 	foreach($checkbox as $checkboxid => $_id){
 	mysqli_query($conn,"UPDATE `t_poteacher` SET JPdate='$JPdate' WHERE _id='$_id'");
 	echo "第".($checkboxid+1)."条，操作成功\r";
-	$result=mysqli_query($conn,"SELECT * FROM `t_poteacher` WHERE _id='$_id'");
+	$result=mysqli_query($conn,"SELECT * FROM `t_poteacher` WHERE _id='$_id' limit 1");
 	$row=$result->fetch_row();
 	if(!empty($row[10])&&!empty($row[6])){
 		

@@ -11,7 +11,7 @@ $_id=$_GET['_id'];
 
 
 
-$sql="SELECT * FROM `t_anjian` WHERE _id='$_id'";
+$sql="SELECT * FROM `t_anjian` WHERE _id='$_id' limit 1";
 $result=mysqli_query($conn,$sql);
 $row=$result->fetch_row();
 

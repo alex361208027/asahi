@@ -30,7 +30,7 @@ $dateend = $_GET['dateend'];
 	}
 $search_lotnum= $_GET['search_lotnum'];
 	if($search_lotnum){
-		$select_lotnum="lotnum='$search_lotnum' AND";
+		$select_lotnum="lotnum like '%$search_lotnum%' AND";
 	}else{
 		$select_lotnum="";
 	}

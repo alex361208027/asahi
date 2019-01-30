@@ -30,7 +30,7 @@ $jjj=0;
 $quantityplus=0;
 
         foreach($checkbox as $checkboxnum=>$checkboxid){
-		  $sql =  "SELECT * FROM `t_inout` WHERE _id = '{$checkboxid}'";
+		  $sql =  "SELECT * FROM `t_inout` WHERE _id = '$checkboxid' limit 1";
 		  $result = mysqli_query($conn,$sql);
 		  $row=$result->fetch_row();
 		  $getquantity[$jjj]=$row[2];$jjj=$jjj+1;
