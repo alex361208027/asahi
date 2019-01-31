@@ -12,13 +12,13 @@ $remark=$_GET['remark'];
 if($position){
 	mysqli_query($conn,"UPDATE `t_campany` SET position=position+1 WHERE 1 order by position desc");
 	
-	mysqli_query($conn,"UPDATE `t_campany` SET position='0' WHERE _id='$_id'");
+	mysqli_query($conn,"UPDATE `t_campany` SET position='0' WHERE _id='$_id' limit 1");
 	echo $position;
 }elseif($campanyname){
-mysqli_query($conn,"UPDATE `t_campany` SET campanyname='$campanyname', remark='$remark',other='$japanname',address='$address',addresscampany='$addresscampany' WHERE _id='$_id'");
+mysqli_query($conn,"UPDATE `t_campany` SET campanyname='$campanyname', remark='$remark',other='$japanname',address='$address',addresscampany='$addresscampany' WHERE _id='$_id' limit 1");
 echo "ok";
 }else{
-mysqli_query($conn,"DELETE FROM `t_campany` WHERE _id='$_id'");	
+mysqli_query($conn,"DELETE FROM `t_campany` WHERE _id='$_id' limit 1");	
 echo $_id;
 }
 

@@ -22,7 +22,7 @@ $row=mysqli_query($conn,"SELECT * FROM `t_user` WHERE user='$user' limit 1")->fe
 	if($name){
 	
 	
-	mysqli_query($conn,"UPDATE t_user SET name = '$name' WHERE user='$user'");
+	mysqli_query($conn,"UPDATE t_user SET name = '$name' WHERE user='$user' limit 1");
 	echo "修改成功！";
 	
 	}else{

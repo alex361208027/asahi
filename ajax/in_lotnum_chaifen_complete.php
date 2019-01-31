@@ -17,7 +17,7 @@ $row=$result->fetch_row();
 $quantity=$_GET['quantity'];
 $restquantity=$row[2]-$quantity;
 mysqli_query($conn,"INSERT INTO `t_inout`(`lotnum`, `banngo`, `quantity`, `intime`,`outtime`,`outquantity`, `campany`,`expressnum`, `remark`, `asahipo` ) VALUES ('$row[0]','$row[1]','$quantity','$row[3]','$row[4]','$row[5]','$row[6]','$row[7]','$row[8]','$row[10]')");
-mysqli_query($conn,"UPDATE `t_inout` SET quantity='$restquantity' WHERE _id = '$_id'");
+mysqli_query($conn,"UPDATE `t_inout` SET quantity='$restquantity' WHERE _id = '$_id' limit 1");
 
 	
 	

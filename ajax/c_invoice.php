@@ -15,10 +15,10 @@ if(!$thedate){
 	$thedate=date('Y-m-d');
 }
 if($checked){
-mysqli_query($conn,"UPDATE `t_teacher` SET invoice='$thedate' WHERE _id = '$_id'");
+mysqli_query($conn,"UPDATE `t_teacher` SET invoice='$thedate' WHERE _id = '$_id' limit 1");
 echo "已开具";
 }else{
-mysqli_query($conn,"UPDATE `t_teacher` SET invoice='' WHERE _id = '$_id'");	
+mysqli_query($conn,"UPDATE `t_teacher` SET invoice='' WHERE _id = '$_id' limit 1");	
 echo "<font color='red'>已取消</font>";
 }
 
