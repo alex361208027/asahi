@@ -11,6 +11,6 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 mysqli_set_charset ($conn,utf8);
 $_id=$_GET['_id'];
 $SHdate=$_GET['shdate'];
-mysqli_query($conn,"UPDATE `t_teacher` SET `SHdate`='$SHdate' WHERE _id = '$_id'");
+mysqli_query($conn,"UPDATE `t_teacher` SET `SHdate`='$SHdate' WHERE _id = '$_id' limit 1");
 echo $SHdate;
 ?>

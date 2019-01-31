@@ -10,7 +10,7 @@ $t1 =$_GET['t1'];$ot1 =$_GET['ot1'];
 $t2 =$_GET['t2'];
 $t4 =$_GET['t4'];
 
-mysqli_query($conn,"UPDATE `t_postudent` SET asahiorder='$t1', orderdate='$t2', remark='$t4' WHERE _id='$_id'");
+mysqli_query($conn,"UPDATE `t_postudent` SET asahiorder='$t1', orderdate='$t2', remark='$t4' WHERE _id='$_id' limit 1");
 mysqli_query($conn,"UPDATE `t_poteacher` SET asahiorder='$t1' WHERE asahiorder='$ot1'");
 mysqli_query($conn,"UPDATE `t_teacher` SET asahiorder='$t1' WHERE asahiorder='$ot1'");
 

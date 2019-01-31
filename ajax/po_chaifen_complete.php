@@ -20,8 +20,8 @@ if($quantity){
 	$restquantity=$row[2]-$quantity;
 	if($restquantity>0){
 		if($row[10]){
-			mysqli_query($conn,"UPDATE `t_teacher` SET quantity='$restquantity' WHERE _id='$row[10]'");
-			$result_get_c_state=mysqli_query($conn,"SELECT * FROM `t_teacher` WHERE _id= '$row[10]'");
+			mysqli_query($conn,"UPDATE `t_teacher` SET quantity='$restquantity' WHERE _id='$row[10]' limit 1");
+			$result_get_c_state=mysqli_query($conn,"SELECT * FROM `t_teacher` WHERE _id= '$row[10]' limit 1");
 			$row_get_c_state=$result_get_c_state->fetch_row();
 			/////get SHdate
 			if($row[3]){
@@ -42,13 +42,13 @@ if($quantity){
 			
 			$result_c_id = mysqli_query($conn,"SELECT * FROM `t_teacher` WHERE po_id='$this_id'");
 			$row_c_id=$result_c_id->fetch_row();
-			mysqli_query($conn,"UPDATE `t_poteacher` SET customer_id='$row_c_id[12]' WHERE _id='$this_id'");
+			mysqli_query($conn,"UPDATE `t_poteacher` SET customer_id='$row_c_id[12]' WHERE _id='$this_id' limit 1");
 			echo "拆分完成(有对应PO)";
 		}else{
 			mysqli_query($conn,"INSERT INTO `t_poteacher` (`asahiorder`, `banngo`,`campany`, `quantity`, `JPdate`, `hopedate`,`state`, `remark`) VALUES ('$row[0]','$row[1]','$row[5]','$quantity','$row[3]','$row[4]','$row[8]','$row[7]')");	
 			echo "拆分完成(无对应PO)";
 		}
-		mysqli_query($conn,"UPDATE `t_poteacher` SET quantity='$restquantity' WHERE _id = '$_id'");	
+		mysqli_query($conn,"UPDATE `t_poteacher` SET quantity='$restquantity' WHERE _id = '$_id' limit 1");	
 	}
 }else{
 	echo "没有数字";

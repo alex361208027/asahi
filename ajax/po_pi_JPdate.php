@@ -12,7 +12,7 @@ date_default_timezone_set('PRC');
 $JPdate=$_GET['JPdate'];
 if($JPdate){
 	foreach($checkbox as $checkboxid => $_id){
-	mysqli_query($conn,"UPDATE `t_poteacher` SET JPdate='$JPdate' WHERE _id='$_id'");
+	mysqli_query($conn,"UPDATE `t_poteacher` SET JPdate='$JPdate' WHERE _id='$_id' limit 1");
 	echo "第".($checkboxid+1)."条，操作成功\r";
 	$result=mysqli_query($conn,"SELECT * FROM `t_poteacher` WHERE _id='$_id' limit 1");
 	$row=$result->fetch_row();
@@ -25,7 +25,7 @@ if($JPdate){
 		$SHdate = $hopedate5;
 		}
 		
-		mysqli_query($conn,"UPDATE `t_teacher` SET JPdate='$JPdate', SHdate=IF(SHdate,IF(JPdate>=SHdate,'$hopedate5',SHdate),'$SHdate') WHERE _id='$row[10]' AND po_id='$_id'");
+		mysqli_query($conn,"UPDATE `t_teacher` SET JPdate='$JPdate', SHdate=IF(SHdate,IF(JPdate>=SHdate,'$hopedate5',SHdate),'$SHdate') WHERE _id='$row[10]' AND po_id='$_id' limit 1");
 	}
 }
 }else{

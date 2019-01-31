@@ -12,7 +12,7 @@ mysqli_set_charset ($conn,utf8);
 $xtime=$_GET['xtime'];
 
 if($xtime){
-	mysqli_query($conn,"DELETE FROM `t_note` WHERE time='$xtime' AND remark=1");
+	mysqli_query($conn,"DELETE FROM `t_note` WHERE time='$xtime' AND remark=1 limit 1");
 }
 
 

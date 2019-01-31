@@ -12,9 +12,9 @@ $customer_id=$_GET['_id'];
 $sql =  "SELECT * FROM `t_teacher` WHERE _id = '$customer_id' limit 1";
 $result = mysqli_query($conn,$sql);
 $customer_row=$result->fetch_row();
-mysqli_query($conn,"UPDATE `t_teacher` SET asahiorder='', JPdate='',SHdate='',po_id='' WHERE _id = '$customer_row[12]'");
+mysqli_query($conn,"UPDATE `t_teacher` SET asahiorder='', JPdate='',SHdate='',po_id='' WHERE _id = '$customer_row[12]' limit 1");
 if($customer_row[13]){
-	mysqli_query($conn,"UPDATE `t_poteacher` SET campanyorder='', hopedate='', customer_id='' WHERE _id='$customer_row[13]'");
+	mysqli_query($conn,"UPDATE `t_poteacher` SET campanyorder='', hopedate='', customer_id='' WHERE _id='$customer_row[13]' limit 1");
 }
 
 

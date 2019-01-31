@@ -11,9 +11,9 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 mysqli_set_charset ($conn,utf8);
 $_id=$_GET['_id'];$customer_id=$_GET['customer_id'];
 $quantity=$_GET['quantity'];
-mysqli_query($conn,"UPDATE `t_poteacher` SET quantity='$quantity' WHERE _id = '$_id'");
+mysqli_query($conn,"UPDATE `t_poteacher` SET quantity='$quantity' WHERE _id = '$_id' limit 1");
 if($customer_id){
-	mysqli_query($conn,"UPDATE `t_teacher` SET quantity='$quantity' WHERE _id='$customer_id' AND po_id='$_id'");
+	mysqli_query($conn,"UPDATE `t_teacher` SET quantity='$quantity' WHERE _id='$customer_id' AND po_id='$_id' limit 1");
 		}
 echo $quantity;
 

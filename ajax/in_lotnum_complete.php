@@ -22,7 +22,7 @@ $expressnum=$_GET['expressnum'];
 $remark=$_GET['remark'];
 $asahipo=$_GET['asahipo'];
 
-mysqli_query($conn,"UPDATE `t_inout` SET lotnum='$lotnum', banngo='$banngo', intime='$intime', quantity='$quantity', outtime='$outtime', outquantity='$outquantity', asahipo='$asahipo', campany='$campany', expressnum='$expressnum', remark='$remark' WHERE _id = '$_id'");
+mysqli_query($conn,"UPDATE `t_inout` SET lotnum='$lotnum', banngo='$banngo', intime='$intime', quantity='$quantity', outtime='$outtime', outquantity='$outquantity', asahipo='$asahipo', campany='$campany', expressnum='$expressnum', remark='$remark' WHERE _id = '$_id' limit 1");
 	echo $lotnum;
 $conn->close();
 ?>

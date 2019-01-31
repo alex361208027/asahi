@@ -15,7 +15,7 @@ $mynote=$_GET['mynote'];
 
 if($mynote){
 	$mynote=str_replace("\r\n","<br>",$mynote);
-	mysqli_query($conn,"UPDATE `t_note` SET note='$mynote', time='$todaytime' WHERE user ='{$_COOKIE['asahiuser']}' AND remark = 0");
+	mysqli_query($conn,"UPDATE `t_note` SET note='$mynote', time='$todaytime' WHERE user ='{$_COOKIE['asahiuser']}' AND remark = 0 limit 1");
 }
 
 

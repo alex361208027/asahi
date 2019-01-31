@@ -16,13 +16,13 @@ $po_delete=$_GET['po_delete'];
 
 
 if($_id){
-		mysqli_query($conn,"DELETE FROM `t_teacher` WHERE _id = '$_id'");
+		mysqli_query($conn,"DELETE FROM `t_teacher` WHERE _id = '$_id' limit 1");
 		echo "删除成功";
 		if($po_delete){
-			mysqli_query($conn,"DELETE FROM `t_poteacher` WHERE customer_id='$_id'");
+			mysqli_query($conn,"DELETE FROM `t_poteacher` WHERE customer_id='$_id' limit 1");
 			echo "<br>匹配的PO删除成功";
 		}else{
-			mysqli_query($conn,"UPDATE `t_poteacher` SET campanyorder='', hopedate='', customer_id='' WHERE customer_id='$_id'");
+			mysqli_query($conn,"UPDATE `t_poteacher` SET campanyorder='', hopedate='', customer_id='' WHERE customer_id='$_id' limit 1");
 		}
 }else{
 	echo "删除失败";

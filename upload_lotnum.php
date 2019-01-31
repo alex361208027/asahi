@@ -18,18 +18,21 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 mysqli_set_charset ($conn,utf8);
 
 date_default_timezone_set('PRC');
+$today=$_POST['today'];
+if(!$today){
 $today=date('Y-m-d');
-
+}
 
 $checkbox=$_GET['checkbox'];
 if($checkbox){
 
 	?>
 <form action="upload_lotnum.php" method="post" enctype="multipart/form-data">
-   请使用模板文件：
+   (STEP 1) 确认入库日期：<input type="date" name="today" value="<? echo $today; ?>"><br><br>
+   (STEP 2) 上传表格：
 	<input type="file" name="file" id="file">
-    <input type="submit" name="submit" value="提交">
-<a href="upload/moban/lotnum.xlsx">模板下载</a><br>	
+<a href="upload/moban/lotnum.xlsx">模板下载</a><br>	<br>	
+(STEP 3) 以下入库项确认后即可<input type="submit" name="submit" value="提交">
 	<table>
 <?
 foreach($checkbox as $_id){
@@ -180,13 +183,13 @@ for($ma=0;$ma<count($p_banngo);$ma++){
 
 for($ma=0;$ma<count($p_banngo);$ma++){
 	if($p_quantity_check[$ma]!=0){
-		echo "No【".$p_id[$ma]."】".$p_po[$ma]."/".$p_banngo[$ma]."/(".$o_quantity.")".$p_quantity_check[$ma]."<==>???<br>";	
+		echo "检测到未能匹配订单:【".$p_id[$ma]."】".$p_po[$ma]."/".$p_banngo[$ma]."/(".$o_quantity.")".$p_quantity_check[$ma]."<==>???<br>";	
 		$checkall=1;
 	}
 }
 for($mb=0;$mb<count($b);$mb++){
 	if($e_check[$mb]!=0){
-		echo "No ???<==>【invoices】".$c[$mb]."/".$b[$mb]."/".$d[$mb]."/".$p_quantity_check[$ma]."<br>";
+		echo "检测到未能匹配invoices: ???<==>【invoices】".$c[$mb]."/".$b[$mb]."/".$d[$mb]."/".$p_quantity_check[$ma]."<br>";
 		$checkall=1;
 	}
 }

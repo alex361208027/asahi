@@ -16,7 +16,7 @@ if($_GET['click']){ ?>
 	$conn = new mysqli($servername, $username, $password, $dbname);
 	mysqli_set_charset ($conn,utf8);
 	
-	if(mysqli_query($conn,"SELECT user FROM `t_user` WHERE user = '$newid'")->num_rows == 0){
+	if(mysqli_query($conn,"SELECT user FROM `t_user` WHERE user = '$newid' limit 1")->num_rows == 0){
 	mysqli_query($conn,"INSERT INTO `t_user`(`user`, `userpw`) VALUES ('$newid','$pw2')");
 	echo "新用户创建成功！";
 	mysqli_query($conn,"INSERT INTO `t_note`(`user`, `note`, `time`, `remark`) VALUES ('$newid','欢迎你','2017-12-12 12:12:12',0)");

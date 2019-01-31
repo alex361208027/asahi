@@ -12,9 +12,9 @@ mysqli_set_charset ($conn,utf8);
 $_id=$_GET['_id'];
 $check=$_GET['check'];
 if($check){
-	mysqli_query($conn,"UPDATE `t_teacher` SET asahiorder2='' WHERE _id = '$_id'");
+	mysqli_query($conn,"UPDATE `t_teacher` SET asahiorder2='' WHERE _id = '$_id' limit 1");
 }else{
-	mysqli_query($conn,"UPDATE `t_teacher` SET asahiorder2='已入库' WHERE _id = '$_id'");
+	mysqli_query($conn,"UPDATE `t_teacher` SET asahiorder2='已入库' WHERE _id = '$_id' limit 1");
 }
 
 $conn->close();

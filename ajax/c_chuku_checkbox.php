@@ -41,10 +41,10 @@ if($t4==$quantityplus){
 	//echo "操作记录：<br>";
 	foreach($checkbox as $checkboxnum=>$checkboxid){
 			$campany=$t1.'<br>'.$t2;
-		  mysqli_query($conn,"UPDATE `t_inout` SET outquantity='$getquantity[$iii]', outtime='$chukudate', campany='$campany', expressnum='$expressnum' WHERE _id = '$checkboxid'");
+		  mysqli_query($conn,"UPDATE `t_inout` SET outquantity='$getquantity[$iii]', outtime='$chukudate', campany='$campany', expressnum='$expressnum' WHERE _id = '$checkboxid' limit 1");
 			$iii=$iii+1;
 		}
-	mysqli_query($conn,"UPDATE `t_teacher` SET state='完成', SHdate='$chukudate' WHERE _id = '$_id'");	
+	mysqli_query($conn,"UPDATE `t_teacher` SET state='完成', SHdate='$chukudate' WHERE _id = '$_id' limit 1");	
 	?>
 	<div align="center" style="padding-top:15px;" onclick="javascript:window.opener=null;window.open('','_self');window.close();">
 <img src="img/dagou.png"/><br>
