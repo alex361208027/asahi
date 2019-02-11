@@ -184,9 +184,8 @@ td:hover{
 	<td>日本出荷日</td>
 	<td>上海出荷日</td>
 	<td>備考</td>
-	<td></td>
 	<td>发票</td>
-	
+	<td></td>
 </tr>
 
 <?php while($row=$result->fetch_row()){ 
@@ -267,8 +266,8 @@ td:hover{
 	<td><?php echo $row[6] ?></td>
 	<td><b><?php echo $row[7] ?></b></td>
 	<td><marquee scrolldelay="200"><?php echo $row[8] ?></marquee></td>
-	<td><? echo $tuichi; ?></td>
 	<td><?php echo $row[10]; ?></td>
+	<td><? echo $tuichi; ?></td>
 	<?php $jjj=$jjj+1 ?>
 	
 </tr>

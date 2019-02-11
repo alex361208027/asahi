@@ -112,7 +112,7 @@ function reel($quantity,$banngo){
 			$checkbox=$_GET['checkbox'];
 			foreach($checkbox as $checkboxid => $_id){
 				
-				$row=mysqli_query($conn,"SELECT * FROM `t_teacher` WHERE _id='$_id'")->fetch_row();
+				$row=mysqli_query($conn,"SELECT * FROM `t_teacher` WHERE _id='$_id' limit 1")->fetch_row();
 				$row_id[]=$row[12];
 				$ordernum[]=$row[1];
 				$banngo[]=$row[2];
@@ -169,7 +169,7 @@ function reel($quantity,$banngo){
 										break;
 									}
 								}
-								$rowfinal=mysqli_query($conn,"SELECT * FROM `t_teacher` WHERE _id='$row_id[$go]'")->fetch_row();
+								$rowfinal=mysqli_query($conn,"SELECT * FROM `t_teacher` WHERE _id='$row_id[$go]' limit 1")->fetch_row();
 								?>
 								<tr align="center">
 								<td width="50px"><input type="text" value="<?php echo $iii;$iii++; ?>"/></td>
@@ -231,18 +231,9 @@ function reel($quantity,$banngo){
 				<td width="150px"></td>
 				</tr>
 		</table>
-	</div>
-	<div style="position:absolute;top:150px;left:50px;font-size:;">
-	<table cellpadding="0" cellspacing="0" width="100%" border="0" >
-				<tr>
-				<td width="auto">客户名称：<input type="text" style="text-align:left;width:400px" value="<?php echo campany($campany,1) ?>" /></td>
-				</tr>
-				<tr>
-				<td width="auto">收货地址：<input type="text" style="text-align:left;width:600px;" id="t2" value="<?php echo campany($campany,2) ?>"/></td>
-				</tr>
-		</table>
-	</div>
-	<div style="position:absolute;bottom:<?php echo 150-($iii-10)*10 ?>px;left:50px;font-size:;">
+		<br><br>
+		<table cellpadding="0" cellspacing="0" width="100%" border="0" ><tr>
+		<td width="65%">
 	<table cellpadding="0" cellspacing="0" width="100%" border="0" >
 				<tr>
 				<td width="auto" align="left">收货单位：<input type="text" id="t3" style="text-align:left;width:300px;" value="<?php echo campany($campany,3) ?>"/></td>
@@ -260,11 +251,12 @@ function reel($quantity,$banngo){
 				<td width="auto" align="left">签收日期：</td>
 				</tr>
 		</table>
-	</div>
+		</td>
+		<td>
 	<?
 	function username($user){
 		Global $conn;
-		$result=mysqli_query($conn,"SELECT name FROM `t_user` WHERE user='$user'")->fetch_row();
+		$result=mysqli_query($conn,"SELECT name FROM `t_user` WHERE user='$user' limit 1")->fetch_row();
 				if($result[0]){
 				return $result[0];
 				}else{
@@ -272,7 +264,6 @@ function reel($quantity,$banngo){
 				}
 	}
 	?>
-	<div style="position:absolute;bottom:<?php echo 150-($iii-10)*10 ?>px;left:750px;font-size:;">
 	<table cellpadding="0" cellspacing="0" width="100%" border="0" >
 				<tr>
 				<td width="auto" align="left">发货单位：<input type="text" style="text-align:left;width:300px;" value="朝日科技(上海)有限公司" / ></td>
@@ -284,7 +275,22 @@ function reel($quantity,$banngo){
 				<td width="auto" align="left">发货人：<input type="text" style="text-align:left;width:80px;" value="<?php echo username($_COOKIE['asahiuser']); ?>"/></td>
 				</tr>
 		</table>
+		</td>
+		</tr></table>
+		
+		
 	</div>
+	<div style="position:absolute;top:150px;left:50px;font-size:;">
+	<table cellpadding="0" cellspacing="0" width="100%" border="0" >
+				<tr>
+				<td width="auto">客户名称：<input type="text" style="text-align:left;width:400px" value="<?php echo campany($campany,1) ?>" /></td>
+				</tr>
+				<tr>
+				<td width="auto">收货地址：<input type="text" style="text-align:left;width:600px;" id="t2" value="<?php echo campany($campany,2) ?>"/></td>
+				</tr>
+		</table>
+	</div>
+	
 </div>
 </body>
 <head>
