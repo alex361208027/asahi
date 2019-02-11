@@ -137,7 +137,7 @@ $(document).ready(function(){
 					
 				}else{
 						$mysave[]=$rowpublic[0];	
-						$get_user_name=mysqli_query($conn,"SELECT name FROM t_user WHERE user='$rowpublic[0]'")->fetch_row();
+						$get_user_name=mysqli_query($conn,"SELECT name FROM t_user WHERE user='$rowpublic[0]' limit 1")->fetch_row();
 						if($get_user_name[0]){
 						$myload[]=$get_user_name[0];
 						}else{
@@ -222,13 +222,13 @@ $(document).ready(function(){
 				<tr>
 					<td>
 						<div style="padding:4px 10px;background-color:#5E5E5E;color:white;display:inline-block">REMARK</div><br>
-						<textarea style="width:100%;min-height:200px;" name="mynote" onchange="myn()"><?php $rownote=mysqli_query($conn,"SELECT * FROM `t_note` WHERE user = '{$_COOKIE['asahiuser']}' AND remark=0 order by time desc")->fetch_row();$rownote[1]=str_replace("<br>","\r\n",$rownote[1]); echo $rownote[1]; ?></textarea>
+						<textarea style="width:100%;min-height:200px;" name="mynote" onchange="myn()"><?php $rownote=mysqli_query($conn,"SELECT * FROM `t_note` WHERE user = '{$_COOKIE['asahiuser']}' AND remark=0 order by time desc limit 1")->fetch_row();$rownote[1]=str_replace("<br>","\r\n",$rownote[1]); echo $rownote[1]; ?></textarea>
 						<div id="mynotegengxin"><font size="2" color="#FF5577">信息更新于:<?php echo $rownote[2];  ?></font></div>
 					
 					</td>
 					<td width="" align="">
 						<div style="padding:10px;font-size:14px;padding-left:15%">
-						<div style="padding:4px 10px;background-color:#5E5E5E;color:white;display:inline-block">近期新订单</div>
+						<div style="padding:4px 10px;background-color:#5E5E5E;color:white;display:inline-block">最近新建的订单</div>
 							<?php 
 							$resultpublic = mysqli_query($conn,"SELECT * FROM `t_note` WHERE remark = 7 OR remark = 8 order by time desc limit 0,6");
 							while($rowpublic=$resultpublic->fetch_row()){
@@ -236,7 +236,7 @@ $(document).ready(function(){
 					
 										}else{
 												$mysave[]=$rowpublic[0];	
-												$get_user_name=mysqli_query($conn,"SELECT name FROM t_user WHERE user='$rowpublic[0]'")->fetch_row();
+												$get_user_name=mysqli_query($conn,"SELECT name FROM t_user WHERE user='$rowpublic[0]' limit 1")->fetch_row();
 												if($get_user_name[0]){
 												$myload[]=$get_user_name[0];
 												}else{
@@ -244,8 +244,8 @@ $(document).ready(function(){
 												}		
 										}
 							 ?>
-							<p><font color="#BBBBBB" size="1"><?php echo $rowpublic[2]; ?></font><br><u><?php echo $myload[array_search($rowpublic[0],$mysave)]; ?></u>新建了订单
-							【<font color="#FF7792"><a href="<?php if($rowpublic[3]==8){echo '4.php?ddt2=';}else{echo '4-1.php?asahit1=';} ?><?php echo $rowpublic[1]; ?>"><?php echo $rowpublic[1]; ?></a></font>】</p>
+							<p><font color="#BBBBBB" size="1"><?php echo $rowpublic[2]; ?></font><br><u><?php echo $myload[array_search($rowpublic[0],$mysave)]; ?></u>:
+							<font color="#FF7792"><a href="<?php if($rowpublic[3]==8){echo '4.php?ddt2=';}else{echo '4-1.php?asahit1=';} ?><?php echo $rowpublic[1]; ?>"><?php echo $rowpublic[1]; ?></a></font></p>
 							
 							
 							

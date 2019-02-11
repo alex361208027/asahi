@@ -29,10 +29,10 @@ mysqli_set_charset ($conn,utf8);
 
 
 
-if(mysqli_query($conn,"SELECT * FROM `t_user` WHERE user = '{$_COOKIE['asahiuser']}' AND userpw = '{$_COOKIE['asahiuserpw']}'")->num_rows > 0){
+if(mysqli_query($conn,"SELECT * FROM `t_user` WHERE user = '{$_COOKIE['asahiuser']}' AND userpw = '{$_COOKIE['asahiuserpw']}' limit 1")->num_rows > 0){
 
 if(!$_COOKIE['loged']){
-	$get_user_name=mysqli_query($conn,"SELECT user,name FROM `t_user` WHERE user = '{$_COOKIE['asahiuser']}'")->fetch_row();	
+	$get_user_name=mysqli_query($conn,"SELECT user,name FROM `t_user` WHERE user = '{$_COOKIE['asahiuser']}' limit 1")->fetch_row();	
 	if($get_user_name[1]){
 		$read_user_name=$get_user_name[1];
 	}else{
@@ -43,7 +43,7 @@ if(!$_COOKIE['loged']){
 }
 
 if($logintime){
-	mysqli_query($conn,"UPDATE `t_user` SET logintime = '$logintime' WHERE user = '{$_COOKIE['asahiuser']}' AND userpw = '{$_COOKIE['asahiuserpw']}'");
+	mysqli_query($conn,"UPDATE `t_user` SET logintime = '$logintime' WHERE user = '{$_COOKIE['asahiuser']}' AND userpw = '{$_COOKIE['asahiuserpw']}' limit 1");
 	 }
 
 	 echo file_get_contents("templates/header.html");
