@@ -173,6 +173,7 @@ td:hover{
 <tr style="background-color:#8F77B5;color:white;height:33px;">
 	<td><?php?></td>
 	<td></td>
+	<td></td>
 	<td align="center">状態</td>
 	<td>取引先</td>
 	<td>注文PO</td>
@@ -255,6 +256,7 @@ td:hover{
 	?>
 	<td align="right"><input type="checkbox" name="checkboxsum" value="<?php echo $row[3]; ?>" _id="<?php echo $row[12] ?>" cells="<?php echo $jjj+1; ?>"/></td>
 	<td align="center"><?php echo $jjj+1; ?></td>
+	<td><div class='starmark' val="<? echo $row[12]; ?>" val2="<? echo $row[14]; ?>"><? echo "<img src='img/star".$row[14].".png'/>" ?></div></td>
 	<td align="center"><div class="classcp1" style="background-color:<?php echo $bgimg; ?>"><?php echo $states; ?></div></td>
 	<td><?php if(!$same){echo $row[0];} ?></td>
 	<td><a href="4.php?ddt2=<?php echo $row[1] ?>"><?php if(!$same){echo $row[1];} ?></a></td>
@@ -303,7 +305,14 @@ $(document).ready(function(){
 		}
 	});
 	
-	
+	$(".starmark").click(function(){
+		self=this;
+		$.post("ajax/c_starmark.php",{id:$(this).attr("val"),star:$(this).attr("val2")},function(data,status){
+			$(self).attr("val2",data);
+			data="img/star"+data+".png";
+			$(self).children().attr("src",data);
+		});
+	});
 	
 	
 });
