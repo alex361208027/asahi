@@ -31,8 +31,8 @@ $(document).ready(function(){
 	<td align="right">Part No</td>
 	<td align="">Quantity</td>
 	<td align="center">PO</td>
-	<td align="">price</td>
-	<td align="">reel</td>
+	<td align="">Price(RMB)</td>
+	<td align="">Reel</td>
 </tr>
 
 <?php
@@ -128,9 +128,9 @@ $checkbox=$_GET['checkbox'];
 									}
 								}
 								
-								$row_info=mysqli_query($conn,"SELECT price,reel FROM `t_poprice` WHERE campany='$campany[$go]' AND banngo='$banngo[$go]' limit 1")->fetch_row();
+								$row_info=mysqli_query($conn,"SELECT sellprice,reel FROM `t_poprice` WHERE campany='$campany[$go]' AND banngo='$banngo[$go]' limit 1")->fetch_row();
 								
-								echo "<tr><td><input type='checkbox'/></td><td align='right'>".$banngo[$go]."</td><td>".$quantitytotel."</td><td>".$pos."</td><td bgcolor='#EEEEEE'>".$row_info[0]."</td><td bgcolor='#EEEEEE'>".$row_info[1]."</td></tr>";
+								echo "<tr><td><input type='checkbox'/></td><td align='right'>".$banngo[$go]."</td><td>".$quantitytotel."</td><td>".$pos."</td><td bgcolor='#E6E6E6'><b>".$row_info[0]."</b>*".$quantitytotel."=".($row_info[0]*$quantitytotel)."</td><td>".$row_info[1]."</td></tr>";
 								///////////////////////////
 					}
 					
