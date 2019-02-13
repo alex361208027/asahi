@@ -2,6 +2,9 @@ $(document).ready(function(){
 	$("[list='kehulist']").click(function(){
 		$(this).val("");
 	});
+	
+	
+	
 });
 
 function datecount(kkk){
@@ -293,6 +296,8 @@ function po_ruku_quantity(str,num){
             }  
         }  
         function method5(tableid) {  
+		
+		
             if(getExplorer()=='ie')  
             {  
                 var curTbl = document.getElementById(tableid);  
