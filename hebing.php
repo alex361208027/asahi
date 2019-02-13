@@ -30,7 +30,9 @@ $(document).ready(function(){
 	<td ></td>
 	<td align="right">Part No</td>
 	<td align="">Quantity</td>
-	<td align="">PO</td>
+	<td align="center">PO</td>
+	<td align="">price</td>
+	<td align="">reel</td>
 </tr>
 
 <?php
@@ -38,15 +40,17 @@ $(document).ready(function(){
 $checkbox=$_GET['checkbox'];
 			foreach($checkbox as $checkboxid => $_id){ 
 				if($end==2){
-				$row=mysqli_query($conn,"SELECT * FROM `t_teacher` WHERE _id='$_id'")->fetch_row();
+				$row=mysqli_query($conn,"SELECT * FROM `t_teacher` WHERE _id='$_id' limit 1")->fetch_row();
 				$banngo[]=$row[2];
 				$quantity[]=$row[3];
 				$po[]=$row[1];
+				$campany[]=$row[0];
 				}elseif($end==6){
-				$row=mysqli_query($conn,"SELECT * FROM `t_poteacher` WHERE _id='$_id'")->fetch_row();
+				$row=mysqli_query($conn,"SELECT * FROM `t_poteacher` WHERE _id='$_id' limit 1")->fetch_row();
 				$banngo[]=$row[1];
 				$quantity[]=$row[2];
 				$po[]=$row[0];
+				$campany[]=$row[5];
 				}
 			}
 
@@ -123,7 +127,10 @@ $checkbox=$_GET['checkbox'];
 										break;
 									}
 								}
-								echo "<tr><td><input type='checkbox'/></td><td align='right'>".$banngo[$go]."</td><td>".$quantitytotel."</td><td>".$pos."</td></tr>";
+								
+								$row_info=mysqli_query($conn,"SELECT price,reel FROM `t_poprice` WHERE campany='$campany[$go]' AND banngo='$banngo[$go]' limit 1")->fetch_row();
+								
+								echo "<tr><td><input type='checkbox'/></td><td align='right'>".$banngo[$go]."</td><td>".$quantitytotel."</td><td>".$pos."</td><td bgcolor='#EEEEEE'>".$row_info[0]."</td><td bgcolor='#EEEEEE'>".$row_info[1]."</td></tr>";
 								///////////////////////////
 					}
 					
