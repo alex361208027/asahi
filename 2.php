@@ -164,7 +164,7 @@ td:hover{
 	color:white;
 }
 .starmark{
-	cursor:pointer;
+	cursor:pointer;display:inline-block;
 	
 }
 </style>
@@ -175,10 +175,9 @@ td:hover{
 	border-radius: 3px;overflow:hidden;"> 
 <table id="tableExcel" cellpadding="1" cellspacing="0" width="100%" style="font-size:12px;">
 <tr style="background-color:#8F77B5;color:white;height:33px;">
-	<td class="2_td_1"><?php?></td>
+	<td class="2_td_checkbox"><?php?></td>
 	<td width="5px"></td>
-	<td width="5px" class="2_td_3"></td>
-	<td align="center" class="2_td_4">状態</td>
+	<td align="center" class="2_td_state">状態</td>
 	<td>取引先</td>
 	<td>注文PO</td>
 	<td>品番</td>
@@ -190,7 +189,7 @@ td:hover{
 	<td>上海出荷日</td>
 	<td>備考</td>
 	<td>发票</td>
-	<td class="2_td_16"></td>
+	<td class="2_td_tuichi"></td>
 </tr>
 
 <?php while($row=$result->fetch_row()){ 
@@ -258,10 +257,9 @@ td:hover{
 	}
 	$same_po=$row[1];$same_banngo=$row[2]; 
 	?>
-	<td align="right" class="2_td_1"><input type="checkbox" name="checkboxsum" value="<?php echo $row[3]; ?>" _id="<?php echo $row[12] ?>" cells="<?php echo $jjj+1; ?>"/></td>
+	<td align="right" class="2_td_checkbox"><input type="checkbox" name="checkboxsum" value="<?php echo $row[3]; ?>" _id="<?php echo $row[12] ?>" cells="<?php echo $jjj+1; ?>"/></td>
 	<td align="center"><?php echo $jjj+1; ?></td>
-	<td class="2_td_3"><div class='starmark' val="<? echo $row[12]; ?>" val2="<? echo $row[14]; ?>"><? echo "<img src='img/star".$row[14].".png'/>" ?></div></td>
-	<td align="center" class="2_td_4"><div class="classcp1" style="background-color:<?php echo $bgimg; ?>"><?php echo $states; ?></div></td>
+	<td align="center" class="2_td_state"><div class="classcp1" style="background-color:<?php echo $bgimg; ?>"><?php echo $states; ?></div></td>
 	<td><?php if(!$same){echo $row[0];} ?></td>
 	<td><a href="4.php?ddt2=<?php echo $row[1] ?>"><?php if(!$same){echo $row[1];} ?></a></td>
 	<td style="max-width:120px;"><a href="###" onclick="c_banngo('_id=<?php echo $row[12] ?>&cells=<?php echo $jjj+1 ?>')" ><u><?php echo $row[2] ?></u></a></td>
@@ -273,7 +271,7 @@ td:hover{
 	<td><b><?php echo $row[7] ?></b></td>
 	<td><marquee scrolldelay="200"><?php echo $row[8] ?></marquee></td>
 	<td><?php echo $row[10]; ?></td>
-	<td class="2_td_16"><? echo $tuichi; ?></td>
+	<td class="2_td_tuichi"><div class='starmark' val="<? echo $row[12]; ?>" val2="<? echo $row[14]; ?>"><? echo "<img src='img/star".$row[14].".png'/>" ?></div><? echo $tuichi; ?></td>
 	<?php $jjj=$jjj+1 ?>
 	
 </tr>
@@ -324,15 +322,14 @@ $(document).ready(function(){
 
 function td_remove(){
 	$(document).ready(function(){
-			$('.2_td_1').remove();
-			$('.2_td_3').remove();
-			$('.2_td_4').remove();
-			$('.2_td_16').remove();
+			$('.2_td_checkbox').remove();
+			$('.2_td_state').remove();
+			$('.2_td_tuichi').remove();
 	});
 }
 
 </script>
-<button type="button" onclick="td_remove();setTimeout(()=>{method5('tableExcel')},500)">导出Excel</button>  
+<button type="button" onclick="td_remove();setTimeout(()=>{method5('tableExcel')},500);setTimeout(()=>{location.reload()},2000);">导出Excel</button>  
 <button type="button" style="background-color:#CCCCFF" onclick="checkboxsum()">选中项合计</button> &nbsp; <input type="number" style="width:40px" id="checkall1" value="1" onchange="checkall12()"/>~<input type="number" style="width:40px" id="checkall2" value="99" onchange="checkall12()"/>
 <a href="" id="button3" target="_blank"></a><button onclick="mycheckbox(2)">选中项合并统计</button> &nbsp; <button onclick="mycheckbox(1)">选中项生成送货单</button> &nbsp; <button onclick="c_pi_zaikuduizhao()">其他</button>
 </div>
