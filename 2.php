@@ -329,7 +329,7 @@ function td_remove(){
 }
 
 </script>
-<button type="button" onclick="td_remove();setTimeout(()=>{method5('tableExcel')},500);setTimeout(()=>{location.reload()},2000);">导出Excel</button>  
+<button type="button" onclick="td_remove();setTimeout(()=>{method5('tableExcel')},500);setTimeout(()=>{location.reload()},2000);">导出Excel</button>
 <button type="button" style="background-color:#CCCCFF" onclick="checkboxsum()">选中项合计</button> &nbsp; <input type="number" style="width:40px" id="checkall1" value="1" onchange="checkall12()"/>~<input type="number" style="width:40px" id="checkall2" value="99" onchange="checkall12()"/>
 <a href="" id="button3" target="_blank"></a><button onclick="mycheckbox(2)">选中项合并统计</button> &nbsp; <button onclick="mycheckbox(1)">选中项生成送货单</button> &nbsp; <button onclick="c_pi_zaikuduizhao()">其他</button>
 </div>
