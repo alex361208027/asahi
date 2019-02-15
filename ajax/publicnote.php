@@ -24,8 +24,8 @@ if($publicnote){
 		<div class='touxiang' style="background-color:#FF66A3">New<?php //echo mb_substr($_COOKIE['asahiuser'],0,3) ?></div>
 		</td>
 		<td>
-		<font color="#BBBBBB" size="1"><?php echo $_COOKIE['loged']."&nbsp;".$todaytime ?></font>
-		<div><?php echo $publicnote ?></div><br><br>
+		<font color="#DDDDDD" size="1"><?php echo $_COOKIE['loged']."&nbsp;".$todaytime ?></font><br>
+		<div class="xiaoxikuang_style"><?php echo $publicnote ?></div><br><br>
 		</td>
 		</tr></table>
 		</div>

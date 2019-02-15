@@ -56,6 +56,12 @@ $xxx=1;
 .xiaoxikuanX:hover{
 	color:black;
 }
+.xiaoxikuang_style{
+	background-color:#FFEEEE;padding:8px;display:inline-block;min-width:30px;
+	-webkit-border-radius: 0px 8px 8px 8px;
+  -moz-border-radius: 0px 8px 8px 8px;
+  border-radius: 0px 8px 8px 8px;
+}
 </style>
 <script>
 $(document).ready(function(){
@@ -145,6 +151,16 @@ $(document).ready(function(){
 						}
 						
 				}
+			$xiaoxikuan_bgcolor_num=array_search($rowpublic[0],$mysave);
+			
+			if($xiaoxikuan_bgcolor_num==0){
+				$xiaoxikuan_bgcolor="#FFDDDD";
+			}elseif($xiaoxikuan_bgcolor_num==1){
+				$xiaoxikuan_bgcolor="#F7F7F7";
+			}elseif($xiaoxikuan_bgcolor_num==2){
+				$xiaoxikuan_bgcolor="#FFFFEE";
+			}
+				
 		 ?>
 		<div class="xiaoxikuan" id="xxx<?php echo $xxx ?>">
 		<div class="xiaoxikuanX" onclick="xiaoxikuanX('<?php echo $rowpublic[2]?>',<?php echo $xxx;$xxx++; ?>)">删除</div>
@@ -154,8 +170,8 @@ $(document).ready(function(){
 		<?php if(file_exists("upload/user_touxiang/".$rowpublic[0].".png")){echo "<div class='touxiang2'><img src='upload/user_touxiang/".$rowpublic[0].".png' width='36px'></div>";}else{echo "<div class='touxiang'>".mb_substr($rowpublic[0],0,3)."</div>";} ?>
 		</td>
 		<td>
-		<font color="#BBBBBB" size="1"><?php  echo $myload[array_search($rowpublic[0],$mysave)]."&nbsp;".$rowpublic[2] ?></font>
-		<div><?php echo $rowpublic[1] ?></div><br><br>
+		<font color="#DDDDDD" size="1"><?php  echo $myload[array_search($rowpublic[0],$mysave)]."&nbsp;".$rowpublic[2] ?></font><br>
+		<div class="xiaoxikuang_style" style="background-color:<? echo $xiaoxikuan_bgcolor; ?>"><?php echo $rowpublic[1] ?></div><br><br>
 		</td>
 		</tr>
 		</table>

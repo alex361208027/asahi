@@ -145,10 +145,10 @@ hr{
 </style>
 <div align="center">
 <?php while($row=$result->fetch_row()){ 
-	$sql2 =  "SELECT * FROM `t_poteacher` WHERE asahiorder = '{$row[0]}'";
+	$sql2 =  "SELECT * FROM `t_poteacher` WHERE asahiorder = '$row[0]'";
 	$result2 = mysqli_query($conn,$sql2);
 	$totle2=$result2->num_rows;
-	$sql3 =  "SELECT * FROM `t_poteacher` WHERE asahiorder = '{$row[0]}' AND state = '已入库'";
+	$sql3 =  "SELECT * FROM `t_poteacher` WHERE asahiorder = '$row[0]' AND state = '已入库'";
 	$result3 = mysqli_query($conn,$sql3);
 	$totle3=$result3->num_rows;
 if($totle2 == $totle3){
@@ -172,8 +172,7 @@ if($totle2 == $totle3){
 					<a href="7-2.php?t1=<?php echo $row[0] ?>&t6=<?php echo $row[3] ?>"><input type="submit" value="添" style="padding:2px 5px 2px 5px;color:white;background-color:#FFCCD6;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;" >加产品</a>
 				</div>
 				<?php 
-				$ordernumlink=$row[0];
-				if($totle2 == $totle3){
+				if($totle2 == $totle3&&$totle2<>0){
 				echo "<div class='classcomplete'><img src='img/wancheng.png'/></div>";
 				}
 				?>
@@ -195,7 +194,7 @@ if($totle2 == $totle3){
 								$bgimg='#999999';$states='等待入库';
 							}
 			?>
-			<a href="6.php?php4-1ordernum=<?php echo $ordernumlink ?>"><div class="classcp" align="left">
+			<a href="6.php?php4-1ordernum=<?php echo $row[0] ?>"><div class="classcp" align="left">
 			<div class="classcp1" style="background-color:<?php echo $bgimg; ?>"><?php echo $states; ?></div><?php echo $row2[1]." &nbsp; <b>".$row2[2]."</b>pcs &nbsp<".$row2[5].">&nbsp";if(empty($row2[10])){echo "<font color='red'>未匹配</font>&nbsp";} if($row2[3]==0||empty($row2[3])){echo "希望交期:<b>".$row2[4];}else{echo "日本出荷:<b>".$row2[3];} ?></b>
 			</div></a>
 			<?php }	?>
@@ -219,59 +218,7 @@ if($totle2 == $totle3){
 <div class="tishi">朝日订单页面</div>
   <br><br><br><br>
     <!--ajas-->
-<style>
-.ajasdivout{
-	position:fixed;right:0px;top:18px;min-height:400px;width:350px;background-color:white;
-	-webkit-box-shadow: -8px 4px 18px #BBBBBB;
-  -moz-box-shadow: -8px 4px 18px #BBBBBB;
-  box-shadow: -8px 4px 18px #BBBBBB;
-	transition: all 1s;
--moz-transition: all 1s;	/* Firefox 4 */
--webkit-transition: all 1s;	/* Safari 和 Chrome */
--o-transition: all 1s;
-}
-.ajasdivout2{
-	position:fixed;right:0px;top:18px;min-height:400px;max-height:500px;overflow-x:hidden;overflow-y:scroll;width:400px;background-color:white;
-	-webkit-box-shadow: -8px 4px 18px #BBBBBB;
-  -moz-box-shadow: -8px 4px 18px #BBBBBB;
-  box-shadow: -8px 4px 18px #BBBBBB;
-	transition: all 1s;
--moz-transition: all 1s;	/* Firefox 4 */
--webkit-transition: all 1s;	/* Safari 和 Chrome */
--o-transition: all 1s;
-}
-.ajasdivx{
-	position:absolute;right:0px;top:0px;background-color:;font-size:20px
-}
-input[type="date"],
-input[type="text"],
-input[type="button"],
-input[type="password"],
-input[type="email"],
-input[type="submit"],
-input[type="tel"],
-.inputlist{
-	width:auto;
-    height: auto;
-    line-height: 16px;
-    margin: 0;
-    padding: 0;
-    border: none;
-    color:#666666 ;
-    cursor: pointer;
-    resize: none;
-    /**border-bottom:1px solid #AAAAAA;**/
-    background:none;
-	text-align:left;
-	margin-top:0px;
-	margin-left:0px;
-	font-family: Arial;
-	font-size:12px;
-	-webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
-	border-radius: 0px;
-}
-</style>
+
 
   
   

@@ -197,7 +197,6 @@ if($totle2 == $totle3){
 				</div>
 				
 				<?php 
-				$ordernumlink=$row[1];
 				if($totle2 == $totle3&&$totle2<>0){
 				echo "<div class='classcomplete'><img src='img/wancheng.png'/></div>";
 				}
@@ -220,7 +219,7 @@ if($totle2 == $totle3){
 								$bgimg='#FF7792';$states='通关中';
 							}
 			?>
-			<a href="2.php?php4ordernum=<?php echo $ordernumlink ?>"><div class="classcp" align="left">
+			<a href="2.php?php4ordernum=<?php echo $row[1] ?>"><div class="classcp" align="left">
 			<div class="classcp1" style="background-color:<?php echo $bgimg; ?>"><?php echo $states; ?></div><?php echo $row2[2]." &nbsp; <b>".$row2[3]."</b>pcs &nbsp"; if($row2[7]==0||empty($row2[7])){echo "希望交期:<b>".$row2[4];}else{echo "交期发货:<b>".$row2[7];} if(empty($row2[13])){echo " <font color='red'>未匹配</font>";} ?></b>
 			</div></a>
 			<?php }	?>
@@ -244,59 +243,7 @@ if($totle2 == $totle3){
 <div class="tishi">客户订单页面</div>
   <br><br><br><br>
   <!--ajas-->
-<style>
-.ajasdivout{
-	position:fixed;right:0px;top:18px;min-height:400px;width:350px;background-color:white;
-	-webkit-box-shadow: -8px 4px 18px #BBBBBB;
-  -moz-box-shadow: -8px 4px 18px #BBBBBB;
-  box-shadow: -8px 4px 18px #BBBBBB;
-	transition: all 1s;
--moz-transition: all 1s;	/* Firefox 4 */
--webkit-transition: all 1s;	/* Safari 和 Chrome */
--o-transition: all 1s;
-}
-.ajasdivout2{
-	position:fixed;right:0px;top:18px;min-height:400px;max-height:500px;overflow-x:hidden;overflow-y:scroll;width:400px;background-color:white;
-	-webkit-box-shadow: -8px 4px 18px #BBBBBB;
-  -moz-box-shadow: -8px 4px 18px #BBBBBB;
-  box-shadow: -8px 4px 18px #BBBBBB;
-	transition: all 1s;
--moz-transition: all 1s;	/* Firefox 4 */
--webkit-transition: all 1s;	/* Safari 和 Chrome */
--o-transition: all 1s;
-}
-.ajasdivx{
-	position:absolute;right:0px;top:0px;background-color:;font-size:20px
-}
-input[type="date"],
-input[type="text"],
-input[type="button"],
-input[type="password"],
-input[type="email"],
-input[type="submit"],
-input[type="tel"],
-.inputlist{
-	width:auto;
-    height: auto;
-    line-height: 16px;
-    margin: 0;
-    padding: 0;
-    border: none;
-    color:#666666 ;
-    cursor: pointer;
-    resize: none;
-    /**border-bottom:1px solid #AAAAAA;**/
-    background:none;
-	text-align:left;
-	margin-top:0px;
-	margin-left:0px;
-	font-family: Arial;
-	font-size:12px;
-	-webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
-	border-radius: 0px;
-}
-</style>
+
 
 
 
