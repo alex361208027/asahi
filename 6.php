@@ -148,6 +148,10 @@ tr:hover{
 td:hover{
 	color:white;
 }
+table{border-collapse: collapse;}
+.tabletr{
+	border-top:solid 1px #d0dee5
+}
 </style>
 <br><br><br>
 <div class="nopo"><?php echo $nopo; ?></div><input type="hidden" id="cellss" value="">
@@ -188,7 +192,7 @@ td:hover{
 								//$eee=$eee+1;
 							}
 ?>
-<tr <?php  if($colordate!=$row[3]){if($bgcolor==""){$bgcolor="#F7F7F7";}else{$bgcolor="";} echo "bgcolor='".$bgcolor."'"; }else{echo "bgcolor='".$bgcolor."'";}$colordate=$row[3]; ?>>
+<tr <?php  if($colordate!=$row[3]){if($bgcolor==""){$bgcolor="#F7F7F7";}else{$bgcolor="";} echo "bgcolor='".$bgcolor."'"; }else{echo "bgcolor='".$bgcolor."'";}$colordate=$row[3]; ?> class="tabletr">
 	
 	<td align="right"><input type="checkbox" name="checkboxsum" value="<?php echo $row[2]; ?>" _id="<?php echo $row[9] ?>" cells="<?php echo $jjj+1; ?>"/></td>
 	<td align="center"><?php echo $jjj+1; ?></td>
@@ -311,6 +315,8 @@ function po_pi_lotnum(str){
 <br><br>
 
 <style>
+
+
 .ajasdivout{
 	position:fixed;right:0px;top:18px;min-height:400px;width:350px;background-color:white;
 	-webkit-box-shadow: -8px 4px 18px #BBBBBB;

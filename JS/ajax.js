@@ -234,7 +234,7 @@ function c_remark(str){
 			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
 				{	
 					cells=document.getElementById('cells').value;
-					document.getElementById('tableExcel').rows[cells].cells[12].innerHTML=xmlhttp.responseText;
+					document.getElementById('tableExcel').rows[cells].cells[2].innerHTML=xmlhttp.responseText;
 					
 					
 				}

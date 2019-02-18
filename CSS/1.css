@@ -248,7 +248,7 @@ button:hover{
 
 
 .banngobutton{
-	background-color:#FFAAAA;display:inline-block;color:white;padding:1px 2px;
+	background-color:#FFAAAA;display:inline-block;color:white;padding:1px 2px;cursor: pointer;
 	-webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;

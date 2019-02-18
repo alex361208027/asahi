@@ -165,8 +165,12 @@ td:hover{
 }
 .starmark{
 	cursor:pointer;display:inline-block;
-	
 }
+table{border-collapse: collapse;}
+.tabletr{
+	border-top:solid 1px #d0dee5
+}
+
 </style>
 <br><br><br>
 <div class="nopo"><?php echo $nopo; ?></div>
@@ -186,10 +190,9 @@ td:hover{
 	<td>订单納期</td>
 	<td>朝日PO</td>
 	<td>日本出荷日</td>
-	<td>上海出荷日</td>
-	<td>備考</td>
-	<td>发票</td>
+	<td>朝日科技出货</td>
 	<td class="2_td_tuichi"></td>
+	<td>发票</td>
 </tr>
 
 <?php while($row=$result->fetch_row()){ 
@@ -247,19 +250,19 @@ td:hover{
 								$states=$remark4;
 								
 							}
-?>
-<tr <?php  if($colordate!=$row[7]){if($bgcolor==""){$bgcolor="#F7F7F7";}else{$bgcolor="";} echo "bgcolor='".$bgcolor."'"; }else{echo "bgcolor='".$bgcolor."'";}$colordate=$row[7]; ?>>
-	<? 
+					
 	if($same_po==$row[1]&&$same_banngo==$row[2]){
 		$same=1;
 	}else{
 		$same=0;
 	}
 	$same_po=$row[1];$same_banngo=$row[2]; 
-	?>
+?>
+<tr <?php  if($colordate!=$row[7]){if($bgcolor==""){$bgcolor="#F7F7F7";}else{$bgcolor="";} echo "bgcolor='".$bgcolor."'"; }else{echo "bgcolor='".$bgcolor."'";}$colordate=$row[7]; ?> <? if(!$same){echo "class='tabletr'";} ?>>
+	
 	<td align="right" class="2_td_checkbox"><input type="checkbox" name="checkboxsum" value="<?php echo $row[3]; ?>" _id="<?php echo $row[12] ?>" cells="<?php echo $jjj+1; ?>"/></td>
 	<td align="center"><?php echo $jjj+1; ?></td>
-	<td align="center" class="2_td_state"><div class="classcp1" style="background-color:<?php echo $bgimg; ?>"><?php echo $states; ?></div></td>
+	<td align="center" class="2_td_state"><div class="classcp1" style="background-color:<?php echo $bgimg; ?>" title="<? echo $row[8]; ?>"><?php echo $states; ?></div></td>
 	<td><?php if(!$same){echo $row[0];} ?></td>
 	<td><a href="4.php?ddt2=<?php echo $row[1] ?>"><?php if(!$same){echo $row[1];} ?></a></td>
 	<td style="max-width:120px;"><a href="###" onclick="c_banngo('_id=<?php echo $row[12] ?>&cells=<?php echo $jjj+1 ?>')" ><u><?php echo $row[2] ?></u></a></td>
@@ -269,9 +272,9 @@ td:hover{
 	<td><a href="4-1.php?asahit22=<?php echo $row[5] ?>"><?php echo $row[5] ?></a></td>
 	<td><?php echo $row[6] ?></td>
 	<td><b><?php echo $row[7] ?></b></td>
-	<td><marquee scrolldelay="200"><?php echo $row[8] ?></marquee></td>
-	<td><?php if($row[10]=='0000-00-00'){}else{echo $row[10];} ?></td>
+	<!--<td><marquee scrolldelay="200"><?php //echo $row[8] ?></marquee></td>-->
 	<td class="2_td_tuichi"><div class='starmark' val="<? echo $row[12]; ?>" val2="<? echo $row[14]; ?>"><? echo "<img src='img/star".$row[14].".png'/>" ?></div><? echo $tuichi; ?></td>
+	<td><?php if($row[10]=='0000-00-00'){}else{echo $row[10];} ?></td>
 	<?php $jjj=$jjj+1 ?>
 	
 </tr>
