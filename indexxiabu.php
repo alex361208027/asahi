@@ -44,7 +44,7 @@ $xxx=1;
 }
 .xiaoxikuanX{
 	position:absolute;
-	right:50px;top:0px;
+	right:10px;top:5px;
 	cursor:pointer;
 	display:none;
 	color:#CCCCCC;
@@ -57,7 +57,7 @@ $xxx=1;
 	color:black;
 }
 .xiaoxikuang_style{
-	background-color:#FFEEEE;padding:8px;display:inline-block;min-width:30px;
+	background-color:#FFEEEE;padding:8px;display:inline-block;min-width:30px;font-size:14px;
 	-webkit-border-radius: 0px 8px 8px 8px;
   -moz-border-radius: 0px 8px 8px 8px;
   border-radius: 0px 8px 8px 8px;
@@ -163,7 +163,7 @@ $(document).ready(function(){
 				
 		 ?>
 		<div class="xiaoxikuan" id="xxx<?php echo $xxx ?>">
-		<div class="xiaoxikuanX" onclick="xiaoxikuanX('<?php echo $rowpublic[2]?>',<?php echo $xxx;$xxx++; ?>)">删除</div>
+		<div class="xiaoxikuanX"><font onclick="xiaoxikuantop('<?php echo $rowpublic[2]; ?>','<?php echo $todaytime; ?>',<?php echo $xxx; ?>)"><置顶></font><font onclick="xiaoxikuanX('<?php echo $rowpublic[2]; ?>',<?php echo $xxx;$xxx++; ?>)"><删除></font></div>
 		<table>
 		<tr align="left">
 		<td valign="top">
@@ -231,6 +231,15 @@ $(document).ready(function(){
 			  }
 			xmlhttp.open("GET","ajax/xiaoxikuanX.php?xtime="+str,true);
 			xmlhttp.send();
+		}
+		function xiaoxikuantop(str,time,xxx){
+			$(document).ready(function(){
+				$.post("ajax/xiaoxikuantop.php",{xtime:str,time:time},function(data,status){
+					$("#noteplus").append($("#xxx"+xxx).html());
+					$("#xxx"+xxx).remove();
+				});
+			});
+			
 		}
 		</script>
 	<td width="">

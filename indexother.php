@@ -180,7 +180,12 @@ d1=document.getElementById('newdate').value;
 <label><input type="checkbox" name="t11" value="checked" style="display:none"/><div class="checkedboxword">納期待つ除き</div></label>
 <label><input type="checkbox" name="t12" value="checked" style="display:none"/><div class="checkedboxword">在库のみ</div></label>
 
-<br>上海出荷日:
+<br>
+<select name="selectdate">
+<option value="SHdate">上海发货日期</option>
+<option value="JPdate">日本发货日期</option>
+<option value="invoice">开票日期</option>
+</select>
 <input type="date" name="t7" value="" onchange="changedate(0)"/>~
 <input type="date" name="t77" value="" onchange="changedate(0)"/>
 <input type="submit" style="background-color:#CCCCFF" value="(お客PO) 検索"/><input type="button" value="Reset" onclick="location.reload();"/>
