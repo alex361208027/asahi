@@ -27,7 +27,7 @@ $t3 = $_POST['t3'];
 $t5 = $_POST['t5'];
 $t4 = $_POST['t4'];
 $t7 = $_POST['t7'];$t77 = $_POST['t77'];
-//$t8 = $_POST['t8'];$t88 = $_POST['t88'];
+$selectdate=$_POST['selectdate'];
 $t9 = $_POST['t9'];
 $t10 = $_POST['t10'];
 if($_GET['t11']){
@@ -108,19 +108,19 @@ if($t4){
 }
 if($t7||$t77){
 	if($t7){
-		$date71="SHdate >= '$t7'";
+		$date71="$selectdate >= '$t7'";
 		$date81="hopedate >= '$t7'";
 	}
 	if($t77){
 		if($t7){
-		$date72="AND SHdate <= '$t77'";
+		$date72="AND $selectdate <= '$t77'";
 		$date82="AND hopedate <= '$t77'";
 		}else{
-		$date72="SHdate <= '$t77'";	
+		$date72="$selectdate <= '$t77'";	
 		$date82="hopedate <= '$t77'";
 		}
 	}
-	$tt7="AND (($date71 $date72) OR (SHdate = '0000-00-00' AND $date81 $date82 ))";
+	$tt7="AND (($date71 $date72) OR ($selectdate = '0000-00-00' AND $date81 $date82 ))";
 	$nopox=$nopox."<div class='nopox'>".$t7."~".$t77."</div>";
 }else{
 	$tt7="";
@@ -270,7 +270,7 @@ td:hover{
 	<td><?php echo $row[6] ?></td>
 	<td><b><?php echo $row[7] ?></b></td>
 	<td><marquee scrolldelay="200"><?php echo $row[8] ?></marquee></td>
-	<td><?php echo $row[10]; ?></td>
+	<td><?php if($row[10]=='0000-00-00'){}else{echo $row[10];} ?></td>
 	<td class="2_td_tuichi"><div class='starmark' val="<? echo $row[12]; ?>" val2="<? echo $row[14]; ?>"><? echo "<img src='img/star".$row[14].".png'/>" ?></div><? echo $tuichi; ?></td>
 	<?php $jjj=$jjj+1 ?>
 	
@@ -338,7 +338,7 @@ function td_remove(){
 <?php if($jjj>=100){ ?><input type="submit" value=" &nbsp; " style="background:url('img/next.png') no-repeat; width:46px; height:32px;">
 <input type="hidden" name="nowpage" value="<?php echo $nowpage ?>"/>
 <input type="hidden" name="t6" value="<?php echo $t6 ?>"/><input type="hidden" name="t1" value="<?php echo $t1 ?>"/><input type="hidden" name="t3" value="<?php echo $t3 ?>"/>
-<input type="hidden" name="t5" value="<?php echo $t5 ?>"/><input type="hidden" name="t4" value="<?php echo $t4 ?>"/>
+<input type="hidden" name="t5" value="<?php echo $t5 ?>"/><input type="hidden" name="t4" value="<?php echo $t4 ?>"/><input type="hidden" name="selectdate" value="<?php echo $selectdate; ?>"/>
 <input type="hidden" name="t7" value="<?php echo $t7 ?>"/><input type="hidden" name="t77" value="<?php echo $t77 ?>"/><input type="hidden" name="t9" value="<?php echo $t9 ?>"/>
 <input type="hidden" name="t10" value="<?php echo $t10 ?>"/><input type="hidden" name="t11" value="<?php echo $t11 ?>"/><input type="hidden" name="t12" value="<?php echo $t12 ?>"/>
 <?php }elseif($jjj<1){echo "无内容：请尝试更改检索";} ?>
