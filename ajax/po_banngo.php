@@ -22,10 +22,10 @@ $row=$result->fetch_row();
 		<input type="hidden" id="po_banngo_id" value="<?php echo $row[9] ?>">
 		<input type="hidden" id="po_banngo_quantity" value="<?php echo $row[2] ?>">
 	<tr>
-		<td colspan="2"><?php echo $row[1]; ?></font></td>
+		<td colspan="2"><?php echo $row[0]; ?></font></td>
 	</tr>
 	<tr>
-		<td colspan="2"><font size="4"><b><?php echo $row[0]; ?></b></font></td>
+		<td colspan="2"><font size="4"><b><?php echo $row[1]; ?></b></font></td>
 	</tr>
 	<tr>
 		<td colspan="2"><font color="#EEEEEE" size="1"><?php echo "本ID".$row[9]."对应的ID".$row[10] ?></font></td>
@@ -39,7 +39,7 @@ $row=$result->fetch_row();
 	</tr>
 	<tr>
 		<td>希望交期</td>
-		<td><input type="date" onchange="po_JPdate('JPdate='+this.value+'&_id=<?php echo $row[9] ?>&customer_id=<?php echo $row[10] ?>&hopedate=<?php echo $row[4]; ?>')" value="<?php echo $row[3]; ?>"/></td>
+		<td><? echo $row[4]; ?></td>
 	</tr>
 	<tr>
 		<td colspan="2"><hr></td>
