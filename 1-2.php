@@ -36,8 +36,16 @@ if($t5&&$t6){
 mysqli_query($conn,"INSERT INTO `t_teacher`(`campany`, `ordernum`, `banngo`, `quantity`, `hopedate` ) VALUES ('$t1','$t2','$t5','$t6','$t7')");
 }
 
-    echo "继续录入产品或结束<br>";
+	
 	if($asahiorder){	 
+		$sql3 = "SELECT * FROM `t_postudent` WHERE asahiorder = '$asahiorder' limit 1";
+		$result3 = mysqli_query($conn,$sql3);
+		$rows3=$result3->num_rows;
+		if($rows3==0){
+			echo "<font color='red'>未找到朝日订单".$asahiorder."，本次未录入朝日订单。</font>";
+			$asahiorder="";
+		}else{
+	
 		$result_c_id = mysqli_query($conn,"SELECT * FROM `t_teacher` WHERE campany='$t1' AND ordernum = '$t2' AND banngo='$t5' AND quantity='$t6' order by _id desc");
 		$row_c_id=$result_c_id->fetch_row();	$this_id=$row_c_id[12];
 		mysqli_query($conn,"INSERT INTO `t_poteacher`(`asahiorder`, `banngo`, `quantity`, `campany`, `campanyorder`, `customer_id`, `hopedate` ) VALUES ('$asahiorder','$t5','$t6','$row_c_id[0]','$row_c_id[1]','$this_id','$row_c_id[4]')");
@@ -45,10 +53,11 @@ mysqli_query($conn,"INSERT INTO `t_teacher`(`campany`, `ordernum`, `banngo`, `qu
 		$result_po_id = mysqli_query($conn,"SELECT * FROM `t_poteacher` WHERE customer_id='$this_id'");
 		$row_po_id=$result_po_id->fetch_row();
 		mysqli_query($conn,"UPDATE `t_teacher` SET asahiorder='$asahiorder' , po_id='$row_po_id[9]' WHERE _id='$this_id'");
+		}
 	}
 
-
 ?>
+继续录入产品或结束<br>
 <body style="padding:2%" onload="document.getElementsByName('t5')[0].focus();">
 <table><tr><td valign="top">
 <div width="">
@@ -62,8 +71,8 @@ mysqli_query($conn,"INSERT INTO `t_teacher`(`campany`, `ordernum`, `banngo`, `qu
 	  <div id="findbanngo" style="display:none;font-size:12px;color:#FFAABB;padding-left:20px;">加载中</div>
 	  <div class="php1word">产品数量<input list="quantitylist" class="inputlist" name="t6" onchange="quantitychecktest(this.value)"/></div>
 	  <div class="php1word">希望交期<input type="date" name="t7" value="<?php echo $t7 ?>" /></div>
+	  <div class="php1word">朝日订单<input type="text" name="asahiorder" value="<?php echo $asahiorder ?>" placeholder="同时创建朝日订单"/></div>
 	  <input type="submit" value="添加产品" onclick="buttons(this)" /><br>
-	  朝日订单<input type="text" name="asahiorder" value="<?php echo $asahiorder ?>"/ placeholder="同时创建朝日订单">
 	  </form>
 	  <hr>
 	  <form action="4.php" method="GET">
