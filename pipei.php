@@ -85,13 +85,14 @@ if($po1){
 	$select_po1="customer_id='' AND ";
 }
 if($po2){
-	$select_po2="banngo like '%$po2%' AND (JPdate = 0 OR JPdate >= '$today35')";
+	$select_po2="banngo like '%$po2%' AND (JPdate = '0000-00-00' OR JPdate >= '$today35')";
 	$resultzaiku=mysqli_query($conn,"SELECT * FROM `t_inout` WHERE (outquantity = 0 OR outquantity is null) AND banngo like '%$po2%'");
 }else{
 	if($po1){
 	$select_po2="banngo <> ''";
 	}else{
-	$select_po2="(((JPdate = 0 OR JPdate >= '$today25') AND (banngo in (SELECT banngo FROM t_inout WHERE outquantity = 0 OR outquantity is null GROUP BY banngo) AND asahiorder in (SELECT asahipo FROM t_inout where outquantity = 0 OR outquantity is null GROUP BY asahipo))) OR (JPdate >= '$today15'))";
+	$select_po2="((JPdate = '0000-00-00' OR JPdate >= '$today15') OR (banngo in (SELECT banngo FROM t_inout WHERE outquantity = 0 OR outquantity is null GROUP BY banngo) AND asahiorder in (SELECT asahipo FROM t_inout where outquantity = 0 OR outquantity is null GROUP BY asahipo)))";
+
 	}
 }
 
