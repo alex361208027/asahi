@@ -21,18 +21,10 @@ mysqli_set_charset ($conn,utf8);
 if (empty($t1) || empty($t2)) {
     echo "信息不完整";
 }else{
-	$sql2 = "SELECT * FROM `t_student` WHERE ordernum = '$t2' AND campany='$t1'";
+	$sql2 = "SELECT * FROM `t_student` WHERE ordernum = '$t2' AND campany='$t1' limit 1";
 	$result2 = mysqli_query($conn,$sql2);
 	$rows2=$result2->num_rows;
-	
-	if($asahiorder){
-	$sql3 = "SELECT * FROM `t_postudent` WHERE asahiorder = '$asahiorder'";
-	$result3 = mysqli_query($conn,$sql3);
-	$rows3=$result3->num_rows;
-	
-	//fwrite(fopen("templates/new_asahi_po.html","w"),$asahiorder);
-	
-	}
+
 	
 	if($rows2 > 0){
 		echo "订单".$t2."已经存在！";
@@ -45,8 +37,8 @@ if (empty($t1) || empty($t2)) {
 
 if ($conn->query($sql) === TRUE) {
     echo "新订单创建成功<br>";
-	if(!empty($asahiorder)){
-	$sql3 = "SELECT * FROM `t_postudent` WHERE asahiorder = '$asahiorder'";
+	if($asahiorder){
+	$sql3 = "SELECT * FROM `t_postudent` WHERE asahiorder = '$asahiorder' limit 1";
 	$result3 = mysqli_query($conn,$sql3);
 	$rows3=$result3->num_rows;
 		if($rows3==0){
@@ -110,10 +102,10 @@ animation:myfirst 2s infinite;
 	  <div id="findbanngo" style="display:none;font-size:12px;color:red;padding-left:15px;">加载中</div>
 	  <div class="php1word">产品数量<input list="quantitylist" class="inputlist" name="t6" onchange="quantitychecktest(this.value)"/></div>
 	  <div class="php1word">希望交期<input type="date" class="hopedate" name="t7" value="<?php echo date('Y-m-d',strtotime('+2 month')); ?>" /></div>
+	  <? if($asahiorder){ ?>
+	  <div class="php1word">朝日订单<input type="text" name="asahiorder" value="<?php echo $asahiorder ?>" /></div>
+	  <? } ?>
 	  <input type="submit" value="添加产品" onclick="buttons(this)"/><br>
-	  <?php //if($asahiorder){ ?>
-	  同时录入朝日订单:<br><input type="text" name="asahiorder" value="<?php echo $asahiorder ?>" />
-	  <?php //} ?>
 	</form>
  </div>	
 </div>
