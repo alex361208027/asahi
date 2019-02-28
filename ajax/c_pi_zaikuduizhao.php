@@ -26,13 +26,16 @@ foreach($checkbox as $checkboxid => $_id){
 			echo "【".$row[2]."】".$row[1]."×".$row[0]."=";
 			$mm_count=1;
 			foreach($zaiku_return_m as $mm){
-				if($mm_count>1){
-				echo "+";
-				}
-				
-			echo "【Lot】".$zaiku_lotnum[$mm]."×".$zaiku_quantity[$mm];
 			
-			$mm_count++;
+					if($mm_count>1){
+					echo "+";
+					}
+					
+					echo "【Lot】".$zaiku_lotnum[$mm]."×".$zaiku_quantity[$mm];
+					$remove_inout_id[]=$zaiku_id[$mm];
+					//echo "{".$zaiku_id[$mm]."}";
+					$mm_count++;
+
 			}
 			
 		}else{
@@ -46,7 +49,7 @@ foreach($checkbox as $checkboxid => $_id){
 }
 
 function findtotal($all,$q,$id){
-	
+	Global $remove_inout_id;
 	$js=0;
 	$k=0;
 	$c=count($q);
@@ -62,17 +65,21 @@ function findtotal($all,$q,$id){
 			if($i!=$c){
 				
 					while($i<$c){
-						$js=$js+$q[$i];
-						if($all==$js){
-							$marki[]=$i;
-							$k++;
-							break;
-						}elseif($all>$js){
-							$marki[]=$i;
+						if(in_array($id[$i],$remove_inout_id)){
 							$i++;
-						}elseif($all<$js){
-							$js=$js-$q[$i];
-							$i++;
+						}else{	
+							$js=$js+$q[$i];
+							if($all==$js){
+								$marki[]=$i;
+								$k++;
+								break;
+							}elseif($all>$js){
+								$marki[]=$i;
+								$i++;
+							}elseif($all<$js){
+								$js=$js-$q[$i];
+								$i++;
+							}
 						}
 					}
 
@@ -82,13 +89,7 @@ function findtotal($all,$q,$id){
 		}
 		
 	}
-	//unset($ok);
-	//if(count($marki)>0){
-		//foreach($marki as $a => $b){
-		//	$ok[]=$id[$b];
-		//}
 		return $marki;
-	//}
 }
 
  $conn->close();

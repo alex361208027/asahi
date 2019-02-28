@@ -35,7 +35,7 @@ if ($conn->connect_error) {
 if($t5&&$t6){
 mysqli_query($conn,"INSERT INTO `t_teacher`(`campany`, `ordernum`, `banngo`, `quantity`, `hopedate` ) VALUES ('$t1','$t2','$t5','$t6','$t7')");
 }
-
+$insert_c_id=mysqli_insert_id($conn);
 	
 	if($asahiorder){	 
 		$sql3 = "SELECT * FROM `t_postudent` WHERE asahiorder = '$asahiorder' limit 1";
@@ -46,13 +46,10 @@ mysqli_query($conn,"INSERT INTO `t_teacher`(`campany`, `ordernum`, `banngo`, `qu
 			$asahiorder="";
 		}else{
 	
-		$result_c_id = mysqli_query($conn,"SELECT * FROM `t_teacher` WHERE campany='$t1' AND ordernum = '$t2' AND banngo='$t5' AND quantity='$t6' order by _id desc");
-		$row_c_id=$result_c_id->fetch_row();	$this_id=$row_c_id[12];
-		mysqli_query($conn,"INSERT INTO `t_poteacher`(`asahiorder`, `banngo`, `quantity`, `campany`, `campanyorder`, `customer_id`, `hopedate` ) VALUES ('$asahiorder','$t5','$t6','$row_c_id[0]','$row_c_id[1]','$this_id','$row_c_id[4]')");
-		
-		$result_po_id = mysqli_query($conn,"SELECT * FROM `t_poteacher` WHERE customer_id='$this_id'");
-		$row_po_id=$result_po_id->fetch_row();
-		mysqli_query($conn,"UPDATE `t_teacher` SET asahiorder='$asahiorder' , po_id='$row_po_id[9]' WHERE _id='$this_id'");
+		mysqli_query($conn,"INSERT INTO `t_poteacher`(`asahiorder`, `banngo`, `quantity`, `campany`, `campanyorder`, `customer_id`, `hopedate` ) VALUES ('$asahiorder','$t5','$t6','$t1','$t2','$insert_c_id','$t7')");
+		$insert_po_id=mysqli_insert_id($conn);
+
+		mysqli_query($conn,"UPDATE `t_teacher` SET asahiorder='$asahiorder' , po_id='$insert_po_id' WHERE _id='$insert_c_id' limit 1");
 		}
 	}
 
@@ -73,6 +70,7 @@ mysqli_query($conn,"INSERT INTO `t_teacher`(`campany`, `ordernum`, `banngo`, `qu
 	  <div class="php1word">希望交期<input type="date" name="t7" value="<?php echo $t7 ?>" /></div>
 	  <div class="php1word">朝日订单<input type="text" name="asahiorder" value="<?php echo $asahiorder ?>" placeholder="同时创建朝日订单"/></div>
 	  <input type="submit" value="添加产品" onclick="buttons(this)" /><br>
+	  <p><? //echo $insert_c_id."/".$insert_po_id; ?></p>
 	  </form>
 	  <hr>
 	  <form action="4.php" method="GET">
