@@ -464,6 +464,21 @@ function c_pi_zaikuduizhao(str){
 
 }
 
+function c_pi_qrcode(str){
+	
+			str="";
+			var checkbox=document.getElementsByName('checkboxsum');
+			str+="data=1";
+			for(i=0;i<checkbox.length;i++){
+				if(checkbox[i].checked){
+				str+="&checkbox[]="+checkbox[i].getAttribute('_id');
+				}
+			}
+			window.open("other/qrcode/qrcode.php?"+str,"_BLANK"); 
+			
+
+}
+
 
 function c_pi_shdate(str){
 	shdate=document.getElementById('SHdate').value
