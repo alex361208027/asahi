@@ -40,7 +40,7 @@ $quantityplus=0;
 if($t4==$quantityplus){
 	//echo "操作记录：<br>";
 	foreach($checkbox as $checkboxnum=>$checkboxid){
-			$campany=$t1.'<br>'.$t2;
+			$campany=$t1.$t2;
 		  mysqli_query($conn,"UPDATE `t_inout` SET outquantity='$getquantity[$iii]', outtime='$chukudate', campany='$campany', expressnum='$expressnum' WHERE _id = '$checkboxid' limit 1");
 			$iii=$iii+1;
 		}
