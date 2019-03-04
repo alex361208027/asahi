@@ -22,9 +22,19 @@ $search=$_GET['search'];$han=$_GET['han'];
 if($banngo&&$price){
 	if(mysqli_query($conn,"SELECT * FROM `t_poprice` WHERE banngo = '$banngo' AND campany = '$campany'")-> num_rows > 0){
 		echo $banngo."已经存在，<a href='poprice.php'>回到首页</a>";
+		?>
+		<form action="poprice.php" method="GET">
+		<input list="kehulist" class="inputlist" name="campany" style="width:150px" value="" placeholder="客户名" /><input type="text" name="banngo" style="width:200px" value="" placeholder="新番号"><input type="text" name="price" value="" placeholder="进价"><input type="text" name="sellprice" value="" placeholder="卖价"><input type="text" name="reel" value="" placeholder="pcs/reel"><input type="submit" value="添加">
+		</form>
+		<?
 	}else{
 		mysqli_query($conn,"INSERT INTO `t_poprice`(`campany`,`banngo`, `price`,`sellprice`, `reel`) VALUES ('$campany','$banngo','$price','$sellprice','$reel')");
 		echo $banngo." &nbsp  <-添加成功,<a href='poprice.php'>回到首页</a>";
+				?>
+		<form action="poprice.php" method="GET">
+		<input list="kehulist" class="inputlist" name="campany" style="width:150px" value="" placeholder="客户名" /><input type="text" name="banngo" style="width:200px" value="" placeholder="新番号"><input type="text" name="price" value="" placeholder="进价"><input type="text" name="sellprice" value="" placeholder="卖价"><input type="text" name="reel" value="" placeholder="pcs/reel"><input type="submit" value="添加">
+		</form>
+		<?
 	}
 }else{
 	if($han){
@@ -182,8 +192,18 @@ $i++;
 <option value="1">进价</option>
 <option value="2">卖价</option>
 </select><input type="text" id="price1" value="" placeholder="所有此价格">=><input type="text" id="price2" value="" placeholder="更新为新价格"><button onclick="pricechange()">确认更改</button>
-<br><br><br>
+<br><br>
+<button id="exceldownload">下载所有价格的EXCEL版本</button>
+<br><br>
 <script>
+$(document).ready(function(){
+	$("#exceldownload").click(function(){
+	 $.post("upload/poprice_excel.php",{ok:1},function(data){
+		window.location.href="upload/"+data;
+	 });
+});
+});
+
 function po_price(id){
 			str="";
 			str="campany="+document.getElementById('campany'+id).value+"&price="+document.getElementById('price'+id).value+"&sellprice="+document.getElementById('sellprice'+id).value+"&reel="+document.getElementById('reel'+id).value+"&other="+document.getElementById('other'+id).value+"&_id="+id;
