@@ -464,11 +464,11 @@ function c_pi_zaikuduizhao(str){
 
 }
 
-function c_pi_qrcode(str){
+function c_pi_qrcode(num){
 	
 			str="";
 			var checkbox=document.getElementsByName('checkboxsum');
-			str+="data=1";
+			str+="data="+num;
 			for(i=0;i<checkbox.length;i++){
 				if(checkbox[i].checked){
 				str+="&checkbox[]="+checkbox[i].getAttribute('_id');

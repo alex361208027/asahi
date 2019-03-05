@@ -45,6 +45,8 @@ if ($conn->query($sql) === TRUE) {
 		mysqli_query($conn,"INSERT INTO `t_postudent`(`asahiorder`, `orderdate`,`remark`, `person`) VALUES ('$asahiorder','$t3','$t1','{$_COOKIE['asahiuser']}')");
 		mysqli_query($conn,"INSERT INTO `t_note`(`user`, `note`, `time`, `remark`) VALUES ('{$_COOKIE['asahiuser']}','$asahiorder','$todaytime',7)");
 		mysqli_query($conn,"DELETE FROM `t_note` WHERE remark = 7 order by time asc LIMIT 1");
+		}else{
+			$note_asahiorder_exist="(提示：".$asahiorder."已存在，<br>新录入的品番将继续添加进该订单)";
 		}
 	}
 } else {
@@ -103,8 +105,9 @@ animation:myfirst 2s infinite;
 	  <div class="php1word">产品数量<input list="quantitylist" class="inputlist" name="t6" onchange="quantitychecktest(this.value)"/></div>
 	  <div class="php1word">希望交期<input type="date" class="hopedate" name="t7" value="<?php echo date('Y-m-d',strtotime('+2 month')); ?>" /></div>
 	  <? if($asahiorder){ ?>
-	  <div class="php1word">朝日订单<input type="text" name="asahiorder" value="<?php echo $asahiorder ?>" /></div>
+	  <div class="php1word">朝日订单<input type="text" name="asahiorder" value="<?php echo $asahiorder ?>" /></div><? echo $note_asahiorder_exist; ?>
 	  <? } ?>
+	  <br>
 	  <input type="submit" value="添加产品" onclick="buttons(this)"/><br>
 	</form>
  </div>	
