@@ -143,7 +143,10 @@ td:hover{
 </div>
 <datalist id="kehulist">
 <?php
-echo file_get_contents("ajax/write_data/campany.html");
+$campany_list=explode(",",file_get_contents("ajax/write_data/campany.html"));
+foreach($campany_list as $campany_list){
+	echo "<option value='".$campany_list."'>";
+}
 ?>	
 </datalist>
 <script>
