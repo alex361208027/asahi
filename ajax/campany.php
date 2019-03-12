@@ -25,7 +25,8 @@ echo $_id;
 
 $result=mysqli_query($conn,"SELECT * FROM `t_campany` WHERE 1 order by position asc");
 while($row=$result->fetch_row()){
-$txt=$txt."<option value='".$row[1]."'>";
+//$txt=$txt."<option value='".$row[1]."'>";
+$txt=$txt.$row[1].",";
 }
 fwrite(fopen("write_data/campany.html", "w"), $txt);
 

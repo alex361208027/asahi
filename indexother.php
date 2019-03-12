@@ -21,7 +21,10 @@ date_default_timezone_set('PRC');
 
 <datalist id="kehulist">
 <?php
-echo file_get_contents("ajax/write_data/campany.html");
+$campany_list=explode(",",file_get_contents("ajax/write_data/campany.html"));
+foreach($campany_list as $campany_lists){
+	echo "<option value='".$campany_lists."'>";
+}
 ?>	
 </datalist>
 
@@ -131,15 +134,17 @@ function newponum(str){
 -webkit-transition: all 0.4s;	/* Safari 和 Chrome */
 -o-transition: all 0.4s;
 }
+
 </style>
  
 <a name="findme_chanpin2"></a>
 <div class="indexother">
 <table cellpadding="0" cellspacing="0" width="100%" height="100%"><tr><td>
 <form action="2.php" method="post" target="xiabu" id="kehujiansuo">
-<input list="kehulist" class="inputlist" name="t1" value="" placeholder="取引先"/>
+<input list="kehulist" class="inputlist" name="t1" id="plus_t1" value="" placeholder="取引先"/>
+<input list="kehulist" class="inputlist" style="width:20px" value="" oninput="plus_campany(this)"/>
 <input type="text" name="t6" value="" placeholder="取引PO"/>
-<input type="text" name="t3" value="" placeholder="品番"/>
+<input type="text" name="t3" value="" placeholder="品番(多个品番用;隔开)"/>
 <input type="text" name="t4" value="" placeholder="数量"/>
 <input type="hidden" id="newdate" value="<?php echo date('Y-m-d',strtotime('-1 month')) ?>"/>
 <script>
@@ -149,8 +154,13 @@ $(document).ready(function(){
 		setTimeout(()=>{$(":checked").next().css({"background-color":"#562E37"});},100);
 	});
 	
-	
 });
+
+
+function plus_campany(str){
+	document.getElementById("plus_t1").value+=";"+str.value;
+	str.value="";
+}
 
 function changedate(str){
 	if(!str){

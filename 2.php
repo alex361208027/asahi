@@ -80,7 +80,15 @@ if($php4ordernum){
 }
 
 if($t1){
-	$tt1="AND campany = '$t1' ";
+	$explode_t1=explode(";",$t1);
+	for($i=0;$i<count($explode_t1);$i++){
+		if($i==0){
+		$each_t1="campany='".$explode_t1[$i]."'";
+		}else{
+		$each_t1=$each_t1." OR campany='".$explode_t1[$i]."'";	
+		}
+	}
+	$tt1="AND (".$each_t1.")";
 	$nopox=$nopox."<div class='nopox'>".$t1."</div>";
 }else{
 	$tt1="";
@@ -88,8 +96,17 @@ if($t1){
 if($t3){
 	
 	$t3 = qukongge($t3); 
+	$explode_t3=explode(";",$t3);
+	for($i=0;$i<count($explode_t3);$i++){
+		if($i==0){
+		$each_t3="banngo like '%".$explode_t3[$i]."%'";
+		}else{
+		$each_t3=$each_t3." OR banngo like '%".$explode_t3[$i]."%'";	
+		}
+	}
 	
-	$tt3="banngo like '%$t3%' ";
+	$tt3="(".$each_t3.") ";
+	//$tt3="banngo like '%$t3%' ";
 	$nopox=$nopox."<div class='nopox'>".$t3."</div>";
 }else{
 	$tt3="banngo <> '' ";
