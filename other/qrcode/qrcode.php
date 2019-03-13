@@ -67,6 +67,7 @@ yy{
 	}
 ////////////////////////////////////////function	
 
+$qrcode_api=file_get_contents("../qrcode_api.html");
 
 $servername = "localhost";
 $username = "root";
@@ -125,7 +126,7 @@ foreach($id as $id){
 		<table width="100%" cellpadding="5" class="qrcode_table">
 			<tr>
 			<td valign="top"><xx>品番</xx><br><? echo $row[0]; ?></td>
-			<td align="right" valign="top" rowspan="3"><img src="http://qr.liantu.com/api.php?text=%23<? echo $row[0]; ?>%23<? echo $row[1]; ?>" width='88px'/><br><yy>外箱&nbsp;</yy></td>
+			<td align="right" valign="top" rowspan="3"><img src="<? echo $qrcode_api; ?>%23<? echo $row[0]; ?>%23<? echo $row[1]; ?>" width='88px'/><br><yy>外箱&nbsp;</yy></td>
 			</tr>
 			<tr>
 			<td valign="top"><xx>数量</xx><br><? echo $row[1]; ?></td>
@@ -143,7 +144,7 @@ foreach($id as $id){
 		<table width="100%" cellpadding="5" class="qrcode_table">
 			<tr>
 			<td valign="top"><xx>品番</xx><br><? echo $row[0]; ?></td>
-			<td align="right" valign="top" rowspan="3"><img src="http://qr.liantu.com/api.php?text=%23<? echo $row[0]; ?>%23<? echo $reel[0]; ?>" width='88px'/><br><yy><? echo ($i+1)."/".$round ?>&nbsp;</yy></td>
+			<td align="right" valign="top" rowspan="3"><img src="<? echo $qrcode_api; ?>%23<? echo $row[0]; ?>%23<? echo $reel[0]; ?>" width='88px'/><br><yy><? echo ($i+1)."/".$round ?>&nbsp;</yy></td>
 			</tr>
 			<tr>
 			<td valign="top"><xx>数量</xx><br><? echo $reel[0]; ?></td>
