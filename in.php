@@ -111,7 +111,7 @@ td:hover{
 
 ?>
 			<tr><form action="putout.php" method="post" target="_blank">
-				<td align="right"><input type="checkbox" name="checkboxsum" _id="<? echo $row[9]; ?>" value="<?php echo $row[2]; ?>" /></td>
+				<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" _id="<? echo $row[9]; ?>" value="<?php echo $row[2]; ?>" /></td>
 				<td style="color:#C4C4C4"><?php echo $iii;$iii=$iii+1; ?></td>
 				<td style="max-width:45px;" bgcolor="<?php echo $bgcolor; ?>"><?php echo $state ?></td>
 				<td><a href="###" onclick="in_lotnum('<?php echo $row[9] ?>')"><u><?php echo $row[0] ?></u></a></td>
@@ -132,9 +132,11 @@ td:hover{
 <div class="message">
 <?php if(empty($in)){$nowpages=$nowpageend/50;echo "第".$nowpages."页";} ?> 
 <button type="button" onclick="method5('tableExcel')">导出Excel</button>  
-<button type="button" onclick="checkboxsum()">选中项合计</button> <button onclick="c_pi_qrcode()">QR-code</button>
+<button type="button" style="background-color:#FF7792" id="sum_show">选中项合计</button>
+<button type="button" onclick="checkboxsum_allno()">全选/全不选</button> <button type="button" onclick="checkboxsum_fan()">反选</button>
  &nbsp; <input type="number" style="width:40px" id="checkall1" value="1" onchange="checkall12()"/>~<input type="number" style="width:40px" id="checkall2" value="100" onchange="checkall12()"/>
-<form onsubmit="return false;" style="display:inline-block;">
+ <button onclick="c_pi_qrcode()">QR-code</button>
+ <form onsubmit="return false;" style="display:inline-block;">
 <input type="submit" value=" 【検索】 " onclick="saerch_lotnum()"><a id="href" href=""></a>
  <input type="text" id="search_lotnum" value="<?php echo $search_lotnum ?>" placeholder="检索lotnum"/><input type="text" id="search_banngo" value="<?php echo $search_banngo ?>" placeholder="检索番号"/><input type="text" id="search_campany" list="kehulist" value="<?php echo $search_campany ?>" placeholder="检索客户"/>
 &nbsp; <?php if(!$in){ ?>出货<?php } ?>日期<input type="date" id="datestart" value="<?php echo $datestart ?>" onchange="if(document.getElementById('dateend').value==''){document.getElementById('dateend').value=this.value;}"/>~<input type="date" id="dateend" value="<?php echo $dateend ?>"/>
