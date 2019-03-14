@@ -31,8 +31,10 @@ function buttons(obj){
 	setTimeout(() => {obj.style.visibility='visible';},15000);
 }
 
+
+var ss=document.getElementsByName('checkboxsum');
+
 function checkboxsum(){
-	var ss=document.getElementsByName('checkboxsum');
 	sum=0;chencednumber=0;
 	for(i=0;i<ss.length;i++){
 		if(ss[i].checked){
@@ -40,11 +42,38 @@ function checkboxsum(){
 			sum=sum+Number(ss[i].value);
 		}
 	}
-alert ("共选中"+chencednumber+"个，合计：【"+sum+"】");
+document.getElementById("sum_show").innerHTML="共选中"+chencednumber+"个，合计："+sum+"";
 }
-function checkall12(){
-	var ss=document.getElementsByName('checkboxsum');
 
+function checkboxsum_fan(){
+	for(i=0;i<ss.length;i++){
+		if(ss[i].checked){
+			ss[i].checked=false;
+		}else{
+			ss[i].checked=true;
+		}
+	}
+	checkboxsum();
+}
+var checkboxsum_all_no=1;
+function checkboxsum_allno(){
+	if(checkboxsum_all_no==1){
+		for(i=0;i<ss.length;i++){
+			ss[i].checked=true;
+		}
+		checkboxsum_all_no=2;
+	}else{
+		for(i=0;i<ss.length;i++){
+			ss[i].checked=false;
+		}
+		checkboxsum_all_no=1;
+	}
+	checkboxsum();
+
+}
+
+
+function checkall12(){
 
 	for(i=0;i<ss.length;i++){
 		ss[i].checked = false;
@@ -52,7 +81,7 @@ function checkall12(){
 	for(i=(Number(document.getElementById('checkall1').value)-1);i<document.getElementById('checkall2').value;i++){
 		ss[i].checked = true;
 	}
-	
+	checkboxsum();	
 }
 
 //////
