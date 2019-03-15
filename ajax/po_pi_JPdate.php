@@ -18,7 +18,7 @@ if($JPdate){
 	$row=$result->fetch_row();
 	if(!empty($row[10])&&!empty($row[6])){
 		
-		$hopedate5 = date('Y-m-d',(strtotime('+5 days',strtotime($JPdate))));
+		$hopedate5 = date('Y-m-d',(strtotime('+6 days',strtotime($JPdate))));
 		if($row[4] && $hopedate5<=$row[4]){
 		$SHdate= date('Y-m-d',(strtotime('-2 days',strtotime($row[4]))));
 		}else{

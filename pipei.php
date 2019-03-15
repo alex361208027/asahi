@@ -31,7 +31,7 @@ if($customerradio&&$asahiradio){
 			mysqli_query($conn,"UPDATE `t_teacher` SET asahiorder='', JPdate='',SHdate='',po_id='' WHERE _id = '$asahiradio_result[10]'");
 		}
 		
-		$hopedate5 = date('Y-m-d',(strtotime('+5 days',strtotime($asahiradio_result[3]))));
+		$hopedate5 = date('Y-m-d',(strtotime('+6 days',strtotime($asahiradio_result[3]))));
 		if($hopedate5<=$customerradio_result[4]){
 		$SHdate= date('Y-m-d',(strtotime('-2 days',strtotime($customerradio_result[4]))));
 		}else{

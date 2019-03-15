@@ -292,7 +292,7 @@ function po_pi_lotnum(str){
 
 </script>
 <button type="button" onclick="method5('tableExcel')">导出Excel</button>  
-<button type="button" style="background-color:#FF7792" id="sum_show">选中项合计</button>
+<button type="button" style="background-color:#FF7792" onclick="checkboxsum()" id="sum_show">选中项合计</button> 
 <button type="button" onclick="checkboxsum_allno()">全选/全不选</button> <button type="button" onclick="checkboxsum_fan()">反选</button>
  &nbsp; <input type="number" style="width:40px" id="checkall1" value="1" onchange="checkall12()"/>~<input type="number" style="width:40px" id="checkall2" value="99" onchange="checkall12()"/>
 <a href="" id="button3" target="_blank"></a><button onclick="mycheckbox(2)">选中项合并统计</button> &nbsp; <button onclick="mycheckbox(1)">选中项生成朝日订单</button>

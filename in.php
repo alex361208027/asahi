@@ -86,7 +86,7 @@ td:hover{
 <table id="tableExcel" cellpadding="5" cellspacing="0" width="100%" style="text-align:center;font-size:12px;">
 			<tr align="center" style="background-color:black;color:white;height:45px;">
 				<td></td>
-                <td>No</td>
+                <td>#</td>
 				<td>状态</td>
 				<td>Lot No.</td>
 				<td>番号</td>
@@ -132,7 +132,7 @@ td:hover{
 <div class="message">
 <?php if(empty($in)){$nowpages=$nowpageend/50;echo "第".$nowpages."页";} ?> 
 <button type="button" onclick="method5('tableExcel')">导出Excel</button>  
-<button type="button" style="background-color:#FF7792" id="sum_show">选中项合计</button>
+<button type="button" style="background-color:#FF7792" onclick="checkboxsum()" id="sum_show">选中项合计</button> 
 <button type="button" onclick="checkboxsum_allno()">全选/全不选</button> <button type="button" onclick="checkboxsum_fan()">反选</button>
  &nbsp; <input type="number" style="width:40px" id="checkall1" value="1" onchange="checkall12()"/>~<input type="number" style="width:40px" id="checkall2" value="100" onchange="checkall12()"/>
  <button onclick="c_pi_qrcode()">QR-code</button>
