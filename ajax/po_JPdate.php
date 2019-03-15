@@ -17,7 +17,7 @@ $JPdate=$_GET['JPdate'];$hopedate=$_GET['hopedate'];
 
 mysqli_query($conn,"UPDATE `t_poteacher` SET JPdate='$JPdate' WHERE _id = '$_id' limit 1");
 if($customer_id){
-		$hopedate5 = date('Y-m-d',(strtotime('+5 days',strtotime($JPdate))));
+		$hopedate5 = date('Y-m-d',(strtotime('+6 days',strtotime($JPdate))));
 		if($hopedate && $hopedate5<=$hopedate){
 		$SHdate= date('Y-m-d',(strtotime('-2 days',strtotime($hopedate))));
 		}else{
