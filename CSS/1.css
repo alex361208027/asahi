@@ -142,7 +142,7 @@ button:hover{
 
 
 .message{
-	position:absolute;top:5px;left:5px;color:#202057;font-size:15px;
+	position:absolute;top:5px;left:5px;color:#202057;font-size:15px;z-index:999;
 }
 
 .mybutton{
@@ -194,12 +194,65 @@ button:hover{
 	position:absolute;bottom:0px;width:100px;height:35px;font-size:20px;text-align:center;padding-top:10px;
 }
 
-.xiaokuan{
-	-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;background:#FFFFCC;display:inline-block;padding:5px
+
+.hide{
+	display:none;position:relative;
 }
 
+.hide ul{
+	position:absolute;min-width:40px;margin:0px;margin-top:-10px;font-size:14px;
+}
 
+.hide ul li{
+	display:none;padding:10px 20px 10px 30px;background-color:#FFFFEE;cursor:pointer;font-size:12px;
+}
+.hide ul li:hover{
+	background-color:#BBFFC9;font-weight:bold;
+}
+.hide ul:hover > li{
+	display:block;
+}
 
+.hide_button{
+	width:6px;height:6px;background:#C0B6B9;display:inline-block;
+	-webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  
+  animation:hide_button 2s infinite;
+-moz-animation:hide_button 2s infinite; /* Firefox */
+-webkit-animation:hide_button 2s infinite; /* Safari and Chrome */
+-o-animation:hide_button 2s infinite; /* Opera */
+  
+}
+
+@keyframes hide_button
+{
+0%   {background: #C0B6B9;}
+50% {background: black;}
+100% {background: #C0B6B9;}
+}
+
+@-moz-keyframes hide_button /* Firefox */
+{
+0%   {background: #C0B6B9;}
+50% {background: black;}
+100% {background: #C0B6B9;}
+}
+
+@-webkit-keyframes hide_button /* Safari 和 Chrome */
+{
+0%   {background: #C0B6B9;}
+50% {background: black;}
+100% {background: #C0B6B9;}
+}
+
+@-o-keyframes hide_button /* Opera */
+{
+0%   {background: #C0B6B9;}
+50% {background: black;}
+100% {background: #C0B6B9;}
+}
 ///////////////////////ajaxdiv
 .ajasdivout{
 	position:fixed;right:0px;top:18px;min-height:400px;width:350px;background-color:white;

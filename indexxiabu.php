@@ -276,25 +276,6 @@ $(document).ready(function(){
 							
 							<?php } ?>
 							
-							
-							<?php 
-							//$url=''; 
-							//$str=file_get_contents($url); 
-							//$reg = "#CDATA(.*)</title>#";
-							
-							//preg_match_all($reg , $str , $matches);
-							?>
-							<!--<table width="100%" style="font-size:13px;">
-							<tr align="right"><td><?php //echo substr($matches[0][2],5) ?></td></tr>
-							<tr align="right" style="color:#888888"><td><?php //echo substr($matches[0][3],5) ?></td></tr>
-							<tr align="right"><td><?php //echo substr($matches[0][4],5) ?></td></tr>
-							<tr align="right" style="color:#888888"><td><?php //echo substr($matches[0][5],5) ?></td></tr>
-							<tr align="right"><td><?php //echo substr($matches[0][6],5) ?></td></tr>
-							<tr align="right" style="color:#888888"><td><?php //echo substr($matches[0][7],5) ?></td></tr>
-							<tr align="right"><td><?php //echo substr($matches[0][8],5) ?></td></tr>
-							<tr align="right" style="color:#888888"><td><?php //echo substr($matches[0][9],5); ?></td></tr>
-							
-							</table>-->
 						</div>
 					</td>
 				</tr>
@@ -305,7 +286,7 @@ $(document).ready(function(){
 						
 						<div class="chuli">
 						<div style="color:#FF6685">朝日PO</div>
-						<div class="chuli1"><a id="jijiang" href="indexother.php#findme_chanpin5" target="shangbu"></a><a id="jijiang1" href="6.php?" onclick="document.getElementById('jijiang').click();"><?php echo $weichuli[0]; ?></a></div>
+						<div class="chuli1"><a href="6.php?" onclick="window.open('indexother.php#findme_chanpin5','shangbu');"><?php echo $weichuli[0]; ?></a></div>
 						<div class="chuli2">数据更新于<br><?php echo $weichuli[1]; ?></div>
 						</div>
 						</a>
@@ -314,7 +295,7 @@ $(document).ready(function(){
 						
 						<div class="chuli">
 						<div style="color:#6464E0">客様PO</div>
-						<div class="chuli1"><a id="dengdai" href="indexother.php#findme_chanpin2" target="shangbu"></a><a href="2.php" onclick="document.getElementById('dengdai').click();"><?php echo $weichuli[0]; ?></a></div>
+						<div class="chuli1"><a href="2.php" onclick="window.open('indexother.php#findme_chanpin2','shangbu');"><?php echo $weichuli[0]; ?></a></div>
 						<div class="chuli2">数据更新于<br><?php echo $weichuli[1]; ?></div>
 						</div>
 						

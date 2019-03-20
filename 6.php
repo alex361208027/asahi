@@ -292,11 +292,22 @@ function po_pi_lotnum(str){
 
 </script>
 <button type="button" onclick="method5('tableExcel')">导出Excel</button>  
-<button type="button" style="background-color:#FF7792" onclick="checkboxsum()" id="sum_show">选中项合计</button> 
 <button type="button" onclick="checkboxsum_allno()">全选/全不选</button> <button type="button" onclick="checkboxsum_fan()">反选</button>
- &nbsp; <input type="number" style="width:40px" id="checkall1" value="1" onchange="checkall12()"/>~<input type="number" style="width:40px" id="checkall2" value="99" onchange="checkall12()"/>
-<a href="" id="button3" target="_blank"></a><button onclick="mycheckbox(2)">选中项合并统计</button> &nbsp; <button onclick="mycheckbox(1)">选中项生成朝日订单</button>
-
+<input type="number" style="width:40px" id="checkall1" value="1" onchange="checkall12()"/>~<input type="number" style="width:40px" id="checkall2" value="99" onchange="checkall12()"/>
+<button type="button" style="background-color:#FF7792" onclick="checkboxsum()" id="sum_show">选中项合计</button>
+<a href="" id="button3" target="_blank"></a>
+<div class="hide" title="选中项批量操作">
+<ul><div class="hide_button"></div> <div class="hide_button"></div> <div class="hide_button"></div>
+<li></li>
+<li onclick="mycheckbox(2)">合并统计</li>
+<li onclick="mycheckbox(1)">生成朝日订单</li>
+<li><hr></li>
+<li><input type="date" id="JPdate" value=""></li>
+<li onclick="po_pi_JPdate()">更改日本发货日</li>
+<li onclick="mycheckbox(4)">lotnum入库</li>
+<li></li>
+</ul>
+</div>
 </div>
 <form action="6.php" method="post">
 <?php $nowpage=$nowpage+100; ?>
@@ -309,10 +320,6 @@ function po_pi_lotnum(str){
 <?php }elseif($jjj<1){echo "无内容：请尝试更改检索";}?>
 </form>
 <br><br>
-<div class="xiaokuan">
-批量日本发货日：<input type="date" id="JPdate" value=""><button onclick="po_pi_JPdate()">【批量】选中项日本发货日</button>
-<button onclick="mycheckbox(4)">【批量】lotnum</button>
-</div>
 <div class="tishi">朝日检索页面</div>
 <br><br>
 
