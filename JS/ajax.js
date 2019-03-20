@@ -324,6 +324,7 @@ function c_chuku_checkbox(){
 
 function c_pi_invoice(str){
 	
+	
 	if(confirm("确认于此日期["+document.getElementById('SHdate').value+"]开具发票")){
 	
 			str="";
@@ -372,10 +373,12 @@ function c_pi_invoice(str){
 function c_pi_chuku(str){
 	
 shdate=document.getElementById('SHdate').value;
-expressnum=document.getElementById('expressnum').value;
+expressnum=prompt("请输入运单号（后三位）：");
+
+
 if(shdate&&expressnum){
 	
-	if(confirm("确认是否执行出库? 日期："+shdate+"，运单号："+expressnum)){
+	if(confirm("确认是否执行出库? 出库日期："+shdate+"，运单号："+expressnum)){
 	
 			str="";
 			var checkbox=document.getElementsByName('checkboxsum');
@@ -420,7 +423,7 @@ if(shdate&&expressnum){
 			
 	}	
 }else{
-alert("日期或运单号未输入");
+alert("日期或运单号错误");
 }	
 	
 }
@@ -1012,6 +1015,7 @@ function po_ruku_complete(str){
 
 
 function po_pi_JPdate(str){
+	if(document.getElementById('JPdate').value){
 	if(confirm('请确认更改出货日期为：'+document.getElementById('JPdate').value)){
 	
 	
@@ -1056,7 +1060,10 @@ function po_pi_JPdate(str){
 			xmlhttp.open("GET","./ajax/po_pi_JPdate.php?"+str,true);
 			xmlhttp.send();
 			
-	}		
+	}
+	}else{
+		alert("日期不正确");
+	}	
 	
 }
 

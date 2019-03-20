@@ -43,6 +43,17 @@ function checkboxsum(){
 		}
 	}
 document.getElementById("sum_show").innerHTML="共选中"+chencednumber+"个，合计："+sum+"";
+
+if(chencednumber){
+	$(document).ready(function(){
+		$(".hide").fadeIn().css("display","inline-block");
+	});
+}else{
+	$(document).ready(function(){
+		$(".hide").fadeOut();
+	});
+}
+
 }
 
 function checkboxsum_fan(){

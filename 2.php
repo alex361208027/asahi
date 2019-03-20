@@ -350,11 +350,29 @@ function td_remove(){
 
 </script>
 <button type="button" onclick="td_remove();setTimeout(()=>{method5('tableExcel')},500);setTimeout(()=>{location.reload()},2000);">导出Excel</button>
+<button type="button" onclick="checkboxsum_allno()">全选/全不选</button> <button type="button" onclick="checkboxsum_fan()">反选</button> 
+<input type="number" style="width:40px" id="checkall1" value="1" onchange="checkall12()"/>~<input type="number" style="width:40px" id="checkall2" value="99" onchange="checkall12()"/>
 <button type="button" style="background-color:#CCCCFF" onclick="checkboxsum()" id="sum_show">选中项合计</button>
-<button type="button" onclick="checkboxsum_allno()">全选/全不选</button> <button type="button" onclick="checkboxsum_fan()">反选</button>
- &nbsp; <input type="number" style="width:40px" id="checkall1" value="1" onchange="checkall12()"/>~<input type="number" style="width:40px" id="checkall2" value="99" onchange="checkall12()"/>
-<a href="" id="button3" target="_blank"></a><button onclick="mycheckbox(2)">选中项合并统计</button> &nbsp; <button onclick="mycheckbox(1)">选中项生成送货单</button> &nbsp; <button onclick="c_pi_zaikuduizhao()">查看在库批次号</button> 
-<button onclick="c_pi_qrcode(2)">QR-code</button>
+<a href="" id="button3" target="_blank"></a> 
+ <div class="hide" title="选中项批量操作">
+<ul><div class="hide_button"></div> <div class="hide_button"></div> <div class="hide_button"></div>
+<li></li>
+<li onclick="mycheckbox(2)">合并统计</li>
+<li onclick="mycheckbox(1)">生成送货单</li>
+<li onclick="c_pi_zaikuduizhao()">查看在库批次号</li>
+<li onclick="c_pi_qrcode(2)">生成QR-code</li>
+<li><hr></li>
+<li><input type="date" id="SHdate" value="<?php echo date('Y-m-d') ?>"></li>
+<li onclick="c_pi_shdate()">更改上海发货日</li> 
+<li onclick="c_pi_chuku()">出库</li>
+<li onclick="c_pi_invoice()">开具发票</li>
+<li></li>
+</ul>
+</div>
+
+
+
+
 </div>
 <form action="2.php" method="post">
 <?php $nowpage=$nowpage+100; ?>
@@ -367,11 +385,7 @@ function td_remove(){
 <?php }elseif($jjj<1){echo "无内容：请尝试更改检索";} ?>
 </form>
 <br><br>
-<div class="xiaokuan">
-<button onclick="c_pi_shdate()">【批量】选中项上海发货日</button> &nbsp; 【批量】日期：<input type="date" id="SHdate" value="<?php echo date('Y-m-d') ?>">
-<button onclick="c_pi_chuku()">【批量】选中项出库</button> &nbsp; <input type="text" id="expressnum" value="" placeholder="运单号后三位">||
-<button onclick="c_pi_invoice()">【批量】选中项开具发票</button>
-</div>
+
 <div class="tishi">客户检索页面</div>
 
 <br><br>

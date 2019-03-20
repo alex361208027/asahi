@@ -64,8 +64,9 @@ if($logintime){
 		
 		
 		.caidanxuanxiao{
-			padding:8px;color:white;font-size:12px;padding-left:15px;position:relative;
-			
+			padding:10px;color:white;font-size:12px;padding-left:15px;position:relative;
+			border-bottom:1px solid #6D5F62;
+			cursor:pointer;
 			transition:all 0.5s;
 			-moz-transition:all 0.5s;
 			-webkit-transition:all 0.5s;
@@ -79,7 +80,7 @@ if($logintime){
 		
 		}
 		li{
-			padding:9px;min-width:90px;
+			padding:10px;min-width:90px;
 		}
 		li,ul{		
 			color:white;
@@ -123,13 +124,15 @@ transition-delay: 0.8s;
 		<ul>
 				<li><a href="index.php" >回到首页</a></li>
 				<li><a href="index.php" target="_blank">新建页面</a></li>
-			</ul></div></a>
+			</ul>
+		</div></a>
 			
 		<a href="indexother.php#findme_xinjian1" target="shangbu"><div class="caidanxuanxiao" ><img src="img/new.png" /> &nbsp; 新建订单 >
 		<ul>
 				<li><a href="indexother.php#findme_xinjian1" target="shangbu">客户订单</a></li>
 				<li><a href="indexother.php#findme_xinjian2" target="shangbu">朝日订单</a></li>
-			</ul></div></a>
+			</ul>
+		</div></a>
 
 		<a href="indexother.php#findme_chanpin5" target="shangbu"><div class="caidanxuanxiao"><img src="img/order.png" /> &nbsp; 搜索朝日 >
 			<ul>
@@ -138,22 +141,25 @@ transition-delay: 0.8s;
 				<li><a href="indexother.php#findme_pipei" target="shangbu">订单匹配</a></li>
 				<li><a href="indexother.php#findme_chanpin5" target="shangbu">検 &nbsp; 索</a></li>
 				
-			</ul></div></a>
+			</ul>
+		</div></a>
 		<a href="indexother.php#findme_chanpin2" target="shangbu"><div class="caidanxuanxiao"><img src="img/user.png" /> &nbsp; 查询客户 >
 			<ul>
 				<li><a href="indexother.php#findme_kehusousuo2" target="shangbu">客户订单</a></li>
 				<li><a href="indexother.php#findme_pipei" target="shangbu">订单匹配</a></li>
 				<li><a href="indexother.php#findme_chanpin2" target="shangbu">検 &nbsp; 索</a></li>
-			</ul></div></a>
+			</ul>
+		</div></a>
 
 		<a href="indexother.php#findme_zaiku" id="zaiku" target="shangbu"><div class="caidanxuanxiao"><img src="img/zaiku.png" /> &nbsp; 在 &nbsp; 库 >
 			<ul>
 				<li><form action="in.php" id="zaiku1" method="post" target="xiabu"><input type="hidden" name="in" value="in"/></form><a href="###" onclick="document.getElementById('zaiku1').submit();document.getElementById('zaiku').click()">目前在库</a></li>
 				<li><a href="in.php" target="xiabu" onclick="document.getElementById('zaiku').click()">出库记录</a></li>
 				<li><a href="putin.php" target="xiabu" onclick="document.getElementById('zaiku').click()">手动入库</a></li>
-			</ul></div></a>
-		<a href="#" onclick="document.getElementById('namecard2').click();document.getElementById('namecard1').click();"><div class="caidanxuanxiao" name="caidanxuanxiao" onclick="caidancolor(5)"><img src="img/namecard.png" /> &nbsp; 名 &nbsp; 片<a id="namecard1" href="indexother.php#findme_namecard" target="shangbu"></a><a id="namecard2" href="namecard.php" target="xiabu"></a></div></a>
-		<a href="#" onclick="document.getElementById('project2').click();document.getElementById('project1').click();"><div class="caidanxuanxiao" name="caidanxuanxiao" onclick="caidancolor(6)"><img src="img/project.png" /> &nbsp; 日 &nbsp; 志<a id="project1" href="indexother.php#findme_project" target="shangbu"></a><a id="project2" href="project.php" target="xiabu"></a></div></a>
+			</ul>
+		</div></a>
+		<div class="caidanxuanxiao" name="caidanxuanxiao" onclick="window.open('namecard.php','xiabu');window.open('indexother.php#findme_namecard','shangbu');caidancolor(5)"><img src="img/namecard.png" /> &nbsp; 名 &nbsp; 片</div>
+		<div class="caidanxuanxiao" name="caidanxuanxiao" onclick="window.open('project.php','xiabu');window.open('indexother.php#findme_project','shangbu');caidancolor(6)"><img src="img/project.png" /> &nbsp; 日 &nbsp; 志</div>
 		
 		<a href="indexother.php#hometop" target="shangbu"><div class="caidanxuanxiao"><img src="img/total.png"/> &nbsp; 统 &nbsp; 计 >
 		<ul>
