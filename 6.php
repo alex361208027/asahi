@@ -142,12 +142,6 @@ if($nopox){
 ?>
 <body style="font-size:12px;min-width:800px">
 <style>
-tr:hover{
-	background-color:#FFCCCC;
-}
-td:hover{
-	color:white;
-}
 table{border-collapse: collapse;}
 .tabletr{
 	border-top:solid 1px #d0dee5
@@ -294,11 +288,15 @@ function po_pi_lotnum(str){
 <button type="button" onclick="method5('tableExcel')">导出Excel</button>  
 <button type="button" onclick="checkboxsum_allno()">全选/全不选</button> <button type="button" onclick="checkboxsum_fan()">反选</button>
 <input type="number" style="width:40px" id="checkall1" value="1" onchange="checkall12()"/>~<input type="number" style="width:40px" id="checkall2" value="99" onchange="checkall12()"/>
-<button type="button" style="background-color:#FF7792" onclick="checkboxsum()" id="sum_show">选中项合计</button>
 <a href="" id="button3" target="_blank"></a>
-<div class="hide" title="选中项批量操作">
-<ul><div class="hide_button"></div> <div class="hide_button"></div> <div class="hide_button"></div>
-<li></li>
+
+</div>
+<div class="sum_show">
+<table width="100%" height="100%" align="center" valign="middle"><tr><td>
+ <div onclick="checkboxsum()" id="sum_show" align="center">选中项合计</div>
+</tr></td></table>
+<ul class="hide" title="选中项批量操作">
+	<li></li>
 <li onclick="mycheckbox(2)">合并统计</li>
 <li onclick="mycheckbox(1)">生成朝日订单</li>
 <li><hr></li>
@@ -306,8 +304,8 @@ function po_pi_lotnum(str){
 <li onclick="po_pi_JPdate()">更改日本发货日</li>
 <li onclick="mycheckbox(4)">lotnum入库</li>
 <li></li>
-</ul>
-</div>
+ </ul>
+ <div class="sum_show_x">X</div>
 </div>
 <form action="6.php" method="post">
 <?php $nowpage=$nowpage+100; ?>

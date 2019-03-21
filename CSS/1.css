@@ -49,6 +49,14 @@ input,select,textarea{outline:none;}
 a{text-decoration:none;}
 
 
+
+#myDiv table tr:hover{
+	background-color:#AAAAFF;
+}
+#myDiv table tr td:hover{
+	color:white;
+}
+
 .tiao{
 	padding:3px 8px 3px 8px;background-color:#666666;color:white;
 }
@@ -195,64 +203,41 @@ button:hover{
 }
 
 
-.hide{
-	display:none;position:relative;
+.sum_show{
+	position:fixed;background-color:#EEEEEE;cursor:pointer;
+	top:50%;right:50px;
+	display:none;
+	padding:20px;
+	-webkit-box-shadow: 0px 14px 18px #BBBBBB;
+  -moz-box-shadow: 0px 14px 18px #BBBBBB;
+  box-shadow: 0px 14px 18px #BBBBBB;
 }
 
-.hide ul{
-	position:absolute;min-width:40px;margin:0px;margin-top:-10px;font-size:14px;
-}
-
-.hide ul li{
-	display:none;padding:10px 20px 10px 30px;background-color:#FFFFEE;cursor:pointer;font-size:12px;
-}
-.hide ul li:hover{
-	background-color:#BBFFC9;font-weight:bold;
-}
-.hide ul:hover > li{
+.sum_show:hover > .hide{
 	display:block;
 }
 
-.hide_button{
-	width:6px;height:6px;background:#C0B6B9;display:inline-block;
-	-webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  
-  animation:hide_button 2s infinite;
--moz-animation:hide_button 2s infinite; /* Firefox */
--webkit-animation:hide_button 2s infinite; /* Safari and Chrome */
--o-animation:hide_button 2s infinite; /* Opera */
-  
+.sum_show_x{
+	position:absolute;right:20px;top:20px;
 }
 
-@keyframes hide_button
-{
-0%   {background: #C0B6B9;}
-50% {background: black;}
-100% {background: #C0B6B9;}
+.hide{
+	position:absolute;min-width:40px;margin:-150% 0px 0px -120%;font-size:14px;display:none;
+	-webkit-box-shadow: 0px 14px 18px #BBBBBB;
+  -moz-box-shadow: 0px 14px 18px #BBBBBB;
+  box-shadow: 0px 14px 18px #BBBBBB;
+
 }
 
-@-moz-keyframes hide_button /* Firefox */
-{
-0%   {background: #C0B6B9;}
-50% {background: black;}
-100% {background: #C0B6B9;}
+.hide li{
+	padding:10px 20px 10px 30px;background-color:#FFFFEE;font-size:12px;
 }
 
-@-webkit-keyframes hide_button /* Safari 和 Chrome */
-{
-0%   {background: #C0B6B9;}
-50% {background: black;}
-100% {background: #C0B6B9;}
+.hide li:hover{
+	background-color:#77FF77;
 }
 
-@-o-keyframes hide_button /* Opera */
-{
-0%   {background: #C0B6B9;}
-50% {background: black;}
-100% {background: #C0B6B9;}
-}
+
 ///////////////////////ajaxdiv
 .ajasdivout{
 	position:fixed;right:0px;top:18px;min-height:400px;width:350px;background-color:white;

@@ -70,13 +70,6 @@ if($in){
 $result=mysqli_query($conn,$sql);
 ?>
 <style>
-tr:hover{
-	background-color:#FFCCCC;
-}
-td:hover{
-	background-color:#FF7777;
-	color:white;
-}
 .message input{
 	max-width:150px;
 }
