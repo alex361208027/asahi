@@ -291,25 +291,24 @@ table{border-collapse: collapse;}
 </tr>
 <?php } ?>
 </table></div>
-<div class="message">
-
 <script>
 function mycheckbox(str){
-	var button=document.getElementById('button3');
+
+	var button="";
 	if(str==1){
-		button.href="songhuodan.php?";
+		button="songhuodan.php?";
 	}else if(str==2){
-		button.href="hebing.php?";
+		button="hebing.php?";
 	}
 	
 	var ss=document.getElementsByName('checkboxsum');
 	for(i=0;i<ss.length;i++){
 		if(ss[i].checked){
-		button.href+="checkbox[]="+ss[i].getAttribute("_id")+"&";
+		button+="checkbox[]="+ss[i].getAttribute("_id")+"&";
 		}
 	}
-	button.href+="end=2";
-	button.click();
+	button+="end=2";
+	window.open(button,"_BLANK");
 }
 
 $(document).ready(function(){
@@ -343,13 +342,9 @@ function td_remove(){
 }
 
 </script>
-<button type="button" onclick="td_remove();setTimeout(()=>{method5('tableExcel')},500);setTimeout(()=>{location.reload()},2000);">导出Excel</button>
-<button type="button" onclick="checkboxsum_allno()">全选/全不选</button> <button type="button" onclick="checkboxsum_fan()">反选</button> 
-<input type="number" style="width:40px" id="checkall1" value="1" onchange="checkall12()"/>~<input type="number" style="width:40px" id="checkall2" value="99" onchange="checkall12()"/>
-<!--<button type="button" style="background-color:#CCCCFF" onclick="checkboxsum()" id="sum_show">选中项合计</button>-->
-<a href="" id="button3" target="_blank"></a> 
 
-</div>
+<? echo file_get_contents("templates/table_select.html"); ?>
+
 <div class="sum_show">
 <table width="100%" height="100%" align="center" valign="middle"><tr><td>
  <div onclick="checkboxsum()" id="sum_show" align="center">选中项合计</div>

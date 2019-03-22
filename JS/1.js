@@ -72,23 +72,25 @@ function checkboxsum_fan(){
 	}
 	checkboxsum();
 }
-var checkboxsum_all_no=1;
-function checkboxsum_allno(){
-	if(checkboxsum_all_no==1){
+
+function checkboxsum_all(){
+	
 		for(i=0;i<ss.length;i++){
 			ss[i].checked=true;
 		}
-		checkboxsum_all_no=2;
-	}else{
-		for(i=0;i<ss.length;i++){
-			ss[i].checked=false;
-		}
-		checkboxsum_all_no=1;
-	}
+		
 	checkboxsum();
 
 }
 
+function checkboxsum_allno(){
+	
+		for(i=0;i<ss.length;i++){
+			ss[i].checked=false;
+		}
+	checkboxsum();
+
+}
 
 function checkall12(){
 
@@ -100,6 +102,9 @@ function checkall12(){
 	}
 	checkboxsum();	
 }
+
+
+
 
 //////
 function po_ruku_plus(str){
