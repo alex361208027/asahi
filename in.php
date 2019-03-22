@@ -122,13 +122,13 @@ $result=mysqli_query($conn,$sql);
 
 </table></div>
 <br><br>
+
 <div class="message">
 <?php if(empty($in)){$nowpages=$nowpageend/50;echo "第".$nowpages."页";} ?> 
 <button type="button" onclick="method5('tableExcel')">导出Excel</button>  
-<button type="button" style="background-color:#FF7792" onclick="checkboxsum()" id="sum_show">选中项合计</button> 
-<button type="button" onclick="checkboxsum_allno()">全选/全不选</button> <button type="button" onclick="checkboxsum_fan()">反选</button>
+<button type="button" onclick="checkboxsum_all()">全选</button> <button type="button" onclick="checkboxsum_allno()">全不选</button> <button type="button" onclick="checkboxsum_fan()">反选</button>
  &nbsp; <input type="number" style="width:40px" id="checkall1" value="1" onchange="checkall12()"/>~<input type="number" style="width:40px" id="checkall2" value="100" onchange="checkall12()"/>
- <button onclick="c_pi_qrcode()">QR-code</button>
+ <!--<button onclick="c_pi_qrcode()">QR-code</button> -->
  <form onsubmit="return false;" style="display:inline-block;">
 <input type="submit" value=" 【検索】 " onclick="saerch_lotnum()"><a id="href" href=""></a>
  <input type="text" id="search_lotnum" value="<?php echo $search_lotnum ?>" placeholder="检索lotnum"/><input type="text" id="search_banngo" value="<?php echo $search_banngo ?>" placeholder="检索番号"/><input type="text" id="search_campany" list="kehulist" value="<?php echo $search_campany ?>" placeholder="检索客户"/>
@@ -136,6 +136,15 @@ $result=mysqli_query($conn,$sql);
 </form>
 
 </div>
+
+<div class="sum_show">
+<table width="100%" height="100%" align="center" valign="middle"><tr><td>
+ <div onclick="checkboxsum()" id="sum_show" align="center">选中项合计</div>
+</tr></td></table>
+ <div class="sum_show_x">X</div>
+</div>
+
+
 <datalist id="kehulist">
 <?php
 $campany_list=explode(",",file_get_contents("ajax/write_data/campany.html"));

@@ -205,28 +205,25 @@ table{border-collapse: collapse;}
 </tr>
 <?php } ?>
 </table></div>
-<div class="message">
-<?php 
-//if($shuzigengxin){mysqli_query($conn,"UPDATE `t_note` SET `note`='{$eee}',`time`='{$todaytime}' WHERE user='pochuli' AND remark='4'");}
-?>
+
 <script>
 function mycheckbox(str){
-	var button=document.getElementById('button3');
+	var button="";
 	if(str==1){
-		button.href="asahiorder.php?";
+		button="asahiorder.php?";
 	}else if(str==2){
-		button.href="hebing.php?";
+		button="hebing.php?";
 	}else if(str==4){
-		button.href="upload_lotnum.php?";
+		button="upload_lotnum.php?";
 	}
 	var ss=document.getElementsByName('checkboxsum');
 	for(i=0;i<ss.length;i++){
 		if(ss[i].checked){
-		button.href+="checkbox[]="+ss[i].getAttribute("_id")+"&";
+		button+="checkbox[]="+ss[i].getAttribute("_id")+"&";
 		}
 	}
-	button.href+="end=6";
-	button.click();
+	button+="end=6";
+	window.open(button,"_BLANK");
 }
 
 $(document).ready(function(){
@@ -285,13 +282,11 @@ function po_pi_lotnum(str){
 
 
 </script>
-<button type="button" onclick="method5('tableExcel')">导出Excel</button>  
-<button type="button" onclick="checkboxsum_allno()">全选/全不选</button> <button type="button" onclick="checkboxsum_fan()">反选</button>
-<input type="number" style="width:40px" id="checkall1" value="1" onchange="checkall12()"/>~<input type="number" style="width:40px" id="checkall2" value="99" onchange="checkall12()"/>
-<a href="" id="button3" target="_blank"></a>
 
-</div>
+<? echo file_get_contents("templates/table_select.html"); ?>
 <div class="sum_show">
+
+
 <table width="100%" height="100%" align="center" valign="middle"><tr><td>
  <div onclick="checkboxsum()" id="sum_show" align="center">选中项合计</div>
 </tr></td></table>
