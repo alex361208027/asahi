@@ -297,10 +297,10 @@ function po_pi_lotnum(str){
 
 
 <table width="100%" height="100%" align="center" valign="middle"><tr><td>
- <div onclick="checkboxsum()" id="sum_show" align="center">选中项合计</div>
+ <div id="sum_show" align="center">选中项合计</div><div class="sum_show_caozuo">操作</div>
 </tr></td></table>
 <ul class="hide" title="选中项批量操作">
-	<li></li>
+	<li><div class="sum_show_hide_x">X</div></li>
 <li onclick="mycheckbox(2)">合并统计</li>
 <li onclick="mycheckbox(1)">生成朝日订单</li>
 <li><hr></li>

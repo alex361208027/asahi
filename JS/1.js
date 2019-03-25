@@ -2,8 +2,20 @@ $(document).ready(function(){
 	$("[list='kehulist']").click(function(){
 		$(this).val("");
 	});
+	
 	$(".sum_show_x").click(function(){
+	$(".hide").fadeOut();
 	$(this).parent().fadeOut();
+	});
+	
+	
+	
+	$(".sum_show_caozuo").click(function(){
+	 $(".hide").fadeIn();
+	});
+	
+	$(".sum_show_hide_x").click(function(){
+	 $(".hide").fadeOut(100);
 	});
 });
 
@@ -35,6 +47,7 @@ function buttons(obj){
 var ss=document.getElementsByName('checkboxsum');
 
 function checkboxsum(){
+
 	sum=0;chencednumber=0;
 	for(i=0;i<ss.length;i++){
 		if(ss[i].checked){
@@ -42,23 +55,21 @@ function checkboxsum(){
 			sum=sum+Number(ss[i].value);
 		}
 	}
-document.getElementById("sum_show").innerHTML="共选中<b>"+chencednumber+"</b>个<br><br>合计：<b>"+sum+"</b>";
+document.getElementById("sum_show").innerHTML="共选中<b>"+chencednumber+"</b>个<br>合计：<b>"+sum+"</b>";
 
-if(chencednumber){
-	$(document).ready(function(){
-		//$(".hide").fadeIn().css("display","inline-block");
-		$(".sum_show").fadeIn().css("display","inline-block");
-		var sum_show_width_padding=40;
-		var sum_show_width=$(".sum_show").width();
-		var sum_show_width2=(sum_show_width+sum_show_width_padding)/2;
-		$(".sum_show").css({"height":sum_show_width,"-webkit-border-radius":sum_show_width2,"-moz-border-radius":sum_show_width2,"border-radius":sum_show_width2});
-	});
-}else{
-	$(document).ready(function(){
-		//$(".hide").fadeOut();
-		$(".sum_show").fadeOut();
-	});
-}
+	if(chencednumber){
+		$(document).ready(function(){
+			$(".sum_show").fadeIn().css("display","inline-block");
+			var sum_show_width_padding=40;
+			var sum_show_width=$(".sum_show").width();
+			var sum_show_width2=(sum_show_width+sum_show_width_padding)/2;
+			$(".sum_show").css({"height":sum_show_width,"-webkit-border-radius":sum_show_width2,"-moz-border-radius":sum_show_width2,"border-radius":sum_show_width2});
+		});
+	}else{
+		$(document).ready(function(){
+			$(".sum_show").fadeOut();
+		});
+	}
 
 }
 
