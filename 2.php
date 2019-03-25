@@ -271,7 +271,7 @@ table{border-collapse: collapse;}
 ?>
 <tr <?php  if($colordate!=$row[7]){if($bgcolor==""){$bgcolor="#F7F7F7";}else{$bgcolor="";} echo "bgcolor='".$bgcolor."'"; }else{echo "bgcolor='".$bgcolor."'";}$colordate=$row[7]; ?> <? if(!$same){echo "class='tabletr'";} ?>>
 	
-	<td align="right" class="2_td_checkbox"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="<?php echo $row[3]; ?>" _id="<?php echo $row[12] ?>" cells="<?php echo $jjj+1; ?>"/></td>
+	<td align="right" class="2_td_checkbox"><input type="checkbox" name="checkboxsum" onclick="checkboxsum();" value="<?php echo $row[3]; ?>" _id="<?php echo $row[12] ?>" cells="<?php echo $jjj+1; ?>"/></td>
 	<td align="center"><?php echo $jjj+1; ?></td>
 	<td align="center" class="2_td_state"><div class="classcp1" style="background-color:<?php echo $bgimg; ?>" title="<? echo $row[8]; ?>"><?php echo $states; ?></div></td>
 	<td><?php if(!$same){echo $row[0];} ?></td>
@@ -353,10 +353,10 @@ function td_remove(){
 
 <div class="sum_show">
 <table width="100%" height="100%" align="center" valign="middle"><tr><td>
- <div onclick="checkboxsum()" id="sum_show" align="center">选中项合计</div>
+ <div id="sum_show" align="center">选中项合计</div><div class="sum_show_caozuo">操作</div>
 </tr></td></table>
 <ul class="hide" title="选中项批量操作">
-	<li></li>
+	<li><div class="sum_show_hide_x">X</div></li>
 	<li onclick="mycheckbox(2)">合并统计</li>
 	<li onclick="mycheckbox(1)">生成送货单</li>
 	<li onclick="c_pi_zaikuduizhao()">查看在库批次号</li>
