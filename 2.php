@@ -343,7 +343,13 @@ function td_remove(){
 
 </script>
 
+
+<div class="message">
+
+<button type="button" onclick="td_remove();setTimeout(()=>{method5('tableExcel')},500);setTimeout(()=>{location.reload()},2000);">导出Excel</button>
 <? echo file_get_contents("templates/table_select.html"); ?>
+</div>
+
 
 <div class="sum_show">
 <table width="100%" height="100%" align="center" valign="middle"><tr><td>
