@@ -240,7 +240,7 @@ button:hover{
 }
 
 .hide li:hover{
-	background-color:#77FF77;
+	background-color:#77FF77;cursor:pointer;
 }
 
 

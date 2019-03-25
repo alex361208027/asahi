@@ -251,13 +251,6 @@ table{border-collapse: collapse;}
 									$diandian="";
 								}
 								$remark4=mb_substr($row[8],0,4).$diandian;
-								if($row[7]=='0000-00-00'){
-									$bgimg='black';
-								}elseif($row[11]){
-									$bgimg='#FF0033';
-								}else{
-								$bgimg='#000066';
-								}
 								$states=$remark4;
 								
 							}
