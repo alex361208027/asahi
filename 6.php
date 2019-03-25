@@ -284,6 +284,15 @@ function po_pi_lotnum(str){
 </script>
 
 <? echo file_get_contents("templates/table_select.html"); ?>
+
+<div class="message">
+
+<button type="button" onclick="setTimeout(()=>{method5('tableExcel')},500);">导出Excel</button>
+<? echo file_get_contents("templates/table_select.html"); ?>
+
+
+</div>
+
 <div class="sum_show">
 
 
