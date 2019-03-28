@@ -283,7 +283,6 @@ function po_pi_lotnum(str){
 
 </script>
 
-<? echo file_get_contents("templates/table_select.html"); ?>
 
 <div class="message">
 
