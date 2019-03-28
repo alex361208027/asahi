@@ -151,11 +151,11 @@ transition-delay: 0.8s;
 			</ul>
 		</div></a>
 
-		<a href="indexother.php#findme_zaiku" id="zaiku" target="shangbu"><div class="caidanxuanxiao"><img src="img/zaiku.png" /> &nbsp; 在 &nbsp; 库 >
+		<a href="indexother.php#findme_zaiku" target="shangbu"><div class="caidanxuanxiao"><img src="img/zaiku.png" /> &nbsp; 在 &nbsp; 库 >
 			<ul>
-				<li><form action="in.php" id="zaiku1" method="post" target="xiabu"><input type="hidden" name="in" value="in"/></form><a href="###" onclick="document.getElementById('zaiku1').submit();document.getElementById('zaiku').click()">目前在库</a></li>
-				<li><a href="in.php" target="xiabu" onclick="document.getElementById('zaiku').click()">出库记录</a></li>
-				<li><a href="putin.php" target="xiabu" onclick="document.getElementById('zaiku').click()">手动入库</a></li>
+				<li><a href="###" onclick="window.open('in.php?in=in','xiabu');window.open('indexother.php#findme_zaiku','shangbu');">目前在库</a></li>
+				<li><a href="in.php" target="xiabu" onclick="window.open('indexother.php#findme_zaiku','shangbu');">出库记录</a></li>
+				<li><a href="putin.php" target="xiabu" onclick="window.open('indexother.php#findme_zaiku','shangbu');">手动入库</a></li>
 			</ul>
 		</div></a>
 		<div class="caidanxuanxiao" name="caidanxuanxiao" onclick="window.open('namecard.php','xiabu');window.open('indexother.php#findme_namecard','shangbu');caidancolor(5)"><img src="img/namecard.png" /> &nbsp; 名 &nbsp; 片</div>

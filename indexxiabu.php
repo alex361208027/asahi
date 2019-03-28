@@ -57,10 +57,13 @@ $xxx=1;
 	color:black;
 }
 .xiaoxikuang_style{
-	background-color:#FFEEEE;padding:8px;display:inline-block;min-width:30px;font-size:14px;
+	background-color:#DDE4FF;padding:9px 8px 8px 8px;display:inline-block;min-width:30px;font-size:14px;
 	-webkit-border-radius: 0px 8px 8px 8px;
   -moz-border-radius: 0px 8px 8px 8px;
   border-radius: 0px 8px 8px 8px;
+  -webkit-box-shadow: 1px 1px 2px #DDDDDD;
+  -moz-box-shadow: 1px 1px 2px #DDDDDD;
+  box-shadow: 1px 1px 2px #DDDDDD;
 }
 </style>
 <script>
@@ -245,17 +248,17 @@ $(document).ready(function(){
 	<td width="">
 				<table cellpadding="0" cellspacing="0" width="100%" height="100%">
 				<tr>
-					<td>
+					<td width="" align="" valign="top">
 						<div style="padding:4px 10px;background-color:#5E5E5E;color:white;display:inline-block">REMARK</div><br>
-						<textarea style="width:100%;min-height:200px;" name="mynote" onchange="myn()"><?php $rownote=mysqli_query($conn,"SELECT * FROM `t_note` WHERE user = '{$_COOKIE['asahiuser']}' AND remark=0 order by time desc limit 1")->fetch_row();$rownote[1]=str_replace("<br>","\r\n",$rownote[1]); echo $rownote[1]; ?></textarea>
+						<textarea style="width:100%;min-height:230px;" name="mynote" onchange="myn()"><?php $rownote=mysqli_query($conn,"SELECT * FROM `t_note` WHERE user = '{$_COOKIE['asahiuser']}' AND remark=0 order by time desc limit 1")->fetch_row();$rownote[1]=str_replace("<br>","\r\n",$rownote[1]); echo $rownote[1]; ?></textarea>
 						<div id="mynotegengxin"><font size="2" color="#FF5577">信息更新于:<?php echo $rownote[2];  ?></font></div>
 					
 					</td>
-					<td width="" align="">
+					<td width="" align="" valign="top">
 						<div style="padding:10px;font-size:14px;padding-left:15%">
 						<div style="padding:4px 10px;background-color:#5E5E5E;color:white;display:inline-block">最近新建的订单</div>
 							<?php 
-							$resultpublic = mysqli_query($conn,"SELECT * FROM `t_note` WHERE remark = 7 OR remark = 8 order by time desc limit 0,6");
+							$resultpublic = mysqli_query($conn,"SELECT * FROM `t_note` WHERE remark = 7 OR remark = 8 order by time desc limit 0,5");
 							while($rowpublic=$resultpublic->fetch_row()){
 								if(in_array($rowpublic[0],$mysave)){
 					
@@ -269,8 +272,20 @@ $(document).ready(function(){
 												}		
 										}
 							 ?>
-							<p><font color="#BBBBBB" size="1"><?php echo $rowpublic[2]; ?></font><br><u><?php echo $myload[array_search($rowpublic[0],$mysave)]; ?></u>:
-							<font color="#FF7792"><a href="<?php if($rowpublic[3]==8){echo '4.php?ddt2=';}else{echo '4-1.php?asahit1=';} ?><?php echo $rowpublic[1]; ?>"><?php echo $rowpublic[1]; ?></a></font></p>
+						
+							<div class="xiaoxikuan">
+							<table>
+							<tr align="left">
+							<td valign="top">
+							<?php if(file_exists("upload/user_touxiang/".$rowpublic[0].".png")){echo "<div class='touxiang2'><img src='upload/user_touxiang/".$rowpublic[0].".png' width='36px'></div>";}else{echo "<div class='touxiang'>".mb_substr($rowpublic[0],0,3)."</div>";} ?>
+							</td>
+							<td>
+							<font color="#DDDDDD" size="1"><?php  echo $myload[array_search($rowpublic[0],$mysave)]."&nbsp;".$rowpublic[2] ?></font><br>
+							<div class="xiaoxikuang_style"><a href="<?php if($rowpublic[3]==8){echo '4.php?ddt2=';}else{echo '4-1.php?asahit1=';} ?><?php echo $rowpublic[1]; ?>"><?php echo $rowpublic[1]; ?></a></div>
+							</td>
+							</tr>
+							</table>
+							</div>
 							
 							
 							
@@ -281,66 +296,58 @@ $(document).ready(function(){
 				</tr>
 				<tr valign="">
 					
-					<td width="50%" align="center" valign="top">
+					<td width="50%" align="left" valign="top">
+					<hr>
 						<?php $weichuli=file_get_contents("ajax/write_data/poweichuli.html"); $weichuli = explode(',',$weichuli); ?>
 						
-						<div class="chuli">
-						<div style="color:#FF6685">朝日PO</div>
-						<div class="chuli1"><a href="6.php?" onclick="window.open('indexother.php#findme_chanpin5','shangbu');"><?php echo $weichuli[0]; ?></a></div>
-						<div class="chuli2">数据更新于<br><?php echo $weichuli[1]; ?></div>
+						<div class="xiaoxikuan">
+							<table>
+							<tr align="left">
+							<td valign="top">
+							<div class='touxiang'>朝日PO</div>
+							</td>
+							<td>
+							<font color="#DDDDDD" size="1"><?php echo $weichuli[1]; ?></font><br>
+							<div class="xiaoxikuang_style" style="background-color:#FFCCD6"><a href="6.php?" onclick="window.open('indexother.php#findme_chanpin5','shangbu');">未处理的朝日PO项目有<?php echo $weichuli[0]; ?>个。</a></div><br><br>
+							</td>
+							</tr>
+							</table>
 						</div>
-						</a>
+						
+						
+						
 						<?php $weichuli=file_get_contents("ajax/write_data/cweichuli.html"); $weichuli = explode(',',$weichuli); ?>
 						
-						
-						<div class="chuli">
-						<div style="color:#6464E0">客様PO</div>
-						<div class="chuli1"><a href="2.php" onclick="window.open('indexother.php#findme_chanpin2','shangbu');"><?php echo $weichuli[0]; ?></a></div>
-						<div class="chuli2">数据更新于<br><?php echo $weichuli[1]; ?></div>
+						<div class="xiaoxikuan">
+							<table>
+							<tr align="left">
+							<td valign="top">
+							<div class='touxiang'>客様PO</div>
+							</td>
+							<td>
+							<font color="#DDDDDD" size="1"><?php echo $weichuli[1]; ?></font><br>
+							<div class="xiaoxikuang_style" style="background-color:#FFCCD6"><a href="2.php" onclick="window.open('indexother.php#findme_chanpin2','shangbu');">未处理的客户PO项目有<?php echo $weichuli[0]; ?>个。</a></div><br><br>
+							</td>
+							</tr>
+							</table>
 						</div>
 						
-						<style>
-						.chuli{
-							padding:2%;margin-top:10px;margin-bottom:10px;
-							width:45%;overflow:hidden;display:inline-block;
-							background-color:#F7F7F7;
-							-webkit-border-radius: 5px;
-							-moz-border-radius: 5px;
-							border-radius: 5px;
-							text-align:left;
-							
-							 transition: all 0.3s;
-							-moz-transition: all 0.3s;	/* Firefox 4 */
-							-webkit-transition: all 0.3s;	/* Safari 和 Chrome */
-							-o-transition: all 0.3s;
-
-						}
-						.chuli:hover{
-							background-color:#EEEEEE;
-							-webkit-box-shadow: 0px 5px 5px #C4C4C4;
-							  -moz-box-shadow: 0px 5px 5px #C4C4C4;
-							  box-shadow: 0px 5px 5px #C4C4C4;
-						}
+						<?php $weichuli=file_get_contents("ajax/write_data/zaiwushu.html"); $weichuli = explode(',',$weichuli); ?>
 						
-						.chuli1{
-							width:100%;
-							display:block;
-							text-align:center;font-weight:bold;color:#FF6685;font-size:55px;font-style:italic;
-							transition: all 1s;
-							-moz-transition: all 1s;	/* Firefox 4 */
-							-webkit-transition: all 1s;	/* Safari 和 Chrome */
-							-o-transition: all 1s;
-						}
-						.chuli1:hover{
-							color:red;
-						}
-						.chuli2{
-							width:100%;color:#CCCCCC;
-							font-size:12px;
-							display:inline-block;
-							text-align:right;
-						}
-						</style>
+						<div class="xiaoxikuan">
+							<table>
+							<tr align="left">
+							<td valign="top">
+							<div class='touxiang'>LED在库数</div>
+							</td>
+							<td>
+							<font color="#DDDDDD" size="1"><?php echo $weichuli[1]; ?></font><br>
+							<div class="xiaoxikuang_style" style="background-color:#FFCCD6"><a href="in.php?in=in" onclick="window.open('indexother.php#findme_zaiku','shangbu');">当前在库数(开发中)<?php echo $weichuli[0]; ?>pcs。</a></div><br><br>
+							</td>
+							</tr>
+							</table>
+						</div>
+						
 					</td>
 					<td width="50%" align="center">
 
