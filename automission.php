@@ -15,7 +15,6 @@ $sql="SELECT COUNT(*) FROM t_teacher WHERE state = '' AND SHdate <> '0000-00-00'
 $result=mysqli_query($conn,$sql);
 $row=$result->fetch_row();
 echo "C未处理".$row[0]."<br>";
-//mysqli_query($conn,"UPDATE `t_note` SET `note`='$row[0]',`time`='$todaytime' WHERE user='getchuli' AND remark='4'");
 $txt=$row[0].",".$todaytime;
 fwrite(fopen("ajax/write_data/cweichuli.html", "w"), $txt);
 
@@ -25,9 +24,17 @@ $sql="SELECT COUNT(*) FROM t_poteacher WHERE state = '' AND JPdate <> '0000-00-0
 $result=mysqli_query($conn,$sql);
 $row=$result->fetch_row();
 echo "PO未处理".$row[0]."<br>";
-//mysqli_query($conn,"UPDATE `t_note` SET `note`='$row[0]',`time`='$todaytime' WHERE user='pochuli' AND remark='4'");
 $txt=$row[0].",".$todaytime;
 fwrite(fopen("ajax/write_data/poweichuli.html", "w"), $txt);
+
+//////////////////////////在库数
+
+$sql="SELECT SUM(quantity) FROM t_inout WHERE outquantity is null OR outquantity = 0";
+$result=mysqli_query($conn,$sql);
+$row=$result->fetch_row();
+echo "在库数".$row[0]."<br>";
+$txt=$row[0].",".$todaytime;
+fwrite(fopen("ajax/write_data/zaikushu.html", "w"), $txt);
 
 
 if($hour<10){
