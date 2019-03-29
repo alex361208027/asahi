@@ -300,6 +300,7 @@ $(document).ready(function(){
 					<hr>
 						<?php $weichuli=file_get_contents("ajax/write_data/poweichuli.html"); $weichuli = explode(',',$weichuli); ?>
 						
+						<? if($weichuli[0]>0){ ?>
 						<div class="xiaoxikuan">
 							<table>
 							<tr align="left">
@@ -308,16 +309,16 @@ $(document).ready(function(){
 							</td>
 							<td>
 							<font color="#DDDDDD" size="1"><?php echo $weichuli[1]; ?></font><br>
-							<div class="xiaoxikuang_style" style="background-color:#FFCCD6"><a href="6.php?" onclick="window.open('indexother.php#findme_chanpin5','shangbu');">未处理的朝日PO项目有<?php echo $weichuli[0]; ?>个。</a></div><br><br>
+							<div class="xiaoxikuang_style" style="background-color:#FFCCD6"><a href="6.php?" onclick="window.open('indexother.php#findme_chanpin5','shangbu');">等待处理的朝日PO项目有 <b><?php echo $weichuli[0]; ?></b> 个。</a></div><br><br>
 							</td>
 							</tr>
 							</table>
 						</div>
-						
+						<? } ?>
 						
 						
 						<?php $weichuli=file_get_contents("ajax/write_data/cweichuli.html"); $weichuli = explode(',',$weichuli); ?>
-						
+						<? if($weichuli[0]>0){ ?>
 						<div class="xiaoxikuan">
 							<table>
 							<tr align="left">
@@ -326,14 +327,15 @@ $(document).ready(function(){
 							</td>
 							<td>
 							<font color="#DDDDDD" size="1"><?php echo $weichuli[1]; ?></font><br>
-							<div class="xiaoxikuang_style" style="background-color:#FFCCD6"><a href="2.php" onclick="window.open('indexother.php#findme_chanpin2','shangbu');">未处理的客户PO项目有<?php echo $weichuli[0]; ?>个。</a></div><br><br>
+							<div class="xiaoxikuang_style" style="background-color:#FFCCD6"><a href="2.php" onclick="window.open('indexother.php#findme_chanpin2','shangbu');">等待处理的客户PO项目有 <b><?php echo $weichuli[0]; ?></b> 个。</a></div><br><br>
 							</td>
 							</tr>
 							</table>
 						</div>
+						<? } ?>
 						
-						<?php $weichuli=file_get_contents("ajax/write_data/zaiwushu.html"); $weichuli = explode(',',$weichuli); ?>
-						
+						<?php $weichuli=file_get_contents("ajax/write_data/zaikushu.html"); $weichuli = explode(',',$weichuli); ?>
+						<? if($weichuli[0]>0){ ?>
 						<div class="xiaoxikuan">
 							<table>
 							<tr align="left">
@@ -342,12 +344,12 @@ $(document).ready(function(){
 							</td>
 							<td>
 							<font color="#DDDDDD" size="1"><?php echo $weichuli[1]; ?></font><br>
-							<div class="xiaoxikuang_style" style="background-color:#FFCCD6"><a href="in.php?in=in" onclick="window.open('indexother.php#findme_zaiku','shangbu');">当前在库数(开发中)<?php echo $weichuli[0]; ?>pcs。</a></div><br><br>
+							<div class="xiaoxikuang_style" style="background-color:#FFCCD6"><a href="in.php?in=in" onclick="window.open('indexother.php#findme_zaiku','shangbu');">当前在库LED数 <b><?php echo $weichuli[0]; ?></b> pcs。</a></div><br><br>
 							</td>
 							</tr>
 							</table>
 						</div>
-						
+						<? } ?>
 					</td>
 					<td width="50%" align="center">
 
@@ -410,7 +412,7 @@ $(document).ready(function(){
 					<td width="16%"><font size="1"><?php echo ($chukutongji[3]/1000)."K"; ?><br>次月</font></td>
 					<td width="24%"><font size="1"><?php echo ($chukutongji[4]/1000)."K"; ?><br>预测</font></td>
 					</tr>
-					<tr><td align="center" colspan="6"><font color="#888888"><a href="total.php">每月实际出荷量</a></font></td></tr>
+					<tr><td align="center" colspan="6"><font color="#888888"><a href="total.php">每月实际出荷量及预测</a></font></td></tr>
 					</table>
 					</div>
 					
