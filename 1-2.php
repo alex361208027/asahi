@@ -31,7 +31,7 @@ mysqli_set_charset ($conn,utf8);
 // Check connection
 if ($conn->connect_error) {
     die("连接失败: " . $conn->connect_error);
-} 
+}
 if($t5&&$t6){
 mysqli_query($conn,"INSERT INTO `t_teacher`(`campany`, `ordernum`, `banngo`, `quantity`, `hopedate` ) VALUES ('$t1','$t2','$t5','$t6','$t7')");
 }
@@ -42,7 +42,7 @@ $insert_c_id=mysqli_insert_id($conn);
 		$result3 = mysqli_query($conn,$sql3);
 		$rows3=$result3->num_rows;
 		if($rows3==0){
-			echo "<font color='red'>未找到朝日订单".$asahiorder."，本次未录入朝日订单。</font>";
+			echo "<font color='red'>朝日订单".$asahiorder."可能不存在。本次品番未录入朝日订单!!</font>";
 			$asahiorder="";
 		}else{
 	

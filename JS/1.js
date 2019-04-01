@@ -17,6 +17,10 @@ $(document).ready(function(){
 	$(".sum_show_hide_x").click(function(){
 	 $(".hide").fadeOut(100);
 	});
+	
+	$(".close_hide").click(function(){
+		 $(".hide").fadeOut(100);
+	});
 });
 
 function datecount(kkk){
