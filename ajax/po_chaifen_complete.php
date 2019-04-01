@@ -21,8 +21,7 @@ if($quantity){
 	if($restquantity>0){
 		if($row[10]){
 			mysqli_query($conn,"UPDATE `t_teacher` SET quantity='$restquantity' WHERE _id='$row[10]' limit 1");
-			$result_get_c_state=mysqli_query($conn,"SELECT * FROM `t_teacher` WHERE _id= '$row[10]' limit 1");
-			$row_get_c_state=$result_get_c_state->fetch_row();
+			$row_get_c_state=mysqli_query($conn,"SELECT * FROM `t_teacher` WHERE _id= '$row[10]' limit 1")->fetch_row();
 			/////get SHdate
 			if($row[3]){
 				$hopedate5 = date('Y-m-d',(strtotime('+5 days',strtotime($row[3]))));
@@ -34,15 +33,15 @@ if($quantity){
 			}
 			/////new po
 			mysqli_query($conn,"INSERT INTO `t_poteacher` (`asahiorder`, `banngo`, `campany`, `campanyorder`, `quantity`, `JPdate`, `hopedate`,`state`, `remark`) VALUES ('$row[0]','$row[1]','$row[5]','$row[6]','$quantity','$row[3]','$row[4]','$row[8]','$row[7]')");	
+			$po_id=mysqli_insert_id($conn);
 			
-			$result_po_id = mysqli_query($conn,"SELECT * FROM `t_poteacher` WHERE asahiorder='$row[0]' AND banngo = '$row[1]' AND quantity='$quantity' order by _id desc");
-			$row_po_id=$result_po_id->fetch_row();	$this_id=$row_po_id[9];
+			$row_po_id=mysqli_query($conn,"SELECT * FROM `t_poteacher` WHERE _id='$po_id' limit 1")->fetch_row();	
+			$this_id=$row_po_id[9];
 			
 			mysqli_query($conn,"INSERT INTO `t_teacher`(`campany`, `ordernum`, `banngo`, `quantity`, `hopedate`, `asahiorder`, `JPdate`,`SHdate`, `po_id`, `remark`, `state` ) VALUES ('$row_po_id[5]','$row_po_id[6]','$row_po_id[1]','$quantity','$row_po_id[4]','$row_po_id[0]','$row_po_id[3]','$SHdate','$this_id','$row_po_id[7]','$row_get_c_state[9]')");
-			
-			$result_c_id = mysqli_query($conn,"SELECT * FROM `t_teacher` WHERE po_id='$this_id'");
-			$row_c_id=$result_c_id->fetch_row();
-			mysqli_query($conn,"UPDATE `t_poteacher` SET customer_id='$row_c_id[12]' WHERE _id='$this_id' limit 1");
+			$c_id=mysqli_insert_id($conn);
+
+			mysqli_query($conn,"UPDATE `t_poteacher` SET customer_id='$c_id' WHERE _id='$this_id' limit 1");
 			echo "拆分完成(有对应PO)";
 		}else{
 			mysqli_query($conn,"INSERT INTO `t_poteacher` (`asahiorder`, `banngo`,`campany`, `quantity`, `JPdate`, `hopedate`,`state`, `remark`) VALUES ('$row[0]','$row[1]','$row[5]','$quantity','$row[3]','$row[4]','$row[8]','$row[7]')");	

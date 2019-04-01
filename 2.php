@@ -243,16 +243,16 @@ table{border-collapse: collapse;}
 							
 							
 							if($states!='完成' && $row[8]){
-								
-								
+						
 								if(mb_strlen($row[8])>4){
 									$diandian="..";
 								}else{
 									$diandian="";
 								}
 								$remark4=mb_substr($row[8],0,4).$diandian;
-								$states=$remark4;
-								
+	
+							}else{
+								$remark4="";
 							}
 					
 	if($same_po==$row[1]&&$same_banngo==$row[2]){
@@ -266,7 +266,7 @@ table{border-collapse: collapse;}
 	
 	<td align="right" class="2_td_checkbox"><input type="checkbox" name="checkboxsum" onclick="checkboxsum();" value="<?php echo $row[3]; ?>" _id="<?php echo $row[12] ?>" cells="<?php echo $jjj+1; ?>"/></td>
 	<td align="center"><?php echo $jjj+1; ?></td>
-	<td align="center" class="2_td_state"><div class="classcp1" style="background-color:<?php echo $bgimg; ?>" title="<? echo $row[8]; ?>"><?php echo $states; ?></div></td>
+	<td align="center" class="2_td_state"><div class="classcp1" style="background-color:<?php echo $bgimg; ?>" title="<? echo $row[8]."(".$states.")"; ?>"><?php if($remark4){echo $remark4;}else{echo $states;} ?></div></td>
 	<td><?php if(!$same){echo $row[0];} ?></td>
 	<td><a href="4.php?ddt2=<?php echo $row[1] ?>"><?php if(!$same){echo $row[1];} ?></a></td>
 	<td style="max-width:120px;"><a href="###" onclick="c_banngo('_id=<?php echo $row[12] ?>&cells=<?php echo $jjj+1 ?>')" ><u><?php echo $row[2] ?></u></a></td>
@@ -350,15 +350,15 @@ function td_remove(){
 </tr></td></table>
 <ul class="hide" title="选中项批量操作">
 	<li><div class="sum_show_hide_x">X</div></li>
-	<li onclick="mycheckbox(2)">合并统计</li>
-	<li onclick="mycheckbox(1)">生成送货单</li>
-	<li onclick="c_pi_zaikuduizhao()">查看在库批次号</li>
-	<li onclick="c_pi_qrcode(2)">生成QR-code</li>
+	<li onclick="mycheckbox(2);" class="close_hide">合并统计</li>
+	<li onclick="mycheckbox(1)" class="close_hide">生成送货单</li>
+	<li onclick="c_pi_zaikuduizhao()" class="close_hide">查看在库批次号</li>
+	<li onclick="c_pi_qrcode(2)" class="close_hide">生成QR-code</li>
 	<li><hr></li>
 	<li><input type="date" id="SHdate" value="<?php echo date('Y-m-d') ?>"></li>
-	<li onclick="c_pi_shdate()">更改上海发货日</li> 
-	<li onclick="c_pi_chuku()">出库</li>
-	<li onclick="c_pi_invoice()">开具发票</li>
+	<li onclick="c_pi_shdate()" class="close_hide">更改上海发货日</li> 
+	<li onclick="c_pi_chuku()" class="close_hide">出库</li>
+	<li onclick="c_pi_invoice()" class="close_hide">开具发票</li>
 	<li></li>
  </ul>
  <div class="sum_show_x">X</div>
