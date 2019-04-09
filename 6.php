@@ -286,7 +286,7 @@ function po_pi_lotnum(str){
 
 <div class="message">
 
-<button type="button" onclick="setTimeout(()=>{method5('tableExcel')},500);">导出Excel</button>
+<button type="button" onclick="setTimeout(()=>{exceldownload('Asahi');},500);">导出Excel</button>
 <? echo file_get_contents("templates/table_select.html"); ?>
 
 

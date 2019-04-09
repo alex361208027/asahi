@@ -152,6 +152,7 @@ foreach($campany_list as $campany_list){
 <form action="poprice.php" method="GET">
 <input type="text" name="search" list="kehulist" style="width:200px" value="<?php echo $search ?>" placeholder="搜索番号"><input type="submit" value="搜索"> <input type="checkbox" name="han" value="1" <? if(!$han){echo 'checked';} ?>/>含不常用品番
 </form>
+<? if($search){ ?>
 <table cellpadding="2" cellspacing="0" align="center">
 <tr style="background-color:#FF6685;color:white;height:;" align="center">
 <td width="50px">#</td>
@@ -340,7 +341,7 @@ function buchangyong(str,state,thiss){
 			xmlhttp.send();
 }
 </script>
-
+<? } ?>
 <?php
 }
 

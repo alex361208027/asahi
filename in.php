@@ -125,7 +125,7 @@ $result=mysqli_query($conn,$sql);
 
 <div class="message">
 <?php if(empty($in)){$nowpages=$nowpageend/50;echo "第".$nowpages."页";} ?> 
-<button type="button" onclick="method5('tableExcel')">导出Excel</button>  
+<button type="button" onclick="exceldownload('Zaiku');">导出Excel</button>  
 <? echo file_get_contents("templates/table_select.html"); ?>
  <!--<button onclick="c_pi_qrcode()">QR-code</button> -->
  <form onsubmit="return false;" style="display:inline-block;">
