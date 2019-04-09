@@ -21,3 +21,6 @@ $txt=$txt."</table>";
 fwrite(fopen("moban/price.xlsx", "w"), $txt);
 
 echo "moban/price.xlsx";
+
+$conn->close();
+?>

@@ -332,14 +332,16 @@ function td_remove(){
 			$('.2_td_state').remove();
 			$('.2_td_tuichi').remove();
 	});
+	
 }
+
 
 </script>
 
 
 <div class="message">
 
-<button type="button" onclick="td_remove();setTimeout(()=>{method5('tableExcel')},500);setTimeout(()=>{location.reload()},2000);">导出Excel</button>
+<button type="button" onclick="td_remove();setTimeout(()=>{exceldownload('Customer');},500);setTimeout(()=>{location.reload()},2000);">导出Excel</button>
 <? echo file_get_contents("templates/table_select.html"); ?>
 </div>
 
