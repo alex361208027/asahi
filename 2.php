@@ -341,7 +341,7 @@ function td_remove(){
 
 <div class="message">
 
-<button type="button" onclick="td_remove();setTimeout(()=>{exceldownload('Customer');},500);setTimeout(()=>{location.reload()},8000);">导出Excel</button>
+<button type="button" onclick="td_remove();setTimeout(()=>{exceldownload('Customer');},500);setTimeout(()=>{location.reload()},15000);">导出Excel</button>
 <? echo file_get_contents("templates/table_select.html"); ?>
 </div>
 

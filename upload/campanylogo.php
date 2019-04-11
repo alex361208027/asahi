@@ -34,3 +34,5 @@ if (($_FILES["file"]["size"] < 54800)   // 小于 200 kb
     echo "文件太大(要求小于50k) 或 非法的文件格式";
 }
 ?>
+<br><br><br>
+<a href="../campany.php">返回</a>

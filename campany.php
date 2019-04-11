@@ -81,8 +81,8 @@ margin-right: 3px;
 	<td align="center"><input type="text" id="addresscampany<?php echo $row[0] ?>" value="<?php echo $row[7]; ?>" placeholder="收货单位"><br><input type="text" id="address<?php echo $row[0]; ?>" value="<?php echo $row[6] ?>" placeholder="收货地址"></td>
 	<td><input type="text" id="remark<?php echo $row[0] ?>" value="<?php echo $row[4]; ?>"></td>
 	<td><button id="button<?php echo $row[0] ?>" onclick="campany(<?php echo $row[0]; ?>)">确认编辑</button></td>
-	<td><form action="upload/campanylogo.php" method="post" enctype="multipart/form-data" target="_blank"><label for="file<?php echo $row[0]; ?>"><?php if(file_exists("upload/campanylogo/".$row[1].".png")){echo "<img src='upload/campanylogo/".$row[1].".png' width='60px'>";}else{echo "点击添加公司logo";} ?></label>
-		<input type="file" name="file" id="file<?php echo $row[0]; ?>" style="display:none" onchange="document.getElementById('submit<?php echo $row[0]; ?>').click();setTimeout('window.location.reload();',3000)">
+	<td><form action="upload/campanylogo.php" method="post" enctype="multipart/form-data"><label><?php if(file_exists("upload/campanylogo/".$row[1].".png")){echo "<img src='upload/campanylogo/".$row[1].".png' width='60px'>";}else{echo "+公司logo";} ?>
+		<input type="file" name="file" style="display:none" onchange="document.getElementById('submit<?php echo $row[0]; ?>').click();"/></label>
 		<input type="hidden" name="campany" value="<?php echo $row[1]; ?>">
 		<input type="submit" name="submit" id="submit<?php echo $row[0]; ?>" value="提交头像图片" style="display:none;"/></form>
 	</td>
