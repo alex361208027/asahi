@@ -1,8 +1,9 @@
 <title>QRcode</title>
 <style>
 .qrcode_main{
-	width:212px;
-	height:132px;
+	padding:3px;
+	width:210px;
+	height:130px;
 	background:white;
 	display:inline-block;
 	margin:3px;
@@ -123,7 +124,7 @@ foreach($id as $id){
 	$reel=mysqli_query($conn,"SELECT reel FROM t_poprice WHERE banngo='$row[0]' limit 1")->fetch_row();
 	?>
 	<div class="qrcode_main">
-		<table width="100%" cellpadding="5" class="qrcode_table">
+		<table width="100%" cellpadding="0" class="qrcode_table">
 			<tr>
 			<td valign="top"><xx>品番</xx><br><? echo $row[0]; ?></td>
 			<td align="right" valign="top" rowspan="3"><img src="<? echo $qrcode_api; ?>%23<? echo $row[0]; ?>%23<? echo $row[1]; ?>" width='88px'/><br><yy>外箱&nbsp;</yy></td>
@@ -141,7 +142,7 @@ foreach($id as $id){
 	for($i=0;$i<$round;$i++){
 	?>
 	<div class="qrcode_main">
-		<table width="100%" cellpadding="5" class="qrcode_table">
+		<table width="100%" cellpadding="0" class="qrcode_table">
 			<tr>
 			<td valign="top"><xx>品番</xx><br><? echo $row[0]; ?></td>
 			<td align="right" valign="top" rowspan="3"><img src="<? echo $qrcode_api; ?>%23<? echo $row[0]; ?>%23<? echo $reel[0]; ?>" width='88px'/><br><yy><? echo ($i+1)."/".$round ?>&nbsp;</yy></td>

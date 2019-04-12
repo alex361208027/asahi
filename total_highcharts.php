@@ -11,7 +11,7 @@ $dbname = "asahi";
 $conn = new mysqli($servername, $username, $password, $dbname);
 mysqli_set_charset ($conn,utf8);
 
-$sql="SELECT campany FROM `t_campany` WHERE 1";
+$sql="SELECT campany FROM `t_campany` WHERE 1 order by position asc";
 $result=mysqli_query($conn,$sql);
 while($row=$result->fetch_row()){
 	$campany[]=$row[0];
