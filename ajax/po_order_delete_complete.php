@@ -11,7 +11,8 @@ $delete =$_GET['delete'];
 
 mysqli_query($conn,"DELETE FROM `t_postudent` WHERE asahiorder='$delete'");
 mysqli_query($conn,"DELETE FROM `t_poteacher` WHERE asahiorder='$delete'");
-//mysqli_query($conn,"INSERT INTO `t_note`(`user`, `note`, `time`, `remark`) VALUES ('删除订单','{$_COOKIE['asahiuser']}删除了【朝日】订单【{$delete}】','$todaytime','1')");
+mysqli_query($conn,"UPDATE `t_teacher` SET asahiorder='', JPdate='',SHdate='',po_id='' WHERE asahiorder='$delete'");
+
 $delete="删除了 朝日订单".$delete;
 mysqli_query($conn,"INSERT INTO `t_note`(`user`, `note`, `time`, `remark`) VALUES ('{$_COOKIE['asahiuser']}','$delete','$todaytime',7)");
 mysqli_query($conn,"DELETE FROM `t_note` WHERE remark = 7 order by time asc LIMIT 1");

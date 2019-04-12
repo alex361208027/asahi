@@ -1,4 +1,6 @@
 <?php
+echo file_get_contents("templates/header.html");
+
 $servername = "localhost";
 $username = "root";
 $password = "root";
@@ -15,7 +17,7 @@ $campanyname=$_GET['campanyname'];
 
 
 $search=$_GET['search'];
-
+$file_no=0;
 
 $sqllogin="SELECT * FROM `t_user` WHERE user = '{$_COOKIE['asahiuser']}' AND userpw = '{$_COOKIE['asahiuserpw']}'";
 $resultlogin = mysqli_query($conn,$sqllogin);
@@ -81,10 +83,8 @@ margin-right: 3px;
 	<td align="center"><input type="text" id="addresscampany<?php echo $row[0] ?>" value="<?php echo $row[7]; ?>" placeholder="收货单位"><br><input type="text" id="address<?php echo $row[0]; ?>" value="<?php echo $row[6] ?>" placeholder="收货地址"></td>
 	<td><input type="text" id="remark<?php echo $row[0] ?>" value="<?php echo $row[4]; ?>"></td>
 	<td><button id="button<?php echo $row[0] ?>" onclick="campany(<?php echo $row[0]; ?>)">确认编辑</button></td>
-	<td><form action="upload/campanylogo.php" method="post" enctype="multipart/form-data"><label><?php if(file_exists("upload/campanylogo/".$row[1].".png")){echo "<img src='upload/campanylogo/".$row[1].".png' width='60px'>";}else{echo "+公司logo";} ?>
-		<input type="file" name="file" style="display:none" onchange="document.getElementById('submit<?php echo $row[0]; ?>').click();"/></label>
-		<input type="hidden" name="campany" value="<?php echo $row[1]; ?>">
-		<input type="submit" name="submit" id="submit<?php echo $row[0]; ?>" value="提交头像图片" style="display:none;"/></form>
+	<td><label><?php if(file_exists("upload/campanylogo/".$row[1].".png")){echo "<img src='upload/campanylogo/".$row[1].".png' width='60px'>";}else{echo "+公司logo";} ?>
+		<input type="file" id="file<? echo $file_no; ?>" style="display:none" onchange="campany_logo('<? echo $row[1]; ?>','<? echo $file_no;$file_no++; ?>')"/></label>
 	</td>
 	</tr>
 <?php	
@@ -158,6 +158,38 @@ function position(id){
 			xmlhttp.open("GET","ajax/campany.php?"+str,true);
 			xmlhttp.send();
 }
+
+
+function campany_logo(str,no){
+
+
+		$(function(){
+      
+		   var file =$("#file"+no)[0].files[0];
+		   
+           var formData = new FormData();
+		   
+           formData.append('file',file);
+		   formData.append('campany',str);
+		   
+           $.ajax({
+             type: "POST",
+             url: "upload/campanylogo.php",  
+             data:formData,
+             cache:false,  
+             processData:false, 
+             contentType:false,
+             success: function(data){
+               alert(data);
+			   setTimeout("location.reload()",2000);
+			 }
+			});
+ 
+		})
+		
+	}
+
+
 </script>
 	
 <?php

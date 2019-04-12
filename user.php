@@ -24,11 +24,35 @@ if($theuser=$_COOKIE['asahiuser']){
 	</style>
 	<script>
 	function touxiang_upload(){
-		document.getElementById('user_name').innerHTML="正在上传头像";
-		setTimeout("document.getElementById('submit').style.display='block';",8000);
-		//setTimeout("window.location.reload();",13000);
+		//document.getElementById('user_name').innerHTML="正在上传头像";
+		//setTimeout("document.getElementById('submit').style.display='block';",8000);
+
+		$(function(){
+      
+		   var file =$("#file")[0].files[0];
+		   
+           var formData = new FormData();
+		   
+           formData.append('file',file);
+		   
+           $.ajax({
+             type: "POST",
+             url: "upload/user_touxiang.php",  //同目录下的php文件
+             data:formData,
+             cache:false,  
+             processData:false, 
+             contentType:false,
+             success: function(data){  //请求成功后的回调函数
+               $("#show_touxiang").empty();
+			   $("#show_touxiang").append(data);
+			 }
+			});
+ 
+		})
 		
 	}
+	
+	
 	</script>
 	<br><br>
 	<table width="700px" align="center" cellspacing="0" cellpadding="0">
@@ -36,14 +60,12 @@ if($theuser=$_COOKIE['asahiuser']){
 			<td width="35%">
 				<div style="position:relative;padding:10px;width:(100%-10px);min-height:400px;background:#FFBBBB;text-align:center;color:white;-webkit-border-radius: 13px 0px 0px 13px;-moz-border-radius: 13px 0px 0px 13px;border-radius: 13px 0px 0px 13px;" align="center">
 					<br>
-					
-						<form action="upload/user_touxiang.php" method="post" enctype="multipart/form-data" target="_blank">
-						<label for="file"><div style="overflow:hidden;cursor:pointer;display:inline-block;width:66px;height:66px;background:white;-webkit-border-radius: 33px 33px 33px 33px;-moz-border-radius: 33px 33px 33px 33px;border-radius: 33px 33px 33px 33px;" align="center">
-							<?php if(file_exists("upload/user_touxiang/".$theuser.".png")){echo "<img src='upload/user_touxiang/".$theuser.".png' width='66px'>";} ?>
-						</div></label><br>
-						<input type="file" name="file" id="file" style="display:none" onchange="touxiang_upload()">
-						<input type="submit" name="submit" id="submit" value="确认提交头像图片" style="display:none;" onclick="window.location.reload();" />
-						</form>
+				
+						<label><div id="show_touxiang" style="overflow:hidden;cursor:pointer;display:inline-block;width:66px;height:66px;background:white;-webkit-border-radius: 33px 33px 33px 33px;-moz-border-radius: 33px 33px 33px 33px;border-radius: 33px 33px 33px 33px;" align="center">
+							<?php if(file_exists("upload/user_touxiang/".$theuser.".png")){echo "<img src='upload/user_touxiang/".$theuser.".png' width='66px'/>";} ?>
+						</div><br>
+						<input type="file" id="file" style="display:none" onchange="touxiang_upload()"></label>
+
 					<div id="user_name"><?php echo $_COOKIE['loged']; ?></div>
 					<br>
 					<div class="mulu" onclick="user_xinxi('click=<?php echo $theuser; ?>',1)">用户信息</div><br>
