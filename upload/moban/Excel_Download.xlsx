@@ -1,274 +1,96 @@
  
-<table id="tableExcel" cellpadding="5" cellspacing="0" width="100%" style="text-align:center;font-size:12px;">
-			<tbody><tr align="center" style="background-color:black;color:white;height:45px;">
-				<td></td>
-                <td>#</td>
-				<td>状态</td>
-				<td>Lot No.</td>
-				<td>番号</td>
-				<td>入库时数量</td>
-				<td>入库时间</td>
-				<td>出库时间</td>
-				<td>朝日单号</td>
-				<td>客户</td>
-				<td>快递号</td>
-				<td>备注</td>
-				<!--<td></td>-->
-            </tr>
-			<tr><form action="putout.php" method="post" target="_blank"></form>
-				<td align="right"><input type="checkbox" onclick="checkboxsum();" name="checkboxsum" _id="2486" value="9000"></td>
-				<td style="color:#C4C4C4">1</td>
-				<td style="max-width:45px;" bgcolor="#FF99AD">在库中</td>
-				<td><a href="###" onclick="in_lotnum('2486')"><u>80019260-10</u></a></td>
-				<td style="max-width:80px;">E13356</td>
-				<td>9000</td>
-				<td>2019-04-03</td>
-				<td></td>
-				<td>PO190123</td>
-				<td>高屋希革斯E-J03681</td>
-				<td></td>
-				<td><marquee scrolldelay="200" style="max-width:120px;font-size:12px;color:red;"></marquee></td>
-				<!--<td><input type="hidden" name="_id" value="2486"/><input type="submit" value="change"></td>-->
-            </tr>
-			<tr><form action="putout.php" method="post" target="_blank"></form>
-				<td align="right"><input type="checkbox" onclick="checkboxsum();" name="checkboxsum" _id="2488" value="12000"></td>
-				<td style="color:#C4C4C4">2</td>
-				<td style="max-width:45px;" bgcolor="#FF99AD">在库中</td>
-				<td><a href="###" onclick="in_lotnum('2488')"><u>80019261-10</u></a></td>
-				<td style="max-width:80px;">E13527</td>
-				<td>12000</td>
-				<td>2019-04-03</td>
-				<td></td>
-				<td>PO190123</td>
-				<td>高屋希革斯E-J03681</td>
-				<td></td>
-				<td><marquee scrolldelay="200" style="max-width:120px;font-size:12px;color:red;"></marquee></td>
-				<!--<td><input type="hidden" name="_id" value="2488"/><input type="submit" value="change"></td>-->
-            </tr>
-			<tr><form action="putout.php" method="post" target="_blank"></form>
-				<td align="right"><input type="checkbox" onclick="checkboxsum();" name="checkboxsum" _id="2490" value="3000"></td>
-				<td style="color:#C4C4C4">3</td>
-				<td style="max-width:45px;" bgcolor="#FF99AD">在库中</td>
-				<td><a href="###" onclick="in_lotnum('2490')"><u>80023367-10</u></a></td>
-				<td style="max-width:80px;">E12635</td>
-				<td>3000</td>
-				<td>2019-04-03</td>
-				<td>0000-00-00</td>
-				<td>PO19020101</td>
-				<td>海能达1061834692-SHL</td>
-				<td>203</td>
-				<td><marquee scrolldelay="200" style="max-width:120px;font-size:12px;color:red;"></marquee></td>
-				<!--<td><input type="hidden" name="_id" value="2490"/><input type="submit" value="change"></td>-->
-            </tr>
-			<tr><form action="putout.php" method="post" target="_blank"></form>
-				<td align="right"><input type="checkbox" onclick="checkboxsum();" name="checkboxsum" _id="2399" value="3000"></td>
-				<td style="color:#C4C4C4">4</td>
-				<td style="max-width:45px;" bgcolor="#FF99AD">在库中</td>
-				<td><a href="###" onclick="in_lotnum('2399')"><u>80022250-10</u></a></td>
-				<td style="max-width:80px;">E14313</td>
-				<td>3000</td>
-				<td>2019-03-05</td>
-				<td></td>
-				<td>PO181211</td>
-				<td>海能达1061826339-SHL</td>
-				<td></td>
-				<td><marquee scrolldelay="200" style="max-width:120px;font-size:12px;color:red;"></marquee></td>
-				<!--<td><input type="hidden" name="_id" value="2399"/><input type="submit" value="change"></td>-->
-            </tr>
-			<tr><form action="putout.php" method="post" target="_blank"></form>
-				<td align="right"><input type="checkbox" onclick="checkboxsum();" name="checkboxsum" _id="2400" value="15000"></td>
-				<td style="color:#C4C4C4">5</td>
-				<td style="max-width:45px;" bgcolor="#FF99AD">在库中</td>
-				<td><a href="###" onclick="in_lotnum('2400')"><u>80018529-10</u></a></td>
-				<td style="max-width:80px;">E14313</td>
-				<td>15000</td>
-				<td>2019-03-05</td>
-				<td></td>
-				<td>PO19010702</td>
-				<td>海能达1061828074-SHL</td>
-				<td></td>
-				<td><marquee scrolldelay="200" style="max-width:120px;font-size:12px;color:red;"></marquee></td>
-				<!--<td><input type="hidden" name="_id" value="2400"/><input type="submit" value="change"></td>-->
-            </tr>
-			<tr><form action="putout.php" method="post" target="_blank"></form>
-				<td align="right"><input type="checkbox" onclick="checkboxsum();" name="checkboxsum" _id="2401" value="12000"></td>
-				<td style="color:#C4C4C4">6</td>
-				<td style="max-width:45px;" bgcolor="#FF99AD">在库中</td>
-				<td><a href="###" onclick="in_lotnum('2401')"><u>80018530-10</u></a></td>
-				<td style="max-width:80px;">E14313</td>
-				<td>12000</td>
-				<td>2019-03-05</td>
-				<td></td>
-				<td>PO19010901</td>
-				<td>海能达1061828526-SHL</td>
-				<td></td>
-				<td><marquee scrolldelay="200" style="max-width:120px;font-size:12px;color:red;"></marquee></td>
-				<!--<td><input type="hidden" name="_id" value="2401"/><input type="submit" value="change"></td>-->
-            </tr>
-			<tr><form action="putout.php" method="post" target="_blank"></form>
-				<td align="right"><input type="checkbox" onclick="checkboxsum();" name="checkboxsum" _id="2402" value="2000"></td>
-				<td style="color:#C4C4C4">7</td>
-				<td style="max-width:45px;" bgcolor="#FF99AD">在库中</td>
-				<td><a href="###" onclick="in_lotnum('2402')"><u>80023226-10</u></a></td>
-				<td style="max-width:80px;">E17595</td>
-				<td>2000</td>
-				<td>2019-03-05</td>
-				<td></td>
-				<td>PO19020102</td>
-				<td>海能达1061830705-SHL</td>
-				<td></td>
-				<td><marquee scrolldelay="200" style="max-width:120px;font-size:12px;color:red;"></marquee></td>
-				<!--<td><input type="hidden" name="_id" value="2402"/><input type="submit" value="change"></td>-->
-            </tr>
-			<tr><form action="putout.php" method="post" target="_blank"></form>
-				<td align="right"><input type="checkbox" onclick="checkboxsum();" name="checkboxsum" _id="2325" value="9000"></td>
-				<td style="color:#C4C4C4">8</td>
-				<td style="max-width:45px;" bgcolor="#FF99AD">在库中</td>
-				<td><a href="###" onclick="in_lotnum('2325')"><u>80015121-10</u></a></td>
-				<td style="max-width:80px;">E14313</td>
-				<td>9000</td>
-				<td>2019-02-20</td>
-				<td></td>
-				<td>PO181218</td>
-				<td>海能达1061826756-SHL</td>
-				<td></td>
-				<td><marquee scrolldelay="200" style="max-width:120px;font-size:12px;color:red;"></marquee></td>
-				<!--<td><input type="hidden" name="_id" value="2325"/><input type="submit" value="change"></td>-->
-            </tr>
-			<tr><form action="putout.php" method="post" target="_blank"></form>
-				<td align="right"><input type="checkbox" onclick="checkboxsum();" name="checkboxsum" _id="2054" value="10000"></td>
-				<td style="color:#C4C4C4">9</td>
-				<td style="max-width:45px;" bgcolor="#FF99AD">在库中</td>
-				<td><a href="###" onclick="in_lotnum('2054')"><u>80009659-10</u></a></td>
-				<td style="max-width:80px;">NHSB064-1212</td>
-				<td>10000</td>
-				<td>2018-12-04</td>
-				<td>0000-00-00</td>
-				<td>PO180907</td>
-				<td>利华<br>RVPO200032</td>
-				<td>0</td>
-				<td><marquee scrolldelay="200" style="max-width:120px;font-size:12px;color:red;"></marquee></td>
-				<!--<td><input type="hidden" name="_id" value="2054"/><input type="submit" value="change"></td>-->
-            </tr>
-			<tr><form action="putout.php" method="post" target="_blank"></form>
-				<td align="right"><input type="checkbox" onclick="checkboxsum();" name="checkboxsum" _id="1751" value="36000"></td>
-				<td style="color:#C4C4C4">10</td>
-				<td style="max-width:45px;" bgcolor="#FF99AD">在库中</td>
-				<td><a href="###" onclick="in_lotnum('1751')"><u>1022130</u></a></td>
-				<td style="max-width:80px;">NHSB146A-D1594</td>
-				<td>36000</td>
-				<td>2018-09-26</td>
-				<td></td>
-				<td>PO180802</td>
-				<td>伟志</td>
-				<td></td>
-				<td><marquee scrolldelay="200" style="max-width:120px;font-size:12px;color:red;"></marquee></td>
-				<!--<td><input type="hidden" name="_id" value="1751"/><input type="submit" value="change"></td>-->
-            </tr>
-			<tr><form action="putout.php" method="post" target="_blank"></form>
-				<td align="right"><input type="checkbox" onclick="checkboxsum();" name="checkboxsum" _id="1681" value="6000"></td>
-				<td style="color:#C4C4C4">11</td>
-				<td style="max-width:45px;" bgcolor="#FF99AD">在库中</td>
-				<td><a href="###" onclick="in_lotnum('1681')"><u>1021135</u></a></td>
-				<td style="max-width:80px;">NHSB146A-D1594</td>
-				<td>6000</td>
-				<td>2018-09-11</td>
-				<td></td>
-				<td>PO18072701</td>
-				<td>伟志</td>
-				<td></td>
-				<td><marquee scrolldelay="200" style="max-width:120px;font-size:12px;color:red;"></marquee></td>
-				<!--<td><input type="hidden" name="_id" value="1681"/><input type="submit" value="change"></td>-->
-            </tr>
-			<tr><form action="putout.php" method="post" target="_blank"></form>
-				<td align="right"><input type="checkbox" onclick="checkboxsum();" name="checkboxsum" _id="1644" value="10000"></td>
-				<td style="color:#C4C4C4">12</td>
-				<td style="max-width:45px;" bgcolor="#FF99AD">在库中</td>
-				<td><a href="###" onclick="in_lotnum('1644')"><u>1016358</u></a></td>
-				<td style="max-width:80px;">NHSB064-1212</td>
-				<td>10000</td>
-				<td>2018-08-28</td>
-				<td></td>
-				<td>PO18062502</td>
-				<td>利华</td>
-				<td></td>
-				<td><marquee scrolldelay="200" style="max-width:120px;font-size:12px;color:red;"></marquee></td>
-				<!--<td><input type="hidden" name="_id" value="1644"/><input type="submit" value="change"></td>-->
-            </tr>
-			<tr><form action="putout.php" method="post" target="_blank"></form>
-				<td align="right"><input type="checkbox" onclick="checkboxsum();" name="checkboxsum" _id="2467" value="2000"></td>
-				<td style="color:#C4C4C4">13</td>
-				<td style="max-width:45px;" bgcolor="#FF99AD">在库中</td>
-				<td><a href="###" onclick="in_lotnum('2467')"><u>1016357</u></a></td>
-				<td style="max-width:80px;">NHSB064-1212</td>
-				<td>2000</td>
-				<td>2018-08-14</td>
-				<td>0000-00-00</td>
-				<td>PO180613</td>
-				<td>利华</td>
-				<td>0</td>
-				<td><marquee scrolldelay="200" style="max-width:120px;font-size:12px;color:red;"></marquee></td>
-				<!--<td><input type="hidden" name="_id" value="2467"/><input type="submit" value="change"></td>-->
-            </tr>
-			<tr><form action="putout.php" method="post" target="_blank"></form>
-				<td align="right"><input type="checkbox" onclick="checkboxsum();" name="checkboxsum" _id="768" value="39000"></td>
-				<td style="color:#C4C4C4">14</td>
-				<td style="max-width:45px;" bgcolor="#FF99AD">在库中</td>
-				<td><a href="###" onclick="in_lotnum('768')"><u>0981089</u></a></td>
-				<td style="max-width:80px;">3016577</td>
-				<td>39000</td>
-				<td>2018-01-17</td>
-				<td></td>
-				<td>PO171019</td>
-				<td>青岛乐星</td>
-				<td></td>
-				<td><marquee scrolldelay="200" style="max-width:120px;font-size:12px;color:red;"></marquee></td>
-				<!--<td><input type="hidden" name="_id" value="768"/><input type="submit" value="change"></td>-->
-            </tr>
-			<tr><form action="putout.php" method="post" target="_blank"></form>
-				<td align="right"><input type="checkbox" onclick="checkboxsum();" name="checkboxsum" _id="769" value="39000"></td>
-				<td style="color:#C4C4C4">15</td>
-				<td style="max-width:45px;" bgcolor="#FF99AD">在库中</td>
-				<td><a href="###" onclick="in_lotnum('769')"><u>0991067</u></a></td>
-				<td style="max-width:80px;">3016577</td>
-				<td>39000</td>
-				<td>2018-01-17</td>
-				<td></td>
-				<td>PO171019</td>
-				<td>青岛乐星</td>
-				<td></td>
-				<td><marquee scrolldelay="200" style="max-width:120px;font-size:12px;color:red;"></marquee></td>
-				<!--<td><input type="hidden" name="_id" value="769"/><input type="submit" value="change"></td>-->
-            </tr>
-			<tr><form action="putout.php" method="post" target="_blank"></form>
-				<td align="right"><input type="checkbox" onclick="checkboxsum();" name="checkboxsum" _id="770" value="18000"></td>
-				<td style="color:#C4C4C4">16</td>
-				<td style="max-width:45px;" bgcolor="#FF99AD">在库中</td>
-				<td><a href="###" onclick="in_lotnum('770')"><u>0991068</u></a></td>
-				<td style="max-width:80px;">3016577</td>
-				<td>18000</td>
-				<td>2018-01-17</td>
-				<td></td>
-				<td>PO171019</td>
-				<td>青岛乐星</td>
-				<td></td>
-				<td><marquee scrolldelay="200" style="max-width:120px;font-size:12px;color:red;"></marquee></td>
-				<!--<td><input type="hidden" name="_id" value="770"/><input type="submit" value="change"></td>-->
-            </tr>
-			<tr><form action="putout.php" method="post" target="_blank"></form>
-				<td align="right"><input type="checkbox" onclick="checkboxsum();" name="checkboxsum" _id="631" value="12000"></td>
-				<td style="color:#C4C4C4">17</td>
-				<td style="max-width:45px;" bgcolor="#FF99AD">在库中</td>
-				<td><a href="###" onclick="in_lotnum('631')"><u>0988398</u></a></td>
-				<td style="max-width:80px;">3016577</td>
-				<td>12000</td>
-				<td>2017-12-20</td>
-				<td></td>
-				<td>PO17092702</td>
-				<td>青岛乐星</td>
-				<td></td>
-				<td><marquee scrolldelay="200" style="max-width:120px;font-size:12px;color:red;"></marquee></td>
-				<!--<td><input type="hidden" name="_id" value="631"/><input type="submit" value="change"></td>-->
-            </tr>
+<table id="tableExcel" cellpadding="1" cellspacing="0" width="100%" style="font-size:12px;">
+<tbody><tr style="background-color:#8F77B5;color:white;height:33px;">
+	
+	<td width="5px"></td>
+	
+	<td>取引先</td>
+	<td>注文PO</td>
+	<td>品番</td>
+	<td align="right">数量</td>
+	<td align="left"></td>
+	<td>订单納期</td>
+	<td>朝日PO</td>
+	<td>日本出荷日</td>
+	<td>朝日科技出货</td>
+	
+	<td>发票</td>
+</tr>
 
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">1</td>
+	
+	<td>希革斯</td>
+	<td><a href="4.php?ddt2=S190221PO0264">S190221PO0264</a></td>
+	<td style="max-width:120px;"><a href="###" onclick="c_banngo('_id=1927&amp;cells=1')"><u>E19348</u></a></td>
+	<td align="right">6000</td>
+	<td>pcs</td>
+	<td>2019-04-17</td>
+	<td><a href="4-1.php?asahit22=PO19022101">PO19022101</a></td>
+	<td>2019-04-04</td>
+	<td><b>2019-04-12</b></td>
+	<!--<td><marquee scrolldelay="200"></marquee></td>-->
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">2</td>
+	
+	<td>高屋希革斯</td>
+	<td><a href="4.php?ddt2=E-J03681">E-J03681</a></td>
+	<td style="max-width:120px;"><a href="###" onclick="c_banngo('_id=1869&amp;cells=2')"><u>E13356</u></a></td>
+	<td align="right">9000</td>
+	<td>pcs</td>
+	<td>2019-04-15</td>
+	<td><a href="4-1.php?asahit22=PO190123">PO190123</a></td>
+	<td>2019-03-28</td>
+	<td><b>2019-04-12</b></td>
+	<!--<td><marquee scrolldelay="200"></marquee></td>-->
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">3</td>
+	
+	<td>高屋希革斯</td>
+	<td><a href="4.php?ddt2=E-J03681">E-J03681</a></td>
+	<td style="max-width:120px;"><a href="###" onclick="c_banngo('_id=1871&amp;cells=3')"><u>E13527</u></a></td>
+	<td align="right">12000</td>
+	<td>pcs</td>
+	<td>2019-04-15</td>
+	<td><a href="4-1.php?asahit22=PO190123">PO190123</a></td>
+	<td>2019-03-28</td>
+	<td><b>2019-04-12</b></td>
+	<!--<td><marquee scrolldelay="200"></marquee></td>-->
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">4</td>
+	
+	<td>高屋希革斯</td>
+	<td><a href="4.php?ddt2=E-J03681">E-J03681</a></td>
+	<td style="max-width:120px;"><a href="###" onclick="c_banngo('_id=1870&amp;cells=4')"><u>E13544</u></a></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td>2019-04-15</td>
+	<td><a href="4-1.php?asahit22=PO190123">PO190123</a></td>
+	<td>2019-04-04</td>
+	<td><b>2019-04-12</b></td>
+	<!--<td><marquee scrolldelay="200"></marquee></td>-->
+	
+	<td></td>
+		
+</tr>
 </tbody></table>
