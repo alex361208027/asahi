@@ -174,11 +174,11 @@ transition-delay: 0.8s;
 				<li><a href="anjian.php" target="_blank">案件列表</a></li>
 			</ul></div>
 			
-		<div class="caidanxuanxiao"><img src="img/other.png"/> &nbsp; 功 &nbsp; 能 >
+		<div class="caidanxuanxiao"><img src="img/otherfunction.png"/> &nbsp; 功 &nbsp; 能 >
 		<ul>
 				<li><a href="other/qrcode.php" target="_blank">海能达标签打印</a></li>
 			</ul></div>	
-		<div class="caidanxuanxiao"><img src="img/other.png"/> &nbsp; 页面设置 >
+		<div class="caidanxuanxiao"><img src="img/page.png"/> &nbsp; 页面设置 >
 		<ul>
 				<li><a href="###" onclick="document.getElementById('shangbutr').style.height='160px';document.getElementById('tabletop').style.height='160px';">手机页面</a></li>
 				<li><a href="###" onclick="document.getElementById('shangbutr').style.height='80px';document.getElementById('tabletop').style.height='80px';">电脑页面</a></li>

@@ -53,9 +53,14 @@ a{text-decoration:none;}
 #myDiv table tr:hover{
 	background-color:#AAAAFF;
 }
-#myDiv table tr td:hover{
-	color:white;
-}
+
+.pick_same{
+	background:;
+		transition: all 0.8s;
+    -webkit-transition: all 0.8s; /* Safari */
+		transition-delay: 0.5s;
+    -webkit-transition-delay:0.5s;
+	}
 
 .tiao{
 	padding:3px 8px 3px 8px;background-color:#666666;color:white;

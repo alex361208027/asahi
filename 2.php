@@ -182,6 +182,8 @@ table{border-collapse: collapse;}
 	border-top:solid 1px #d0dee5
 }
 
+
+
 </style>
 <br><br><br>
 <div class="nopo"><?php echo $nopo; ?></div>
@@ -267,13 +269,13 @@ table{border-collapse: collapse;}
 	<td align="right" class="2_td_checkbox"><input type="checkbox" name="checkboxsum" onclick="checkboxsum();" value="<?php echo $row[3]; ?>" _id="<?php echo $row[12] ?>" cells="<?php echo $jjj+1; ?>"/></td>
 	<td align="center"><?php echo $jjj+1; ?></td>
 	<td align="center" class="2_td_state"><div class="classcp1" style="background-color:<?php echo $bgimg; ?>" title="<? echo $row[8]."(".$states.")"; ?>"><?php if($remark4){echo $remark4;}else{echo $states;} ?></div></td>
-	<td><?php if(!$same){echo $row[0];} ?></td>
-	<td><a href="4.php?ddt2=<?php echo $row[1] ?>"><?php if(!$same){echo $row[1];} ?></a></td>
-	<td style="max-width:120px;"><a href="###" onclick="c_banngo('_id=<?php echo $row[12] ?>&cells=<?php echo $jjj+1 ?>')" ><u><?php echo $row[2] ?></u></a></td>
+	<td class="pick_same" value="<? echo $row[0] ?>"><?php if(!$same){echo $row[0];} ?></td>
+	<td class="pick_same" value="<? echo $row[1] ?>"><a href="4.php?ddt2=<?php echo $row[1] ?>"><?php if(!$same){echo $row[1];} ?></a></td>
+	<td style="max-width:120px;" class="pick_same" value="<? echo $row[2] ?>"><a href="###" onclick="c_banngo('_id=<?php echo $row[12] ?>&cells=<?php echo $jjj+1 ?>')" ><u><?php echo $row[2] ?></u></a></td>
 	<td align="right"><?php echo $row[3] ?></td>
 	<td>pcs</td>
 	<td><?php if($row[4]<=$row[6]){ echo "<font color='red'>".$row[4]."</font>"; }else{ echo $row[4]; } ?></td>
-	<td><a href="4-1.php?asahit22=<?php echo $row[5] ?>"><?php echo $row[5] ?></a></td>
+	<td class="pick_same" value="<? echo $row[5] ?>"><a href="4-1.php?asahit22=<?php echo $row[5] ?>"><?php echo $row[5] ?></a></td>
 	<td><?php echo $row[6] ?></td>
 	<td><b><?php echo $row[7] ?></b></td>
 	<!--<td><marquee scrolldelay="200"><?php //echo $row[8] ?></marquee></td>-->
@@ -324,6 +326,11 @@ $(document).ready(function(){
  
 	
 	
+
+
+	
+	
+	
 });
 
 function td_remove(){
@@ -341,7 +348,7 @@ function td_remove(){
 
 <div class="message">
 
-<button type="button" onclick="td_remove();setTimeout(()=>{exceldownload('Customer');},500);setTimeout(()=>{location.reload()},15000);">导出Excel</button>
+<button type="button" onclick="this.innerHTML='正在导出...';td_remove();setTimeout(()=>{exceldownload('Customer');},500);setTimeout(()=>{location.reload()},15000);">导出Excel</button>
 <? echo file_get_contents("templates/table_select.html"); ?>
 </div>
 
@@ -352,15 +359,15 @@ function td_remove(){
 </tr></td></table>
 <ul class="hide" title="选中项批量操作">
 	<li><div class="sum_show_hide_x">X</div></li>
-	<li onclick="mycheckbox(2);" class="close_hide">合并统计</li>
-	<li onclick="mycheckbox(1)" class="close_hide">生成送货单</li>
-	<li onclick="c_pi_zaikuduizhao()" class="close_hide">查看在库批次号</li>
-	<li onclick="c_pi_qrcode(2)" class="close_hide">生成QR-code</li>
+	<li onclick="mycheckbox(2);" class="close_hide"><img src="img/tongji.png" width="14px"> 合并统计</li>
+	<li onclick="mycheckbox(1)" class="close_hide"><img src="img/songhuodan.png" width="14px"> 生成送货单</li>
+	<li onclick="c_pi_zaikuduizhao()" class="close_hide"><img src="img/pici.png" width="14px"> 查看在库批次号</li>
+	<li onclick="c_pi_qrcode(2)" class="close_hide"><img src="img/qrcode.png" width="14px"> 生成QR-code</li>
 	<li><hr></li>
 	<li><input type="date" id="SHdate" value="<?php echo date('Y-m-d') ?>"></li>
-	<li onclick="c_pi_shdate()" class="close_hide">更改上海发货日</li> 
-	<li onclick="c_pi_chuku()" class="close_hide">出库</li>
-	<li onclick="c_pi_invoice()" class="close_hide">开具发票</li>
+	<li onclick="c_pi_shdate()" class="close_hide"><img src="img/riqi.png" width="14px"> 更改上海发货日</li> 
+	<li onclick="c_pi_chuku()" class="close_hide"><img src="img/chuku.png" width="14px"> 出库</li>
+	<li onclick="c_pi_invoice()" class="close_hide"><img src="img/fapiao.png" width="14px"> 开具发票</li>
 	<li></li>
  </ul>
  <div class="sum_show_x">X</div>
