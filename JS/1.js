@@ -21,6 +21,19 @@ $(document).ready(function(){
 	$(".close_hide").click(function(){
 		 $(".hide").fadeOut(100);
 	});
+	
+	
+	$(".pick_same").hover(function(){
+	  var get=$(this).attr("value");
+	  $("[value='"+get+"']").css({"background":"#AAAAFF"});
+	  
+	},function(){
+	  var get=$(this).attr("value");
+	  $("[value='"+get+"']").css({"background":""});
+	});
+	
+	
+	
 });
 
 function datecount(kkk){
