@@ -25,11 +25,11 @@ $(document).ready(function(){
 	
 	$(".pick_same").hover(function(){
 	  var get=$(this).attr("value");
-	  $("[value='"+get+"']").css({"background":"#AAAAFF"});
+	  $("tr [value='"+get+"']").css({"background":"#AAAAFF"});
 	  
 	},function(){
 	  var get=$(this).attr("value");
-	  $("[value='"+get+"']").css({"background":""});
+	  $("tr [value='"+get+"']").css({"background":""});
 	});
 	
 	

@@ -300,13 +300,13 @@ function po_pi_lotnum(str){
 </tr></td></table>
 <ul class="hide" title="选中项批量操作">
 	<li><div class="sum_show_hide_x">X</div></li>
-<li onclick="mycheckbox(2)" class="close_hide">合并统计</li>
-<li onclick="mycheckbox(1)" class="close_hide">生成朝日订单</li>
+<li onclick="mycheckbox(2)" class="close_hide"><img src="img/tongji.png" height="14px"> &nbsp; 合并统计</li>
+<li onclick="mycheckbox(1)" class="close_hide"><img src="img/songhuodan.png" height="14px"> &nbsp; 生成朝日订单</li>
 <li><hr></li>
 <li><input type="date" id="JPdate" value=""></li>
-<li onclick="po_pi_JPdate()" class="close_hide">更改日本发货日</li>
-<li onclick="mycheckbox(4)" class="close_hide">lotnum入库</li>
-<li></li>
+<li onclick="po_pi_JPdate()" class="close_hide"><img src="img/riqi.png" height="14px"> &nbsp; 更改日本发货日</li>
+<li onclick="mycheckbox(4)" class="close_hide"><img src="img/chuku.png" height="14px"> &nbsp; lotnum入库</li>
+<li> &nbsp; </li>
  </ul>
  <div class="sum_show_x">X</div>
 </div>
