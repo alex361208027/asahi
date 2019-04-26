@@ -441,30 +441,30 @@ function c_pi_zaikuduizhao(str){
 			}
 			//alert(str);
 			
-			var xmlhttp;
-			if (str.length==0)
-			  { 
+			//var xmlhttp;
+			//if (str.length==0)
+			//  { 
 			  //document.getElementById("ajasdiv").innerHTML="";
-			  return;
-			  }
-			if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
-			  xmlhttp=new XMLHttpRequest();
-			  }else{// code for IE6, IE5
-			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-			  }
+			//  return;
+			//  }
+			//if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
+			//  xmlhttp=new XMLHttpRequest();
+			//  }else{// code for IE6, IE5
+			//  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			//  }
 			  
-			xmlhttp.onreadystatechange=function()
-			  {
-			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
-				{	
-					alert(xmlhttp.responseText);
-					
-				}
-			  }
-			xmlhttp.open("GET","./ajax/c_pi_zaikuduizhao.php?"+str,true);
-			xmlhttp.send();
+			//xmlhttp.onreadystatechange=function()
+			//  {
+			//  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			//	{	
+			//		alert(xmlhttp.responseText);
+			//		
+			//	}
+			//  }
+			//xmlhttp.open("GET","./ajax/c_pi_zaikuduizhao.php?"+str,true);
+			//xmlhttp.send();
 			
-
+			window.open("ajax/c_pi_zaikuduizhao.php?"+str,"_BLANK");
 }
 
 function c_pi_qrcode(num){

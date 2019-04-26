@@ -357,7 +357,7 @@ function td_remove(){
 <table width="100%" height="100%" align="center" valign="middle"><tr><td>
  <div id="sum_show" align="center">选中项合计</div><div class="sum_show_caozuo">操作</div>
 </tr></td></table>
-<ul class="hide" title="选中项批量操作">
+ <ul class="hide" title="选中项批量操作">
 	<li><div class="sum_show_hide_x">X</div></li>
 	<li onclick="mycheckbox(2);" class="close_hide"><img src="img/tongji.png" height="14px"> &nbsp; 合并统计</li>
 	<li onclick="mycheckbox(1)" class="close_hide"><img src="img/songhuodan.png" height="14px"> &nbsp; 生成送货单</li>
@@ -375,7 +375,7 @@ function td_remove(){
 
 <form action="2.php" method="post">
 <?php $nowpage=$nowpage+100; ?>
-<?php if($jjj>=100){ ?><input type="submit" value=" &nbsp; " style="background:url('img/next.png') no-repeat; width:46px; height:32px;">
+<?php if($jjj>=100){ ?><input type="submit" value=" &nbsp; " style="background:url('img/next.png') no-repeat;width:46px;height:32px;">
 <input type="hidden" name="nowpage" value="<?php echo $nowpage ?>"/>
 <input type="hidden" name="t6" value="<?php echo $t6 ?>"/><input type="hidden" name="t1" value="<?php echo $t1 ?>"/><input type="hidden" name="t3" value="<?php echo $t3 ?>"/>
 <input type="hidden" name="t5" value="<?php echo $t5 ?>"/><input type="hidden" name="t4" value="<?php echo $t4 ?>"/><input type="hidden" name="selectdate" value="<?php echo $selectdate; ?>"/>
