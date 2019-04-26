@@ -22,110 +22,53 @@
 	
 	<td align="center">1</td>
 	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03651" style=""><a href="4.php?ddt2=E-J03651">E-J03651</a></td>
-	<td style="max-width: 120px;" class="pick_same" value="E14929"><a href="###" onclick="c_banngo('_id=1811&amp;cells=1')"><u>E14929</u></a></td>
-	<td align="right">3000</td>
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190408PO0007" style=""><a href="4.php?ddt2=S190408PO0007">S190408PO0007</a></td>
+	<td style="max-width: 120px;" class="pick_same" value="E18488"><a href="###" onclick="c_banngo('_id=2084&amp;cells=1')"><u>E18488</u></a></td>
+	<td align="right">6000</td>
 	<td>pcs</td>
-	<td>2019-04-02</td>
-	<td class="pick_same" value="PO19010301" style=""><a href="4-1.php?asahit22=PO19010301">PO19010301</a></td>
-	<td>2019-03-14</td>
-	<td><b>2019-04-01</b></td>
+	<td><font color="red">2019-04-17</font></td>
+	<td class="pick_same" value="PO190409" style=""><a href="4-1.php?asahit22=PO190409">PO190409</a></td>
+	<td>2019-05-30</td>
+	<td><b>2019-06-05</b></td>
 	<!--<td><marquee scrolldelay="200"></marquee></td>-->
 	
-	<td>2019-04-17</td>
+	<td></td>
 		
 </tr>
-<tr bgcolor="" class="tabletr">
+<tr bgcolor="#F7F7F7" class="tabletr">
 	
 	
 	<td align="center">2</td>
 	
-	<td class="pick_same" value="双日" style="">双日</td>
-	<td class="pick_same" value="YY190211"><a href="4.php?ddt2=YY190211">YY190211</a></td>
-	<td style="max-width: 120px;" class="pick_same" value="E14929"><a href="###" onclick="c_banngo('_id=1899&amp;cells=2')"><u>E14929</u></a></td>
-	<td align="right">24000</td>
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190408PO0007" style=""><a href="4.php?ddt2=S190408PO0007">S190408PO0007</a></td>
+	<td style="max-width: 120px;" class="pick_same" value="E18489"><a href="###" onclick="c_banngo('_id=2082&amp;cells=2')"><u>E18489</u></a></td>
+	<td align="right">6000</td>
 	<td>pcs</td>
-	<td><font color="red">2019-04-01</font></td>
-	<td class="pick_same" value="PO190212" style=""><a href="4-1.php?asahit22=PO190212">PO190212</a></td>
-	<td>2019-04-11</td>
-	<td><b>2019-04-17</b></td>
+	<td><font color="red">2019-04-17</font></td>
+	<td class="pick_same" value="PO190409" style=""><a href="4-1.php?asahit22=PO190409">PO190409</a></td>
+	<td>2019-05-30</td>
+	<td><b>2019-06-05</b></td>
 	<!--<td><marquee scrolldelay="200"></marquee></td>-->
 	
-	<td>2019-04-17</td>
+	<td></td>
 		
 </tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
+<tr bgcolor="">
 	
 	
 	<td align="center">3</td>
 	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03691" style=""><a href="4.php?ddt2=E-J03691">E-J03691</a></td>
-	<td style="max-width: 120px;" class="pick_same" value="E14929"><a href="###" onclick="c_banngo('_id=1912&amp;cells=3')"><u>E14929</u></a></td>
-	<td align="right">3000</td>
+	<td class="pick_same" value="希革斯" style=""></td>
+	<td class="pick_same" value="S190408PO0007" style=""><a href="4.php?ddt2=S190408PO0007"></a></td>
+	<td style="max-width: 120px;" class="pick_same" value="E18489"><a href="###" onclick="c_banngo('_id=2083&amp;cells=3')"><u>E18489</u></a></td>
+	<td align="right">6000</td>
 	<td>pcs</td>
-	<td>2019-05-02</td>
-	<td class="pick_same" value="PO190213" style=""><a href="4-1.php?asahit22=PO190213">PO190213</a></td>
-	<td>2019-04-18</td>
-	<td><b>2019-04-24</b></td>
-	<!--<td><marquee scrolldelay="200"></marquee></td>-->
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">4</td>
-	
-	<td class="pick_same" value="双日" style="">双日</td>
-	<td class="pick_same" value="YY190304-2" style=""><a href="4.php?ddt2=YY190304-2">YY190304-2</a></td>
-	<td style="max-width: 120px;" class="pick_same" value="E14929"><a href="###" onclick="c_banngo('_id=1960&amp;cells=4')"><u>E14929</u></a></td>
-	<td align="right">21000</td>
-	<td>pcs</td>
-	<td>2019-05-02</td>
-	<td class="pick_same" value="PO190305" style=""><a href="4-1.php?asahit22=PO190305">PO190305</a></td>
-	<td>2019-04-25</td>
-	<td><b>2019-04-30</b></td>
-	<!--<td><marquee scrolldelay="200"></marquee></td>-->
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">5</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03719" style=""><a href="4.php?ddt2=E-J03719">E-J03719</a></td>
-	<td style="max-width: 120px;" class="pick_same" value="E14929"><a href="###" onclick="c_banngo('_id=1978&amp;cells=5')"><u>E14929</u></a></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td>2019-06-04</td>
-	<td class="pick_same" value="PO190308" style=""><a href="4-1.php?asahit22=PO190308">PO190308</a></td>
-	<td>2019-05-16</td>
-	<td><b>2019-06-02</b></td>
-	<!--<td><marquee scrolldelay="200"></marquee></td>-->
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">6</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03742" style=""><a href="4.php?ddt2=E-J03742">E-J03742</a></td>
-	<td style="max-width: 120px;" class="pick_same" value="E14929"><a href="###" onclick="c_banngo('_id=2048&amp;cells=6')"><u>E14929</u></a></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td>2019-07-02</td>
-	<td class="pick_same" value="PO190403" style=""><a href="4-1.php?asahit22=PO190403">PO190403</a></td>
-	<td>2019-06-13</td>
-	<td><b>2019-06-30</b></td>
+	<td>2019-07-03</td>
+	<td class="pick_same" value="PO190409" style=""><a href="4-1.php?asahit22=PO190409">PO190409</a></td>
+	<td>2019-06-14</td>
+	<td><b>2019-06-19</b></td>
 	<!--<td><marquee scrolldelay="200"></marquee></td>-->
 	
 	<td></td>
