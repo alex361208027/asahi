@@ -1,3 +1,44 @@
+<style>
+.po_list{
+	display:inline-block;padding:5px;background:#EEEEFF;margin:2px;font-size:16px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+.lot_list{
+	display:inline-block;padding:5px;cursor:pointer;font-size:16px;
+	background-color:#FFFFCC;margin:2px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+.no_way{
+	display:inline-block;padding:5px;color:white;font-size:16px;
+	background:black;margin:2px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.quantity{
+	font-size:12px;color:#777777;
+}
+</style>
+<script type="text/javascript" src="../JS/jquery-3.2.1.min.js"></script>
+<script>
+$(function(){
+	$(".lot_list").click(function(){
+		if($(this).css("background-color")=="rgb(255, 255, 204)"){
+			$(this).css("background-color","#EEEEFF");
+		}else{
+			$(this).css("background","");
+		}
+	});
+});
+
+</script>
+
+
 <?php
 $servername = "localhost";
 $username = "root";
@@ -23,29 +64,24 @@ foreach($checkbox as $checkboxid => $_id){
 	if($zaiku_id[0]){
 		$zaiku_return_m=findtotal($row[0],$zaiku_quantity,$zaiku_id);
 		if(count($zaiku_return_m)>0){
-			echo "【".$row[2]."】".$row[1]."×".$row[0]."=";
-			$mm_count=1;
+			echo "*<div class='po_list'>【".$row[4]."】<b>".$row[1]."</b><font class='quantity'>(".$row[0].")</font></div> ";
+			//$mm_count=1;
 			foreach($zaiku_return_m as $mm){
-			
-					if($mm_count>1){
-					echo "+";
-					}
-					
-					echo "【Lot】".$zaiku_lotnum[$mm]."×".$zaiku_quantity[$mm];
+
+					echo "<div class='lot_list'><b>".$zaiku_lotnum[$mm]."</b><font class='quantity'>(".$zaiku_quantity[$mm].")</font></div> ";
 					$remove_inout_id[]=$zaiku_id[$mm];
-					//echo "{".$zaiku_id[$mm]."}";
-					$mm_count++;
+
 
 			}
 			
 		}else{
-			echo "【".$row[2]."】".$row[1]."×".$row[0]." = ???";
+			echo "*<div class='po_list'>【".$row[4]."】".$row[1]."<font class='quantity'>(".$row[0].")</font></div> <div class='no_way'>未找到对应批次</div>";
 		}
 		
 	}else{
-		echo "【".$row[2]."】".$row[1]."×".$row[0]." = ???";
+		echo "*<div class='po_list'>【".$row[4]."】".$row[1]."<font class='quantity'>(".$row[0].")</font></div> <div class='no_way'>未找到对应批次</div>";
 	}
-	echo "\r";
+	echo "<br>";
 }
 
 function findtotal($all,$q,$id){

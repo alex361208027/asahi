@@ -11,7 +11,7 @@ input[type="password"],
 input[type="email"],
 input[type="tel"]{
     width: 120px;
-    height: 26px;
+    height: 20px;
     line-height: 16px;
     margin: 0 0 10px;
     padding: 2px 0px;
@@ -55,10 +55,8 @@ body{
 }
 
 .bb{
-	font-size:16px;margin-left:30px;padding:3px 10px 3px 10px;display:inline;text-align:center;
-	-webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+	font-size:16px;padding:3px 10px 3px 10px;display:inline;text-align:center;width:90px;
+	font-weight:bold;background-color:#CCCCFF;
    transition: all 0.3s;
 -moz-transition: all 0.3s;	/* Firefox 4 */
 -webkit-transition: all 0.3s;	/* Safari 和 Chrome */
@@ -72,17 +70,21 @@ body{
 	position:relative;
 }
 .t2{
-	position:absolute;top:26px;font-size:12px;transition: all 0.6s;color:#FFAAAA;
+	position:absolute;top:19px;font-size:12px;color:#FFAAAA;left:33px;
+	transition: all 0.6s;
+-moz-transition: all 0.6s;	/* Firefox 4 */
+-webkit-transition: all 0.6s;	/* Safari 和 Chrome */
+-o-transition: all 0.6s;
 }
 </style>
 <body>
 <div width="100%" align="center">
 
 	<div class="kk">
-				  <div style="position:absolute;right:20px;top:50px;font-size:14px;color:white" align="left">
+				  <div style="position:absolute;right:20px;top:50px;font-size:14px;color:white" align="right">
 					<form action="index.php" method="post" id='login' onsubmit="return false;">
-					<div class="t1"><div class="t2" id="wuser">USER</div>&nbsp;</div><input type="text" name="user" size="10" maxlength="" /><br><br>
-					<div class="t1"><div class="t2" id="wpw">PassWord</div>&nbsp;</div><input type="password" name="userpw" size="10" maxlength="" /><br><br>
+					<div class="t1"><div class="t2" id="wuser">USER</div>&nbsp;</div><img src="img/user.png" width="20px" /> &nbsp; <input type="text" name="user" style="width:90px;" maxlength="" />
+					<div class="t1"><div class="t2" id="wpw">PassWord</div>&nbsp;</div><img src="img/mima.png" width="20px" /> &nbsp; <input type="password" name="userpw" style="width:90px;" maxlength="" /><br><br>
 					<input type="hidden" name="logintime" value="<?php echo $todaytime; ?>"/>
 					<input type="submit" id="loging" class="bb" onclick="if(document.getElementsByName('user')[0].value==''||document.getElementsByName('userpw')[0].value==''){document.getElementById('error').style.display='block';setTimeout('document.getElementById(\'error\').style.display=\'none\'',2000)}else{document.getElementById('login').submit();document.getElementById('...').innerHTML='Loading.';}" value="Log In"/>
 					</form>
@@ -133,12 +135,12 @@ $(document).ready(function(){
 	 
 	 $(":text").focusout(function(){
 		 if(!$(this).val()){
-		$("#wuser").css({"top":"26px","font-size":"12px","color":"#FFAAAA"});
+		$("#wuser").css({"top":"19px","font-size":"12px","color":"#FFAAAA"});
 		 }
 	 });
 	 $(":password").focusout(function(){
 		 if(!$(this).val()){
-		$("#wpw").css({"top":"26px","font-size":"12px","color":"#FFAAAA"});
+		$("#wpw").css({"top":"19px","font-size":"12px","color":"#FFAAAA"});
 		 }
 	 });
 });
