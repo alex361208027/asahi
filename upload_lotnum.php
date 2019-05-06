@@ -70,8 +70,9 @@ if($_FILES["file"]){
 $popo=$_POST['popo'];
 if($popo){
 foreach($popo as $popo){
-	$result=mysqli_query($conn,"SELECT * FROM `t_poteacher` WHERE _id='$popo' limit 1;");
+	$result=mysqli_query($conn,"SELECT * FROM `t_poteacher` WHERE _id='$popo' limit 1");
 	$row=$result->fetch_row();
+		if($row[8]==""){
 		$p_banngo[]=$row[1];
 		$p_po[]=$row[0];
 		$p_quantity[]=$row[2];
@@ -79,6 +80,7 @@ foreach($popo as $popo){
 		$p_id[]=$row[9];
 		
 		$p_quantity_check[]=$row[2];
+		}
 
 }
 
