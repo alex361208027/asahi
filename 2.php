@@ -256,6 +256,10 @@ table{border-collapse: collapse;}
 							}else{
 								$remark4="";
 							}
+							
+							if($row[15]){
+								$tuichi=$tuichi.'<div class="classcp1" style="background-color:yellow;color:black;">拆</div>';
+							}
 					
 	if($same_po==$row[1]&&$same_banngo==$row[2]){
 		$same=1;
@@ -278,7 +282,6 @@ table{border-collapse: collapse;}
 	<td class="pick_same" value="<? echo $row[5] ?>"><a href="4-1.php?asahit22=<?php echo $row[5] ?>"><?php echo $row[5] ?></a></td>
 	<td><?php echo $row[6] ?></td>
 	<td><b><?php echo $row[7] ?></b></td>
-	<!--<td><marquee scrolldelay="200"><?php //echo $row[8] ?></marquee></td>-->
 	<td class="2_td_tuichi"><div class='starmark' val="<? echo $row[12]; ?>" val2="<? echo $row[14]; ?>"><? echo "<img src='img/star".$row[14].".png'/>" ?></div><? echo $tuichi; ?></td>
 	<td><?php if($row[10]=='0000-00-00'){}else{echo $row[10];} ?></td>
 	<?php $jjj=$jjj+1 ?>

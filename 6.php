@@ -185,6 +185,8 @@ table{border-collapse: collapse;}
 								$bgimg='#999999';$states='上海着';
 								//$eee=$eee+1;
 							}
+							
+							
 ?>
 <tr <?php  if($colordate!=$row[3]){if($bgcolor==""){$bgcolor="#F7F7F7";}else{$bgcolor="";} echo "bgcolor='".$bgcolor."'"; }else{echo "bgcolor='".$bgcolor."'";}$colordate=$row[3]; ?> class="tabletr">
 	
@@ -199,7 +201,7 @@ table{border-collapse: collapse;}
 	<td><?php if($row[4]==0){ echo ""; }elseif($row[4]<=$row[3]){ echo "<font color='red'>".$row[4]."</font>"; }else{ echo $row[4]; } ?></td>
 	<td><b><?php if($row[3]==0){ echo ""; }else{ echo $row[3]; } ?></b></td>
 	<td align="center"><a href="4.php?ddt2=<?php echo $row[6]; ?>" ><?php echo $row[6]; ?></a></td>
-	<td><marquee scrolldelay="200"><?php echo $row[7] ?></marquee></td>
+	<td><marquee scrolldelay="200"><?php echo $row[7] ?></marquee><? if($row[11]){echo "[拆]";} ?></td>
 	<?php $jjj=$jjj+1 ?>
 	
 </tr>
