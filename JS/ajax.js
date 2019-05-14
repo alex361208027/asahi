@@ -468,7 +468,15 @@ function c_pi_zaikuduizhao(str){
 }
 
 function c_pi_qrcode(num){
-	
+			
+			campany=prompt("请输入客户编号：【1】SIIX;【2】Hytera");
+			if(campany==1){
+				campany="siix";
+			}else if(campany==2){
+				campany="hytera";
+			}
+			
+			
 			str="";
 			var checkbox=document.getElementsByName('checkboxsum');
 			str+="data="+num;
@@ -477,7 +485,7 @@ function c_pi_qrcode(num){
 				str+="&checkbox[]="+checkbox[i].getAttribute('_id');
 				}
 			}
-			window.open("other/qrcode/qrcode.php?"+str,"_BLANK"); 
+			window.open("other/qrcode/qrcode_"+campany+".php?"+str,"_BLANK"); 
 			
 
 }
