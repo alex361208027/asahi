@@ -56,7 +56,7 @@ hr{
 	<div style="position:absolute;top:60px;left:50px;font-size:;">
 		<table cellpadding="0" cellspacing="0" width="100%" border="0">
 				<tr>
-				<td width="auto">地址：<input type="text" style="text-align:left;width:500px;" value="上海市长宁区延安西路1088号长峰中心516室"/></td>
+				<td width="auto">地址：<input type="text" style="text-align:left;width:500px;" value="上海市长宁区延安西路1088号长峰中心818室"/></td>
 				</tr>
 				<tr>
 				<td width="auto">电话：<input type="text" style="text-align:left;width:500px;" value="021-62126466"/></td>

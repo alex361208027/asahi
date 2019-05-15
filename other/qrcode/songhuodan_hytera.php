@@ -131,7 +131,7 @@ $(document).ready(function(){
 </div>	
 </body>
 <head>
-<title>Hytera送货单(订单<?php echo $_GET['w6'][0]; ?>)</title>
+<title>Hytera送货单(订单<?php echo $po[0]; ?>)</title>
 </head>
 <?php 
 }

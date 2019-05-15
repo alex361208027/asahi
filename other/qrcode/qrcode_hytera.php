@@ -2,7 +2,13 @@
 <title>QRcode</title>
 <script src="../../JS/jquery-3.2.1.min.js"></script>
 </head>
-
+<script>
+$(function(){
+	$("#same_date").click(function(){
+		$(".input_date").val($(".input_date").eq(0).val());
+	});
+});
+</script>
 <style>
 table{
 	font-size:12px;
@@ -117,13 +123,12 @@ if($data==2){
 			$zaiku_lotnum[]=$rowzaiku[2];
 		}
 		
-		$po_substr[]=substr($row[4],0,10);
-		
 		if($zaiku_id[0]){
 
 			$zaiku_return_m=findtotal($row[0],$zaiku_quantity,$zaiku_id);
 			if(count($zaiku_return_m)>0){
 				foreach($zaiku_return_m as $mm){
+					$po_substr[]=substr($row[4],0,10);
 					   $remove_inout_id[]=$zaiku_id[$mm];
 				}
 				
@@ -164,12 +169,12 @@ foreach($id as $id_lot){
 	$row_lot=mysqli_query($conn,"SELECT lotnum FROM t_inout WHERE _id='$id_lot' limit 1")->fetch_row();
 	echo $row_lot[0];
 	?>
-<input type="text" name="datecode[]" value="" />
+<input type="text" class="input_date" name="datecode[]" value="" placeholder="出厂日期"/>
 	<?
 	echo "<br>";
 }
 ?>
-<br><input type="submit" value="生成二维码"/>
+<br><input type="button" id="same_date" value="使用同一日期"/> <input type="submit" value="生成二维码"/>
 </form>
 
 
@@ -283,7 +288,7 @@ if($songhuodan_po){
 		<?
 		$the_songhuodan_po=$songhuodan_po[$i_song];
 		unset($songhuodan_po[$i_song]);
-		for($i_saerch=0;$i_saerch<count($songhuodan_po);$i_saerch++){
+		for($i_saerch=0;$i_saerch<count($songhuodan_lot);$i_saerch++){
 		if(in_array($the_songhuodan_po,$songhuodan_po)){
 			$earch_result=array_search($the_songhuodan_po,$songhuodan_po);
 			?>
