@@ -88,19 +88,19 @@ $(document).ready(function(){
 				<td><b>供应商批次</b></td>
 			</tr>
 			<?php for($i=0;$i<count($po);$i++){ ?>
-			<tr>
-				<td><input type="text" value="<?php echo $wuliaohao[$i]; ?>" style="width:130px;"/></td>
-				<td>【T1专用】(<input type="text" value="<?php echo $banngo[$i]; ?>" style="width:55px;text-align:center"/>)LED 白色<br>【多供应商】</td>
-				<td><input type="text" value="<?php echo $po[$i]; ?>" style="width:90px;"/></td>
+			<tr align="center">
+				<td><?php echo $wuliaohao[$i]; ?></td>
+				<td align="left">【T1专用】(<?php echo $banngo[$i]; ?>)LED 白色<br>【多供应商】</td>
+				<td><?php echo $po[$i]; ?></td>
 				<td></td>
 				<td>PCS</td>
 				<td><input type="text" value="<?php echo date('Y-m-d',(strtotime('+2 days', strtotime(date('Y-m-d'))))); ?>" style="width:75px;"/></td>
 				<td></td>
-				<td><input type="text" value="<?php echo $lot[$i]; ?>" style="width:88px;"/></td>
+				<td><?php echo $lot[$i]; ?></td>
 				<td><input type="text" value="1" style="width:25px;"/></td>
-				<td><input type="text" value="<?php echo $quantity[$i]; ?>" style="width:55px;"/></td>
-				<td><input type="text" value="<?php echo $date[$i]; ?>" style="width:75px;"/></td>
-				<td><input type="text" value="<?php echo $lot[$i]; ?>" style="width:88px;"/></td>
+				<td><?php echo $quantity[$i]; ?></td>
+				<td><?php echo $date[$i]; ?></td>
+				<td><?php echo $lot[$i]; ?></td>
 			</tr>
 			<?php } ?>
 			<tr>

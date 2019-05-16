@@ -2,10 +2,8 @@
 echo file_get_contents("templates/header.html");
 
 date_default_timezone_set('PRC');
-$todaytime=date('Y-m-d H:i:s');
-$today15=date('Y-m-d',strtotime('-5 months'));
-$today25=date('Y-m-d',strtotime('-15 months'));
-$today35=date('Y-m-d',strtotime('-30 months'));
+//$todaytime=date('Y-m-d H:i:s');
+
 
 $servername = "localhost";
 $username = "root";
@@ -68,7 +66,7 @@ if($_GET['po2']){
 }
 
 if($c1){
-	$select_c1="ordernum like '%$c1%' ";
+	$select_c1="ordernum = '$c1' ";
 }else{
 	$select_c1="po_id='' AND state= '' ";
 }
@@ -80,19 +78,23 @@ if($c2){
 
 
 if($po1){
-	$select_po1="asahiorder like '%$po1%' AND ";
+	$select_po1="asahiorder = '$po1' AND ";
 }else{
 	$select_po1="customer_id='' AND ";
 }
 if($po2){
-	$select_po2="banngo like '%$po2%' AND (JPdate = '0000-00-00' OR JPdate >= '$today35')";
+	if($po1){
+	$select_po2="banngo like '%$po2%'";
+	}else{
+	$select_po2="banngo like '%$po2%' AND pipei=''";	
+	}
 	$resultzaiku=mysqli_query($conn,"SELECT * FROM `t_inout` WHERE (outquantity = 0 OR outquantity is null) AND banngo like '%$po2%'");
 }else{
 	if($po1){
 	$select_po2="banngo <> ''";
 	}else{
-	$select_po2="((JPdate = '0000-00-00' OR JPdate >= '$today15') OR (banngo in (SELECT banngo FROM t_inout WHERE outquantity = 0 OR outquantity is null GROUP BY banngo) AND asahiorder in (SELECT asahipo FROM t_inout where outquantity = 0 OR outquantity is null GROUP BY asahipo)))";
-
+	//$select_po2="((JPdate = '0000-00-00' OR JPdate >= '$today15') OR (banngo in (SELECT banngo FROM t_inout WHERE outquantity = 0 OR outquantity is null GROUP BY banngo) AND asahiorder in (SELECT asahipo FROM t_inout where outquantity = 0 OR outquantity is null GROUP BY asahipo)))";
+	$select_po2="customer_id = '' AND pipei=''";
 	}
 }
 
@@ -102,6 +104,22 @@ $resultc=mysqli_query($conn,"SELECT * FROM `t_teacher` WHERE $select_c1 $select_
 $resultpo=mysqli_query($conn,"SELECT * FROM `t_poteacher` WHERE $select_po1 $select_po2 order by JPdate desc");
 if($customerradio){echo "【".$echo."】";}
 ?>
+<script>
+function switch_on_off(shit,str){
+	$(function(){
+		onoff=$(shit).attr("switch");
+	 $.post("ajax/pipei_switch.php",{id:str,onoff:onoff},function(data){
+		if(data){
+			onoff="off";
+		}else{
+			onoff="on";
+		}
+		$(shit).attr("src","img/switch_"+onoff+".png");
+		$(shit).attr("switch",data);
+	 });
+	});	
+}
+</script>
 <body onload="document.getElementById('findme').click()">
 <a id="findme" href="indexother.php#findme_pipei" target="shangbu"></a>
 <form action="pipei.php" method="post" target="xiabu">
@@ -139,15 +157,17 @@ if($customerradio){echo "【".$echo."】";}
 				<td>quantity</td>
 				<td>JPdate</td>
 				<td>customer po</td>
+				<td>显示</td>
 			</tr>
 			<?php while($rowpo=$resultpo->fetch_row()){ ?>
 			<tr align="center">
 				<td><input type="radio" name="asahiradio" value="<?php echo $rowpo[9] ?>"></td>
-				<td><a href="4-1.php?asahit1=<?php echo $rowpo[0]; ?>" ><?php echo $rowpo[0] ?><br>&nbsp;</a></td>
+				<td><a href="4-1.php?asahit1=<?php echo $rowpo[0]; ?>" ><?php echo $rowpo[0] ?></a></td>
 				<td><a href="###" onclick="po_banngo('_id=<?php echo $rowpo[9] ?>')"><?php echo $rowpo[1] ?></a></td>
 				<td><?php echo $rowpo[2] ?></td>
 				<td><?php echo $rowpo[3] ?></td>
 				<td><?php if($rowpo[6]){echo $rowpo[6];}elseif($rowpo[8]){echo "【在库确认】";} ?></td>
+				<td><img onclick="switch_on_off(this,<? echo $rowpo[9]; ?>)" switch="<? if(!$rowpo[12]){echo 0;}else{echo 1;} ?>" src="img/switch_<? if($rowpo[12]){echo "off";}else{echo "on";} ?>.png"/><br>&nbsp;</td>
 			</tr>
 			<?php } ?>
 			<?php if($po2){ ?>

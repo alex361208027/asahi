@@ -25,10 +25,14 @@ foreach($checkbox as $checkboxid => $_id){
 			foreach($zaiku_return_id as $f_num => $f_id){
 			  $campany=$row[3].$row[4];
 			  mysqli_query($conn,"UPDATE `t_inout` SET outquantity=quantity, outtime='$chukudate', campany='$campany', expressnum='$expressnum' WHERE _id = '$f_id' limit 1");	
-			echo "+在库id：".$f_id;
+			  
+			  $row_zaiku_lot=mysqli_query($conn,"SELECT lotnum,quantity FROM t_inout WHERE _id='$f_id' limit 1")->fetch_row();
+			//echo "+在库id：".$f_id;
+			echo "+【Lot：".$row_zaiku_lot[0]."×".$row_zaiku_lot[1]."】";
 			}
 			mysqli_query($conn,"UPDATE `t_teacher` SET state='完成', SHdate='$chukudate' WHERE _id = '$_id' limit 1");	
-			echo "-->订单id：".$_id."出库成功";
+			//echo "-->订单id：".$_id."出库成功";
+			echo "=【".$row[1]."×".$row[0]."】 (出货操作成功)";
 		}else{
 			echo "其中一个错误 请尝试手动出库 error-1";
 		}

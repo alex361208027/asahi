@@ -743,7 +743,8 @@ function c_order_delete_complete(str){
 				{	
 					
 					document.getElementById("ajasdiv2").innerHTML="删除完成 2秒后刷新";
-			setTimeout("location.reload()",2000);
+			//setTimeout("location.reload()",2000);
+				setTimeout(()=>{window.open("indexxiabu.php","xiabu")},2000); 
 				}
 			  }
 			xmlhttp.open("GET","./ajax/c_order_delete_complete.php?"+str,true);
@@ -1239,7 +1240,8 @@ function po_order_delete_complete(str){
 				{	
 					
 					document.getElementById("ajasdiv2").innerHTML="删除完成 2秒后刷新";
-			setTimeout("location.reload()",2000);
+			//setTimeout("location.reload()",2000);
+			setTimeout(()=>{window.open("indexxiabu.php","xiabu")},2000); 
 				}
 			  }
 			xmlhttp.open("GET","./ajax/po_order_delete_complete.php?delete="+str,true);

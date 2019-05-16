@@ -42,9 +42,8 @@ if($result->num_rows == 0){
 	}elseif($row[3]==2000){
 		echo "<input type='hidden' id='quantitycheck' value='2000'/>";
 	}
-	
-	$today25=date('Y-m-d',strtotime('-6 months'));
-	$sql="SELECT * FROM `t_poteacher` WHERE banngo = '$banngo' AND customer_id = '' AND (JPdate = 0 OR JPdate >= '$today25')";
+
+	$sql="SELECT * FROM `t_poteacher` WHERE banngo = '$banngo' AND customer_id = '' AND pipei=''";
 	$result = mysqli_query($conn,$sql);
 	if($result->num_rows != 0){
 		echo "该品番可能有多余<a target='_BLANK' href='pipei.php'><u>未匹配的订单</u></a><br>请注意：如果确实有多余未匹配的订单，则下方朝日订单号不填写，以免多下订单";
