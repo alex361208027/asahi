@@ -572,7 +572,7 @@ function c_chaifen_complete(str){
 			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
 				{	
 					document.getElementById("ajasdiv2").innerHTML=xmlhttp.responseText;
-					setTimeout("location.reload()",2000);
+					setTimeout("location.reload()",5000);
 					cells=document.getElementById('cells').value;
 					document.getElementById('tableExcel').rows[cells].cells[2].innerHTML="已拆分";
 				}

@@ -132,7 +132,40 @@ function checkall12(){
 }
 
 
-
+function newponum(str,date){
+	
+		var xmlhttp;
+			if(str==1){
+			today=date;
+			}else if(str==2){
+			today=document.getElementsByName("t2")[1].value;
+			}
+		
+			if (str.length==0)
+			  { 
+			  //document.getElementById("ajasdiv").innerHTML="";
+			  return;
+			  }
+			if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
+			  xmlhttp=new XMLHttpRequest();
+			  }else{// code for IE6, IE5
+			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+			  
+			xmlhttp.onreadystatechange=function()
+			  {
+			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+				{	
+					if(str==1){
+					document.getElementsByName("asahiorder")[0].value= xmlhttp.responseText;
+					}else if(str==2){
+					document.getElementsByName("t1")[1].value= xmlhttp.responseText;	
+					}
+				}
+			  }
+			xmlhttp.open("GET","ajax/newponum.php?today="+today,true);
+			xmlhttp.send();
+}
 
 //////
 function po_ruku_plus(str){
