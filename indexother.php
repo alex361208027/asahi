@@ -58,46 +58,13 @@ foreach($campany_list as $campany_lists){
   订单编号:<input type="text" name="t2" size="10" maxlength="" />
   订单日期:<input type="date" name="t3" size="10" maxlength="" value="<?php echo date('Y-m-d'); ?>"/>
   <input type="submit" style="background-color:#FF4469" value="新 建 订 单" onclick="buttons(this);"/>
-  <input type="text" name="asahiorder" size="10" value="" placeholder="同时创建朝日订单" /><input type="button" value="生成朝日单号" onclick="newponum(1);buttons(this);"/><input type="button" value="Reset" onclick="location.reload();"/>
+  <!--<input type="text" name="asahiorder" size="10" value="" placeholder="同时创建朝日订单" /><input type="button" value="生成朝日单号" onclick="newponum(1);buttons(this);"/>-->
+  <input type="button" value="Reset" onclick="location.reload();"/>
  
   </form>
 </td></tr></table>
 </div>
-<script>
-function newponum(str){
-		var xmlhttp;
-			if(str==1){
-			today=document.getElementsByName("t3")[1].value;
-			}else if(str==2){
-			today=document.getElementsByName("t2")[1].value;
-			}
-		
-			if (str.length==0)
-			  { 
-			  //document.getElementById("ajasdiv").innerHTML="";
-			  return;
-			  }
-			if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
-			  xmlhttp=new XMLHttpRequest();
-			  }else{// code for IE6, IE5
-			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-			  }
-			  
-			xmlhttp.onreadystatechange=function()
-			  {
-			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
-				{	
-					if(str==1){
-					document.getElementsByName("asahiorder")[0].value= xmlhttp.responseText;
-					}else if(str==2){
-					document.getElementsByName("t1")[1].value= xmlhttp.responseText;	
-					}
-				}
-			  }
-			xmlhttp.open("GET","ajax/newponum.php?today="+today,true);
-			xmlhttp.send();
-}
-</script>
+
 <a name="findme_xinjian2"></a>
 <div class="indexother">
 <table cellpadding="0" cellspacing="0" width="100%" height="100%"><tr><td>

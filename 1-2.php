@@ -2,6 +2,8 @@
 echo file_get_contents("templates/header.html");
 require_once("libs/myfunction.php");
 
+date_default_timezone_set('PRC');
+$todaytime=date('Y-m-d H:i:s');
 
 if($_GET['t1']){
 	$t1 = $_GET['t1'];
@@ -42,33 +44,41 @@ $insert_c_id=mysqli_insert_id($conn);
 		$result3 = mysqli_query($conn,$sql3);
 		$rows3=$result3->num_rows;
 		if($rows3==0){
-			echo "<font color='red'>朝日订单".$asahiorder."可能不存在。本次品番未录入朝日订单!!</font>";
-			$asahiorder="";
-		}else{
+			if($rows3==0){
+			mysqli_query($conn,"INSERT INTO `t_postudent`(`asahiorder`, `orderdate`,`remark`, `person`) VALUES ('$asahiorder','$t3','$t1','{$_COOKIE['asahiuser']}')");
+			mysqli_query($conn,"INSERT INTO `t_note`(`user`, `note`, `time`, `remark`) VALUES ('{$_COOKIE['asahiuser']}','$asahiorder','$todaytime',7)");
+			mysqli_query($conn,"DELETE FROM `t_note` WHERE remark = 7 order by time asc LIMIT 1");
+			}else{
+				$note_asahiorder_exist="(朝日订单【".$asahiorder."】新建成功)";
+			}
+			
+
+		}
 	
 		mysqli_query($conn,"INSERT INTO `t_poteacher`(`asahiorder`, `banngo`, `quantity`, `campany`, `campanyorder`, `customer_id`, `hopedate` ) VALUES ('$asahiorder','$t5','$t6','$t1','$t2','$insert_c_id','$t7')");
 		$insert_po_id=mysqli_insert_id($conn);
 
 		mysqli_query($conn,"UPDATE `t_teacher` SET asahiorder='$asahiorder' , po_id='$insert_po_id' WHERE _id='$insert_c_id' limit 1");
-		}
+		
 	}
 
 ?>
-继续录入产品或结束<br>
 <body style="padding:2%" onload="document.getElementsByName('t5')[0].focus();">
+继续录入产品或结束<br>
 <table><tr><td valign="top">
 <div width="">
  <div class="php1">
 	<form action="1-2.php" method="post">
 		<input type="hidden" name="t1" value="<?php echo $t1 ?>"/>
 		<input type="hidden" name="t2" value="<?php echo $t2 ?>"/>
+	<? echo	$note_asahiorder_exist; ?>
 	  <div class="php1campany"><?php echo $t2 ?></div>
 	  <hr>
-	  <div class="php1word">产品番号<input list="banngolist" class="inputlist" name="t5" value="" onfocusout="findbanngo(this.value+'&banngoname=5&campany='+document.getElementsByName('t1')[0].value)"/></div>
+	  <div class="php1word">产品番号 <input list="banngolist" class="inputlist" name="t5" value="" onfocusout="findbanngo(this.value+'&banngoname=5&campany='+document.getElementsByName('t1')[0].value)"/></div>
 	  <div id="findbanngo" style="display:none;font-size:12px;color:#FFAABB;padding-left:20px;">加载中</div>
-	  <div class="php1word">产品数量<input list="quantitylist" class="inputlist" name="t6" onchange="quantitychecktest(this.value)"/></div>
-	  <div class="php1word">希望交期<input type="date" name="t7" value="<?php echo $t7 ?>" /></div>
-	  <div class="php1word">朝日订单<input type="text" name="asahiorder" value="<?php echo $asahiorder ?>" placeholder="同时创建朝日订单"/></div>
+	  <div class="php1word">产品数量 <input list="quantitylist" class="inputlist" name="t6" onchange="quantitychecktest(this.value)"/></div>
+	  <div class="php1word">希望交期 <input type="date" name="t7" value="<?php echo $t7 ?>" /></div>
+	  <div class="php1word">朝日订单 <input type="text" name="asahiorder" value="<?php echo $asahiorder ?>" placeholder="创建朝日订单 并录入"/><? if(!$asahiorder){ ?><input type="button" value="生成朝日单号" onclick="buttons(this);newponum(1,'<? echo date('Y-m-d'); ?>')"/><? } ?></div>
 	  <input type="submit" value="添加产品" onclick="buttons(this)" /><br>
 	  <p><? //echo $insert_c_id."/".$insert_po_id; ?></p>
 	  </form>

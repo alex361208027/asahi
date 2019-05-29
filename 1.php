@@ -5,7 +5,7 @@ require_once("libs/myfunction.php");
 $t1 = $_POST['t1'];
 $t2 = $_POST['t2'];$t2=qukongge($t2);
 $t3 = $_POST['t3'];
-$asahiorder = $_POST['asahiorder'];$asahiorder=qukongge($asahiorder);
+//$asahiorder = $_POST['asahiorder'];$asahiorder=qukongge($asahiorder);
 
 date_default_timezone_set('PRC');
 $todaytime=date('Y-m-d H:i:s');
@@ -30,28 +30,29 @@ if (empty($t1) || empty($t2)) {
 		echo "订单".$t2."已经存在！";
 	}else{
 		
-	$sql = "INSERT INTO `t_student`(`campany`, `ordernum`, `orderdate`, `person`) VALUES ('$t1','$t2','$t3','{$_COOKIE['asahiuser']}')";
+	//$sql = "INSERT INTO `t_student`(`campany`, `ordernum`, `orderdate`, `person`) VALUES ('$t1','$t2','$t3','{$_COOKIE['asahiuser']}')";
+	mysqli_query($conn,"INSERT INTO `t_student`(`campany`, `ordernum`, `orderdate`, `person`) VALUES ('$t1','$t2','$t3','{$_COOKIE['asahiuser']}')");
 	mysqli_query($conn,"INSERT INTO `t_note`(`user`, `note`, `time`, `remark`) VALUES ('{$_COOKIE['asahiuser']}','$t2','$todaytime',8)");
 	mysqli_query($conn,"DELETE FROM `t_note` WHERE remark = 8 order by time asc LIMIT 1");
 	
 
-if ($conn->query($sql) === TRUE) {
-    echo "新订单创建成功<br>";
-	if($asahiorder){
-	$sql3 = "SELECT * FROM `t_postudent` WHERE asahiorder = '$asahiorder' limit 1";
-	$result3 = mysqli_query($conn,$sql3);
-	$rows3=$result3->num_rows;
-		if($rows3==0){
-		mysqli_query($conn,"INSERT INTO `t_postudent`(`asahiorder`, `orderdate`,`remark`, `person`) VALUES ('$asahiorder','$t3','$t1','{$_COOKIE['asahiuser']}')");
-		mysqli_query($conn,"INSERT INTO `t_note`(`user`, `note`, `time`, `remark`) VALUES ('{$_COOKIE['asahiuser']}','$asahiorder','$todaytime',7)");
-		mysqli_query($conn,"DELETE FROM `t_note` WHERE remark = 7 order by time asc LIMIT 1");
-		}else{
-			$note_asahiorder_exist="(提示：".$asahiorder."已存在，<br>新录入的品番将继续添加进该订单)";
-		}
-	}
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
+//if ($conn->query($sql) === TRUE) {
+//    echo "新订单创建成功<br>";
+//	if($asahiorder){
+//	$sql3 = "SELECT * FROM `t_postudent` WHERE asahiorder = '$asahiorder' limit 1";
+//	$result3 = mysqli_query($conn,$sql3);
+//	$rows3=$result3->num_rows;
+//		if($rows3==0){
+//		mysqli_query($conn,"INSERT INTO `t_postudent`(`asahiorder`, `orderdate`,`remark`, `person`) VALUES ('$asahiorder','$t3','$t1','{$_COOKIE['asahiuser']}')");
+//		mysqli_query($conn,"INSERT INTO `t_note`(`user`, `note`, `time`, `remark`) VALUES ('{$_COOKIE['asahiuser']}','$asahiorder','$todaytime',7)");
+//		mysqli_query($conn,"DELETE FROM `t_note` WHERE remark = 7 order by time asc LIMIT 1");
+//		}else{
+//			$note_asahiorder_exist="(提示：".$asahiorder."已存在，<br>新录入的品番将继续添加进该订单)";
+//		}
+//	}
+///} else {
+ //   echo "Error: " . $sql . "<br>" . $conn->error;
+//}
 ?>
 <body style="padding:2%" onload="document.getElementsByName('t5')[0].focus();">
 <style> 
@@ -100,13 +101,11 @@ animation:myfirst 2s infinite;
 		<input type="hidden" name="t2" value="<?php echo $t2 ?>"/>
 	  <div class="php1campany"><?php echo $t2 ?></div>
 	  <hr>
-	  <div class="php1word">产品番号<input list="banngolist" class="inputlist" name="t5" value="" onfocusout="findbanngo(this.value+'&banngoname=5&campany='+document.getElementsByName('t1')[0].value)"/></div>
+	  <div class="php1word">产品番号 <input list="banngolist" class="inputlist" name="t5" value="" onfocusout="findbanngo(this.value+'&banngoname=5&campany='+document.getElementsByName('t1')[0].value)"/></div>
 	  <div id="findbanngo" style="display:none;font-size:12px;color:red;padding-left:15px;">加载中</div>
-	  <div class="php1word">产品数量<input list="quantitylist" class="inputlist" name="t6" onchange="quantitychecktest(this.value)"/></div>
-	  <div class="php1word">希望交期<input type="date" class="hopedate" name="t7" value="<?php echo date('Y-m-d',strtotime('+2 month')); ?>" /></div>
-	  <? if($asahiorder){ ?>
-	  <div class="php1word">朝日订单<input type="text" name="asahiorder" value="<?php echo $asahiorder ?>" /></div><? echo $note_asahiorder_exist; ?>
-	  <? } ?>
+	  <div class="php1word">产品数量 <input list="quantitylist" class="inputlist" name="t6" onchange="quantitychecktest(this.value)"/></div>
+	  <div class="php1word">希望交期 <input type="date" class="hopedate" name="t7" value="<?php echo date('Y-m-d',strtotime('+2 month')); ?>" /></div>
+	  <div class="php1word">朝日订单 <input type="text" name="asahiorder" value="" placeholder="创建朝日订单 并录入"/><? if(!$asahiorder){ ?><input type="button" value="生成朝日单号" onclick="newponum(1,'<? echo $t3; ?>');buttons(this);"/><? } ?></div>
 	  <br>
 	  <input type="submit" value="添加产品" onclick="buttons(this)"/><br>
 	</form>
@@ -126,7 +125,7 @@ while($row=$result->fetch_row()){
 </body>
   <?php
 }
-} 
+}
   $conn->close();
 
 ?>

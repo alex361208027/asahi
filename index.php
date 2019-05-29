@@ -151,7 +151,7 @@ transition-delay: 0.8s;
 			</ul>
 		</div></a>
 
-		<a href="indexother.php#findme_zaiku" target="shangbu"><div class="caidanxuanxiao"><img src="img/zaiku.png" /> &nbsp; 在 &nbsp; 库 >
+		<a href="indexother.php#findme_zaiku" target="shangbu"><div class="caidanxuanxiao"><img src="img/zaiku.png" /> &nbsp; 出 入 库 >
 			<ul>
 				<li><a href="###" onclick="window.open('in.php?in=in','xiabu');window.open('indexother.php#findme_zaiku','shangbu');">目前在库</a></li>
 				<li><a href="in.php" target="xiabu" onclick="window.open('indexother.php#findme_zaiku','shangbu');">出库记录</a></li>
