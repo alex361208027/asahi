@@ -166,8 +166,8 @@ function switch_on_off(shit,str){
 				<td><a href="###" onclick="po_banngo('_id=<?php echo $rowpo[9] ?>')"><?php echo $rowpo[1] ?></a></td>
 				<td><?php echo $rowpo[2] ?></td>
 				<td><?php echo $rowpo[3] ?></td>
-				<td><?php if($rowpo[6]){echo $rowpo[6];}elseif($rowpo[8]){echo "【在库确认】";} ?></td>
-				<td><img onclick="switch_on_off(this,<? echo $rowpo[9]; ?>)" switch="<? if(!$rowpo[12]){echo 0;}else{echo 1;} ?>" src="img/switch_<? if($rowpo[12]){echo "off";}else{echo "on";} ?>.png"/><br>&nbsp;</td>
+				<td><?php echo $rowpo[5]."<br> &nbsp; ";if($rowpo[6]){echo $rowpo[6];}elseif($rowpo[8]){echo "【在库确认】";} ?></td>
+				<td><img onclick="switch_on_off(this,<? echo $rowpo[9]; ?>)" switch="<? if(!$rowpo[12]){echo 0;}else{echo 1;} ?>" src="img/switch_<? if($rowpo[12]){echo "off";}else{echo "on";} ?>.png" width="20px"/></td>
 			</tr>
 			<?php } ?>
 			<?php if($po2){ ?>
