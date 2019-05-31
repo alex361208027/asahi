@@ -232,7 +232,7 @@ table{border-collapse: collapse;}
 								$bgimg='#999999';$states='入荷待つ';
 							}
 							
-							if($states!='完成'&& $row[7]<$row[6] ){
+							if($states!='完成'&& $row[7]<= date('Y-m-d',(strtotime('+4 days',strtotime($row[6]))))){
 -								$tuichi='<div class="classcp1" style="background-color:#FF6685;color:white;">調</div>';
  							}elseif( $states!='完成' && date('Y-m-d',(strtotime('+7 days',strtotime($row[4])))) < $row[7] &&  date('Y-m-d',(strtotime('+11 days',strtotime($row[6])))) < $row[7] ){
 								$tuichi='<div class="classcp1" style="background-color:black;color:white;">遅</div>';
