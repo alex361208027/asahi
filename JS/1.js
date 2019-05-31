@@ -34,6 +34,22 @@ $(document).ready(function(){
 	
 	
 	
+
+	$(".sum_show_move").click(function(){
+		up_down=$(this).attr("value");
+		sum_show_top=$(".sum_show").css("top");
+		sum_show_top=sum_show_top.replace("px","");
+		if(up_down==1){
+		sum_show_top=sum_show_top-100;
+		}else{
+		sum_show_top=sum_show_top-(-100);	
+		}
+		$(".sum_show").css({"top":sum_show_top+"px"});
+	});
+
+	
+	
+	
 });
 
 function datecount(kkk){
