@@ -132,6 +132,13 @@ function thousandBitSeparator(num) {
     return result;
 }
 
+function same_date(){
+	$(function(){
+
+		hopedate=$(".hopedate").eq(0).val();
+		$(".hopedate").val(hopedate);
+	});
+}
 
 </script>
 <body style="background-color:">
@@ -143,6 +150,7 @@ function thousandBitSeparator(num) {
 	<div style="position:absolute;top:420px;left:0px;width:100%;font-size:25px;text-align:center;">
 	<hr style="height:0px;border:none;border-top:2px ridge black;width:100%">
 	</div>
+	<div class="printclass" style="position:absolute;top:400px;right:80px;width:;font-size:15px;text-align:right;border:2px solid red;cursor:pointer;color:red;padding:3px;text-align:right" onclick="same_date()">使用同一日期</div>
 	<div class="printclass" style="position:absolute;top:400px;right:0px;width:;font-size:15px;text-align:right;border:2px solid red;cursor:pointer;color:red;padding:3px" onclick="window.print()">点击打印</div>
 	<div style="position:absolute;top:440px;left:0px;width:100%;height:auto;background-color:;" class="songhuodan">
 		<table cellspacing="0" width="100%" border="0" cellpadding="2" id="table" style="font-size:14px;">
@@ -228,7 +236,7 @@ function thousandBitSeparator(num) {
 					<td width="30px" align="left"><?php if($rowfinal[1]){echo "pcs";} ?></td>
 					<td width="50px"><input type="text" value="<?php echo $rowprice[2] ?>" onchange="jisuanqi()"/></td>
 					<td width="40px" class="danjiaheji"><input type="text" value="<?php echo number_format($rowprice[2]*$quantitytotel);$total2+=($rowprice[2]*$quantitytotel) ?>"/></td>
-					<td width="50px"><input type="text" value="<?php 
+					<td width="50px"><input class="hopedate" type="text" value="<?php 
 					if(in_array($rowfinal[4],$mysave)){
 						echo $myload[array_search($rowfinal[4],$mysave)];
 					}else{
