@@ -22,15 +22,15 @@
 	
 	<td align="center">1</td>
 	
-	<td class="pick_same" value="海能达">海能达</td>
-	<td class="pick_same" value="1061836348-SHL" style=""><a href="4.php?ddt2=1061836348-SHL">1061836348-SHL</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E13846"><a href="###" onclick="c_banngo('_id=2143&amp;cells=1')"><u>E13846</u></a></td>
-	<td align="right">20000</td>
+	<td class="pick_same" value="双日" style="">双日</td>
+	<td class="pick_same" value="YY190318" style=""><a href="4.php?ddt2=YY190318">YY190318</a></td>
+	<td style="max-width: 120px;" class="pick_same" value="E13044"><a href="###" onclick="c_banngo('_id=2159&amp;cells=1')"><u>E13044</u></a></td>
+	<td align="right">3000</td>
 	<td>pcs</td>
-	<td><font color="red">2019-07-01</font></td>
-	<td class="pick_same" value="PO190424"><a href="4-1.php?asahit22=PO190424">PO190424</a></td>
-	<td>2019-07-18</td>
-	<td><b>2019-07-24</b></td>
+	<td><font color="red">2019-05-02</font></td>
+	<td class="pick_same" value="PO190312"><a href="4-1.php?asahit22=PO190312">PO190312</a></td>
+	<td>2019-05-31</td>
+	<td><b>2019-06-05</b></td>
 	
 	<td></td>
 		
@@ -40,15 +40,141 @@
 	
 	<td align="center">2</td>
 	
-	<td class="pick_same" value="海能达">海能达</td>
-	<td class="pick_same" value="1061836447-SHL" style=""><a href="4.php?ddt2=1061836447-SHL">1061836447-SHL</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E13846"><a href="###" onclick="c_banngo('_id=2157&amp;cells=2')"><u>E13846</u></a></td>
-	<td align="right">1000</td>
+	<td class="pick_same" value="双日" style="">双日</td>
+	<td class="pick_same" value="YY190424" style=""><a href="4.php?ddt2=YY190424">YY190424</a></td>
+	<td style="max-width: 120px;" class="pick_same" value="E13044"><a href="###" onclick="c_banngo('_id=2237&amp;cells=2')"><u>E13044</u></a></td>
+	<td align="right">15000</td>
+	<td>pcs</td>
+	<td>2019-06-15</td>
+	<td class="pick_same" value="PO190404"><a href="4-1.php?asahit22=PO190404">PO190404</a></td>
+	<td>2019-05-31</td>
+	<td><b>2019-06-05</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="">
+	
+	
+	<td align="center">3</td>
+	
+	<td class="pick_same" value="双日" style=""></td>
+	<td class="pick_same" value="YY190424" style=""><a href="4.php?ddt2=YY190424"></a></td>
+	<td style="max-width: 120px;" class="pick_same" value="E13044"><a href="###" onclick="c_banngo('_id=2165&amp;cells=3')"><u>E13044</u></a></td>
+	<td align="right">24000</td>
+	<td>pcs</td>
+	<td>2019-06-15</td>
+	<td class="pick_same" value="PO19032701"><a href="4-1.php?asahit22=PO19032701">PO19032701</a></td>
+	<td>2019-06-14</td>
+	<td><b>2019-06-19</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="">
+	
+	
+	<td align="center">4</td>
+	
+	<td class="pick_same" value="双日" style=""></td>
+	<td class="pick_same" value="YY190424" style=""><a href="4.php?ddt2=YY190424"></a></td>
+	<td style="max-width: 120px;" class="pick_same" value="E13044"><a href="###" onclick="c_banngo('_id=2236&amp;cells=4')"><u>E13044</u></a></td>
+	<td align="right">6000</td>
+	<td>pcs</td>
+	<td>2019-06-15</td>
+	<td class="pick_same" value="PO19032701"><a href="4-1.php?asahit22=PO19032701">PO19032701</a></td>
+	<td>2019-06-14</td>
+	<td><b>2019-06-19</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">5</td>
+	
+	<td class="pick_same" value="双日" style="">双日</td>
+	<td class="pick_same" value="YY190528-2" style=""><a href="4.php?ddt2=YY190528-2">YY190528-2</a></td>
+	<td style="max-width: 120px;" class="pick_same" value="E13044"><a href="###" onclick="c_banngo('_id=2294&amp;cells=5')"><u>E13044</u></a></td>
+	<td align="right">30000</td>
+	<td>pcs</td>
+	<td>2019-07-01</td>
+	<td class="pick_same" value="PO190530"><a href="4-1.php?asahit22=PO190530">PO190530</a></td>
+	<td>0000-00-00</td>
+	<td><b>0000-00-00</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">6</td>
+	
+	<td class="pick_same" value="双日" style="">双日</td>
+	<td class="pick_same" value="YY190528-3" style=""><a href="4.php?ddt2=YY190528-3">YY190528-3</a></td>
+	<td style="max-width: 120px;" class="pick_same" value="E13044"><a href="###" onclick="c_banngo('_id=2304&amp;cells=6')"><u>E13044</u></a></td>
+	<td align="right">51000</td>
+	<td>pcs</td>
+	<td>2019-08-01</td>
+	<td class="pick_same" value="PO19053001"><a href="4-1.php?asahit22=PO19053001">PO19053001</a></td>
+	<td>0000-00-00</td>
+	<td><b>0000-00-00</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">7</td>
+	
+	<td class="pick_same" value="双日" style="">双日</td>
+	<td class="pick_same" value="YY190528" style=""><a href="4.php?ddt2=YY190528">YY190528</a></td>
+	<td style="max-width: 120px;" class="pick_same" value="E13044"><a href="###" onclick="c_banngo('_id=2280&amp;cells=7')"><u>E13044</u></a></td>
+	<td align="right">15000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-06-24</font></td>
+	<td class="pick_same" value="PO190516"><a href="4-1.php?asahit22=PO190516">PO190516</a></td>
+	<td>2019-08-08</td>
+	<td><b>2019-08-14</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">8</td>
+	
+	<td class="pick_same" value="双日" style="">双日</td>
+	<td class="pick_same" value="YY190528-2" style=""><a href="4.php?ddt2=YY190528-2">YY190528-2</a></td>
+	<td style="max-width: 120px;" class="pick_same" value="E13044"><a href="###" onclick="c_banngo('_id=2293&amp;cells=8')"><u>E13044</u></a></td>
+	<td align="right">15000</td>
 	<td>pcs</td>
 	<td><font color="red">2019-07-01</font></td>
-	<td class="pick_same" value="PO190424"><a href="4-1.php?asahit22=PO190424">PO190424</a></td>
-	<td>2019-07-18</td>
-	<td><b>2019-07-24</b></td>
+	<td class="pick_same" value="PO190516"><a href="4-1.php?asahit22=PO190516">PO190516</a></td>
+	<td>2019-08-08</td>
+	<td><b>2019-08-14</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">9</td>
+	
+	<td class="pick_same" value="双日" style="">双日</td>
+	<td class="pick_same" value="YY190528-4"><a href="4.php?ddt2=YY190528-4">YY190528-4</a></td>
+	<td style="max-width: 120px;" class="pick_same" value="E13044"><a href="###" onclick="c_banngo('_id=2314&amp;cells=9')"><u>E13044</u></a></td>
+	<td align="right">36000</td>
+	<td>pcs</td>
+	<td>2019-09-02</td>
+	<td class="pick_same" value="PO19053002"><a href="4-1.php?asahit22=PO19053002">PO19053002</a></td>
+	<td>0000-00-00</td>
+	<td><b>0000-00-00</b></td>
 	
 	<td></td>
 		
