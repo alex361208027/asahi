@@ -30,7 +30,6 @@ if (empty($t1) || empty($t2)) {
 		echo "订单".$t2."已经存在！";
 	}else{
 		
-	//$sql = "INSERT INTO `t_student`(`campany`, `ordernum`, `orderdate`, `person`) VALUES ('$t1','$t2','$t3','{$_COOKIE['asahiuser']}')";
 	mysqli_query($conn,"INSERT INTO `t_student`(`campany`, `ordernum`, `orderdate`, `person`) VALUES ('$t1','$t2','$t3','{$_COOKIE['asahiuser']}')");
 	mysqli_query($conn,"INSERT INTO `t_note`(`user`, `note`, `time`, `remark`) VALUES ('{$_COOKIE['asahiuser']}','$t2','$todaytime',8)");
 	mysqli_query($conn,"DELETE FROM `t_note` WHERE remark = 8 order by time asc LIMIT 1");
@@ -99,6 +98,7 @@ animation:myfirst 2s infinite;
 	<form action="1-2.php" method="post">
 		<input type="hidden" name="t1" value="<?php echo $t1 ?>"/>
 		<input type="hidden" name="t2" value="<?php echo $t2 ?>"/>
+		<input type="hidden" name="t3" value="<?php echo $t3 ?>"/>
 	  <div class="php1campany"><?php echo $t2 ?></div>
 	  <hr>
 	  <div class="php1word">产品番号 <input list="banngolist" class="inputlist" name="t5" value="" onfocusout="findbanngo(this.value+'&banngoname=5&campany='+document.getElementsByName('t1')[0].value)"/></div>
