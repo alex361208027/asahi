@@ -13,9 +13,17 @@ $t1 = $_POST['t1'];
 if($_GET['t2']){
 	$t2 = $_GET['t2'];
 }else{
-$t2 = $_POST['t2'];
+    $t2 = $_POST['t2'];
 }
-//$t3 = $_POST['t3'];
+
+if($_GET['t3']){
+	$t3 = $_GET['t3'];
+}else if($_POST['t3']){
+	$t3 = $_POST['t3'];
+}else{
+	$t3 = date('Y-m-d');
+}
+
 //$t4 = $_POST['t4'];
 $t5 = $_POST['t5'];
 $t6 = $_POST['t6'];
