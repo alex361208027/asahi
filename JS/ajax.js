@@ -490,6 +490,25 @@ function c_pi_qrcode(num){
 
 }
 
+function c_fastest_date(){
+	$(function(){
+		var i=0;var get_id=new Array();
+		$("input[name='checkboxsum']").each(function(){
+			if($(this).prop('checked')==true){
+				get_id[i]=$(this).attr('_id');
+				i++;
+			}
+		});
+		$.post("ajax/c_fastest_date.php",{id:get_id},function(data){
+			if(confirm(data+"，是否现在刷新页面？")){
+				location.reload()
+			}
+			//setTimeout("location.reload()",1000);
+		});
+	});
+}
+
+
 
 function c_pi_shdate(str){
 	shdate=document.getElementById('SHdate').value
