@@ -22,15 +22,15 @@
 	
 	<td align="center">1</td>
 	
-	<td class="pick_same" value="双日">双日</td>
-	<td class="pick_same" value="YY190527" style=""><a href="4.php?ddt2=YY190527">YY190527</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E18466"><a href="###" onclick="c_banngo('_id=2265&amp;cells=1')"><u>E18466</u></a></td>
-	<td align="right">500</td>
+	<td class="pick_same" value="华德" style="">华德</td>
+	<td class="pick_same" value="20190416036"><a href="4.php?ddt2=20190416036">20190416036</a></td>
+	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9153-PTG"><a href="###" onclick="c_banngo('_id=2344&amp;cells=1')"><u>NHSB046A-JK9153-PTG</u></a></td>
+	<td align="right">12000</td>
 	<td>pcs</td>
-	<td><font color="red">2019-05-31</font></td>
-	<td class="pick_same" value="PO190528"><a href="4-1.php?asahit22=PO190528">PO190528</a></td>
-	<td>2019-06-06</td>
-	<td><b>2019-06-12</b></td>
+	<td><font color="red">2019-05-01</font></td>
+	<td class="pick_same" value="PO19041701"><a href="4-1.php?asahit22=PO19041701">PO19041701</a></td>
+	<td>2019-05-30</td>
+	<td><b>2019-06-03</b></td>
 	
 	<td></td>
 		
@@ -40,15 +40,15 @@
 	
 	<td align="center">2</td>
 	
-	<td class="pick_same" value="双日">双日</td>
-	<td class="pick_same" value="YY190527" style=""><a href="4.php?ddt2=YY190527">YY190527</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E19042"><a href="###" onclick="c_banngo('_id=2266&amp;cells=2')"><u>E19042</u></a></td>
-	<td align="right">500</td>
+	<td class="pick_same" value="华德" style="">华德</td>
+	<td class="pick_same" value="20190416056" style=""><a href="4.php?ddt2=20190416056">20190416056</a></td>
+	<td style="max-width: 120px;" class="pick_same" value="NHSB046A-JK9289-SAFETY"><a href="###" onclick="c_banngo('_id=2131&amp;cells=2')"><u>NHSB046A-JK9289-SAFETY</u></a></td>
+	<td align="right">12000</td>
 	<td>pcs</td>
-	<td><font color="red">2019-05-31</font></td>
-	<td class="pick_same" value="PO190528"><a href="4-1.php?asahit22=PO190528">PO190528</a></td>
-	<td>2019-06-06</td>
-	<td><b>2019-06-12</b></td>
+	<td><font color="red">2019-05-01</font></td>
+	<td class="pick_same" value="PO19041701"><a href="4-1.php?asahit22=PO19041701">PO19041701</a></td>
+	<td>2019-05-30</td>
+	<td><b>2019-06-03</b></td>
 	
 	<td></td>
 		
