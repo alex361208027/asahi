@@ -472,14 +472,20 @@ function c_pi_qrcode(num){
 			campany=prompt("请输入客户编号：【1】SIIX;【2】Hytera");
 			if(campany==1){
 				campany="siix";
+				title=prompt("是否添加公司抬头？请输入...");
 			}else if(campany==2){
 				campany="hytera";
+			}else{
+				campany="";
 			}
 			
-			
+			if(campany){
 			str="";
 			var checkbox=document.getElementsByName('checkboxsum');
 			str+="data="+num;
+				if(title){
+					str+="&title="+title;
+				}
 			for(i=0;i<checkbox.length;i++){
 				if(checkbox[i].checked){
 				str+="&checkbox[]="+checkbox[i].getAttribute('_id');
@@ -487,7 +493,7 @@ function c_pi_qrcode(num){
 			}
 			window.open("other/qrcode/qrcode_"+campany+".php?"+str,"_BLANK"); 
 			
-
+			}
 }
 
 function c_fastest_date(){
