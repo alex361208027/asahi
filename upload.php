@@ -14,6 +14,9 @@
 
 
 <?php
+date_default_timezone_set('PRC');
+$datetime=date("Y-m-d");
+
 if($_FILES["file"]){
 // 允许上传的图片后缀
 $allowedExts = array("xls","xlsx", "xlsm");
@@ -101,7 +104,7 @@ $o = $objPHPExcel->getActiveSheet()->getCell("O".$rows)->getValue();
 $sql="SELECT * FROM `t_namecard` WHERE name = '$a' AND campany = '$b'";
 $result = mysqli_query($conn,$sql);
 	if($result->num_rows == 0){
-    mysqli_query($conn,"INSERT INTO `t_namecard`(`name`, `sex`, `campany`, `position`, `department`, `title`, `email`, `phone`, `tel`, `tel2`, `fax`, `address`, `post`, `web`, `remark`) VALUES ('$a', '$b', '$c', '$d', '$e', '$f', '$g', '$h', '$i', '$j', '$k', '$l', '$m', '$n', '$o')");
+    mysqli_query($conn,"INSERT INTO `t_namecard`(`name`, `sex`, `campany`, `position`, `department`, `title`, `email`, `phone`, `tel`, `tel2`, `fax`, `address`, `post`, `web`, `remark`, `datetime`) VALUES ('$a', '$b', '$c', '$d', '$e', '$f', '$g', '$h', '$i', '$j', '$k', '$l', '$m', '$n', '$o', '$datetime')");
 	echo $a."添加成功<br>";
 		}else{
 			echo $a."已存在<br>";

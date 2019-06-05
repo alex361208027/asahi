@@ -2,6 +2,8 @@
 
 echo file_get_contents("templates/header.html");
 
+date_default_timezone_set('PRC');
+
 ?>
 
 <?
@@ -37,6 +39,7 @@ $web=$_POST['web'];
 $remark=$_POST['remark'];
 
 $_id=$_POST['_id'];
+$datetime=$_POST['datetime'];
 $delete=$_POST['delete'];
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -48,13 +51,13 @@ if($name&&$campany){
 	//$sql="SELECT * FROM `t_namecard` WHERE name = '$name' AND campany like '%$likecampany%'";
 	//$result = mysqli_query($conn,$sql);
 	//if($result->num_rows == 0){
-    mysqli_query($conn,"INSERT INTO `t_namecard`(`name`, `sex`, `campany`, `position`, `department`, `title`, `email`, `phone`, `tel`, `tel2`, `fax`, `address`, `post`, `web`, `remark`) VALUES ('$name', '$sex', '$campany', '$position', '$department', '$title', '$email', '$phone', '$tel', '$tel2', '$fax', '$address', '$post', '$web', '$remark')");
+    mysqli_query($conn,"INSERT INTO `t_namecard`(`name`, `sex`, `campany`, `position`, `department`, `title`, `email`, `phone`, `tel`, `tel2`, `fax`, `address`, `post`, `web`, `remark`, `datetime`) VALUES ('$name', '$sex', '$campany', '$position', '$department', '$title', '$email', '$phone', '$tel', '$tel2', '$fax', '$address', '$post', '$web', '$remark', '$datetime')");
 	echo "添加成功！<br><a href='namecardplus.php'><u>点击</u>继续添加</a><br><a href='namecard.php'><u>返回</u>名片页</a>";
 		//}else{
 		//	echo "已存在！";
 		//}
 	}elseif($name3&&$campany3){
-		mysqli_query($conn,"UPDATE `t_namecard` SET `name`='$name3', `sex`='$sex', `campany`='$campany3',`position`='$position',`department`='$department',`title`='$title',`email`='$email',`phone`='$phone',`tel`='$tel',`tel2`='$tel2',`fax`='$fax',`address`='$address',`post`='$post',`web`='$web',`remark`='$remark' WHERE _id = '$_id'");
+		mysqli_query($conn,"UPDATE `t_namecard` SET `name`='$name3', `sex`='$sex', `campany`='$campany3',`position`='$position',`department`='$department',`title`='$title',`email`='$email',`phone`='$phone',`tel`='$tel',`tel2`='$tel2',`fax`='$fax',`address`='$address',`post`='$post',`web`='$web',`remark`='$remark',`datetime`='$datetime' WHERE _id = '$_id'");
 		echo "修改成功！";
 }elseif($delete){
 	mysqli_query($conn,"DELETE FROM `t_namecard` WHERE _id = '{$delete}'");
@@ -83,6 +86,7 @@ if($name&&$campany){
 网址<input type="text" name="web" value="<?php echo $row[13] ?>"/><br>
 备注<input type="text" name="remark" style="width:400px" value="<?php echo $row[14] ?>"/><br>
 <input type="hidden" name="_id" value="<?php echo $row[15]; ?>"/>
+<input type="hidden" name="datetime" value="<?php echo date('Y-m-d'); ?>"/>
 <input type="submit" value="确认修改">
  &nbsp; <a href="#"><div style="display:inline-block;width:80px;height:22px;background-color:#FFAAAA;color:white;text-align:center;" onclick="javascript:document.getElementById('sure').style.display='block';document.getElementById('suretext').innerHTML='是否确定将<font color=\'red\'>'+ document.getElementsByName('name3')[0].value +'</font>删除？删除后将无法恢复。';">删除</div></a> 
 
@@ -116,6 +120,7 @@ if($name&&$campany){
 邮编<input type="text" name="post" value="<?php echo $row[12] ?>"/><br>
 网址<input type="text" name="web" value="<?php echo $row[13] ?>"/><br>
 备注<input type="text" name="remark" style="width:400px" value="<?php echo $row[14] ?>"/><br>
+<input type="hidden" name="datetime" value="<?php echo date('Y-m-d'); ?>"/>
 <input type="submit" value="确认提交" onclick="buttons()">
 </form>
 </div>

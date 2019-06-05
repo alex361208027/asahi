@@ -117,15 +117,15 @@ if($bg==1){
 <form action="namecardplus.php" method="post">
 	<div class="namecardin" style="top:40px;left:90px;font-size:16px;"><input type="hidden" name="name1" value="<?php echo $row[0]; ?>"/><b><?php echo $row[0]; ?></b></div>
 	<div class="namecardin" style="top:0px;left:0px;padding-top:5px;width:283px;padding-right:5px;height:20px;text-align:right;background-color:#555555;color:white;font-size:14px;"><input type="hidden" name="campany1" value="<?php echo $row[2]; ?>"/><?php echo $row[2]; ?></div>
-	<div class="namecardin" style="top:60px;left:90px;font-size:12px;width:auto;color:#555555;width:380px"><?php echo $row[3]; ?> <?php echo $row[4]; ?> <?php echo $row[5]; ?>
-		<div style="line-height:70%;width:180px"><?php echo $row[6]; ?></div>
+	<div class="namecardin" style="top:60px;left:90px;font-size:12px;width:auto;color:#555555;width:370px;" title="<?php echo $row[3].$row[4].$row[5]; ?>"><?php echo $row[3]; ?> <?php echo $row[4]; ?> <?php echo $row[5]; ?>
+		<div style="line-height:85%;width:180px"><?php echo $row[6]; ?></div>
 	</div>
 
 	<div class="namecardin" style="top:100px;left:90px;font-size:12px;width:180px;">
-	<?php if(!empty($row[7])){echo "✆ ".$row[7]."<br>";} ?>
-	<?php if(!empty($row[8])){echo "☎ ".$row[8];} ?>
-	<?php if(!empty($row[9])){echo "<br>☎ ".$row[9];} ?>
-	<?php if(!empty($row[10])){echo "<br>📠 ".$row[10];} ?>
+	<?php if($row[7]){echo "✆ ".$row[7]."<br>";} ?>
+	<?php if($row[8]){echo "☎ ".$row[8];} ?>
+	<?php if($row[9]){echo "<br>☎ ".$row[9];} ?>
+	<?php if($row[10]){echo "<br>📠 ".$row[10];} ?>
 	</div>
 	
  <div class="namecardright">	
@@ -135,7 +135,7 @@ if($bg==1){
  
  <div class="namecardleft">	
 	<div class="namecardin" style="top:0px;left:90px;font-size:12px;width:180px;height:100%;background-color:<?php echo $bgcolor; ?>;"><?php echo $row[13]; ?><br>
-	<?php echo $row[14]; ?><div class="namecardin" style="right:0px;top:40px;"><input type="hidden" name="_id" value="<?php echo $row[15]; ?>"/><input type="submit" value="编辑"/></div></div>
+	<?php echo $row[14]; ?><div class="namecardin" style="right:0px;top:40px;"><?php echo $row[16]; ?><input type="hidden" name="_id" value="<?php echo $row[15]; ?>"/><input type="submit" value="编辑"/></div></div>
  </div>
  <div class="namecardin" style="top:50px;left:13px"><img src="img/<?php echo $row[1]; ?>.png" width=""></div>
 </form>

@@ -12,12 +12,9 @@ $dbname = "asahi";
 
 date_default_timezone_set('PRC');
 $todaytime=date('Y-m-d H:i:s');
-$today7=date('Y-m-d',strtotime('+7 days'));
+//$today7=date('Y-m-d',strtotime('+7 days'));
 
 
-
-
-//$shuzigengxin=$_GET['shuzigengxin'];
 
 $php4ordernum=$_GET['php4ordernum'];
 
