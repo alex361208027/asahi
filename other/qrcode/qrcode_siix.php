@@ -78,7 +78,7 @@ $dbname = "asahi";
 $conn = new mysqli($servername, $username, $password, $dbname);
 mysqli_set_charset ($conn,utf8);
 
-
+$title=$_GET['title'];
 $data=$_GET['data'];
 if($data==2){
 	$checkbox=$_GET['checkbox'];
@@ -127,7 +127,7 @@ foreach($id as $id){
 		<table width="100%" cellpadding="0" class="qrcode_table">
 			<tr>
 			<td valign="top"><xx>品番</xx><br><? echo $row[0]; ?></td>
-			<td align="right" valign="top" rowspan="3"><img src="<? echo $qrcode_api; ?>%23<? echo $row[0]; ?>%23<? echo $row[1]; ?>" width='88px'/><br><yy>外箱&nbsp;</yy></td>
+			<td align="right" valign="top" rowspan="3"><img src="<? echo $qrcode_api; ?>%23<? echo $row[0]; ?>%23<? echo $row[1]; ?>" width='88px'/><br><yy><? echo $title."&nbsp;"; ?>(外箱)</yy></td>
 			</tr>
 			<tr>
 			<td valign="top"><xx>数量</xx><br><? echo $row[1]; ?></td>
@@ -145,7 +145,7 @@ foreach($id as $id){
 		<table width="100%" cellpadding="0" class="qrcode_table">
 			<tr>
 			<td valign="top"><xx>品番</xx><br><? echo $row[0]; ?></td>
-			<td align="right" valign="top" rowspan="3"><img src="<? echo $qrcode_api; ?>%23<? echo $row[0]; ?>%23<? echo $reel[0]; ?>" width='88px'/><br><yy><? echo ($i+1)."/".$round ?>&nbsp;</yy></td>
+			<td align="right" valign="top" rowspan="3"><img src="<? echo $qrcode_api; ?>%23<? echo $row[0]; ?>%23<? echo $reel[0]; ?>" width='88px'/><br><yy><? echo $title."&nbsp;"; ?>(<? echo ($i+1)."/".$round ?>)</yy></td>
 			</tr>
 			<tr>
 			<td valign="top"><xx>数量</xx><br><? echo $reel[0]; ?></td>
