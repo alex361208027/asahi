@@ -27,7 +27,7 @@ $row=$result->fetch_row();
 		<td colspan="2"><?php echo $row[0]." ".$row[1]; ?></font></td>
 	</tr>
 	<tr>
-		<td colspan="2"><font size="4"><b><?php echo $row[2]; ?></b></font></td>
+		<td colspan="2"><font size="4"><b id="c_banngo_banngo"><?php echo $row[2]; ?></b></font></td>
 	</tr>
 	<tr>
 		<td colspan="2"><font color="#EEEEEE" size="1"><?php echo "本ID".$row[12]."对应的ID".$row[13] ?></font></td>

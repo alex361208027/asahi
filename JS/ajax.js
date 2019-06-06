@@ -498,6 +498,16 @@ function c_pi_qrcode(num){
 
 function c_fastest_date(){
 	$(function(){
+		dateplus=prompt("请输入需要设定的最快发货的天数(默认5天)")
+		
+		if(isNaN(dateplus)){
+			alert("输入有误！");
+			confirm_result=0;
+		}else{
+			confirm_result=1;
+		}
+		
+		if(confirm_result){
 		var i=0;var get_id=new Array();
 		$("input[name='checkboxsum']").each(function(){
 			if($(this).prop('checked')==true){
@@ -505,13 +515,15 @@ function c_fastest_date(){
 				i++;
 			}
 		});
-		$.post("ajax/c_fastest_date.php",{id:get_id},function(data){
+		$.post("ajax/c_fastest_date.php",{id:get_id,dateplus:dateplus},function(data){
 			if(confirm(data+"，是否现在刷新页面？")){
 				location.reload()
 			}
 			//setTimeout("location.reload()",1000);
 		});
+		}
 	});
+		
 }
 
 
@@ -577,6 +589,17 @@ function c_chaifen(str){
 			
 }
 function c_chaifen_complete(str){
+			
+			if(document.getElementsByName('t12')[0].checked){
+				if(confirm("该品番已在库，请先拆分在库！(如在库已拆分，请点击【确定】；否则点击【取消】前往在库拆分)")){
+					confirm_result=1;
+				}else{
+					confirm_result=0;
+					window.open("in.php?in=in&search_banngo="+document.getElementById('c_banngo_thebanngo').value,"xiabu");
+				}
+			}
+			
+			if(confirm_result){
 			str="quantity="+str;
 			
 			
@@ -597,13 +620,15 @@ function c_chaifen_complete(str){
 			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
 				{	
 					document.getElementById("ajasdiv2").innerHTML=xmlhttp.responseText;
-					setTimeout("location.reload()",5000);
+					setTimeout("location.reload()",2000);
 					cells=document.getElementById('cells').value;
 					document.getElementById('tableExcel').rows[cells].cells[2].innerHTML="已拆分";
 				}
 			  }
 			xmlhttp.open("GET","./ajax/c_chaifen_complete.php?"+str,true);
 			xmlhttp.send();
+			
+			}
 }
 
 function c_delete(str){
@@ -648,6 +673,18 @@ function c_pipei_cancel(str){
 }
 function c_pipei_cancel_complete(str){
 			
+			if(document.getElementsByName('t12')[0].checked){
+				if(confirm("该品番已在库，请先将在库的客户名进行修改！(如已更改，请点击【确定】；否则点击【取消】前往在库更改)")){
+					confirm_result=1;
+				}else{
+					confirm_result=0;
+					window.open("in.php?in=in&search_banngo="+document.getElementById('c_banngo_thebanngo').value,"xiabu");
+				}
+			}
+			
+			if(confirm_result){
+			
+			
 			var xmlhttp;
 			if (str.length==0)
 			  { 
@@ -675,6 +712,8 @@ function c_pipei_cancel_complete(str){
 			  }
 			xmlhttp.open("GET","./ajax/c_pipei_cancel_complete.php?"+str,true);
 			xmlhttp.send();
+			
+			}
 }
 
 
