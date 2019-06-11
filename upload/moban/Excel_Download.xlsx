@@ -22,33 +22,33 @@
 	
 	<td align="center">1</td>
 	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190416036"><a href="4.php?ddt2=20190416036">20190416036</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9153-PTG"><a href="###" onclick="c_banngo('_id=2127&amp;cells=1')"><u>NHSB046A-JK9153-PTG</u></a></td>
-	<td align="right">18000</td>
+	<td class="pick_same" value="华德" style="">华德</td>
+	<td class="pick_same" value="20190410017"><a href="4.php?ddt2=20190410017">20190410017</a></td>
+	<td style="max-width: 120px;" class="pick_same" value="NHSB046A-JK9289-CS"><a href="###" onclick="c_banngo('_id=2087&amp;cells=1')"><u>NHSB046A-JK9289-CS</u></a></td>
+	<td align="right">6000</td>
 	<td>pcs</td>
-	<td>2019-06-03</td>
-	<td class="pick_same" value="PO19041701"><a href="4-1.php?asahit22=PO19041701">PO19041701</a></td>
-	<td>2019-05-30</td>
-	<td><b>2019-06-10</b></td>
+	<td><font color="red">2019-05-08</font></td>
+	<td class="pick_same" value="PO19040101"><a href="4-1.php?asahit22=PO19040101">PO19040101</a></td>
+	<td>2019-05-16</td>
+	<td><b>2019-05-21</b></td>
 	
 	<td></td>
 		
 </tr>
-<tr bgcolor="#F7F7F7">
+<tr bgcolor="#F7F7F7" class="tabletr">
 	
 	
 	<td align="center">2</td>
 	
-	<td class="pick_same" value="华德"></td>
-	<td class="pick_same" value="20190416036"><a href="4.php?ddt2=20190416036"></a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9153-PTG"><a href="###" onclick="c_banngo('_id=2132&amp;cells=2')"><u>NHSB046A-JK9153-PTG</u></a></td>
-	<td align="right">3000</td>
+	<td class="pick_same" value="华德" style="">华德</td>
+	<td class="pick_same" value="20190410017"><a href="4.php?ddt2=20190410017">20190410017</a></td>
+	<td style="max-width: 120px;" class="pick_same" value="NHSB046A-JK9289-SAFETY"><a href="###" onclick="c_banngo('_id=2088&amp;cells=2')"><u>NHSB046A-JK9289-SAFETY</u></a></td>
+	<td align="right">6000</td>
 	<td>pcs</td>
-	<td><font color="red">2019-05-01</font></td>
-	<td class="pick_same" value="PO19041701"><a href="4-1.php?asahit22=PO19041701">PO19041701</a></td>
-	<td>2019-05-30</td>
-	<td><b>2019-06-10</b></td>
+	<td><font color="red">2019-05-08</font></td>
+	<td class="pick_same" value="PO19040101"><a href="4-1.php?asahit22=PO19040101">PO19040101</a></td>
+	<td>2019-05-16</td>
+	<td><b>2019-05-21</b></td>
 	
 	<td></td>
 		
@@ -58,33 +58,33 @@
 	
 	<td align="center">3</td>
 	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190416036"><a href="4.php?ddt2=20190416036">20190416036</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9153-CS"><a href="###" onclick="c_banngo('_id=2125&amp;cells=3')"><u>NHSB046A-JK9153-CS</u></a></td>
-	<td align="right">12000</td>
+	<td class="pick_same" value="华德" style="">华德</td>
+	<td class="pick_same" value="20190416036" style=""><a href="4.php?ddt2=20190416036">20190416036</a></td>
+	<td style="max-width: 120px;" class="pick_same" value="NHSB046A-D1244"><a href="###" onclick="c_banngo('_id=2121&amp;cells=3')"><u>NHSB046A-D1244</u></a></td>
+	<td align="right">3000</td>
 	<td>pcs</td>
 	<td><font color="red">2019-05-20</font></td>
-	<td class="pick_same" value="PO19041701"><a href="4-1.php?asahit22=PO19041701">PO19041701</a></td>
-	<td>2019-06-06</td>
-	<td><b>2019-06-12</b></td>
+	<td class="pick_same" value="PO19041701" style=""><a href="4-1.php?asahit22=PO19041701">PO19041701</a></td>
+	<td>2019-05-23</td>
+	<td><b>2019-05-28</b></td>
 	
 	<td></td>
 		
 </tr>
-<tr bgcolor="" class="tabletr">
+<tr bgcolor="">
 	
 	
 	<td align="center">4</td>
 	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190416036"><a href="4.php?ddt2=20190416036">20190416036</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB064-JK9154-H/L ADJ"><a href="###" onclick="c_banngo('_id=2133&amp;cells=4')"><u>NHSB064-JK9154-H/L ADJ</u></a></td>
-	<td align="right">26000</td>
+	<td class="pick_same" value="华德" style=""></td>
+	<td class="pick_same" value="20190416036" style=""><a href="4.php?ddt2=20190416036"></a></td>
+	<td style="max-width: 120px;" class="pick_same" value="NHSB046A-D1244"><a href="###" onclick="c_banngo('_id=2122&amp;cells=4')"><u>NHSB046A-D1244</u></a></td>
+	<td align="right">6000</td>
 	<td>pcs</td>
-	<td><font color="red">2019-06-05</font></td>
-	<td class="pick_same" value="PO19041701"><a href="4-1.php?asahit22=PO19041701">PO19041701</a></td>
-	<td>2019-06-06</td>
-	<td><b>2019-06-12</b></td>
+	<td>2019-06-03</td>
+	<td class="pick_same" value="PO19041701" style=""><a href="4-1.php?asahit22=PO19041701">PO19041701</a></td>
+	<td>2019-05-23</td>
+	<td><b>2019-05-28</b></td>
 	
 	<td></td>
 		
@@ -94,15 +94,15 @@
 	
 	<td align="center">5</td>
 	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190416056"><a href="4.php?ddt2=20190416056">20190416056</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9289-CS"><a href="###" onclick="c_banngo('_id=2130&amp;cells=5')"><u>NHSB046A-JK9289-CS</u></a></td>
-	<td align="right">12000</td>
+	<td class="pick_same" value="华德" style="">华德</td>
+	<td class="pick_same" value="20190416056" style=""><a href="4.php?ddt2=20190416056">20190416056</a></td>
+	<td style="max-width: 120px;" class="pick_same" value="NHSB046A-JK9289-CS"><a href="###" onclick="c_banngo('_id=2170&amp;cells=5')"><u>NHSB046A-JK9289-CS</u></a></td>
+	<td align="right">3000</td>
 	<td>pcs</td>
 	<td><font color="red">2019-05-01</font></td>
-	<td class="pick_same" value="PO19041701"><a href="4-1.php?asahit22=PO19041701">PO19041701</a></td>
-	<td>2019-06-06</td>
-	<td><b>2019-06-12</b></td>
+	<td class="pick_same" value="PO19041701" style=""><a href="4-1.php?asahit22=PO19041701">PO19041701</a></td>
+	<td>2019-05-23</td>
+	<td><b>2019-05-28</b></td>
 	
 	<td></td>
 		
@@ -112,645 +112,15 @@
 	
 	<td align="center">6</td>
 	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190422024"><a href="4.php?ddt2=20190422024">20190422024</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-D1242"><a href="###" onclick="c_banngo('_id=2141&amp;cells=6')"><u>NHSB046A-D1242</u></a></td>
+	<td class="pick_same" value="华德" style="">华德</td>
+	<td class="pick_same" value="20190416056" style=""><a href="4.php?ddt2=20190416056">20190416056</a></td>
+	<td style="max-width: 120px;" class="pick_same" value="NHSB046A-JK9289-SAFETY"><a href="###" onclick="c_banngo('_id=2171&amp;cells=6')"><u>NHSB046A-JK9289-SAFETY</u></a></td>
 	<td align="right">3000</td>
 	<td>pcs</td>
-	<td>2019-06-17</td>
-	<td class="pick_same" value="PO190423"><a href="4-1.php?asahit22=PO190423">PO190423</a></td>
-	<td>2019-06-06</td>
-	<td><b>2019-06-12</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">7</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190416036"><a href="4.php?ddt2=20190416036">20190416036</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9150-VSA/IDLE STOP"><a href="###" onclick="c_banngo('_id=2124&amp;cells=7')"><u>NHSB046A-JK9150-VSA/IDLE STOP</u></a></td>
-	<td align="right">30000</td>
-	<td>pcs</td>
-	<td><font color="red">2019-06-10</font></td>
-	<td class="pick_same" value="PO19041701"><a href="4-1.php?asahit22=PO19041701">PO19041701</a></td>
-	<td>2019-06-13</td>
-	<td><b>2019-06-19</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">8</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190510001"><a href="4.php?ddt2=20190510001">20190510001</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-D1242"><a href="###" onclick="c_banngo('_id=2210&amp;cells=8')"><u>NHSB046A-D1242</u></a></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td>2019-07-01</td>
-	<td class="pick_same" value="PO190430"><a href="4-1.php?asahit22=PO190430">PO190430</a></td>
-	<td>2019-06-13</td>
-	<td><b>2019-06-19</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">9</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190513001"><a href="4.php?ddt2=20190513001">20190513001</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-D1242"><a href="###" onclick="c_banngo('_id=2223&amp;cells=9')"><u>NHSB046A-D1242</u></a></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td>2019-07-08</td>
-	<td class="pick_same" value="PO190430"><a href="4-1.php?asahit22=PO190430">PO190430</a></td>
-	<td>2019-06-13</td>
-	<td><b>2019-06-19</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">10</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190513001"><a href="4.php?ddt2=20190513001">20190513001</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9151-PTG"><a href="###" onclick="c_banngo('_id=2219&amp;cells=10')"><u>NHSB046A-JK9151-PTG</u></a></td>
-	<td align="right">6000</td>
-	<td>pcs</td>
-	<td><font color="red">2019-05-13</font></td>
-	<td class="pick_same" value="PO190515"><a href="4-1.php?asahit22=PO190515">PO190515</a></td>
-	<td>2019-06-13</td>
-	<td><b>2019-06-19</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">11</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190513001"><a href="4.php?ddt2=20190513001">20190513001</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9152-CMBS"><a href="###" onclick="c_banngo('_id=2220&amp;cells=11')"><u>NHSB046A-JK9152-CMBS</u></a></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td>2019-06-17</td>
-	<td class="pick_same" value="PO190515"><a href="4-1.php?asahit22=PO190515">PO190515</a></td>
-	<td>2019-06-13</td>
-	<td><b>2019-06-19</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">12</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190520035"><a href="4.php?ddt2=20190520035">20190520035</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-D1242"><a href="###" onclick="c_banngo('_id=2256&amp;cells=12')"><u>NHSB046A-D1242</u></a></td>
-	<td align="right">6000</td>
-	<td>pcs</td>
-	<td>2019-07-15</td>
-	<td class="pick_same" value="PO190430"><a href="4-1.php?asahit22=PO190430">PO190430</a></td>
-	<td>2019-06-13</td>
-	<td><b>2019-06-19</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">13</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190510001"><a href="4.php?ddt2=20190510001">20190510001</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9150-VSA/IDLE STOP"><a href="###" onclick="c_banngo('_id=2211&amp;cells=13')"><u>NHSB046A-JK9150-VSA/IDLE STOP</u></a></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td><font color="red">2019-06-17</font></td>
-	<td class="pick_same" value="PO190430"><a href="4-1.php?asahit22=PO190430">PO190430</a></td>
-	<td>2019-06-20</td>
-	<td><b>2019-06-26</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7">
-	
-	
-	<td align="center">14</td>
-	
-	<td class="pick_same" value="华德"></td>
-	<td class="pick_same" value="20190510001"><a href="4.php?ddt2=20190510001"></a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9150-VSA/IDLE STOP"><a href="###" onclick="c_banngo('_id=2212&amp;cells=14')"><u>NHSB046A-JK9150-VSA/IDLE STOP</u></a></td>
-	<td align="right">12000</td>
-	<td>pcs</td>
-	<td>2019-06-24</td>
-	<td class="pick_same" value="PO190430"><a href="4-1.php?asahit22=PO190430">PO190430</a></td>
-	<td>2019-06-20</td>
-	<td><b>2019-06-27</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="">
-	
-	
-	<td align="center">15</td>
-	
-	<td class="pick_same" value="华德"></td>
-	<td class="pick_same" value="20190510001"><a href="4.php?ddt2=20190510001"></a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9150-VSA/IDLE STOP"><a href="###" onclick="c_banngo('_id=2213&amp;cells=15')"><u>NHSB046A-JK9150-VSA/IDLE STOP</u></a></td>
-	<td align="right">12000</td>
-	<td>pcs</td>
-	<td>2019-07-01</td>
-	<td class="pick_same" value="PO190430"><a href="4-1.php?asahit22=PO190430">PO190430</a></td>
-	<td>2019-06-20</td>
-	<td><b>2019-06-29</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">16</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190510001"><a href="4.php?ddt2=20190510001">20190510001</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9153-PTG"><a href="###" onclick="c_banngo('_id=2214&amp;cells=16')"><u>NHSB046A-JK9153-PTG</u></a></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td>2019-07-01</td>
-	<td class="pick_same" value="PO190430"><a href="4-1.php?asahit22=PO190430">PO190430</a></td>
-	<td>2019-06-20</td>
-	<td><b>2019-06-29</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">17</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190513001"><a href="4.php?ddt2=20190513001">20190513001</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9150-VSA/IDLE STOP"><a href="###" onclick="c_banngo('_id=2224&amp;cells=17')"><u>NHSB046A-JK9150-VSA/IDLE STOP</u></a></td>
-	<td align="right">18000</td>
-	<td>pcs</td>
-	<td>2019-07-01</td>
-	<td class="pick_same" value="PO190430"><a href="4-1.php?asahit22=PO190430">PO190430</a></td>
-	<td>2019-06-20</td>
-	<td><b>2019-06-29</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">18</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190513001"><a href="4.php?ddt2=20190513001">20190513001</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9153-CS"><a href="###" onclick="c_banngo('_id=2225&amp;cells=18')"><u>NHSB046A-JK9153-CS</u></a></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td>2019-07-01</td>
-	<td class="pick_same" value="PO190430"><a href="4-1.php?asahit22=PO190430">PO190430</a></td>
-	<td>2019-06-13</td>
-	<td><b>2019-06-29</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">19</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190604007"><a href="4.php?ddt2=20190604007">20190604007</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-D1242"><a href="###" onclick="c_banngo('_id=2352&amp;cells=19')"><u>NHSB046A-D1242</u></a></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td>2019-07-01</td>
-	<td class="pick_same" value="PO190430"><a href="4-1.php?asahit22=PO190430">PO190430</a></td>
-	<td>2019-06-13</td>
-	<td><b>2019-06-29</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">20</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190513001"><a href="4.php?ddt2=20190513001">20190513001</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB064-JK9154-H/L ADJ"><a href="###" onclick="c_banngo('_id=2227&amp;cells=20')"><u>NHSB064-JK9154-H/L ADJ</u></a></td>
-	<td align="right">2000</td>
-	<td>pcs</td>
-	<td><font color="red">2019-06-24</font></td>
-	<td class="pick_same" value="PO190430"><a href="4-1.php?asahit22=PO190430">PO190430</a></td>
-	<td>2019-06-27</td>
-	<td><b>2019-07-03</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="">
-	
-	
-	<td align="center">21</td>
-	
-	<td class="pick_same" value="华德"></td>
-	<td class="pick_same" value="20190513001"><a href="4.php?ddt2=20190513001"></a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB064-JK9154-H/L ADJ"><a href="###" onclick="c_banngo('_id=2228&amp;cells=21')"><u>NHSB064-JK9154-H/L ADJ</u></a></td>
-	<td align="right">8000</td>
-	<td>pcs</td>
-	<td>2019-07-01</td>
-	<td class="pick_same" value="PO190430"><a href="4-1.php?asahit22=PO190430">PO190430</a></td>
-	<td>2019-06-27</td>
-	<td><b>2019-07-04</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">22</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190513001"><a href="4.php?ddt2=20190513001">20190513001</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9152-CMBS"><a href="###" onclick="c_banngo('_id=2221&amp;cells=22')"><u>NHSB046A-JK9152-CMBS</u></a></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td>2019-07-08</td>
-	<td class="pick_same" value="PO190515"><a href="4-1.php?asahit22=PO190515">PO190515</a></td>
-	<td>2019-06-27</td>
-	<td><b>2019-07-06</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">23</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190513001"><a href="4.php?ddt2=20190513001">20190513001</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9152-LDW"><a href="###" onclick="c_banngo('_id=2222&amp;cells=23')"><u>NHSB046A-JK9152-LDW</u></a></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td>2019-07-08</td>
-	<td class="pick_same" value="PO190515"><a href="4-1.php?asahit22=PO190515">PO190515</a></td>
-	<td>2019-06-27</td>
-	<td><b>2019-07-06</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">24</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190513001"><a href="4.php?ddt2=20190513001">20190513001</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9153-PTG"><a href="###" onclick="c_banngo('_id=2226&amp;cells=24')"><u>NHSB046A-JK9153-PTG</u></a></td>
-	<td align="right">6000</td>
-	<td>pcs</td>
-	<td>2019-07-08</td>
-	<td class="pick_same" value="PO190430"><a href="4-1.php?asahit22=PO190430">PO190430</a></td>
-	<td>2019-06-20</td>
-	<td><b>2019-07-06</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">25</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190513001"><a href="4.php?ddt2=20190513001">20190513001</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB064-JK9154-H/L ADJ"><a href="###" onclick="c_banngo('_id=2229&amp;cells=25')"><u>NHSB064-JK9154-H/L ADJ</u></a></td>
-	<td align="right">8000</td>
-	<td>pcs</td>
-	<td>2019-07-08</td>
-	<td class="pick_same" value="PO190430"><a href="4-1.php?asahit22=PO190430">PO190430</a></td>
-	<td>2019-06-27</td>
-	<td><b>2019-07-06</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">26</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190604007"><a href="4.php?ddt2=20190604007">20190604007</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-D1242"><a href="###" onclick="c_banngo('_id=2353&amp;cells=26')"><u>NHSB046A-D1242</u></a></td>
-	<td align="right">6000</td>
-	<td>pcs</td>
-	<td>2019-07-08</td>
-	<td class="pick_same" value="PO19053003"><a href="4-1.php?asahit22=PO19053003">PO19053003</a></td>
-	<td>0000-00-00</td>
-	<td><b>2019-07-06</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">27</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190520054"><a href="4.php?ddt2=20190520054">20190520054</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9284-ROOF"><a href="###" onclick="c_banngo('_id=2254&amp;cells=27')"><u>NHSB046A-JK9284-ROOF</u></a></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td>2019-07-08</td>
-	<td class="pick_same" value="PO190523"><a href="4-1.php?asahit22=PO190523">PO190523</a></td>
-	<td>0000-00-00</td>
-	<td><b>0000-00-00</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">28</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190520035"><a href="4.php?ddt2=20190520035">20190520035</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9150-VSA/IDLE STOP"><a href="###" onclick="c_banngo('_id=2257&amp;cells=28')"><u>NHSB046A-JK9150-VSA/IDLE STOP</u></a></td>
-	<td align="right">36000</td>
-	<td>pcs</td>
-	<td>2019-07-15</td>
-	<td class="pick_same" value="PO190430"><a href="4-1.php?asahit22=PO190430">PO190430</a></td>
-	<td>2019-06-20</td>
-	<td><b>2019-07-13</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7">
-	
-	
-	<td align="center">29</td>
-	
-	<td class="pick_same" value="华德"></td>
-	<td class="pick_same" value="20190520035"><a href="4.php?ddt2=20190520035"></a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9150-VSA/IDLE STOP"><a href="###" onclick="c_banngo('_id=2263&amp;cells=29')"><u>NHSB046A-JK9150-VSA/IDLE STOP</u></a></td>
-	<td align="right">9000</td>
-	<td>pcs</td>
-	<td>2019-07-15</td>
-	<td class="pick_same" value="PO190523"><a href="4-1.php?asahit22=PO190523">PO190523</a></td>
-	<td>0000-00-00</td>
-	<td><b>2019-07-13</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">30</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190520035"><a href="4.php?ddt2=20190520035">20190520035</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9153-CS"><a href="###" onclick="c_banngo('_id=2258&amp;cells=30')"><u>NHSB046A-JK9153-CS</u></a></td>
-	<td align="right">9000</td>
-	<td>pcs</td>
-	<td>2019-07-15</td>
-	<td class="pick_same" value="PO190430"><a href="4-1.php?asahit22=PO190430">PO190430</a></td>
-	<td>2019-06-13</td>
-	<td><b>2019-07-13</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">31</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190520035"><a href="4.php?ddt2=20190520035">20190520035</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9153-PTG"><a href="###" onclick="c_banngo('_id=2259&amp;cells=31')"><u>NHSB046A-JK9153-PTG</u></a></td>
-	<td align="right">15000</td>
-	<td>pcs</td>
-	<td>2019-07-15</td>
-	<td class="pick_same" value="PO190430"><a href="4-1.php?asahit22=PO190430">PO190430</a></td>
-	<td>2019-06-20</td>
-	<td><b>2019-07-13</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">32</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190520035"><a href="4.php?ddt2=20190520035">20190520035</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9289-CS"><a href="###" onclick="c_banngo('_id=2261&amp;cells=32')"><u>NHSB046A-JK9289-CS</u></a></td>
-	<td align="right">6000</td>
-	<td>pcs</td>
-	<td>2019-07-15</td>
-	<td class="pick_same" value="PO190430"><a href="4-1.php?asahit22=PO190430">PO190430</a></td>
-	<td>2019-06-13</td>
-	<td><b>2019-07-13</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">33</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190520035"><a href="4.php?ddt2=20190520035">20190520035</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9289-SAFETY"><a href="###" onclick="c_banngo('_id=2262&amp;cells=33')"><u>NHSB046A-JK9289-SAFETY</u></a></td>
-	<td align="right">6000</td>
-	<td>pcs</td>
-	<td>2019-07-15</td>
-	<td class="pick_same" value="PO190430"><a href="4-1.php?asahit22=PO190430">PO190430</a></td>
-	<td>2019-06-13</td>
-	<td><b>2019-07-13</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">34</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190520035"><a href="4.php?ddt2=20190520035">20190520035</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB064-JK9154-H/L ADJ"><a href="###" onclick="c_banngo('_id=2260&amp;cells=34')"><u>NHSB064-JK9154-H/L ADJ</u></a></td>
-	<td align="right">24000</td>
-	<td>pcs</td>
-	<td>2019-07-15</td>
-	<td class="pick_same" value="PO190430"><a href="4-1.php?asahit22=PO190430">PO190430</a></td>
-	<td>2019-06-27</td>
-	<td><b>2019-07-13</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7">
-	
-	
-	<td align="center">35</td>
-	
-	<td class="pick_same" value="华德"></td>
-	<td class="pick_same" value="20190520035"><a href="4.php?ddt2=20190520035"></a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB064-JK9154-H/L ADJ"><a href="###" onclick="c_banngo('_id=2264&amp;cells=35')"><u>NHSB064-JK9154-H/L ADJ</u></a></td>
-	<td align="right">6000</td>
-	<td>pcs</td>
-	<td>2019-07-15</td>
-	<td class="pick_same" value="PO190430"><a href="4-1.php?asahit22=PO190430">PO190430</a></td>
-	<td>2019-06-27</td>
-	<td><b>2019-07-13</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">36</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190604007"><a href="4.php?ddt2=20190604007">20190604007</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-D1242"><a href="###" onclick="c_banngo('_id=2354&amp;cells=36')"><u>NHSB046A-D1242</u></a></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td>2019-07-15</td>
-	<td class="pick_same" value="PO19053003"><a href="4-1.php?asahit22=PO19053003">PO19053003</a></td>
-	<td>0000-00-00</td>
-	<td><b>2019-07-13</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">37</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190520054"><a href="4.php?ddt2=20190520054">20190520054</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9284-ROOF"><a href="###" onclick="c_banngo('_id=2255&amp;cells=37')"><u>NHSB046A-JK9284-ROOF</u></a></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td>2019-07-15</td>
-	<td class="pick_same" value="PO190523"><a href="4-1.php?asahit22=PO190523">PO190523</a></td>
-	<td>0000-00-00</td>
-	<td><b>0000-00-00</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">38</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190604007"><a href="4.php?ddt2=20190604007">20190604007</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-D1242"><a href="###" onclick="c_banngo('_id=2355&amp;cells=38')"><u>NHSB046A-D1242</u></a></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td>2019-07-22</td>
-	<td class="pick_same" value="PO19053003"><a href="4-1.php?asahit22=PO19053003">PO19053003</a></td>
-	<td>0000-00-00</td>
-	<td><b>2019-07-20</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="">
-	
-	
-	<td align="center">39</td>
-	
-	<td class="pick_same" value="华德"></td>
-	<td class="pick_same" value="20190604007"><a href="4.php?ddt2=20190604007"></a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-D1242"><a href="###" onclick="c_banngo('_id=2356&amp;cells=39')"><u>NHSB046A-D1242</u></a></td>
-	<td align="right">6000</td>
-	<td>pcs</td>
-	<td>2019-08-01</td>
-	<td class="pick_same" value="PO19053003"><a href="4-1.php?asahit22=PO19053003">PO19053003</a></td>
-	<td>0000-00-00</td>
-	<td><b>2019-07-30</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">40</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190604007"><a href="4.php?ddt2=20190604007">20190604007</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9289-CS"><a href="###" onclick="c_banngo('_id=2357&amp;cells=40')"><u>NHSB046A-JK9289-CS</u></a></td>
-	<td align="right">9000</td>
-	<td>pcs</td>
-	<td>2019-08-01</td>
-	<td class="pick_same" value="PO190430"><a href="4-1.php?asahit22=PO190430">PO190430</a></td>
-	<td>2019-06-13</td>
-	<td><b>2019-07-30</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">41</td>
-	
-	<td class="pick_same" value="华德">华德</td>
-	<td class="pick_same" value="20190604007"><a href="4.php?ddt2=20190604007">20190604007</a></td>
-	<td style="max-width:120px;" class="pick_same" value="NHSB046A-JK9289-SAFETY"><a href="###" onclick="c_banngo('_id=2358&amp;cells=41')"><u>NHSB046A-JK9289-SAFETY</u></a></td>
-	<td align="right">9000</td>
-	<td>pcs</td>
-	<td>2019-08-01</td>
-	<td class="pick_same" value="PO190430"><a href="4-1.php?asahit22=PO190430">PO190430</a></td>
-	<td>2019-06-13</td>
-	<td><b>2019-07-30</b></td>
+	<td><font color="red">2019-05-01</font></td>
+	<td class="pick_same" value="PO19041701" style=""><a href="4-1.php?asahit22=PO19041701">PO19041701</a></td>
+	<td>2019-05-23</td>
+	<td><b>2019-05-28</b></td>
 	
 	<td></td>
 		
