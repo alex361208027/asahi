@@ -20,10 +20,6 @@ if($quantity){
 	$row=$result->fetch_row();
 	$restquantity=$row[3]-$quantity;
 	
-	//if($row[12]){
-	//	echo "注意：货物已入库，请在[出入库]中拆分货物。";
-	//	echo "\r";
-	//}
 	
 	
 	if($row[15]){

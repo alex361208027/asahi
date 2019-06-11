@@ -21,10 +21,6 @@ if($quantity){
 	$restquantity=$row[2]-$quantity;
 	
 	
-	if($row[8]){
-		echo "注意：货物已入库，请在[出入库]中拆分货物。";
-		echo "\r";
-	}
 	
 	
 	if($row[15]){

@@ -24,12 +24,12 @@ $(document).ready(function(){
 	
 	
 	$(".pick_same").hover(function(){
-	  var get=$(this).attr("value");
-	  $("tr [value='"+get+"']").css({"background":"#AAAAFF"});
+	  //var get=$(this).attr("value");
+	  $("tr [value='"+$(this).attr("value")+"']").css({"background":"#AAAAFF"});
 	  
 	},function(){
-	  var get=$(this).attr("value");
-	  $("tr [value='"+get+"']").css({"background":""});
+	  //var get=$(this).attr("value");
+	  $("tr [value='"+$(this).attr("value")+"']").css({"background":""});
 	});
 	
 	

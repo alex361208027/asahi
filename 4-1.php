@@ -64,9 +64,7 @@ $rowsnum=$result->num_rows;
 -webkit-transition:max-height 0.8s; 
 -o-transition:max-height 0.8s; 
 }
-.class00:hover{
-	background-color:#FFBBBB;
-}
+
 .class0{
 	position:relative;
 	width:100%;min-width:600px;margin-bottom:10px;overflow:hidden;height:120px;
@@ -122,26 +120,10 @@ $rowsnum=$result->num_rows;
 	width:92%;background-color:;padding:5px;color:;margin-bottom:5px;
 
 }
-.classcp1{
-	padding:2px 5px 2px 5px;color:white;display:inline-block;background-color:red;margin-right:8px;
-	-webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+.classcaozuo{
+	position:absolute;top:48px;right:200px;
 }
-input[type="submit"],
-input[type="button"]{
-	font-size:;color:black;padding:0px;
-	border:0px solid #CCCCFF;
-	width:auto;
-}
-input[type="submit"]:hover,
-input[type="button"]:hover{
-	border:0px solid #000088;
-	color:#777777;
-}
-hr{
-	border-top:1px ridge white;
-}
+
 </style>
 <div align="center">
 <?php while($row=$result->fetch_row()){ 
@@ -157,7 +139,7 @@ if($totle2 == $totle3){
 		$bgcolor='';
 	}
 	?>
-            <div class="class00" style="background-color:rgb(<?php echo '255'; ?>,<?php echo $ccc; ?>,<?php echo $ccc;if($ccc<231){$ccc=240;}else{$ccc=$ccc-5;} ?>);background-color:<?php echo $bgcolor; ?>" onclick="this.style.maxHeight='800px'" ondblclick="this.style.maxHeight='120px';">
+            <div class="class00" style="background-color:rgb(<?php echo '255'; ?>,<?php echo $ccc; ?>,<?php echo $ccc;if($ccc<231){$ccc=240;}else{$ccc=$ccc-5;} ?>);background-color:<?php echo $bgcolor; ?>" >
 		
 			<div class="class0" >
 				<div class="classlogo" align="center"><b>朝日</b></div>
@@ -165,11 +147,10 @@ if($totle2 == $totle3){
 				<div class="classordernum"><a href="6.php?php4-1ordernum=<?php echo $row[0] ?>"><?php echo $row[0]; ?></a></div>
 				<div class="classtotle"><font size="55px" color="#DDDDDD"><?php echo $totle3."/</font><b>".$totle2;?></b></div>
 				<div class="classremark"><!--<marquee scrolldelay="300">--><?php echo $row[3] ?><!--</marquee>--></div>
-				<div style="position:absolute;bottom:50px;right:200px;">
-					<a href="###" onclick="po_order('_id=<?php echo $row[5] ?>&t1=<?php echo $row[0] ?>&t2=<?php echo $row[1] ?>&t4=<?php echo $row[3] ?>')">
-						<input type="submit" value="修" style="padding:2px 5px 2px 5px;color:white;background-color:#FFCCD6;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;">改订单
-					</a>
-					<a href="7-2.php?t1=<?php echo $row[0] ?>&t6=<?php echo $row[3] ?>"><input type="submit" value="添" style="padding:2px 5px 2px 5px;color:white;background-color:#FFCCD6;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;" >加产品</a>
+				<div class="classcaozuo">
+					<div onclick="po_order('_id=<?php echo $row[5] ?>&t1=<?php echo $row[0] ?>&t2=<?php echo $row[1] ?>&t4=<?php echo $row[3] ?>')" class="classcp1">修改订单</div>
+					<a href="7-2.php?t1=<?php echo $row[0] ?>&t6=<?php echo $row[3] ?>"><div class="classcp1">添加产品</div></a><br>
+					<div class="classcp1" >内容概要</div>
 				</div>
 				<?php 
 				if($totle2 == $totle3&&$totle2<>0){

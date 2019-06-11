@@ -67,7 +67,7 @@ a{text-decoration:none;}
 }
 
 .classcp1{
-	padding:2px 5px 2px 5px;color:white;display:inline-block;background-color:red;margin:4px 1px;
+	padding:2px 5px 2px 5px;color:white;display:inline-block;background-color:red;margin:4px 1px;cursor:pointer;
 	-webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;

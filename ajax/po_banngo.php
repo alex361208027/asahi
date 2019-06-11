@@ -21,6 +21,7 @@ $row=$result->fetch_row();
 		<input type="hidden" id="po_banngo_asahiorder" value="<?php echo $row[0] ?>">
 		<input type="hidden" id="po_banngo_id" value="<?php echo $row[9] ?>">
 		<input type="hidden" id="po_banngo_quantity" value="<?php echo $row[2] ?>">
+		<input type="hidden" id="po_banngo_thebanngo" value="<?php echo $row[1] ?>">
 	<tr>
 		<td colspan="2"><?php echo $row[0]; ?></font></td>
 	</tr>

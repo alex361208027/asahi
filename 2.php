@@ -18,14 +18,35 @@ $todaytime=date('Y-m-d H:i:s');
 
 $php4ordernum=$_GET['php4ordernum'];
 
+if($_GET['t6']){
+$t6 = $_GET['t6'];
+}else{
 $t6 = $_POST['t6'];
+}
+
+if($_GET['t1']){
+$t1 = $_GET['t1'];
+}else{
 $t1 = $_POST['t1'];
+}
+
+if($_GET['t3']){
+$t3 = $_GET['t3'];
+}else{
 $t3 = $_POST['t3'];
+}
+
 $t5 = $_POST['t5'];
 $t4 = $_POST['t4'];
 $t7 = $_POST['t7'];$t77 = $_POST['t77'];
 $selectdate=$_POST['selectdate'];
+
+if($_GET['t9']){
+$t9 = $_GET['t9'];
+}else{
 $t9 = $_POST['t9'];
+}
+
 $t10 = $_POST['t10'];
 if($_GET['t11']){
 	$t11 = $_GET['t11'];
