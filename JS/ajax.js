@@ -672,7 +672,7 @@ function c_pipei_cancel(str){
 			
 }
 function c_pipei_cancel_complete(str){
-			
+			confirm_result=1;
 			if(document.getElementsByName('t12')[0].checked){
 				if(confirm("该品番已在库，请先将在库的客户名进行修改！(如已更改，请点击【确定】；否则点击【取消】前往在库更改)")){
 					confirm_result=1;
