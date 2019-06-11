@@ -589,8 +589,8 @@ function c_chaifen(str){
 			
 }
 function c_chaifen_complete(str){
-			
-			if(document.getElementsByName('t12')[0].checked){
+			confirm_result=1;
+			if(document.getElementsByName('t12')[0].checked==true){
 				if(confirm("该品番已在库，请先拆分在库！(如在库已拆分，请点击【确定】；否则点击【取消】前往在库拆分)")){
 					confirm_result=1;
 				}else{
@@ -1151,6 +1151,19 @@ function po_chaifen(str){
 
 
 function po_chaifen_complete(str){
+			confirm_result=1;
+			if(document.getElementById('po_complete').checked==true){
+				if(confirm("该品番已在库，请先拆分在库！(如在库已拆分，请点击【确定】；否则点击【取消】前往在库拆分)")){
+					confirm_result=1;
+				}else{
+					confirm_result=0;
+					window.open("in.php?in=in&search_banngo="+document.getElementById('po_banngo_thebanngo').value,"xiabu");
+				}
+			}
+			
+			
+			if(confirm_result){
+			
 			str="quantity="+str;
 			
 			
@@ -1178,6 +1191,7 @@ function po_chaifen_complete(str){
 			  }
 			xmlhttp.open("GET","./ajax/po_chaifen_complete.php?"+str,true);
 			xmlhttp.send();
+			}
 }
 
 function po_delete(str){

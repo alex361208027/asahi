@@ -73,21 +73,19 @@ $rowsnum=$result->num_rows;
 <style>
 .class00{
 	position:relative;
-	overflow:hidden;max-height:120px;background-color:;width:600px;color:#555555;margin-bottom:-1px;
+	overflow:hidden;background-color:;width:600px;color:#555555;margin-bottom:-1px;
 	/**-webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius:5px;**/
   -webkit-box-shadow: 0px 0px 10px #BBBBBB;
   -moz-box-shadow: 0px 0px 10px #BBBBBB;
   box-shadow: 0px 0px 10px #BBBBBB;
-	transition:max-height 0.8s;
--moz-transition:max-height 0.8s; 
--webkit-transition:max-height 0.8s; 
--o-transition:max-height 0.8s; 
+	transition:all 0.8s;
+-moz-transition:all 0.8s; 
+-webkit-transition:all 0.8s; 
+-o-transition:all 0.8s; 
 }
-.class00:hover{
-	background-color:#FFBBBB;
-}
+
 .class0{
 	position:relative;
 	width:100%;min-width:600px;margin-bottom:10px;overflow:hidden;height:120px;
@@ -136,7 +134,7 @@ $rowsnum=$result->num_rows;
 	bottom:10px;right:3px;color:#CCCCCC;
 }
 .classcplb{
- padding:10px;background-color:;position:relative;min-height:100px;padding-bottom:50px;
+ padding:10px;background-color:;position:relative;padding:0 50px 40px 30px;height:auto;display:none;
 }
 .classcomplete{
 	position:absolute;
@@ -146,54 +144,50 @@ $rowsnum=$result->num_rows;
 	width:92%;background-color:;padding:5px;color:;margin-bottom:5px;
 
 }
-.classcp1{
-	padding:2px 5px 2px 5px;color:white;display:inline-block;background-color:red;margin-right:8px;
-	-webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+.classcaozuo{
+	position:absolute;top:48px;right:200px;
 }
-input[type="submit"],
-input[type="button"]{
-	font-size:;color:black;padding:0px;
-	border:0px solid #CCCCFF;
-	width:auto;
+
+.classcplb table tr:hover{
+	background:#FFFFEE;cursor:pointer;
 }
-input[type="submit"]:hover,
-input[type="button"]:hover{
-	border:0px solid #000088;
-	color:#777777;
-}
-hr{
-	border-top:1px ridge white;
-}
+
 </style>
+<script>
+$(function(){
+	$("[name='zhankai']").click(function(){
+		buttons(this);
+		var _this=$(this).parent().parent().next();
+		_this.append("...");
+		$.post("ajax/c_order_zhankai.php",{campany:$(this).attr("campany"),ordernum:$(this).attr("ordernum")},function(data){
+			_this.empty();
+			_this.append(data);
+			_this.show(300);
+		});
+	});
+	
+	$(".classdate").click(function(){
+		$(this).prev().hide(300);
+	});
+});
+
+</script>
 <div align="center">
-<?php while($row=$result->fetch_row()){ 
-	$sql2 =  "SELECT * FROM `t_teacher` WHERE ordernum = '{$row[1]}'";
-	$result2 = mysqli_query($conn,$sql2);
-	$totle2=$result2->num_rows;
-	$sql3 =  "SELECT * FROM `t_teacher` WHERE ordernum = '{$row[1]}' AND state = '完成'";
-	$result3 = mysqli_query($conn,$sql3);
-	$totle3=$result3->num_rows;
-if($totle2 == $totle3){
-		$bgcolor='#FFFFCC';
-	}else{
-		$bgcolor='';
-	}
+<?php while($row=$result->fetch_row()){
+	
 	?>
-            <div class="class00" style="background-color:rgb(<?php echo $ccc; ?>,<?php echo $ccc; ?>,<?php echo '255';if($ccc<231){$ccc=240;}else{$ccc=$ccc-5;} ?>);background-color:<?php echo $bgcolor; ?>" onclick="this.style.maxHeight='800px'" ondblclick="this.style.maxHeight='120px';">
+            <div class="class00" style="background-color:rgb(<?php echo $ccc; ?>,<?php echo $ccc; ?>,<?php echo '255';if($ccc<231){$ccc=240;}else{$ccc=$ccc-5;} ?>);background-color:<?php echo $bgcolor; ?>">
 			
-			<div class="class0" >
+			<div class="class0">
 				<div class="classlogo" align="center"><table width="100%" height="100%" cellspacing="0" cellpadding="0" align="center" valign="middle"><tr><td><b><?php if(file_exists("upload/campanylogo/".$row[0].".png")){echo "<img src='upload/campanylogo/".$row[0].".png' width='60px'>";} ?></b></td></tr></table></div>
                 <div class="classcampany"><?php echo $row[0] ?></div>
 				<div class="classordernum"><a href="2.php?php4ordernum=<?php echo $row[1] ?>"><?php echo $row[1] ?></a></div>
 				<div class="classtotle"><font size="55px" color="#DDDDDD"><?php echo $totle3."/</font><b>".$totle2;?></b></div>
 				<div class="classremark"><marquee scrolldelay="300"><?php echo $row[4] ?></marquee></div>
-				<div style="position:absolute;bottom:50px;right:200px;">
-					<a href="###" onclick="c_order('_id=<?php echo $row[6] ?>&t1=<?php echo $row[0] ?>&t2=<?php echo $row[1] ?>&t3=<?php echo $row[2] ?>&t5=<?php echo $row[4] ?>')">
-						<input type="submit" value="修" style="padding:2px 5px 2px 5px;color:white;background-color:#FFCCD6;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;">改订单
-					</a>
-					<a href="1-2.php?t1=<?php echo $row[0] ?>&t2=<?php echo $row[1] ?>"><input type="submit" value="添" style="padding:2px 5px 2px 5px;color:white;background-color:#FFCCD6;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;" >加产品</a>
+				<div class="classcaozuo">
+					<div class="classcp1" name="zhankai" campany="<?php echo $row[0] ?>" ordernum="<?php echo $row[1] ?>">展开</div>
+					<div onclick="c_order('_id=<?php echo $row[6] ?>&t1=<?php echo $row[0] ?>&t2=<?php echo $row[1] ?>&t3=<?php echo $row[2] ?>&t5=<?php echo $row[4] ?>')" class="classcp1">修改订单</div>
+					<a href="1-2.php?t1=<?php echo $row[0] ?>&t2=<?php echo $row[1] ?>"><div class="classcp1">添加产品</div></a>
 				</div>
 				
 				<?php 
@@ -202,27 +196,8 @@ if($totle2 == $totle3){
 				}
 				?>
 			</div>	
-			<div class="classcplb" align="center">
-			<?php
-				while($row2=$result2->fetch_row()){
-							if($row2[9] == '完成'){
-								$bgimg='#BBBBFF';$states='完成';
-							}elseif($row2[11] == '已入库'){
-								$bgimg='red';$states='等待出货';
-							}elseif($row2[6] == 0){
-								$bgimg='#000000';$states='等待纳期';
-							}elseif($row2[6] > date('Y-m-d')){
-								$bgimg='#00DDB1';$states='生产中';
-							}elseif($row2[6] == date('Y-m-d')){
-								$bgimg='#FF7792';$states='日本发货';
-							}else{
-								$bgimg='#FF7792';$states='通关中';
-							}
-			?>
-			<a href="2.php?php4ordernum=<?php echo $row[1] ?>"><div class="classcp" align="left">
-			<div class="classcp1" style="background-color:<?php echo $bgimg; ?>"><?php echo $states; ?></div><?php echo $row2[2]." &nbsp; <b>".$row2[3]."</b>pcs &nbsp"; if($row2[7]==0||empty($row2[7])){echo "希望交期:<b>".$row2[4];}else{echo "交期发货:<b>".$row2[7];} if(empty($row2[13])){echo " <font color='red'>未匹配</font>";} ?></b>
-			</div></a>
-			<?php }	?>
+			<div class="classcplb" align="left">
+			...
 			</div>
 			<div class="classdate"><?php echo $row[2] ?></div>
 			<div class="classpreson">Created By <?php echo $row[5] ?></div>
