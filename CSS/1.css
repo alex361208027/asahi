@@ -18,7 +18,9 @@ hr{
 	height:0px;border:none;border-top:1px ridge #EEEEEE;
 	
 }
-
+u{
+	cursor:pointer;
+}
 @font-face{
             font-family:myFont;
             src:url('');

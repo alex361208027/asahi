@@ -145,7 +145,7 @@ $rowsnum=$result->num_rows;
 
 }
 .classcaozuo{
-	position:absolute;top:48px;right:200px;
+	position:absolute;top:48px;right:100px;
 }
 
 .classcplb table tr:hover{
@@ -156,19 +156,25 @@ $rowsnum=$result->num_rows;
 <script>
 $(function(){
 	$("[name='zhankai']").click(function(){
-		buttons(this);
-		var _this=$(this).parent().parent().next();
-		_this.append("...");
-		$.post("ajax/c_order_zhankai.php",{campany:$(this).attr("campany"),ordernum:$(this).attr("ordernum")},function(data){
-			_this.empty();
-			_this.append(data);
-			_this.show(300);
-		});
+		var _this=$(this);
+		_this.parent().parent().next().append("...");
+		if($(this).attr("value")==0){
+			$(this).empty().append("收起");
+			$.post("ajax/c_order_zhankai.php",{campany:$(this).attr("campany"),ordernum:$(this).attr("ordernum")},function(data){
+				_this.parent().parent().next().empty();
+				_this.parent().parent().next().append(data);
+				_this.parent().parent().next().show(300);
+			});
+			$(this).attr("value",1);
+		}else{
+			$(this).empty().append("展开");	
+			_this.parent().parent().next().hide(300);
+			$(this).attr("value",0);
+		}
+
 	});
 	
-	$(".classdate").click(function(){
-		$(this).prev().hide(300);
-	});
+	
 });
 
 </script>
@@ -182,18 +188,18 @@ $(function(){
 				<div class="classlogo" align="center"><table width="100%" height="100%" cellspacing="0" cellpadding="0" align="center" valign="middle"><tr><td><b><?php if(file_exists("upload/campanylogo/".$row[0].".png")){echo "<img src='upload/campanylogo/".$row[0].".png' width='60px'>";} ?></b></td></tr></table></div>
                 <div class="classcampany"><?php echo $row[0] ?></div>
 				<div class="classordernum"><a href="2.php?php4ordernum=<?php echo $row[1] ?>"><?php echo $row[1] ?></a></div>
-				<div class="classtotle"><font size="55px" color="#DDDDDD"><?php echo $totle3."/</font><b>".$totle2;?></b></div>
+				<!--<div class="classtotle"><font size="55px" color="#DDDDDD"><?php //echo $totle3."/</font><b>".$totle2;?></b></div>-->
 				<div class="classremark"><marquee scrolldelay="300"><?php echo $row[4] ?></marquee></div>
 				<div class="classcaozuo">
-					<div class="classcp1" name="zhankai" campany="<?php echo $row[0] ?>" ordernum="<?php echo $row[1] ?>">展开</div>
+					<div class="classcp1" name="zhankai" campany="<?php echo $row[0] ?>" ordernum="<?php echo $row[1] ?>" value="0">展开</div>
 					<div onclick="c_order('_id=<?php echo $row[6] ?>&t1=<?php echo $row[0] ?>&t2=<?php echo $row[1] ?>&t3=<?php echo $row[2] ?>&t5=<?php echo $row[4] ?>')" class="classcp1">修改订单</div>
 					<a href="1-2.php?t1=<?php echo $row[0] ?>&t2=<?php echo $row[1] ?>"><div class="classcp1">添加产品</div></a>
 				</div>
 				
 				<?php 
-				if($totle2 == $totle3&&$totle2<>0){
-				echo "<div class='classcomplete'><img src='img/wancheng.png'/></div>";
-				}
+				//if($totle2 == $totle3&&$totle2<>0){
+				//echo "<div class='classcomplete'><img src='img/wancheng.png'/></div>";
+				//}
 				?>
 			</div>	
 			<div class="classcplb" align="left">

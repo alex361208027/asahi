@@ -29,7 +29,6 @@ $t4 = $_POST['t4'];
 $t7 = $_POST['t7'];$t77 = $_POST['t77'];
 $t8 = $_POST['t8'];$t88 = $_POST['t88'];
 $t9 = $_POST['t9'];
-$t10 = $_POST['t10'];
 if($_GET['t11']){
 	$t11 = $_GET['t11'];
 }else{
@@ -45,12 +44,7 @@ if($t11){
 	$tt11="";
 }
 
-if($t10){
-	$tt10="AND (customer_id = '' OR campanyorder='') ";
-	$nopox=$nopox."<div class='nopox'>未分配</div>";
-}else{
-	$tt10="";
-}
+
 
 if($t9){
 	$tt9="";
@@ -114,7 +108,7 @@ if($t7||$t77){
 }else{
 	$tt7="";
 }
-$select=$tt3.$tt1.$tt5.$tt4.$tt7.$tt9.$tt10.$tt11.$tt6;
+$select=$tt3.$tt1.$tt5.$tt4.$tt7.$tt9.$tt11.$tt6;
 
 
 $nowpage=$_POST['nowpage'];
@@ -195,7 +189,7 @@ table{border-collapse: collapse;}
 	<td align="center"><div class="classcp1" style="background-color:<?php echo $bgimg; ?>"><?php echo $states; ?></div></td>
 	<td class="pick_same" value="<?php echo $row[0]; ?>"><a href="4-1.php?asahit1=<?php echo $row[0]; ?>" ><?php echo $row[0]; ?></a></td>
 	<td class="pick_same" value="<?php echo $row[5]; ?>"><?php echo $row[5]; ?></td>
-    <td class="pick_same" value="<?php echo $row[1]; ?>"><a href="###" onclick="po_banngo('_id=<?php echo $row[9] ?>&cells=<?php echo $jjj+1 ?>')"><u><?php echo $row[1]; ?></u></a><?php if($row[3]!="0000-00-00" &&!$row[8] && $row[3]<date('Y-m-d')){ ?><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='<?php echo $jjj+1; ?>';eee=1;po_ru_quantity=<?php echo $row[2]; ?>;po_ruku('t2=<?php echo $row[1] ?>&t3=<?php echo $row[2] ?>&t6=<?php echo $row[5] ?>&t7=<?php echo $row[6] ?>&customer_id=<?php echo $row[10] ?>&_id=<?php echo $row[9] ?>&asahipo=<?php echo $row[0] ?>')">[入库]</a><?php } ?></td>
+    <td class="pick_same" value="<?php echo $row[1]; ?>"><u onclick="po_banngo('_id=<?php echo $row[9] ?>&cells=<?php echo $jjj+1 ?>')"><?php echo $row[1]; ?></u><?php if($row[3]!="0000-00-00" &&!$row[8] && $row[3]<date('Y-m-d')){ ?><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='<?php echo $jjj+1; ?>';eee=1;po_ru_quantity=<?php echo $row[2]; ?>;po_ruku('t2=<?php echo $row[1] ?>&t3=<?php echo $row[2] ?>&t6=<?php echo $row[5] ?>&t7=<?php echo $row[6] ?>&customer_id=<?php echo $row[10] ?>&_id=<?php echo $row[9] ?>&asahipo=<?php echo $row[0] ?>')">[入库]</a><?php } ?></td>
 	<td align="right"><?php echo $row[2]; ?></td>
 	<td align="left">pcs</td>
 	<td><?php if($row[4]==0){ echo ""; }elseif($row[4]<=$row[3]){ echo "<font color='red'>".$row[4]."</font>"; }else{ echo $row[4]; } ?></td>
@@ -319,7 +313,7 @@ function po_pi_lotnum(str){
 <input type="hidden" name="t6" value="<?php echo $t6 ?>"/><input type="hidden" name="t1" value="<?php echo $t1 ?>"/><input type="hidden" name="t3" value="<?php echo $t3 ?>"/>
 <input type="hidden" name="t5" value="<?php echo $t5 ?>"/><input type="hidden" name="t55" value="<?php echo $t55 ?>"/><input type="hidden" name="t4" value="<?php echo $t4 ?>"/>
 <input type="hidden" name="t7" value="<?php echo $t7 ?>"/><input type="hidden" name="t77" value="<?php echo $t77 ?>"/><input type="hidden" name="t9" value="<?php echo $t9 ?>"/>
-<input type="hidden" name="t10" value="<?php echo $t10 ?>"/><input type="hidden" name="t11" value="<?php echo $t11 ?>"/>
+<input type="hidden" name="t11" value="<?php echo $t11 ?>"/>
 <?php }elseif($jjj<1){echo "无内容：请尝试更改检索";}?>
 </form>
 <br><br>
