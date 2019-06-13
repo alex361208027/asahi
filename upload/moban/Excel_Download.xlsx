@@ -22,15 +22,15 @@
 	
 	<td align="center">1</td>
 	
-	<td class="pick_same" value="华德" style="">华德</td>
-	<td class="pick_same" value="20190410017"><a href="4.php?ddt2=20190410017">20190410017</a></td>
-	<td style="max-width: 120px;" class="pick_same" value="NHSB046A-JK9289-CS"><a href="###" onclick="c_banngo('_id=2087&amp;cells=1')"><u>NHSB046A-JK9289-CS</u></a></td>
-	<td align="right">6000</td>
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190327PO0067" style=""><a href="4.php?ddt2=S190327PO0067">S190327PO0067</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13435"><a href="###" onclick="c_banngo('_id=2034&amp;cells=1')"><u>E13435</u></a></td>
+	<td align="right">246000</td>
 	<td>pcs</td>
-	<td><font color="red">2019-05-08</font></td>
-	<td class="pick_same" value="PO19040101"><a href="4-1.php?asahit22=PO19040101">PO19040101</a></td>
-	<td>2019-05-16</td>
-	<td><b>2019-05-21</b></td>
+	<td><font color="red">2019-06-03</font></td>
+	<td class="pick_same" value="PO19032701"><a href="4-1.php?asahit22=PO19032701">PO19032701</a></td>
+	<td>2019-06-06</td>
+	<td><b>2019-06-11</b></td>
 	
 	<td></td>
 		
@@ -40,15 +40,33 @@
 	
 	<td align="center">2</td>
 	
-	<td class="pick_same" value="华德" style="">华德</td>
-	<td class="pick_same" value="20190410017"><a href="4.php?ddt2=20190410017">20190410017</a></td>
-	<td style="max-width: 120px;" class="pick_same" value="NHSB046A-JK9289-SAFETY"><a href="###" onclick="c_banngo('_id=2088&amp;cells=2')"><u>NHSB046A-JK9289-SAFETY</u></a></td>
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190327PO0067" style=""><a href="4.php?ddt2=S190327PO0067">S190327PO0067</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E17205"><a href="###" onclick="c_banngo('_id=2135&amp;cells=2')"><u>E17205</u></a></td>
 	<td align="right">6000</td>
 	<td>pcs</td>
-	<td><font color="red">2019-05-08</font></td>
-	<td class="pick_same" value="PO19040101"><a href="4-1.php?asahit22=PO19040101">PO19040101</a></td>
-	<td>2019-05-16</td>
-	<td><b>2019-05-21</b></td>
+	<td><font color="red">2019-06-03</font></td>
+	<td class="pick_same" value="PO19032701"><a href="4-1.php?asahit22=PO19032701">PO19032701</a></td>
+	<td>2019-06-06</td>
+	<td><b>2019-06-11</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">3</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190403PO0101" style=""><a href="4.php?ddt2=S190403PO0101">S190403PO0101</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13435"><a href="###" onclick="c_banngo('_id=2058&amp;cells=3')"><u>E13435</u></a></td>
+	<td align="right">72000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-06-03</font></td>
+	<td class="pick_same" value="PO190404"><a href="4-1.php?asahit22=PO190404">PO190404</a></td>
+	<td>2019-06-06</td>
+	<td><b>2019-06-11</b></td>
 	
 	<td></td>
 		
@@ -56,35 +74,17 @@
 <tr bgcolor="" class="tabletr">
 	
 	
-	<td align="center">3</td>
-	
-	<td class="pick_same" value="华德" style="">华德</td>
-	<td class="pick_same" value="20190416036" style=""><a href="4.php?ddt2=20190416036">20190416036</a></td>
-	<td style="max-width: 120px;" class="pick_same" value="NHSB046A-D1244"><a href="###" onclick="c_banngo('_id=2121&amp;cells=3')"><u>NHSB046A-D1244</u></a></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td><font color="red">2019-05-20</font></td>
-	<td class="pick_same" value="PO19041701" style=""><a href="4-1.php?asahit22=PO19041701">PO19041701</a></td>
-	<td>2019-05-23</td>
-	<td><b>2019-05-28</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="">
-	
-	
 	<td align="center">4</td>
 	
-	<td class="pick_same" value="华德" style=""></td>
-	<td class="pick_same" value="20190416036" style=""><a href="4.php?ddt2=20190416036"></a></td>
-	<td style="max-width: 120px;" class="pick_same" value="NHSB046A-D1244"><a href="###" onclick="c_banngo('_id=2122&amp;cells=4')"><u>NHSB046A-D1244</u></a></td>
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190311PO0031" style=""><a href="4.php?ddt2=S190311PO0031">S190311PO0031</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13004"><a href="###" onclick="c_banngo('_id=2243&amp;cells=4')"><u>E13004</u></a></td>
 	<td align="right">6000</td>
 	<td>pcs</td>
-	<td>2019-06-03</td>
-	<td class="pick_same" value="PO19041701" style=""><a href="4-1.php?asahit22=PO19041701">PO19041701</a></td>
-	<td>2019-05-23</td>
-	<td><b>2019-05-28</b></td>
+	<td><font color="red">2019-06-03</font></td>
+	<td class="pick_same" value="PO19040401" style=""><a href="4-1.php?asahit22=PO19040401">PO19040401</a></td>
+	<td>2019-06-13</td>
+	<td><b>2019-06-18</b></td>
 	
 	<td></td>
 		
@@ -94,15 +94,15 @@
 	
 	<td align="center">5</td>
 	
-	<td class="pick_same" value="华德" style="">华德</td>
-	<td class="pick_same" value="20190416056" style=""><a href="4.php?ddt2=20190416056">20190416056</a></td>
-	<td style="max-width: 120px;" class="pick_same" value="NHSB046A-JK9289-CS"><a href="###" onclick="c_banngo('_id=2170&amp;cells=5')"><u>NHSB046A-JK9289-CS</u></a></td>
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190327PO0067" style=""><a href="4.php?ddt2=S190327PO0067">S190327PO0067</a></td>
+	<td style="max-width: 120px;" class="pick_same" value="E12395"><a href="###" onclick="c_banngo('_id=2029&amp;cells=5')"><u>E12395</u></a></td>
 	<td align="right">3000</td>
 	<td>pcs</td>
-	<td><font color="red">2019-05-01</font></td>
-	<td class="pick_same" value="PO19041701" style=""><a href="4-1.php?asahit22=PO19041701">PO19041701</a></td>
-	<td>2019-05-23</td>
-	<td><b>2019-05-28</b></td>
+	<td><font color="red">2019-06-03</font></td>
+	<td class="pick_same" value="PO19032701"><a href="4-1.php?asahit22=PO19032701">PO19032701</a></td>
+	<td>2019-06-13</td>
+	<td><b>2019-06-18</b></td>
 	
 	<td></td>
 		
@@ -112,15 +112,1239 @@
 	
 	<td align="center">6</td>
 	
-	<td class="pick_same" value="华德" style="">华德</td>
-	<td class="pick_same" value="20190416056" style=""><a href="4.php?ddt2=20190416056">20190416056</a></td>
-	<td style="max-width: 120px;" class="pick_same" value="NHSB046A-JK9289-SAFETY"><a href="###" onclick="c_banngo('_id=2171&amp;cells=6')"><u>NHSB046A-JK9289-SAFETY</u></a></td>
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190327PO0067" style=""><a href="4.php?ddt2=S190327PO0067">S190327PO0067</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E12619"><a href="###" onclick="c_banngo('_id=2241&amp;cells=6')"><u>E12619</u></a></td>
+	<td align="right">42000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-06-03</font></td>
+	<td class="pick_same" value="PO190308" style=""><a href="4-1.php?asahit22=PO190308">PO190308</a></td>
+	<td>2019-06-13</td>
+	<td><b>2019-06-18</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">7</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190403PO0101" style=""><a href="4.php?ddt2=S190403PO0101">S190403PO0101</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E17205"><a href="###" onclick="c_banngo('_id=2053&amp;cells=7')"><u>E17205</u></a></td>
+	<td align="right">12000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-06-03</font></td>
+	<td class="pick_same" value="PO190404"><a href="4-1.php?asahit22=PO190404">PO190404</a></td>
+	<td>2019-06-13</td>
+	<td><b>2019-06-18</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">8</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190412PO0256"><a href="4.php?ddt2=S190412PO0256">S190412PO0256</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13098"><a href="###" onclick="c_banngo('_id=2109&amp;cells=8')"><u>E13098</u></a></td>
+	<td align="right">9000</td>
+	<td>pcs</td>
+	<td>2019-07-01</td>
+	<td class="pick_same" value="PO19041203"><a href="4-1.php?asahit22=PO19041203">PO19041203</a></td>
+	<td>2019-06-13</td>
+	<td><b>2019-06-18</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">9</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190419PO0501"><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13435"><a href="###" onclick="c_banngo('_id=2320&amp;cells=9')"><u>E13435</u></a></td>
+	<td align="right">81000</td>
+	<td>pcs</td>
+	<td>2019-08-01</td>
+	<td class="pick_same" value="PO19042401"><a href="4-1.php?asahit22=PO19042401">PO19042401</a></td>
+	<td>2019-06-13</td>
+	<td><b>2019-06-18</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">10</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190419PO0502"><a href="4.php?ddt2=S190419PO0502">S190419PO0502</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13098"><a href="###" onclick="c_banngo('_id=2153&amp;cells=10')"><u>E13098</u></a></td>
 	<td align="right">3000</td>
 	<td>pcs</td>
-	<td><font color="red">2019-05-01</font></td>
-	<td class="pick_same" value="PO19041701" style=""><a href="4-1.php?asahit22=PO19041701">PO19041701</a></td>
-	<td>2019-05-23</td>
-	<td><b>2019-05-28</b></td>
+	<td>2019-07-01</td>
+	<td class="pick_same" value="PO19042401"><a href="4-1.php?asahit22=PO19042401">PO19042401</a></td>
+	<td>2019-06-13</td>
+	<td><b>2019-06-18</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">11</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190327PO0067" style=""><a href="4.php?ddt2=S190327PO0067">S190327PO0067</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13044"><a href="###" onclick="c_banngo('_id=2032&amp;cells=11')"><u>E13044</u></a></td>
+	<td align="right">30000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-06-03</font></td>
+	<td class="pick_same" value="PO19032701"><a href="4-1.php?asahit22=PO19032701">PO19032701</a></td>
+	<td>2019-06-14</td>
+	<td><b>2019-06-19</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">12</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190403PO0101" style=""><a href="4.php?ddt2=S190403PO0101">S190403PO0101</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E12619"><a href="###" onclick="c_banngo('_id=2056&amp;cells=12')"><u>E12619</u></a></td>
+	<td align="right">36000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-06-03</font></td>
+	<td class="pick_same" value="PO190404"><a href="4-1.php?asahit22=PO190404">PO190404</a></td>
+	<td>2019-06-14</td>
+	<td><b>2019-06-19</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">13</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190327PO0067" style=""><a href="4.php?ddt2=S190327PO0067">S190327PO0067</a></td>
+	<td style="max-width: 120px;" class="pick_same" value="E12395"><a href="###" onclick="c_banngo('_id=2345&amp;cells=13')"><u>E12395</u></a></td>
+	<td align="right">6000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-06-03</font></td>
+	<td class="pick_same" value="PO19032701"><a href="4-1.php?asahit22=PO19032701">PO19032701</a></td>
+	<td>2019-06-20</td>
+	<td><b>2019-06-25</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">14</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190327PO0067" style=""><a href="4.php?ddt2=S190327PO0067">S190327PO0067</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13044"><a href="###" onclick="c_banngo('_id=2238&amp;cells=14')"><u>E13044</u></a></td>
+	<td align="right">30000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-06-03</font></td>
+	<td class="pick_same" value="PO190425"><a href="4-1.php?asahit22=PO190425">PO190425</a></td>
+	<td>2019-06-20</td>
+	<td><b>2019-06-25</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">15</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190403PO0101" style=""><a href="4.php?ddt2=S190403PO0101">S190403PO0101</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13044"><a href="###" onclick="c_banngo('_id=2057&amp;cells=15')"><u>E13044</u></a></td>
+	<td align="right">15000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-06-03</font></td>
+	<td class="pick_same" value="PO190425"><a href="4-1.php?asahit22=PO190425">PO190425</a></td>
+	<td>2019-06-20</td>
+	<td><b>2019-06-25</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">16</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190403PO0102"><a href="4.php?ddt2=S190403PO0102">S190403PO0102</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E17205"><a href="###" onclick="c_banngo('_id=2061&amp;cells=16')"><u>E17205</u></a></td>
+	<td align="right">102000</td>
+	<td>pcs</td>
+	<td>2019-07-01</td>
+	<td class="pick_same" value="PO19040401" style=""><a href="4-1.php?asahit22=PO19040401">PO19040401</a></td>
+	<td>2019-06-20</td>
+	<td><b>2019-06-25</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">17</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190412PO0256"><a href="4.php?ddt2=S190412PO0256">S190412PO0256</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13044"><a href="###" onclick="c_banngo('_id=2113&amp;cells=17')"><u>E13044</u></a></td>
+	<td align="right">45000</td>
+	<td>pcs</td>
+	<td>2019-07-01</td>
+	<td class="pick_same" value="PO19041203"><a href="4-1.php?asahit22=PO19041203">PO19041203</a></td>
+	<td>2019-06-20</td>
+	<td><b>2019-06-25</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">18</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190521PO0109"><a href="4.php?ddt2=S190521PO0109">S190521PO0109</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E18488"><a href="###" onclick="c_banngo('_id=2248&amp;cells=18')"><u>E18488</u></a></td>
+	<td align="right">6000</td>
+	<td>pcs</td>
+	<td>2019-07-01</td>
+	<td class="pick_same" value="PO190522"><a href="4-1.php?asahit22=PO190522">PO190522</a></td>
+	<td>2019-06-20</td>
+	<td><b>2019-06-25</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">19</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190402PO0201"><a href="4.php?ddt2=S190402PO0201">S190402PO0201</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13004"><a href="###" onclick="c_banngo('_id=2060&amp;cells=19')"><u>E13004</u></a></td>
+	<td align="right">9000</td>
+	<td>pcs</td>
+	<td>2019-07-01</td>
+	<td class="pick_same" value="PO19040401" style=""><a href="4-1.php?asahit22=PO19040401">PO19040401</a></td>
+	<td>2019-06-13</td>
+	<td><b>2019-06-28</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">20</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190402PO0201"><a href="4.php?ddt2=S190402PO0201">S190402PO0201</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E14253"><a href="###" onclick="c_banngo('_id=2059&amp;cells=20')"><u>E14253</u></a></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td>2019-07-01</td>
+	<td class="pick_same" value="PO190308" style=""><a href="4-1.php?asahit22=PO190308">PO190308</a></td>
+	<td>2019-06-13</td>
+	<td><b>2019-06-28</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">21</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190408PO0007"><a href="4.php?ddt2=S190408PO0007">S190408PO0007</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E18489"><a href="###" onclick="c_banngo('_id=2083&amp;cells=21')"><u>E18489</u></a></td>
+	<td align="right">6000</td>
+	<td>pcs</td>
+	<td>2019-07-03</td>
+	<td class="pick_same" value="PO190409"><a href="4-1.php?asahit22=PO190409">PO190409</a></td>
+	<td>2019-06-14</td>
+	<td><b>2019-06-28</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">22</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190412PO0256"><a href="4.php?ddt2=S190412PO0256">S190412PO0256</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E14647"><a href="###" onclick="c_banngo('_id=2108&amp;cells=22')"><u>E14647</u></a></td>
+	<td align="right">24000</td>
+	<td>pcs</td>
+	<td>2019-07-01</td>
+	<td class="pick_same" value="PO19041203"><a href="4-1.php?asahit22=PO19041203">PO19041203</a></td>
+	<td>2019-06-13</td>
+	<td><b>2019-06-28</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">23</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190412PO0256"><a href="4.php?ddt2=S190412PO0256">S190412PO0256</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E14648"><a href="###" onclick="c_banngo('_id=2114&amp;cells=23')"><u>E14648</u></a></td>
+	<td align="right">6000</td>
+	<td>pcs</td>
+	<td>2019-07-01</td>
+	<td class="pick_same" value="PO19041203"><a href="4-1.php?asahit22=PO19041203">PO19041203</a></td>
+	<td>2019-06-13</td>
+	<td><b>2019-06-28</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">24</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190412PO0256"><a href="4.php?ddt2=S190412PO0256">S190412PO0256</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E14948"><a href="###" onclick="c_banngo('_id=2112&amp;cells=24')"><u>E14948</u></a></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td>2019-07-01</td>
+	<td class="pick_same" value="PO19041203"><a href="4-1.php?asahit22=PO19041203">PO19041203</a></td>
+	<td>2019-06-13</td>
+	<td><b>2019-06-28</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">25</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190412PO0256"><a href="4.php?ddt2=S190412PO0256">S190412PO0256</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E18937"><a href="###" onclick="c_banngo('_id=2107&amp;cells=25')"><u>E18937</u></a></td>
+	<td align="right">6000</td>
+	<td>pcs</td>
+	<td>2019-07-01</td>
+	<td class="pick_same" value="PO19041203"><a href="4-1.php?asahit22=PO19041203">PO19041203</a></td>
+	<td>2019-06-13</td>
+	<td><b>2019-06-28</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">26</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190419PO0501"><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td style="max-width: 120px;" class="pick_same" value="E12395"><a href="###" onclick="c_banngo('_id=2147&amp;cells=26')"><u>E12395</u></a></td>
+	<td align="right">18000</td>
+	<td>pcs</td>
+	<td>2019-08-01</td>
+	<td class="pick_same" value="PO19032701"><a href="4-1.php?asahit22=PO19032701">PO19032701</a></td>
+	<td>2019-06-13</td>
+	<td><b>2019-06-28</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">27</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190419PO0502"><a href="4.php?ddt2=S190419PO0502">S190419PO0502</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E14948"><a href="###" onclick="c_banngo('_id=2154&amp;cells=27')"><u>E14948</u></a></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td>2019-07-01</td>
+	<td class="pick_same" value="PO19042401"><a href="4-1.php?asahit22=PO19042401">PO19042401</a></td>
+	<td>2019-06-14</td>
+	<td><b>2019-06-28</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">28</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190412PO0256"><a href="4.php?ddt2=S190412PO0256">S190412PO0256</a></td>
+	<td style="max-width: 120px;" class="pick_same" value="E12395"><a href="###" onclick="c_banngo('_id=2110&amp;cells=28')"><u>E12395</u></a></td>
+	<td align="right">21000</td>
+	<td>pcs</td>
+	<td>2019-07-01</td>
+	<td class="pick_same" value="PO19041203"><a href="4-1.php?asahit22=PO19041203">PO19041203</a></td>
+	<td>2019-06-27</td>
+	<td><b>2019-07-02</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">29</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190412PO0256"><a href="4.php?ddt2=S190412PO0256">S190412PO0256</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13435"><a href="###" onclick="c_banngo('_id=2271&amp;cells=29')"><u>E13435</u></a></td>
+	<td align="right">21000</td>
+	<td>pcs</td>
+	<td>2019-07-01</td>
+	<td class="pick_same" value="PO19041203"><a href="4-1.php?asahit22=PO19041203">PO19041203</a></td>
+	<td>2019-06-27</td>
+	<td><b>2019-07-02</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">30</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190531PO0050"><a href="4.php?ddt2=S190531PO0050">S190531PO0050</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13846"><a href="###" onclick="c_banngo('_id=2323&amp;cells=30')"><u>E13846</u></a></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td>2019-07-01</td>
+	<td class="pick_same" value="PO190601"><a href="4-1.php?asahit22=PO190601">PO190601</a></td>
+	<td>2019-06-27</td>
+	<td><b>2019-07-02</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">31</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190521PO0109"><a href="4.php?ddt2=S190521PO0109">S190521PO0109</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E18469"><a href="###" onclick="c_banngo('_id=2249&amp;cells=31')"><u>E18469</u></a></td>
+	<td align="right">6000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-07-01</font></td>
+	<td class="pick_same" value="PO190522"><a href="4-1.php?asahit22=PO190522">PO190522</a></td>
+	<td>2019-07-04</td>
+	<td><b>2019-07-09</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">32</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190402PO0201"><a href="4.php?ddt2=S190402PO0201">S190402PO0201</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13004"><a href="###" onclick="c_banngo('_id=2245&amp;cells=32')"><u>E13004</u></a></td>
+	<td align="right">6000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-07-01</font></td>
+	<td class="pick_same" value="PO190428"><a href="4-1.php?asahit22=PO190428">PO190428</a></td>
+	<td>2019-07-11</td>
+	<td><b>2019-07-16</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">33</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190412PO0256"><a href="4.php?ddt2=S190412PO0256">S190412PO0256</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13435"><a href="###" onclick="c_banngo('_id=2272&amp;cells=33')"><u>E13435</u></a></td>
+	<td align="right">30000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-07-01</font></td>
+	<td class="pick_same" value="PO19041203"><a href="4-1.php?asahit22=PO19041203">PO19041203</a></td>
+	<td>2019-07-11</td>
+	<td><b>2019-07-16</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">34</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190419PO0501"><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13044"><a href="###" onclick="c_banngo('_id=2267&amp;cells=34')"><u>E13044</u></a></td>
+	<td align="right">51000</td>
+	<td>pcs</td>
+	<td>2019-08-01</td>
+	<td class="pick_same" value="PO19042401"><a href="4-1.php?asahit22=PO19042401">PO19042401</a></td>
+	<td>2019-07-11</td>
+	<td><b>2019-07-16</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">35</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190419PO0501"><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13098"><a href="###" onclick="c_banngo('_id=2146&amp;cells=35')"><u>E13098</u></a></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td>2019-08-01</td>
+	<td class="pick_same" value="PO19042401"><a href="4-1.php?asahit22=PO19042401">PO19042401</a></td>
+	<td>2019-07-11</td>
+	<td><b>2019-07-16</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">36</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190425PO0110"><a href="4.php?ddt2=S190425PO0110">S190425PO0110</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E12619"><a href="###" onclick="c_banngo('_id=2174&amp;cells=36')"><u>E12619</u></a></td>
+	<td align="right">18000</td>
+	<td>pcs</td>
+	<td>2019-07-29</td>
+	<td class="pick_same" value="PO19042602"><a href="4-1.php?asahit22=PO19042602">PO19042602</a></td>
+	<td>2019-07-12</td>
+	<td><b>2019-07-17</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">37</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190412PO0256"><a href="4.php?ddt2=S190412PO0256">S190412PO0256</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E12619"><a href="###" onclick="c_banngo('_id=2270&amp;cells=37')"><u>E12619</u></a></td>
+	<td align="right">66000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-07-01</font></td>
+	<td class="pick_same" value="PO19041203"><a href="4-1.php?asahit22=PO19041203">PO19041203</a></td>
+	<td>2019-07-18</td>
+	<td><b>2019-07-23</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">38</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190419PO0390"><a href="4.php?ddt2=S190419PO0390">S190419PO0390</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E14253"><a href="###" onclick="c_banngo('_id=2167&amp;cells=38')"><u>E14253</u></a></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-07-01</font></td>
+	<td class="pick_same" value="PO190426"><a href="4-1.php?asahit22=PO190426">PO190426</a></td>
+	<td>2019-07-18</td>
+	<td><b>2019-07-23</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">39</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190419PO0501"><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13044"><a href="###" onclick="c_banngo('_id=2150&amp;cells=39')"><u>E13044</u></a></td>
+	<td align="right">9000</td>
+	<td>pcs</td>
+	<td>2019-08-01</td>
+	<td class="pick_same" value="PO19042401"><a href="4-1.php?asahit22=PO19042401">PO19042401</a></td>
+	<td>2019-07-18</td>
+	<td><b>2019-07-23</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">40</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190426PO0044"><a href="4.php?ddt2=S190426PO0044">S190426PO0044</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E14253"><a href="###" onclick="c_banngo('_id=2168&amp;cells=40')"><u>E14253</u></a></td>
+	<td align="right">6000</td>
+	<td>pcs</td>
+	<td>2019-07-29</td>
+	<td class="pick_same" value="PO19042601"><a href="4-1.php?asahit22=PO19042601">PO19042601</a></td>
+	<td>2019-07-18</td>
+	<td><b>2019-07-23</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">41</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190425PO0110"><a href="4.php?ddt2=S190425PO0110">S190425PO0110</a></td>
+	<td style="max-width: 120px;" class="pick_same" value="E12395"><a href="###" onclick="c_banngo('_id=2173&amp;cells=41')"><u>E12395</u></a></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td>2019-07-29</td>
+	<td class="pick_same" value="PO19042602"><a href="4-1.php?asahit22=PO19042602">PO19042602</a></td>
+	<td>2019-07-24</td>
+	<td><b>2019-07-29</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">42</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190412PO0256"><a href="4.php?ddt2=S190412PO0256">S190412PO0256</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E12619"><a href="###" onclick="c_banngo('_id=2111&amp;cells=42')"><u>E12619</u></a></td>
+	<td align="right">42000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-07-01</font></td>
+	<td class="pick_same" value="PO19041203"><a href="4-1.php?asahit22=PO19041203">PO19041203</a></td>
+	<td>2019-07-25</td>
+	<td><b>2019-07-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">43</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190412PO0256"><a href="4.php?ddt2=S190412PO0256">S190412PO0256</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13435"><a href="###" onclick="c_banngo('_id=2273&amp;cells=43')"><u>E13435</u></a></td>
+	<td align="right">30000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-07-01</font></td>
+	<td class="pick_same" value="PO19041203"><a href="4-1.php?asahit22=PO19041203">PO19041203</a></td>
+	<td>2019-07-25</td>
+	<td><b>2019-07-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">44</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190419PO0501"><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E12619"><a href="###" onclick="c_banngo('_id=2148&amp;cells=44')"><u>E12619</u></a></td>
+	<td align="right">147000</td>
+	<td>pcs</td>
+	<td>2019-08-01</td>
+	<td class="pick_same" value="PO19042401"><a href="4-1.php?asahit22=PO19042401">PO19042401</a></td>
+	<td>2019-07-25</td>
+	<td><b>2019-07-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">45</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190419PO0501"><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E14647"><a href="###" onclick="c_banngo('_id=2145&amp;cells=45')"><u>E14647</u></a></td>
+	<td align="right">27000</td>
+	<td>pcs</td>
+	<td>2019-08-01</td>
+	<td class="pick_same" value="PO19042401"><a href="4-1.php?asahit22=PO19042401">PO19042401</a></td>
+	<td>2019-07-11</td>
+	<td><b>2019-07-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">46</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190419PO0501"><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E14948"><a href="###" onclick="c_banngo('_id=2149&amp;cells=46')"><u>E14948</u></a></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td>2019-08-01</td>
+	<td class="pick_same" value="PO19042401"><a href="4-1.php?asahit22=PO19042401">PO19042401</a></td>
+	<td>2019-07-11</td>
+	<td><b>2019-07-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">47</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190419PO0501"><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E17205"><a href="###" onclick="c_banngo('_id=2144&amp;cells=47')"><u>E17205</u></a></td>
+	<td align="right">132000</td>
+	<td>pcs</td>
+	<td>2019-08-01</td>
+	<td class="pick_same" value="PO19042401"><a href="4-1.php?asahit22=PO19042401">PO19042401</a></td>
+	<td>2019-07-11</td>
+	<td><b>2019-07-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">48</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190425PO0110"><a href="4.php?ddt2=S190425PO0110">S190425PO0110</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13044"><a href="###" onclick="c_banngo('_id=2176&amp;cells=48')"><u>E13044</u></a></td>
+	<td align="right">6000</td>
+	<td>pcs</td>
+	<td>2019-07-29</td>
+	<td class="pick_same" value="PO19042602"><a href="4-1.php?asahit22=PO19042602">PO19042602</a></td>
+	<td>2019-07-25</td>
+	<td><b>2019-07-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">49</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190425PO0110"><a href="4.php?ddt2=S190425PO0110">S190425PO0110</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E14647"><a href="###" onclick="c_banngo('_id=2172&amp;cells=49')"><u>E14647</u></a></td>
+	<td align="right">6000</td>
+	<td>pcs</td>
+	<td>2019-07-29</td>
+	<td class="pick_same" value="PO19042602"><a href="4-1.php?asahit22=PO19042602">PO19042602</a></td>
+	<td>2019-07-11</td>
+	<td><b>2019-07-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">50</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190425PO0110"><a href="4.php?ddt2=S190425PO0110">S190425PO0110</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E14948"><a href="###" onclick="c_banngo('_id=2175&amp;cells=50')"><u>E14948</u></a></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td>2019-07-29</td>
+	<td class="pick_same" value="PO19042602"><a href="4-1.php?asahit22=PO19042602">PO19042602</a></td>
+	<td>2019-07-11</td>
+	<td><b>2019-07-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">51</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190426PO0044"><a href="4.php?ddt2=S190426PO0044">S190426PO0044</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13004"><a href="###" onclick="c_banngo('_id=2169&amp;cells=51')"><u>E13004</u></a></td>
+	<td align="right">15000</td>
+	<td>pcs</td>
+	<td>2019-07-29</td>
+	<td class="pick_same" value="PO19042601"><a href="4-1.php?asahit22=PO19042601">PO19042601</a></td>
+	<td>2019-07-11</td>
+	<td><b>2019-07-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">52</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190531PO0145"><a href="4.php?ddt2=S190531PO0145">S190531PO0145</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E14647"><a href="###" onclick="c_banngo('_id=2324&amp;cells=52')"><u>E14647</u></a></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td>2019-08-02</td>
+	<td class="pick_same" value="PO190601"><a href="4-1.php?asahit22=PO190601">PO190601</a></td>
+	<td>2019-07-25</td>
+	<td><b>2019-07-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">53</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190419PO0501"><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td style="max-width: 120px;" class="pick_same" value="E12395"><a href="###" onclick="c_banngo('_id=2232&amp;cells=53')"><u>E12395</u></a></td>
+	<td align="right">9000</td>
+	<td>pcs</td>
+	<td>2019-08-01</td>
+	<td class="pick_same" value="PO190404"><a href="4-1.php?asahit22=PO190404">PO190404</a></td>
+	<td>2019-06-17</td>
+	<td><b>2019-07-31</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7">
+	
+	
+	<td align="center">54</td>
+	
+	<td class="pick_same" value="希革斯" style=""></td>
+	<td class="pick_same" value="S190419PO0501"><a href="4.php?ddt2=S190419PO0501"></a></td>
+	<td style="max-width: 120px;" class="pick_same" value="E12395"><a href="###" onclick="c_banngo('_id=2233&amp;cells=54')"><u>E12395</u></a></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td>2019-08-01</td>
+	<td class="pick_same" value="PO190327"><a href="4-1.php?asahit22=PO190327">PO190327</a></td>
+	<td>2019-07-01</td>
+	<td><b>2019-07-31</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">55</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190419PO0501"><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E14648"><a href="###" onclick="c_banngo('_id=2151&amp;cells=55')"><u>E14648</u></a></td>
+	<td align="right">18000</td>
+	<td>pcs</td>
+	<td>2019-08-01</td>
+	<td class="pick_same" value="PO19042401"><a href="4-1.php?asahit22=PO19042401">PO19042401</a></td>
+	<td>2019-07-01</td>
+	<td><b>2019-07-31</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">56</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190531PO0145"><a href="4.php?ddt2=S190531PO0145">S190531PO0145</a></td>
+	<td style="max-width: 120px;" class="pick_same" value="E12395"><a href="###" onclick="c_banngo('_id=2325&amp;cells=56')"><u>E12395</u></a></td>
+	<td align="right">6000</td>
+	<td>pcs</td>
+	<td>2019-08-02</td>
+	<td class="pick_same" value="PO190601"><a href="4-1.php?asahit22=PO190601">PO190601</a></td>
+	<td>2019-07-18</td>
+	<td><b>2019-07-31</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">57</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190531PO0145"><a href="4.php?ddt2=S190531PO0145">S190531PO0145</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E14948"><a href="###" onclick="c_banngo('_id=2327&amp;cells=57')"><u>E14948</u></a></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td>2019-08-02</td>
+	<td class="pick_same" value="PO190601"><a href="4-1.php?asahit22=PO190601">PO190601</a></td>
+	<td>2019-07-18</td>
+	<td><b>2019-07-31</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">58</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190425PO0110"><a href="4.php?ddt2=S190425PO0110">S190425PO0110</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13435"><a href="###" onclick="c_banngo('_id=2177&amp;cells=58')"><u>E13435</u></a></td>
+	<td align="right">36000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-07-29</font></td>
+	<td class="pick_same" value="PO19042602"><a href="4-1.php?asahit22=PO19042602">PO19042602</a></td>
+	<td>2019-07-30</td>
+	<td><b>2019-08-04</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">59</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190412PO0256"><a href="4.php?ddt2=S190412PO0256">S190412PO0256</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13435"><a href="###" onclick="c_banngo('_id=2115&amp;cells=59')"><u>E13435</u></a></td>
+	<td align="right">117000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-07-01</font></td>
+	<td class="pick_same" value="PO19041203"><a href="4-1.php?asahit22=PO19041203">PO19041203</a></td>
+	<td>2019-08-02</td>
+	<td><b>2019-08-07</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">60</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190521PO0110"><a href="4.php?ddt2=S190521PO0110">S190521PO0110</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E17205"><a href="###" onclick="c_banngo('_id=2250&amp;cells=60')"><u>E17205</u></a></td>
+	<td align="right">36000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-08-02</font></td>
+	<td class="pick_same" value="PO190522"><a href="4-1.php?asahit22=PO190522">PO190522</a></td>
+	<td>2019-08-22</td>
+	<td><b>2019-08-27</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">61</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190531PO0051"><a href="4.php?ddt2=S190531PO0051">S190531PO0051</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13004"><a href="###" onclick="c_banngo('_id=2330&amp;cells=61')"><u>E13004</u></a></td>
+	<td align="right">9000</td>
+	<td>pcs</td>
+	<td>2019-09-02</td>
+	<td class="pick_same" value="PO19060101"><a href="4-1.php?asahit22=PO19060101">PO19060101</a></td>
+	<td>2019-08-22</td>
+	<td><b>2019-08-27</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">62</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190531PO0144"><a href="4.php?ddt2=S190531PO0144">S190531PO0144</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13044"><a href="###" onclick="c_banngo('_id=2341&amp;cells=62')"><u>E13044</u></a></td>
+	<td align="right">45000</td>
+	<td>pcs</td>
+	<td>2019-09-02</td>
+	<td class="pick_same" value="PO19052801"><a href="4-1.php?asahit22=PO19052801">PO19052801</a></td>
+	<td>2019-08-22</td>
+	<td><b>2019-08-27</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">63</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190531PO0144"><a href="4.php?ddt2=S190531PO0144">S190531PO0144</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E14648"><a href="###" onclick="c_banngo('_id=2342&amp;cells=63')"><u>E14648</u></a></td>
+	<td align="right">9000</td>
+	<td>pcs</td>
+	<td>2019-09-02</td>
+	<td class="pick_same" value="PO19060101"><a href="4-1.php?asahit22=PO19060101">PO19060101</a></td>
+	<td>2019-08-22</td>
+	<td><b>2019-08-27</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">64</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190531PO0145"><a href="4.php?ddt2=S190531PO0145">S190531PO0145</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13044"><a href="###" onclick="c_banngo('_id=2328&amp;cells=64')"><u>E13044</u></a></td>
+	<td align="right">9000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-08-02</font></td>
+	<td class="pick_same" value="PO19052801"><a href="4-1.php?asahit22=PO19052801">PO19052801</a></td>
+	<td>2019-08-22</td>
+	<td><b>2019-08-27</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">65</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190531PO0144"><a href="4.php?ddt2=S190531PO0144">S190531PO0144</a></td>
+	<td style="max-width: 120px;" class="pick_same" value="E12395"><a href="###" onclick="c_banngo('_id=2338&amp;cells=65')"><u>E12395</u></a></td>
+	<td align="right">18000</td>
+	<td>pcs</td>
+	<td>2019-09-02</td>
+	<td class="pick_same" value="PO19060101"><a href="4-1.php?asahit22=PO19060101">PO19060101</a></td>
+	<td>2019-08-08</td>
+	<td><b>2019-08-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">66</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190531PO0144"><a href="4.php?ddt2=S190531PO0144">S190531PO0144</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13098"><a href="###" onclick="c_banngo('_id=2337&amp;cells=66')"><u>E13098</u></a></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td>2019-09-02</td>
+	<td class="pick_same" value="PO19060101"><a href="4-1.php?asahit22=PO19060101">PO19060101</a></td>
+	<td>2019-08-08</td>
+	<td><b>2019-08-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">67</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190531PO0144"><a href="4.php?ddt2=S190531PO0144">S190531PO0144</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E14647"><a href="###" onclick="c_banngo('_id=2336&amp;cells=67')"><u>E14647</u></a></td>
+	<td align="right">21000</td>
+	<td>pcs</td>
+	<td>2019-09-02</td>
+	<td class="pick_same" value="PO19060101"><a href="4-1.php?asahit22=PO19060101">PO19060101</a></td>
+	<td>2019-08-08</td>
+	<td><b>2019-08-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">68</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190531PO0144"><a href="4.php?ddt2=S190531PO0144">S190531PO0144</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E14948"><a href="###" onclick="c_banngo('_id=2340&amp;cells=68')"><u>E14948</u></a></td>
+	<td align="right">6000</td>
+	<td>pcs</td>
+	<td>2019-09-02</td>
+	<td class="pick_same" value="PO19060101"><a href="4-1.php?asahit22=PO19060101">PO19060101</a></td>
+	<td>2019-08-08</td>
+	<td><b>2019-08-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">69</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190419PO0501"><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13435"><a href="###" onclick="c_banngo('_id=2152&amp;cells=69')"><u>E13435</u></a></td>
+	<td align="right">189000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-08-01</font></td>
+	<td class="pick_same" value="PO19042401"><a href="4-1.php?asahit22=PO19042401">PO19042401</a></td>
+	<td>2019-08-29</td>
+	<td><b>2019-09-03</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">70</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190531PO0144"><a href="4.php?ddt2=S190531PO0144">S190531PO0144</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E17205"><a href="###" onclick="c_banngo('_id=2335&amp;cells=70')"><u>E17205</u></a></td>
+	<td align="right">168000</td>
+	<td>pcs</td>
+	<td>2019-09-02</td>
+	<td class="pick_same" value="PO19060101"><a href="4-1.php?asahit22=PO19060101">PO19060101</a></td>
+	<td>2019-08-29</td>
+	<td><b>2019-09-03</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">71</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190531PO0144"><a href="4.php?ddt2=S190531PO0144">S190531PO0144</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13435"><a href="###" onclick="c_banngo('_id=2343&amp;cells=71')"><u>E13435</u></a></td>
+	<td align="right">192000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-09-02</font></td>
+	<td class="pick_same" value="PO19052801"><a href="4-1.php?asahit22=PO19052801">PO19052801</a></td>
+	<td>2019-09-19</td>
+	<td><b>2019-09-24</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">72</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190531PO0145"><a href="4.php?ddt2=S190531PO0145">S190531PO0145</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13435"><a href="###" onclick="c_banngo('_id=2329&amp;cells=72')"><u>E13435</u></a></td>
+	<td align="right">39000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-08-02</font></td>
+	<td class="pick_same" value="PO19052801"><a href="4-1.php?asahit22=PO19052801">PO19052801</a></td>
+	<td>2019-09-19</td>
+	<td><b>2019-09-24</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">73</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190531PO0144"><a href="4.php?ddt2=S190531PO0144">S190531PO0144</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E12619"><a href="###" onclick="c_banngo('_id=2339&amp;cells=73')"><u>E12619</u></a></td>
+	<td align="right">102000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-09-02</font></td>
+	<td class="pick_same" value="PO19052801"><a href="4-1.php?asahit22=PO19052801">PO19052801</a></td>
+	<td>2019-09-20</td>
+	<td><b>2019-09-25</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">74</td>
+	
+	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="S190531PO0145"><a href="4.php?ddt2=S190531PO0145">S190531PO0145</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E12619"><a href="###" onclick="c_banngo('_id=2326&amp;cells=74')"><u>E12619</u></a></td>
+	<td align="right">24000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-08-02</font></td>
+	<td class="pick_same" value="PO19052801"><a href="4-1.php?asahit22=PO19052801">PO19052801</a></td>
+	<td>2019-09-20</td>
+	<td><b>2019-09-25</b></td>
 	
 	<td></td>
 		
