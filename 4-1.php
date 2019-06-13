@@ -52,17 +52,17 @@ $rowsnum=$result->num_rows;
 <style>
 .class00{
 	position:relative;
-	overflow:hidden;max-height:120px;background-color:;width:600px;color:#555555;margin-bottom:-1px;
+	overflow:hidden;background-color:;width:600px;color:#555555;margin-bottom:-1px;
 	/**-webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius:5px;**/
   -webkit-box-shadow: 0px 0px 10px #BBBBBB;
   -moz-box-shadow: 0px 0px 10px #BBBBBB;
   box-shadow: 0px 0px 10px #BBBBBB;
-	transition:max-height 0.8s;
--moz-transition:max-height 0.8s; 
--webkit-transition:max-height 0.8s; 
--o-transition:max-height 0.8s; 
+	transition:all 0.8s;
+-moz-transition:all 0.8s; 
+-webkit-transition:all 0.8s; 
+-o-transition:all 0.8s; 
 }
 
 .class0{
@@ -70,16 +70,19 @@ $rowsnum=$result->num_rows;
 	width:100%;min-width:600px;margin-bottom:10px;overflow:hidden;height:120px;
 }
 .classlogo{
-	position:absolute;background-color:white;padding-top:16px;
+	position:absolute;background-color:white;padding-top:;
 	top:30px;left:30px;
-	text-align:center;font-size:20px;color:#FF9999;
-	width:60px;height:40px;overflow:hidden;
+	text-align:center;font-size:20px;color:red;
+	width:60px;height:60px;overflow:hidden;
 	-webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
   -webkit-box-shadow: 0px 3px 5px #BBBBBB;
   -moz-box-shadow: 0px 3px 5px #BBBBBB;
   box-shadow: 0px 3px 5px #BBBBBB;
+}
+.classlogo img{
+	
 }
 .classcampany{
 	position:absolute;
@@ -98,8 +101,8 @@ $rowsnum=$result->num_rows;
 	color:#CCCCCC;
 }
 .classremark{
-	position:absolute;width:150px;background-color:;color:#A2A2A2;
-	top:73px;left:112px;padding:;height:auto;text-align:left;
+	position:absolute;width:250px;background-color:;color:#A2A2A2;
+	top:73px;left:112px;padding:;height:auto;
 }
 .classpreson{
 	position:absolute;
@@ -110,7 +113,7 @@ $rowsnum=$result->num_rows;
 	bottom:10px;right:3px;color:#CCCCCC;
 }
 .classcplb{
- padding:10px;background-color:;position:relative;min-height:100px;padding-bottom:50px;
+ padding:10px;background-color:;position:relative;padding:0 50px 40px 30px;height:auto;display:none;
 }
 .classcomplete{
 	position:absolute;
@@ -121,64 +124,66 @@ $rowsnum=$result->num_rows;
 
 }
 .classcaozuo{
-	position:absolute;top:48px;right:200px;
+	position:absolute;top:48px;right:100px;
+}
+
+.classcplb table tr:hover{
+	background:#FFFFEE;cursor:pointer;
 }
 
 </style>
+<script>
+$(function(){
+	$("[name='zhankai']").click(function(){
+		var _this=$(this);
+		_this.parent().parent().next().append("...");
+		if($(this).attr("value")==0){
+			$(this).empty().append("收起");
+			$.post("ajax/po_order_zhankai.php",{asahiorder:$(this).attr("asahiorder")},function(data){
+				_this.parent().parent().next().empty();
+				_this.parent().parent().next().append(data);
+				_this.parent().parent().next().show(300);
+			});
+			$(this).attr("value",1);
+		}else{
+			$(this).empty().append("展开");	
+			_this.parent().parent().next().hide(300);
+			$(this).attr("value",0);
+		}
+
+	});
+	
+	
+});
+
+</script>
 <div align="center">
 <?php while($row=$result->fetch_row()){ 
-	$sql2 =  "SELECT * FROM `t_poteacher` WHERE asahiorder = '$row[0]'";
-	$result2 = mysqli_query($conn,$sql2);
-	$totle2=$result2->num_rows;
-	$sql3 =  "SELECT * FROM `t_poteacher` WHERE asahiorder = '$row[0]' AND state = '已入库'";
-	$result3 = mysqli_query($conn,$sql3);
-	$totle3=$result3->num_rows;
-if($totle2 == $totle3){
-		$bgcolor='#FFFFCC';
-	}else{
-		$bgcolor='';
-	}
+	
 	?>
             <div class="class00" style="background-color:rgb(<?php echo '255'; ?>,<?php echo $ccc; ?>,<?php echo $ccc;if($ccc<231){$ccc=240;}else{$ccc=$ccc-5;} ?>);background-color:<?php echo $bgcolor; ?>" >
 		
 			<div class="class0" >
-				<div class="classlogo" align="center"><b>朝日</b></div>
+				<div class="classlogo" align="center"><b>朝日<br>订单</b></div>
                 <div class="classcampany">朝日科技</div>
 				<div class="classordernum"><a href="6.php?php4-1ordernum=<?php echo $row[0] ?>"><?php echo $row[0]; ?></a></div>
-				<div class="classtotle"><font size="55px" color="#DDDDDD"><?php echo $totle3."/</font><b>".$totle2;?></b></div>
-				<div class="classremark"><!--<marquee scrolldelay="300">--><?php echo $row[3] ?><!--</marquee>--></div>
+				<!--<div class="classtotle"><font size="55px" color="#DDDDDD"><?php //echo $totle3."/</font><b>".$totle2;?></b></div>-->
+				<div class="classremark" align="left"><!--<marquee scrolldelay="300">--><?php echo $row[3] ?><!--</marquee>--></div>
 				<div class="classcaozuo">
+					<div class="classcp1" asahiorder="<?php echo $row[0] ?>" value="0" name="zhankai">展开</div>
 					<div onclick="po_order('_id=<?php echo $row[5] ?>&t1=<?php echo $row[0] ?>&t2=<?php echo $row[1] ?>&t4=<?php echo $row[3] ?>')" class="classcp1">修改订单</div>
 					<a href="7-2.php?t1=<?php echo $row[0] ?>&t6=<?php echo $row[3] ?>"><div class="classcp1">添加产品</div></a><br>
-					<div class="classcp1" >内容概要</div>
+					
 				</div>
 				<?php 
-				if($totle2 == $totle3&&$totle2<>0){
-				echo "<div class='classcomplete'><img src='img/wancheng.png'/></div>";
-				}
+				//if($totle2 == $totle3&&$totle2<>0){
+				//echo "<div class='classcomplete'><img src='img/wancheng.png'/></div>";
+				//}
 				?>
 			</div>	
 			<div class="classcplb" align="center">
-			<?php
-				while($row2=$result2->fetch_row()){
-							if($row2[8] == '已入库'){
-								$bgimg='#BBBBFF';$states='已到货';
-							}elseif($row2[3] == 0){
-								$bgimg='#000000';$states='等待纳期';
-							}elseif($row2[3] > date('Y-m-d')){
-								$bgimg='#00DDB1';$states='生产中';
-							}elseif($row2[3] == date('Y-m-d')){
-								$bgimg='#FF7792';$states='日本发货';
-							}elseif(date('Y-m-d',(strtotime('+4 days',strtotime($row2[3])))) >= date('Y-m-d')){
-								$bgimg='#FF7792';$states='通关中';
-							}else{
-								$bgimg='#999999';$states='等待入库';
-							}
-			?>
-			<a href="6.php?php4-1ordernum=<?php echo $row[0] ?>"><div class="classcp" align="left">
-			<div class="classcp1" style="background-color:<?php echo $bgimg; ?>"><?php echo $states; ?></div><?php echo $row2[1]." &nbsp; <b>".$row2[2]."</b>pcs &nbsp<".$row2[5].">&nbsp";if(empty($row2[10])){echo "<font color='red'>未匹配</font>&nbsp";} if($row2[3]==0||empty($row2[3])){echo "希望交期:<b>".$row2[4];}else{echo "日本出荷:<b>".$row2[3];} ?></b>
-			</div></a>
-			<?php }	?>
+			...
+
 			</div>
 			<div class="classdate"><?php echo $row[1] ?></div>
 			<div class="classpreson">Created By <?php echo $row[4] ?></div>

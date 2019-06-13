@@ -47,7 +47,7 @@ $t9 = $_GET['t9'];
 $t9 = $_POST['t9'];
 }
 
-$t10 = $_POST['t10'];
+
 if($_GET['t11']){
 	$t11 = $_GET['t11'];
 }else{
@@ -65,12 +65,7 @@ if($t11){
 }
 
 
-if($t10){
-	$tt10="AND po_id = '' ";
-	$nopox=$nopox."<div class='nopox'>未分配</div>";
-}else{
-	$tt10="";
-}
+
 
 if($t9){
 		$tt9="";
@@ -178,7 +173,7 @@ $nowpage=0;
 $nowpagestart=$nowpage+1;
 $nowpageend=$nowpage+100;
 
-$sql="SELECT *,IF(SHdate='0000-00-00',hopedate,SHdate) as thedate FROM `t_teacher` WHERE $tt3 $tt1 $tt5 $tt4 $tt7 $tt9 $tt10 $tt11 $tt6 $tt12 order by thedate,campany,ordernum,banngo asc limit $nowpage,100";
+$sql="SELECT *,IF(SHdate='0000-00-00',hopedate,SHdate) as thedate FROM `t_teacher` WHERE $tt3 $tt1 $tt5 $tt4 $tt7 $tt9 $tt11 $tt6 $tt12 order by thedate,campany,ordernum,banngo asc limit $nowpage,100";
 
 $result=mysqli_query($conn,$sql);
 
@@ -295,7 +290,7 @@ table{border-collapse: collapse;}
 	<td align="center" class="2_td_state"><div class="classcp1" style="background-color:<?php echo $bgimg; ?>" title="<? echo $row[8]."(".$states.")"; ?>"><?php if($remark4){echo $remark4;}else{echo $states;} ?></div></td>
 	<td class="pick_same" value="<? echo $row[0] ?>"><?php if(!$same){echo $row[0];} ?></td>
 	<td class="pick_same" value="<? echo $row[1] ?>"><a href="4.php?ddt2=<?php echo $row[1] ?>"><?php if(!$same){echo $row[1];} ?></a></td>
-	<td style="max-width:120px;" class="pick_same" value="<? echo $row[2] ?>"><a href="###" onclick="c_banngo('_id=<?php echo $row[12] ?>&cells=<?php echo $jjj+1 ?>')" ><u><?php echo $row[2] ?></u></a></td>
+	<td style="max-width:120px;" class="pick_same" value="<? echo $row[2] ?>"><u onclick="c_banngo('_id=<?php echo $row[12] ?>&cells=<?php echo $jjj+1 ?>')"><?php echo $row[2] ?></u></td>
 	<td align="right"><?php echo $row[3] ?></td>
 	<td>pcs</td>
 	<td><?php if($row[4]<=$row[6]){ echo "<font color='red'>".$row[4]."</font>"; }else{ echo $row[4]; } ?></td>
@@ -411,7 +406,7 @@ function td_remove(){
 <input type="hidden" name="t6" value="<?php echo $t6 ?>"/><input type="hidden" name="t1" value="<?php echo $t1 ?>"/><input type="hidden" name="t3" value="<?php echo $t3 ?>"/>
 <input type="hidden" name="t5" value="<?php echo $t5 ?>"/><input type="hidden" name="t4" value="<?php echo $t4 ?>"/><input type="hidden" name="selectdate" value="<?php echo $selectdate; ?>"/>
 <input type="hidden" name="t7" value="<?php echo $t7 ?>"/><input type="hidden" name="t77" value="<?php echo $t77 ?>"/><input type="hidden" name="t9" value="<?php echo $t9 ?>"/>
-<input type="hidden" name="t10" value="<?php echo $t10 ?>"/><input type="hidden" name="t11" value="<?php echo $t11 ?>"/><input type="hidden" name="t12" value="<?php echo $t12 ?>"/>
+<input type="hidden" name="t11" value="<?php echo $t11 ?>"/><input type="hidden" name="t12" value="<?php echo $t12 ?>"/>
 <?php }elseif($jjj<1){echo "无内容：请尝试更改检索";} ?>
 </form>
 <br><br>
