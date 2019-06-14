@@ -26,7 +26,7 @@ if($search){
 		$sql = "SELECT * FROM `t_namecard` WHERE 1 order by rand() limit 0,20";
 		$search="";
 	}else{
-	$sql = "SELECT * FROM `t_namecard` WHERE name like '%$search%' OR campany like '%$search%' OR email like '%$search%' OR phone like '%$search%' OR tel like '%$search%' OR tel2 like '%$search%' limit $page,20";
+	$sql = "SELECT * FROM `t_namecard` WHERE name like '%$search%' OR campany like '%$search%' OR email like '%$search%' OR phone like '%$search%' OR tel like '%$search%' OR tel2 like '%$search%' ORDER BY datetime DESC limit $page,20";
 	}
 }else{
 	$sql = "SELECT * FROM `t_namecard` WHERE 1 order by _id desc limit 0,20";

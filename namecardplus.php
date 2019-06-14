@@ -39,7 +39,7 @@ $web=$_POST['web'];
 $remark=$_POST['remark'];
 
 $_id=$_POST['_id'];
-$datetime=$_POST['datetime'];
+$datetime=date("Y-m-d");
 $delete=$_POST['delete'];
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -86,8 +86,7 @@ if($name&&$campany){
 网址<input type="text" name="web" value="<?php echo $row[13] ?>"/><br>
 备注<input type="text" name="remark" style="width:400px" value="<?php echo $row[14] ?>"/><br>
 <input type="hidden" name="_id" value="<?php echo $row[15]; ?>"/>
-<input type="hidden" name="datetime" value="<?php echo date('Y-m-d'); ?>"/>
-<input type="submit" value="确认修改">
+<input type="submit" value="确认修改" onclick="buttons(this)">
  &nbsp; <a href="#"><div style="display:inline-block;width:80px;height:22px;background-color:#FFAAAA;color:white;text-align:center;" onclick="javascript:document.getElementById('sure').style.display='block';document.getElementById('suretext').innerHTML='是否确定将<font color=\'red\'>'+ document.getElementsByName('name3')[0].value +'</font>删除？删除后将无法恢复。';">删除</div></a> 
 
 </form>
@@ -120,8 +119,7 @@ if($name&&$campany){
 邮编<input type="text" name="post" value="<?php echo $row[12] ?>"/><br>
 网址<input type="text" name="web" value="<?php echo $row[13] ?>"/><br>
 备注<input type="text" name="remark" style="width:400px" value="<?php echo $row[14] ?>"/><br>
-<input type="hidden" name="datetime" value="<?php echo date('Y-m-d'); ?>"/>
-<input type="submit" value="确认提交" onclick="buttons()">
+<input type="submit" value="确认提交" onclick="buttons(this)">
 </form>
 </div>
 <script>
