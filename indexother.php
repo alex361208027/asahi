@@ -33,7 +33,7 @@ foreach($campany_list as $campany_lists){
 <div class="indexother">
 	<table height="100%" width="100%" cellpadding="10" cellspacing="0"><tr>
 	<td><font size="5"><b>朝日科技（上海）有限公司</b></font></td>
-	<td valign="top" align="right"><font color="#999999"><a href="user.php?theuser=<?php echo $_COOKIE['asahiuser']; ?>" target="_blank"><?php echo $_COOKIE['loged']; ?>，您好！今天是<?php echo date('Y'.'年'.'m'.'月'.'d'.'日') ?><?php if(file_exists("upload/user_touxiang/".$_COOKIE['asahiuser'].".png")){echo "<img src='upload/user_touxiang/".$_COOKIE['asahiuser'].".png' height='60px'>";} ?></a></font></td>
+	<td valign="top" align="right"><font color="#999999"><a href="user.php?theuser=<?php echo $_COOKIE['asahiuser']; ?>" target="xiabu"><?php echo $_COOKIE['loged']; ?>，您好！今天是<?php echo date('Y'.'年'.'m'.'月'.'d'.'日') ?><?php if(file_exists("upload/user_touxiang/".$_COOKIE['asahiuser'].".png")){echo "<img src='upload/user_touxiang/".$_COOKIE['asahiuser'].".png' height='60px'>";} ?></a></font></td>
 	</tr></table>
 </div>
 

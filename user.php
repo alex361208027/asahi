@@ -73,7 +73,7 @@ if($theuser=$_COOKIE['asahiuser']){
 					<div class="mulu" onclick="user_new('click=<?php echo $theuser; ?>',1)">创建新用户</div><br>
 					<br>
 					<!--<a href="index.php"><div class="mulu">回到首页</div></a><br>-->
-					<a href="a.php"><div class="mulu">重新登录</div></a><br>
+					<a href="a.php" target="_top"><div class="mulu">重新登录</div></a><br>
 
 				</div>
 			</td>

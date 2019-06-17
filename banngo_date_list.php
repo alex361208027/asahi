@@ -14,7 +14,7 @@ $today=date('Y-m-d');
 
 $weeks=$_POST["weeks"];
 if(!$weeks){
-$weeks=12;
+$weeks=18;
 }
 
 if($campany){
@@ -45,15 +45,19 @@ hide{
 
 
 </style>
+<datalist id="kehulist">
+<?php
+$campany_list=explode(",",file_get_contents("ajax/write_data/campany.html"));
+foreach($campany_list as $campany_list){
+	echo "<option value='".$campany_list."'>";
+}
+?>	
+</datalist>
 <form action="banngo_date_list.php" method="post">
-<input type="text" name="campany" value="<? echo $campany; ?>">
-<? //foreach($banngo as $banngos){ ?>
-<!--<input type="text" name="banngo[]" value="<? //echo $banngos; ?>" placeholder="品番">-->
-<? //} ?>
-
-<input type="date" name="startdate" value="<? echo $today; ?>">
-<input type="number" name="weeks" value="<? echo $weeks; ?>">
-<input type="submit" value="ok"> &nbsp; &nbsp; &nbsp; <button type="button" onclick="this.innerHTML='正在导出...';exceldownload('Customer');setTimeout(()=>{this.innerHTML='导出EXCEL'},2000)">导出Excel</button>
+<input type="text" name="campany" list="kehulist" style="width:150px" value="<?php echo $campany ?>" placeholder="客户名">
+起始日期<input type="date" name="startdate" value="<? echo $today; ?>">
+周数<input type="number" name="weeks" style="width:50px" value="<? echo $weeks; ?>"> 
+<input type="submit" value="ok"><? if($campany){ ?><button type="button" onclick="this.innerHTML='正在导出...';exceldownload('Customer');setTimeout(()=>{this.innerHTML='导出EXCEL'},2000)">导出Excel</button><? } ?>
 </form>
 <?
 
@@ -77,12 +81,12 @@ if($campany){
 						
 						
 						
-						echo "<tr height='50px'>";
+						echo "<tr style='height:30px'>";
 						
 						echo "<td></td>";
 						$dd=0;
 						while($dd<$weeks){
-						echo "<td align='right' style='min-width:85px;'>";
+						echo "<td align='right' style='min-width:100px;background:black;color:white;'>";
 						$today=date('Y-m-d',(strtotime('+1 days',strtotime($today))));
 						$sunday[]=$today;
 						echo date("m/d",strtotime("+3 days",strtotime($today)))."";
@@ -127,7 +131,8 @@ if($campany){
 						
 
 ?>
-
+<tr><td></td><td colspan="<? echo $weeks ?>">*日期表示该一周的时间范围内的数量合计</td></tr>
+<tr><td></td><td colspan="<? echo $weeks ?>">*数据不包含[交期待定]项</td></tr>
 </table>
 </div>
 <?php
