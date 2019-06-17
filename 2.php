@@ -383,7 +383,8 @@ function td_remove(){
 	<li onclick="mycheckbox(1)" class="close_hide"><img src="img/songhuodan.png" height="14px"> &nbsp; 生成送货单</li>
 	<li onclick="c_pi_zaikuduizhao()" class="close_hide"><img src="img/pici.png" height="14px"> &nbsp; 查看在库批次号</li>
 	<li onclick="c_pi_qrcode(2)" class="close_hide"><img src="img/qrcode.png" height="14px"> &nbsp; 生成QR-code</li>
-	<li onclick="c_fastest_date()" class="close_hide"><img src="img/riqi.png" height="14px"> &nbsp; 设为最快发货日</li>
+	<li onclick="c_fastest_date(1)" class="close_hide"><img src="img/riqi.png" height="14px"> &nbsp; 设为最快发货日</li>
+	<li onclick="c_fastest_date(2)" class="close_hide"><img src="img/riqi.png" height="14px"> &nbsp; 设为最佳发货日</li>
 	<li><hr></li>
 	<li><input type="date" id="SHdate" value="<?php echo date('Y-m-d') ?>"></li>
 	<li onclick="c_pi_shdate()" class="close_hide"><img src="img/riqi.png" height="14px"> &nbsp; 更改上海发货日</li> 

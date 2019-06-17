@@ -104,7 +104,7 @@ $result=mysqli_query($conn,$sql);
 
 ?>
 			<tr><form action="putout.php" method="post" target="_blank">
-				<td align="right"><input type="checkbox" onclick="checkboxsum();" name="checkboxsum" _id="<? echo $row[9]; ?>" value="<?php echo $row[2]; ?>" /></td>
+				<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsums();" _id="<? echo $row[9]; ?>" value="<?php echo $row[2]; ?>" /></td>
 				<td style="color:#C4C4C4"><?php echo $iii;$iii=$iii+1; ?></td>
 				<td style="max-width:45px;" bgcolor="<?php echo $bgcolor; ?>"><?php echo $state ?></td>
 				<td><a href="###" onclick="in_lotnum('<?php echo $row[9] ?>')"><u><?php echo $row[0] ?></u></a></td>
@@ -162,6 +162,34 @@ function saerch_lotnum(str){
 	//alert(document.getElementById('href').href);
 	document.getElementById('href').click();
 }
+
+
+function checkboxsums(){
+	sum=0;chencednumber=0;
+	for(i=0;i<ss.length;i++){
+		if(ss[i].checked){
+			chencednumber++;
+			sum=sum+Number(ss[i].value);
+		}
+	}
+	document.getElementById("sum_show").innerHTML="共选中<b>"+chencednumber+"</b>个<br>合计：<b>"+sum+"</b>";
+
+	if(chencednumber){
+		$(document).ready(function(){
+			$(".sum_show").fadeIn().css("display","inline-block");
+			var sum_show_width_padding=40;
+			var sum_show_width=$(".sum_show").width();
+			var sum_show_width2=(sum_show_width+sum_show_width_padding)/2;
+			$(".sum_show").css({"height":sum_show_width,"-webkit-border-radius":sum_show_width2,"-moz-border-radius":sum_show_width2,"border-radius":sum_show_width2});
+		});
+	}else{
+		$(document).ready(function(){
+			$(".sum_show").fadeOut();
+		});
+	}
+
+}
+
 </script>
 <?php if(empty($in)){ ?>
 <?php $nowpage=$nowpage+50; ?>

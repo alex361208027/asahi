@@ -496,18 +496,15 @@ function c_pi_qrcode(num){
 			}
 }
 
-function c_fastest_date(){
+function c_fastest_date(mode){
+
 	$(function(){
-		dateplus=prompt("请输入需要设定的最快发货的天数(默认5天)")
-		
-		if(isNaN(dateplus)){
-			alert("输入有误！");
-			confirm_result=0;
+		if(mode==1){
+			dateplus=prompt("请输入需要设定的最快发货的天数(默认5天)");
 		}else{
-			confirm_result=1;
+			dateplus=5;
 		}
-		
-		if(confirm_result){
+
 		var i=0;var get_id=new Array();
 		$("input[name='checkboxsum']").each(function(){
 			if($(this).prop('checked')==true){
@@ -515,15 +512,14 @@ function c_fastest_date(){
 				i++;
 			}
 		});
-		$.post("ajax/c_fastest_date.php",{id:get_id,dateplus:dateplus},function(data){
+		$.post("ajax/c_fastest_date.php",{id:get_id,dateplus:dateplus,mode:mode},function(data){
 			if(confirm(data+"，是否现在刷新页面？")){
-				location.reload()
+				location.reload();
 			}
-			//setTimeout("location.reload()",1000);
+			
 		});
-		}
-	});
-		
+
+	});	
 }
 
 

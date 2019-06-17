@@ -88,7 +88,7 @@ function checkboxsum(){
 			sum=sum+Number(ss[i].value);
 		}
 	}
-document.getElementById("sum_show").innerHTML="共选中<b>"+chencednumber+"</b>个<br>合计：<b>"+sum+"</b>";
+	document.getElementById("sum_show").innerHTML="共选中<b>"+chencednumber+"</b>个<br>合计：<b>"+sum+"</b>";
 
 	if(chencednumber){
 		$(document).ready(function(){
