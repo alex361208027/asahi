@@ -305,7 +305,7 @@ while($print_label<count($songhuodan_lot)){
 if($songhuodan_po){
 	$i_song=0;
 	while($i_song<count($songhuodan_lot)){
-		if($songhuodan_quantity[$i_song]>0){
+		if($songhuodan_po[$i_song]&&$songhuodan_quantity[$i_song]>0){
 		?>
 		<form action="songhuodan_hytera.php" method="get" target="_BLANK">
 		<input type="hidden" name="wuliaohao[]" value="<? echo $songhuodan_wuliaohao[$i_song]; ?>" />
@@ -320,17 +320,17 @@ if($songhuodan_po){
 		for($i_saerch=0;$i_saerch<count($songhuodan_lot);$i_saerch++){
 		if(in_array($the_songhuodan_po,$songhuodan_po)){
 			$earch_result=array_search($the_songhuodan_po,$songhuodan_po);
-			if($songhuodan_quantity[$earch_result]>0){
-			?>
-		<input type="hidden" name="wuliaohao[]" value="<? echo $songhuodan_wuliaohao[$earch_result]; ?>" />
-		<input type="hidden" name="po[]" value="<? echo $songhuodan_po[$earch_result]; ?>" />
-		<input type="hidden" name="banngo[]" value="<? echo $songhuodan_banngo[$earch_result]; ?>" />
-		<input type="hidden" name="lot[]" value="<? echo $songhuodan_lot[$earch_result]; ?>" />
-		<input type="hidden" name="quantity[]" value="<? echo $songhuodan_quantity[$earch_result]; ?>" />
-		<input type="hidden" name="date[]" value="<? echo $songhuodan_date[$earch_result]; ?>" />
-			<?
-			unset($songhuodan_po[$earch_result]);
-			}
+				if($songhuodan_quantity[$earch_result]>0){
+				?>
+				<input type="hidden" name="wuliaohao[]" value="<? echo $songhuodan_wuliaohao[$earch_result]; ?>" />
+				<input type="hidden" name="po[]" value="<? echo $songhuodan_po[$earch_result]; ?>" />
+				<input type="hidden" name="banngo[]" value="<? echo $songhuodan_banngo[$earch_result]; ?>" />
+				<input type="hidden" name="lot[]" value="<? echo $songhuodan_lot[$earch_result]; ?>" />
+				<input type="hidden" name="quantity[]" value="<? echo $songhuodan_quantity[$earch_result]; ?>" />
+				<input type="hidden" name="date[]" value="<? echo $songhuodan_date[$earch_result]; ?>" />
+				<?
+				unset($songhuodan_po[$earch_result]);
+				}
 			}
 		}
 		?>
