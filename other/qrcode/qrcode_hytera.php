@@ -329,8 +329,8 @@ if($songhuodan_po){
 				<input type="hidden" name="quantity[]" value="<? echo $songhuodan_quantity[$earch_result]; ?>" />
 				<input type="hidden" name="date[]" value="<? echo $songhuodan_date[$earch_result]; ?>" />
 				<?
-				unset($songhuodan_po[$earch_result]);
 				}
+				unset($songhuodan_po[$earch_result]);
 			}
 		}
 		?>
