@@ -52,7 +52,7 @@ if($logintime){
 <body>
 <table cellpadding="0" cellspacing="0" width="100%" height="100%"><!--主表格框-->
 <tr><!--最外的表格框-->
-<td width="120px;"><!--菜单栏-->
+<td width="60px;"><!--菜单栏-->
 	<div style="width:100%;height:100%;background-color:#0C4842;">
 		<style>
 		#shangbutr{
@@ -64,7 +64,7 @@ if($logintime){
 		
 		
 		.caidanxuanxiao{
-			padding:10px;color:white;font-size:12px;padding-left:15px;position:relative;
+			padding:10px;color:white;font-size:12px;padding-left:18px;position:relative;
 			border-bottom:1px solid #6D5F62;
 			cursor:pointer;
 			transition:all 0.5s;
@@ -76,7 +76,7 @@ if($logintime){
 			background-color:#233342;
 		}
 		ul{
-			position:absolute;left:115px;top:0px;z-index:10;background-color:#34495e;max-width:0px;overflow:hidden;
+			position:absolute;left:60px;top:0px;z-index:10;background-color:#34495e;max-width:0px;overflow:hidden;
 		
 		}
 		li{
@@ -105,6 +105,10 @@ transition-delay: 0.8s;
 -webkit-transition-delay: 0.1s; /* Safari 和 Chrome */
 -o-transition-delay: 0.1s; /* Opera */
 		}
+		.daohangimg{
+			width:20px;
+		}
+		
 		</style>
 		<script>
 		
@@ -118,23 +122,23 @@ transition-delay: 0.8s;
 		});
 		
 		</script>
-		<div style="padding:12px 0 0 25px;color:white;font-size:20px;"><a href="index.php" target="_blank"><img src="img/LOGO2.png"/></a></div>
+		<div style="padding-top:10px"><table width="100%"><tr width="100%"><td align="center"><a href="index.php" target="_blank"><img src="img/LOGO2.png" width="40px"/></a></td></tr></table></div>
 		<br><br>
-		<a href="index.php"><div class="caidanxuanxiao" style="background-color:#8E354A;"><img src="img/home.png"/> &nbsp; HOME >
+		<a href="index.php"><div class="caidanxuanxiao" style="background-color:#8E354A;" title="HOME"><img src="img/home.png" class="daohangimg"/>
 		<ul>
 				<li><a href="index.php" >回到首页</a></li>
 				<li><a href="index.php" target="_blank">新建页面</a></li>
 			</ul>
 		</div></a>
 			
-		<a href="indexother.php#findme_xinjian1" target="shangbu"><div class="caidanxuanxiao" ><img src="img/new.png" /> &nbsp; 新建订单 >
+		<a href="indexother.php#findme_xinjian1" target="shangbu"><div class="caidanxuanxiao" title="新建订单"><img src="img/new.png" class="daohangimg"/>
 		<ul>
 				<li><a href="indexother.php#findme_xinjian1" target="shangbu">客户订单</a></li>
 				<li><a href="indexother.php#findme_xinjian2" target="shangbu">朝日订单</a></li>
 			</ul>
 		</div></a>
 
-		<a href="indexother.php#findme_chanpin5" target="shangbu"><div class="caidanxuanxiao"><img src="img/order.png" /> &nbsp; 搜索朝日 >
+		<a href="indexother.php#findme_chanpin5" target="shangbu"><div class="caidanxuanxiao" title="朝日订单"><img src="img/order.png" class="daohangimg"/>
 			<ul>
 	
 				<li><a href="indexother.php#findme_chanpin0" target="shangbu">朝日订单</a></li>
@@ -143,7 +147,7 @@ transition-delay: 0.8s;
 				
 			</ul>
 		</div></a>
-		<a href="indexother.php#findme_chanpin2" target="shangbu"><div class="caidanxuanxiao"><img src="img/user.png" /> &nbsp; 查询客户 >
+		<a href="indexother.php#findme_chanpin2" target="shangbu"><div class="caidanxuanxiao" title="客户订单"><img src="img/user.png" class="daohangimg"/>
 			<ul>
 				<li><a href="indexother.php#findme_kehusousuo2" target="shangbu">客户订单</a></li>
 				<li><a href="indexother.php#findme_pipei" target="shangbu">订单匹配</a></li>
@@ -151,35 +155,36 @@ transition-delay: 0.8s;
 			</ul>
 		</div></a>
 
-		<a href="indexother.php#findme_zaiku" target="shangbu"><div class="caidanxuanxiao"><img src="img/zaiku.png" /> &nbsp; 出 入 库 >
+		<a href="indexother.php#findme_zaiku" target="shangbu"><div class="caidanxuanxiao" title="出 入 库"><img src="img/zaiku.png" class="daohangimg"/>
 			<ul>
 				<li><a href="###" onclick="window.open('in.php?in=in','xiabu');window.open('indexother.php#findme_zaiku','shangbu');">目前在库</a></li>
 				<li><a href="in.php" target="xiabu" onclick="window.open('indexother.php#findme_zaiku','shangbu');">出库记录</a></li>
 				<li><a href="putin.php" target="xiabu" onclick="window.open('indexother.php#findme_zaiku','shangbu');">手动入库</a></li>
 			</ul>
 		</div></a>
-		<div class="caidanxuanxiao" name="caidanxuanxiao" onclick="window.open('namecard.php','xiabu');window.open('indexother.php#findme_namecard','shangbu');caidancolor(5)"><img src="img/namecard.png" /> &nbsp; 名 &nbsp; 片</div>
-		<div class="caidanxuanxiao" name="caidanxuanxiao" onclick="window.open('project.php','xiabu');window.open('indexother.php#findme_project','shangbu');caidancolor(6)"><img src="img/project.png" /> &nbsp; 日 &nbsp; 志</div>
+		<div class="caidanxuanxiao" name="caidanxuanxiao" onclick="window.open('namecard.php','xiabu');window.open('indexother.php#findme_namecard','shangbu');caidancolor(5)" title="名片"><img src="img/namecard.png" class="daohangimg"/></div>
+		<div class="caidanxuanxiao" name="caidanxuanxiao" onclick="window.open('project.php','xiabu');window.open('indexother.php#findme_project','shangbu');caidancolor(6)" title="日志"><img src="img/project.png" class="daohangimg"/></div>
 		
-		<a href="indexother.php#hometop" target="shangbu"><div class="caidanxuanxiao"><img src="img/total.png"/> &nbsp; 统 &nbsp; 计 >
+		<a href="indexother.php#hometop" target="shangbu"><div class="caidanxuanxiao" title="统计"><img src="img/total.png" class="daohangimg"/>
 		<ul>
 				<!--<li><a href="total.php" target="xiabu">统计</a></li>-->
 				<li><a href="total_highcharts.php" target="xiabu">统 计</a></li>
 				<li><a href="banngo_date_list.php" target="xiabu">供料表</a></li>
 			</ul></div></a>
 			
-		<div class="caidanxuanxiao"><img src="img/other.png"/> &nbsp; 列 &nbsp; 表 >
+		<div class="caidanxuanxiao" title="列表"><img src="img/other.png" class="daohangimg"/>
 		<ul>
 				<li><a href="poprice.php" target="_blank">产品列表</a></li>
 				<li><a href="campany.php" target="_blank">客户列表</a></li>
 				<li><a href="anjian.php" target="_blank">案件列表</a></li>
 			</ul></div>
 			
-		<div class="caidanxuanxiao"><img src="img/otherfunction.png"/> &nbsp; 功 &nbsp; 能 >
+		<div class="caidanxuanxiao" title="功能"><img src="img/otherfunction.png" class="daohangimg"/>
 		<ul>
-				<li><a href="other/qrcode.php" target="_blank">海能达标签打印</a></li>
+				<li><a href="label_print.php" target="_blank">标签打印</a></li>
+				<li><a href="other/qrcode.php" target="_blank"><s>海能达标签打印</s></a></li>
 			</ul></div>	
-		<div class="caidanxuanxiao"><img src="img/page.png"/> &nbsp; 页面设置 >
+		<div class="caidanxuanxiao" title="页面设置"><img src="img/page.png" class="daohangimg"/>
 		<ul>
 				<li><a href="###" onclick="document.getElementById('shangbutr').style.height='160px';document.getElementById('tabletop').style.height='160px';">手机页面</a></li>
 				<li><a href="###" onclick="document.getElementById('shangbutr').style.height='80px';document.getElementById('tabletop').style.height='80px';">电脑页面</a></li>
