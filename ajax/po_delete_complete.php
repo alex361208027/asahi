@@ -10,7 +10,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 mysqli_set_charset ($conn,utf8);
 $_id=$_GET['_id'];
 $c_delete=$_GET['c_delete'];
-
+$row_news=mysqli_query($conn,"SELECT asahiorder,campany,banngo,quantity FROM `t_poteacher` WHERE _id = '$_id' limit 1")->fetch_row();
 if($_id){
 		mysqli_query($conn,"DELETE FROM `t_poteacher` WHERE _id = '$_id' limit 1");
 		echo "删除成功";
@@ -27,7 +27,7 @@ if($_id){
 
 //////////////news
 $newstime=date('Y-m-d H:i:s');
-
+$something=$something."【".$row_news[0].$row_news[1]."】".$row_news[2]."×".$row_news[3];
 mysqli_query($conn,"INSERT INTO `t_news`(`datetime`, `people`, `something`) VALUES ('$newstime','{$_COOKIE['loged']}','$something')");
 //////////////news//////
 

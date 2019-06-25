@@ -12,7 +12,7 @@ mysqli_set_charset ($conn,utf8);
 
 $_id=$_GET['_id'];
 $po_delete=$_GET['po_delete'];
-
+$row_news=mysqli_query($conn,"SELECT campany,ordernum,banngo,quantity FROM `t_teacher` WHERE _id = '$_id' limit 1")->fetch_row();
 
 
 if($_id){
@@ -21,10 +21,10 @@ if($_id){
 		if($po_delete){
 			mysqli_query($conn,"DELETE FROM `t_poteacher` WHERE customer_id='$_id' limit 1");
 			echo "<br>匹配的PO删除成功";
-			$something="删除了客户id:".$_id."以及其匹配的朝日订单。";
+			$something="删除了客户id".$_id."以及其匹配的朝日订单。";
 		}else{
 			mysqli_query($conn,"UPDATE `t_poteacher` SET campanyorder='', hopedate='', customer_id='' WHERE customer_id='$_id' limit 1");
-			$something="删除了客户id:".$_id;
+			$something="删除了客户id".$_id;
 		}
 }else{
 	echo "删除失败";
@@ -32,6 +32,8 @@ if($_id){
 
 //////////////news
 $newstime=date('Y-m-d H:i:s');
+$something=$something."【".$row_news[0].$row_news[1]."】".$row_news[2]."×".$row_news[3];
+
 
 mysqli_query($conn,"INSERT INTO `t_news`(`datetime`, `people`, `something`) VALUES ('$newstime','{$_COOKIE['loged']}','$something')");
 //////////////news//////

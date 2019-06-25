@@ -25,7 +25,7 @@ echo $quantity;
 
 //////////////news
 $newstime=date('Y-m-d H:i:s');
-$something="修改了客户id:".$_id."的数量".$quantity."。";
+$something="修改了客户id".$_id."的数量".$quantity."。";
 mysqli_query($conn,"INSERT INTO `t_news`(`datetime`, `people`, `something`) VALUES ('$newstime','{$_COOKIE['loged']}','$something')");
 //////////////news//////
 
