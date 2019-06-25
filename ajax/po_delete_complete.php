@@ -16,11 +16,20 @@ if($_id){
 		echo "删除成功";
 		if($c_delete){
 			mysqli_query($conn,"DELETE FROM `t_teacher` WHERE po_id = '$_id' limit 1");
+			$something="删除了朝日id:".$_id."以及其匹配的客户订单。";
 		}else{
 			mysqli_query($conn,"UPDATE `t_teacher` SET asahiorder='', JPdate='',SHdate='',po_id='' WHERE po_id = '$_id' limit 1");
+			$something="删除了朝日id:".$_id;
 		}
 }else{
 	echo "删除失败";
 }
+
+//////////////news
+$newstime=date('Y-m-d H:i:s');
+
+mysqli_query($conn,"INSERT INTO `t_news`(`datetime`, `people`, `something`) VALUES ('$newstime','{$_COOKIE['loged']}','$something')");
+//////////////news//////
+
 $conn->close();
 ?>

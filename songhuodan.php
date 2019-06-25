@@ -253,17 +253,7 @@ function reel($quantity,$banngo){
 		</table>
 		</td>
 		<td>
-	<?
-	function username($user){
-		Global $conn;
-		$result=mysqli_query($conn,"SELECT name FROM `t_user` WHERE user='$user' limit 1")->fetch_row();
-				if($result[0]){
-				return $result[0];
-				}else{
-					return $user;
-				}
-	}
-	?>
+	
 	<table cellpadding="0" cellspacing="0" width="100%" border="0" >
 				<tr>
 				<td width="auto" align="left">发货单位：<input type="text" style="text-align:left;width:300px;" value="朝日科技(上海)有限公司" / ></td>
@@ -272,7 +262,7 @@ function reel($quantity,$banngo){
 				<td width="auto" align="left">&nbsp;</td>
 				</tr>
 				<tr>
-				<td width="auto" align="left">发货人：<input type="text" style="text-align:left;width:80px;" value="<?php echo username($_COOKIE['asahiuser']); ?>"/></td>
+				<td width="auto" align="left">发货人：<input type="text" style="text-align:left;width:80px;" value="<?php echo $_COOKIE['loged']; ?>"/></td>
 				</tr>
 		</table>
 		</td>

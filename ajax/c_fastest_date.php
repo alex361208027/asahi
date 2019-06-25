@@ -29,7 +29,11 @@ if($mode==1){
 	foreach($_id as $_id){
 		$row=mysqli_query($conn,"SELECT hopedate,JPdate FROM t_teacher WHERE _id='$_id' limit 1")->fetch_row();
 		if($row[1]&&$row[1]!="0000-00-00"){
+			if($row[0]<$row[1]){
+			$best_date=date('Y-m-d',strtotime('+5 days',strtotime($row[1])));	
+			}else{
 			$best_date=date('Y-m-d',strtotime('-2 days',strtotime($row[0])));
+			}
 		}else{
 			$best_date="";
 		}

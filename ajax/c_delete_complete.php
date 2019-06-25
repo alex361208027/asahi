@@ -21,14 +21,20 @@ if($_id){
 		if($po_delete){
 			mysqli_query($conn,"DELETE FROM `t_poteacher` WHERE customer_id='$_id' limit 1");
 			echo "<br>匹配的PO删除成功";
+			$something="删除了客户id:".$_id."以及其匹配的朝日订单。";
 		}else{
 			mysqli_query($conn,"UPDATE `t_poteacher` SET campanyorder='', hopedate='', customer_id='' WHERE customer_id='$_id' limit 1");
+			$something="删除了客户id:".$_id;
 		}
 }else{
 	echo "删除失败";
 }
 
+//////////////news
+$newstime=date('Y-m-d H:i:s');
 
+mysqli_query($conn,"INSERT INTO `t_news`(`datetime`, `people`, `something`) VALUES ('$newstime','{$_COOKIE['loged']}','$something')");
+//////////////news//////
 
 
 $conn->close();

@@ -20,5 +20,11 @@ foreach($checkbox as $checkboxid => $_id){
 	echo "第".($checkboxid+1)."条，【发票】操作成功\r";
 }
 
+//////////////news
+$newstime=date('Y-m-d H:i:s');
+$something="执行了一次[发票]操作。";
+mysqli_query($conn,"INSERT INTO `t_news`(`datetime`, `people`, `something`) VALUES ('$newstime','{$_COOKIE['loged']}','$something')");
+//////////////news//////
+
  $conn->close();
 ?>
