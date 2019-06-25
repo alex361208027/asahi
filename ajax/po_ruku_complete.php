@@ -86,7 +86,7 @@ if($lotnum){
 			
 			
 				
-			$conn->close();	
+			
 			}
 		}
 		
@@ -100,10 +100,15 @@ if($lotnum){
 }
 //////////////news
 $newstime=date('Y-m-d H:i:s');
-$something="执行了朝日id:".$_id."的入库。";
+$something="执行了朝日id:".$_id."的入库。批次号".$lotnum." / ";
+for($i=0;$i<9;$i++){
+	if($lotnum2[$i]&&$quantity2[$i]){
+	$something=$something.$lotnum2[$i]." / ";
+	}
+}
+
 mysqli_query($conn,"INSERT INTO `t_news`(`datetime`, `people`, `something`) VALUES ('$newstime','{$_COOKIE['loged']}','$something')");
 //////////////news//////
-
-$conn->close();
+$conn->close();	
 ?>
 
