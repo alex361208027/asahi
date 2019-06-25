@@ -15,7 +15,7 @@ xiao{
 	font-size:12px;
 }
 tr{
-	height:44px;
+	height:48px;
 }
 td{
 	position:relative;border:1px solid black;
@@ -26,7 +26,7 @@ input[type='text']{
 
 </style>
 <body>
-<input type="button" id="button" value="more"/>打印时 缩放到53%
+<input type="button" id="button" value="more"/>打印时 缩放到53%<button onclick="window.print()">点击打印</button><br><br>
 <div id="copy">
 <table width="600px" cellspacing="0" cellpadding="0" style="border:1px solid black;margin:10px;">
 <tr>

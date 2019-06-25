@@ -1,5 +1,5 @@
 <?php
-
+date_default_timezone_set('PRC');
 
 $servername = "localhost";
 $username = "root";
@@ -55,6 +55,13 @@ if($t4==$quantityplus){
 }else{
 	echo "";
 }
+
+
+//////////////news
+$newstime=date('Y-m-d H:i:s');
+$something="执行了一次出库(单次)。";
+mysqli_query($conn,"INSERT INTO `t_news`(`datetime`, `people`, `something`) VALUES ('$newstime','{$_COOKIE['loged']}','$something')");
+//////////////news//////
 
  $conn->close();
  ?>
