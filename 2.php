@@ -131,8 +131,14 @@ if($t5){
 	$tt5="";
 }
 if($t4){
+	if(substr($t4,0,2)=="id"){
+	$t4=substr($t4,2);
+	$tt4="AND _id = '$t4' ";
+	$nopox=$nopox."<div class='nopox'>id".$t4."</div>";
+	}else{
 	$tt4="AND quantity = '$t4' ";
 	$nopox=$nopox."<div class='nopox'>数量".$t4."</div>";
+	}
 }else{
 	$tt4="";
 }

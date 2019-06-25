@@ -182,6 +182,7 @@ transition-delay: 0.8s;
 		<div class="caidanxuanxiao" title="功能"><img src="img/otherfunction.png" class="daohangimg"/>
 		<ul>
 				<li><a href="label_print.php" target="_blank">标签打印</a></li>
+				<li><a href="news.php" target="_blank">操作记录</a></li>
 				<li><a href="other/qrcode.php" target="_blank"><s>海能达标签打印</s></a></li>
 			</ul></div>	
 		<div class="caidanxuanxiao" title="页面设置"><img src="img/page.png" class="daohangimg"/>
