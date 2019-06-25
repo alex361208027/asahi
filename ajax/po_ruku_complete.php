@@ -98,6 +98,12 @@ if($lotnum){
 }else{
 	echo 0;
 }
+//////////////news
+$newstime=date('Y-m-d H:i:s');
+$something="执行了朝日id:".$_id."的入库。";
+mysqli_query($conn,"INSERT INTO `t_news`(`datetime`, `people`, `something`) VALUES ('$newstime','{$_COOKIE['loged']}','$something')");
+//////////////news//////
 
+$conn->close();
 ?>
 

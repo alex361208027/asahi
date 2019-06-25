@@ -67,7 +67,11 @@ if($quantity){
 
 
 
-
+//////////////news
+$newstime=date('Y-m-d H:i:s');
+$something="拆分了朝日id:".$_id."，拆分数量为".$quantity."。";
+mysqli_query($conn,"INSERT INTO `t_news`(`datetime`, `people`, `something`) VALUES ('$newstime','{$_COOKIE['loged']}','$something')");
+//////////////news//////
 
 
 $conn->close();

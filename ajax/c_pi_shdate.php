@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('PRC');
 $servername = "localhost";
 $username = "root";
 $password = "root";
@@ -17,5 +18,12 @@ foreach($checkbox as $checkboxid => $_id){
 }else{
 	echo "未输入上海时间";
 }
+
+//////////////news
+$newstime=date('Y-m-d H:i:s');
+$something="批次执行了一次上海日期修改。";
+mysqli_query($conn,"INSERT INTO `t_news`(`datetime`, `people`, `something`) VALUES ('$newstime','{$_COOKIE['loged']}','$something')");
+//////////////news//////
+
  $conn->close();
 ?>

@@ -133,8 +133,8 @@ transition-delay: 0.8s;
 			
 		<a href="indexother.php#findme_xinjian1" target="shangbu"><div class="caidanxuanxiao" title="新建订单"><img src="img/new.png" class="daohangimg"/>
 		<ul>
-				<li><a href="indexother.php#findme_xinjian1" target="shangbu">客户订单</a></li>
-				<li><a href="indexother.php#findme_xinjian2" target="shangbu">朝日订单</a></li>
+				<li><a href="indexother.php#findme_xinjian1" target="shangbu">新建客户订单</a></li>
+				<li><a href="indexother.php#findme_xinjian2" target="shangbu">新建朝日订单</a></li>
 			</ul>
 		</div></a>
 
