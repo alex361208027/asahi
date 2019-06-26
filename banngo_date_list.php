@@ -79,10 +79,18 @@ if($campany){
 						}
 						}
 						
-						
-						
 						echo "<tr style='height:30px'>";
+						echo "<td></td>";
+						$dd=0;
+						while($dd<$weeks){
+						echo "<td align='right' style='min-width:100px;background:black;color:white;font-size:14px;'>";
+						echo "[+".$dd."周]";
+						echo "</td>";
+						$dd++;
+						}
+						echo "</tr>";
 						
+						echo "<tr style='height:30px'>";					
 						echo "<td></td>";
 						$dd=0;
 						while($dd<$weeks){
@@ -131,7 +139,6 @@ if($campany){
 						
 
 ?>
-<tr><td></td><td colspan="<? echo $weeks ?>">*日期表示该一周的时间范围内的数量合计</td></tr>
 <tr><td></td><td colspan="<? echo $weeks ?>">*数据不包含[交期待定]项</td></tr>
 </table>
 </div>

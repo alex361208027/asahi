@@ -21,7 +21,7 @@ $search=$_GET['search'];$han=$_GET['han'];
 
 if($banngo&&$price){
 	if(mysqli_query($conn,"SELECT * FROM `t_poprice` WHERE banngo = '$banngo' AND campany = '$campany'")-> num_rows > 0){
-		echo $banngo."已经存在，<a href='poprice.php'>回到首页</a>";
+		echo $banngo." &nbsp  <a href='poprice.php'>已经存在!请在此确认！     ->回到首页</a>";
 		?>
 		<form action="poprice.php" method="GET">
 		<input list="kehulist" class="inputlist" name="campany" style="width:150px" value="" placeholder="客户名" /><input type="text" name="banngo" style="width:200px" value="" placeholder="新番号"><input type="text" name="price" value="" placeholder="进价"><input type="text" name="sellprice" value="" placeholder="卖价"><input type="text" name="reel" value="" placeholder="pcs/reel"><input type="submit" value="添加">
@@ -29,7 +29,7 @@ if($banngo&&$price){
 		<?
 	}else{
 		mysqli_query($conn,"INSERT INTO `t_poprice`(`campany`,`banngo`, `price`,`sellprice`, `reel`) VALUES ('$campany','$banngo','$price','$sellprice','$reel')");
-		echo $banngo." &nbsp  <-添加成功,<a href='poprice.php'>回到首页</a>";
+		echo $banngo." &nbsp  <-<a href='poprice.php'>添加成功!     ->回到首页</a>";
 				?>
 		<form action="poprice.php" method="GET">
 		<input list="kehulist" class="inputlist" name="campany" style="width:150px" value="" placeholder="客户名" /><input type="text" name="banngo" style="width:200px" value="" placeholder="新番号"><input type="text" name="price" value="" placeholder="进价"><input type="text" name="sellprice" value="" placeholder="卖价"><input type="text" name="reel" value="" placeholder="pcs/reel"><input type="submit" value="添加">
@@ -91,7 +91,7 @@ ul{
 	padding:2px;
 }
 li{
-	font-size:12px;margin-top:5px;
+	font-size:12px;margin-top:5px;display:inline-block;
 }
 
 
@@ -100,25 +100,25 @@ cc{
 }
 
 .oldprice{
-	border:1px solid black;position:absolute;top:0px;left:0px;background:white;padding:1px;
+	border:1px solid black;position:absolute;top:0px;left:0px;background:white;padding:1px;z-index:99;font-size:12px;
 	display:none;
 }
 .oldnewprice{
 	position:relative;
 }
 .oldnewprice:hover > .oldprice{
-	display:inline-block;left:-100%;
+	display:inline-block;top:100%;
 }
 
 .oldsellprice{
-	border:1px solid black;position:absolute;top:0px;left:0px;background:white;padding:1px;
+	border:1px solid black;position:absolute;top:0px;left:0px;background:white;padding:1px;z-index:99;font-size:12px;
 	display:none;
 }
 .oldnewsellprice{
 	position:relative;
 }
 .oldnewsellprice:hover > .oldsellprice{
-	display:inline-block;left:100%;
+	display:inline-block;top:100%
 }
 </style>
 <script>
@@ -137,9 +137,12 @@ $(document).ready(function(){
 	
 });
 </script>	
-<form action="poprice.php" method="GET">
+<div style="position:fixed;background:#FFBBBB;border:2px solid balck;width:100%;z-index:100;padding-bottom:10px" align="right">
+<form action="poprice.php" method="GET">添加新品番：
 <input list="kehulist" class="inputlist" name="campany" style="width:150px" value="" placeholder="客户名" /><input type="text" name="banngo" style="width:200px" value="" placeholder="新番号"><input type="text" name="price" value="" placeholder="进价"><input type="text" name="sellprice" value="" placeholder="卖价"><input type="text" name="reel" value="" placeholder="pcs/reel"><input type="submit" value="添加">
 </form>
+</div>
+<br><br><br><br>
 <datalist id="kehulist">
 <?php
 $campany_list=explode(",",file_get_contents("ajax/write_data/campany.html"));
@@ -148,12 +151,13 @@ foreach($campany_list as $campany_list){
 }
 ?>	
 </datalist>
+
 <hr>
 <form action="poprice.php" method="GET">
-<input type="text" name="search" list="kehulist" style="width:200px" value="<?php echo $search ?>" placeholder="搜索番号"><input type="submit" value="搜索"> <input type="checkbox" name="han" value="1" <? if(!$han){echo 'checked';} ?>/>含不常用品番
+<input type="text" name="search" list="kehulist" style="width:200px" value="<?php echo $search ?>" placeholder="搜索"><input type="submit" value="搜索"> <input type="checkbox" name="han" value="1" <? if(!$han){echo 'checked';} ?>/>含不常用品番
 </form>
 <? if($search){ ?>
-<table cellpadding="2" cellspacing="0" align="center">
+<table cellpadding="2" cellspacing="0" >
 <tr style="background-color:#FF6685;color:white;height:;" align="center">
 <td width="50px">#</td>
 <td>客户</td>
@@ -169,8 +173,8 @@ foreach($campany_list as $campany_list){
 	<td><i><?php echo $i ?>.</i></td>
 	<td align="center"><input type="text" id="campany<?php echo $row[0] ?>" value="<?php echo $row[4] ?>"></td>
 	<td align="center"><?php if($row[11]==0){echo $row[1];}elseif($row[11]==1){echo "<cc>".$row[1]."</cc>";} ?></td>
-	<td><div class="oldnewprice"><div class="oldprice">前:<? echo $row[12] ?></div><input type="text" id="price<?php echo $row[0] ?>" value="<?php echo $row[2] ?>"></div></td>
-	<td><div class="oldnewsellprice"><div class="oldsellprice">前:<? echo $row[13] ?></div><input type="text" id="sellprice<?php echo $row[0] ?>" value="<?php echo $row[5] ?>"></div></td>
+	<td><div class="oldnewprice"><div class="oldprice"><? echo $row[12] ?></div><input type="text" id="price<?php echo $row[0] ?>" value="<?php echo $row[2] ?>"></div></td>
+	<td><div class="oldnewsellprice"><div class="oldsellprice"><? echo $row[13] ?></div><input type="text" id="sellprice<?php echo $row[0] ?>" value="<?php echo $row[5] ?>"></div></td>
 	<td><input type="text" id="reel<?php echo $row[0] ?>" value="<?php echo $row[3] ?>"></td>
 	<td><input type="text" id="other<?php echo $row[0] ?>" value="<?php echo $row[6] ?>"></td>
 	<td><button id="button<?php echo $row[0] ?>" onclick="po_price(<?php echo $row[0] ?>)">确认编辑</button> 
