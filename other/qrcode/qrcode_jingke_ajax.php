@@ -41,7 +41,7 @@ $qrcode_api=file_get_contents("../qrcode_api.html");
 <td>ROHS要求</td><td>SGS</td>
 </tr>
 <tr>
-<td>储存条件</td><td colspan="2">温度18-28℃，湿度35-75%</td>
+<td>储存条件</td><td colspan="2">温度25℃以下，湿度35-75%</td>
 </tr>
 </table>
 </div>
@@ -81,7 +81,7 @@ for($i=0;$i<($gg/$qrcode_each[2]);$i++){
 <td>ROHS要求</td><td>SGS</td>
 </tr>
 <tr>
-<td>储存条件</td><td colspan="2">温度18-28℃，湿度35-75%</td>
+<td>储存条件</td><td colspan="2">温度25℃以下，湿度35-75%</td>
 </tr>
 </table>
 </div>

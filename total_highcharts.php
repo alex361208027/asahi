@@ -152,8 +152,8 @@ input[type='number']{
 <option value="invoice" <?php if($selectdate=="invoice"){echo "selected";} ?> >@开票日期</option>
 </select>
 <a href="" onclick="year(this)"><button>【检索】</button></a>
-（包含前<input type="number" value="<?php if($qian){echo $qian;}else{echo 9;} ?>" id="qian" />个月，
-后<input type="number" value="<?php if($hou){echo $hou;}else{echo 2;} ?>" id="hou" />个月的数据）<br>
+（包含前<input type="number" value="<?php if($qian){echo $qian;}else{echo 6;} ?>" id="qian" />个月，
+后<input type="number" value="<?php if($hou){echo $hou;}else{echo 3;} ?>" id="hou" />个月的数据）<br>
 &nbsp;<label><input type="checkbox" <?php if(!$ok){echo "checked";}elseif($total){echo "checked";} ?> id="total" value="1" />【月总数】</label>
 
 <?php
