@@ -92,7 +92,7 @@ body{
 					<div id="error" style="position:absolute;right:0px;top:0px;width:480px;height:280px;background-color:#FF88A0;color:white;display:none;padding-top:18%;font-size:20px;filter:alpha(Opacity=90);-moz-opacity:0.9;opacity: 0.9;">ERROR!<br><br>账号或密码未输入</div>
 	</div>
 	<div style="cursor:pointer;position:relative;width:480px;text-align:right;font-size:11px;color:#FF335C;margin-top:10px;" onclick="beta()">
-	<u>测试登录请点击此处</u><a id="href" href="http://www.asahi-rubber.cn/BETA/index.php?user=beta"></a>
+	<a href="http://www.asahi-rubber.cn/hp"><u>浏览 朝日科技主页 请点击此处</u></a>
 	</div>
 	<div style="position:relative;width:480px;text-align:right;font-size:12px;color:#FF335C;margin-top:10px;">
 	*BETA Only for Chrome
@@ -102,12 +102,6 @@ body{
 	</div>
 </div>
 <script>
-function beta(){
-	document.getElementsByName('user')[0].value="beta";
-	document.getElementsByName('userpw')[0].value="beta";
-	document.getElementById('loging').onclick=function(){document.getElementById('href').click()};
-}
-
 $(document).ready(function(){
      $("#wuser").click(function(){
 		 $(this).css({"top":"0px","font-size":"14px","color":"white"});

@@ -318,7 +318,7 @@ function same_date(){
 				<td> </td><td> </td>
 				</tr>
 				<tr valign="top">
-				<td>Ship to:</td><td><input type="text" value="Summit Center, Unit516, No.1088,"/><br><input type="text" value="Yanan West Road, Shanghai,"/><br><input type="text" value="200052, P R China"/></td>
+				<td>Ship to:</td><td><input type="text" value="Summit Center, Unit818, No.1088,"/><br><input type="text" value="Yanan West Road, Shanghai,"/><br><input type="text" value="200052, P R China"/></td>
 				</tr>
 				<tr>
 				<td>Attn:</td><td><input type="text" value="Ms.Malin"/></td>
