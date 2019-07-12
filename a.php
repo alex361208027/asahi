@@ -91,8 +91,8 @@ body{
 					</div>
 					<div id="error" style="position:absolute;right:0px;top:0px;width:480px;height:280px;background-color:#FF88A0;color:white;display:none;padding-top:18%;font-size:20px;filter:alpha(Opacity=90);-moz-opacity:0.9;opacity: 0.9;">ERROR!<br><br>账号或密码未输入</div>
 	</div>
-	<div style="cursor:pointer;position:relative;width:480px;text-align:right;font-size:11px;color:#FF335C;margin-top:10px;" onclick="beta()">
-	<a href="http://www.asahi-rubber.cn/hp"><u>浏览 朝日科技主页 请点击此处</u></a>
+	<div class="kk" style="background:url('img/asahihp.png');background-size:cover;height:80px;margin-top:15px;cursor:pointer;" onclick="location.href='../hp'">
+	<table width="100%" height="100%"><tr><td align="right" style="font-size:18px;color:white;padding-right:20px;font-weight:bold">朝日科技主页</td></tr></table>
 	</div>
 	<div style="position:relative;width:480px;text-align:right;font-size:12px;color:#FF335C;margin-top:10px;">
 	*BETA Only for Chrome
