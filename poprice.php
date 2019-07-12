@@ -43,7 +43,7 @@ if($banngo&&$price){
 		$han="and state=0";
 	}
 	if($search){
-	$sql = "SELECT * FROM `t_poprice` WHERE (banngo like '%$search%' OR campany ='$search' OR description like '%$search%') $han order by banngo asc";		
+	$sql = "SELECT * FROM `t_poprice` WHERE (banngo like '%$search%' OR campany ='$search' OR description like '%$search%' OR price = '$search' OR sellprice = '$search') $han order by banngo asc";		
 	}else{
 	$sql = "SELECT * FROM `t_poprice` WHERE banngo is not null $han order by banngo asc";
 	}

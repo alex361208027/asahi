@@ -100,7 +100,7 @@ if($lotnum){
 }
 //////////////news
 $newstime=date('Y-m-d H:i:s');
-$something="执行了朝日id:".$_id."的入库。批次号".$lotnum." / ";
+$something="执行了朝日id".$_id."的入库。批次号".$lotnum." / ";
 for($i=0;$i<9;$i++){
 	if($lotnum2[$i]&&$quantity2[$i]){
 	$something=$something.$lotnum2[$i]." / ";
