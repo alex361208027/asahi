@@ -9,42 +9,1610 @@
 	<td>品番</td>
 	<td align="right">数量</td>
 	<td></td>
+	<td align="">(客)注文PO</td>
 	<td>(客)希望納期</td>
 	<td>日本出荷日</td>
-	<td align="center">(客)注文PO</td>
 	<td>備考</td>
 </tr>
 
 <tr bgcolor="#F7F7F7" class="tabletr">
 	
-	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="6000" _id="2335" cells="1"></td>
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="48000" _id="2395" cells="1"></td>
 	<td align="center">1</td>
-	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
-	<td class="pick_same" value="PO190624" style=""><a href="4-1.php?asahit1=PO190624">PO190624</a></td>
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-    <td class="pick_same" value="E13527" style=""><u onclick="po_banngo('_id=2335&amp;cells=1')">E13527</u></td>
+	<td align="center"><div class="classcp1" style="background-color:#000000">納期待つ</div></td>
+	<td class="pick_same" value="PO190712"><a href="4-1.php?asahit1=PO190712">PO190712</a></td>
+	<td class="pick_same" value="天津三美">天津三美</td>
+    <td class="pick_same" value="19-CW94-A"><u onclick="po_banngo('_id=2395&amp;cells=1')">19-CW94-A</u></td>
+	<td align="right">48000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="167B47798" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=167B47798">167B47798</a></td>
+	<td bgcolor="#EEEEFF">2019-09-02</td>
+	<td><b></b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="48000" _id="2396" cells="2"></td>
+	<td align="center">2</td>
+	<td align="center"><div class="classcp1" style="background-color:#000000">納期待つ</div></td>
+	<td class="pick_same" value="PO190712"><a href="4-1.php?asahit1=PO190712">PO190712</a></td>
+	<td class="pick_same" value="天津三美">天津三美</td>
+    <td class="pick_same" value="19-CW94-A"><u onclick="po_banngo('_id=2396&amp;cells=2')">19-CW94-A</u></td>
+	<td align="right">48000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="167B47799" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=167B47799">167B47799</a></td>
+	<td bgcolor="#EEEEFF">2019-09-04</td>
+	<td><b></b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="30000" _id="2397" cells="3"></td>
+	<td align="center">3</td>
+	<td align="center"><div class="classcp1" style="background-color:#000000">納期待つ</div></td>
+	<td class="pick_same" value="PO190712"><a href="4-1.php?asahit1=PO190712">PO190712</a></td>
+	<td class="pick_same" value="天津三美">天津三美</td>
+    <td class="pick_same" value="19-CW94-A"><u onclick="po_banngo('_id=2397&amp;cells=3')">19-CW94-A</u></td>
+	<td align="right">30000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="167B47800" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=167B47800">167B47800</a></td>
+	<td bgcolor="#EEEEFF">2019-09-18</td>
+	<td><b></b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="30000" _id="2398" cells="4"></td>
+	<td align="center">4</td>
+	<td align="center"><div class="classcp1" style="background-color:#000000">納期待つ</div></td>
+	<td class="pick_same" value="PO190712"><a href="4-1.php?asahit1=PO190712">PO190712</a></td>
+	<td class="pick_same" value="天津三美">天津三美</td>
+    <td class="pick_same" value="19-CW94-A"><u onclick="po_banngo('_id=2398&amp;cells=4')">19-CW94-A</u></td>
+	<td align="right">30000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="167B47801" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=167B47801">167B47801</a></td>
+	<td bgcolor="#EEEEFF">2019-09-23</td>
+	<td><b></b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="4000" _id="2385" cells="5"></td>
+	<td align="center">5</td>
+	<td align="center"><div class="classcp1" style="background-color:#000000">納期待つ</div></td>
+	<td class="pick_same" value="PO190708"><a href="4-1.php?asahit1=PO190708">PO190708</a></td>
+	<td class="pick_same" value="宜兰">宜兰</td>
+    <td class="pick_same" value="NSSB064+CAP(1284)"><u onclick="po_banngo('_id=2385&amp;cells=5')">NSSB064+CAP(1284)</u></td>
+	<td align="right">4000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="20190708022" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=20190708022">20190708022</a></td>
+	<td bgcolor="#EEEEFF">2019-09-06</td>
+	<td><b></b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="6000" _id="2386" cells="6"></td>
+	<td align="center">6</td>
+	<td align="center"><div class="classcp1" style="background-color:#000000">納期待つ</div></td>
+	<td class="pick_same" value="PO190709"><a href="4-1.php?asahit1=PO190709">PO190709</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E13004"><u onclick="po_banngo('_id=2386&amp;cells=6')">E13004</u></td>
 	<td align="right">6000</td>
 	<td align="left">pcs</td>
-	<td>2019-08-09</td>
-	<td><b>2019-08-01</b></td>
-	<td class="pick_same" value="E-J03804" align="center"><a href="4.php?ddt2=E-J03804">E-J03804</a></td>
+	<td class="pick_same" value="S190709PO0053" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190709PO0053">S190709PO0053</a></td>
+	<td bgcolor="#EEEEFF">2019-09-02</td>
+	<td><b></b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="12000" _id="2387" cells="7"></td>
+	<td align="center">7</td>
+	<td align="center"><div class="classcp1" style="background-color:#000000">納期待つ</div></td>
+	<td class="pick_same" value="PO190709"><a href="4-1.php?asahit1=PO190709">PO190709</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E13004"><u onclick="po_banngo('_id=2387&amp;cells=7')">E13004</u></td>
+	<td align="right">12000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190709PO0052" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190709PO0052">S190709PO0052</a></td>
+	<td bgcolor="#EEEEFF">2019-10-02</td>
+	<td><b></b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="6000" _id="2390" cells="8"></td>
+	<td align="center">8</td>
+	<td align="center"><div class="classcp1" style="background-color:#000000">納期待つ</div></td>
+	<td class="pick_same" value="PO190711"><a href="4-1.php?asahit1=PO190711">PO190711</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E12395"><u onclick="po_banngo('_id=2390&amp;cells=8')">E12395</u></td>
+	<td align="right">6000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190710PO0150" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190710PO0150">S190710PO0150</a></td>
+	<td bgcolor="#EEEEFF">2019-10-02</td>
+	<td><b></b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="42000" _id="2391" cells="9"></td>
+	<td align="center">9</td>
+	<td align="center"><div class="classcp1" style="background-color:#000000">納期待つ</div></td>
+	<td class="pick_same" value="PO190711"><a href="4-1.php?asahit1=PO190711">PO190711</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E12619"><u onclick="po_banngo('_id=2391&amp;cells=9')">E12619</u></td>
+	<td align="right">42000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190710PO0150" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190710PO0150">S190710PO0150</a></td>
+	<td bgcolor="#EEEEFF">2019-10-02</td>
+	<td><b></b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="18000" _id="2392" cells="10"></td>
+	<td align="center">10</td>
+	<td align="center"><div class="classcp1" style="background-color:#000000">納期待つ</div></td>
+	<td class="pick_same" value="PO190711"><a href="4-1.php?asahit1=PO190711">PO190711</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E13044"><u onclick="po_banngo('_id=2392&amp;cells=10')">E13044</u></td>
+	<td align="right">18000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190710PO0150" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190710PO0150">S190710PO0150</a></td>
+	<td bgcolor="#EEEEFF">2019-10-02</td>
+	<td><b></b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="33000" _id="2394" cells="11"></td>
+	<td align="center">11</td>
+	<td align="center"><div class="classcp1" style="background-color:#000000">納期待つ</div></td>
+	<td class="pick_same" value="PO190711"><a href="4-1.php?asahit1=PO190711">PO190711</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E13435"><u onclick="po_banngo('_id=2394&amp;cells=11')">E13435</u></td>
+	<td align="right">33000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190710PO0150" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190710PO0150">S190710PO0150</a></td>
+	<td bgcolor="#EEEEFF">2019-10-02</td>
+	<td><b></b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="9000" _id="2389" cells="12"></td>
+	<td align="center">12</td>
+	<td align="center"><div class="classcp1" style="background-color:#000000">納期待つ</div></td>
+	<td class="pick_same" value="PO190711"><a href="4-1.php?asahit1=PO190711">PO190711</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E14647"><u onclick="po_banngo('_id=2389&amp;cells=12')">E14647</u></td>
+	<td align="right">9000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190710PO0150" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190710PO0150">S190710PO0150</a></td>
+	<td bgcolor="#EEEEFF">2019-10-02</td>
+	<td><b></b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="6000" _id="2388" cells="13"></td>
+	<td align="center">13</td>
+	<td align="center"><div class="classcp1" style="background-color:#000000">納期待つ</div></td>
+	<td class="pick_same" value="PO190711"><a href="4-1.php?asahit1=PO190711">PO190711</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E18489"><u onclick="po_banngo('_id=2388&amp;cells=13')">E18489</u></td>
+	<td align="right">6000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190710PO0150" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190710PO0150">S190710PO0150</a></td>
+	<td bgcolor="#EEEEFF">2019-10-02</td>
+	<td><b></b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="120000" _id="344" cells="14"></td>
+	<td align="center">14</td>
+	<td align="center"><div class="classcp1" style="background-color:#000000">納期待つ</div></td>
+	<td class="pick_same" value="PO171019"><a href="4-1.php?asahit1=PO171019">PO171019</a></td>
+	<td class="pick_same" value="青岛乐星">青岛乐星</td>
+    <td class="pick_same" value="3016577"><u onclick="po_banngo('_id=344&amp;cells=14')">3016577</u></td>
+	<td align="right">120000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2="></a></td>
+	<td bgcolor="#EEEEFF"></td>
+	<td><b></b></td>
 	<td><marquee scrolldelay="200"></marquee></td>
 		
 </tr>
 <tr bgcolor="" class="tabletr">
 	
-	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="3000" _id="2336" cells="2"></td>
-	<td align="center">2</td>
-	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
-	<td class="pick_same" value="PO190624" style=""><a href="4-1.php?asahit1=PO190624">PO190624</a></td>
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-    <td class="pick_same" value="E13544"><u onclick="po_banngo('_id=2336&amp;cells=2')">E13544</u></td>
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="3000" _id="2056" cells="15"></td>
+	<td align="center">15</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO190428"><a href="4-1.php?asahit1=PO190428">PO190428</a></td>
+	<td class="pick_same" value="双日">双日</td>
+    <td class="pick_same" value="E13004"><u onclick="po_banngo('_id=2056&amp;cells=15')">E13004</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='15';eee=1;po_ru_quantity=3000;po_ruku('t2=E13004&amp;t3=3000&amp;t6=双日&amp;t7=YY190528-2&amp;customer_id=2290&amp;_id=2056&amp;asahipo=PO190428')">[入库]</a></td>
 	<td align="right">3000</td>
 	<td align="left">pcs</td>
-	<td><font color="red">2019-08-09</font></td>
-	<td><b>2019-08-22</b></td>
-	<td class="pick_same" value="E-J03804" align="center"><a href="4.php?ddt2=E-J03804">E-J03804</a></td>
+	<td class="pick_same" value="YY190528-2" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=YY190528-2">YY190528-2</a></td>
+	<td bgcolor="#EEEEFF"><font color="red">2019-07-01</font></td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="3000" _id="2181" cells="16"></td>
+	<td align="center">16</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO19051701"><a href="4-1.php?asahit1=PO19051701">PO19051701</a></td>
+	<td class="pick_same" value="双日">双日</td>
+    <td class="pick_same" value="E13098"><u onclick="po_banngo('_id=2181&amp;cells=16')">E13098</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='16';eee=1;po_ru_quantity=3000;po_ruku('t2=E13098&amp;t3=3000&amp;t6=双日&amp;t7=YY190528&amp;customer_id=2281&amp;_id=2181&amp;asahipo=PO19051701')">[入库]</a></td>
+	<td align="right">3000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="YY190528" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=YY190528">YY190528</a></td>
+	<td bgcolor="#EEEEFF"><font color="red">2019-06-24</font></td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="9000" _id="2178" cells="17"></td>
+	<td align="center">17</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO19051701"><a href="4-1.php?asahit1=PO19051701">PO19051701</a></td>
+	<td class="pick_same" value="双日">双日</td>
+    <td class="pick_same" value="E14929"><u onclick="po_banngo('_id=2178&amp;cells=17')">E14929</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='17';eee=1;po_ru_quantity=9000;po_ruku('t2=E14929&amp;t3=9000&amp;t6=双日&amp;t7=YY190528&amp;customer_id=2277&amp;_id=2178&amp;asahipo=PO19051701')">[入库]</a></td>
+	<td align="right">9000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="YY190528" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=YY190528">YY190528</a></td>
+	<td bgcolor="#EEEEFF"><font color="red">2019-06-24</font></td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="3000" _id="2135" cells="18"></td>
+	<td align="center">18</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO19051701"><a href="4-1.php?asahit1=PO19051701">PO19051701</a></td>
+	<td class="pick_same" value="双日">双日</td>
+    <td class="pick_same" value="E14929"><u onclick="po_banngo('_id=2135&amp;cells=18')">E14929</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='18';eee=1;po_ru_quantity=3000;po_ruku('t2=E14929&amp;t3=3000&amp;t6=双日&amp;t7=YY190528-2&amp;customer_id=2288&amp;_id=2135&amp;asahipo=PO19051701')">[入库]</a></td>
+	<td align="right">3000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="YY190528-2" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=YY190528-2">YY190528-2</a></td>
+	<td bgcolor="#EEEEFF"><font color="red">2019-07-01</font></td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="6000" _id="2184" cells="19"></td>
+	<td align="center">19</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO190530"><a href="4-1.php?asahit1=PO190530">PO190530</a></td>
+	<td class="pick_same" value="双日">双日</td>
+    <td class="pick_same" value="E14253"><u onclick="po_banngo('_id=2184&amp;cells=19')">E14253</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='19';eee=1;po_ru_quantity=6000;po_ruku('t2=E14253&amp;t3=6000&amp;t6=双日&amp;t7=YY190528-2&amp;customer_id=2287&amp;_id=2184&amp;asahipo=PO190530')">[入库]</a></td>
+	<td align="right">6000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="YY190528-2" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=YY190528-2">YY190528-2</a></td>
+	<td bgcolor="#EEEEFF"><font color="red">2019-07-01</font></td>
+	<td><b>2019-07-11</b></td>
 	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="12000" _id="2337" cells="20"></td>
+	<td align="center">20</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO19042401"><a href="4-1.php?asahit1=PO19042401">PO19042401</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E13044"><u onclick="po_banngo('_id=2337&amp;cells=20')">E13044</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='20';eee=1;po_ru_quantity=12000;po_ruku('t2=E13044&amp;t3=12000&amp;t6=希革斯&amp;t7=S190419PO0501&amp;customer_id=2435&amp;_id=2337&amp;asahipo=PO19042401')">[入库]</a></td>
+	<td align="right">12000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190419PO0501" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td bgcolor="#EEEEFF">2019-08-01</td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="39000" _id="2164" cells="21"></td>
+	<td align="center">21</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO19042401"><a href="4-1.php?asahit1=PO19042401">PO19042401</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E13044"><u onclick="po_banngo('_id=2164&amp;cells=21')">E13044</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='21';eee=1;po_ru_quantity=39000;po_ruku('t2=E13044&amp;t3=39000&amp;t6=希革斯&amp;t7=S190419PO0501&amp;customer_id=2267&amp;_id=2164&amp;asahipo=PO19042401')">[入库]</a></td>
+	<td align="right">39000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190419PO0501" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td bgcolor="#EEEEFF">2019-08-01</td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="3000" _id="2020" cells="22"></td>
+	<td align="center">22</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO19042401"><a href="4-1.php?asahit1=PO19042401">PO19042401</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E13098"><u onclick="po_banngo('_id=2020&amp;cells=22')">E13098</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='22';eee=1;po_ru_quantity=3000;po_ruku('t2=E13098&amp;t3=3000&amp;t6=希革斯&amp;t7=S190419PO0501&amp;customer_id=2146&amp;_id=2020&amp;asahipo=PO19042401')">[入库]</a></td>
+	<td align="right">3000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190419PO0501" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td bgcolor="#EEEEFF">2019-08-01</td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="27000" _id="2019" cells="23"></td>
+	<td align="center">23</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO19042401"><a href="4-1.php?asahit1=PO19042401">PO19042401</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E14647"><u onclick="po_banngo('_id=2019&amp;cells=23')">E14647</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='23';eee=1;po_ru_quantity=27000;po_ruku('t2=E14647&amp;t3=27000&amp;t6=希革斯&amp;t7=S190419PO0501&amp;customer_id=2145&amp;_id=2019&amp;asahipo=PO19042401')">[入库]</a></td>
+	<td align="right">27000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190419PO0501" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td bgcolor="#EEEEFF">2019-08-01</td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="3000" _id="2023" cells="24"></td>
+	<td align="center">24</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO19042401"><a href="4-1.php?asahit1=PO19042401">PO19042401</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E14948"><u onclick="po_banngo('_id=2023&amp;cells=24')">E14948</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='24';eee=1;po_ru_quantity=3000;po_ruku('t2=E14948&amp;t3=3000&amp;t6=希革斯&amp;t7=S190419PO0501&amp;customer_id=2149&amp;_id=2023&amp;asahipo=PO19042401')">[入库]</a></td>
+	<td align="right">3000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190419PO0501" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td bgcolor="#EEEEFF">2019-08-01</td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="132000" _id="2018" cells="25"></td>
+	<td align="center">25</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO19042401"><a href="4-1.php?asahit1=PO19042401">PO19042401</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E17205"><u onclick="po_banngo('_id=2018&amp;cells=25')">E17205</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='25';eee=1;po_ru_quantity=132000;po_ruku('t2=E17205&amp;t3=132000&amp;t6=希革斯&amp;t7=S190419PO0501&amp;customer_id=2144&amp;_id=2018&amp;asahipo=PO19042401')">[入库]</a></td>
+	<td align="right">132000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190419PO0501" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td bgcolor="#EEEEFF">2019-08-01</td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="15000" _id="2043" cells="26"></td>
+	<td align="center">26</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO19042601"><a href="4-1.php?asahit1=PO19042601">PO19042601</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E13004"><u onclick="po_banngo('_id=2043&amp;cells=26')">E13004</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='26';eee=1;po_ru_quantity=15000;po_ruku('t2=E13004&amp;t3=15000&amp;t6=希革斯&amp;t7=S190426PO0044&amp;customer_id=2169&amp;_id=2043&amp;asahipo=PO19042601')">[入库]</a></td>
+	<td align="right">15000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190426PO0044" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190426PO0044">S190426PO0044</a></td>
+	<td bgcolor="#EEEEFF">2019-07-29</td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="18000" _id="2048" cells="27"></td>
+	<td align="center">27</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO19042602"><a href="4-1.php?asahit1=PO19042602">PO19042602</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E12619"><u onclick="po_banngo('_id=2048&amp;cells=27')">E12619</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='27';eee=1;po_ru_quantity=18000;po_ruku('t2=E12619&amp;t3=18000&amp;t6=希革斯&amp;t7=S190425PO0110&amp;customer_id=2174&amp;_id=2048&amp;asahipo=PO19042602')">[入库]</a></td>
+	<td align="right">18000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190425PO0110" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190425PO0110">S190425PO0110</a></td>
+	<td bgcolor="#EEEEFF">2019-07-29</td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="6000" _id="2046" cells="28"></td>
+	<td align="center">28</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO19042602"><a href="4-1.php?asahit1=PO19042602">PO19042602</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E14647"><u onclick="po_banngo('_id=2046&amp;cells=28')">E14647</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='28';eee=1;po_ru_quantity=6000;po_ruku('t2=E14647&amp;t3=6000&amp;t6=希革斯&amp;t7=S190425PO0110&amp;customer_id=2172&amp;_id=2046&amp;asahipo=PO19042602')">[入库]</a></td>
+	<td align="right">6000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190425PO0110" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190425PO0110">S190425PO0110</a></td>
+	<td bgcolor="#EEEEFF">2019-07-29</td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="3000" _id="2049" cells="29"></td>
+	<td align="center">29</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO19042602"><a href="4-1.php?asahit1=PO19042602">PO19042602</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E14948"><u onclick="po_banngo('_id=2049&amp;cells=29')">E14948</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='29';eee=1;po_ru_quantity=3000;po_ruku('t2=E14948&amp;t3=3000&amp;t6=希革斯&amp;t7=S190425PO0110&amp;customer_id=2175&amp;_id=2049&amp;asahipo=PO19042602')">[入库]</a></td>
+	<td align="right">3000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190425PO0110" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190425PO0110">S190425PO0110</a></td>
+	<td bgcolor="#EEEEFF">2019-07-29</td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="3000" _id="2301" cells="30"></td>
+	<td align="center">30</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO190428"><a href="4-1.php?asahit1=PO190428">PO190428</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E13004"><u onclick="po_banngo('_id=2301&amp;cells=30')">E13004</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='30';eee=1;po_ru_quantity=3000;po_ruku('t2=E13004&amp;t3=3000&amp;t6=希革斯&amp;t7=S190402PO0201&amp;customer_id=2397&amp;_id=2301&amp;asahipo=PO190428')">[入库]</a></td>
+	<td align="right">3000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190402PO0201" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190402PO0201">S190402PO0201</a></td>
+	<td bgcolor="#EEEEFF"><font color="red">2019-07-01</font></td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="60000" _id="2142" cells="31"></td>
+	<td align="center">31</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO19051703"><a href="4-1.php?asahit1=PO19051703">PO19051703</a></td>
+	<td class="pick_same" value="德晓">德晓</td>
+    <td class="pick_same" value="NHSB046A-D1250"><u onclick="po_banngo('_id=2142&amp;cells=31')">NHSB046A-D1250</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='31';eee=1;po_ru_quantity=60000;po_ruku('t2=NHSB046A-D1250&amp;t3=60000&amp;t6=德晓&amp;t7=&amp;customer_id=0&amp;_id=2142&amp;asahipo=PO19051703')">[入库]</a></td>
+	<td align="right">60000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2="></a></td>
+	<td bgcolor="#EEEEFF"></td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="9000" _id="1985" cells="32"></td>
+	<td align="center">32</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO19041202"><a href="4-1.php?asahit1=PO19041202">PO19041202</a></td>
+	<td class="pick_same" value="海能达">海能达</td>
+    <td class="pick_same" value="E13435"><u onclick="po_banngo('_id=1985&amp;cells=32')">E13435</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='32';eee=1;po_ru_quantity=9000;po_ruku('t2=E13435&amp;t3=9000&amp;t6=海能达&amp;t7=1061835408-SHL&amp;customer_id=2105&amp;_id=1985&amp;asahipo=PO19041202')">[入库]</a></td>
+	<td align="right">9000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="1061835408-SHL" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=1061835408-SHL">1061835408-SHL</a></td>
+	<td bgcolor="#EEEEFF"><font color="red">2019-07-01</font></td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="9000" _id="1986" cells="33"></td>
+	<td align="center">33</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO19041202"><a href="4-1.php?asahit1=PO19041202">PO19041202</a></td>
+	<td class="pick_same" value="海能达">海能达</td>
+    <td class="pick_same" value="E13435"><u onclick="po_banngo('_id=1986&amp;cells=33')">E13435</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='33';eee=1;po_ru_quantity=9000;po_ruku('t2=E13435&amp;t3=9000&amp;t6=海能达&amp;t7=1061835408-SHL&amp;customer_id=2106&amp;_id=1986&amp;asahipo=PO19041202')">[入库]</a></td>
+	<td align="right">9000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="1061835408-SHL" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=1061835408-SHL">1061835408-SHL</a></td>
+	<td bgcolor="#EEEEFF">2019-08-01</td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="9000" _id="2100" cells="34"></td>
+	<td align="center">34</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO190514"><a href="4-1.php?asahit1=PO190514">PO190514</a></td>
+	<td class="pick_same" value="海能达">海能达</td>
+    <td class="pick_same" value="E13435"><u onclick="po_banngo('_id=2100&amp;cells=34')">E13435</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='34';eee=1;po_ru_quantity=9000;po_ruku('t2=E13435&amp;t3=9000&amp;t6=海能达&amp;t7=1061838081-SHL&amp;customer_id=2218&amp;_id=2100&amp;asahipo=PO190514')">[入库]</a></td>
+	<td align="right">9000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="1061838081-SHL" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=1061838081-SHL">1061838081-SHL</a></td>
+	<td bgcolor="#EEEEFF">2019-07-30</td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="6000" _id="2328" cells="35"></td>
+	<td align="center">35</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO19051701"><a href="4-1.php?asahit1=PO19051701">PO19051701</a></td>
+	<td class="pick_same" value="海能达">海能达</td>
+    <td class="pick_same" value="E13098"><u onclick="po_banngo('_id=2328&amp;cells=35')">E13098</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='35';eee=1;po_ru_quantity=6000;po_ruku('t2=E13098&amp;t3=6000&amp;t6=海能达&amp;t7=1061835192-SHL&amp;customer_id=2101&amp;_id=2328&amp;asahipo=PO19051701')">[入库]</a></td>
+	<td align="right">6000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="1061835192-SHL" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=1061835192-SHL">1061835192-SHL</a></td>
+	<td bgcolor="#EEEEFF"><font color="red">2019-06-10</font></td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="12000" _id="2131" cells="36"></td>
+	<td align="center">36</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO19051701"><a href="4-1.php?asahit1=PO19051701">PO19051701</a></td>
+	<td class="pick_same" value="海能达">海能达</td>
+    <td class="pick_same" value="E13098"><u onclick="po_banngo('_id=2131&amp;cells=36')">E13098</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='36';eee=1;po_ru_quantity=12000;po_ruku('t2=E13098&amp;t3=12000&amp;t6=海能达&amp;t7=1061835192-SHL&amp;customer_id=2102&amp;_id=2131&amp;asahipo=PO19051701')">[入库]</a></td>
+	<td align="right">12000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="1061835192-SHL" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=1061835192-SHL">1061835192-SHL</a></td>
+	<td bgcolor="#EEEEFF"><font color="red">2019-06-17</font></td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="30000" _id="2084" cells="37"></td>
+	<td align="center">37</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO19050701"><a href="4-1.php?asahit1=PO19050701">PO19050701</a></td>
+	<td class="pick_same" value="高屋希革斯">高屋希革斯</td>
+    <td class="pick_same" value="E10720"><u onclick="po_banngo('_id=2084&amp;cells=37')">E10720</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='37';eee=1;po_ru_quantity=30000;po_ruku('t2=E10720&amp;t3=30000&amp;t6=高屋希革斯&amp;t7=E-J03772&amp;customer_id=2202&amp;_id=2084&amp;asahipo=PO19050701')">[入库]</a></td>
+	<td align="right">30000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="E-J03772" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=E-J03772">E-J03772</a></td>
+	<td bgcolor="#EEEEFF">2019-08-05</td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="6000" _id="2089" cells="38"></td>
+	<td align="center">38</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO19050701"><a href="4-1.php?asahit1=PO19050701">PO19050701</a></td>
+	<td class="pick_same" value="高屋希革斯">高屋希革斯</td>
+    <td class="pick_same" value="E13076"><u onclick="po_banngo('_id=2089&amp;cells=38')">E13076</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='38';eee=1;po_ru_quantity=6000;po_ruku('t2=E13076&amp;t3=6000&amp;t6=高屋希革斯&amp;t7=E-J03772&amp;customer_id=2207&amp;_id=2089&amp;asahipo=PO19050701')">[入库]</a></td>
+	<td align="right">6000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="E-J03772" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=E-J03772">E-J03772</a></td>
+	<td bgcolor="#EEEEFF">2019-08-05</td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="3000" _id="2083" cells="39"></td>
+	<td align="center">39</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO19050701"><a href="4-1.php?asahit1=PO19050701">PO19050701</a></td>
+	<td class="pick_same" value="高屋希革斯">高屋希革斯</td>
+    <td class="pick_same" value="E13544"><u onclick="po_banngo('_id=2083&amp;cells=39')">E13544</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='39';eee=1;po_ru_quantity=3000;po_ruku('t2=E13544&amp;t3=3000&amp;t6=高屋希革斯&amp;t7=E-J03772&amp;customer_id=2201&amp;_id=2083&amp;asahipo=PO19050701')">[入库]</a></td>
+	<td align="right">3000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="E-J03772" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=E-J03772">E-J03772</a></td>
+	<td bgcolor="#EEEEFF">2019-08-05</td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="3000" _id="2088" cells="40"></td>
+	<td align="center">40</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO19050701"><a href="4-1.php?asahit1=PO19050701">PO19050701</a></td>
+	<td class="pick_same" value="高屋希革斯">高屋希革斯</td>
+    <td class="pick_same" value="E13547"><u onclick="po_banngo('_id=2088&amp;cells=40')">E13547</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='40';eee=1;po_ru_quantity=3000;po_ruku('t2=E13547&amp;t3=3000&amp;t6=高屋希革斯&amp;t7=E-J03772&amp;customer_id=2206&amp;_id=2088&amp;asahipo=PO19050701')">[入库]</a></td>
+	<td align="right">3000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="E-J03772" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=E-J03772">E-J03772</a></td>
+	<td bgcolor="#EEEEFF">2019-08-05</td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="3000" _id="2087" cells="41"></td>
+	<td align="center">41</td>
+	<td align="center"><div class="classcp1" style="background-color:#999999">上海着</div></td>
+	<td class="pick_same" value="PO19050701"><a href="4-1.php?asahit1=PO19050701">PO19050701</a></td>
+	<td class="pick_same" value="高屋希革斯">高屋希革斯</td>
+    <td class="pick_same" value="E14929"><u onclick="po_banngo('_id=2087&amp;cells=41')">E14929</u><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='41';eee=1;po_ru_quantity=3000;po_ruku('t2=E14929&amp;t3=3000&amp;t6=高屋希革斯&amp;t7=E-J03772&amp;customer_id=2205&amp;_id=2087&amp;asahipo=PO19050701')">[入库]</a></td>
+	<td align="right">3000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="E-J03772" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=E-J03772">E-J03772</a></td>
+	<td bgcolor="#EEEEFF">2019-08-05</td>
+	<td><b>2019-07-11</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="3000" _id="2338" cells="42"></td>
+	<td align="center">42</td>
+	<td align="center"><div class="classcp1" style="background-color:#FF7792">日本出荷</div></td>
+	<td class="pick_same" value="PO190626"><a href="4-1.php?asahit1=PO190626">PO190626</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E10203-02"><u onclick="po_banngo('_id=2338&amp;cells=42')">E10203-02</u></td>
+	<td align="right">3000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190626PO0018" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190626PO0018">S190626PO0018</a></td>
+	<td bgcolor="#EEEEFF"><font color="red">2019-07-12</font></td>
+	<td><b>2019-07-16</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="12000" _id="2137" cells="43"></td>
+	<td align="center">43</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19051702"><a href="4-1.php?asahit1=PO19051702">PO19051702</a></td>
+	<td class="pick_same" value="华德">华德</td>
+    <td class="pick_same" value="NHSB046A-JK9151-PTG"><u onclick="po_banngo('_id=2137&amp;cells=43')">NHSB046A-JK9151-PTG</u></td>
+	<td align="right">12000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2="></a></td>
+	<td bgcolor="#EEEEFF"></td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="15000" _id="2138" cells="44"></td>
+	<td align="center">44</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19051702"><a href="4-1.php?asahit1=PO19051702">PO19051702</a></td>
+	<td class="pick_same" value="华德">华德</td>
+    <td class="pick_same" value="NHSB046A-JK9153-PTG"><u onclick="po_banngo('_id=2138&amp;cells=44')">NHSB046A-JK9153-PTG</u></td>
+	<td align="right">15000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2="></a></td>
+	<td bgcolor="#EEEEFF"></td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="9000" _id="2140" cells="45"></td>
+	<td align="center">45</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19051702"><a href="4-1.php?asahit1=PO19051702">PO19051702</a></td>
+	<td class="pick_same" value="华德">华德</td>
+    <td class="pick_same" value="NHSB046A-JK9289-CS"><u onclick="po_banngo('_id=2140&amp;cells=45')">NHSB046A-JK9289-CS</u></td>
+	<td align="right">9000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2="></a></td>
+	<td bgcolor="#EEEEFF"></td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="3000" _id="2313" cells="46"></td>
+	<td align="center">46</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19051702"><a href="4-1.php?asahit1=PO19051702">PO19051702</a></td>
+	<td class="pick_same" value="华德">华德</td>
+    <td class="pick_same" value="NHSB046A-JK9153-PTG"><u onclick="po_banngo('_id=2313&amp;cells=46')">NHSB046A-JK9153-PTG</u></td>
+	<td align="right">3000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="20190618026" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=20190618026">20190618026</a></td>
+	<td bgcolor="#EEEEFF">2019-08-12</td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="3000" _id="2404" cells="47"></td>
+	<td align="center">47</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19051702"><a href="4-1.php?asahit1=PO19051702">PO19051702</a></td>
+	<td class="pick_same" value="华德">华德</td>
+    <td class="pick_same" value="NHSB046A-JK9153-PTG"><u onclick="po_banngo('_id=2404&amp;cells=47')">NHSB046A-JK9153-PTG</u></td>
+	<td align="right">3000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="20190710010" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=20190710010">20190710010</a></td>
+	<td bgcolor="#EEEEFF">2019-09-01</td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="9000" _id="2156" cells="48"></td>
+	<td align="center">48</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO190523"><a href="4-1.php?asahit1=PO190523">PO190523</a></td>
+	<td class="pick_same" value="华德">华德</td>
+    <td class="pick_same" value="NHSB046A-JK9150-VSA/IDLE STOP"><u onclick="po_banngo('_id=2156&amp;cells=48')">NHSB046A-JK9150-VSA/IDLE STOP</u></td>
+	<td align="right">9000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="20190520035" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=20190520035">20190520035</a></td>
+	<td bgcolor="#EEEEFF"><font color="red">2019-07-15</font></td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="18000" _id="2286" cells="49"></td>
+	<td align="center">49</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO190523"><a href="4-1.php?asahit1=PO190523">PO190523</a></td>
+	<td class="pick_same" value="华德">华德</td>
+    <td class="pick_same" value="NHSB046A-JK9150-VSA/IDLE STOP"><u onclick="po_banngo('_id=2286&amp;cells=49')">NHSB046A-JK9150-VSA/IDLE STOP</u></td>
+	<td align="right">18000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="20190611041" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=20190611041">20190611041</a></td>
+	<td bgcolor="#EEEEFF"><font color="red">2019-07-15</font></td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="21000" _id="2287" cells="50"></td>
+	<td align="center">50</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO190523"><a href="4-1.php?asahit1=PO190523">PO190523</a></td>
+	<td class="pick_same" value="华德">华德</td>
+    <td class="pick_same" value="NHSB046A-JK9150-VSA/IDLE STOP"><u onclick="po_banngo('_id=2287&amp;cells=50')">NHSB046A-JK9150-VSA/IDLE STOP</u></td>
+	<td align="right">21000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="20190611041" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=20190611041">20190611041</a></td>
+	<td bgcolor="#EEEEFF">2019-08-01</td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="3000" _id="2154" cells="51"></td>
+	<td align="center">51</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO190523"><a href="4-1.php?asahit1=PO190523">PO190523</a></td>
+	<td class="pick_same" value="华德">华德</td>
+    <td class="pick_same" value="NHSB046A-JK9150-VSA/IDLE STOP"><u onclick="po_banngo('_id=2154&amp;cells=51')">NHSB046A-JK9150-VSA/IDLE STOP</u></td>
+	<td align="right">3000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="20190710010" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=20190710010">20190710010</a></td>
+	<td bgcolor="#EEEEFF">2019-08-26</td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="18000" _id="2292" cells="52"></td>
+	<td align="center">52</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO190529"><a href="4-1.php?asahit1=PO190529">PO190529</a></td>
+	<td class="pick_same" value="华德">华德</td>
+    <td class="pick_same" value="NHSB064-JK9154-H/L ADJ"><u onclick="po_banngo('_id=2292&amp;cells=52')">NHSB064-JK9154-H/L ADJ</u></td>
+	<td align="right">18000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="20190611041" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=20190611041">20190611041</a></td>
+	<td bgcolor="#EEEEFF">2019-08-01</td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="10000" _id="2169" cells="53"></td>
+	<td align="center">53</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO190529"><a href="4-1.php?asahit1=PO190529">PO190529</a></td>
+	<td class="pick_same" value="华德">华德</td>
+    <td class="pick_same" value="NHSB064-JK9154-H/L ADJ"><u onclick="po_banngo('_id=2169&amp;cells=53')">NHSB064-JK9154-H/L ADJ</u></td>
+	<td align="right">10000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="20190618026" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=20190618026">20190618026</a></td>
+	<td bgcolor="#EEEEFF">2019-08-05</td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="2000" _id="2314" cells="54"></td>
+	<td align="center">54</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO190529"><a href="4-1.php?asahit1=PO190529">PO190529</a></td>
+	<td class="pick_same" value="华德">华德</td>
+    <td class="pick_same" value="NHSB064-JK9154-H/L ADJ"><u onclick="po_banngo('_id=2314&amp;cells=54')">NHSB064-JK9154-H/L ADJ</u></td>
+	<td align="right">2000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="20190618026" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=20190618026">20190618026</a></td>
+	<td bgcolor="#EEEEFF">2019-08-12</td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="12000" _id="2217" cells="55"></td>
+	<td align="center">55</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19053003"><a href="4-1.php?asahit1=PO19053003">PO19053003</a></td>
+	<td class="pick_same" value="华德">华德</td>
+    <td class="pick_same" value="NHSB046A-JK9289-CS"><u onclick="po_banngo('_id=2217&amp;cells=55')">NHSB046A-JK9289-CS</u></td>
+	<td align="right">12000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2="></a></td>
+	<td bgcolor="#EEEEFF"></td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="9000" _id="2024" cells="56"></td>
+	<td align="center">56</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19042401"><a href="4-1.php?asahit1=PO19042401">PO19042401</a></td>
+	<td class="pick_same" value="双日">双日</td>
+    <td class="pick_same" value="E13044"><u onclick="po_banngo('_id=2024&amp;cells=56')">E13044</u></td>
+	<td align="right">9000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="YY190528-3" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=YY190528-3">YY190528-3</a></td>
+	<td bgcolor="#EEEEFF">2019-08-01</td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="39000" _id="2191" cells="57"></td>
+	<td align="center">57</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19053001"><a href="4-1.php?asahit1=PO19053001">PO19053001</a></td>
+	<td class="pick_same" value="双日">双日</td>
+    <td class="pick_same" value="E12928"><u onclick="po_banngo('_id=2191&amp;cells=57')">E12928</u></td>
+	<td align="right">39000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="YY190528-3" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=YY190528-3">YY190528-3</a></td>
+	<td bgcolor="#EEEEFF">2019-08-01</td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="9000" _id="2195" cells="58"></td>
+	<td align="center">58</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19053001"><a href="4-1.php?asahit1=PO19053001">PO19053001</a></td>
+	<td class="pick_same" value="双日">双日</td>
+    <td class="pick_same" value="E13004"><u onclick="po_banngo('_id=2195&amp;cells=58')">E13004</u></td>
+	<td align="right">9000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="YY190528-3" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=YY190528-3">YY190528-3</a></td>
+	<td bgcolor="#EEEEFF">2019-08-01</td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="24000" _id="2198" cells="59"></td>
+	<td align="center">59</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19053001"><a href="4-1.php?asahit1=PO19053001">PO19053001</a></td>
+	<td class="pick_same" value="双日">双日</td>
+    <td class="pick_same" value="E13098"><u onclick="po_banngo('_id=2198&amp;cells=59')">E13098</u></td>
+	<td align="right">24000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="YY190528-3" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=YY190528-3">YY190528-3</a></td>
+	<td bgcolor="#EEEEFF">2019-08-01</td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="12000" _id="2199" cells="60"></td>
+	<td align="center">60</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19053001"><a href="4-1.php?asahit1=PO19053001">PO19053001</a></td>
+	<td class="pick_same" value="双日">双日</td>
+    <td class="pick_same" value="E18752"><u onclick="po_banngo('_id=2199&amp;cells=60')">E18752</u></td>
+	<td align="right">12000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="YY190528-3" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=YY190528-3">YY190528-3</a></td>
+	<td bgcolor="#EEEEFF">2019-08-01</td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="54000" _id="2306" cells="61"></td>
+	<td align="center">61</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO190619"><a href="4-1.php?asahit1=PO190619">PO190619</a></td>
+	<td class="pick_same" value="天津三美">天津三美</td>
+    <td class="pick_same" value="19-CW94-A"><u onclick="po_banngo('_id=2306&amp;cells=61')">19-CW94-A</u></td>
+	<td align="right">54000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="167B46320" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=167B46320">167B46320</a></td>
+	<td bgcolor="#EEEEFF">2019-07-28</td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="6000" _id="2229" cells="62"></td>
+	<td align="center">62</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO190531"><a href="4-1.php?asahit1=PO190531">PO190531</a></td>
+	<td class="pick_same" value="宜兰">宜兰</td>
+    <td class="pick_same" value="NESB146A-D1429(3000k)"><u onclick="po_banngo('_id=2229&amp;cells=62')">NESB146A-D1429(3000k)</u></td>
+	<td align="right">6000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="20190531021" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=20190531021">20190531021</a></td>
+	<td bgcolor="#EEEEFF">2019-07-31</td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="4000" _id="2258" cells="63"></td>
+	<td align="center">63</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO190605"><a href="4-1.php?asahit1=PO190605">PO190605</a></td>
+	<td class="pick_same" value="宜兰">宜兰</td>
+    <td class="pick_same" value="NSSB064+CAP(1284)"><u onclick="po_banngo('_id=2258&amp;cells=63')">NSSB064+CAP(1284)</u></td>
+	<td align="right">4000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="20190605022" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=20190605022">20190605022</a></td>
+	<td bgcolor="#EEEEFF">2019-08-03</td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="33000" _id="2171" cells="64"></td>
+	<td align="center">64</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19041203"><a href="4-1.php?asahit1=PO19041203">PO19041203</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E12619"><u onclick="po_banngo('_id=2171&amp;cells=64')">E12619</u></td>
+	<td align="right">33000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190412PO0256" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190412PO0256">S190412PO0256</a></td>
+	<td bgcolor="#EEEEFF"><font color="red">2019-07-01</font></td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="6000" _id="2042" cells="65"></td>
+	<td align="center">65</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19042601"><a href="4-1.php?asahit1=PO19042601">PO19042601</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E14253"><u onclick="po_banngo('_id=2042&amp;cells=65')">E14253</u></td>
+	<td align="right">6000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190426PO0044" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190426PO0044">S190426PO0044</a></td>
+	<td bgcolor="#EEEEFF">2019-07-29</td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="3000" _id="2047" cells="66"></td>
+	<td align="center">66</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19042602"><a href="4-1.php?asahit1=PO19042602">PO19042602</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E12395"><u onclick="po_banngo('_id=2047&amp;cells=66')">E12395</u></td>
+	<td align="right">3000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190425PO0110" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190425PO0110">S190425PO0110</a></td>
+	<td bgcolor="#EEEEFF">2019-07-29</td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="3000" _id="2078" cells="67"></td>
+	<td align="center">67</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO190507"><a href="4-1.php?asahit1=PO190507">PO190507</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E12395"><u onclick="po_banngo('_id=2078&amp;cells=67')">E12395</u></td>
+	<td align="right">3000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190419PO0501" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td bgcolor="#EEEEFF">2019-08-01</td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="6000" _id="2232" cells="68"></td>
+	<td align="center">68</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO190601"><a href="4-1.php?asahit1=PO190601">PO190601</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E12395"><u onclick="po_banngo('_id=2232&amp;cells=68')">E12395</u></td>
+	<td align="right">6000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190531PO0145" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190531PO0145">S190531PO0145</a></td>
+	<td bgcolor="#EEEEFF">2019-08-02</td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="3000" _id="2234" cells="69"></td>
+	<td align="center">69</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO190601"><a href="4-1.php?asahit1=PO190601">PO190601</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E14948"><u onclick="po_banngo('_id=2234&amp;cells=69')">E14948</u></td>
+	<td align="right">3000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190531PO0145" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190531PO0145">S190531PO0145</a></td>
+	<td bgcolor="#EEEEFF">2019-08-02</td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="24000" _id="1943" cells="70"></td>
+	<td align="center">70</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO190403"><a href="4-1.php?asahit1=PO190403">PO190403</a></td>
+	<td class="pick_same" value="高屋希革斯">高屋希革斯</td>
+    <td class="pick_same" value="E14253"><u onclick="po_banngo('_id=1943&amp;cells=70')">E14253</u></td>
+	<td align="right">24000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="E-J03742" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=E-J03742">E-J03742</a></td>
+	<td bgcolor="#EEEEFF"><font color="red">2019-07-02</font></td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="33000" _id="2281" cells="71"></td>
+	<td align="center">71</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19041203"><a href="4-1.php?asahit1=PO19041203">PO19041203</a></td>
+	<td class="pick_same" value="高屋希革斯">高屋希革斯</td>
+    <td class="pick_same" value="E12619"><u onclick="po_banngo('_id=2281&amp;cells=71')">E12619</u></td>
+	<td align="right">33000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="E-J03742" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=E-J03742">E-J03742</a></td>
+	<td bgcolor="#EEEEFF"><font color="red">2019-07-02</font></td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="3000" _id="2041" cells="72"></td>
+	<td align="center">72</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO190426"><a href="4-1.php?asahit1=PO190426">PO190426</a></td>
+	<td class="pick_same" value="高屋希革斯">高屋希革斯</td>
+    <td class="pick_same" value="E14253"><u onclick="po_banngo('_id=2041&amp;cells=72')">E14253</u></td>
+	<td align="right">3000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="E-J03742" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=E-J03742">E-J03742</a></td>
+	<td bgcolor="#EEEEFF"><font color="red">2019-07-02</font></td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="9000" _id="2054" cells="73"></td>
+	<td align="center">73</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO190428"><a href="4-1.php?asahit1=PO190428">PO190428</a></td>
+	<td class="pick_same" value="高屋希革斯">高屋希革斯</td>
+    <td class="pick_same" value="E14253"><u onclick="po_banngo('_id=2054&amp;cells=73')">E14253</u></td>
+	<td align="right">9000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="E-J03719" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=E-J03719">E-J03719</a></td>
+	<td bgcolor="#EEEEFF"><font color="red">2019-06-04</font></td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="33000" _id="2082" cells="74"></td>
+	<td align="center">74</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19050701"><a href="4-1.php?asahit1=PO19050701">PO19050701</a></td>
+	<td class="pick_same" value="高屋希革斯">高屋希革斯</td>
+    <td class="pick_same" value="E13356"><u onclick="po_banngo('_id=2082&amp;cells=74')">E13356</u></td>
+	<td align="right">33000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="E-J03772" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=E-J03772">E-J03772</a></td>
+	<td bgcolor="#EEEEFF">2019-08-05</td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="33000" _id="2086" cells="75"></td>
+	<td align="center">75</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19050701"><a href="4-1.php?asahit1=PO19050701">PO19050701</a></td>
+	<td class="pick_same" value="高屋希革斯">高屋希革斯</td>
+    <td class="pick_same" value="E14253"><u onclick="po_banngo('_id=2086&amp;cells=75')">E14253</u></td>
+	<td align="right">33000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="E-J03772" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=E-J03772">E-J03772</a></td>
+	<td bgcolor="#EEEEFF">2019-08-05</td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="3000" _id="2170" cells="76"></td>
+	<td align="center">76</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19052901"><a href="4-1.php?asahit1=PO19052901">PO19052901</a></td>
+	<td class="pick_same" value="高屋希革斯">高屋希革斯</td>
+    <td class="pick_same" value="E11143"><u onclick="po_banngo('_id=2170&amp;cells=76')">E11143</u></td>
+	<td align="right">3000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="E-J03784" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=E-J03784">E-J03784</a></td>
+	<td bgcolor="#EEEEFF">2019-07-29</td>
+	<td><b>2019-07-18</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="78000" _id="2341" cells="77"></td>
+	<td align="center">77</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19042401"><a href="4-1.php?asahit1=PO19042401">PO19042401</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E13435"><u onclick="po_banngo('_id=2341&amp;cells=77')">E13435</u></td>
+	<td align="right">78000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190419PO0501" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td bgcolor="#EEEEFF">2019-08-01</td>
+	<td><b>2019-07-19</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="42000" _id="2026" cells="78"></td>
+	<td align="center">78</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19042401"><a href="4-1.php?asahit1=PO19042401">PO19042401</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E13435"><u onclick="po_banngo('_id=2026&amp;cells=78')">E13435</u></td>
+	<td align="right">42000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190419PO0501" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td bgcolor="#EEEEFF">2019-08-01</td>
+	<td><b>2019-07-19</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="9000" _id="2139" cells="79"></td>
+	<td align="center">79</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19051702"><a href="4-1.php?asahit1=PO19051702">PO19051702</a></td>
+	<td class="pick_same" value="华德">华德</td>
+    <td class="pick_same" value="NHSB046A-JK9289-SAFETY"><u onclick="po_banngo('_id=2139&amp;cells=79')">NHSB046A-JK9289-SAFETY</u></td>
+	<td align="right">9000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2="></a></td>
+	<td bgcolor="#EEEEFF"></td>
+	<td><b>2019-07-25</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="3000" _id="2311" cells="80"></td>
+	<td align="center">80</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19053003"><a href="4-1.php?asahit1=PO19053003">PO19053003</a></td>
+	<td class="pick_same" value="华德">华德</td>
+    <td class="pick_same" value="NHSB046A-JK9152-LDW"><u onclick="po_banngo('_id=2311&amp;cells=80')">NHSB046A-JK9152-LDW</u></td>
+	<td align="right">3000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2="></a></td>
+	<td bgcolor="#EEEEFF"></td>
+	<td><b>2019-07-25</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="6000" _id="2218" cells="81"></td>
+	<td align="center">81</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19053003"><a href="4-1.php?asahit1=PO19053003">PO19053003</a></td>
+	<td class="pick_same" value="华德">华德</td>
+    <td class="pick_same" value="NHSB046A-JK9289-SAFETY"><u onclick="po_banngo('_id=2218&amp;cells=81')">NHSB046A-JK9289-SAFETY</u></td>
+	<td align="right">6000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2="></a></td>
+	<td bgcolor="#EEEEFF"></td>
+	<td><b>2019-07-25</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="72000" _id="2224" cells="82"></td>
+	<td align="center">82</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19053003"><a href="4-1.php?asahit1=PO19053003">PO19053003</a></td>
+	<td class="pick_same" value="华德">华德</td>
+    <td class="pick_same" value="NHSB064-JK9154-H/L ADJ"><u onclick="po_banngo('_id=2224&amp;cells=82')">NHSB064-JK9154-H/L ADJ</u></td>
+	<td align="right">72000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2="></a></td>
+	<td bgcolor="#EEEEFF"></td>
+	<td><b>2019-07-25</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="3000" _id="2295" cells="83"></td>
+	<td align="center">83</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19053003"><a href="4-1.php?asahit1=PO19053003">PO19053003</a></td>
+	<td class="pick_same" value="华德">华德</td>
+    <td class="pick_same" value="NHSB046A-JK9284-ROOF"><u onclick="po_banngo('_id=2295&amp;cells=83')">NHSB046A-JK9284-ROOF</u></td>
+	<td align="right">3000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="20190611061" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=20190611061">20190611061</a></td>
+	<td bgcolor="#EEEEFF"><font color="red">2019-07-22</font></td>
+	<td><b>2019-07-25</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="3000" _id="2215" cells="84"></td>
+	<td align="center">84</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19053003"><a href="4-1.php?asahit1=PO19053003">PO19053003</a></td>
+	<td class="pick_same" value="华德">华德</td>
+    <td class="pick_same" value="NHSB046A-JK9284-ROOF"><u onclick="po_banngo('_id=2215&amp;cells=84')">NHSB046A-JK9284-ROOF</u></td>
+	<td align="right">3000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="20190611061" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=20190611061">20190611061</a></td>
+	<td bgcolor="#EEEEFF">2019-08-01</td>
+	<td><b>2019-07-25</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="6000" _id="2294" cells="85"></td>
+	<td align="center">85</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19053003"><a href="4-1.php?asahit1=PO19053003">PO19053003</a></td>
+	<td class="pick_same" value="华德">华德</td>
+    <td class="pick_same" value="NHSB046A-JK9289-SAFETY"><u onclick="po_banngo('_id=2294&amp;cells=85')">NHSB046A-JK9289-SAFETY</u></td>
+	<td align="right">6000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="20190611041" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=20190611041">20190611041</a></td>
+	<td bgcolor="#EEEEFF">2019-08-01</td>
+	<td><b>2019-07-25</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="3000" _id="2221" cells="86"></td>
+	<td align="center">86</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19053003"><a href="4-1.php?asahit1=PO19053003">PO19053003</a></td>
+	<td class="pick_same" value="华德">华德</td>
+    <td class="pick_same" value="NHSB046A-JK9152-LDW"><u onclick="po_banngo('_id=2221&amp;cells=86')">NHSB046A-JK9152-LDW</u></td>
+	<td align="right">3000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="20190618026" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=20190618026">20190618026</a></td>
+	<td bgcolor="#EEEEFF">2019-08-12</td>
+	<td><b>2019-07-25</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="8000" _id="2315" cells="87"></td>
+	<td align="center">87</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19053003"><a href="4-1.php?asahit1=PO19053003">PO19053003</a></td>
+	<td class="pick_same" value="华德">华德</td>
+    <td class="pick_same" value="NHSB064-JK9154-H/L ADJ"><u onclick="po_banngo('_id=2315&amp;cells=87')">NHSB064-JK9154-H/L ADJ</u></td>
+	<td align="right">8000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="20190618026" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=20190618026">20190618026</a></td>
+	<td bgcolor="#EEEEFF">2019-08-12</td>
+	<td><b>2019-07-25</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="30000" _id="2197" cells="88"></td>
+	<td align="center">88</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19053001"><a href="4-1.php?asahit1=PO19053001">PO19053001</a></td>
+	<td class="pick_same" value="双日">双日</td>
+    <td class="pick_same" value="E13044"><u onclick="po_banngo('_id=2197&amp;cells=88')">E13044</u></td>
+	<td align="right">30000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="YY190528-3" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=YY190528-3">YY190528-3</a></td>
+	<td bgcolor="#EEEEFF">2019-08-01</td>
+	<td><b>2019-07-25</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="27000" _id="2194" cells="89"></td>
+	<td align="center">89</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19053001"><a href="4-1.php?asahit1=PO19053001">PO19053001</a></td>
+	<td class="pick_same" value="双日">双日</td>
+    <td class="pick_same" value="E14929"><u onclick="po_banngo('_id=2194&amp;cells=89')">E14929</u></td>
+	<td align="right">27000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="YY190528-3" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=YY190528-3">YY190528-3</a></td>
+	<td bgcolor="#EEEEFF">2019-08-01</td>
+	<td><b>2019-07-25</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="42000" _id="1991" cells="90"></td>
+	<td align="center">90</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19041203"><a href="4-1.php?asahit1=PO19041203">PO19041203</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E12619"><u onclick="po_banngo('_id=1991&amp;cells=90')">E12619</u></td>
+	<td align="right">42000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190412PO0256" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190412PO0256">S190412PO0256</a></td>
+	<td bgcolor="#EEEEFF"><font color="red">2019-07-01</font></td>
+	<td><b>2019-07-25</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="30000" _id="2174" cells="91"></td>
+	<td align="center">91</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19041203"><a href="4-1.php?asahit1=PO19041203">PO19041203</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E13435"><u onclick="po_banngo('_id=2174&amp;cells=91')">E13435</u></td>
+	<td align="right">30000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190412PO0256" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190412PO0256">S190412PO0256</a></td>
+	<td bgcolor="#EEEEFF"><font color="red">2019-07-01</font></td>
+	<td><b>2019-07-25</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="90000" _id="2022" cells="92"></td>
+	<td align="center">92</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19042401"><a href="4-1.php?asahit1=PO19042401">PO19042401</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E12619"><u onclick="po_banngo('_id=2022&amp;cells=92')">E12619</u></td>
+	<td align="right">90000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190419PO0501" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td bgcolor="#EEEEFF">2019-08-01</td>
+	<td><b>2019-07-25</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="6000" _id="2050" cells="93"></td>
+	<td align="center">93</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19042602"><a href="4-1.php?asahit1=PO19042602">PO19042602</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E13044"><u onclick="po_banngo('_id=2050&amp;cells=93')">E13044</u></td>
+	<td align="right">6000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190425PO0110" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190425PO0110">S190425PO0110</a></td>
+	<td bgcolor="#EEEEFF">2019-07-29</td>
+	<td><b>2019-07-25</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="36000" _id="2051" cells="94"></td>
+	<td align="center">94</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19042602"><a href="4-1.php?asahit1=PO19042602">PO19042602</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E13435"><u onclick="po_banngo('_id=2051&amp;cells=94')">E13435</u></td>
+	<td align="right">36000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190425PO0110" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190425PO0110">S190425PO0110</a></td>
+	<td bgcolor="#EEEEFF">2019-07-29</td>
+	<td><b>2019-07-25</b></td>
+	<td><marquee scrolldelay="200"></marquee></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="9000" _id="2235" cells="95"></td>
+	<td align="center">95</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19052801"><a href="4-1.php?asahit1=PO19052801">PO19052801</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E13044"><u onclick="po_banngo('_id=2235&amp;cells=95')">E13044</u></td>
+	<td align="right">9000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190531PO0145" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190531PO0145">S190531PO0145</a></td>
+	<td bgcolor="#EEEEFF">2019-08-02</td>
+	<td><b>2019-07-25</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="39000" _id="2236" cells="96"></td>
+	<td align="center">96</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19052801"><a href="4-1.php?asahit1=PO19052801">PO19052801</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E13435"><u onclick="po_banngo('_id=2236&amp;cells=96')">E13435</u></td>
+	<td align="right">39000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190531PO0145" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190531PO0145">S190531PO0145</a></td>
+	<td bgcolor="#EEEEFF">2019-08-02</td>
+	<td><b>2019-07-25</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="6000" _id="2165" cells="97"></td>
+	<td align="center">97</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19052801"><a href="4-1.php?asahit1=PO19052801">PO19052801</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E13044"><u onclick="po_banngo('_id=2165&amp;cells=97')">E13044</u></td>
+	<td align="right">6000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190619PO0209" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190619PO0209">S190619PO0209</a></td>
+	<td bgcolor="#EEEEFF">2019-09-02</td>
+	<td><b>2019-07-25</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="45000" _id="2248" cells="98"></td>
+	<td align="center">98</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19052801"><a href="4-1.php?asahit1=PO19052801">PO19052801</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E13044"><u onclick="po_banngo('_id=2248&amp;cells=98')">E13044</u></td>
+	<td align="right">45000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190531PO0144" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190531PO0144">S190531PO0144</a></td>
+	<td bgcolor="#EEEEFF">2019-09-02</td>
+	<td><b>2019-07-25</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="12000" _id="2333" cells="99"></td>
+	<td align="center">99</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19053001"><a href="4-1.php?asahit1=PO19053001">PO19053001</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E13044"><u onclick="po_banngo('_id=2333&amp;cells=99')">E13044</u></td>
+	<td align="right">12000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190412PO0256" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190412PO0256">S190412PO0256</a></td>
+	<td bgcolor="#EEEEFF"><font color="red">2019-07-01</font></td>
+	<td><b>2019-07-25</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	<td align="right"><input type="checkbox" name="checkboxsum" onclick="checkboxsum()" value="9000" _id="2334" cells="100"></td>
+	<td align="center">100</td>
+	<td align="center"><div class="classcp1" style="background-color:#00DDB1">生産中</div></td>
+	<td class="pick_same" value="PO19053001"><a href="4-1.php?asahit1=PO19053001">PO19053001</a></td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+    <td class="pick_same" value="E13044"><u onclick="po_banngo('_id=2334&amp;cells=100')">E13044</u></td>
+	<td align="right">9000</td>
+	<td align="left">pcs</td>
+	<td class="pick_same" value="S190419PO0501" align="" bgcolor="#EEEEFF"><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td bgcolor="#EEEEFF">2019-08-01</td>
+	<td><b>2019-07-25</b></td>
+	<td><marquee scrolldelay="200"></marquee>[拆]</td>
 		
 </tr>
 </tbody></table>

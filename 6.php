@@ -162,9 +162,9 @@ table{border-collapse: collapse;}
 	<td>品番</td>
 	<td align="right">数量</td>
 	<td></td>
+	<td align="">(客)注文PO</td>
 	<td>(客)希望納期</td>
 	<td>日本出荷日</td>
-	<td align="center">(客)注文PO</td>
 	<td>備考</td>
 </tr>
 
@@ -198,9 +198,9 @@ table{border-collapse: collapse;}
     <td class="pick_same" value="<?php echo $row[1]; ?>"><u onclick="po_banngo('_id=<?php echo $row[9] ?>&cells=<?php echo $jjj+1 ?>')"><?php echo $row[1]; ?></u><?php if($row[3]!="0000-00-00" &&!$row[8] && $row[3]<date('Y-m-d')){ ?><a href="###" onclick="document.getElementById('ajasdiv').innerHTML='';document.getElementById('cellss').value='<?php echo $jjj+1; ?>';eee=1;po_ru_quantity=<?php echo $row[2]; ?>;po_ruku('t2=<?php echo $row[1] ?>&t3=<?php echo $row[2] ?>&t6=<?php echo $row[5] ?>&t7=<?php echo $row[6] ?>&customer_id=<?php echo $row[10] ?>&_id=<?php echo $row[9] ?>&asahipo=<?php echo $row[0] ?>')">[入库]</a><?php } ?></td>
 	<td align="right"><?php echo $row[2]; ?></td>
 	<td align="left">pcs</td>
-	<td><?php if($row[4]==0){ echo ""; }elseif($row[4]<=$row[3]){ echo "<font color='red'>".$row[4]."</font>"; }else{ echo $row[4]; } ?></td>
+	<td class="pick_same" value="<?php echo $row[6]; ?>" align="" bgcolor="#EEF8FF"><a href="4.php?ddt2=<?php echo $row[6]; ?>" ><?php echo $row[6]; ?></a></td>
+	<td bgcolor="#EEF8FF"><?php if($row[4]==0){ echo ""; }elseif($row[4]<=$row[3]){ echo "<font color='red'>".$row[4]."</font>"; }else{ echo $row[4]; } ?></td>
 	<td><b><?php if($row[3]==0){ echo ""; }else{ echo $row[3]; } ?></b></td>
-	<td class="pick_same" value="<?php echo $row[6]; ?>" align="center"><a href="4.php?ddt2=<?php echo $row[6]; ?>" ><?php echo $row[6]; ?></a></td>
 	<td><marquee scrolldelay="200"><?php echo $row[7] ?></marquee><? if($row[11]){echo "[拆]";} ?></td>
 	<?php $jjj=$jjj+1 ?>
 	
@@ -288,7 +288,7 @@ function po_pi_lotnum(str){
 
 <div class="message">
 
-<button type="button" onclick="setTimeout(()=>{exceldownload('Asahi');},500);">导出Excel</button>
+<button type="button" onclick="this.innerHTML='正在导出...';setTimeout(()=>{exceldownload('Asahi');},500);setTimeout(()=>{this.innerHTML='导出EXCEL';},9500);">导出Excel</button>
 <? echo file_get_contents("templates/table_select.html"); ?>
 
 
