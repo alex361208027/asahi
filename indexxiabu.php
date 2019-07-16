@@ -238,7 +238,7 @@ $(document).ready(function(){
 		function xiaoxikuantop(str,time,xxx){
 			$(document).ready(function(){
 				$.post("ajax/xiaoxikuantop.php",{xtime:str,time:time},function(data,status){
-					$("#noteplus").append($("#xxx"+xxx).html());
+					$("#noteplus").prepend($("#xxx"+xxx).html());
 					$("#xxx"+xxx).remove();
 				});
 			});
@@ -305,7 +305,7 @@ $(document).ready(function(){
 							<table>
 							<tr align="left">
 							<td valign="top">
-							<div class='touxiang'>朝日PO</div>
+							<div class='touxiang'>朝日</div>
 							</td>
 							<td>
 							<font color="#DDDDDD" size="1"><?php echo $weichuli[1]; ?></font><br>
@@ -323,7 +323,7 @@ $(document).ready(function(){
 							<table>
 							<tr align="left">
 							<td valign="top">
-							<div class='touxiang'>客様PO</div>
+							<div class='touxiang'>顧客</div>
 							</td>
 							<td>
 							<font color="#DDDDDD" size="1"><?php echo $weichuli[1]; ?></font><br>
@@ -340,7 +340,7 @@ $(document).ready(function(){
 							<table>
 							<tr align="left">
 							<td valign="top">
-							<div class='touxiang'>LED在库数</div>
+							<div class='touxiang'>在库</div>
 							</td>
 							<td>
 							<font color="#DDDDDD" size="1"><?php echo $weichuli[1]; ?></font><br>

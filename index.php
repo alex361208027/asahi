@@ -163,7 +163,7 @@ transition-delay: 0.8s;
 			</ul>
 		</div></a>
 		<div class="caidanxuanxiao" name="caidanxuanxiao" onclick="window.open('namecard.php','xiabu');window.open('indexother.php#findme_namecard','shangbu');caidancolor(5)" title="名片"><img src="img/namecard.png" class="daohangimg"/></div>
-		<div class="caidanxuanxiao" name="caidanxuanxiao" onclick="window.open('project.php','xiabu');window.open('indexother.php#findme_project','shangbu');caidancolor(6)" title="日志"><img src="img/project.png" class="daohangimg"/></div>
+		<!--<div class="caidanxuanxiao" name="caidanxuanxiao" onclick="window.open('project.php','xiabu');window.open('indexother.php#findme_project','shangbu');caidancolor(6)" title="日志"><img src="img/project.png" class="daohangimg"/></div>-->
 		
 		<a href="indexother.php#hometop" target="shangbu"><div class="caidanxuanxiao" title="统计"><img src="img/total.png" class="daohangimg"/>
 		<ul>

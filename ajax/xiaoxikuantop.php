@@ -13,7 +13,7 @@ mysqli_set_charset ($conn,utf8);
 $xtime=$_POST['xtime'];$time=$_POST['time'];
 
 if($xtime){
-	mysqli_query($conn,"UPDATE `t_note` SET time='$time' WHERE time='$xtime' AND remark=1 limit 1");
+	mysqli_query($conn,"UPDATE `t_note` SET time='$todaytime' WHERE time='$xtime' AND remark=1 limit 1");
 }
 
 $conn->close();
