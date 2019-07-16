@@ -300,8 +300,8 @@ table{border-collapse: collapse;}
 	<td align="right"><?php echo $row[3] ?></td>
 	<td>pcs</td>
 	<td><?php if($row[4]<=$row[6]){ echo "<font color='red'>".$row[4]."</font>"; }else{ echo $row[4]; } ?></td>
-	<td class="pick_same" value="<? echo $row[5] ?>" bgcolor="#FFEEEE"><a href="4-1.php?asahit22=<?php echo $row[5] ?>"><?php echo $row[5] ?></a></td>
-	<td bgcolor="#FFEEEE"><?php echo $row[6] ?></td>
+	<td class="pick_same" value="<? echo $row[5] ?>" style="color:#0000AA"><a href="4-1.php?asahit22=<?php echo $row[5] ?>"><?php echo $row[5] ?></a></td>
+	<td style="color:#0000AA"><?php echo $row[6] ?></td>
 	<td><b><?php echo $row[7] ?></b></td>
 	<td class="2_td_tuichi"><div class='starmark' val="<? echo $row[12]; ?>" val2="<? echo $row[14]; ?>"><? echo "<img src='img/star".$row[14].".png'/>" ?></div><? echo $tuichi; ?></td>
 	<td><?php if($row[10]=='0000-00-00'){}else{echo $row[10];} ?></td>

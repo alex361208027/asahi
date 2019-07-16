@@ -25,7 +25,7 @@ $(document).ready(function(){
 	
 	$(".pick_same").hover(function(){
 	  //var get=$(this).attr("value");
-	  $("tr [value='"+$(this).attr("value")+"']").css({"background":"#AAAAFF"});
+	  $("tr [value='"+$(this).attr("value")+"']").css({"background":"#DDDDDD"});
 	  
 	},function(){
 	  //var get=$(this).attr("value");
