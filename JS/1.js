@@ -47,6 +47,12 @@ $(document).ready(function(){
 		$(".sum_show").css({"top":sum_show_top+"px"});
 	});
 
+	if(delay_time>1){
+	$("#myDiv table tr").each(function(){
+		$(this).delay(delay_time).fadeIn();
+		delay_time=delay_time+80;
+	});
+	}
 	
 	
 	

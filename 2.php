@@ -196,6 +196,7 @@ if($nopox){
 ?>
 <body style="font-size:12px;min-width:800px">
 <style>
+
 .starmark{
 	cursor:pointer;display:inline-block;
 }
@@ -313,7 +314,15 @@ table{border-collapse: collapse;}
 </tr>
 <?php } ?>
 </table></div>
+<?
+if($jjj<16){
+	echo "<style>#myDiv table tr{display:none;}</style>";
+	echo "<script>var delay_time=2;</script>";	
+}
+?>
+
 <script>
+
 function mycheckbox(str){
 
 	var button="";
@@ -351,7 +360,6 @@ $(document).ready(function(){
 		});
 	});
  
-	
 	
 
 
