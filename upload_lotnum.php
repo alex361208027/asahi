@@ -32,7 +32,7 @@ if($checkbox){
    (STEP 2) 上传表格：
 	<input type="file" name="file" id="file">
 <a href="upload/moban/lotnum.xlsx">模板下载</a><br>	<br>	
-(STEP 3) 以下入库项确认后即可<input type="submit" name="submit" value="提交">
+(STEP 3) 以下入库项确认后即可<input type="submit" name="submit" value="提交" onclick="this.style.display='none'">
 	<table>
 <?
 foreach($checkbox as $_id){

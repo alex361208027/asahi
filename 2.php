@@ -38,6 +38,9 @@ $t3 = $_POST['t3'];
 
 $t5 = $_POST['t5'];
 $t4 = $_POST['t4'];
+if(!$t4){
+	$t4 = $_GET['t4'];
+}
 $t7 = $_POST['t7'];$t77 = $_POST['t77'];
 $selectdate=$_POST['selectdate'];
 
@@ -131,8 +134,8 @@ if($t5){
 	$tt5="";
 }
 if($t4){
-	if(substr($t4,0,2)=="id"){
-	$t4=substr($t4,2);
+	if(stripos($t4,'id')!== false){
+	$t4=str_replace("id","",$t4);
 	$tt4="AND _id = '$t4' ";
 	$nopox=$nopox."<div class='nopox'>id".$t4."</div>";
 	}else{
@@ -301,7 +304,7 @@ table{border-collapse: collapse;}
 	<td>pcs</td>
 	<td><?php if($row[4]<=$row[6]){ echo "<font color='red'>".$row[4]."</font>"; }else{ echo $row[4]; } ?></td>
 	<td class="pick_same" value="<? echo $row[5] ?>" style="color:#0000AA"><a href="4-1.php?asahit22=<?php echo $row[5] ?>"><?php echo $row[5] ?></a></td>
-	<td style="color:#0000AA"><?php echo $row[6] ?></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id<? echo $row[13] ?>&t9=1')" title="点击查看该朝日品番"><?php echo $row[6] ?></td>
 	<td><b><?php echo $row[7] ?></b></td>
 	<td class="2_td_tuichi"><div class='starmark' val="<? echo $row[12]; ?>" val2="<? echo $row[14]; ?>"><? echo "<img src='img/star".$row[14].".png'/>" ?></div><? echo $tuichi; ?></td>
 	<td><?php if($row[10]=='0000-00-00'){}else{echo $row[10];} ?></td>

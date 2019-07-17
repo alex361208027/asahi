@@ -26,9 +26,17 @@ $t1 = $_POST['t1'];
 $t3 = $_POST['t3'];
 $t5 = $_POST['t5'];$t5 = $_POST['t55'];
 $t4 = $_POST['t4'];
+if(!$t4){
+	$t4 = $_GET['t4'];
+}
+
 $t7 = $_POST['t7'];$t77 = $_POST['t77'];
 $t8 = $_POST['t8'];$t88 = $_POST['t88'];
 $t9 = $_POST['t9'];
+if(!$t9){
+	$t9 = $_GET['t9'];
+}
+
 if($_GET['t11']){
 	$t11 = $_GET['t11'];
 }else{
@@ -85,8 +93,8 @@ if($t3){
 }
 
 if($t4){
-	if(substr($t4,0,2)=="id"){
-	$t4=substr($t4,2);
+	if(stripos($t4,'id')!== false){
+	$t4=str_replace("id","",$t4);
 	$tt4="AND _id = '$t4' ";
 	$nopox=$nopox."<div class='nopox'>id".$t4."</div>";
 	}else{
@@ -199,7 +207,7 @@ table{border-collapse: collapse;}
 	<td align="right"><?php echo $row[2]; ?></td>
 	<td align="left">pcs</td>
 	<td class="pick_same" value="<?php echo $row[6]; ?>" align="" style="color:#0000AA"><a href="4.php?ddt2=<?php echo $row[6]; ?>" ><?php echo $row[6]; ?></a></td>
-	<td style="color:#0000AA"><?php if($row[4]==0){ echo ""; }elseif($row[4]<=$row[3]){ echo "<font color='red'>".$row[4]."</font>"; }else{ echo $row[4]; } ?></td>
+	<td style="color:#0000AA" onclick="window.open('2.php?t4=id<? echo $row[10] ?>&t9=1')" title="点击查看该客户品番"><?php if($row[4]==0){ echo ""; }elseif($row[4]<=$row[3]){ echo "<font color='red'>".$row[4]."</font>"; }else{ echo $row[4]; } ?></td>
 	<td><b><?php if($row[3]==0){ echo ""; }else{ echo $row[3]; } ?></b></td>
 	<td><marquee scrolldelay="200"><?php echo $row[7] ?></marquee><? if($row[11]){echo "[拆]";} ?></td>
 	<?php $jjj=$jjj+1 ?>
@@ -217,6 +225,8 @@ function mycheckbox(str){
 		button="hebing.php?";
 	}else if(str==4){
 		button="upload_lotnum.php?";
+	}else if(str==5){
+		button="upload_leadtime.php?";
 	}
 	var ss=document.getElementsByName('checkboxsum');
 	for(i=0;i<ss.length;i++){
@@ -290,8 +300,6 @@ function po_pi_lotnum(str){
 
 <button type="button" onclick="this.innerHTML='正在导出...';setTimeout(()=>{exceldownload('Asahi');},500);setTimeout(()=>{this.innerHTML='导出EXCEL';},9500);">导出Excel</button>
 <? echo file_get_contents("templates/table_select.html"); ?>
-
-
 </div>
 
 <div class="sum_show">
@@ -307,6 +315,7 @@ function po_pi_lotnum(str){
 <li><hr></li>
 <li><input type="date" id="JPdate" value=""></li>
 <li onclick="po_pi_JPdate()" class="close_hide"><img src="img/riqi.png" height="14px"> &nbsp; 更改日本发货日</li>
+<li onclick="mycheckbox(5)" class="close_hide"><img src="img/chuku.png" height="14px"> &nbsp; 纳期录入</li>
 <li onclick="mycheckbox(4)" class="close_hide"><img src="img/chuku.png" height="14px"> &nbsp; lotnum入库</li>
 <li> &nbsp; </li>
  </ul>
