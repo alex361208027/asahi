@@ -133,6 +133,8 @@ $rowsnum=$result->num_rows;
 
 </style>
 <script>
+
+
 $(function(){
 	$("[name='zhankai']").click(function(){
 		var _this=$(this);

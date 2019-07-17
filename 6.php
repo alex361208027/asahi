@@ -160,7 +160,7 @@ table{border-collapse: collapse;}
 <div id="myDiv" style="padding:0px;margin:0 5px;-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;overflow:hidden;"> 
-<table id="tableExcel" cellpadding="1" cellspacing="0" width="100%" style="font-size:9px;">
+<table id="tableExcel" cellpadding="1" cellspacing="0" width="100%" style="font-size:12px;">
 <tr style="background-color:#B55D4C;color:white;height:33px;">
 	<td></td>
 	<td></td>
@@ -215,8 +215,14 @@ table{border-collapse: collapse;}
 </tr>
 <?php } ?>
 </table></div>
-
+<?
+if($jjj<16){
+	echo "<style>#myDiv table tr{display:none;}</style>";
+	echo "<script>var delay_time=2;</script>";	
+}
+?>
 <script>
+
 function mycheckbox(str){
 	var button="";
 	if(str==1){
