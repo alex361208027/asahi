@@ -159,8 +159,12 @@ if($t7||$t77){
 		$date82="hopedate <= '$t77'";
 		}
 	}
+	if($selectdate=='invoice'){
+	$tt7="AND ($date71 $date72)";	
+	}else{
 	$tt7="AND (($date71 $date72) OR ($selectdate = '0000-00-00' AND $date81 $date82 ))";
-	$nopox=$nopox."<div class='nopox'>".$t7."~".$t77."</div>";
+	}
+	$nopox=$nopox."<div class='nopox'>".$selectdate.":".$t7."~".$t77."</div>";
 }else{
 	$tt7="";
 }
@@ -182,7 +186,8 @@ $nowpage=0;
 $nowpagestart=$nowpage+1;
 $nowpageend=$nowpage+100;
 
-$sql="SELECT *,IF(SHdate='0000-00-00',hopedate,SHdate) as thedate FROM `t_teacher` WHERE $tt3 $tt1 $tt5 $tt4 $tt7 $tt9 $tt11 $tt6 $tt12 order by thedate,campany,ordernum,banngo asc limit $nowpage,100";
+
+$sql="SELECT *,IF($selectdate='0000-00-00',hopedate,$selectdate) as thedate FROM `t_teacher` WHERE $tt3 $tt1 $tt5 $tt4 $tt7 $tt9 $tt11 $tt6 $tt12 order by thedate,campany,ordernum,banngo asc limit $nowpage,100";
 
 $result=mysqli_query($conn,$sql);
 

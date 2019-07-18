@@ -17,13 +17,14 @@ $username = "root";
 $password = "root";
 $dbname = "asahi";
 
+$inouttime=$_GET['inouttime'];
 $datestart = $_GET['datestart'];
 $dateend = $_GET['dateend'];
 	if($datestart&&$dateend){
 		if($in){
-		$select_date="intime >= '$datestart' AND intime <= '$dateend' AND";	
+		$select_date="$inouttime >= '$datestart' AND $inouttime <= '$dateend' AND";	
 		}else{
-		$select_date="outtime >= '$datestart' AND outtime <= '$dateend' AND outtime is not null AND";
+		$select_date="$inouttime >= '$datestart' AND $inouttime <= '$dateend' AND outtime is not null AND";
 		}
 	}else{
 		$select_date="";
@@ -131,7 +132,20 @@ $result=mysqli_query($conn,$sql);
  <form onsubmit="return false;" style="display:inline-block;">
 <input type="submit" value=" 【検索】 " onclick="saerch_lotnum()"><a id="href" href=""></a>
  <input type="text" id="search_lotnum" value="<?php echo $search_lotnum ?>" placeholder="检索lotnum"/><input type="text" id="search_banngo" value="<?php echo $search_banngo ?>" placeholder="检索番号"/><input type="text" id="search_campany" list="kehulist" value="<?php echo $search_campany ?>" placeholder="检索客户"/>
-&nbsp; <?php if(!$in){ ?>出货<?php } ?>日期<input type="date" id="datestart" value="<?php echo $datestart ?>" onchange="if(document.getElementById('dateend').value==''){document.getElementById('dateend').value=this.value;}"/>~<input type="date" id="dateend" value="<?php echo $dateend ?>"/>
+&nbsp; <select id="inouttime" class="inputlist">
+<? 
+if($in){ 
+echo '<option value="outtime">出库时间</option>';
+}else{
+	if($inouttime=='intime'){
+		echo '<option value="intime">入库时间</option><option value="outtime">出库时间</option>';
+	}else{
+		echo '<option value="outtime">出库时间</option><option value="intime">入库时间</option>';
+	}
+}
+ ?>
+
+</select>:<input type="date" id="datestart" value="<?php echo $datestart ?>" onchange="if(document.getElementById('dateend').value==''){document.getElementById('dateend').value=this.value;}"/>~<input type="date" id="dateend" value="<?php echo $dateend ?>"/>
 </form>
 
 </div>
@@ -154,7 +168,7 @@ foreach($campany_list as $campany_list){
 </datalist>
 <script>
 function saerch_lotnum(str){
-	document.getElementById('href').href="in.php?search_lotnum="+document.getElementById('search_lotnum').value+"&search_banngo="+document.getElementById('search_banngo').value+"&search_campany="+document.getElementById('search_campany').value+"&datestart="+document.getElementById('datestart').value+"&dateend="+document.getElementById('dateend').value+"&in="+document.getElementById('inin').value;
+	document.getElementById('href').href="in.php?search_lotnum="+document.getElementById('search_lotnum').value+"&search_banngo="+document.getElementById('search_banngo').value+"&search_campany="+document.getElementById('search_campany').value+"&datestart="+document.getElementById('datestart').value+"&dateend="+document.getElementById('dateend').value+"&inouttime="+document.getElementById('inouttime').value+"&in="+document.getElementById('inin').value;
 	if(str==2){
 	document.getElementById('href').href+="&nowpage="+document.getElementById('nowpage').value;
 	}

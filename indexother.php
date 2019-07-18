@@ -165,10 +165,10 @@ d1=document.getElementById('newdate').value;
 <label><input type="checkbox" name="t12" value="checked" style="display:none"/><div class="checkedboxword">在库のみ</div></label>
 
 <br>
-<select name="selectdate" class="inputlist">
-<option value="SHdate">上海发货日期</option>
-<option value="JPdate">日本发货日期</option>
-<option value="invoice">开票日期</option>
+<select name="selectdate" class="checkedboxword" style="height:;padding:3px 5px" onchange="if(this.value=='invoice'){document.getElementsByName('t9')[0].checked=true;}">
+<option value="SHdate">上海发货日(順番)</option>
+<option value="JPdate">日本发货日(順番)</option>
+<option value="invoice">开票日期(順番)</option>
 </select>:
 <input type="date" name="t7" value="" onchange="changedate(0)"/>~
 <input type="date" name="t77" value="" onchange="changedate(0)"/>
