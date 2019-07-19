@@ -195,14 +195,18 @@ foreach($campany_list as $campany_list){
 $i++;
 } ?>
 </table>
+
+<div style="background:black;color:white;display:inline-block;padding:10px;margin-top:20px;">
 注意：当“进价”为空时，则表示删除该品番。<br>
-批量修改价格：<select id="select">
+批量修改价格：
+<input list="kehulist" class="inputlist" id="price_campany" style="width:100px" value="" placeholder="客户名" />
+<select id="select">
 <option value="1">进价</option>
 <option value="2">卖价</option>
 </select><input type="text" id="price1" value="" placeholder="所有此价格">=><input type="text" id="price2" value="" placeholder="更新为新价格"><button onclick="pricechange()">确认更改</button>
 <br><br>
 <button id="exceldownload">下载所有价格的EXCEL版本</button>
-<br><br>
+</div>
 <script>
 $(document).ready(function(){
 	$("#exceldownload").click(function(){
@@ -255,7 +259,8 @@ function po_price(id){
 
 function pricechange(){
 			str="";
-			str="select="+document.getElementById('select').value+"&price1="+document.getElementById('price1').value+"&price2="+document.getElementById('price2').value;
+			if(document.getElementById('price_campany').value){
+			str="select="+document.getElementById('select').value+"&price1="+document.getElementById('price1').value+"&price2="+document.getElementById('price2').value+"&campany="+document.getElementById('price_campany').value;
 			//alert(str);
 			var xmlhttp;
 			if (str.length==0)
@@ -279,6 +284,9 @@ function pricechange(){
 			  }
 			xmlhttp.open("GET","ajax/pricechange.php?"+str,true);
 			xmlhttp.send();
+			}else{
+				alert("客户名未填写");
+			}
 }
 
 function description(id,num){

@@ -9,7 +9,7 @@ $todaytime=date("Y-m-d");
 $select=$_GET['select'];
 $price1=$_GET['price1'];
 $price2=$_GET['price2'];
-
+$campany=$_GET['campany'];
 
 $price1_1="[".$todaytime."]".$price1;
 
@@ -23,7 +23,7 @@ if($select==1){
 	$selectprice="sellprice";
 	$selectoldprice="oldsellprice";
 }
-mysqli_query($conn,"UPDATE `t_poprice` SET $selectoldprice='$price1_1', $selectprice='$price2' WHERE $selectprice='$price1'");
+mysqli_query($conn,"UPDATE `t_poprice` SET $selectoldprice='$price1_1', $selectprice='$price2' WHERE $selectprice='$price1' AND campany='$campany'");
 
 
 $conn->close();
