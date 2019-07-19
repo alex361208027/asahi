@@ -213,12 +213,14 @@ button:hover{
 .sum_show{
 	position:fixed;background-color:#EEEEEE;
 	top:50%;right:50px;
+	width:auto;
+	height:;
 	display:none;
 	padding:20px;
 	-webkit-box-shadow: 0px 14px 18px #BBBBBB;
   -moz-box-shadow: 0px 14px 18px #BBBBBB;
   box-shadow: 0px 14px 18px #BBBBBB;
-
+	-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
 }
 
 

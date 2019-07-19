@@ -216,7 +216,7 @@ table{border-collapse: collapse;}
 <?php } ?>
 </table></div>
 <?
-if($jjj<16){
+if($jjj<18){
 	echo "<style>#myDiv table tr{display:none;}</style>";
 	echo "<script>var delay_time=2;</script>";	
 }

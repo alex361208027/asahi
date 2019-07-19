@@ -108,7 +108,8 @@ foreach($campany_list as $campany_lists){
 <div class="indexother">
 <table cellpadding="0" cellspacing="0" width="100%" height="100%"><tr><td>
 <form action="2.php" method="post" target="xiabu" id="kehujiansuo">
-<input type="text" name="t1" id="plus_t1" value="" placeholder="取引先"/><div style="margin-left:-40px;display:inline-block;font-size:12px;z-index:99;padding:2px;background-color:white;cursor:pointer;" onclick="qingkong()">清空</div>
+<input type="text" name="t1" id="plus_t1" value="" placeholder="取引先"/>
+<div style="margin-left:-40px;display:inline-block;z-index:99;background-color:none;cursor:pointer;height:0;width:0;pointer;border:6px;border-style:solid;border-color:transparent black transparent transparent;" onclick="plus_campany(0)"></div><div style="padding:5px;margin-left:0px;display:inline-block;font-size:12px;z-index:99;background-color:black;color:white;cursor:pointer;" onclick="plus_campany(0)">清空</div>
 <input list="kehulist" class="inputlist" style="width:22px" value="" oninput="plus_campany(this)"/>
 <input type="text" name="t6" value="" placeholder="取引PO"/>
 <input type="text" name="t3" value="" placeholder="品番(多个品番用;隔开)"/>
@@ -123,17 +124,18 @@ $(document).ready(function(){
 	
 });
 
-function qingkong(){
-	document.getElementById("plus_t1").value="";
-}
 
 function plus_campany(str){
-	if(document.getElementById("plus_t1").value){
-	document.getElementById("plus_t1").value+=";"+str.value;
-	str.value="";
-	}else{
-	document.getElementById("plus_t1").value=str.value;
-	str.value="";
+	if(str==0){
+		document.getElementById("plus_t1").value='';
+	}else{	
+		if(document.getElementById("plus_t1").value){
+		document.getElementById("plus_t1").value+=";"+str.value;
+		str.value="";
+		}else{
+		document.getElementById("plus_t1").value=str.value;
+		str.value="";
+		}
 	}
 }
 

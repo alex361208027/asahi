@@ -99,10 +99,8 @@ function checkboxsum(){
 	if(chencednumber){
 		$(document).ready(function(){
 			$(".sum_show").fadeIn().css("display","inline-block");
-			var sum_show_width_padding=40;
-			var sum_show_width=$(".sum_show").width();
-			var sum_show_width2=(sum_show_width+sum_show_width_padding)/2;
-			$(".sum_show").css({"height":sum_show_width,"-webkit-border-radius":sum_show_width2,"-moz-border-radius":sum_show_width2,"border-radius":sum_show_width2});
+			$(".sum_show").css({"height":$(".sum_show").width()});
+			//alert($(".sum_show").width() + "//" + $(".sum_show").height());
 		});
 	}else{
 		$(document).ready(function(){
