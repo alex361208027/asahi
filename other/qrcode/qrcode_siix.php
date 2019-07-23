@@ -1,4 +1,4 @@
-<title>QRcode</title>
+﻿<title>QRcode</title>
 <style>
 .qrcode_main{
 	padding:3px;
@@ -68,8 +68,8 @@ yy{
 	}
 ////////////////////////////////////////function	
 
-$qrcode_api=file_get_contents("../qrcode_api.html");
-
+$qrcode_api=file_get_contents("qrcode_api.html");
+//echo $qrcode_api."<br>";
 $servername = "localhost";
 $username = "root";
 $password = "root";
@@ -103,11 +103,11 @@ if($data==2){
 				}
 				
 			}else{
-				echo "没有找到对应在库";
+				echo "其中一个没有找到对应在库error1";
 			}
 			
 		}else{
-			echo "没有找到对应在库";
+			echo "其中一个没有找到对应在库error2";
 		}
 	}
 	
