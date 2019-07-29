@@ -43,6 +43,9 @@ if(!$t4){
 }
 $t7 = $_POST['t7'];$t77 = $_POST['t77'];
 $selectdate=$_POST['selectdate'];
+if(!$selectdate){
+	$selectdate="SHdate";
+}
 
 if($_GET['t9']){
 $t9 = $_GET['t9'];
