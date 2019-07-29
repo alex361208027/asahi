@@ -1,6 +1,6 @@
  
 <table id="tableExcel" cellpadding="1" cellspacing="0" width="100%" style="font-size:12px;">
-<tbody><tr style="background-color: rgb(143, 119, 181); color: white; height: 33px; display: table-row;">
+<tbody><tr style="background-color:#8F77B5;color:white;height:33px;">
 	
 	<td width="5px"></td>
 	
@@ -17,146 +17,344 @@
 	<td>发票</td>
 </tr>
 
-<tr bgcolor="#F7F7F7" class="tabletr" style="display: table-row;">
+<tr bgcolor="#F7F7F7" class="tabletr">
 	
 	
 	<td align="center">1</td>
 	
-	<td class="pick_same" value="希革斯" style="">希革斯</td>
+	<td class="pick_same" value="希革斯">希革斯</td>
 	<td class="pick_same" value="S190412PO0256"><a href="4.php?ddt2=S190412PO0256">S190412PO0256</a></td>
-	<td style="max-width: 120px;" class="pick_same" value="E12619"><u onclick="c_banngo('_id=2270&amp;cells=1')">E12619</u></td>
-	<td align="right">33000</td>
+	<td style="max-width:120px;" class="pick_same" value="E12619"><u onclick="c_banngo('_id=2111&amp;cells=1')">E12619</u></td>
+	<td align="right">42000</td>
 	<td>pcs</td>
 	<td><font color="red">2019-07-01</font></td>
-	<td class="pick_same" value="PO19041203" style="color: rgb(0, 0, 170);"><a href="4-1.php?asahit22=PO19041203">PO19041203</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id2171&amp;t9=1')" title="点击查看该朝日品番">2019-07-18</td>
-	<td><b>2019-07-24</b></td>
+	<td class="pick_same" value="PO19041203" style="color:#0000AA"><a href="4-1.php?asahit22=PO19041203">PO19041203</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id1991&amp;t9=1')" title="点击查看该朝日品番">2019-07-25</td>
+	<td><b>2019-07-30</b></td>
 	
 	<td></td>
 		
 </tr>
-<tr bgcolor="#F7F7F7" class="tabletr" style="display: table-row;">
+<tr bgcolor="#F7F7F7" class="tabletr">
 	
 	
 	<td align="center">2</td>
 	
-	<td class="pick_same" value="希革斯" style="">希革斯</td>
-	<td class="pick_same" value="S190419PO0501" style=""><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E13435"><u onclick="c_banngo('_id=2440&amp;cells=2')">E13435</u></td>
-	<td align="right">78000</td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+	<td class="pick_same" value="S190412PO0256"><a href="4.php?ddt2=S190412PO0256">S190412PO0256</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13044"><u onclick="c_banngo('_id=2394&amp;cells=2')">E13044</u></td>
+	<td align="right">12000</td>
 	<td>pcs</td>
-	<td>2019-08-01</td>
-	<td class="pick_same" value="PO19042401" style="color:#0000AA"><a href="4-1.php?asahit22=PO19042401">PO19042401</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id2341&amp;t9=1')" title="点击查看该朝日品番">2019-07-19</td>
-	<td><b>2019-07-24</b></td>
+	<td><font color="red">2019-07-01</font></td>
+	<td class="pick_same" value="PO19053001" style="color:#0000AA"><a href="4-1.php?asahit22=PO19053001">PO19053001</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id2333&amp;t9=1')" title="点击查看该朝日品番">2019-07-25</td>
+	<td><b>2019-07-30</b></td>
 	
 	<td></td>
 		
 </tr>
-<tr bgcolor="#F7F7F7" class="tabletr" style="display: table-row;">
+<tr bgcolor="#F7F7F7" class="tabletr">
 	
 	
 	<td align="center">3</td>
 	
-	<td class="pick_same" value="希革斯" style="">希革斯</td>
-	<td class="pick_same" value="S190626PO0018"><a href="4.php?ddt2=S190626PO0018">S190626PO0018</a></td>
-	<td style="max-width: 120px;" class="pick_same" value="E10203-02"><u onclick="c_banngo('_id=2437&amp;cells=3')">E10203-02</u></td>
-	<td align="right">3000</td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+	<td class="pick_same" value="S190412PO0256"><a href="4.php?ddt2=S190412PO0256">S190412PO0256</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13435"><u onclick="c_banngo('_id=2273&amp;cells=3')">E13435</u></td>
+	<td align="right">30000</td>
 	<td>pcs</td>
-	<td><font color="red">2019-07-12</font></td>
-	<td class="pick_same" value="PO190626" style="color:#0000AA"><a href="4-1.php?asahit22=PO190626">PO190626</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id2338&amp;t9=1')" title="点击查看该朝日品番">2019-07-18</td>
-	<td><b>2019-07-24</b></td>
+	<td><font color="red">2019-07-01</font></td>
+	<td class="pick_same" value="PO19041203" style="color:#0000AA"><a href="4-1.php?asahit22=PO19041203">PO19041203</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id2174&amp;t9=1')" title="点击查看该朝日品番">2019-07-25</td>
+	<td><b>2019-07-30</b></td>
 	
 	<td></td>
 		
 </tr>
-<tr bgcolor="#FFFFDD" class="tabletr" style="display: table-row;">
+<tr bgcolor="#F7F7F7" class="tabletr">
 	
 	
 	<td align="center">4</td>
 	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03719" style=""><a href="4.php?ddt2=E-J03719">E-J03719</a></td>
-	<td style="max-width: 120px;" class="pick_same" value="E14253"><u onclick="c_banngo('_id=2239&amp;cells=4')">E14253</u></td>
-	<td align="right">9000</td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+	<td class="pick_same" value="S190419PO0501" style=""><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E12619"><u onclick="c_banngo('_id=2148&amp;cells=4')">E12619</u></td>
+	<td align="right">90000</td>
 	<td>pcs</td>
-	<td><font color="red">2019-06-04</font></td>
-	<td class="pick_same" value="PO190428" style="color: rgb(0, 0, 170);"><a href="4-1.php?asahit22=PO190428">PO190428</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id2054&amp;t9=1')" title="点击查看该朝日品番">2019-07-18</td>
-	<td><b>2019-07-24</b></td>
+	<td>2019-08-01</td>
+	<td class="pick_same" value="PO19042401" style="color:#0000AA"><a href="4-1.php?asahit22=PO19042401">PO19042401</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id2022&amp;t9=1')" title="点击查看该朝日品番">2019-07-25</td>
+	<td><b>2019-07-30</b></td>
 	
 	<td></td>
 		
 </tr>
-<tr bgcolor="#FFFFDD" class="tabletr" style="display: table-row;">
+<tr bgcolor="#F7F7F7" class="tabletr">
 	
 	
 	<td align="center">5</td>
 	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03742" style=""><a href="4.php?ddt2=E-J03742">E-J03742</a></td>
-	<td style="max-width: 120px;" class="pick_same" value="E12619"><u onclick="c_banngo('_id=2374&amp;cells=5')">E12619</u></td>
-	<td align="right">33000</td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+	<td class="pick_same" value="S190419PO0501" style=""><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13044"><u onclick="c_banngo('_id=2150&amp;cells=5')">E13044</u></td>
+	<td align="right">9000</td>
 	<td>pcs</td>
-	<td><font color="red">2019-07-02</font></td>
-	<td class="pick_same" value="PO19041203" style="color: rgb(0, 0, 170);"><a href="4-1.php?asahit22=PO19041203">PO19041203</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id2281&amp;t9=1')" title="点击查看该朝日品番">2019-07-18</td>
-	<td><b>2019-07-24</b></td>
+	<td>2019-08-01</td>
+	<td class="pick_same" value="PO19053001" style="color:#0000AA"><a href="4-1.php?asahit22=PO19053001">PO19053001</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id2334&amp;t9=1')" title="点击查看该朝日品番">2019-07-25</td>
+	<td><b>2019-07-30</b></td>
 	
 	<td></td>
 		
 </tr>
-<tr bgcolor="#FFFFDD" class="tabletr" style="display: table-row;">
+<tr bgcolor="#F7F7F7">
 	
 	
 	<td align="center">6</td>
 	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03742" style=""><a href="4.php?ddt2=E-J03742">E-J03742</a></td>
-	<td style="max-width: 120px;" class="pick_same" value="E14253"><u onclick="c_banngo('_id=2395&amp;cells=6')">E14253</u></td>
-	<td align="right">3000</td>
+	<td class="pick_same" value="希革斯"></td>
+	<td class="pick_same" value="S190419PO0501" style=""><a href="4.php?ddt2=S190419PO0501"></a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13044"><u onclick="c_banngo('_id=2267&amp;cells=6')">E13044</u></td>
+	<td align="right">39000</td>
 	<td>pcs</td>
-	<td><font color="red">2019-07-02</font></td>
-	<td class="pick_same" value="PO190426" style="color: rgb(0, 0, 170);"><a href="4-1.php?asahit22=PO190426">PO190426</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id2041&amp;t9=1')" title="点击查看该朝日品番">2019-07-18</td>
-	<td><b>2019-07-24</b></td>
+	<td>2019-08-01</td>
+	<td class="pick_same" value="PO19042401" style="color:#0000AA"><a href="4-1.php?asahit22=PO19042401">PO19042401</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id2164&amp;t9=1')" title="点击查看该朝日品番">2019-07-11</td>
+	<td><b>2019-07-30</b></td>
 	
 	<td></td>
 		
 </tr>
-<tr bgcolor="#FFFFDD" style="display: table-row;">
+<tr bgcolor="#F7F7F7" class="tabletr">
 	
 	
 	<td align="center">7</td>
 	
-	<td class="pick_same" value="高屋希革斯" style=""></td>
-	<td class="pick_same" value="E-J03742" style=""><a href="4.php?ddt2=E-J03742"></a></td>
-	<td style="max-width: 120px;" class="pick_same" value="E14253"><u onclick="c_banngo('_id=2047&amp;cells=7')">E14253</u></td>
-	<td align="right">24000</td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+	<td class="pick_same" value="S190419PO0501" style=""><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13098"><u onclick="c_banngo('_id=2146&amp;cells=7')">E13098</u></td>
+	<td align="right">3000</td>
 	<td>pcs</td>
-	<td><font color="red">2019-07-02</font></td>
-	<td class="pick_same" value="PO190403" style="color: rgb(0, 0, 170);"><a href="4-1.php?asahit22=PO190403">PO190403</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id1943&amp;t9=1')" title="点击查看该朝日品番">2019-07-18</td>
-	<td><b>2019-07-24</b></td>
+	<td>2019-08-01</td>
+	<td class="pick_same" value="PO19042401" style="color:#0000AA"><a href="4-1.php?asahit22=PO19042401">PO19042401</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id2020&amp;t9=1')" title="点击查看该朝日品番">2019-07-11</td>
+	<td><b>2019-07-30</b></td>
 	
 	<td></td>
 		
 </tr>
-<tr bgcolor="#FFFFDD" class="tabletr" style="display: table-row;">
+<tr bgcolor="#F7F7F7" class="tabletr">
 	
 	
 	<td align="center">8</td>
 	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03784" style=""><a href="4.php?ddt2=E-J03784">E-J03784</a></td>
-	<td style="max-width: 120px;" class="pick_same" value="E11143"><u onclick="c_banngo('_id=2269&amp;cells=8')">E11143</u></td>
-	<td align="right">3000</td>
+	<td class="pick_same" value="希革斯">希革斯</td>
+	<td class="pick_same" value="S190419PO0501" style=""><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13435"><u onclick="c_banngo('_id=2152&amp;cells=8')">E13435</u></td>
+	<td align="right">42000</td>
+	<td>pcs</td>
+	<td>2019-08-01</td>
+	<td class="pick_same" value="PO19042401" style="color:#0000AA"><a href="4-1.php?asahit22=PO19042401">PO19042401</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id2026&amp;t9=1')" title="点击查看该朝日品番">2019-07-19</td>
+	<td><b>2019-07-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">9</td>
+	
+	<td class="pick_same" value="希革斯">希革斯</td>
+	<td class="pick_same" value="S190419PO0501" style=""><a href="4.php?ddt2=S190419PO0501">S190419PO0501</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E17205"><u onclick="c_banngo('_id=2144&amp;cells=9')">E17205</u></td>
+	<td align="right">132000</td>
+	<td>pcs</td>
+	<td>2019-08-01</td>
+	<td class="pick_same" value="PO19042401" style="color:#0000AA"><a href="4-1.php?asahit22=PO19042401">PO19042401</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id2018&amp;t9=1')" title="点击查看该朝日品番">2019-07-11</td>
+	<td><b>2019-07-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">10</td>
+	
+	<td class="pick_same" value="希革斯">希革斯</td>
+	<td class="pick_same" value="S190425PO0110"><a href="4.php?ddt2=S190425PO0110">S190425PO0110</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13044"><u onclick="c_banngo('_id=2176&amp;cells=10')">E13044</u></td>
+	<td align="right">6000</td>
 	<td>pcs</td>
 	<td>2019-07-29</td>
-	<td class="pick_same" value="PO19052901" style="color:#0000AA"><a href="4-1.php?asahit22=PO19052901">PO19052901</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id2170&amp;t9=1')" title="点击查看该朝日品番">2019-07-18</td>
-	<td><b>2019-07-24</b></td>
+	<td class="pick_same" value="PO19042602" style="color:#0000AA"><a href="4-1.php?asahit22=PO19042602">PO19042602</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id2050&amp;t9=1')" title="点击查看该朝日品番">2019-07-25</td>
+	<td><b>2019-07-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">11</td>
+	
+	<td class="pick_same" value="希革斯">希革斯</td>
+	<td class="pick_same" value="S190425PO0110"><a href="4.php?ddt2=S190425PO0110">S190425PO0110</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13435"><u onclick="c_banngo('_id=2177&amp;cells=11')">E13435</u></td>
+	<td align="right">36000</td>
+	<td>pcs</td>
+	<td>2019-07-29</td>
+	<td class="pick_same" value="PO19042602" style="color:#0000AA"><a href="4-1.php?asahit22=PO19042602">PO19042602</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id2051&amp;t9=1')" title="点击查看该朝日品番">2019-07-25</td>
+	<td><b>2019-07-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">12</td>
+	
+	<td class="pick_same" value="希革斯">希革斯</td>
+	<td class="pick_same" value="S190531PO0145"><a href="4.php?ddt2=S190531PO0145">S190531PO0145</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13044"><u onclick="c_banngo('_id=2328&amp;cells=12')">E13044</u></td>
+	<td align="right">9000</td>
+	<td>pcs</td>
+	<td>2019-08-02</td>
+	<td class="pick_same" value="PO19052801" style="color:#0000AA"><a href="4-1.php?asahit22=PO19052801">PO19052801</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id2235&amp;t9=1')" title="点击查看该朝日品番">2019-07-25</td>
+	<td><b>2019-07-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">13</td>
+	
+	<td class="pick_same" value="希革斯">希革斯</td>
+	<td class="pick_same" value="S190531PO0145"><a href="4.php?ddt2=S190531PO0145">S190531PO0145</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13435"><u onclick="c_banngo('_id=2329&amp;cells=13')">E13435</u></td>
+	<td align="right">39000</td>
+	<td>pcs</td>
+	<td>2019-08-02</td>
+	<td class="pick_same" value="PO19052801" style="color:#0000AA"><a href="4-1.php?asahit22=PO19052801">PO19052801</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id2236&amp;t9=1')" title="点击查看该朝日品番">2019-07-25</td>
+	<td><b>2019-07-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">14</td>
+	
+	<td class="pick_same" value="希革斯">希革斯</td>
+	<td class="pick_same" value="S190613PO0193"><a href="4.php?ddt2=S190613PO0193">S190613PO0193</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E14648"><u onclick="c_banngo('_id=2398&amp;cells=14')">E14648</u></td>
+	<td align="right">15000</td>
+	<td>pcs</td>
+	<td>2019-09-02</td>
+	<td class="pick_same" value="PO190617" style="color:#0000AA"><a href="4-1.php?asahit22=PO190617">PO190617</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id2302&amp;t9=1')" title="点击查看该朝日品番">2019-07-26</td>
+	<td><b>2019-07-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">15</td>
+	
+	<td class="pick_same" value="希革斯">希革斯</td>
+	<td class="pick_same" value="S190628PO0152"><a href="4.php?ddt2=S190628PO0152">S190628PO0152</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E18457"><u onclick="c_banngo('_id=2446&amp;cells=15')">E18457</u></td>
+	<td align="right">6000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-07-01</font></td>
+	<td class="pick_same" value="PO19070103" style="color:#0000AA"><a href="4-1.php?asahit22=PO19070103">PO19070103</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id2350&amp;t9=1')" title="点击查看该朝日品番">2019-07-25</td>
+	<td><b>2019-07-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">16</td>
+	
+	<td class="pick_same" value="希革斯">希革斯</td>
+	<td class="pick_same" value="S190628PO0156"><a href="4.php?ddt2=S190628PO0156">S190628PO0156</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13527"><u onclick="c_banngo('_id=2447&amp;cells=16')">E13527</u></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td>2019-08-02</td>
+	<td class="pick_same" value="PO19070103" style="color:#0000AA"><a href="4-1.php?asahit22=PO19070103">PO19070103</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id2351&amp;t9=1')" title="点击查看该朝日品番">2019-07-25</td>
+	<td><b>2019-07-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">17</td>
+	
+	<td class="pick_same" value="高屋希革斯">高屋希革斯</td>
+	<td class="pick_same" value="E-J03719"><a href="4.php?ddt2=E-J03719">E-J03719</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E12619"><u onclick="c_banngo('_id=2242&amp;cells=17')">E12619</u></td>
+	<td align="right">12000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-06-04</font></td>
+	<td class="pick_same" value="PO190425" style="color:#0000AA"><a href="4-1.php?asahit22=PO190425">PO190425</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id2038&amp;t9=1')" title="点击查看该朝日品番">2019-07-25</td>
+	<td><b>2019-07-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">18</td>
+	
+	<td class="pick_same" value="高屋希革斯">高屋希革斯</td>
+	<td class="pick_same" value="E-J03742"><a href="4.php?ddt2=E-J03742">E-J03742</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E12619"><u onclick="c_banngo('_id=2429&amp;cells=18')">E12619</u></td>
+	<td align="right">57000</td>
+	<td>pcs</td>
+	<td><font color="red">2019-07-02</font></td>
+	<td class="pick_same" value="PO19042401" style="color:#0000AA"><a href="4-1.php?asahit22=PO19042401">PO19042401</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id2332&amp;t9=1')" title="点击查看该朝日品番">2019-07-25</td>
+	<td><b>2019-07-30</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">19</td>
+	
+	<td class="pick_same" value="高屋希革斯">高屋希革斯</td>
+	<td class="pick_same" value="E-J03772"><a href="4.php?ddt2=E-J03772">E-J03772</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13544"><u onclick="c_banngo('_id=2201&amp;cells=19')">E13544</u></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td>2019-08-05</td>
+	<td class="pick_same" value="PO19050701" style="color:#0000AA"><a href="4-1.php?asahit22=PO19050701">PO19050701</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id2083&amp;t9=1')" title="点击查看该朝日品番">2019-07-11</td>
+	<td><b>2019-07-30</b></td>
 	
 	<td></td>
 		

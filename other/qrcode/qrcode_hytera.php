@@ -261,12 +261,16 @@ while($print_label<count($songhuodan_lot)){
 </div>
 	<?
 	$round=$songhuodan_quantity[$print_label]/$songhuodan_reel[$print_label];
+	$rest_quantity=$songhuodan_quantity[$print_label];
 	for($i=0;$i<$round;$i++){
+		
+		if($rest_quantity<$songhuodan_reel[$print_label]){$s_lable_quantity=$rest_quantity;}else{$s_lable_quantity=$songhuodan_reel[$print_label];}
+		$rest_quantity=$rest_quantity-$songhuodan_reel[$print_label];
 	?>
 	<div class="main">
 		<table border="1" cellspacing="0" cellpadding="2">
 <tr>
-<td colspan="2" align="center"><img src="img/hyteralogo.gif" width="70px">海能达通信股份有限公司</td><td rowspan="4" align="center"><img src='http://qr.liantu.com/api.php?text=<? echo $songhuodan_wuliaohao[$print_label].",".$songhuodan_banngo[$print_label].",".$songhuodan_nxsb_2b[$print_label].",".$songhuodan_date[$print_label].",".$songhuodan_lot[$print_label].",".$songhuodan_reel[$print_label].",".$songhuodan_po[$print_label]; ?>' width='120px'/><br>朝日科技</td>
+<td colspan="2" align="center"><img src="img/hyteralogo.gif" width="70px">海能达通信股份有限公司</td><td rowspan="4" align="center"><img src='http://qr.liantu.com/api.php?text=<? echo $songhuodan_wuliaohao[$print_label].",".$songhuodan_banngo[$print_label].",".$songhuodan_nxsb_2b[$print_label].",".$songhuodan_date[$print_label].",".$songhuodan_lot[$print_label].",".$s_lable_quantity.",".$songhuodan_po[$print_label]; ?>' width='120px'/><br>朝日科技</td>
 </tr>
 <tr>
 <td>PN:</td><td align="center"><? echo $songhuodan_wuliaohao[$print_label]; ?><br><img src='http://b.wwei.cn/html/image.php?filetype=PNG&dpi=72&scale=1&rotation=0&font_family=0&font_size=8&text=<? echo $songhuodan_wuliaohao[$print_label]; ?>&thickness=25&start=B&code=BCGcode128'/></td>
@@ -284,7 +288,7 @@ while($print_label<count($songhuodan_lot)){
 <td>lot No:</td><td align="center"><? echo $songhuodan_lot[$print_label]; ?><br><img src='http://b.wwei.cn/html/image.php?filetype=PNG&dpi=72&scale=1&rotation=0&font_family=0&font_size=8&text=<? echo $songhuodan_lot[$print_label]; ?>&thickness=25&start=B&code=BCGcode128'/></td>
 </tr>
 <tr>
-<td>Qty:</td><td align="center"><? echo $songhuodan_reel[$print_label]; ?><br><img src='http://b.wwei.cn/html/image.php?filetype=PNG&dpi=72&scale=1&rotation=0&font_family=0&font_size=8&text=<? echo $songhuodan_reel[$print_label]; ?>&thickness=25&start=B&code=BCGcode128'/></td>
+<td>Qty:</td><td align="center"><? echo $s_lable_quantity ?><br><img src='http://b.wwei.cn/html/image.php?filetype=PNG&dpi=72&scale=1&rotation=0&font_family=0&font_size=8&text=<? echo $s_lable_quantity; ?>&thickness=25&start=B&code=BCGcode128'/></td>
 </tr>
 <tr>
 <td>PO:</td><td align="center"><? echo $songhuodan_po[$print_label]; ?></td>
