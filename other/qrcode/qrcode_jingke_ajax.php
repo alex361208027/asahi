@@ -3,7 +3,7 @@ echo "二维码内容:";
 echo $qrcode=$_POST['qrcode'];
 $qrcode_each=explode(";",$_POST['qrcode_each']);
 $gg=$_POST['gg'];
-$qrcode_api=file_get_contents("../qrcode_api.html");
+$qrcode_api=file_get_contents("qrcode_api.html");
 
 
 

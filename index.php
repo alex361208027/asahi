@@ -183,6 +183,7 @@ transition-delay: 0.8s;
 		<ul>
 				<li><a href="label_print.php" target="_blank">朝日标签打印</a></li>
 				<li><a href="other/qrcode/qrcode_jingke.php" target="_blank">晶科标签打印</a></li>
+				<li><a href="other/qrcode/qrcode_weizhi.php" target="_blank">伟志标签打印</a></li>
 				<li><a href="news.php" target="_blank">操作记录</a></li>
 				<!--<li><a href="other/qrcode.php" target="_blank"><s>海能达标签打印</s></a></li>-->
 			</ul></div>	
