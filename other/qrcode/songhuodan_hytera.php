@@ -64,7 +64,7 @@ $(document).ready(function(){
 				<td width="30%" valign="bottom">供 应 商: 朝日科技（上海）有限公司</td><td width="30%" valign="bottom">送货单号: <input type="text" value="<?php echo date('Ymd'); ?>" style="width:75px;"/></td><td><img src="http://barcode.cnaidc.com/html/cnaidc.php?filetype=PNG&dpi=72&scale=2&rotation=0&font_family=Arial.ttf&font_size=13&text=<?php echo $po[0]; ?>&thickness=30&start=NULL&code=BCGcode128"/></td>
 			</tr>
 			<tr>
-				<td width="30%">结算单位: 深圳市诺萨特科技有限公司</td><td width="30%">收货单位:深圳市诺萨特科技有限公司</td><td>日 期: <input type="text" value="<?php echo date('Y-m-d'); ?>" style="width:75px;"/></td>
+				<td width="30%">结算单位: 深圳市宝龙海能达科技有限公司</td><td width="30%">收货单位:深圳市宝龙海能达科技有限公司</td><td>日 期: <input type="text" value="<?php echo date('Y-m-d'); ?>" style="width:75px;"/></td>
 			</tr>
 			<tr>
 				<td width="30%" valign="top">联 系 人: 彭海茂</td><td width="30%" valign="top">联系电话: 0755-89788999-55013</td><td valign="top">交货地点: 深圳市龙岗区宝龙工业城宝龙四路3号海能达科技园<br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; C栋收货平台</td>

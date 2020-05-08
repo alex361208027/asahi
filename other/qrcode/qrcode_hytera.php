@@ -234,7 +234,7 @@ while($print_label<count($songhuodan_lot)){
 <div class="main">
 <table border="1" cellspacing="0" cellpadding="2">
 <tr>
-<td colspan="6" align="center"><img src="img/hyteralogo.gif" width="70px">海能达通信股份有限公司</td>
+<td colspan="6" align="center"><img src="img/hyteralogo.gif" width="70px">深圳市宝龙海能达科技有限公司</td>
 </tr>
 <tr>
 <td colspan="2">PN:</td><td align="center" colspan="3"><? echo $songhuodan_wuliaohao[$print_label]; ?><br><img src='http://b.wwei.cn/html/image.php?filetype=PNG&dpi=72&scale=1&rotation=0&font_family=0&font_size=8&text=<? echo $songhuodan_wuliaohao[$print_label]; ?>&thickness=25&start=B&code=BCGcode128'/></td><td rowspan="4" align="center"><img src='http://qr.liantu.com/api.php?text=<? echo $songhuodan_wuliaohao[$print_label].",".$songhuodan_banngo[$print_label].",".$songhuodan_nxsb_2b[$print_label].",".$songhuodan_date[$print_label].",".$songhuodan_lot[$print_label].",".$songhuodan_quantity[$print_label].",".$songhuodan_po[$print_label]; ?>' width='150px'/><br>朝日科技</td>
@@ -270,7 +270,7 @@ while($print_label<count($songhuodan_lot)){
 	<div class="main">
 		<table border="1" cellspacing="0" cellpadding="2">
 <tr>
-<td colspan="2" align="center"><img src="img/hyteralogo.gif" width="70px">海能达通信股份有限公司</td><td rowspan="4" align="center"><img src='http://qr.liantu.com/api.php?text=<? echo $songhuodan_wuliaohao[$print_label].",".$songhuodan_banngo[$print_label].",".$songhuodan_nxsb_2b[$print_label].",".$songhuodan_date[$print_label].",".$songhuodan_lot[$print_label].",".$s_lable_quantity.",".$songhuodan_po[$print_label]; ?>' width='120px'/><br>朝日科技</td>
+<td colspan="2" align="center"><img src="img/hyteralogo.gif" width="70px">深圳市宝龙海能达科技有限公司</td><td rowspan="4" align="center"><img src='http://qr.liantu.com/api.php?text=<? echo $songhuodan_wuliaohao[$print_label].",".$songhuodan_banngo[$print_label].",".$songhuodan_nxsb_2b[$print_label].",".$songhuodan_date[$print_label].",".$songhuodan_lot[$print_label].",".$s_lable_quantity.",".$songhuodan_po[$print_label]; ?>' width='120px'/><br>朝日科技</td>
 </tr>
 <tr>
 <td>PN:</td><td align="center"><? echo $songhuodan_wuliaohao[$print_label]; ?><br><img src='http://b.wwei.cn/html/image.php?filetype=PNG&dpi=72&scale=1&rotation=0&font_family=0&font_size=8&text=<? echo $songhuodan_wuliaohao[$print_label]; ?>&thickness=25&start=B&code=BCGcode128'/></td>

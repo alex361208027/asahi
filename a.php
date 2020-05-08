@@ -3,7 +3,7 @@ date_default_timezone_set('PRC');
 $todaytime=date('Y-m-d H:i:s');
 ?>
 <script type="text/javascript" src="JS/jquery-3.2.1.min.js"></script>
-
+<title>主页</title>
 <style>
 input[type="text"],
 input[type="button"],
@@ -92,13 +92,13 @@ body{
 					<div id="error" style="position:absolute;right:0px;top:0px;width:480px;height:280px;background-color:#FF88A0;color:white;display:none;padding-top:18%;font-size:20px;filter:alpha(Opacity=90);-moz-opacity:0.9;opacity: 0.9;">ERROR!<br><br>账号或密码未输入</div>
 	</div>
 	<div class="kk" style="background:url('img/asahihp.png');background-size:cover;height:80px;margin-top:15px;cursor:pointer;" onclick="location.href='../hp'">
-	<table width="100%" height="100%"><tr><td align="right" style="font-size:18px;color:white;padding-right:20px;font-weight:bold">朝日科技主页</td></tr></table>
+	<table width="100%" height="100%"><tr><td align="right" style="font-size:18px;color:white;padding-right:20px;font-weight:bold">关于我们</td></tr></table>
 	</div>
 	<div style="position:relative;width:480px;text-align:right;font-size:12px;color:#FF335C;margin-top:10px;">
 	*BETA Only for Chrome
 	</div>
 	<div style="position:relative;width:480px;text-align:center;font-size:12px;color:black;margin-top:10px;">
-	网站备案号 <a href="http://www.miitbeian.gov.cn" target="_blank">沪ICP备18000509号-1</a>
+	网站备案号 <a href="http://beian.miit.gov.cn" target="_blank">沪ICP备18000509号-1</a>
 	</div>
 </div>
 <script>

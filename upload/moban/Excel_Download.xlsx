@@ -1,4 +1,632 @@
+ 
+<table id="tableExcel" cellpadding="1" cellspacing="0" width="100%" style="font-size:12px;">
+<tbody><tr style="background-color:#8F77B5;color:white;height:33px;">
+	
+	<td width="5px"></td>
+	
+	<td>取引先</td>
+	<td>注文PO</td>
+	<td>品番</td>
+	<td align="right">数量</td>
+	<td align="left"></td>
+	<td>订单納期</td>
+	<td>朝日PO</td>
+	<td>日本出荷日</td>
+	<td>朝日科技出货</td>
+	
+	<td>发票</td>
+</tr>
 
-<table width="auto" cellpadding="0" cellspacing="0">
-<tbody><tr style="height:30px"><td></td><td align="right" style="min-width:100px;background:black;color:white;font-size:14px;">[+0周]</td><td align="right" style="min-width:100px;background:black;color:white;font-size:14px;">[+1周]</td><td align="right" style="min-width:100px;background:black;color:white;font-size:14px;">[+2周]</td><td align="right" style="min-width:100px;background:black;color:white;font-size:14px;">[+3周]</td><td align="right" style="min-width:100px;background:black;color:white;font-size:14px;">[+4周]</td><td align="right" style="min-width:100px;background:black;color:white;font-size:14px;">[+5周]</td><td align="right" style="min-width:100px;background:black;color:white;font-size:14px;">[+6周]</td><td align="right" style="min-width:100px;background:black;color:white;font-size:14px;">[+7周]</td><td align="right" style="min-width:100px;background:black;color:white;font-size:14px;">[+8周]</td><td align="right" style="min-width:100px;background:black;color:white;font-size:14px;">[+9周]</td><td align="right" style="min-width:100px;background:black;color:white;font-size:14px;">[+10周]</td><td align="right" style="min-width:100px;background:black;color:white;font-size:14px;">[+11周]</td><td align="right" style="min-width:100px;background:black;color:white;font-size:14px;">[+12周]</td><td align="right" style="min-width:100px;background:black;color:white;font-size:14px;">[+13周]</td><td align="right" style="min-width:100px;background:black;color:white;font-size:14px;">[+14周]</td><td align="right" style="min-width:100px;background:black;color:white;font-size:14px;">[+15周]</td><td align="right" style="min-width:100px;background:black;color:white;font-size:14px;">[+16周]</td><td align="right" style="min-width:100px;background:black;color:white;font-size:14px;">[+17周]</td></tr><tr style="height:30px"><td></td><td align="right" style="min-width:100px;background:black;color:white;">08/07</td><td align="right" style="min-width:100px;background:black;color:white;">08/14</td><td align="right" style="min-width:100px;background:black;color:white;">08/21</td><td align="right" style="min-width:100px;background:black;color:white;">08/28</td><td align="right" style="min-width:100px;background:black;color:white;">09/04</td><td align="right" style="min-width:100px;background:black;color:white;">09/11</td><td align="right" style="min-width:100px;background:black;color:white;">09/18</td><td align="right" style="min-width:100px;background:black;color:white;">09/25</td><td align="right" style="min-width:100px;background:black;color:white;">10/02</td><td align="right" style="min-width:100px;background:black;color:white;">10/09</td><td align="right" style="min-width:100px;background:black;color:white;">10/16</td><td align="right" style="min-width:100px;background:black;color:white;">10/23</td><td align="right" style="min-width:100px;background:black;color:white;">10/30</td><td align="right" style="min-width:100px;background:black;color:white;">11/06</td><td align="right" style="min-width:100px;background:black;color:white;">11/13</td><td align="right" style="min-width:100px;background:black;color:white;">11/20</td><td align="right" style="min-width:100px;background:black;color:white;">11/27</td><td align="right" style="min-width:100px;background:black;color:white;">12/04</td></tr><tr align="right"><td align="right" style="min-width:80px;padding-right:10px;">E12395</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>39000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr align="right"><td></td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">39000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">39000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">39000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">39000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">39000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">39000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">39000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">39000</td></tr><tr align="right"><td align="right" style="min-width:80px;padding-right:10px;">E12619</td><td></td><td></td><td></td><td></td><td>24000</td><td></td><td></td><td></td><td>81000</td><td></td><td>144000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr align="right"><td></td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">24000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">24000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">24000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">24000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">105000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">105000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">249000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">249000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">249000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">249000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">249000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">249000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">249000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">249000</td></tr><tr align="right"><td align="right" style="min-width:80px;padding-right:10px;">E13004</td><td></td><td></td><td></td><td>15000</td><td></td><td></td><td></td><td></td><td>12000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr align="right"><td></td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">15000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">15000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">15000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">15000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">15000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">27000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">27000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">27000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">27000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">27000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">27000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">27000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">27000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">27000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">27000</td></tr><tr align="right"><td align="right" style="min-width:80px;padding-right:10px;">E13044</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>60000</td><td></td><td>51000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr align="right"><td></td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">60000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">60000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">111000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">111000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">111000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">111000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">111000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">111000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">111000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">111000</td></tr><tr align="right"><td align="right" style="min-width:80px;padding-right:10px;">E13098</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>3000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr align="right"><td></td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">3000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">3000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">3000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">3000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">3000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">3000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">3000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">3000</td></tr><tr align="right"><td align="right" style="min-width:80px;padding-right:10px;">E13435</td><td>117000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>39000</td><td></td><td>408000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr align="right"><td></td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">117000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">117000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">117000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">117000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">117000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">117000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">117000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">117000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">156000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">156000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">564000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">564000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">564000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">564000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">564000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">564000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">564000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">564000</td></tr><tr align="right"><td align="right" style="min-width:80px;padding-right:10px;">E13527</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>3000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr align="right"><td></td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">3000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">3000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">3000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">3000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">3000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">3000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">3000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">3000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">3000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">3000</td></tr><tr align="right"><td align="right" style="min-width:80px;padding-right:10px;">E14647</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>27000</td><td></td><td>21000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr align="right"><td></td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">27000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">27000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">48000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">48000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">48000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">48000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">48000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">48000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">48000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">48000</td></tr><tr align="right"><td align="right" style="min-width:80px;padding-right:10px;">E14648</td><td></td><td></td><td></td><td>12000</td><td></td><td></td><td></td><td></td><td>24000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr align="right"><td></td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">12000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">12000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">12000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">12000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">12000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">36000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">36000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">36000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">36000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">36000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">36000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">36000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">36000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">36000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">36000</td></tr><tr align="right"><td align="right" style="min-width:80px;padding-right:10px;">E14948</td><td></td><td></td><td></td><td>3000</td><td></td><td></td><td></td><td></td><td>9000</td><td></td><td>6000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr align="right"><td></td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">3000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">3000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">3000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">3000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">3000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">12000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">12000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">18000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">18000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">18000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">18000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">18000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">18000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">18000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">18000</td></tr><tr align="right"><td align="right" style="min-width:80px;padding-right:10px;">E17205</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>24000</td><td></td><td>168000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr align="right"><td></td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">24000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">24000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">192000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">192000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">192000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">192000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">192000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">192000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">192000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">192000</td></tr><tr align="right"><td align="right" style="min-width:80px;padding-right:10px;">E18469</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>24000</td><td></td><td>18000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr align="right"><td></td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">24000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">24000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">42000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">42000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">42000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">42000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">42000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">42000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">42000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">42000</td></tr><tr align="right"><td align="right" style="min-width:80px;padding-right:10px;">E18488</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>96000</td><td></td><td>72000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr align="right"><td></td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">96000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">96000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">168000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">168000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">168000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">168000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">168000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">168000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">168000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">168000</td></tr><tr align="right"><td align="right" style="min-width:80px;padding-right:10px;">E18489</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>12000</td><td></td><td>6000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr align="right"><td></td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">12000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">12000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">18000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">18000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">18000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">18000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">18000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">18000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">18000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">18000</td></tr><tr align="right"><td align="right" style="min-width:80px;padding-right:10px;">E19278</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>18000</td><td></td><td>12000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr align="right"><td></td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">18000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">18000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">30000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">30000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">30000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">30000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">30000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">30000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">30000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">30000</td></tr><tr align="right"><td align="right" style="min-width:80px;padding-right:10px;">E19282</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>18000</td><td></td><td>12000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr align="right"><td></td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">18000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">18000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">30000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">30000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">30000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">30000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">30000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">30000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">30000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">30000</td></tr><tr align="right"><td align="right" style="min-width:80px;padding-right:10px;">E19348</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>24000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr align="right"><td></td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">0</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">24000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">24000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">24000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">24000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">24000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">24000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">24000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">24000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">24000</td><td style="color:#BBBBBB;border-bottom:solid 1px black;font-size:12px;">24000</td></tr><tr><td></td><td colspan="18">*数据不包含[交期待定]项</td></tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">1</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03976" style=""><a href="4.php?ddt2=E-J03976">E-J03976</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13527"><u onclick="c_banngo('_id=3616&amp;cells=1')">E13527</u></td>
+	<td align="right">6000</td>
+	<td>pcs</td>
+	<td>2020-05-01</td>
+	<td class="pick_same" value="PO20030503" style="color: rgb(0, 0, 170);"><a href="4-1.php?asahit22=PO20030503">PO20030503</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3519&amp;t9=1')" title="点击查看该朝日品番">2020-04-24</td>
+	<td><b>2020-05-27</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">2</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03957"><a href="4.php?ddt2=E-J03957">E-J03957</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E12619"><u onclick="c_banngo('_id=3449&amp;cells=2')">E12619</u></td>
+	<td align="right">18000</td>
+	<td>pcs</td>
+	<td>2020-04-01</td>
+	<td class="pick_same" value="PO200115" style="color:#0000AA"><a href="4-1.php?asahit22=PO200115">PO200115</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3348&amp;t9=1')" title="点击查看该朝日品番">2020-03-20</td>
+	<td><b>2020-06-03</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">3</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03967"><a href="4.php?ddt2=E-J03967">E-J03967</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E12393"><u onclick="c_banngo('_id=3525&amp;cells=3')">E12393</u></td>
+	<td align="right">120000</td>
+	<td>pcs</td>
+	<td>2020-05-01</td>
+	<td class="pick_same" value="PO20022101" style="color:#0000AA"><a href="4-1.php?asahit22=PO20022101">PO20022101</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3425&amp;t9=1')" title="点击查看该朝日品番">2020-04-17</td>
+	<td><b>2020-06-03</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">4</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03967"><a href="4.php?ddt2=E-J03967">E-J03967</a></td>
+	<td style="max-width: 120px;" class="pick_same" value="E12617"><u onclick="c_banngo('_id=3527&amp;cells=4')">E12617</u></td>
+	<td align="right">9000</td>
+	<td>pcs</td>
+	<td>2020-05-01</td>
+	<td class="pick_same" value="PO20022101" style="color:#0000AA"><a href="4-1.php?asahit22=PO20022101">PO20022101</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3427&amp;t9=1')" title="点击查看该朝日品番">2020-04-17</td>
+	<td><b>2020-06-03</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">5</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03967"><a href="4.php?ddt2=E-J03967">E-J03967</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E12619"><u onclick="c_banngo('_id=3526&amp;cells=5')">E12619</u></td>
+	<td align="right">177000</td>
+	<td>pcs</td>
+	<td>2020-05-01</td>
+	<td class="pick_same" value="PO20022101" style="color:#0000AA"><a href="4-1.php?asahit22=PO20022101">PO20022101</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3426&amp;t9=1')" title="点击查看该朝日品番">2020-04-17</td>
+	<td><b>2020-06-03</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">6</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03968" style=""><a href="4.php?ddt2=E-J03968">E-J03968</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E10720"><u onclick="c_banngo('_id=3636&amp;cells=6')">E10720</u></td>
+	<td align="right">33000</td>
+	<td>pcs</td>
+	<td>2020-06-01</td>
+	<td class="pick_same" value="PO200311" style="color:#0000AA"><a href="4-1.php?asahit22=PO200311">PO200311</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3538&amp;t9=1')" title="点击查看该朝日品番">2020-05-15</td>
+	<td><b>2020-06-03</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">7</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03968" style=""><a href="4.php?ddt2=E-J03968">E-J03968</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13076"><u onclick="c_banngo('_id=3640&amp;cells=7')">E13076</u></td>
+	<td align="right">6000</td>
+	<td>pcs</td>
+	<td>2020-06-01</td>
+	<td class="pick_same" value="PO200311" style="color:#0000AA"><a href="4-1.php?asahit22=PO200311">PO200311</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3542&amp;t9=1')" title="点击查看该朝日品番">2020-05-15</td>
+	<td><b>2020-06-03</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">8</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03968" style=""><a href="4.php?ddt2=E-J03968">E-J03968</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13356"><u onclick="c_banngo('_id=3635&amp;cells=8')">E13356</u></td>
+	<td align="right">24000</td>
+	<td>pcs</td>
+	<td>2020-06-01</td>
+	<td class="pick_same" value="PO200311" style="color:#0000AA"><a href="4-1.php?asahit22=PO200311">PO200311</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3537&amp;t9=1')" title="点击查看该朝日品番">2020-05-15</td>
+	<td><b>2020-06-03</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">9</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03968" style=""><a href="4.php?ddt2=E-J03968">E-J03968</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E17609"><u onclick="c_banngo('_id=3638&amp;cells=9')">E17609</u></td>
+	<td align="right">9000</td>
+	<td>pcs</td>
+	<td>2020-06-01</td>
+	<td class="pick_same" value="PO200311" style="color:#0000AA"><a href="4-1.php?asahit22=PO200311">PO200311</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3540&amp;t9=1')" title="点击查看该朝日品番">2020-05-15</td>
+	<td><b>2020-06-03</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">10</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03976" style=""><a href="4.php?ddt2=E-J03976">E-J03976</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E14929"><u onclick="c_banngo('_id=3621&amp;cells=10')">E14929</u></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td>2020-06-02</td>
+	<td class="pick_same" value="PO20030503" style="color: rgb(0, 0, 170);"><a href="4-1.php?asahit22=PO20030503">PO20030503</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3524&amp;t9=1')" title="点击查看该朝日品番">2020-05-15</td>
+	<td><b>2020-06-03</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">11</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03967"><a href="4.php?ddt2=E-J03967">E-J03967</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E10720"><u onclick="c_banngo('_id=3530&amp;cells=11')">E10720</u></td>
+	<td align="right">30000</td>
+	<td>pcs</td>
+	<td>2020-05-01</td>
+	<td class="pick_same" value="PO20022101" style="color:#0000AA"><a href="4-1.php?asahit22=PO20022101">PO20022101</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3430&amp;t9=1')" title="点击查看该朝日品番">2020-04-17</td>
+	<td><b>2020-07-01</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">12</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03967"><a href="4.php?ddt2=E-J03967">E-J03967</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E17609"><u onclick="c_banngo('_id=3534&amp;cells=12')">E17609</u></td>
+	<td align="right">6000</td>
+	<td>pcs</td>
+	<td>2020-05-01</td>
+	<td class="pick_same" value="PO20022101" style="color:#0000AA"><a href="4-1.php?asahit22=PO20022101">PO20022101</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3434&amp;t9=1')" title="点击查看该朝日品番">2020-04-17</td>
+	<td><b>2020-07-01</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">13</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03976" style=""><a href="4.php?ddt2=E-J03976">E-J03976</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13544"><u onclick="c_banngo('_id=3618&amp;cells=13')">E13544</u></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td>2020-06-02</td>
+	<td class="pick_same" value="PO20030503" style="color: rgb(0, 0, 170);"><a href="4-1.php?asahit22=PO20030503">PO20030503</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3521&amp;t9=1')" title="点击查看该朝日品番">2020-05-15</td>
+	<td><b>2020-07-01</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">14</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03968" style=""><a href="4.php?ddt2=E-J03968">E-J03968</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E12393"><u onclick="c_banngo('_id=3632&amp;cells=14')">E12393</u></td>
+	<td align="right">63000</td>
+	<td>pcs</td>
+	<td>2020-06-01</td>
+	<td class="pick_same" value="PO200311" style="color:#0000AA"><a href="4-1.php?asahit22=PO200311">PO200311</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3534&amp;t9=1')" title="点击查看该朝日品番">2020-05-15</td>
+	<td><b>2020-07-02</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">15</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03968" style=""><a href="4.php?ddt2=E-J03968">E-J03968</a></td>
+	<td style="max-width: 120px;" class="pick_same" value="E12617"><u onclick="c_banngo('_id=3634&amp;cells=15')">E12617</u></td>
+	<td align="right">9000</td>
+	<td>pcs</td>
+	<td>2020-06-01</td>
+	<td class="pick_same" value="PO200311" style="color:#0000AA"><a href="4-1.php?asahit22=PO200311">PO200311</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3536&amp;t9=1')" title="点击查看该朝日品番">2020-05-15</td>
+	<td><b>2020-07-02</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">16</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03968" style=""><a href="4.php?ddt2=E-J03968">E-J03968</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E12619"><u onclick="c_banngo('_id=3633&amp;cells=16')">E12619</u></td>
+	<td align="right">93000</td>
+	<td>pcs</td>
+	<td>2020-06-01</td>
+	<td class="pick_same" value="PO200311" style="color:#0000AA"><a href="4-1.php?asahit22=PO200311">PO200311</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3535&amp;t9=1')" title="点击查看该朝日品番">2020-05-15</td>
+	<td><b>2020-07-02</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">17</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03968" style=""><a href="4.php?ddt2=E-J03968">E-J03968</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13547"><u onclick="c_banngo('_id=3639&amp;cells=17')">E13547</u></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td><font color="red">2020-06-01</font></td>
+	<td class="pick_same" value="PO200311" style="color:#0000AA"><a href="4-1.php?asahit22=PO200311">PO200311</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3541&amp;t9=1')" title="点击查看该朝日品番">2020-06-26</td>
+	<td><b>2020-07-02</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">18</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03968" style=""><a href="4.php?ddt2=E-J03968">E-J03968</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E14253"><u onclick="c_banngo('_id=3637&amp;cells=18')">E14253</u></td>
+	<td align="right">12000</td>
+	<td>pcs</td>
+	<td><font color="red">2020-06-01</font></td>
+	<td class="pick_same" value="PO200311" style="color:#0000AA"><a href="4-1.php?asahit22=PO200311">PO200311</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3539&amp;t9=1')" title="点击查看该朝日品番">2020-06-26</td>
+	<td><b>2020-07-02</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">19</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03976" style=""><a href="4.php?ddt2=E-J03976">E-J03976</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13076"><u onclick="c_banngo('_id=3623&amp;cells=19')">E13076</u></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td>2020-06-02</td>
+	<td class="pick_same" value="PO20030503" style="color: rgb(0, 0, 170);"><a href="4-1.php?asahit22=PO20030503">PO20030503</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3526&amp;t9=1')" title="点击查看该朝日品番">2020-05-15</td>
+	<td><b>2020-07-02</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">20</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03976" style=""><a href="4.php?ddt2=E-J03976">E-J03976</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13356"><u onclick="c_banngo('_id=3617&amp;cells=20')">E13356</u></td>
+	<td align="right">12000</td>
+	<td>pcs</td>
+	<td>2020-06-02</td>
+	<td class="pick_same" value="PO20030503" style="color: rgb(0, 0, 170);"><a href="4-1.php?asahit22=PO20030503">PO20030503</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3520&amp;t9=1')" title="点击查看该朝日品番">2020-05-15</td>
+	<td><b>2020-07-02</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">21</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03976" style=""><a href="4.php?ddt2=E-J03976">E-J03976</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13547"><u onclick="c_banngo('_id=3622&amp;cells=21')">E13547</u></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td><font color="red">2020-06-02</font></td>
+	<td class="pick_same" value="PO20030503" style="color: rgb(0, 0, 170);"><a href="4-1.php?asahit22=PO20030503">PO20030503</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3525&amp;t9=1')" title="点击查看该朝日品番">2020-06-26</td>
+	<td><b>2020-07-02</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">22</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03985"><a href="4.php?ddt2=E-J03985">E-J03985</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E14467"><u onclick="c_banngo('_id=3673&amp;cells=22')">E14467</u></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td>2020-07-02</td>
+	<td class="pick_same" value="PO200324" style="color:#0000AA"><a href="4-1.php?asahit22=PO200324">PO200324</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3575&amp;t9=1')" title="点击查看该朝日品番">2020-05-22</td>
+	<td><b>2020-07-02</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">23</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03985"><a href="4.php?ddt2=E-J03985">E-J03985</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E14929"><u onclick="c_banngo('_id=3675&amp;cells=23')">E14929</u></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td>2020-07-02</td>
+	<td class="pick_same" value="PO200324" style="color:#0000AA"><a href="4-1.php?asahit22=PO200324">PO200324</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3577&amp;t9=1')" title="点击查看该朝日品番">2020-05-22</td>
+	<td><b>2020-07-02</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">24</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03985"><a href="4.php?ddt2=E-J03985">E-J03985</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E12393"><u onclick="c_banngo('_id=3669&amp;cells=24')">E12393</u></td>
+	<td align="right">39000</td>
+	<td>pcs</td>
+	<td>2020-07-02</td>
+	<td class="pick_same" value="PO200324" style="color:#0000AA"><a href="4-1.php?asahit22=PO200324">PO200324</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3571&amp;t9=1')" title="点击查看该朝日品番">2020-05-22</td>
+	<td><b>2020-08-05</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">25</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03985"><a href="4.php?ddt2=E-J03985">E-J03985</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E12619"><u onclick="c_banngo('_id=3670&amp;cells=25')">E12619</u></td>
+	<td align="right">18000</td>
+	<td>pcs</td>
+	<td>2020-07-02</td>
+	<td class="pick_same" value="PO20011801" style="color:#0000AA"><a href="4-1.php?asahit22=PO20011801">PO20011801</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3581&amp;t9=1')" title="点击查看该朝日品番">2020-04-03</td>
+	<td><b>2020-08-05</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7">
+	
+	
+	<td align="center">26</td>
+	
+	<td class="pick_same" value="高屋希革斯" style=""></td>
+	<td class="pick_same" value="E-J03985"><a href="4.php?ddt2=E-J03985"></a></td>
+	<td style="max-width:120px;" class="pick_same" value="E12619"><u onclick="c_banngo('_id=3680&amp;cells=26')">E12619</u></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td>2020-07-02</td>
+	<td class="pick_same" value="PO200324" style="color:#0000AA"><a href="4-1.php?asahit22=PO200324">PO200324</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3582&amp;t9=1')" title="点击查看该朝日品番">2020-05-22</td>
+	<td><b>2020-08-05</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">27</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03985"><a href="4.php?ddt2=E-J03985">E-J03985</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13076"><u onclick="c_banngo('_id=3668&amp;cells=27')">E13076</u></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td>2020-06-02</td>
+	<td class="pick_same" value="PO200324" style="color:#0000AA"><a href="4-1.php?asahit22=PO200324">PO200324</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3570&amp;t9=1')" title="点击查看该朝日品番">2020-05-22</td>
+	<td><b>2020-08-05</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7">
+	
+	
+	<td align="center">28</td>
+	
+	<td class="pick_same" value="高屋希革斯" style=""></td>
+	<td class="pick_same" value="E-J03985"><a href="4.php?ddt2=E-J03985"></a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13076"><u onclick="c_banngo('_id=3677&amp;cells=28')">E13076</u></td>
+	<td align="right">6000</td>
+	<td>pcs</td>
+	<td>2020-07-02</td>
+	<td class="pick_same" value="PO200324" style="color:#0000AA"><a href="4-1.php?asahit22=PO200324">PO200324</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3579&amp;t9=1')" title="点击查看该朝日品番">2020-05-22</td>
+	<td><b>2020-08-05</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">29</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03985"><a href="4.php?ddt2=E-J03985">E-J03985</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E13356"><u onclick="c_banngo('_id=3671&amp;cells=29')">E13356</u></td>
+	<td align="right">24000</td>
+	<td>pcs</td>
+	<td>2020-07-02</td>
+	<td class="pick_same" value="PO200324" style="color:#0000AA"><a href="4-1.php?asahit22=PO200324">PO200324</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3573&amp;t9=1')" title="点击查看该朝日品番">2020-05-22</td>
+	<td><b>2020-08-05</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">30</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03985"><a href="4.php?ddt2=E-J03985">E-J03985</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E17609"><u onclick="c_banngo('_id=3676&amp;cells=30')">E17609</u></td>
+	<td align="right">3000</td>
+	<td>pcs</td>
+	<td>2020-07-02</td>
+	<td class="pick_same" value="PO200324" style="color:#0000AA"><a href="4-1.php?asahit22=PO200324">PO200324</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3578&amp;t9=1')" title="点击查看该朝日品番">2020-05-22</td>
+	<td><b>2020-08-05</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="" class="tabletr">
+	
+	
+	<td align="center">31</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03985"><a href="4.php?ddt2=E-J03985">E-J03985</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E10720"><u onclick="c_banngo('_id=3672&amp;cells=31')">E10720</u></td>
+	<td align="right">18000</td>
+	<td>pcs</td>
+	<td>2020-07-02</td>
+	<td class="pick_same" value="PO200324" style="color:#0000AA"><a href="4-1.php?asahit22=PO200324">PO200324</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3574&amp;t9=1')" title="点击查看该朝日品番">2020-05-22</td>
+	<td><b>2020-09-02</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">32</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03968" style=""><a href="4.php?ddt2=E-J03968">E-J03968</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E14253"><u onclick="c_banngo('_id=3763&amp;cells=32')">E14253</u></td>
+	<td align="right">6</td>
+	<td>pcs</td>
+	<td>2020-06-01</td>
+	<td class="pick_same" value="PO200407" style="color:#0000AA"><a href="4-1.php?asahit22=PO200407">PO200407</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3632&amp;t9=1')" title="点击查看该朝日品番">0000-00-00</td>
+	<td><b>2083-06-08</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7">
+	
+	
+	<td align="center">33</td>
+	
+	<td class="pick_same" value="高屋希革斯" style=""></td>
+	<td class="pick_same" value="E-J03968" style=""><a href="4.php?ddt2=E-J03968"></a></td>
+	<td style="max-width:120px;" class="pick_same" value="E14253"><u onclick="c_banngo('_id=3777&amp;cells=33')">E14253</u></td>
+	<td align="right">6</td>
+	<td>pcs</td>
+	<td>2020-06-01</td>
+	<td class="pick_same" value="PO200415" style="color:#0000AA"><a href="4-1.php?asahit22=PO200415">PO200415</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3678&amp;t9=1')" title="点击查看该朝日品番">0000-00-00</td>
+	<td><b>2083-06-08</b></td>
+	
+	<td></td>
+		
+</tr>
+<tr bgcolor="#F7F7F7" class="tabletr">
+	
+	
+	<td align="center">34</td>
+	
+	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
+	<td class="pick_same" value="E-J03976" style=""><a href="4.php?ddt2=E-J03976">E-J03976</a></td>
+	<td style="max-width:120px;" class="pick_same" value="E14253"><u onclick="c_banngo('_id=3620&amp;cells=34')">E14253</u></td>
+	<td align="right">3</td>
+	<td>pcs</td>
+	<td>2020-06-02</td>
+	<td class="pick_same" value="PO200410" style="color:#0000AA"><a href="4-1.php?asahit22=PO200410">PO200410</a></td>
+	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3649&amp;t9=1')" title="点击查看该朝日品番">0000-00-00</td>
+	<td><b>2083-06-08</b></td>
+	
+	<td></td>
+		
+</tr>
 </tbody></table>
