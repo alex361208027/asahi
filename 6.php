@@ -233,7 +233,9 @@ function mycheckbox(str){
 		button="upload_lotnum.php?";
 	}else if(str==5){
 		button="upload_leadtime.php?";
-	}
+	}else if(str==11){
+		button="asahiorder_excel.php?"
+	}	
 	var ss=document.getElementsByName('checkboxsum');
 	for(i=0;i<ss.length;i++){
 		if(ss[i].checked){
@@ -318,6 +320,7 @@ function po_pi_lotnum(str){
 	<li><div class="sum_show_hide_x">X</div></li>
 <li onclick="mycheckbox(2)" class="close_hide"><img src="img/tongji.png" height="14px"> &nbsp; 合并统计</li>
 <li onclick="mycheckbox(1)" class="close_hide"><img src="img/songhuodan.png" height="14px"> &nbsp; 生成朝日订单</li>
+<li onclick="mycheckbox(11)" class="close_hide"><img src="img/songhuodan.png" height="14px"> &nbsp; (新)生成朝日订单</li>
 <li><hr></li>
 <li><input type="date" id="JPdate" value=""></li>
 <li onclick="po_pi_JPdate()" class="close_hide"><img src="img/riqi.png" height="14px"> &nbsp; 更改日本发货日</li>

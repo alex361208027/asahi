@@ -1,632 +1,147 @@
- 
-<table id="tableExcel" cellpadding="1" cellspacing="0" width="100%" style="font-size:12px;">
-<tbody><tr style="background-color:#8F77B5;color:white;height:33px;">
-	
-	<td width="5px"></td>
-	
-	<td>取引先</td>
-	<td>注文PO</td>
-	<td>品番</td>
-	<td align="right">数量</td>
-	<td align="left"></td>
-	<td>订单納期</td>
-	<td>朝日PO</td>
-	<td>日本出荷日</td>
-	<td>朝日科技出货</td>
-	
-	<td>发票</td>
-</tr>
 
-<tr bgcolor="#F7F7F7" class="tabletr">
+	<table width="800px" style="font-size:12px;" cellspacing="0" cellpadding="0" id="sortable1" class="ui-sortable">
+	<tbody><tr><td width="8%"></td><td width="20%"></td><td width="10%"></td><td width="5%"></td><td width="13%"></td><td width="18%"></td><td width="12%"></td><td width="12%"></td></tr>
+	<tr><td colspan="8" align="center" style="font-size:24px;font-weight:bold;letter-spacing:2px">朝日科技（上海）有限公司</td></tr>
+	<tr><td colspan="8" align="center" style="font-size:16px;font-weight:bold">ASAHI TECHNOLOGY(SHANGHAI)CO.LTD</td></tr>
+	<tr><td colspan="8" align="center" style="font-size:24px;font-weight:bold;letter-spacing:3px" height="80px">PURCHASE ORDER</td></tr>
+	<tr><td>To:</td><td colspan="4">ASAHI RUBBERINC.INC</td><td>Document No.</td><td colspan="2" style="font-weight:bold;font-size:13px;">PO200604</td></tr>
+	<tr><td></td><td colspan="4">2-7-2, Dotecho, Omuta-ku</td><td>Issue Date:</td><td colspan="2" align="left">04-Jun-20</td></tr>
+	<tr><td></td><td colspan="4">Saitama-shi,Saitama,330-0801,Japan</td><td>Currencey:</td><td colspan="2">JPY</td></tr>
+	<tr><td>Attn:</td><td colspan="4">Mr.Ichikawa</td><td>Terms of Delivery:</td><td colspan="2">CIF ShangHai</td></tr>
+	<tr><td>Tel#</td><td colspan="4">81-48-650-6055</td><td>Delivery Method:</td><td colspan="2">AIR</td></tr>
+	<tr><td>Fax#</td><td colspan="4">81-48-650-5205</td><td>Payment Terms:</td><td colspan="2">TTT90</td></tr>
+	<tr><td>Ship To:</td><td colspan="4">Summit Center, Unit818, No.1088</td><td>Customer Name:</td><td colspan="2">華徳</td></tr>
+	<tr><td></td><td colspan="4">Yan'an West Road, Shanghai,</td><td></td><td colspan="2"></td></tr>
+	<tr><td></td><td colspan="4">200052, P R China</td><td></td><td colspan="2"></td></tr>
+	<tr><td>Tel#</td><td colspan="4">86-21-6212-6466</td><td></td><td colspan="2"></td></tr>
+	<tr><td>Fax#</td><td colspan="4">86-21-6212-6466</td><td></td><td colspan="2"></td></tr>
+	<tr height="30px"><td colspan="8" align="center"></td></tr>
+	<tr height="25px" align="center" style="border-top:3px solid black;border-bottom:1px solid black"><td>#</td><td>Item Description</td><td align="right">Quantity</td><td>UM</td><td>Unit Price(JPY)</td><td>Amount(JPY)</td><td title="批量修出荷日" style="cursor:pointer;" onclick="same_date()">希望出荷日</td><td>回答出荷日</td></tr>
+
+
+								<tr class="sorttr" align="center" height="25px" bgcolor="">
+													<td width="" class="tr_clear">1</td>
+					<td width="">NHSB046A-D1242</td>
+					<td width="" class="quantity" align="right">21,000</td>
+					<td width="">pcs</td>
+					<td width="">9.39</td>
+					<td width="" class="danjiaheji">197,190</td>
+					<td width="" class="hopedate">2020-07-17</td>
+					<td width="80px"> </td>
+				</tr>
+																<tr class="sorttr" align="center" height="25px" bgcolor="#EEEEEE">
+													<td width="" class="tr_clear">2</td>
+					<td width="">NHSB046A-JK9150-VSA/IDLE STOP</td>
+					<td width="" class="quantity" align="right">93,000</td>
+					<td width="">pcs</td>
+					<td width="">9.39</td>
+					<td width="" class="danjiaheji">873,270</td>
+					<td width="" class="hopedate">2020-07-17</td>
+					<td width="80px"> </td>
+				</tr>
+																<tr class="sorttr" align="center" height="25px" bgcolor="">
+													<td width="" class="tr_clear">3</td>
+					<td width="">NHSB046A-JK9152-CMBS<br>(NHSB046A-D1503)</td>
+					<td width="" class="quantity" align="right">6,000</td>
+					<td width="">pcs</td>
+					<td width="">9.39</td>
+					<td width="" class="danjiaheji">56,340</td>
+					<td width="" class="hopedate">2020-07-17</td>
+					<td width="80px"> </td>
+				</tr>
+																<tr class="sorttr" align="center" height="25px" bgcolor="#EEEEEE">
+													<td width="" class="tr_clear">4</td>
+					<td width="">NHSB046A-JK9152-LDW<br>(NHSB046A-D1502)</td>
+					<td width="" class="quantity" align="right">6,000</td>
+					<td width="">pcs</td>
+					<td width="">9.39</td>
+					<td width="" class="danjiaheji">56,340</td>
+					<td width="" class="hopedate">2020-07-17</td>
+					<td width="80px"> </td>
+				</tr>
+															<tr class="sorttr" align="center" height="25px" bgcolor="">
+					<td width="">5</td>
+					<td width=""></td>
+					<td width="" class="quantity" align="right"></td>
+					<td width=""></td>
+					<td width=""></td>
+					<td width="" class="danjiaheji"></td>
+					<td width=""></td>
+					<td width=""></td>
+				</tr>
+							<tr class="sorttr" align="center" height="25px" bgcolor="#EEEEEE">
+					<td width="">6</td>
+					<td width=""></td>
+					<td width="" class="quantity" align="right"></td>
+					<td width=""></td>
+					<td width=""></td>
+					<td width="" class="danjiaheji"></td>
+					<td width=""></td>
+					<td width=""></td>
+				</tr>
+							<tr class="sorttr" align="center" height="25px" bgcolor="">
+					<td width="">7</td>
+					<td width=""></td>
+					<td width="" class="quantity" align="right"></td>
+					<td width=""></td>
+					<td width=""></td>
+					<td width="" class="danjiaheji"></td>
+					<td width=""></td>
+					<td width=""></td>
+				</tr>
+							<tr class="sorttr" align="center" height="25px" bgcolor="#EEEEEE">
+					<td width="">8</td>
+					<td width=""></td>
+					<td width="" class="quantity" align="right"></td>
+					<td width=""></td>
+					<td width=""></td>
+					<td width="" class="danjiaheji"></td>
+					<td width=""></td>
+					<td width=""></td>
+				</tr>
+							<tr class="sorttr" align="center" height="25px" bgcolor="">
+					<td width="">9</td>
+					<td width=""></td>
+					<td width="" class="quantity" align="right"></td>
+					<td width=""></td>
+					<td width=""></td>
+					<td width="" class="danjiaheji"></td>
+					<td width=""></td>
+					<td width=""></td>
+				</tr>
+							<tr class="sorttr" align="center" height="25px" bgcolor="#EEEEEE">
+					<td width="">10</td>
+					<td width=""></td>
+					<td width="" class="quantity" align="right"></td>
+					<td width=""></td>
+					<td width=""></td>
+					<td width="" class="danjiaheji"></td>
+					<td width=""></td>
+					<td width=""></td>
+				</tr>
+							<tr class="heji" height="25px" align="center" style="border-top:1px solid black;border-bottom:3px solid black;">
+					<td width="" style="border-top:none;"></td>
+					<td width="">Total:</td>
+					<td width="" class="quantity_total" align="right"><b>126,000</b></td>
+					<td width="">pcs</td>
+					<td width="">Amount(JPY):</td>
+					<td width="" class="danjiaheji"><b>1,183,140</b></td>
+					<td width=""></td>
+					<td width=""> </td>
+				</tr>
+
+
+
+
+
+
+
+	<tr height="30px"><td colspan="8" align="center"></td></tr>
+	<tr style="font-size:14px;font-weight:bold"><td colspan="4">Vender Confirmation</td><td></td><td colspan="3">ASAHI TECHNOLOGY(SHANGHAI)CO.,LTD</td></tr>
+	<tr height="80px"><td colspan="8" align="right"><img src="img/gaizhang.png" width="175px" height="175px" onclick="window.print()" title="点击打印/导出PDF" style="cursor:pointer;margin:-20px 21px -9px 0px"></td></tr>
+	<tr style="font-size:14px;font-weight:bold;border-top:2px solid black;"><td colspan="4">Confirmation by</td><td></td><td colspan="3"></td></tr>
+	
+	
+	</tbody></table>
 	
 	
-	<td align="center">1</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03976" style=""><a href="4.php?ddt2=E-J03976">E-J03976</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E13527"><u onclick="c_banngo('_id=3616&amp;cells=1')">E13527</u></td>
-	<td align="right">6000</td>
-	<td>pcs</td>
-	<td>2020-05-01</td>
-	<td class="pick_same" value="PO20030503" style="color: rgb(0, 0, 170);"><a href="4-1.php?asahit22=PO20030503">PO20030503</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3519&amp;t9=1')" title="点击查看该朝日品番">2020-04-24</td>
-	<td><b>2020-05-27</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">2</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03957"><a href="4.php?ddt2=E-J03957">E-J03957</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E12619"><u onclick="c_banngo('_id=3449&amp;cells=2')">E12619</u></td>
-	<td align="right">18000</td>
-	<td>pcs</td>
-	<td>2020-04-01</td>
-	<td class="pick_same" value="PO200115" style="color:#0000AA"><a href="4-1.php?asahit22=PO200115">PO200115</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3348&amp;t9=1')" title="点击查看该朝日品番">2020-03-20</td>
-	<td><b>2020-06-03</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">3</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03967"><a href="4.php?ddt2=E-J03967">E-J03967</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E12393"><u onclick="c_banngo('_id=3525&amp;cells=3')">E12393</u></td>
-	<td align="right">120000</td>
-	<td>pcs</td>
-	<td>2020-05-01</td>
-	<td class="pick_same" value="PO20022101" style="color:#0000AA"><a href="4-1.php?asahit22=PO20022101">PO20022101</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3425&amp;t9=1')" title="点击查看该朝日品番">2020-04-17</td>
-	<td><b>2020-06-03</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">4</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03967"><a href="4.php?ddt2=E-J03967">E-J03967</a></td>
-	<td style="max-width: 120px;" class="pick_same" value="E12617"><u onclick="c_banngo('_id=3527&amp;cells=4')">E12617</u></td>
-	<td align="right">9000</td>
-	<td>pcs</td>
-	<td>2020-05-01</td>
-	<td class="pick_same" value="PO20022101" style="color:#0000AA"><a href="4-1.php?asahit22=PO20022101">PO20022101</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3427&amp;t9=1')" title="点击查看该朝日品番">2020-04-17</td>
-	<td><b>2020-06-03</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">5</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03967"><a href="4.php?ddt2=E-J03967">E-J03967</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E12619"><u onclick="c_banngo('_id=3526&amp;cells=5')">E12619</u></td>
-	<td align="right">177000</td>
-	<td>pcs</td>
-	<td>2020-05-01</td>
-	<td class="pick_same" value="PO20022101" style="color:#0000AA"><a href="4-1.php?asahit22=PO20022101">PO20022101</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3426&amp;t9=1')" title="点击查看该朝日品番">2020-04-17</td>
-	<td><b>2020-06-03</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">6</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03968" style=""><a href="4.php?ddt2=E-J03968">E-J03968</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E10720"><u onclick="c_banngo('_id=3636&amp;cells=6')">E10720</u></td>
-	<td align="right">33000</td>
-	<td>pcs</td>
-	<td>2020-06-01</td>
-	<td class="pick_same" value="PO200311" style="color:#0000AA"><a href="4-1.php?asahit22=PO200311">PO200311</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3538&amp;t9=1')" title="点击查看该朝日品番">2020-05-15</td>
-	<td><b>2020-06-03</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">7</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03968" style=""><a href="4.php?ddt2=E-J03968">E-J03968</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E13076"><u onclick="c_banngo('_id=3640&amp;cells=7')">E13076</u></td>
-	<td align="right">6000</td>
-	<td>pcs</td>
-	<td>2020-06-01</td>
-	<td class="pick_same" value="PO200311" style="color:#0000AA"><a href="4-1.php?asahit22=PO200311">PO200311</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3542&amp;t9=1')" title="点击查看该朝日品番">2020-05-15</td>
-	<td><b>2020-06-03</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">8</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03968" style=""><a href="4.php?ddt2=E-J03968">E-J03968</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E13356"><u onclick="c_banngo('_id=3635&amp;cells=8')">E13356</u></td>
-	<td align="right">24000</td>
-	<td>pcs</td>
-	<td>2020-06-01</td>
-	<td class="pick_same" value="PO200311" style="color:#0000AA"><a href="4-1.php?asahit22=PO200311">PO200311</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3537&amp;t9=1')" title="点击查看该朝日品番">2020-05-15</td>
-	<td><b>2020-06-03</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">9</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03968" style=""><a href="4.php?ddt2=E-J03968">E-J03968</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E17609"><u onclick="c_banngo('_id=3638&amp;cells=9')">E17609</u></td>
-	<td align="right">9000</td>
-	<td>pcs</td>
-	<td>2020-06-01</td>
-	<td class="pick_same" value="PO200311" style="color:#0000AA"><a href="4-1.php?asahit22=PO200311">PO200311</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3540&amp;t9=1')" title="点击查看该朝日品番">2020-05-15</td>
-	<td><b>2020-06-03</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">10</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03976" style=""><a href="4.php?ddt2=E-J03976">E-J03976</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E14929"><u onclick="c_banngo('_id=3621&amp;cells=10')">E14929</u></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td>2020-06-02</td>
-	<td class="pick_same" value="PO20030503" style="color: rgb(0, 0, 170);"><a href="4-1.php?asahit22=PO20030503">PO20030503</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3524&amp;t9=1')" title="点击查看该朝日品番">2020-05-15</td>
-	<td><b>2020-06-03</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">11</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03967"><a href="4.php?ddt2=E-J03967">E-J03967</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E10720"><u onclick="c_banngo('_id=3530&amp;cells=11')">E10720</u></td>
-	<td align="right">30000</td>
-	<td>pcs</td>
-	<td>2020-05-01</td>
-	<td class="pick_same" value="PO20022101" style="color:#0000AA"><a href="4-1.php?asahit22=PO20022101">PO20022101</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3430&amp;t9=1')" title="点击查看该朝日品番">2020-04-17</td>
-	<td><b>2020-07-01</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">12</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03967"><a href="4.php?ddt2=E-J03967">E-J03967</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E17609"><u onclick="c_banngo('_id=3534&amp;cells=12')">E17609</u></td>
-	<td align="right">6000</td>
-	<td>pcs</td>
-	<td>2020-05-01</td>
-	<td class="pick_same" value="PO20022101" style="color:#0000AA"><a href="4-1.php?asahit22=PO20022101">PO20022101</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3434&amp;t9=1')" title="点击查看该朝日品番">2020-04-17</td>
-	<td><b>2020-07-01</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">13</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03976" style=""><a href="4.php?ddt2=E-J03976">E-J03976</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E13544"><u onclick="c_banngo('_id=3618&amp;cells=13')">E13544</u></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td>2020-06-02</td>
-	<td class="pick_same" value="PO20030503" style="color: rgb(0, 0, 170);"><a href="4-1.php?asahit22=PO20030503">PO20030503</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3521&amp;t9=1')" title="点击查看该朝日品番">2020-05-15</td>
-	<td><b>2020-07-01</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">14</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03968" style=""><a href="4.php?ddt2=E-J03968">E-J03968</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E12393"><u onclick="c_banngo('_id=3632&amp;cells=14')">E12393</u></td>
-	<td align="right">63000</td>
-	<td>pcs</td>
-	<td>2020-06-01</td>
-	<td class="pick_same" value="PO200311" style="color:#0000AA"><a href="4-1.php?asahit22=PO200311">PO200311</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3534&amp;t9=1')" title="点击查看该朝日品番">2020-05-15</td>
-	<td><b>2020-07-02</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">15</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03968" style=""><a href="4.php?ddt2=E-J03968">E-J03968</a></td>
-	<td style="max-width: 120px;" class="pick_same" value="E12617"><u onclick="c_banngo('_id=3634&amp;cells=15')">E12617</u></td>
-	<td align="right">9000</td>
-	<td>pcs</td>
-	<td>2020-06-01</td>
-	<td class="pick_same" value="PO200311" style="color:#0000AA"><a href="4-1.php?asahit22=PO200311">PO200311</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3536&amp;t9=1')" title="点击查看该朝日品番">2020-05-15</td>
-	<td><b>2020-07-02</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">16</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03968" style=""><a href="4.php?ddt2=E-J03968">E-J03968</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E12619"><u onclick="c_banngo('_id=3633&amp;cells=16')">E12619</u></td>
-	<td align="right">93000</td>
-	<td>pcs</td>
-	<td>2020-06-01</td>
-	<td class="pick_same" value="PO200311" style="color:#0000AA"><a href="4-1.php?asahit22=PO200311">PO200311</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3535&amp;t9=1')" title="点击查看该朝日品番">2020-05-15</td>
-	<td><b>2020-07-02</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">17</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03968" style=""><a href="4.php?ddt2=E-J03968">E-J03968</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E13547"><u onclick="c_banngo('_id=3639&amp;cells=17')">E13547</u></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td><font color="red">2020-06-01</font></td>
-	<td class="pick_same" value="PO200311" style="color:#0000AA"><a href="4-1.php?asahit22=PO200311">PO200311</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3541&amp;t9=1')" title="点击查看该朝日品番">2020-06-26</td>
-	<td><b>2020-07-02</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">18</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03968" style=""><a href="4.php?ddt2=E-J03968">E-J03968</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E14253"><u onclick="c_banngo('_id=3637&amp;cells=18')">E14253</u></td>
-	<td align="right">12000</td>
-	<td>pcs</td>
-	<td><font color="red">2020-06-01</font></td>
-	<td class="pick_same" value="PO200311" style="color:#0000AA"><a href="4-1.php?asahit22=PO200311">PO200311</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3539&amp;t9=1')" title="点击查看该朝日品番">2020-06-26</td>
-	<td><b>2020-07-02</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">19</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03976" style=""><a href="4.php?ddt2=E-J03976">E-J03976</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E13076"><u onclick="c_banngo('_id=3623&amp;cells=19')">E13076</u></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td>2020-06-02</td>
-	<td class="pick_same" value="PO20030503" style="color: rgb(0, 0, 170);"><a href="4-1.php?asahit22=PO20030503">PO20030503</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3526&amp;t9=1')" title="点击查看该朝日品番">2020-05-15</td>
-	<td><b>2020-07-02</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">20</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03976" style=""><a href="4.php?ddt2=E-J03976">E-J03976</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E13356"><u onclick="c_banngo('_id=3617&amp;cells=20')">E13356</u></td>
-	<td align="right">12000</td>
-	<td>pcs</td>
-	<td>2020-06-02</td>
-	<td class="pick_same" value="PO20030503" style="color: rgb(0, 0, 170);"><a href="4-1.php?asahit22=PO20030503">PO20030503</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3520&amp;t9=1')" title="点击查看该朝日品番">2020-05-15</td>
-	<td><b>2020-07-02</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">21</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03976" style=""><a href="4.php?ddt2=E-J03976">E-J03976</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E13547"><u onclick="c_banngo('_id=3622&amp;cells=21')">E13547</u></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td><font color="red">2020-06-02</font></td>
-	<td class="pick_same" value="PO20030503" style="color: rgb(0, 0, 170);"><a href="4-1.php?asahit22=PO20030503">PO20030503</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3525&amp;t9=1')" title="点击查看该朝日品番">2020-06-26</td>
-	<td><b>2020-07-02</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">22</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03985"><a href="4.php?ddt2=E-J03985">E-J03985</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E14467"><u onclick="c_banngo('_id=3673&amp;cells=22')">E14467</u></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td>2020-07-02</td>
-	<td class="pick_same" value="PO200324" style="color:#0000AA"><a href="4-1.php?asahit22=PO200324">PO200324</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3575&amp;t9=1')" title="点击查看该朝日品番">2020-05-22</td>
-	<td><b>2020-07-02</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">23</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03985"><a href="4.php?ddt2=E-J03985">E-J03985</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E14929"><u onclick="c_banngo('_id=3675&amp;cells=23')">E14929</u></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td>2020-07-02</td>
-	<td class="pick_same" value="PO200324" style="color:#0000AA"><a href="4-1.php?asahit22=PO200324">PO200324</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3577&amp;t9=1')" title="点击查看该朝日品番">2020-05-22</td>
-	<td><b>2020-07-02</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">24</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03985"><a href="4.php?ddt2=E-J03985">E-J03985</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E12393"><u onclick="c_banngo('_id=3669&amp;cells=24')">E12393</u></td>
-	<td align="right">39000</td>
-	<td>pcs</td>
-	<td>2020-07-02</td>
-	<td class="pick_same" value="PO200324" style="color:#0000AA"><a href="4-1.php?asahit22=PO200324">PO200324</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3571&amp;t9=1')" title="点击查看该朝日品番">2020-05-22</td>
-	<td><b>2020-08-05</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">25</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03985"><a href="4.php?ddt2=E-J03985">E-J03985</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E12619"><u onclick="c_banngo('_id=3670&amp;cells=25')">E12619</u></td>
-	<td align="right">18000</td>
-	<td>pcs</td>
-	<td>2020-07-02</td>
-	<td class="pick_same" value="PO20011801" style="color:#0000AA"><a href="4-1.php?asahit22=PO20011801">PO20011801</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3581&amp;t9=1')" title="点击查看该朝日品番">2020-04-03</td>
-	<td><b>2020-08-05</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7">
-	
-	
-	<td align="center">26</td>
-	
-	<td class="pick_same" value="高屋希革斯" style=""></td>
-	<td class="pick_same" value="E-J03985"><a href="4.php?ddt2=E-J03985"></a></td>
-	<td style="max-width:120px;" class="pick_same" value="E12619"><u onclick="c_banngo('_id=3680&amp;cells=26')">E12619</u></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td>2020-07-02</td>
-	<td class="pick_same" value="PO200324" style="color:#0000AA"><a href="4-1.php?asahit22=PO200324">PO200324</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3582&amp;t9=1')" title="点击查看该朝日品番">2020-05-22</td>
-	<td><b>2020-08-05</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">27</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03985"><a href="4.php?ddt2=E-J03985">E-J03985</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E13076"><u onclick="c_banngo('_id=3668&amp;cells=27')">E13076</u></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td>2020-06-02</td>
-	<td class="pick_same" value="PO200324" style="color:#0000AA"><a href="4-1.php?asahit22=PO200324">PO200324</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3570&amp;t9=1')" title="点击查看该朝日品番">2020-05-22</td>
-	<td><b>2020-08-05</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7">
-	
-	
-	<td align="center">28</td>
-	
-	<td class="pick_same" value="高屋希革斯" style=""></td>
-	<td class="pick_same" value="E-J03985"><a href="4.php?ddt2=E-J03985"></a></td>
-	<td style="max-width:120px;" class="pick_same" value="E13076"><u onclick="c_banngo('_id=3677&amp;cells=28')">E13076</u></td>
-	<td align="right">6000</td>
-	<td>pcs</td>
-	<td>2020-07-02</td>
-	<td class="pick_same" value="PO200324" style="color:#0000AA"><a href="4-1.php?asahit22=PO200324">PO200324</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3579&amp;t9=1')" title="点击查看该朝日品番">2020-05-22</td>
-	<td><b>2020-08-05</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">29</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03985"><a href="4.php?ddt2=E-J03985">E-J03985</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E13356"><u onclick="c_banngo('_id=3671&amp;cells=29')">E13356</u></td>
-	<td align="right">24000</td>
-	<td>pcs</td>
-	<td>2020-07-02</td>
-	<td class="pick_same" value="PO200324" style="color:#0000AA"><a href="4-1.php?asahit22=PO200324">PO200324</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3573&amp;t9=1')" title="点击查看该朝日品番">2020-05-22</td>
-	<td><b>2020-08-05</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">30</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03985"><a href="4.php?ddt2=E-J03985">E-J03985</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E17609"><u onclick="c_banngo('_id=3676&amp;cells=30')">E17609</u></td>
-	<td align="right">3000</td>
-	<td>pcs</td>
-	<td>2020-07-02</td>
-	<td class="pick_same" value="PO200324" style="color:#0000AA"><a href="4-1.php?asahit22=PO200324">PO200324</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3578&amp;t9=1')" title="点击查看该朝日品番">2020-05-22</td>
-	<td><b>2020-08-05</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="" class="tabletr">
-	
-	
-	<td align="center">31</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03985"><a href="4.php?ddt2=E-J03985">E-J03985</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E10720"><u onclick="c_banngo('_id=3672&amp;cells=31')">E10720</u></td>
-	<td align="right">18000</td>
-	<td>pcs</td>
-	<td>2020-07-02</td>
-	<td class="pick_same" value="PO200324" style="color:#0000AA"><a href="4-1.php?asahit22=PO200324">PO200324</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3574&amp;t9=1')" title="点击查看该朝日品番">2020-05-22</td>
-	<td><b>2020-09-02</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">32</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03968" style=""><a href="4.php?ddt2=E-J03968">E-J03968</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E14253"><u onclick="c_banngo('_id=3763&amp;cells=32')">E14253</u></td>
-	<td align="right">6</td>
-	<td>pcs</td>
-	<td>2020-06-01</td>
-	<td class="pick_same" value="PO200407" style="color:#0000AA"><a href="4-1.php?asahit22=PO200407">PO200407</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3632&amp;t9=1')" title="点击查看该朝日品番">0000-00-00</td>
-	<td><b>2083-06-08</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7">
-	
-	
-	<td align="center">33</td>
-	
-	<td class="pick_same" value="高屋希革斯" style=""></td>
-	<td class="pick_same" value="E-J03968" style=""><a href="4.php?ddt2=E-J03968"></a></td>
-	<td style="max-width:120px;" class="pick_same" value="E14253"><u onclick="c_banngo('_id=3777&amp;cells=33')">E14253</u></td>
-	<td align="right">6</td>
-	<td>pcs</td>
-	<td>2020-06-01</td>
-	<td class="pick_same" value="PO200415" style="color:#0000AA"><a href="4-1.php?asahit22=PO200415">PO200415</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3678&amp;t9=1')" title="点击查看该朝日品番">0000-00-00</td>
-	<td><b>2083-06-08</b></td>
-	
-	<td></td>
-		
-</tr>
-<tr bgcolor="#F7F7F7" class="tabletr">
-	
-	
-	<td align="center">34</td>
-	
-	<td class="pick_same" value="高屋希革斯" style="">高屋希革斯</td>
-	<td class="pick_same" value="E-J03976" style=""><a href="4.php?ddt2=E-J03976">E-J03976</a></td>
-	<td style="max-width:120px;" class="pick_same" value="E14253"><u onclick="c_banngo('_id=3620&amp;cells=34')">E14253</u></td>
-	<td align="right">3</td>
-	<td>pcs</td>
-	<td>2020-06-02</td>
-	<td class="pick_same" value="PO200410" style="color:#0000AA"><a href="4-1.php?asahit22=PO200410">PO200410</a></td>
-	<td style="color:#0000AA" onclick="window.open('6.php?t4=id3649&amp;t9=1')" title="点击查看该朝日品番">0000-00-00</td>
-	<td><b>2083-06-08</b></td>
-	
-	<td></td>
-		
-</tr>
-</tbody></table>

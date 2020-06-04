@@ -100,7 +100,7 @@ if($po2){
 
 
 
-$resultc=mysqli_query($conn,"SELECT * FROM `t_teacher` WHERE $select_c1 $select_c2 order by hopedate desc");
+$resultc=mysqli_query($conn,"SELECT * FROM `t_teacher` WHERE $select_c1 $select_c2 AND banngo not like '%</s>' order by hopedate desc");
 $resultpo=mysqli_query($conn,"SELECT * FROM `t_poteacher` WHERE $select_po1 $select_po2 order by JPdate desc");
 if($customerradio){echo "【".$echo."】";}
 ?>
@@ -137,7 +137,7 @@ function switch_on_off(shit,str){
 				<td>asahi po</td>
 			</tr>
 			<?php while($rowc=$resultc->fetch_row()){ ?>
-			<tr align="center">
+			<tr align="center" style="border:1px solid white;">
 				<td><input type="radio" name="customerradio" value="<?php echo $rowc[12] ?>"></td>
 				<td><a href="4.php?ddt2=<?php echo $rowc[1] ?>"><?php echo $rowc[0]."<br>".$rowc[1] ?></a></td>
 				<td><a href="###" onclick="c_banngo('_id=<?php echo $rowc[12] ?>')" ><?php echo $rowc[2] ?></a></td>
@@ -160,7 +160,7 @@ function switch_on_off(shit,str){
 				<td>显示</td>
 			</tr>
 			<?php while($rowpo=$resultpo->fetch_row()){ ?>
-			<tr align="center">
+			<tr align="center" style="border:1px solid white;">
 				<td><input type="radio" name="asahiradio" value="<?php echo $rowpo[9] ?>"></td>
 				<td><a href="4-1.php?asahit1=<?php echo $rowpo[0]; ?>" ><?php echo $rowpo[0] ?></a></td>
 				<td><a href="###" onclick="po_banngo('_id=<?php echo $rowpo[9] ?>')"><?php echo $rowpo[1] ?></a></td>
@@ -194,6 +194,9 @@ function switch_on_off(shit,str){
 
 <!--ajas-->
 <style>
+table{
+	border-collapse:collapse;
+}
 .ajasdivout{
 	position:fixed;right:0px;top:18px;min-height:400px;width:350px;background-color:white;
 	-webkit-box-shadow: -8px 4px 18px #BBBBBB;

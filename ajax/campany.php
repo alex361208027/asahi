@@ -28,8 +28,11 @@ while($row=$result->fetch_row()){
 //$txt=$txt."<option value='".$row[1]."'>";
 $txt=$txt.$row[1].",";
 }
-fwrite(fopen("write_data/campany.html", "w"), $txt);
+//fwrite(fopen("write_data/campany.html", "w"), $txt);
 
+$file = fopen("write_data/campany.html", "w");
+fwrite($file,$txt);
+fclose($file);
 
 
 $conn->close();

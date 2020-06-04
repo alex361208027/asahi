@@ -249,7 +249,7 @@ $(document).ready(function(){
 				<table cellpadding="0" cellspacing="0" width="100%" height="100%">
 				<tr>
 					<td width="" align="" valign="top">
-						<div style="padding:4px 10px;background-color:#5E5E5E;color:white;display:inline-block">REMARK</div><br>
+						<div style="padding:4px 10px;background-color:#5E5E5E;color:white;display:inline-block" onclick="window.location.href='calendar.php'">REMARK</div><br>
 						<textarea style="width:100%;min-height:230px;" name="mynote" onchange="myn()"><?php $rownote=mysqli_query($conn,"SELECT * FROM `t_note` WHERE user = '{$_COOKIE['asahiuser']}' AND remark=0 order by time desc limit 1")->fetch_row();$rownote[1]=str_replace("<br>","\r\n",$rownote[1]); echo $rownote[1]; ?></textarea>
 						<div id="mynotegengxin"><font size="2" color="#FF5577">信息更新于:<?php echo $rownote[2];  ?></font></div>
 					

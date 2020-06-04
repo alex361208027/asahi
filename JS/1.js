@@ -1,4 +1,30 @@
 $(document).ready(function(){
+	
+	
+	
+	$("#tableExcel tr").mousedown(function(){
+		check_start=$(this).index();
+
+	});
+	
+	$("#tableExcel tr").mouseup(function(){
+		check_end=$(this).index();
+		
+		if(check_end>check_start){
+
+			for(i=check_start;i<=check_end;i++){
+				if($("#tableExcel tr").eq(i).children().eq(0).children("input").prop("checked")=="checked"){
+					//$("#tableExcel tr").eq(i).children().eq(1).children("input").attr("checked",false);
+				}else{
+					
+					$("#tableExcel tr").eq(i).children().eq(0).children("input").prop("checked","checked");
+				}
+			}
+			checkboxsum();
+		}
+	});
+	
+	
 	$("[list='kehulist']").click(function(){
 		$(this).val("");
 	});
@@ -53,6 +79,9 @@ $(document).ready(function(){
 		delay_time=delay_time+80;
 	});
 	}
+	
+	
+	
 	
 	
 	
@@ -215,7 +244,7 @@ function exceldownload(str){
 }
         //第五种方法  
         var idTmr;  
-        function  getExplorer() {  
+        function getExplorer() {  
             var explorer = window.navigator.userAgent ;  
             //ie  
             if (explorer.indexOf("MSIE") >= 0) {  
@@ -239,7 +268,6 @@ function exceldownload(str){
             }  
         }  
         function method5(tableid) {  
-		
 		
             if(getExplorer()=='ie')  
             {  
@@ -269,14 +297,17 @@ function exceldownload(str){
             }  
             else  
             {  
-                tableToExcel(tableid)  
+
+                tableToExcel(tableid);
             }  
         }  
         function Cleanup() {  
             window.clearInterval(idTmr);  
             CollectGarbage();  
         }  
-        var tableToExcel = (function() {  
+       // var tableToExcel = (function() {  
+		function tableToExcel(tableid){
+
             var uri = 'data:application/vnd.ms-excel;base64,',  
                     template = '<html><head><meta charset="UTF-8"></head><body><table>{table}</table></body></html>',  
                     base64 = function(s) { return window.btoa(unescape(encodeURIComponent(s))) },  
@@ -287,7 +318,8 @@ function exceldownload(str){
                 if (!table.nodeType) table = document.getElementById(table)  
                 var ctx = {worksheet: name || 'Worksheet', table: table.innerHTML}  
                 window.location.href = uri + base64(format(template, ctx))  
-            }  
-        })()  
+            }
+		}			
+        //})()  
  
 

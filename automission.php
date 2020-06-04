@@ -16,7 +16,10 @@ $result=mysqli_query($conn,$sql);
 $row=$result->fetch_row();
 echo "C未处理".$row[0]."<br>";
 $txt=$row[0].",".$todaytime;
-fwrite(fopen("ajax/write_data/cweichuli.html", "w"), $txt);
+
+$file=fopen("ajax/write_data/cweichuli.html", "w");
+fwrite($file, $txt);
+fclose($file);
 
 //////////////////////////朝日未处理订单数
 
@@ -25,8 +28,9 @@ $result=mysqli_query($conn,$sql);
 $row=$result->fetch_row();
 echo "PO未处理".$row[0]."<br>";
 $txt=$row[0].",".$todaytime;
-fwrite(fopen("ajax/write_data/poweichuli.html", "w"), $txt);
-
+$file=fopen("ajax/write_data/poweichuli.html", "w");
+fwrite($file, $txt);
+fclose($file);
 //////////////////////////在库数
 
 $sql="SELECT SUM(quantity) FROM t_inout WHERE outquantity is null OR outquantity = 0";
@@ -34,8 +38,9 @@ $result=mysqli_query($conn,$sql);
 $row=$result->fetch_row();
 echo "在库数".$row[0]."<br>";
 $txt=$row[0].",".$todaytime;
-fwrite(fopen("ajax/write_data/zaikushu.html", "w"), $txt);
-
+$file=open("ajax/write_data/zaikushu.html", "w");
+fwrite($file, $txt);
+fclose($file);
 
 if($hour<10){
 if(date('d')=='01'|| date('d')==11 || date('d')==22){
@@ -65,7 +70,10 @@ if(date('d')=='01'|| date('d')==11 || date('d')==22){
 
 	$chukuheji=implode(",",$chukuheji);
 	echo $chukuheji;
-	fwrite(fopen("ajax/write_data/chukutongji.html", "w"), $chukuheji);
+	$file=fopen("ajax/write_data/chukutongji.html", "w");
+	fwrite($file, $chukuheji);
+	fclose($file);
+	
 	echo "出库统计完成<br>";
 }
 }

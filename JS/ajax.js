@@ -630,7 +630,7 @@ function c_chaifen_complete(str){
 function c_delete(str){
 			document.getElementById("ajasdiv2").innerHTML="正在加载...";
 			document.getElementById("ajasdivout2").style.right="345";
-			document.getElementById("ajasdiv2").innerHTML="<button onclick=\"c_delete_complete('"+str+"')\">仅删除</button><br>"+"<button onclick=\"c_delete_complete('"+str+"&po_delete=1"+"')\">同时删除已匹配的PO订单</button>";
+			document.getElementById("ajasdiv2").innerHTML="<button onclick=\"c_delete_complete('"+str+"')\">仅删除</button><br>"+"<button onclick=\"c_delete_complete('"+str+"&po_delete=1"+"')\">同时删除已匹配的PO订单</button>"+"<br><br><button onclick=\"c_deletekeep_complete('"+str+"')\">删除但留底</button><br>";
 
 			
 }
@@ -658,6 +658,34 @@ function c_delete_complete(str){
 				}
 			  }
 			xmlhttp.open("GET","./ajax/c_delete_complete.php?"+str,true);
+			xmlhttp.send();
+}
+
+function c_deletekeep_complete(str){
+			var xmlhttp;
+			if (str.length==0)
+			  { 
+			  //document.getElementById("ajasdiv").innerHTML="";
+			  return;
+			  }
+			if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
+			  xmlhttp=new XMLHttpRequest();
+			  }else{// code for IE6, IE5
+			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+			  
+			xmlhttp.onreadystatechange=function()
+			  {
+			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+				{	
+					document.getElementById("ajasdiv2").innerHTML=xmlhttp.responseText;
+					setTimeout("document.getElementById('ajasdivout2').style.right='-445'",1000);
+					cells=document.getElementById('cells').value;
+					document.getElementById('tableExcel').rows[cells].cells[2].innerHTML="删&留底";
+					alert("操作完成，请确认！(建议)可删除对应朝日订单");
+				}
+			  }
+			xmlhttp.open("GET","./ajax/c_deletekeep_complete.php?"+str,true);
 			xmlhttp.send();
 }
 

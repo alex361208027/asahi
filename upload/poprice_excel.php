@@ -18,7 +18,10 @@ $iii++;
 }
 
 $txt=$txt."</table>";
-fwrite(fopen("moban/price.xlsx", "w"), $txt);
+
+$file=fopen("moban/price.xlsx", "w");
+fwrite($file, $txt);
+fclose($file);
 
 echo "moban/price.xlsx";
 
