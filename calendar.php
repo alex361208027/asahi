@@ -10,16 +10,14 @@ echo file_get_contents("templates/header.html");
 //$dbname = "asahi";
 
 date_default_timezone_set('PRC');
-$time=file_get_contents("upload/calendar/user.html");
 
 if($_GET["date"]){
 	$moon=$_GET["date"]."-01";
 }else{
 $_GET["date"]=date('Y-m');
 $moon=date('Y-m')."-01";
-
-
 }
+$time=file_get_contents("upload/calendar/user.html");
 
 //$conn = new mysqli($servername, $username, $password, $dbname);
 //mysqli_set_charset ($conn,utf8);
@@ -81,7 +79,12 @@ button:hover{
 .placeholder{
 	border:1px dashed red;min-height:20px;background:#EEEEEE;
 }
-
+textarea{
+	width:250px;height:50px;font-size:14px;background:white;padding:0;margin:4px 0;color:#2e2e2e;
+}
+hr{
+	border-color:white;
+}
 </style>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
   <script src="//code.jquery.com/jquery-1.9.1.js"></script>
@@ -89,77 +92,105 @@ button:hover{
 	  <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
 <script>
 $(function(){
-		
+	
+	$("#note").draggable();
 
+
+		
+	function note_show(shit){
+		$("#note").fadeIn().css({"left":(event.pageX-60),"top":(event.pageY-20)});
+			if(shit){
+			$("#note_text").val(shit.text());
+			$("#edit2").fadeIn();
+			$("#note_title").val(shit.attr("title"));
+			}else{
+			$("#note_text").val("");
+			}
+		$("#note_text").select();
+		
+	}
+		
+	function note_hide(){
+		$("#note").fadeOut();
+		$("#edit").fadeOut();
+		$("#edit2").fadeOut();
+		$("#note_text").val("");
+		$("#note_title").val("");
+	}
+	
+	
+	
+	$("#yes").click(function(){
+		
+		if(str.text()=="+new Message"){
+		str.next(".mytd").append("<div class='ms' title=''>"+$("#note_text").val()+"</div>");
+		}else{
+			str.text($("#note_text").val());
+			
+			str.attr("title",$("#note_title").val());
+		}
+		note_hide();
+		calendarread();
+	});
+	
+	$("#no").click(function(){
+		note_hide();
+	});
 	
 	$("button").click(function(){
-		
-		
-		ms=prompt("Text:");
-		if(ms){
-			
-		$(this).next(".mytd").append("<div class='ms' title='double click'>"+ms+"</div>");
-		
-		calendarread();
-		}
+		str=$(this);
+		note_show();
+		$("#edit").fadeOut();
+		$("#edit2").fadeOut();
 	});
 	
 	$(".mytd").on("dblclick",".ms",function(){
 		
+		$("#edit").fadeIn();
+		str=$(this);
+		note_show($(this));
 		
-		
-		if($("#checkcolor").prop("checked")){
-			if($(this).attr("class")=="ms"){
-				$(this).removeClass("");
-				$(this).addClass("ms");
-				$(this).addClass("msmark");
+	});
+	
+	$("#mark").click(function(){
+		if(str.attr("class")=="ms"){
+				str.removeClass("");
+				str.addClass("ms");
+				str.addClass("msmark");
 			}else{
-				$(this).removeClass();
-				$(this).addClass("ms");
+				str.removeClass();
+				str.addClass("ms");
 			}
-			 
-			
-			
-		}else if($("#checkdelete").prop("checked")){
-			if(confirm("Delete?")){
-			$(this).remove();
+			 note_hide();
+			calendarread();
+	});
+	$("#down").click(function(){
+		if(str.attr("class")=="ms"){
+				str.removeClass("");
+				str.addClass("ms");
+				str.addClass("msdown");
 			}else{
-				return false;
+				str.removeClass();
+				str.addClass("ms");
 			}
-		
-		}else if($("#checkdone").prop("checked")){
-			
-			if($(this).attr("class")=="ms"){
-				$(this).removeClass("");
-				$(this).addClass("ms");
-				$(this).addClass("msdown");
-			}else{
-				$(this).removeClass();
-				$(this).addClass("ms");
-			}
-			
-		}else{
-		
-			if(ms_c=prompt("Change",$(this).text())){
-				$(this).empty().append(ms_c);
-				
+			calendarread();
+			note_hide();
+	});
+	$("#delete").click(function(){
+		if(confirm("确认删除？")){
+			str.remove();
+			calendarread();
 			}else{
 				return false;
 			}
-		
-		}
-		
-		calendarread();
-		
-		
-
+			note_hide();
 	});
 	
 	$( ".mytd" ).sortable({
 		items:".ms",
 		connectWith: ".mytd",
 		placeholder:"placeholder",
-		stop:function(){calendarcheck();calendarread();}
+		stop:function(){calendarread();}
 	}).disableSelection();
 	
 	
@@ -172,13 +203,13 @@ $(function(){
 		
 		$.post("upload/calendar/calendar_check.php",{},function(data){
 			if(data==user){
-				//calendarcheck_result=1;
-				//$("#check_result").empty().append("");
+			
 			}else{
-				//calendarcheck_result=0;
-				//alert(000);
+	
 				if(confirm("其他用户对日历正在做更改，请刷新。")){
 					//alert(00);
+					window.location.reload();
+				}else{
 					window.location.reload();
 				}
 				
@@ -220,6 +251,9 @@ $(function(){
 	$("#save").click(function(){
 	
 		yy=prompt("Year",<? echo "'".date('Y')."'";  ?>);
+		if(!yy){
+			return false;
+		}
 		mm=prompt("Month","01");
 		if(isNaN(yy) || isNaN(mm)){
 				alert("It's not a Number");
@@ -252,12 +286,9 @@ $(function(){
 });
 </script>
 <body style="padding:5px;">
-<div style="background:#FBEFEF;color:#BDBDBD;">
-<label><input type="checkbox" id="checkcolor" />Mark </label>
-<label><input type="checkbox" id="checkdone" />Finish </label>
-<label><input type="checkbox" id="checkdelete" />Delete </label>
- &nbsp;  &nbsp;  &nbsp; <a href="indexxiabu.php">[Back To HomePage]</a><a id="check_result" href="#"></a>
-<div id="autosave" style="float:right;" onclick="window.location.href='calendar.php?date=<? echo date('Y-m',strtotime($_GET['date'])); ?>&reset=1'">RESET</div>
+<div style="background:;color:#BDBDBD;">
+<a href="indexxiabu.php">[Back To HomePage]</a>
+<div id="autosave" style="float:right;" onclick="if(confirm('确定重置日历内容？')){window.location.href='calendar.php?date=<? echo date('Y-m',strtotime($_GET['date'])); ?>&reset=1'}">RESET</div>
 </div>
 <div id="calendar"><?
 if(file_exists("upload/calendar/month/".$_GET['date'].".html") && !$_GET['reset']){
@@ -268,8 +299,8 @@ if(file_exists("upload/calendar/month/".$_GET['date'].".html") && !$_GET['reset'
 <div class="chose" id="save" title="chose date"><? echo $_GET['date']; ?></div>
 <div class="chose" title="next month" onclick="window.location.href='calendar.php?date=<? echo date('Y-m',strtotime("+1 month",strtotime($_GET['date']))); ?>'">>></div>
 <table cellpadding="0" cellspacing="0">
-<tr style="background:black;color:white;height:40px;font-size:22px;font-weight:bold;">
-<td>Sunday</td><td>Monday</td><td>Tuesday</td><td>Wednesday</td><td>Thursday</td><td>Friday</td><td>Saturday</td>
+<tr style="background:black;color:white;height:40px;font-size:20px;font-weight:bold;">
+<td>Sunday 日</td><td>Monday 月</td><td>Tuesday 火</td><td>Wednesday 水</td><td>Thursday 木</td><td>Friday 金</td><td>Saturday 土</td>
 </tr>
 <?
 $tr=0;
@@ -326,14 +357,28 @@ $td=0;
 }
 ?>
 </div>
+
+<div id="note" style="border:2px solid red;position:absolute;height:auto;width:auto;background:#FBEFEF;padding:14px 4px 8px 8px;display:none;border-radius:6px;">
+	<form onsubmit="return false;">
+	<input type="text" id="note_text" value="" style="font-size:15px;min-width:250px;" placeholder="请输入内容"/>
+	<input type="submit" id="yes" value="确定" style="background:black;color:white;"/><input type="button" id="no" value="取消"/></form>
+
+	<div id="edit2" style="display:none;"><hr>备注/报告/内容:<br>
+	<textarea id="note_title"></textarea>
+	</div>
+
+	
+	<div id="edit" style="display:none;">
+	<hr>
+	<input type="button" id="mark" value="标记为重要"/><input type="button" id="down" value="标记为不重要"/><input type="button" id="delete" value="删除"/>
+	</div>
+	
+</div>
 </body>
-<script>
-$(function(){
-	///today=<? echo "'".date('Y-m-d')."'"; ?>;
-	//$("div[value='"+today+"']").css({"border":"2px solid black"});
-});
-</script>
+
 <style>
+
+
 div[value=<? echo "'".date('Y-m-d')."'"; ?>]{
 	border:2px solid #F78181;
 }
@@ -342,6 +387,7 @@ div[value=<? echo "'".date('Y-m-d')."'"; ?>]:hover{
 }
 
 </style>
+
 <?
 // $conn->close();
 //echo file_get_contents("templates/footer.html");

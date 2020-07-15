@@ -213,7 +213,9 @@ table{border-collapse: collapse;}
 	border-top:solid 1px #d0dee5
 }
 
-
+.remark4{
+	border:1px dashed yellow;
+}
 
 </style>
 <br><br><br>
@@ -305,7 +307,7 @@ table{border-collapse: collapse;}
 	
 	<td align="right" class="2_td_checkbox"><input type="checkbox" name="checkboxsum" onclick="checkboxsum();" value="<?php echo $row[3]; ?>" _id="<?php echo $row[12] ?>" cells="<?php echo $jjj+1; ?>"/></td>
 	<td align="center"><?php echo $jjj+1; ?></td>
-	<td align="center" class="2_td_state"><div class="classcp1" style="background-color:<?php echo $bgimg; ?>" title="<? echo $row[8]."(".$states.")"; ?>"><?php if($remark4){echo $remark4;}else{echo $states;} ?></div></td>
+	<td align="center" class="2_td_state"><div class=<? if($remark4){echo "'classcp1 remark4'";}else{echo "'classcp1'";} ?> style="background-color:<?php echo $bgimg; ?>" title="<? echo $row[8]."(".$states.")"; ?>"><?php if($remark4){echo $remark4;}else{echo $states;} ?></div></td>
 	<td class="pick_same" value="<? echo $row[0] ?>"><?php if(!$same){echo $row[0];} ?></td>
 	<td class="pick_same" value="<? echo $row[1] ?>"><a href="4.php?ddt2=<?php echo $row[1] ?>"><?php if(!$same){echo $row[1];} ?></a></td>
 	<td style="max-width:120px;" class="pick_same" value="<? echo $row[2] ?>"><u onclick="c_banngo('_id=<?php echo $row[12] ?>&cells=<?php echo $jjj+1 ?>')"><?php echo $row[2] ?></u></td>

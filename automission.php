@@ -82,7 +82,7 @@ $conn->close();
 ?>
 <script>
 function close(){
-	setTimeout("window.location.href='about:blank';window.close();",10000);
+	//setTimeout("window.location.href='about:blank';window.close();",10000);
 }
 </script>
 <body onload="close()">

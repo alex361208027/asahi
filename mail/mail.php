@@ -122,7 +122,7 @@ if(date("w")==6 || date("w")==0){
 		$table=$table."<tr><td>".$row[0]."</td><td>".$row[1]."</td><td>".$row[2]."</td><td>".$row[3]."</td><td>".$row[4]."</td><td>".$row[8]."</td></tr>";
 	}
 
-	$post_content="【朝日科技】今日发货提醒：<br><br>"."<table>".$table."</table>"."<br>详情请进入<a href='http://www.asahi-rubber.cn' target='_BLANK'>系统</a><br><br>";
+	$post_content="【朝日科技】今日发货提醒：<br><br>"."<table>".$table."</table>"."<br>详情请进入<a href='http://www.asahi-rubber.cn' target='_BLANK'>系统</a><a href='http://3192fa9486.wicp.vip' target='_BLANK'>(备用链接)</a><br><br>";
 
 	echo $post_to."<br>".$post_title."<br>".$post_content;
 

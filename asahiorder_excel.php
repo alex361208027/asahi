@@ -92,17 +92,21 @@ tr{
 @media print {
  .printclass{ display:none;}
 }
-
+.placeholder{
+	background:red;
+	border:1px dashed black;
+}
 </style>
 <script>
 $(function(){
 
  $( "#sortable1" ).sortable({
 	 items:'.sorttr',
+	 placeholder:"placeholder",
 	 stop:function(){
 		 $(".sorttr").each(function(){
 			 //setTimeOut(()=>{
-			 check_index=Number($(this).index())-16;
+			 check_index=Number($(this).index())-17;
 			 check_index=Number(check_index);
 			
 			 $(this).children("td").eq(0).text(check_index);
@@ -123,7 +127,10 @@ $(function(){
 	$("td").dblclick(function(){
 		change_val=prompt("更改数据?(注:点击【取消】清空数据)",$(this).text());
 		if($(this).attr("class")=="quantity"){
+			change_val=Number(change_val.replace(/,/g,""));
+			
 			change_val=thousandBitSeparator(change_val);
+			//change_val=change_val.toLocaleStrinG();
 		}
 		$(this).empty().append(change_val);
 			qiuhe();
@@ -157,18 +164,20 @@ $(function(){
 		$(".quantity").each(function(){
 			if($(this).text()){
 				quantity=$(this).text();
-				quantity=Number(quantity.replace(",",""));quantityall=Number(quantityall)+Number(quantity);
+				quantity=quantity.replace(/,/g,"");
+				quantityall=Number(quantityall)+Number(quantity);
 				um=$(this).next().next().text();
 				//um=Number(um.replace(",",""));
 				singletotal=Number(um*1000)*Number(quantity*1000)/1000000;
 				priceall=Number(priceall)+Number(singletotal);
-				
+				singletotal=singletotal.toFixed(2);
 				singletotal=thousandBitSeparator(singletotal);
 				$(this).next().next().next().empty().append(singletotal);
 			}
 				
 		});
 		quantityall=thousandBitSeparator(quantityall);
+		priceall=priceall.toFixed(2);
 		priceall=thousandBitSeparator(priceall);
 		
 	    $(".quantity_total").empty().append("<b>"+quantityall+"</b>");
@@ -182,13 +191,11 @@ $(function(){
 
 
 function thousandBitSeparator(num) {
-  var num = (num || 0).toString(), result = '';
-    while (num.length > 3) {
-        result = ',' + num.slice(-3) + result;
-        num = num.slice(0, num.length - 3);
-    }
-    if (num) { result = num + result; }
-    return result;
+
+  
+  return (num+ '').replace(/(\d{1,3})(?=(\d{3})+(?:$|\.))/g,'$1,');
+  
+  
 }
 
 function same_date(){
@@ -215,7 +222,7 @@ function same_date(){
 	<tr><td colspan="8" align="center" style="font-size:24px;font-weight:bold;letter-spacing:2px">朝日科技（上海）有限公司</td></tr>
 	<tr><td colspan="8" align="center" style="font-size:16px;font-weight:bold">ASAHI TECHNOLOGY(SHANGHAI)CO.LTD</td></tr>
 	<tr><td colspan="8" align="center" style="font-size:24px;font-weight:bold;letter-spacing:3px" height="80px">PURCHASE ORDER</td></tr>
-	<tr><td>To:</td><td colspan="4">ASAHI RUBBERINC.INC</td><td>Document No.</td><td colspan="2" style="font-weight:bold;font-size:13px;"><? echo $row[0]; ?></td></tr>
+	<tr><td>To:</td><td colspan="4">ASAHI RUBBER INC.</td><td>Document No.</td><td colspan="2" style="font-weight:bold;font-size:13px;"><? echo $row[0]; ?></td></tr>
 	<tr><td></td><td colspan="4">2-7-2, Dotecho, Omuta-ku</td><td>Issue Date:</td><td colspan="2" align="left"><?php echo date('d-M-y'); ?></td></tr>
 	<tr><td></td><td colspan="4">Saitama-shi,Saitama,330-0801,Japan</td><td>Currencey:</td><td colspan="2">JPY</td></tr>
 	<tr><td>Attn:</td><td colspan="4">Mr.Ichikawa</td><td>Terms of Delivery:</td><td colspan="2">CIF ShangHai</td></tr>
@@ -224,6 +231,7 @@ function same_date(){
 	<tr><td>Ship To:</td><td colspan="4">Summit Center, Unit818, No.1088</td><td>Customer Name:</td><td colspan="2"><?php echo $thecampany;  ?></td></tr>
 	<tr><td></td><td colspan="4">Yan'an West Road, Shanghai,</td><td></td><td colspan="2"></td></tr>
 	<tr><td></td><td colspan="4">200052, P R China</td><td></td><td colspan="2"></td></tr>
+	<tr><td>Attn:</td><td colspan="4">Ms.MaLin</td><td></td><td colspan="2"></td></tr>
 	<tr><td>Tel#</td><td colspan="4">86-21-6212-6466</td><td></td><td colspan="2"></td></tr>
 	<tr><td>Fax#</td><td colspan="4">86-21-6212-6466</td><td></td><td colspan="2"></td></tr>
 	<tr height="30px"><td colspan="8" align="center"></td></tr>
@@ -290,7 +298,7 @@ function same_date(){
 					<td width="" class="quantity" align="right"><?php echo number_format($quantitytotel);$total+=$quantitytotel; ?></td>
 					<td width=""><?php if($rowfinal[1]){echo "pcs";} ?></td>
 					<td width=""><?php echo $rowprice[2] ?></td>
-					<td width="" class="danjiaheji"><?php echo number_format($rowprice[2]*$quantitytotel);$total2+=($rowprice[2]*$quantitytotel) ?></td>
+					<td width="" class="danjiaheji"><?php echo number_format($rowprice[2]*$quantitytotel,2);$total2+=($rowprice[2]*$quantitytotel) ?></td>
 					<td width="" class="hopedate"><?php 
 					if(in_array($rowfinal[4],$mysave)){
 						echo $myload[array_search($rowfinal[4],$mysave)];
@@ -348,7 +356,7 @@ function same_date(){
 					<td width="" class="quantity_total" align="right"><b><?php echo number_format($total) ?></b></td>
 					<td width="">pcs</td>
 					<td width="">Amount(JPY):</td>
-					<td width="" class="danjiaheji"><b><?php echo number_format($total2) ?></b></td>
+					<td width="" class="danjiaheji"><b><?php echo number_format($total2,2) ?></b></td>
 					<td width=""></td>
 					<td width=""> </td>
 				</tr>
