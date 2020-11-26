@@ -68,7 +68,7 @@ yy{
 	}
 ////////////////////////////////////////function	
 
-$qrcode_api=file_get_contents("qrcode_api.html");
+$qrcode_api=file_get_contents("qrcode_api3.html");
 //echo $qrcode_api."<br>";
 $servername = "localhost";
 $username = "root";

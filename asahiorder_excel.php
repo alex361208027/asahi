@@ -122,7 +122,7 @@ $(function(){
 		 
 	 }
  }).disableSelection();
-
+$( "img" ).draggable();
 
 	$("td").dblclick(function(){
 		change_val=prompt("更改数据?(注:点击【取消】清空数据)",$(this).text());
@@ -148,6 +148,7 @@ $(function(){
 	
 	$(".printclass").click(function(){
 		$(this).empty().append('正在导出...');
+		alert("由于EXCEL兼容问题：导出的EXCEL文件，请用WPS打开并重新另存为一次后，再发给对方");
 		$("#sortable1").attr("width","800px");
 		setTimeout(()=>{
 			exceldownload('Customer');
@@ -170,14 +171,14 @@ $(function(){
 				//um=Number(um.replace(",",""));
 				singletotal=Number(um*1000)*Number(quantity*1000)/1000000;
 				priceall=Number(priceall)+Number(singletotal);
-				singletotal=singletotal.toFixed(2);
+				//singletotal=singletotal.toFixed(2);
 				singletotal=thousandBitSeparator(singletotal);
 				$(this).next().next().next().empty().append(singletotal);
 			}
 				
 		});
 		quantityall=thousandBitSeparator(quantityall);
-		priceall=priceall.toFixed(2);
+		//priceall=priceall.toFixed(2);
 		priceall=thousandBitSeparator(priceall);
 		
 	    $(".quantity_total").empty().append("<b>"+quantityall+"</b>");
@@ -223,7 +224,7 @@ function same_date(){
 	<tr><td colspan="8" align="center" style="font-size:16px;font-weight:bold">ASAHI TECHNOLOGY(SHANGHAI)CO.LTD</td></tr>
 	<tr><td colspan="8" align="center" style="font-size:24px;font-weight:bold;letter-spacing:3px" height="80px">PURCHASE ORDER</td></tr>
 	<tr><td>To:</td><td colspan="4">ASAHI RUBBER INC.</td><td>Document No.</td><td colspan="2" style="font-weight:bold;font-size:13px;"><? echo $row[0]; ?></td></tr>
-	<tr><td></td><td colspan="4">2-7-2, Dotecho, Omuta-ku</td><td>Issue Date:</td><td colspan="2" align="left"><?php echo date('d-M-y'); ?></td></tr>
+	<tr><td></td><td colspan="4">2-7-2, Dotecho, Omiya-ku</td><td>Issue Date:</td><td colspan="2" align="left"><?php echo date('d-M-y'); ?></td></tr>
 	<tr><td></td><td colspan="4">Saitama-shi,Saitama,330-0801,Japan</td><td>Currencey:</td><td colspan="2">JPY</td></tr>
 	<tr><td>Attn:</td><td colspan="4">Mr.Ichikawa</td><td>Terms of Delivery:</td><td colspan="2">CIF ShangHai</td></tr>
 	<tr><td>Tel#</td><td colspan="4">81-48-650-6055</td><td>Delivery Method:</td><td colspan="2">AIR</td></tr>
@@ -298,7 +299,7 @@ function same_date(){
 					<td width="" class="quantity" align="right"><?php echo number_format($quantitytotel);$total+=$quantitytotel; ?></td>
 					<td width=""><?php if($rowfinal[1]){echo "pcs";} ?></td>
 					<td width=""><?php echo $rowprice[2] ?></td>
-					<td width="" class="danjiaheji"><?php echo number_format($rowprice[2]*$quantitytotel,2);$total2+=($rowprice[2]*$quantitytotel) ?></td>
+					<td width="" class="danjiaheji"><?php echo number_format($rowprice[2]*$quantitytotel,0);$total2+=($rowprice[2]*$quantitytotel) ?></td>
 					<td width="" class="hopedate"><?php 
 					if(in_array($rowfinal[4],$mysave)){
 						echo $myload[array_search($rowfinal[4],$mysave)];
@@ -356,7 +357,7 @@ function same_date(){
 					<td width="" class="quantity_total" align="right"><b><?php echo number_format($total) ?></b></td>
 					<td width="">pcs</td>
 					<td width="">Amount(JPY):</td>
-					<td width="" class="danjiaheji"><b><?php echo number_format($total2,2) ?></b></td>
+					<td width="" class="danjiaheji"><b><?php echo number_format($total2,0) ?></b></td>
 					<td width=""></td>
 					<td width=""> </td>
 				</tr>

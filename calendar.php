@@ -129,6 +129,8 @@ $(function(){
 			
 			str.attr("title",$("#note_title").val());
 		}
+		$(this).attr("disabled",true)
+		setTimeout(()=>{$("#yes").removeAttr("disabled")},1000);
 		note_hide();
 		calendarread();
 	});
@@ -282,6 +284,9 @@ $(function(){
 	$("input").click(function(){
 		$("input").not(this).removeAttr("checked");
 	});
+	
+	
+	
 	
 });
 </script>

@@ -11,20 +11,21 @@ input[type="password"],
 input[type="email"],
 input[type="tel"]{
     width: 120px;
-    height: 20px;
+    height: 30px;
     line-height: 16px;
     margin: 0 0 10px;
-    padding: 2px 0px;
-    border: none;
+    padding: 2px 10px;
     color:white ;
     cursor: pointer;
     resize: none;
     font-size: 16px;
-    border-bottom:2px solid #CCCCFF;
-    background:none ;
+    border:3px solid #CCCCFF;
+    background:none;
+	border-radius:15px;
 	text-align:left;
 	margin-top:6px;
 	z-index:10;
+	outline:none;
 }
 input[type="submit"],
 input[type="button"]{
@@ -55,8 +56,9 @@ body{
 }
 
 .bb{
-	font-size:16px;padding:3px 10px 3px 10px;display:inline;text-align:center;width:90px;
-	font-weight:bold;background-color:#CCCCFF;
+	font-size:16px;padding:3px 10px 3px 10px;display:inline;text-align:center;width:90px;height:30px;
+	border-radius:15px;
+	font-weight:bold;background-color:#CCCCFF;border:3px solid #CCCCFF;
    transition: all 0.3s;
 -moz-transition: all 0.3s;	/* Firefox 4 */
 -webkit-transition: all 0.3s;	/* Safari 和 Chrome */
@@ -67,14 +69,18 @@ body{
 }
 
 .t1{
-	position:relative;
+	position:relative;margin-top:10px;
 }
 .t2{
-	position:absolute;top:19px;font-size:12px;color:#FFAAAA;left:33px;
+	position:absolute;top:12px;font-size:12px;color:white;left:50px;background:none;cursor:pointer;
 	transition: all 0.6s;
 -moz-transition: all 0.6s;	/* Firefox 4 */
 -webkit-transition: all 0.6s;	/* Safari 和 Chrome */
 -o-transition: all 0.6s;
+}
+.t2_t{
+	top:-13px;
+	font-size:13px;color:#CCCCFF;
 }
 </style>
 <body>
@@ -83,10 +89,10 @@ body{
 	<div class="kk">
 				  <div style="position:absolute;right:20px;top:50px;font-size:14px;color:white" align="right">
 					<form action="index.php" method="post" id='login' onsubmit="return false;">
-					<div class="t1"><div class="t2" id="wuser">USER</div>&nbsp;</div><img src="img/user.png" width="20px" /> &nbsp; <input type="text" name="user" style="width:90px;" maxlength="" />
-					<div class="t1"><div class="t2" id="wpw">PassWord</div>&nbsp;</div><img src="img/mima.png" width="20px" /> &nbsp; <input type="password" name="userpw" style="width:90px;" maxlength="" /><br><br>
+					<div class="t1"><div class="t2" id="wuser">USER</div>&nbsp;<img src="img/user.png" width="20px" /> &nbsp; <input type="text" name="user" style="width:90px;" maxlength="" /></div>
+					<div class="t1"><div class="t2" id="wpw">PassWord</div>&nbsp;<img src="img/mima.png" width="20px" /> &nbsp; <input type="password" name="userpw" style="width:90px;" maxlength="" /></div>
 					<input type="hidden" name="logintime" value="<?php echo $todaytime; ?>"/>
-					<input type="submit" id="loging" class="bb" onclick="if(document.getElementsByName('user')[0].value==''||document.getElementsByName('userpw')[0].value==''){document.getElementById('error').style.display='block';setTimeout('document.getElementById(\'error\').style.display=\'none\'',2000)}else{document.getElementById('login').submit();document.getElementById('...').innerHTML='Loading.';}" value="Log In"/>
+					<div class="t1"><input type="submit" id="loging" class="bb" onclick="if(document.getElementsByName('user')[0].value==''||document.getElementsByName('userpw')[0].value==''){document.getElementById('error').style.display='block';setTimeout('document.getElementById(\'error\').style.display=\'none\'',2000)}else{document.getElementById('login').submit();document.getElementById('...').innerHTML='Loading.';}" value="Log In"/></div>
 					</form>
 					</div>
 					<div id="error" style="position:absolute;right:0px;top:0px;width:480px;height:280px;background-color:#FF88A0;color:white;display:none;padding-top:18%;font-size:20px;filter:alpha(Opacity=90);-moz-opacity:0.9;opacity: 0.9;">ERROR!<br><br>账号或密码未输入</div>
@@ -103,38 +109,27 @@ body{
 </div>
 <script>
 $(document).ready(function(){
-     $("#wuser").click(function(){
-		 $(this).css({"top":"0px","font-size":"14px","color":"white"});
-		 $(":text").focus();
-	 });
-	 $("#wpw").click(function(){
-		 $(this).css({"top":"0px","font-size":"14px","color":"white"});
-		 $(":password").focus();
-	 });
+	$(".t2").click(function(){
+		$(this).siblings("input").select();
+	});
 	 
 	$(":text").focus(function(){
-		$("#wuser").css({"top":"0px","font-size":"14px","color":"white"});
+		$("#wuser").addClass("t2_t");
 	 });
 	 $(":password").focus(function(){
-		$("#wpw").css({"top":"0px","font-size":"14px","color":"white"});
+		$("#wpw").addClass("t2_t");
 	 });
 	 
 	 
-     $(":text").click(function(){
-		$("#wuser").css({"top":"0px","font-size":"14px","color":"white"});
-	 });
-	 $(":password").click(function(){
-		$("#wpw").css({"top":"0px","font-size":"14px","color":"white"});
-	 });
 	 
 	 $(":text").focusout(function(){
 		 if(!$(this).val()){
-		$("#wuser").css({"top":"19px","font-size":"12px","color":"#FFAAAA"});
+		$("#wuser").removeClass("t2_t");
 		 }
 	 });
 	 $(":password").focusout(function(){
 		 if(!$(this).val()){
-		$("#wpw").css({"top":"19px","font-size":"12px","color":"#FFAAAA"});
+		$("#wpw").removeClass("t2_t");
 		 }
 	 });
 });

@@ -49,7 +49,10 @@ function sendMail($tobcc,$title,$content){
     $mail->Username ='licy@asahi-rubber.com.cn';
  
     //smtp登录的密码 使用生成的授权码
-    $mail->Password = 'n2EYzFz6xsGCrDT5';
+   $mail->Password = 'zAUJw4qXfU4gzFb3';
+   //$mail->Password = 'C9Qk3HzZbU5fDKsj';
+   
+	 
  
     //设置发件人邮箱地址 这里填入上述提到的“发件人邮箱”
     $mail->From = 'licy@asahi-rubber.com.cn';

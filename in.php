@@ -360,6 +360,7 @@ function in_lotnum_chaifen_complete(str){
 -webkit-transition: all 1s;	/* Safari 和 Chrome */
 -o-transition: all 1s;
 font-size:12px;
+z-index:1000;
 }
 .ajasdivout2{
 	position:fixed;right:0px;top:18px;min-height:400px;max-height:500px;overflow-x:hidden;overflow-y:scroll;width:400px;background-color:white;
@@ -371,6 +372,7 @@ font-size:12px;
 -webkit-transition: all 1s;	/* Safari 和 Chrome */
 -o-transition: all 1s;
 font-size:12px;
+z-index:1000;
 }
 .ajasdivx{
 	position:absolute;right:0px;top:0px;background-color:;font-size:20px

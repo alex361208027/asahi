@@ -254,6 +254,8 @@ $(document).ready(function(){
 			$(this).parents("tr").attr("bgcolor","");
 		}
 	});
+	
+	$(".sum_show").draggable({ axis: "y" });
 });
 //function orderbyhopedate(str){
 //	document.getElementById('href').href="6.php?"+str;
@@ -319,7 +321,7 @@ function po_pi_lotnum(str){
 <ul class="hide" title="选中项批量操作">
 	<li><div class="sum_show_hide_x">X</div></li>
 <li onclick="mycheckbox(2)" class="close_hide"><img src="img/tongji.png" height="14px"> &nbsp; 合并统计</li>
-<li onclick="mycheckbox(1)" class="close_hide"><img src="img/songhuodan.png" height="14px"> &nbsp; 生成朝日订单</li>
+<!--<li onclick="mycheckbox(1)" class="close_hide"><img src="img/songhuodan.png" height="14px"> &nbsp; 生成朝日订单</li>-->
 <li onclick="mycheckbox(11)" class="close_hide"><img src="img/songhuodan.png" height="14px"> &nbsp; (新)生成朝日订单</li>
 <li><hr></li>
 <li><input type="date" id="JPdate" value=""></li>

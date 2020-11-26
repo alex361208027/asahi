@@ -371,7 +371,7 @@ $(document).ready(function(){
 	});
  
 	
-	
+	$(".sum_show").draggable({ axis: "y" });
 
 	
 	
@@ -420,8 +420,8 @@ function td_remove(){
 	<li> &nbsp; </li>
  </ul>
  <div class="sum_show_x">X</div>
- <div class="sum_show_move" value="1" style="position:absolute;cursor:pointer;right:20px;top:20px;margin-top:-20px;margin-right:-20px">↑</div>
- <div class="sum_show_move" value="2" style="position:absolute;cursor:pointer;right:20px;top:20px;margin-top:20px;margin-right:-20px">↓</div>
+ <!--<div class="sum_show_move" value="1" style="position:absolute;cursor:pointer;right:20px;top:20px;margin-top:-20px;margin-right:-20px">↑</div>
+ <div class="sum_show_move" value="2" style="position:absolute;cursor:pointer;right:20px;top:20px;margin-top:20px;margin-right:-20px">↓</div>-->
 </div>
 
 
